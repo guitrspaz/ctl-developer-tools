@@ -1,0 +1,33 @@
+{
+    "name":"My ColdBox App",
+    "version":"1.0.0",
+    "author":"CTL Developer Name",
+    "location":"",
+    "slug":"my-coldbox-ap",
+    "shortDescription":"A ColdBox template for CTL applications",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"ctl,coldbox,jhu,jhsph",
+    "homepage":"https://github.com/guitrspaz/ctl-coldbox-template",
+    "documentation":"https://github.com/guitrspaz/ctl-coldbox-template#readme",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/guitrspaz/ctl-coldbox-template"
+    },
+    "bugs":"https://github.com/guitrspaz/ctl-coldbox-template/issues",
+    "contributors":[],
+    "ignore":[
+        "README.md"
+    ],
+    "devDependencies":{
+        "testbox":"^2.7.0"
+    },
+    "installPaths":{
+        "coldbox":"coldbox",
+        "testbox":"testbox"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0"
+    },
+    "scripts":{}
+}

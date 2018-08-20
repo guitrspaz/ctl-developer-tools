@@ -1,0 +1,19 @@
+# General Ignores + IDE
+*.project
+*.DS_Store
+settings.xml
+WEB-INF
+
+# logs
+logs/*.*
+
+# NPM, Bower, ETC
+*package-lock.json
+**/node_modules/*
+**/bower_components/*
+
+## Ignored Dependencies
+coldbox/*
+testbox/*
+modules/*
+**/apidocs/**
