@@ -106,6 +106,14 @@ component{
 		interceptors=[
 		];
 
+		orm={
+			'injection':{
+				'enabled':true,
+				'include':"",
+				'exclude':""
+			}
+		};
+
 		/*
 		// module setting overrides
 		moduleSettings={
