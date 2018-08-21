@@ -46,7 +46,7 @@ component{
 			'invalidHTTPMethodHandler':"",
 			'exceptionHandler':"main.onException",
 			'invalidEventHandler':"",
-			'customErrorTemplate':"",
+			'customErrorTemplate':"/coldbox/system/includes/BugReport.cfm",
 
 			//Application Aspects
 			'handlerCaching':false,
