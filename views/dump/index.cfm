@@ -1,4 +1,5 @@
 <!--- put content here --->
 <cfscript>
-	WriteDump(var=request.rc);
+	WriteDump(var=StructKeyArray(request));
+	WriteDump(var=request);
 </cfscript>
