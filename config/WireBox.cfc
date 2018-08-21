@@ -49,6 +49,14 @@ component extends="coldbox.system.ioc.config.Binder"{
 			]
 		};
 		// Map Bindings below
+
 	}
 
+	function onLoad(){
+		//Load stuff goes here
+	}
+
+	function onShutDown(){
+		//Shutdown stuff goes here
+	}
 }
