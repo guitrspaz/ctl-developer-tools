@@ -8,4 +8,5 @@
 	/* WriteDump(var=event.getMappings(),label="Mappings"); */
 	/* WriteDump(var=event.getColdbox(),label="ColdBox"); */
 	WriteDump(var=event.getProperties(),label="Properties");
+	WriteDump(var=event,label="Event");
 </cfscript>
