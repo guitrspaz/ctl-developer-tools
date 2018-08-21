@@ -2,5 +2,5 @@
 <cfscript>
 	WriteDump(var=StructKeyArray(request));
 	/* WriteDump(var=request); */
-	WriteDump(var=event);
+	WriteDump(var=event.getProperties());
 </cfscript>
