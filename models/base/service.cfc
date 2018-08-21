@@ -1,5 +1,5 @@
 /**
-* @name: com.distance.base.service
+* @name: models.base.service
 * @hint: I create service objects with extra tools
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @created: Tuesday, 06/16/2015 07:54:17 AM
@@ -7,16 +7,16 @@
 */
 component
 	output="false"
-	displayName="com.distance.base.service"
+	displayName="models.base.service"
 	accessors="true"
 	hint="I create service objects with extra tools"
-	extends=com.distance.base.coursePlusObject
+	extends=models.base.coursePlusObject
 {
 
 	/**
 	* @name:	service.configure
 	* @hint:	I configure the tool for use as a standalone service
-	* @returns:	com.distance.base.service
+	* @returns:	models.base.service
 	* @date:	Thursday, 03/16/2017 09:36:49 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
 	*/
@@ -27,7 +27,7 @@ component
 		super.configureCPObject(argumentCollection=arguments);
 	}
 
-	public com.distance.base.service function init(
+	public models.base.service function init(
 		Struct blueprints={},
 		String cacheName='default',
 		String cacheRegion='',
@@ -39,7 +39,7 @@ component
 		String ctlemail='ctlhelp@jhu.edu',
 		Boolean debugMode=false,
 		Date defaultDate=CreateDateTime(1969,12,31,23,59,59),
-		String defaultLog='com.distance.base',
+		String defaultLog='models.base',
 		Struct paramAliases={},
 		Boolean sharedCache=false,
 		String supportEmail='ctlhelp@jhu.edu'
@@ -57,7 +57,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.sendToDeveloper
+	* @name:	models.base.service.sendToDeveloper
 	* @hint:	I send variable dumps to the developer for this object
 	* @returns:	Boolean
 	* @date:	Monday, 05/29/2017 10:06:18 AM
@@ -87,7 +87,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.queryRowToStruct
+	* @name:	models.base.service.queryRowToStruct
 	* @hint:	I process data sent as an array inside a form
 	* @returns:	Struct
 	* @date:	Sunday, 05/21/2017 10:38:44 PM
@@ -106,7 +106,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.handleFormArray
+	* @name:	models.base.service.handleFormArray
 	* @hint:	I process data sent as an array inside a form
 	* @returns:	Array
 	* @date:	Tuesday, 01/24/2017 08:14:03 AM
@@ -242,7 +242,7 @@ component
 
 	/**
 	 * @name:		service.isUnique
-	 * @package:	com.distance.base.
+	 * @package:	models.base.
 	 * @hint:		I find whether items with the key already exist
 	 * @returns:	Boolean
 	 * @date:		Wednesday, 08/16/2017 01:07:32 PM
@@ -407,7 +407,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.replaceUnwantedCharacters
+	* @name:	models.base.service.replaceUnwantedCharacters
 	* @hint:	Replaces unwanted characters
 	* @date:	Wednesday, 07/06/2016 03:07:26 PM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -734,7 +734,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.manageDecimals
+	* @name:	models.base.service.manageDecimals
 	* @hint:	I manage decimal positions/placement
 	* @date:	Wednesday, 07/06/2016 03:10:24 PM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -877,7 +877,7 @@ component
 	}
 
 	/**
-	 * @name: com.distance.base.service.objectToStruct()
+	 * @name: models.base.service.objectToStruct()
 	 * @hint: I convert objects to structures
 	 * @returns: Struct
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
@@ -901,7 +901,7 @@ component
 		};
 		var f=0;
 		try{
-			if( isInstanceOf(arguments.obj,'com.distance.base.coursePlusObject') || isInstanceOf(arguments.obj,'WEB-INF.cftags.component') ){
+			if( isInstanceOf(arguments.obj,'models.base.coursePlusObject') || isInstanceOf(arguments.obj,'WEB-INF.cftags.component') ){
 				if( structKeyExists(arguments.obj,'configure') ){
 					errorStruct['counter']=1;
 				} else {
@@ -961,7 +961,7 @@ component
 		};
 		try{
 			//prep objects before processing
-			if( isInstanceOf(arguments.obj,'com.distance.base.coursePlusObject') || isInstanceOf(arguments.obj,'WEB-INF.cftags.component') ){
+			if( isInstanceOf(arguments.obj,'models.base.coursePlusObject') || isInstanceOf(arguments.obj,'WEB-INF.cftags.component') ){
 				errorStruct['workingObj']=arguments.obj.getobjectAsStructure(
 					includeParents=errorStruct.persistArgs.includeParents,
 					currentLevel=errorStruct.args.currentLevel,
@@ -1055,7 +1055,7 @@ component
 				if( structKeyExists(arguments,'key')
 					&& Len(Trim(arguments.key))
 					&& ArrayFindNoCase(arguments.ignoreKeys,Trim(arguments.key))
-					&& !(isInstanceOf(arguments.obj,'com.distance.base.coursePlusObject') || isInstanceOf(arguments.obj,'WEB-INF.cftags.component'))
+					&& !(isInstanceOf(arguments.obj,'models.base.coursePlusObject') || isInstanceOf(arguments.obj,'WEB-INF.cftags.component'))
 				){
 					errorStruct['result']=arguments.obj;
 				} else {
@@ -1220,7 +1220,7 @@ component
 
 	/**
 	 * @name:		service.filterIsBasic
-	 * @package:	com.distance.base.
+	 * @package:	models.base.
 	 * @hint:		I make recommendations whether to use/not use a key/value pair. I'm useful for logging or forensic use.
 	 * @returns:	Boolean
 	 * @date:		Friday, 07/28/2017 06:43:35 AM
@@ -1340,7 +1340,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.xmlNodeToStruct
+	* @name:	models.base.service.xmlNodeToStruct
 	* @hint:	I convert an xmlNode to a structure
 	* @date:	Monday, 08/08/2016 08:21:15 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -1405,7 +1405,7 @@ component
 	}
 
 	/**
-	* @name:	com.distance.base.service.xmlExtractChildren
+	* @name:	models.base.service.xmlExtractChildren
 	* @hint:	I extract children from an xml object and return them as part of a structure
 	* @date:	Monday, 08/08/2016 08:29:35 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)

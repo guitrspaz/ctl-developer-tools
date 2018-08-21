@@ -1,6 +1,6 @@
 /**
 * @name: bean
-* @package: com.distance.base.
+* @package: models.base.
 * @hint: basic bean object
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @created: Tuesday, 03/01/2016 08:24:54 AM
@@ -8,10 +8,10 @@
 */
 
 component
-	displayname="com.distance.base.bean"
+	displayname="models.base.bean"
 	accessors="true"
 	output="false"
-	extends="com.distance.base.coursePlusObject"
+	extends="models.base.coursePlusObject"
 {
 	property name='createdOn' type='Date' getter='true' setter='true';
 	property name='modifiedOn' type='Date' getter='true' setter='true';
@@ -23,8 +23,8 @@ component
 
 	/**
 	 * @name: configure()
-	 * @package: com.distance.base.bean.
-	 * @hint: This function returns an instance of com.distance.base.bean with argument.prototype as the property 'prototype'.
+	 * @package: models.base.bean.
+	 * @hint: This function returns an instance of models.base.bean with argument.prototype as the property 'prototype'.
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
 	 * @copyright: Johns Hopkins University
 	 * @date: Friday, 07/01/2016 12:35:20 PM
@@ -39,7 +39,7 @@ component
 		}
 	}
 
-	public com.distance.base.bean function init(
+	public models.base.bean function init(
 		Any prototype,
 		String defaultLog,
 		Boolean debugMode,
@@ -57,7 +57,7 @@ component
 
 	/**
 	 * @name: makeFunctName()
-	 * @package: com.distance.base.bean.
+	 * @package: models.base.bean.
 	 * @hint: I return a string in the format: component.functionName()
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
 	 * @copyright: Johns Hopkins University
@@ -69,7 +69,7 @@ component
 
 	/**
 	 * @name: dump()
-	 * @package: com.distance.base.bean.
+	 * @package: models.base.bean.
 	 * @hint: I dump data
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
 	 * @copyright: Johns Hopkins University

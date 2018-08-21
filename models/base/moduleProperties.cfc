@@ -1,6 +1,6 @@
 /**
 * @name: moduleProperties
-* @package: com.distance.base.
+* @package: models.base.
 * @hint: I am a base module property
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
@@ -12,7 +12,7 @@ component
 	displayname="moduleProperties"
 	output="false"
 	accessors="true"
-	extends="com.distance.base.coursePlusObject"
+	extends="models.base.coursePlusObject"
 {
 	property name='applicationRoot' type='string' default="/core" getter='true' setter='true';
 	property name='adminEmail' type='string' default="ctlhelp@jhu.edu" getter='true' setter='true';
@@ -37,7 +37,7 @@ component
 		Date compareDate=CreateDateTime(1970,1,1,0,0,0),
 		Boolean debugMode=0,
 		String defaultEvent,
-		String defaultLog='com.distance.base',
+		String defaultLog='models.base',
 		Date defaultDate=CreateDateTime(1969,12,31,23,59,59),
 		String devEmail,
 		Numeric devID,
@@ -84,7 +84,7 @@ component
 		this.setpropertyScopes(arguments.propertyScopes);
 	}
 
-	public com.distance.base.moduleProperties function init(){
+	public models.base.moduleProperties function init(){
 		configure( argumentCollection=arguments );
 		return this;
 	}

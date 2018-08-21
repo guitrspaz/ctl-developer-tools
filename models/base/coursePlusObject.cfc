@@ -1,6 +1,6 @@
 /**
 * @name: coursePlusObject
-* @hint: I am the base object for all beans using service-layer tools in the com.distance.base package
+* @hint: I am the base object for all beans using service-layer tools in the models.base package
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
 * @created: Wednesday, 05/17/2017 07:26:54 AM
@@ -13,13 +13,13 @@ component
 	output="false"
 {
 	property name='appCacheRegions' type='Struct' getter='true' setter='true';
-	property name="baseClass" getter="true" setter="true" type="string" default="com.distance.base.coursePlusObject";
+	property name="baseClass" getter="true" setter="true" type="string" default="models.base.coursePlusObject";
 	property name='blueprints' getter='true' setter='true' type='struct';
 	property name='cacheName' type='String' getter='true' setter='true' default='serviceObject';
 	property name='cacheRegion' type='String' getter='true' setter='true';
 	property name='cacheScopes' type='Array' getter='true' setter='true';
 	property name='cacheTypes' type='Struct' getter='true' setter='true';
-	property name='caller' type='String' getter='true' setter='true' default='com.distance.base.coursePlusObject';
+	property name='caller' type='String' getter='true' setter='true' default='models.base.coursePlusObject';
 	property name='child' type='Struct' getter='true' setter='true';
 	property name='compareDate' type='Date' getter='true' setter='true';
 	property name='configuredAt' type='Date' getter='true' setter='true';
@@ -49,7 +49,7 @@ component
 
 	/**
 	 * @name: configureCPObject
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I configure the object properties
 	 * @returns: Void
 	 * @date: Sunday, 05/21/2017 09:18:23 AM
@@ -243,9 +243,8 @@ component
 
 			//logging management
 			var altLogs={
-				'com.distance.base.api':'apiInitLog',
-				'com.distance.base.bean':'',
-				'com.distance.base.moduleProperties':'modulePropertyInitLog'
+				'models.base.bean':'',
+				'models.base.moduleProperties':'modulePropertyInitLog'
 			};
 			var logInstance=doLogging(altLogs);
 			if( logInstance['doLog']==true ){
@@ -311,14 +310,14 @@ component
 		return result;
 	}
 
-	public com.distance.base.coursePlusObject function init(){
+	public models.base.coursePlusObject function init(){
 		configureCPObject(argumentCollection=arguments);
 		return this;
 	}
 
 	/**
 	 * @name: logInit()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I log the object init configuration
 	 * @returns: Void
 	 * @date: Sunday, 05/21/2017 09:18:23 AM
@@ -372,7 +371,7 @@ component
 
 	/**
 	 * @name: makeBlueprint()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I return the object as a structure
 	 * @returns: Struct
 	 * @date: Monday, 08/22/2016 08:23:54 AM
@@ -399,7 +398,7 @@ component
 
 	/**
 	 * @name: getStackTrace()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I return the route data
 	 * @returns: Struct
 	 * @date: Monday, 08/22/2016 08:23:54 AM
@@ -440,7 +439,7 @@ component
 
 	/**
 	 * @name:	createLog()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:	I write to logs
 	 * @returns:	Void
 	 * @date:	Monday, 08/22/2016 08:23:54 AM
@@ -498,7 +497,7 @@ component
 
 	/**
 	* @name:	loadCacheRegions()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I return the application cache regions as a structure
 	* @returns:	Struct
 	* @date:	Thursday, 03/16/2017 09:36:49 AM
@@ -556,7 +555,7 @@ component
 
 	/**
 	* @name:	readExistingCacheRegions()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I find all available cacheRegions
 	* @returns:	Struct
 	* @date:	Thursday, 03/16/2017 09:36:49 AM
@@ -660,7 +659,7 @@ component
 
 	/**
 	 * @name: returnCacheRegion()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I return the cacheRegion name for this object
 	 * @returns: String
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
@@ -674,7 +673,7 @@ component
 
 	/**
 	 * @name: configureModuleCacheRegion()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I set the cacheRegion name
 	 * @returns: String
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
@@ -695,7 +694,7 @@ component
 
 	/**
 	 * @name: configureCacheRegion()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I set the cacheRegion name for this object
 	 * @returns: Void
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
@@ -729,7 +728,7 @@ component
 
 	/**
 	* @name:	initAppCacheRegions()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I check to see if there is a shared cache and if not, attempt to set it
 	* @returns:	Struct
 	* @date:	Tuesday, 03/21/2017 07:05:39 PM
@@ -737,7 +736,7 @@ component
 	*/
 	public Struct function initAppCacheRegions(
 		Struct child={},
-		String caller='com.distance.base.coursePlusObject',
+		String caller='models.base.coursePlusObject',
 		Struct props
 	){
 		var errorStruct={
@@ -794,7 +793,7 @@ component
 
 	/**
 	 * @name: returnAppCacheRegions()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: I return all available cacheRegions for the parent application
 	 * @returns: Void
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
@@ -807,7 +806,7 @@ component
 
 	/**
 	* @name: returnCacheName()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint: I return a formatted name for a cache item
 	* @date: Monday, 08/22/2016 08:23:54 AM
 	* @author: Chris Schroeder (schroeder@jhu.edu)
@@ -833,7 +832,7 @@ component
 
 	/**
 	* @name:	configureAppCacheRegions()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I set up all available cacheRegions for the parent application
 	* @returns:	Boolean
 	* @date:	Tuesday, 03/21/2017 07:43:13 AM
@@ -900,7 +899,7 @@ component
 
 	/**
 	* @name:	formatCacheKeyArrayData()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I search cache keys for defined strings
 	* @date:	Monday, 08/22/2016 08:21:22 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -920,7 +919,7 @@ component
 
 	/**
 	* @name:	clearCaches()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I load clear caches with dashed name convention ( scope-type[-identifierKey1|identifierValue1-identifierKey2|identifierValue2] )
 	* @date:	Monday, 08/22/2016 08:21:22 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -1041,7 +1040,7 @@ component
 
 	/**
 	* @name:	mergeCacheTypes()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I merge a structure of cacheTypes into an array
 	* @date:	Monday, 08/22/2016 08:21:22 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -1072,7 +1071,7 @@ component
 
 	/**
 	* @name:	formatParams()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I formate parameter aliases and add them to the array of strings to search for in a cache key
 	* @date:	Monday, 08/22/2016 08:21:22 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -1120,7 +1119,7 @@ component
 
 	/**
 	 * @name:	configureParamAliases()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:	I return the cache param aliases for a module or component in a structure of arrays
 	 * @returns:	Struct
 	 * @date:	Monday, 05/22/2017 09:04:49 AM
@@ -1154,7 +1153,7 @@ component
 
 	/**
 	 * @name:		toNativeFormat()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I convert runtime custom objects to native formats (Array,Struct,String (JSON)) using JSON serialization
 	 * @returns:	Any
 	 * @date:		Wednesday, 08/30/2017 07:41:27 AM
@@ -1233,7 +1232,7 @@ component
 
 	/**
 	 * @name:		getObjectAsStructure()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I return this object as a structure
 	 * @returns:	Struct
 	 * @date:		Thursday, 06/15/2017 12:47:29 PM
@@ -1317,7 +1316,7 @@ component
 
 	/**
 	 * @name:		aggregateDefineableProperties()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I return a structure of all defineable properties for this object
 	 * @returns:	Struct
 	 * @date:		Thursday, 06/15/2017 01:00:14 PM
@@ -1391,7 +1390,7 @@ component
 
 	/**
 	 * @name:		filterProperties()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I will filter out unwanted and undefineable properties
 	 * @returns:	Struct
 	 * @date:		Thursday, 06/15/2017 01:08:36 PM
@@ -1456,7 +1455,7 @@ component
 
 	/**
 	 * @name:		validateProperty()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I validate whether or not a property should be added to a requested object structure
 	 * @returns:	Boolean
 	 * @date:		Thursday, 06/15/2017 02:16:46 PM
@@ -1498,7 +1497,7 @@ component
 
 	/**
 	 * @name:		propertyCallback()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I handle setting a property
 	 * @returns:	Any
 	 * @date:		Thursday, 06/15/2017 02:01:23 PM
@@ -1531,7 +1530,7 @@ component
 			errorStruct['processing']=arguments.value;
 		}
 		if( structKeyExists(errorStruct,'processing') ){
-			if( isInstanceOf(errorStruct.processing,'com.distance.base.coursePlusObject')
+			if( isInstanceOf(errorStruct.processing,'models.base.coursePlusObject')
 				|| isInstanceOf(errorStruct.processing,'WEB-INF.cftags.component')
 			){
 				var cpAttrs=errorStruct.persistArgs;
@@ -1560,7 +1559,7 @@ component
 
 	/**
 	 * @name: importComplexProperty()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint: Handles complex properties.
 	 * @returns: Any
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
@@ -1624,7 +1623,7 @@ component
 
 	/**
 	 * @name:		xmlObjectToStruct()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I return an xmlObject as a structure
 	 * @returns:	Struct
 	 * @date:		Saturday, 07/15/2017 12:11:57 PM
@@ -1740,7 +1739,7 @@ component
 
 	/**
 	 * @name:		importObject()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I handle importing an object as a structure into another object
 	 * @returns:	Struct
 	 * @date:		Thursday, 06/15/2017 05:54:40 PM
@@ -1764,7 +1763,7 @@ component
 				'throwOnError':(this.getdebugMode())?true:arguments.throwOnError
 			}
 		};
-		if( isInstanceOf(arguments.obj,'com.distance.base.coursePlusObject') ){
+		if( isInstanceOf(arguments.obj,'models.base.coursePlusObject') ){
 			errorStruct['result']=arguments.obj.getObjectAsStructure(argumentCollection=errorStruct.persistArgs);
 		} else if( isInstanceOf(arguments.obj,'WEB-INF.cftags.component') ){
 			try{
@@ -1780,7 +1779,7 @@ component
 
 	/**
 	 * @name:		getSnapShot()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		Alias for getObjectAsStructure
 	 * @returns:	Struct
 	 * @date:		Sunday, 06/18/2017 06:53:44 PM
@@ -1797,7 +1796,7 @@ component
 
 	/**
 	 * @name:		toStruct()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		Alias for getObjectAsStructure
 	 * @returns:	Struct
 	 * @date:		Sunday, 06/18/2017 06:53:48 PM
@@ -1814,7 +1813,7 @@ component
 
 	/**
 	 * @name:		propertyMetaDataToStruct()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I convert an array of property meta data into a structure and add a default value if it is not defined
 	 * @returns:	Struct
 	 * @date:		Thursday, 06/15/2017 05:54:40 PM
@@ -1893,7 +1892,7 @@ component
 
 	/**
 	 * @name:		returnNull()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I return a null value
 	 * @returns:	Null
 	 * @date:		Thursday, 06/15/2017 01:55:22 PM
@@ -1905,7 +1904,7 @@ component
 
 	/**
 	 * @name:		returnTypeDefault()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I return the default value an object type
 	 * @returns:	Any
 	 * @date:		Thursday, 06/15/2017 01:55:22 PM
@@ -1961,7 +1960,7 @@ component
 
 	/**
 	 * @name:		existsInPackages()
-	 * @package: com.distance.base.coursePlusObject
+	 * @package: models.base.coursePlusObject
 	 * @hint:		I confirm whether an object belongs to an array of libraries
 	 * @returns:	Struct
 	 * @date:		Thursday, 06/15/2017 05:54:40 PM
@@ -1980,7 +1979,7 @@ component
 
 	/**
 	* @name:	queryFromArrayOfComplexObjects()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I create a query from an array of structs or objects
 	* @returns:	Query
 	* @date:	Sunday, 11/27/2016 09:37:36 AM
@@ -2044,7 +2043,7 @@ component
 
 	/**
 	* @name:	QueryToArray()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I convert queries to arrays of structures
 	* @returns: Array
 	* @date:	Monday, 08/22/2016 08:23:54 AM
@@ -2124,7 +2123,7 @@ component
 
 	/**
 	* @name:	reverseStruct()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I reverse a struct so that its values become its keys and its keys become its values. It will omit complex values.
 	* @returns:	Struct
 	* @date:	Sunday, 05/21/2017 10:38:44 PM
@@ -2142,7 +2141,7 @@ component
 
 	/**
 	* @name:	findArrayItemsInString()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I find array items (string values only) in a string
 	* @date:	Monday, 08/22/2016 08:23:54 AM
 	* @author:	Chris Schroeder (schroeder@jhu.edu)
@@ -2161,7 +2160,7 @@ component
 
 	/**
 	* @name:	structToArray()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I convert a structure to an array
 	* @returns: Array
 	* @date:	Wednesday, 05/17/2017 07:37:37 AM
@@ -2202,7 +2201,7 @@ component
 	};
 	/**
 	* @name:	structToArray()
-	* @package: com.distance.base.coursePlusObject
+	* @package: models.base.coursePlusObject
 	* @hint:	I convert an array to a structure
 	* @returns: Struct
 	* @date:	Wednesday, 05/17/2017 07:37:37 AM

@@ -8,12 +8,12 @@
 */
 component
 	output="false"
-	displayName="com.distance.base.jhed"
-	extends="com.distance.base.dao"
+	displayName="models.base.jhed"
+	extends="models.base.dao"
 	accessors="true"
 	hint="I create jhed tools that can be accessed remotely."
 {
-	public com.distance.base.jhed function init(
+	public models.base.jhed function init(
 		required String dsn,
 		required String defaultLog,
 		Boolean debugMode=0,

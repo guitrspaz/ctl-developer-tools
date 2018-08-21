@@ -1,6 +1,6 @@
 /**
 * @name: dao
-* @package: com.distance.base.
+* @package: models.base.
 * @hint: dao object that other dao objects extend
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @created: Tuesday, 03/01/2016 08:24:54 AM
@@ -8,8 +8,8 @@
 */
 
 component
-	displayname="com.distance.base.dao"
-	extends="com.distance.base.service"
+	displayname="models.base.dao"
+	extends="models.base.service"
 	output="false"
 	accessors="true"
 {
@@ -18,7 +18,7 @@ component
 
 	/**
 	 * @name: configureDAO()
-	 * @package: com.distance.base.dao.
+	 * @package: models.base.dao.
 	 * @hint: I configure instances of this object
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
 	 * @copyright: Johns Hopkins University
@@ -41,7 +41,7 @@ component
 			this.setdsn(arguments.dsn);
 		} else {
 			throw(
-				type="com.distance.base.Missing.DataBaseName",
+				type="models.base.Missing.DataBaseName",
 				message="The dsn argument was not valid.",
 				detail="You did not provide a valid dsn, which is required for nearly all of this component's methods",
 				extendedInfo=ReplaceNoCase(Trim(SerializeJSON(arguments)),'//','','ONE')
@@ -51,20 +51,20 @@ component
 
 	/**
 	 * @name: init()
-	 * @package: com.distance.base.dao.
+	 * @package: models.base.dao.
 	 * @hint: I initialize a public instance of this object
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
 	 * @copyright: Johns Hopkins University
 	 * @date: Saturday, 11/04/2017 10:43:47 AM
 	 */
-	public com.distance.base.dao function init(){
+	public models.base.dao function init(){
 		configureDAO(argumentCollection=arguments);
 		return this;
 	}
 
 	/**
 	 * @name: gethardCodeDSN()
-	 * @package: com.distance.base.dao.
+	 * @package: models.base.dao.
 	 * @hint: I return the hardcoded DSN for this object
 	 * @author: Chris Schroeder (schroeder@jhu.edu)
 	 * @copyright: Johns Hopkins University
@@ -76,7 +76,7 @@ component
 
 	/**
 	* @name:	getUser()
-	* @package: com.distance.base.dao.
+	* @package: models.base.dao.
 	* @hint:	I read a user from userID and return it as a query. I cache my query for 1 day.
 	* @returns:	Query
 	* @date:	Wednesday, 05/17/2017 07:57:34 AM
@@ -136,7 +136,7 @@ component
 
 	/**
 	* @name:	getcourseIdFromCourseOfferingId()
-	* @package: com.distance.base.dao.
+	* @package: models.base.dao.
 	* @hint:	Returns the courseID for the offering
 	* @returns:	A numeric ID for a record
 	* @date:	Thursday, 04/13/2017 08:52:43 AM
@@ -197,7 +197,7 @@ component
 
 	/**
 	* @name:	getFormattedUser()
-	* @package: com.distance.base.dao.
+	* @package: models.base.dao.
 	* @hint:	I read a user from userID and return it in a number of formats.
 	* @returns:	Any
 	* @date:	Wednesday, 05/17/2017 07:57:34 AM
