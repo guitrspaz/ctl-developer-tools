@@ -41,7 +41,7 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="/root"{
 
 			it( "+homepage renders", function(){
 				var event = execute( event="main.index", renderResults=true );
-				expect(	event.getValue( name="welcomemessage", private=true ) ).toBe( "Welcome to ColdBox!" );
+				expect(	event.getValue( name="sectionTitle", private=true ) ).toBe( "Welcome to ColdBox!" );
 			});
 
 			it( "+doSomething relocates", function(){
@@ -56,10 +56,10 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="/root"{
 			it( "+can handle exceptions", function(){
 				//You need to create an exception bean first and place it on the request context FIRST as a setup.
 				var exceptionBean = createMock( "coldbox.system.web.context.ExceptionBean" )
-					.init( 
-						erroStruct=structnew(), 
-						extramessage="My unit test exception", 
-						extraInfo="Any extra info, simple or complex" 
+					.init(
+						erroStruct=structnew(),
+						extramessage="My unit test exception",
+						extraInfo="Any extra info, simple or complex"
 					);
 				prepareMock( getRequestContext() )
 					.setValue( name="exception", value=exceptionBean, private=true )

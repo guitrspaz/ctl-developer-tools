@@ -1,6 +1,6 @@
-﻿/**
-* @name: handlers.Main
-* @hint: Handler for the Main layout
+/**
+* @name: handlers.Dumper
+* @hint: Handler for Dumping Stuff
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
 * @created: Monday, 08/20/2018 11:47:24 AM
@@ -11,14 +11,8 @@ component extends="coldbox.system.EventHandler"{
 
 	// Default Action
 	function index(event,rc,prc){
-		prc['sectionTitle']="Welcome to ColdBox!";
-		event.setView("main/index");
-	}
-
-	// Do something
-	function oops(event,rc,prc){
-		prc['sectionTitle']="Oops!";
-		event.setView("main/index");
+		prc['sectionTitle']="Data Dump";
+		event.setView("dump/index");
 	}
 
 	/************************************** IMPLICIT ACTIONS *********************************************/

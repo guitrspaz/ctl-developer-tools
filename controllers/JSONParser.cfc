@@ -11,7 +11,7 @@ component extends="coldbox.system.EventHandler"{
 
 	// Default Action
 	function index(event,rc,prc){
-		prc['welcomeMessage']="JSON Parser";
+		prc['sectionTitle']="JSON Parser";
 		event.setView("ajax-parser/index");
 	}
 
