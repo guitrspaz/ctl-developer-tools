@@ -1,4 +1,4 @@
 <!--- put content here --->
 <cfscript>
-	WriteDump(var=request);
+	WriteDump(var=request.rc);
 </cfscript>
