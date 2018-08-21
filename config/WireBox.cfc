@@ -35,7 +35,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 			},
 
 			// Package scan locations
-			'scanLocations':[],
+			'scanLocations':['models'],
 
 			// Stop Recursions
 			'stopRecursions':[],

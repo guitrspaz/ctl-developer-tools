@@ -13,6 +13,7 @@ component{
 		'reloadOnChange':false
 	};
 
+
 	// COLDBOX STATIC PROPERTY, DO NOT CHANGE UNLESS THIS IS NOT THE ROOT OF YOUR COLDBOX APP
 	COLDBOX_APP_ROOT_PATH=getDirectoryFromPath( getCurrentTemplatePath() );
 	// The web server mapping to this application. Used for remote purposes or static purposes
@@ -21,6 +22,9 @@ component{
 	COLDBOX_CONFIG_FILE="";
 	// COLDBOX APPLICATION KEY OVERRIDE
 	COLDBOX_APP_KEY="";
+
+	//app mappings
+	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
 
 	// application start
 	public boolean function onApplicationStart(){
