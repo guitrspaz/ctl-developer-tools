@@ -24,10 +24,14 @@
     },
     "installPaths":{
         "coldbox":"coldbox",
-        "testbox":"testbox"
+        "testbox":"testbox",
+        "wirebox":"wirebox",
+        "cborm":"modules/cborm"
     },
     "dependencies":{
-        "coldbox":"^5.0.0"
+        "coldbox":"^5.0.0",
+        "wirebox":"^5.1.4+741",
+        "cborm":"^1.4.0+79"
     },
     "scripts":{}
 }
