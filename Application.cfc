@@ -13,6 +13,18 @@ component{
 		'reloadOnChange':false
 	};
 
+	this['ormEnabled']=true;
+	this['datasource']="DE_MyCourses";
+	this['ormSettings']={
+	    'cfclocation':"models",
+	    'dbcreate':"update",
+	    'logSQL':true,
+	    'flushAtRequestEnd':false,
+	    'autoManageSession':false,
+	    'eventHandling':true,
+	    'eventHandler':"cborm.models.EventHandler"
+	};
+
 
 	// COLDBOX STATIC PROPERTY, DO NOT CHANGE UNLESS THIS IS NOT THE ROOT OF YOUR COLDBOX APP
 	COLDBOX_APP_ROOT_PATH=getDirectoryFromPath( getCurrentTemplatePath() );

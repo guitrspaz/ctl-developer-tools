@@ -49,7 +49,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 			]
 		};
 		// Map Bindings below
-
+		mapDirectory('models');
 	}
 
 	function onLoad(){

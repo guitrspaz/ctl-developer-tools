@@ -23,7 +23,7 @@ component{
 			'handlersIndexAutoReload':true,
 
 			//Implicit Events
-			'defaultEvent':"",
+			'defaultEvent':"Main.index",
 			'requestStartHandler':"Main.onRequestStart",
 			'requestEndHandler':"",
 			'applicationStartHandler':"Main.onAppInit",
@@ -54,27 +54,38 @@ component{
 			'viewCaching':false
 		};
 
-		// custom settings
+		/* custom settings */
 		settings={
-
+			'appVersion':'0.0.1',
+			'defaultLog':'developerTools',
+			'debugMode':false,
+			'testSetting':true,
+		    'dsn':{
+		        'name':"DE_MyCourses",
+		        'type':'SQL'
+		    }
 		};
 
-		// environment settings, create a detectEnvironment() method to detect it yourself.
-		// create a function with the name of the environment so it can be executed if that environment is detected
-		// the value of the environment is a list of regex patterns to match the cgi.http_host.
+		/**
+		 * environment settings, create a detectEnvironment() method to detect it yourself.
+		 * create a function with the name of the environment so it can be executed if that environment is detected
+		 * the value of the environment is a list of regex patterns to match the cgi.http_host.
+		 */
 		environments={
 			'development':"localhost,^127\.0\.0\.1"
 		};
 
-		// Module Directives
+		/* Module Directives */
 		modules={
+			// reload and unload modules in every request
+			'autoReload':false,
 			// An array of modules names to load, empty means all of them
 			'include':[],
 			// An array of modules names to NOT load, empty means none
 			'exclude':[]
 		};
 
-		//LogBox DSL
+		/* LogBox DSL */
 		logBox={
 			// Define Appenders
 			'appenders':{
@@ -91,31 +102,31 @@ component{
 			'info':[ "coldbox.system" ]
 		};
 
-		//Layout Settings
+		/* Layout Settings */
 		layoutSettings={
 			'defaultLayout':"",
 			'defaultView':""
 		};
 
-		//Interceptor Settings
+		/* Interceptor Settings */
 		interceptorSettings={
 			'customInterceptionPoints':""
 		};
 
-		//Register interceptors as an array, we need order
+		/* Register interceptors as an array, we need order */
 		interceptors=[
 		];
 
+		/* ORM Settings */
 		orm={
 			'injection':{
 				'enabled':true,
-				'include':"",
-				'exclude':""
+				'include':'',
+				'exclude':''
 			}
 		};
 
-		/*
-		// module setting overrides
+		/* module setting overrides
 		moduleSettings={
 			'moduleName':{
 				'settingName':"overrideValue"

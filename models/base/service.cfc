@@ -5,7 +5,7 @@
 * @created: Tuesday, 06/16/2015 07:54:17 AM
 * @modified: Tuesday, 06/16/2015 07:54:17 AM
 */
-component
+component singleton
 	output="false"
 	displayName="models.base.service"
 	accessors="true"

@@ -6,7 +6,7 @@
 * @created: Tuesday, 03/01/2016 08:24:54 AM
 * @modified: Tuesday, 03/01/2016 08:24:54 AM
 */
-component
+component singleton
 	output="false"
 	displayName="models.base.jhed"
 	extends="models.base.dao"
