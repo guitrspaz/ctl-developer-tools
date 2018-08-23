@@ -1,6 +1,6 @@
 /**
 * @name: ModuleConfig
-* @package: modules_app.jsonParser.
+* @package: modules_app.jsonLogReader.
 * @hint: I am the ModuleConfig for the JSON Parser Module
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
@@ -9,7 +9,7 @@
 */
 
 component{
-	this['title']='JSON Log Parser';
+	this['title']='JSON Log Reader';
 	this['author']="Chris Schroeder";
 	this['webURL']="https://chriss-imac.sph.ad.jhsph.edu";
 	this['description']="A module for parsing JSON data";
@@ -21,7 +21,7 @@ component{
 	this['autoMapModels']=true;
 	this['modelNamespace']="json";
 	this['cfmapping']="json";
-	this['aliases']=[ "jsonLogReader" ];
+	this['aliases']=[];
 	this['parseParentSettings']=true;
 	//this['dependencies']=[ "JavaLoader", "CFCouchbase" ];
 
@@ -93,7 +93,7 @@ component{
 
     /* On module init */
     function onLoad(){
-		log.info( this.title&' > '&SerializeJSON(this) );
+		//log.info( this.title&' > '&SerializeJSON(this) );
 	}
 
 	/* On module shutdown */

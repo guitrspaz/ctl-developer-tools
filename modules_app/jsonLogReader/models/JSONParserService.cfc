@@ -1,6 +1,6 @@
 /**
 * @name: JSONParserService
-* @package: modules_app.jsonParser.models.
+* @package: modules_app.jsonLogReader.models.
 * @hint: I am the service component for the JSON Parser Module
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
@@ -18,11 +18,11 @@ component
 	/**
 	 * @name:		JSONParserService.init
 	 * @hint:		I create an instance of this service
-	 * @returns:	modules_app.jsonParser.models.JSONParserService
+	 * @returns:	modules_app.jsonLogReader.models.JSONParserService
 	 * @date:		Thursday, 08/23/2018 07:48:48 AM
 	 * @author: 	Chris Schroeder (schroeder@jhu.edu)
 	 */
-	public modules_app.jsonParser.models.JSONParserService function init(){
+	public modules_app.jsonLogReader.models.JSONParserService function init(){
 		super.configure(argumentCollection=arguments);
 		return this;
 	}

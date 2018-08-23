@@ -1,6 +1,6 @@
 /**
 * @name: ModuleConfig
-* @package: modules_app.jsonParser.
+* @package: modules_app.jsonLogReader.
 * @hint: I am the ModuleConfig for the JSON Parser Module
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
@@ -93,7 +93,7 @@ component{
 
     /* On module init */
     function onLoad(){
-		log.info( this.title&' > '&SerializeJSON(this) );
+		//log.info( this.title&' > '&SerializeJSON(this) );
 	}
 
 	/* On module shutdown */
