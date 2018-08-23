@@ -33,11 +33,17 @@
 				    <span class="icon-bar"></span>
 				    <span class="icon-bar"></span>
 				</button>
-				<!---Branding --->
-				<a class="navbar-brand" href="#event.buildLink('')#"><strong>Home</strong></a>
-				<a class="navbar-brand" href="#event.buildLink('json')#"><strong>Log Reader</strong></a>
-				<a class="navbar-brand" href="#event.buildLink('testing')#"><strong>Test Browser</strong></a>
-				<a class="navbar-brand" href="#event.buildLink('Dumper')#"><strong>Dumper</strong></a>
+				<div class="navbar-brand">
+					<a href="##" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</a>
+					<ul id="tools-submenu" class="dropdown-menu">
+						<li><a href="#event.buildLink('')#"><strong>Home</strong></a></li>
+						<li><a href="#event.buildLink('json')#"><strong>Log Reader</strong></a></li>
+						<li><a href="#event.buildLink('testing')#"><strong>Test Browser</strong></a></li>
+						<li><a href="#event.buildLink('Dumper')#"><strong>Event Dumper</strong></a></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
