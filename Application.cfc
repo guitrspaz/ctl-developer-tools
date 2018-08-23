@@ -77,9 +77,9 @@ component{
 				'exception':arguments.exception,
 				'stackTrace':getStackTrace()
 			},
-			'caller':'application.onError() > '
+			'caller':this.name&'.onError() > '
 		};
-		WriteLog(errorStruct.caller & ' > ' & SerializeJSON(errorStruct.attrs),"error","yes",application.name&".ErrorLog");
+		WriteLog(errorStruct.caller & SerializeJSON(errorStruct.attrs),"error","yes",this.name&".ErrorLog");
 		return application.cbBootstrap.onException( argumentCollection=arguments );
 	}
 

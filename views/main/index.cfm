@@ -42,9 +42,11 @@
 			<cfelse>
 				<ul class="list-group">
 					<cfloop collection="#getSetting("Modules")#" item="thisModule">
-						<li class="list-group-item">
-							<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
-						</li>
+						<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint))>
+							<li class="list-group-item">
+								<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
+							</li>
+						</cfif>
 					</cfloop>
 				</ul>
 			</cfif>
@@ -129,6 +131,7 @@
 			    <li class="list-group-item"><code>/lib</code>: Where Jar files can be integrated</li>
 				<li class="list-group-item"><code>/models</code>: Your model layer</li>
 				<li class="list-group-item"><code>/modules</code>: Your application modules</li>
+				<li class="list-group-item"><code>/modules_app</code>: Your custom modules</li>
 				<li class="list-group-item"><code>/tests</code>: Your BDD testing harness (Just DO IT!!)</li>
 				<li class="list-group-item"><code>/views</code>: Your application views</li>
 				<li class="list-group-item"><code>/views/_layouts</code>:Your application skin layouts</li>

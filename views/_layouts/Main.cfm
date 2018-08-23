@@ -35,6 +35,9 @@
 				</button>
 				<!---Branding --->
 				<a class="navbar-brand" href="#event.buildLink('')#"><strong>Home</strong></a>
+				<a class="navbar-brand" href="#event.buildLink('json')#"><strong>Log Reader</strong></a>
+				<a class="navbar-brand" href="#event.buildLink('testing')#"><strong>Test Browser</strong></a>
+				<a class="navbar-brand" href="#event.buildLink('Dumper')#"><strong>Dumper</strong></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
