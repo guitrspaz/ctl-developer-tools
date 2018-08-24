@@ -41,7 +41,7 @@
 						<li><a href="#event.buildLink('')#"><strong>Home</strong></a></li>
 						<li><a href="#event.buildLink('json')#"><strong>Log Reader</strong></a></li>
 						<li><a href="#event.buildLink('testing')#"><strong>Test Browser</strong></a></li>
-						<li><a href="#event.buildLink('Dumper')#"><strong>Event Dumper</strong></a></li>
+						<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
 					</ul>
 				</div>
 			</div>

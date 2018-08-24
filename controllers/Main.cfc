@@ -21,6 +21,21 @@ component extends="coldbox.system.EventHandler"{
 		event.setView("main/index");
 	}
 
+	function dump(event,rc,prc){
+		prc['sectionTitle']='Data Dump';
+		prc['configuration']=controller.getConfigSettings();
+		prc['serviceProps']={
+			'dsn':prc.configuration.dsn.name,
+			'debugMode':prc.configuration.debugMode,
+			'defaultLog':prc.configuration.defaultLog,
+			'moduleVersion':prc.configuration.appVersion
+		};
+		prc['service']=getInstance(name='service',initArguments=prc.serviceProps);
+		prc['dao']=getInstance(name='dao',initArguments=prc.serviceProps);
+		prc['event']=event.getCollection();
+		event.setView("main/dump");
+	}
+
 	/************************************** IMPLICIT ACTIONS *********************************************/
 
 	function onAppInit(event,rc,prc){
