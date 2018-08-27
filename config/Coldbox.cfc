@@ -128,6 +128,23 @@ component{
 			}
 		};
 
+		/* DocBox */
+		docbox=new docbox.DocBox(properties={
+			'projectTitle':"CoursePlus",
+			'outputDir':ExpandPath( '/docs' )
+		});
+
+		docbox.generate(
+			source=[{
+				'dir':ExpandPath('/core'),
+				'mapping':'core'
+			},{
+				'dir':ExpandPath('/com'),
+				'mapping':'com'
+			}],
+			mapping="docs"
+		);
+
 		/* module setting overrides
 		moduleSettings={
 			'moduleName':{
