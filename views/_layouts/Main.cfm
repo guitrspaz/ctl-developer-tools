@@ -58,7 +58,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="##" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="glyphicon glyphicon-info-sign"></i> About <b class="caret"></b>
+							<i class="glyphicon glyphicon-info-sign"></i> Framework <b class="caret"></b>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
 							<li><a href="#event.buildLink('main')#"><strong>Application Properties</a></strong></li>
