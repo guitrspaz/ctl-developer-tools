@@ -40,7 +40,7 @@ component{
 
 		/* layout settings */
 		layoutSettings={
-			'defaultLayout':""
+			'defaultLayout':"Testing.cfm"
 		};
 
 		// Module Conventions
