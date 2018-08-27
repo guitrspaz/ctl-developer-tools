@@ -1,1 +1,3 @@
-<iframe src="/docs" class="container-fluid doc-frame"></iframe>
+<div class="embed-responsive">
+	<iframe src="/docs" class="embed-responsive-item"></iframe>
+</div>
