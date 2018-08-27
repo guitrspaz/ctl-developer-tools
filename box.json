@@ -26,12 +26,14 @@
         "coldbox":"coldbox",
         "testbox":"testbox",
         "wirebox":"wirebox",
-        "cborm":"modules/cborm"
+        "cborm":"modules/cborm",
+        "docbox":"docbox"
     },
     "dependencies":{
         "coldbox":"^5.0.0",
         "wirebox":"^5.1.4+741",
-        "cborm":"^1.4.0+79"
+        "cborm":"^1.4.0+79",
+        "docbox":"^2.2.1+27"
     },
     "scripts":{}
 }
