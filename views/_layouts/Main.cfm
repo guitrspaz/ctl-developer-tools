@@ -48,7 +48,7 @@
 					<ul id="tools-submenu" class="dropdown-menu">
 						<li><a href="#event.buildLink('main')#"><strong>Home</strong></a></li>
 						<li><a href="#event.buildLink('')#"><strong>Log Reader</strong></a></li>
-						<li><a href="/docs"><strong>API Docs</strong></a></li>
+						<li><a href="#event.getHTMLBaseURL()#docs"><strong>API Docs</strong></a></li>
 						<li><a href="#event.buildLink('testing')#"><strong>Test Browser</strong></a></li>
 						<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
 					</ul>
