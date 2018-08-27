@@ -1,4 +1,5 @@
 <cfscript>
+	WriteDump(var=prc);abort;
 	/* module javascripts */
 	prc['scripts']=[
 		prc.moduleBase&'/views/_includes/js/testbox.js'
