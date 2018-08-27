@@ -1,7 +1,7 @@
 /**
 * @name: ModuleConfig
-* @package: modules_app.jsonLogReader.
-* @hint: I am the ModuleConfig for the JSON Parser Module
+* @package: modules_app.cpTesting.
+* @hint: I am the ModuleConfig for the Testing module
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
 * @created: Thursday, 08/23/2018 07:48:48 AM
@@ -11,7 +11,7 @@
 component{
 	this['title']='Testing Browser';
 	this['author']="Chris Schroeder";
-	this['webURL']="https://chriss-imac.sph.ad.jhsph.edu";
+	this['webURL']="";
 	this['description']="A module for testing CoursePlus code";
 	this['version']="0.0.1";
 	this['viewParentLookup']=true;// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
