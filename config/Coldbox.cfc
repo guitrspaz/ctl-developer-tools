@@ -23,7 +23,7 @@ component{
 			'handlersIndexAutoReload':true,
 
 			//Implicit Events
-			'defaultEvent':"Main.index",
+			'defaultEvent':"jsonLogReader:LogReader.index",
 			'requestStartHandler':"Main.onRequestStart",
 			'requestEndHandler':"",
 			'applicationStartHandler':"Main.onAppInit",
@@ -63,7 +63,9 @@ component{
 		    'dsn':{
 		        'name':"DE_MyCourses",
 		        'type':'SQL'
-		    }
+		    },
+		    'SSLRequired':true,
+		    'SSLPattern':'.*'
 		};
 
 		/**

@@ -1,0 +1,31 @@
+div#pageHeader{
+	margin-bottom:60px;
+}
+div#pageFooter{
+	margin-top:60px;
+}
+
+.ml-form,.ml-cfdump-table { margin:20px auto; position:relative; width:80%; }
+.ml-cfdump-table .cfdump_struct, .ml-cfdump-table .cfdump_array{
+	display:table;
+	position:relative;
+	width:100%;
+}
+.ml-cfdump-table tr { position:relative; width:100%; }
+.ml-cfdump-table td {
+	overflow-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.ml-search-found {
+	display:inline-block;
+	background-color:#FF0;
+	opacity:0.40;
+}
+.ml-cfdump-table td.struct,.ml-cfdump-table td.array { width:12%; position:relative; }
+.ml-cfdump-table td:not(.struct):not(.array) { width:88%; position:relative; }

@@ -11,7 +11,7 @@
 component{
 	this['title']='JSON Log Reader';
 	this['author']="Chris Schroeder";
-	this['webURL']="https://chriss-imac.sph.ad.jhsph.edu";
+	this['webURL']="";
 	this['description']="A module for parsing JSON data";
 	this['version']="0.0.1";
 	this['viewParentLookup']=true;// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
@@ -35,12 +35,13 @@ component{
 			'display':"core",
 			'moduleVersion':this.version,
 			'debugMode':false,
-			'defaultLog':'moduleLog.'&this.modelNamespace
+			'defaultLog':'moduleLog.'&this.modelNamespace,
+			'moduleBase':moduleMapping
 		};
 
 		/* layout settings */
 		layoutSettings={
-			'defaultLayout':""
+			'defaultLayout':'LogReader.cfm'
 		};
 
 		// Module Conventions
@@ -52,17 +53,6 @@ component{
 			'modelsLocation':"models"
 		};
 
-		/* datasources
-			datasources={
-				'dsn'={
-					'name'="dbname",
-					'dbType'="SQL",
-					'username'="root",
-					'password'="root"
-				}
-			};
-		*/
-
 		/* SES Routes */
 		routes=[
 			// Module Entry Point
@@ -70,23 +60,6 @@ component{
 			// Convention Route
 			{ 'pattern':"/:handler/:action?" }
 		];
-
-		/* Interceptor Config
-			interceptorSettings={
-				customInterceptionPoints="onModuleError"
-			};
-		*/
-
-		/* Interceptors
-			interceptors=[{
-				'name':"modulesecurity",
-				'class':moduleMapping&'.interceptors.security',
-				'properties':{
-					'URLMatch':'/api-docs',
-					'loginURL':'/api-docs/login'
-				}
-			}];
-		*/
     }
 
 	/************************************** IMPLICIT ACTIONS *********************************************/

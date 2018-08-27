@@ -10,7 +10,7 @@
 		"express": "latest",
 		"jquery": "^3.3.1",
 		"modernizr": "latest",
-		"normalize": "latest"
+		"requirejs": "latest"
 	},
 	"repository": {
 		"type": "git",

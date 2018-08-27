@@ -9,16 +9,24 @@
 	<!---Base URL --->
 	<base href="#event.getHTMLBaseURL()#" />
 	<!---css --->
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-	<link href="views/_includes/css/application-custom.css" rel="stylesheet">
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="views/_includes/css/application-custom.css" rel="stylesheet" type="text/css" />
+	<cfif structKeyExists(prc,'css') AND isValid('array',prc.css)>
+		<cfloop from="1" to="#ArrayLen(prc.css)#" index="c">
+			<link href="#prc.css[c]#" rel="stylesheet" type="text/css" />
+		</cfloop>
+	</cfif>
 	<!---js --->
-	<!---
-	<script type="text/javascript" src="#application.base#node_modules/requirejs/require.js"></script>
-	--->
-	<script type="text/javascript" src="node_modules/normalize/lib/normalize.js"></script>
+	<script type="text/javascript" src="node_modules/requirejs/require.js"></script>
+	<!--- <script type="text/javascript" src="node_modules/normalize/lib/normalize.js"></script> --->
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="views/_includes/js/application-custom.js"></script>
+	<cfif structKeyExists(prc,'scripts') AND isValid('array',prc.scripts)>
+		<cfloop from="1" to="#ArrayLen(prc.scripts)#" index="s">
+			<script src="#prc.scripts[s]#" type="text/javascript"></script>
+		</cfloop>
+	</cfif>
 </head>
 <body data-spy="scroll">
 	<!---Top NavBar --->
@@ -38,8 +46,8 @@
 						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 					</a>
 					<ul id="tools-submenu" class="dropdown-menu">
-						<li><a href="#event.buildLink('')#"><strong>Home</strong></a></li>
-						<li><a href="#event.buildLink('json')#"><strong>Log Reader</strong></a></li>
+						<li><a href="#event.buildLink('main')#"><strong>Home</strong></a></li>
+						<li><a href="#event.buildLink('')#"><strong>Log Reader</strong></a></li>
 						<li><a href="#event.buildLink('testing')#"><strong>Test Browser</strong></a></li>
 						<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
 					</ul>
@@ -72,20 +80,6 @@
 
 	<!---Container And Views --->
 	<div class="container-fluid">#renderView()#</div>
-
-	<footer class="footer">
-		<p class="pull-right">
-			<a href="##"><i class="glyphicon glyphicon-arrow-up"></i> Back to top</a>
-		</p>
-		<p>
-			<a href="http://www.coldbox.org">ColdBox Platform</a> is a copyright-trademark software by
-			<a href="http://www.ortussolutions.com">Ortus Solutions, Corp</a>
-		</p>
-		<p>
-			Design thanks to
-			<a href="http://getbootstrap.com/">Twitter Boostrap</a>
-		</p>
-	</footer>
 </body>
 </html>
 </cfoutput>
