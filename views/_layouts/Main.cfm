@@ -64,7 +64,7 @@
 							<li><a href="#event.buildLink('main')#">Application Properties</a></li>
 							<li><a href="#event.buildLink('main.dump')#">Event Dumper</a></li>
 							<li class="divider"></li>
-							<li><a href="http://coldbox.ortusbooks.com">Help Manual</a></li>
+							<li><a href="http://coldbox.ortusbooks.com" target="_blank">Help Manual</a></li>
 						</ul>
 					</li>
 				</ul>
