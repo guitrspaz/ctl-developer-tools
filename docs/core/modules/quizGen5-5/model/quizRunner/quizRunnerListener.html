@@ -1,0 +1,906 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>quizRunnerListener</title>
+	<meta name="keywords" content="core.modules.quizGen5-5.model.quizRunner.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/quizGen5-5/model/quizRunner/quizRunnerListener.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.quizGen5-5.model.quizRunner"><span class="label label-success">core.modules.quizGen5-5.model.quizRunner</span></a>
+</div>
+
+<h2>
+
+Class
+quizRunnerListener</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">MachII.framework.BaseComponent
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">MachII.framework.Listener
+        <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.quizGen5-5.model.quizRunner.quizRunnerListener
+</pre>
+
+
+
+<div id="class-hint">
+	<p>Manages taking a quiz and its associated functions.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: quizRunnerListener 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/quizGen5-5/model/quiz/quiz.html" title="class in core.modules.quizGen5-5.model.quiz">quiz</a></code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#assembleQuizForTaking()">assembleQuizForTaking</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a new quiz object which has been customized for display for the requesting student.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#autogradeQuiz()">autogradeQuiz</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manages the processing of quiz responses and announces result events based on quiz type and scoring.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#checkAllowAccessToQuiz()">checkAllowAccessToQuiz</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manager function for checking the setup of a quiz and announcing 'success' and 'lockout' events as needed.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#checkForSessionRebuild()">checkForSessionRebuild</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks to see if the requesting user has been logged out while taking the quiz, and rebuilds the current session.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#configure()">configure</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initialize this listener as part of the Mach-II framework startup.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#convertAbandonedAnswersToFinal()">convertAbandonedAnswersToFinal</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Converts a set of answers from an abandoned attempt at a quiz and makes them the final answers for a quiz from a student.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#getActivityLog()">getActivityLog</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a query with the activity log for a given student and the specified attempt on a quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#getEssayQuestionAndResponse()">getEssayQuestionAndResponse</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a struct which has a question and the student's response to the essay question.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#getQuizStartTime()">getQuizStartTime</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the date/time value of when the user in the event started the specified quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#getStuInfoStruct()">getStuInfoStruct</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a struct of basic information about the requested student.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#getTemporaryEssayResponse()">getTemporaryEssayResponse</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends the text for the given essay response back to the browser.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#processManualEntryOfResponses()">processManualEntryOfResponses</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processes responses to a quiz that a faculty/TA entered on behalf of a student.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#recordEventForLogger()">recordEventForLogger</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs that the customer triggered the specified event while taking the quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#recordSignature()">recordSignature</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temporarily stores a student or faculty signature, if one is required for the exam.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#revertSubmittedAnswersToActiveQuiz()">revertSubmittedAnswersToActiveQuiz</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Takes the set of submitted answers for the given trackerID and changes them back to in-progress temp answers.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#startNewAttemptOnQuiz()">startNewAttemptOnQuiz</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears an existing attempt on a quiz and starts a new attempt for a student.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#storeElapsedTime()">storeElapsedTime</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stores the elapsed time for a student working on a quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#storeTemporaryAnswerExplanation()">storeTemporaryAnswerExplanation</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temporarily stores an answer explanation from a user to a question in a quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizRunnerListener.html#storeTemporaryResponse()">storeTemporaryResponse</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temporarily stores a response from a user to a question in a quiz.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.Listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.Listener</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../MachII/framework/Listener.html#getInvoker()">getInvoker</a>, <a href="../../../../../MachII/framework/Listener.html#init()">init</a>, <a href="../../../../../MachII/framework/Listener.html#setInvoker()">setInvoker</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.BaseComponent"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.BaseComponent</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../MachII/framework/BaseComponent.html#addHTMLHeadElement()">addHTMLHeadElement</a>, <a href="../../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByName()">addHTTPHeaderByName</a>, <a href="../../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByStatus()">addHTTPHeaderByStatus</a>, <a href="../../../../../MachII/framework/BaseComponent.html#announceEvent()">announceEvent</a>, <a href="../../../../../MachII/framework/BaseComponent.html#announceEventInModule()">announceEventInModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#bindValue()">bindValue</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildCurrentUrl()">buildCurrentUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildRouteUrl()">buildRouteUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildUrl()">buildUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildUrlToModule()">buildUrlToModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#deconfigure()">deconfigure</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getAppManager()">getAppManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getAssert()">getAssert</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getComponentNameForLogging()">getComponentNameForLogging</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getLog()">getLog</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameter()">getParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameterNames()">getParameterNames</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameters()">getParameters</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getProperty()">getProperty</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getPropertyManager()">getPropertyManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getProxy()">getProxy</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getUtils()">getUtils</a>, <a href="../../../../../MachII/framework/BaseComponent.html#hasParameter()">hasParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#isParameterDefined()">isParameterDefined</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectEvent()">redirectEvent</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectEventInModule()">redirectEventInModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectRoute()">redirectRoute</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectUrl()">redirectUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#resolveValueByEnvironment()">resolveValueByEnvironment</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setAppManager()">setAppManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setLog()">setLog</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setParameter()">setParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setParameters()">setParameters</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setProperty()">setProperty</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setProxy()">setProxy</a>, <a href="../../../../../MachII/framework/BaseComponent.html#uploadFile()">uploadFile</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="assembleQuizForTaking()"><!-- --></a>
+	<h3>
+		assembleQuizForTaking 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/quizGen5-5/model/quiz/quiz.html" title="class in core.modules.quizGen5-5.model.quiz">quiz</a> <strong>assembleQuizForTaking</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a new quiz object which has been customized for display for the requesting student.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a quizID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="autogradeQuiz()"><!-- --></a>
+	<h3>
+		autogradeQuiz 
+	</h3>
+
+	<kbd>public void <strong>autogradeQuiz</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Manages the processing of quiz responses and announces result events based on quiz type and scoring. Puts the results in to a structure in the current event and announces a success event upon success.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a quizID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="checkAllowAccessToQuiz()"><!-- --></a>
+	<h3>
+		checkAllowAccessToQuiz 
+	</h3>
+
+	<kbd>public void <strong>checkAllowAccessToQuiz</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Manager function for checking the setup of a quiz and announcing 'success' and 'lockout' events as needed.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a quizID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="checkForSessionRebuild()"><!-- --></a>
+	<h3>
+		checkForSessionRebuild 
+	</h3>
+
+	<kbd>private void <strong>checkForSessionRebuild</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Checks to see if the requesting user has been logged out while taking the quiz, and rebuilds the current session.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - The current event, hopefully containing a QG security token we can use to rebuild the session.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>public void <strong>configure</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I initialize this listener as part of the Mach-II framework startup.</p>
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../MachII/framework/BaseComponent.html#configure()">configure</a></code>
+			in class
+			<code>
+				MachII.framework.BaseComponent
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="convertAbandonedAnswersToFinal()"><!-- --></a>
+	<h3>
+		convertAbandonedAnswersToFinal 
+	</h3>
+
+	<kbd>public void <strong>convertAbandonedAnswersToFinal</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Converts a set of answers from an abandoned attempt at a quiz and makes them the final answers for a quiz from a student.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a questions and answer IDs for conversion.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getActivityLog()"><!-- --></a>
+	<h3>
+		getActivityLog 
+	</h3>
+
+	<kbd>public query <strong>getActivityLog</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a query with the activity log for a given student and the specified attempt on a quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a trackerID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEssayQuestionAndResponse()"><!-- --></a>
+	<h3>
+		getEssayQuestionAndResponse 
+	</h3>
+
+	<kbd>public struct <strong>getEssayQuestionAndResponse</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a struct which has a question and the student's response to the essay question.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getQuizStartTime()"><!-- --></a>
+	<h3>
+		getQuizStartTime 
+	</h3>
+
+	<kbd>public date <strong>getQuizStartTime</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns the date/time value of when the user in the event started the specified quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a trackerID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStuInfoStruct()"><!-- --></a>
+	<h3>
+		getStuInfoStruct 
+	</h3>
+
+	<kbd>public struct <strong>getStuInfoStruct</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a struct of basic information about the requested student.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a stuID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTemporaryEssayResponse()"><!-- --></a>
+	<h3>
+		getTemporaryEssayResponse 
+	</h3>
+
+	<kbd>public string <strong>getTemporaryEssayResponse</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Sends the text for the given essay response back to the browser.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processManualEntryOfResponses()"><!-- --></a>
+	<h3>
+		processManualEntryOfResponses 
+	</h3>
+
+	<kbd>public void <strong>processManualEntryOfResponses</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Processes responses to a quiz that a faculty/TA entered on behalf of a student.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a questions and answer IDs for conversion.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recordEventForLogger()"><!-- --></a>
+	<h3>
+		recordEventForLogger 
+	</h3>
+
+	<kbd>public void <strong>recordEventForLogger</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Logs that the customer triggered the specified event while taking the quiz. Pulls the event from the eventTypeForQGLogging event argument.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a trackerID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recordSignature()"><!-- --></a>
+	<h3>
+		recordSignature 
+	</h3>
+
+	<kbd>public string <strong>recordSignature</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Temporarily stores a student or faculty signature, if one is required for the exam.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="revertSubmittedAnswersToActiveQuiz()"><!-- --></a>
+	<h3>
+		revertSubmittedAnswersToActiveQuiz 
+	</h3>
+
+	<kbd>public void <strong>revertSubmittedAnswersToActiveQuiz</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Takes the set of submitted answers for the given trackerID and changes them back to in-progress temp answers.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a trackerID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="startNewAttemptOnQuiz()"><!-- --></a>
+	<h3>
+		startNewAttemptOnQuiz 
+	</h3>
+
+	<kbd>public void <strong>startNewAttemptOnQuiz</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Clears an existing attempt on a quiz and starts a new attempt for a student.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a quizID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="storeElapsedTime()"><!-- --></a>
+	<h3>
+		storeElapsedTime 
+	</h3>
+
+	<kbd>public void <strong>storeElapsedTime</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Stores the elapsed time for a student working on a quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing a trackerID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="storeTemporaryAnswerExplanation()"><!-- --></a>
+	<h3>
+		storeTemporaryAnswerExplanation 
+	</h3>
+
+	<kbd>public string <strong>storeTemporaryAnswerExplanation</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Temporarily stores an answer explanation from a user to a question in a quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="storeTemporaryResponse()"><!-- --></a>
+	<h3>
+		storeTemporaryResponse 
+	</h3>
+
+	<kbd>public string <strong>storeTemporaryResponse</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Temporarily stores a response from a user to a question in a quiz</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

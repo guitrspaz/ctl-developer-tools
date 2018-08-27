@@ -1,0 +1,5531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>assessmentScore</title>
+	<meta name="keywords" content="core.modules.peerEvaluations.model.scoring.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/peerEvaluations/model/scoring/assessmentScore.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.peerEvaluations.model.scoring"><span class="label label-success">core.modules.peerEvaluations.model.scoring</span></a>
+</div>
+
+<h2>
+
+Class
+assessmentScore</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.peerEvaluations.model.scoring.assessmentScore
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: assessmentScore 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: assessmentScore 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I am a peer assessment assessmentScore object 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Chris Schroeder (schroeder@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				package: 
+				: core.modules.peerEvaluations.model.scoring. 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: Monday, 07/02/2018 02:17:01 PM 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: Monday, 07/02/2018 02:17:01 PM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#average()">average</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#clear()">clear</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#completedAssignments()">completedAssignments</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#courseGroupID()">courseGroupID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#courseOfferingID()">courseOfferingID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Date</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#createdOn()">createdOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#feedback()">feedback</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#fromCache()">fromCache</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#hasAssessors()">hasAssessors</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#hasBeenAssessed()">hasBeenAssessed</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#incFeedback()">incFeedback</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#isCached()">isCached</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#isComplete()">isComplete</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#isDeleted()">isDeleted</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#isGraded()">isGraded</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#itemID()">itemID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#median()">median</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#mode()">mode</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Date</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#modifiedOn()">modifiedOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#partiallyAssessed()">partiallyAssessed</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#points()">points</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#populated()">populated</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#progress()">progress</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>--</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#pts()">pts</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#questionCount()">questionCount</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#reloadMetaData()">reloadMetaData</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#requireComments()">requireComments</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#responseCount()">responseCount</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#responseWithTextCount()">responseWithTextCount</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#role()">role</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>owner</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#rubricID()">rubricID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#score()">score</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#scoreExists()">scoreExists</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#scoringMethod()">scoringMethod</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>sumOfMedian</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#stuID()">stuID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#topAnswers()">topAnswers</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#totalAssignments()">totalAssignments</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#totalPossiblePoints()">totalPossiblePoints</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#typeID()">typeID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#userID()">userID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="assessmentScore.html#init()">init</A></strong>([String average=''], [Numeric completedAssignments='0'], [Numeric courseGroupID='0'], [Numeric courseOfferingID='0'], [Date createdOn='[runtime expression]'], [String feedback=''], [Boolean fromCache='false'], [Boolean hasAssessors='false'], [Boolean hasBeenAssessed='false'], [Boolean isCached='false'], [Boolean isComplete='false'], [Boolean isDeleted='false'], [Boolean isGraded='false'], [Numeric itemID='0'], [String median=''], [Date modifiedOn='[runtime expression]'], [Boolean partiallyAssessed='false'], [String points=''], [String pts=''], [Boolean populated='false'], [String progress='--'], [Numeric questionCount='0'], [Numeric responseCount='0'], [Numeric responseWithTextCount='0'], [Boolean requireComments='false'], [String role='owner'], [Numeric rubricID='0'], [String score=''], [Boolean scoreExists='false'], [String scoringMethod='sumOfMedian'], [Numeric stuID='0'], [Array topAnswers='[runtime expression]'], [Numeric totalAssignments='0'], [Numeric totalPossiblePoints='0'], [Numeric typeID='0'], [Numeric userID='0'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETAVERAGE()">GETAVERAGE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETCLEAR()">GETCLEAR</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETCOMPLETEDASSIGNMENTS()">GETCOMPLETEDASSIGNMENTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETCOURSEGROUPID()">GETCOURSEGROUPID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETCOURSEOFFERINGID()">GETCOURSEOFFERINGID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Date</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETCREATEDON()">GETCREATEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETFEEDBACK()">GETFEEDBACK</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETFROMCACHE()">GETFROMCACHE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETHASASSESSORS()">GETHASASSESSORS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETHASBEENASSESSED()">GETHASBEENASSESSED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETINCFEEDBACK()">GETINCFEEDBACK</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETISCACHED()">GETISCACHED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETISCOMPLETE()">GETISCOMPLETE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETISDELETED()">GETISDELETED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETISGRADED()">GETISGRADED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETITEMID()">GETITEMID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETMEDIAN()">GETMEDIAN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETMODE()">GETMODE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Date</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETMODIFIEDON()">GETMODIFIEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETPARTIALLYASSESSED()">GETPARTIALLYASSESSED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETPOINTS()">GETPOINTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETPOPULATED()">GETPOPULATED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETPROGRESS()">GETPROGRESS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETPTS()">GETPTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETQUESTIONCOUNT()">GETQUESTIONCOUNT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETRELOADMETADATA()">GETRELOADMETADATA</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETREQUIRECOMMENTS()">GETREQUIRECOMMENTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETRESPONSECOUNT()">GETRESPONSECOUNT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETRESPONSEWITHTEXTCOUNT()">GETRESPONSEWITHTEXTCOUNT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETROLE()">GETROLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETRUBRICID()">GETRUBRICID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETSCORE()">GETSCORE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETSCOREEXISTS()">GETSCOREEXISTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETSCORINGMETHOD()">GETSCORINGMETHOD</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETSTUID()">GETSTUID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETTOPANSWERS()">GETTOPANSWERS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETTOTALASSIGNMENTS()">GETTOTALASSIGNMENTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETTOTALPOSSIBLEPOINTS()">GETTOTALPOSSIBLEPOINTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETTYPEID()">GETTYPEID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#GETUSERID()">GETUSERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETAVERAGE()">SETAVERAGE</A></strong>(String average)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETCLEAR()">SETCLEAR</A></strong>(Boolean clear)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETCOMPLETEDASSIGNMENTS()">SETCOMPLETEDASSIGNMENTS</A></strong>(Numeric completedAssignments)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETCOURSEGROUPID()">SETCOURSEGROUPID</A></strong>(Numeric courseGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETCOURSEOFFERINGID()">SETCOURSEOFFERINGID</A></strong>(Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETCREATEDON()">SETCREATEDON</A></strong>(Date createdOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETFEEDBACK()">SETFEEDBACK</A></strong>(String feedback)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETFROMCACHE()">SETFROMCACHE</A></strong>(Boolean fromCache)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETHASASSESSORS()">SETHASASSESSORS</A></strong>(Boolean hasAssessors)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETHASBEENASSESSED()">SETHASBEENASSESSED</A></strong>(Boolean hasBeenAssessed)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETINCFEEDBACK()">SETINCFEEDBACK</A></strong>(Boolean incFeedback)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETISCACHED()">SETISCACHED</A></strong>(Boolean isCached)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETISCOMPLETE()">SETISCOMPLETE</A></strong>(Boolean isComplete)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETISDELETED()">SETISDELETED</A></strong>(Boolean isDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETISGRADED()">SETISGRADED</A></strong>(Boolean isGraded)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETITEMID()">SETITEMID</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETMEDIAN()">SETMEDIAN</A></strong>(String median)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETMODE()">SETMODE</A></strong>(String mode)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETMODIFIEDON()">SETMODIFIEDON</A></strong>(Date modifiedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETPARTIALLYASSESSED()">SETPARTIALLYASSESSED</A></strong>(Boolean partiallyAssessed)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETPOINTS()">SETPOINTS</A></strong>(String points)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETPOPULATED()">SETPOPULATED</A></strong>(Boolean populated)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETPROGRESS()">SETPROGRESS</A></strong>(String progress)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETPTS()">SETPTS</A></strong>(String pts)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETQUESTIONCOUNT()">SETQUESTIONCOUNT</A></strong>(Numeric questionCount)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETRELOADMETADATA()">SETRELOADMETADATA</A></strong>(Boolean reloadMetaData)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETREQUIRECOMMENTS()">SETREQUIRECOMMENTS</A></strong>(Boolean requireComments)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETRESPONSECOUNT()">SETRESPONSECOUNT</A></strong>(Numeric responseCount)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETRESPONSEWITHTEXTCOUNT()">SETRESPONSEWITHTEXTCOUNT</A></strong>(Numeric responseWithTextCount)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETROLE()">SETROLE</A></strong>(String role)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETRUBRICID()">SETRUBRICID</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETSCORE()">SETSCORE</A></strong>(String score)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETSCOREEXISTS()">SETSCOREEXISTS</A></strong>(Boolean scoreExists)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETSCORINGMETHOD()">SETSCORINGMETHOD</A></strong>(String scoringMethod)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETSTUID()">SETSTUID</A></strong>(Numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETTOPANSWERS()">SETTOPANSWERS</A></strong>(Array topAnswers)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETTOTALASSIGNMENTS()">SETTOTALASSIGNMENTS</A></strong>(Numeric totalAssignments)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETTOTALPOSSIBLEPOINTS()">SETTOTALPOSSIBLEPOINTS</A></strong>(Numeric totalPossiblePoints)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETTYPEID()">SETTYPEID</A></strong>(Numeric typeID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a></code>
+		</td>
+		<td>
+			<strong><a href="assessmentScore.html#SETUSERID()">SETUSERID</A></strong>(Numeric userID)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/bean.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/bean.html#GETPROTOTYPE()">GETPROTOTYPE</a>, <a href="../../../../../com/distance/base/bean.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/bean.html#SETPROTOTYPE()">SETPROTOTYPE</a>, <a href="../../../../../com/distance/base/bean.html#configure()">configure</a>, <a href="../../../../../com/distance/base/bean.html#dump()">dump</a>, <a href="../../../../../com/distance/base/bean.html#makeFunctName()">makeFunctName</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([String average=''], [Numeric completedAssignments='0'], [Numeric courseGroupID='0'], [Numeric courseOfferingID='0'], [Date createdOn='[runtime expression]'], [String feedback=''], [Boolean fromCache='false'], [Boolean hasAssessors='false'], [Boolean hasBeenAssessed='false'], [Boolean isCached='false'], [Boolean isComplete='false'], [Boolean isDeleted='false'], [Boolean isGraded='false'], [Numeric itemID='0'], [String median=''], [Date modifiedOn='[runtime expression]'], [Boolean partiallyAssessed='false'], [String points=''], [String pts=''], [Boolean populated='false'], [String progress='--'], [Numeric questionCount='0'], [Numeric responseCount='0'], [Numeric responseWithTextCount='0'], [Boolean requireComments='false'], [String role='owner'], [Numeric rubricID='0'], [String score=''], [Boolean scoreExists='false'], [String scoringMethod='sumOfMedian'], [Numeric stuID='0'], [Array topAnswers='[runtime expression]'], [Numeric totalAssignments='0'], [Numeric totalPossiblePoints='0'], [Numeric typeID='0'], [Numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>average</code></dd>
+		
+			<dd><code>completedAssignments</code></dd>
+		
+			<dd><code>courseGroupID</code></dd>
+		
+			<dd><code>courseOfferingID</code></dd>
+		
+			<dd><code>createdOn</code></dd>
+		
+			<dd><code>feedback</code></dd>
+		
+			<dd><code>fromCache</code></dd>
+		
+			<dd><code>hasAssessors</code></dd>
+		
+			<dd><code>hasBeenAssessed</code></dd>
+		
+			<dd><code>isCached</code></dd>
+		
+			<dd><code>isComplete</code></dd>
+		
+			<dd><code>isDeleted</code></dd>
+		
+			<dd><code>isGraded</code></dd>
+		
+			<dd><code>itemID</code></dd>
+		
+			<dd><code>median</code></dd>
+		
+			<dd><code>modifiedOn</code></dd>
+		
+			<dd><code>partiallyAssessed</code></dd>
+		
+			<dd><code>points</code></dd>
+		
+			<dd><code>pts</code></dd>
+		
+			<dd><code>populated</code></dd>
+		
+			<dd><code>progress</code></dd>
+		
+			<dd><code>questionCount</code></dd>
+		
+			<dd><code>responseCount</code></dd>
+		
+			<dd><code>responseWithTextCount</code></dd>
+		
+			<dd><code>requireComments</code></dd>
+		
+			<dd><code>role</code></dd>
+		
+			<dd><code>rubricID</code></dd>
+		
+			<dd><code>score</code></dd>
+		
+			<dd><code>scoreExists</code></dd>
+		
+			<dd><code>scoringMethod</code></dd>
+		
+			<dd><code>stuID</code></dd>
+		
+			<dd><code>topAnswers</code></dd>
+		
+			<dd><code>totalAssignments</code></dd>
+		
+			<dd><code>totalPossiblePoints</code></dd>
+		
+			<dd><code>typeID</code></dd>
+		
+			<dd><code>userID</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="average()"><!-- --></a>
+		<h3>average</h3>
+
+		<kbd>
+			property String <strong>average</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="clear()"><!-- --></a>
+		<h3>clear</h3>
+
+		<kbd>
+			property Boolean <strong>clear</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="completedAssignments()"><!-- --></a>
+		<h3>completedAssignments</h3>
+
+		<kbd>
+			property Numeric <strong>completedAssignments</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseGroupID()"><!-- --></a>
+		<h3>courseGroupID</h3>
+
+		<kbd>
+			property Numeric <strong>courseGroupID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseOfferingID()"><!-- --></a>
+		<h3>courseOfferingID</h3>
+
+		<kbd>
+			property Numeric <strong>courseOfferingID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createdOn()"><!-- --></a>
+		<h3>createdOn</h3>
+
+		<kbd>
+			property Date <strong>createdOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="feedback()"><!-- --></a>
+		<h3>feedback</h3>
+
+		<kbd>
+			property String <strong>feedback</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="fromCache()"><!-- --></a>
+		<h3>fromCache</h3>
+
+		<kbd>
+			property Boolean <strong>fromCache</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="hasAssessors()"><!-- --></a>
+		<h3>hasAssessors</h3>
+
+		<kbd>
+			property Boolean <strong>hasAssessors</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="hasBeenAssessed()"><!-- --></a>
+		<h3>hasBeenAssessed</h3>
+
+		<kbd>
+			property Boolean <strong>hasBeenAssessed</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="incFeedback()"><!-- --></a>
+		<h3>incFeedback</h3>
+
+		<kbd>
+			property Boolean <strong>incFeedback</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isCached()"><!-- --></a>
+		<h3>isCached</h3>
+
+		<kbd>
+			property Boolean <strong>isCached</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isComplete()"><!-- --></a>
+		<h3>isComplete</h3>
+
+		<kbd>
+			property Boolean <strong>isComplete</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDeleted()"><!-- --></a>
+		<h3>isDeleted</h3>
+
+		<kbd>
+			property Boolean <strong>isDeleted</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isGraded()"><!-- --></a>
+		<h3>isGraded</h3>
+
+		<kbd>
+			property Boolean <strong>isGraded</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="itemID()"><!-- --></a>
+		<h3>itemID</h3>
+
+		<kbd>
+			property Numeric <strong>itemID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="median()"><!-- --></a>
+		<h3>median</h3>
+
+		<kbd>
+			property String <strong>median</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="mode()"><!-- --></a>
+		<h3>mode</h3>
+
+		<kbd>
+			property String <strong>mode</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="modifiedOn()"><!-- --></a>
+		<h3>modifiedOn</h3>
+
+		<kbd>
+			property Date <strong>modifiedOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="partiallyAssessed()"><!-- --></a>
+		<h3>partiallyAssessed</h3>
+
+		<kbd>
+			property Boolean <strong>partiallyAssessed</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="points()"><!-- --></a>
+		<h3>points</h3>
+
+		<kbd>
+			property String <strong>points</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="populated()"><!-- --></a>
+		<h3>populated</h3>
+
+		<kbd>
+			property Boolean <strong>populated</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="progress()"><!-- --></a>
+		<h3>progress</h3>
+
+		<kbd>
+			property String <strong>progress</strong> 
+			= [--]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pts()"><!-- --></a>
+		<h3>pts</h3>
+
+		<kbd>
+			property String <strong>pts</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="questionCount()"><!-- --></a>
+		<h3>questionCount</h3>
+
+		<kbd>
+			property Numeric <strong>questionCount</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="reloadMetaData()"><!-- --></a>
+		<h3>reloadMetaData</h3>
+
+		<kbd>
+			property Boolean <strong>reloadMetaData</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="requireComments()"><!-- --></a>
+		<h3>requireComments</h3>
+
+		<kbd>
+			property Boolean <strong>requireComments</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="responseCount()"><!-- --></a>
+		<h3>responseCount</h3>
+
+		<kbd>
+			property Numeric <strong>responseCount</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="responseWithTextCount()"><!-- --></a>
+		<h3>responseWithTextCount</h3>
+
+		<kbd>
+			property Numeric <strong>responseWithTextCount</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="role()"><!-- --></a>
+		<h3>role</h3>
+
+		<kbd>
+			property String <strong>role</strong> 
+			= [owner]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="rubricID()"><!-- --></a>
+		<h3>rubricID</h3>
+
+		<kbd>
+			property Numeric <strong>rubricID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="score()"><!-- --></a>
+		<h3>score</h3>
+
+		<kbd>
+			property String <strong>score</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="scoreExists()"><!-- --></a>
+		<h3>scoreExists</h3>
+
+		<kbd>
+			property Boolean <strong>scoreExists</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="scoringMethod()"><!-- --></a>
+		<h3>scoringMethod</h3>
+
+		<kbd>
+			property String <strong>scoringMethod</strong> 
+			= [sumOfMedian]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="stuID()"><!-- --></a>
+		<h3>stuID</h3>
+
+		<kbd>
+			property Numeric <strong>stuID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="topAnswers()"><!-- --></a>
+		<h3>topAnswers</h3>
+
+		<kbd>
+			property Array <strong>topAnswers</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="totalAssignments()"><!-- --></a>
+		<h3>totalAssignments</h3>
+
+		<kbd>
+			property Numeric <strong>totalAssignments</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="totalPossiblePoints()"><!-- --></a>
+		<h3>totalPossiblePoints</h3>
+
+		<kbd>
+			property Numeric <strong>totalPossiblePoints</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="typeID()"><!-- --></a>
+		<h3>typeID</h3>
+
+		<kbd>
+			property Numeric <strong>typeID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userID()"><!-- --></a>
+		<h3>userID</h3>
+
+		<kbd>
+			property Numeric <strong>userID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETAVERAGE()"><!-- --></a>
+	<h3>
+		GETAVERAGE 
+	</h3>
+
+	<kbd>public String <strong>GETAVERAGE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCLEAR()"><!-- --></a>
+	<h3>
+		GETCLEAR 
+	</h3>
+
+	<kbd>public Boolean <strong>GETCLEAR</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOMPLETEDASSIGNMENTS()"><!-- --></a>
+	<h3>
+		GETCOMPLETEDASSIGNMENTS 
+	</h3>
+
+	<kbd>public Numeric <strong>GETCOMPLETEDASSIGNMENTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOURSEGROUPID()"><!-- --></a>
+	<h3>
+		GETCOURSEGROUPID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETCOURSEGROUPID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		GETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETCOURSEOFFERINGID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDON()"><!-- --></a>
+	<h3>
+		GETCREATEDON 
+	</h3>
+
+	<kbd>public Date <strong>GETCREATEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#GETCREATEDON()">GETCREATEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFEEDBACK()"><!-- --></a>
+	<h3>
+		GETFEEDBACK 
+	</h3>
+
+	<kbd>public String <strong>GETFEEDBACK</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFROMCACHE()"><!-- --></a>
+	<h3>
+		GETFROMCACHE 
+	</h3>
+
+	<kbd>public Boolean <strong>GETFROMCACHE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHASASSESSORS()"><!-- --></a>
+	<h3>
+		GETHASASSESSORS 
+	</h3>
+
+	<kbd>public Boolean <strong>GETHASASSESSORS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHASBEENASSESSED()"><!-- --></a>
+	<h3>
+		GETHASBEENASSESSED 
+	</h3>
+
+	<kbd>public Boolean <strong>GETHASBEENASSESSED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETINCFEEDBACK()"><!-- --></a>
+	<h3>
+		GETINCFEEDBACK 
+	</h3>
+
+	<kbd>public Boolean <strong>GETINCFEEDBACK</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISCACHED()"><!-- --></a>
+	<h3>
+		GETISCACHED 
+	</h3>
+
+	<kbd>public Boolean <strong>GETISCACHED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISCOMPLETE()"><!-- --></a>
+	<h3>
+		GETISCOMPLETE 
+	</h3>
+
+	<kbd>public Boolean <strong>GETISCOMPLETE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISDELETED()"><!-- --></a>
+	<h3>
+		GETISDELETED 
+	</h3>
+
+	<kbd>public Boolean <strong>GETISDELETED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISGRADED()"><!-- --></a>
+	<h3>
+		GETISGRADED 
+	</h3>
+
+	<kbd>public Boolean <strong>GETISGRADED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETITEMID()"><!-- --></a>
+	<h3>
+		GETITEMID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETITEMID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMEDIAN()"><!-- --></a>
+	<h3>
+		GETMEDIAN 
+	</h3>
+
+	<kbd>public String <strong>GETMEDIAN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODE()"><!-- --></a>
+	<h3>
+		GETMODE 
+	</h3>
+
+	<kbd>public String <strong>GETMODE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODIFIEDON()"><!-- --></a>
+	<h3>
+		GETMODIFIEDON 
+	</h3>
+
+	<kbd>public Date <strong>GETMODIFIEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#GETMODIFIEDON()">GETMODIFIEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPARTIALLYASSESSED()"><!-- --></a>
+	<h3>
+		GETPARTIALLYASSESSED 
+	</h3>
+
+	<kbd>public Boolean <strong>GETPARTIALLYASSESSED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPOINTS()"><!-- --></a>
+	<h3>
+		GETPOINTS 
+	</h3>
+
+	<kbd>public String <strong>GETPOINTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPOPULATED()"><!-- --></a>
+	<h3>
+		GETPOPULATED 
+	</h3>
+
+	<kbd>public Boolean <strong>GETPOPULATED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPROGRESS()"><!-- --></a>
+	<h3>
+		GETPROGRESS 
+	</h3>
+
+	<kbd>public String <strong>GETPROGRESS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPTS()"><!-- --></a>
+	<h3>
+		GETPTS 
+	</h3>
+
+	<kbd>public String <strong>GETPTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETQUESTIONCOUNT()"><!-- --></a>
+	<h3>
+		GETQUESTIONCOUNT 
+	</h3>
+
+	<kbd>public Numeric <strong>GETQUESTIONCOUNT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRELOADMETADATA()"><!-- --></a>
+	<h3>
+		GETRELOADMETADATA 
+	</h3>
+
+	<kbd>public Boolean <strong>GETRELOADMETADATA</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETREQUIRECOMMENTS()"><!-- --></a>
+	<h3>
+		GETREQUIRECOMMENTS 
+	</h3>
+
+	<kbd>public Boolean <strong>GETREQUIRECOMMENTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRESPONSECOUNT()"><!-- --></a>
+	<h3>
+		GETRESPONSECOUNT 
+	</h3>
+
+	<kbd>public Numeric <strong>GETRESPONSECOUNT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRESPONSEWITHTEXTCOUNT()"><!-- --></a>
+	<h3>
+		GETRESPONSEWITHTEXTCOUNT 
+	</h3>
+
+	<kbd>public Numeric <strong>GETRESPONSEWITHTEXTCOUNT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETROLE()"><!-- --></a>
+	<h3>
+		GETROLE 
+	</h3>
+
+	<kbd>public String <strong>GETROLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRUBRICID()"><!-- --></a>
+	<h3>
+		GETRUBRICID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETRUBRICID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSCORE()"><!-- --></a>
+	<h3>
+		GETSCORE 
+	</h3>
+
+	<kbd>public String <strong>GETSCORE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSCOREEXISTS()"><!-- --></a>
+	<h3>
+		GETSCOREEXISTS 
+	</h3>
+
+	<kbd>public Boolean <strong>GETSCOREEXISTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSCORINGMETHOD()"><!-- --></a>
+	<h3>
+		GETSCORINGMETHOD 
+	</h3>
+
+	<kbd>public String <strong>GETSCORINGMETHOD</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSTUID()"><!-- --></a>
+	<h3>
+		GETSTUID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETSTUID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTOPANSWERS()"><!-- --></a>
+	<h3>
+		GETTOPANSWERS 
+	</h3>
+
+	<kbd>public Array <strong>GETTOPANSWERS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTOTALASSIGNMENTS()"><!-- --></a>
+	<h3>
+		GETTOTALASSIGNMENTS 
+	</h3>
+
+	<kbd>public Numeric <strong>GETTOTALASSIGNMENTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTOTALPOSSIBLEPOINTS()"><!-- --></a>
+	<h3>
+		GETTOTALPOSSIBLEPOINTS 
+	</h3>
+
+	<kbd>public Numeric <strong>GETTOTALPOSSIBLEPOINTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTYPEID()"><!-- --></a>
+	<h3>
+		GETTYPEID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETTYPEID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERID()"><!-- --></a>
+	<h3>
+		GETUSERID 
+	</h3>
+
+	<kbd>public Numeric <strong>GETUSERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETAVERAGE()"><!-- --></a>
+	<h3>
+		SETAVERAGE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETAVERAGE</strong>(String average)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>average</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCLEAR()"><!-- --></a>
+	<h3>
+		SETCLEAR 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETCLEAR</strong>(Boolean clear)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>clear</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOMPLETEDASSIGNMENTS()"><!-- --></a>
+	<h3>
+		SETCOMPLETEDASSIGNMENTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETCOMPLETEDASSIGNMENTS</strong>(Numeric completedAssignments)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>completedAssignments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOURSEGROUPID()"><!-- --></a>
+	<h3>
+		SETCOURSEGROUPID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETCOURSEGROUPID</strong>(Numeric courseGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		SETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETCOURSEOFFERINGID</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDON()"><!-- --></a>
+	<h3>
+		SETCREATEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETCREATEDON</strong>(Date createdOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#SETCREATEDON()">SETCREATEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFEEDBACK()"><!-- --></a>
+	<h3>
+		SETFEEDBACK 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETFEEDBACK</strong>(String feedback)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>feedback</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFROMCACHE()"><!-- --></a>
+	<h3>
+		SETFROMCACHE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETFROMCACHE</strong>(Boolean fromCache)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fromCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHASASSESSORS()"><!-- --></a>
+	<h3>
+		SETHASASSESSORS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETHASASSESSORS</strong>(Boolean hasAssessors)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>hasAssessors</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHASBEENASSESSED()"><!-- --></a>
+	<h3>
+		SETHASBEENASSESSED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETHASBEENASSESSED</strong>(Boolean hasBeenAssessed)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>hasBeenAssessed</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETINCFEEDBACK()"><!-- --></a>
+	<h3>
+		SETINCFEEDBACK 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETINCFEEDBACK</strong>(Boolean incFeedback)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>incFeedback</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISCACHED()"><!-- --></a>
+	<h3>
+		SETISCACHED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETISCACHED</strong>(Boolean isCached)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isCached</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISCOMPLETE()"><!-- --></a>
+	<h3>
+		SETISCOMPLETE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETISCOMPLETE</strong>(Boolean isComplete)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isComplete</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISDELETED()"><!-- --></a>
+	<h3>
+		SETISDELETED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETISDELETED</strong>(Boolean isDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISGRADED()"><!-- --></a>
+	<h3>
+		SETISGRADED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETISGRADED</strong>(Boolean isGraded)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isGraded</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETITEMID()"><!-- --></a>
+	<h3>
+		SETITEMID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETITEMID</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMEDIAN()"><!-- --></a>
+	<h3>
+		SETMEDIAN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETMEDIAN</strong>(String median)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>median</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODE()"><!-- --></a>
+	<h3>
+		SETMODE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETMODE</strong>(String mode)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mode</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODIFIEDON()"><!-- --></a>
+	<h3>
+		SETMODIFIEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETMODIFIEDON</strong>(Date modifiedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#SETMODIFIEDON()">SETMODIFIEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modifiedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPARTIALLYASSESSED()"><!-- --></a>
+	<h3>
+		SETPARTIALLYASSESSED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETPARTIALLYASSESSED</strong>(Boolean partiallyAssessed)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>partiallyAssessed</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPOINTS()"><!-- --></a>
+	<h3>
+		SETPOINTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETPOINTS</strong>(String points)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>points</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPOPULATED()"><!-- --></a>
+	<h3>
+		SETPOPULATED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETPOPULATED</strong>(Boolean populated)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>populated</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPROGRESS()"><!-- --></a>
+	<h3>
+		SETPROGRESS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETPROGRESS</strong>(String progress)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>progress</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPTS()"><!-- --></a>
+	<h3>
+		SETPTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETPTS</strong>(String pts)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pts</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETQUESTIONCOUNT()"><!-- --></a>
+	<h3>
+		SETQUESTIONCOUNT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETQUESTIONCOUNT</strong>(Numeric questionCount)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRELOADMETADATA()"><!-- --></a>
+	<h3>
+		SETRELOADMETADATA 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETRELOADMETADATA</strong>(Boolean reloadMetaData)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>reloadMetaData</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETREQUIRECOMMENTS()"><!-- --></a>
+	<h3>
+		SETREQUIRECOMMENTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETREQUIRECOMMENTS</strong>(Boolean requireComments)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>requireComments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRESPONSECOUNT()"><!-- --></a>
+	<h3>
+		SETRESPONSECOUNT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETRESPONSECOUNT</strong>(Numeric responseCount)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>responseCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRESPONSEWITHTEXTCOUNT()"><!-- --></a>
+	<h3>
+		SETRESPONSEWITHTEXTCOUNT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETRESPONSEWITHTEXTCOUNT</strong>(Numeric responseWithTextCount)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>responseWithTextCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETROLE()"><!-- --></a>
+	<h3>
+		SETROLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETROLE</strong>(String role)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>role</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRUBRICID()"><!-- --></a>
+	<h3>
+		SETRUBRICID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETRUBRICID</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSCORE()"><!-- --></a>
+	<h3>
+		SETSCORE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETSCORE</strong>(String score)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>score</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSCOREEXISTS()"><!-- --></a>
+	<h3>
+		SETSCOREEXISTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETSCOREEXISTS</strong>(Boolean scoreExists)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>scoreExists</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSCORINGMETHOD()"><!-- --></a>
+	<h3>
+		SETSCORINGMETHOD 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETSCORINGMETHOD</strong>(String scoringMethod)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>scoringMethod</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSTUID()"><!-- --></a>
+	<h3>
+		SETSTUID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETSTUID</strong>(Numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTOPANSWERS()"><!-- --></a>
+	<h3>
+		SETTOPANSWERS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETTOPANSWERS</strong>(Array topAnswers)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>topAnswers</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTOTALASSIGNMENTS()"><!-- --></a>
+	<h3>
+		SETTOTALASSIGNMENTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETTOTALASSIGNMENTS</strong>(Numeric totalAssignments)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>totalAssignments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTOTALPOSSIBLEPOINTS()"><!-- --></a>
+	<h3>
+		SETTOTALPOSSIBLEPOINTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETTOTALPOSSIBLEPOINTS</strong>(Numeric totalPossiblePoints)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>totalPossiblePoints</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTYPEID()"><!-- --></a>
+	<h3>
+		SETTYPEID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETTYPEID</strong>(Numeric typeID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>typeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERID()"><!-- --></a>
+	<h3>
+		SETUSERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/scoring/assessmentScore.html" title="class in core.modules.peerEvaluations.model.scoring">assessmentScore</a> <strong>SETUSERID</strong>(Numeric userID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

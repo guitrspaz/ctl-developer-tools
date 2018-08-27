@@ -1,0 +1,1803 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>bbsCategory</title>
+	<meta name="keywords" content="core.modules.bbs.model.bbsCategory.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/bbs/model/bbsCategory/bbsCategory.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.bbs.model.bbsCategory"><span class="label label-success">core.modules.bbs.model.bbsCategory</span></a>
+</div>
+
+<h2>
+
+Class
+bbsCategory</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/bbs/model/tools/bean.html" title="class in core.modules.bbs.model.tools">core.modules.bbs.model.tools.bean</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.bbs.model.bbsCategory.bbsCategory
+</pre>
+
+
+
+<div id="class-hint">
+	<p>A bean which models the bbsCategory form.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: bbsCategory 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="bbsCategory.html#init()">init</A></strong>([numeric bbsCategoryID='0'], [numeric bbsCategoryGroupID='0'], [numeric bbsID='0'], [string bbsCategoryName=''], [string bbsCategoryDescription=''], [numeric sortOrder='0'], [numeric createdBy='0'], [string createdOn=''], [boolean IsDeleted='0'], [numeric courseGroupID='0'], [string courseGroupName='0'], [boolean isHiddenUntilPost='0'], [boolean isEditDeleteLimited='0'], [boolean isLimitTopicCreation='0'], [boolean isHiddenFromAccess='0'], [boolean useMakeReadOnlyOn='0'], [any makeReadOnlyOn=''], [array bbsTopics='[runtime expression]'], [numeric access='0'], [any accessibleBy='[runtime expression]'], [string customAccessList=''], [numeric status='0'], [any linkedToPages='[runtime expression]'], [numeric pbPageID='0'], [boolean isGradable='0'], [any availStart=''])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getAccess()">getAccess</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getAccessibleBy()">getAccessibleBy</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getAvailStart()">getAvailStart</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getBbsCategoryDescription()">getBbsCategoryDescription</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getBbsCategoryGroupID()">getBbsCategoryGroupID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getBbsCategoryID()">getBbsCategoryID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getBbsCategoryName()">getBbsCategoryName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getBbsID()">getBbsID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getCourseGroupID()">getCourseGroupID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getCourseGroupName()">getCourseGroupName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getCreatedBy()">getCreatedBy</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getCreatedOn()">getCreatedOn</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getCustomAccessList()">getCustomAccessList</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getIsDeleted()">getIsDeleted</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getIsEditDeleteLimited()">getIsEditDeleteLimited</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getIsGradable()">getIsGradable</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getIsHiddenFromAccess()">getIsHiddenFromAccess</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getIsHiddenUntilPost()">getIsHiddenUntilPost</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getIsLimitTopicCreation()">getIsLimitTopicCreation</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getMakeReadOnlyOn()">getMakeReadOnlyOn</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getPBPageID()">getPBPageID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getSortOrder()">getSortOrder</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getStatus()">getStatus</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getUseMakeReadOnlyOn()">getUseMakeReadOnlyOn</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getbbsTopics()">getbbsTopics</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#getlinkedToPages()">getlinkedToPages</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setAccess()">setAccess</A></strong>(numeric Access)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setAccessibleBy()">setAccessibleBy</A></strong>(any accessibleBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setAvailStart()">setAvailStart</A></strong>(any availStart)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setBbsCategoryDescription()">setBbsCategoryDescription</A></strong>(string bbsCategoryDescription)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setBbsCategoryGroupID()">setBbsCategoryGroupID</A></strong>(numeric bbsCategoryGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setBbsCategoryID()">setBbsCategoryID</A></strong>(numeric bbsCategoryID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setBbsCategoryName()">setBbsCategoryName</A></strong>(string bbsCategoryName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setBbsID()">setBbsID</A></strong>(numeric bbsID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setCourseGroupID()">setCourseGroupID</A></strong>(numeric courseGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setCourseGroupName()">setCourseGroupName</A></strong>(string courseGroupName='')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setCreatedBy()">setCreatedBy</A></strong>(numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setCreatedOn()">setCreatedOn</A></strong>(string createdOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setCustomAccessList()">setCustomAccessList</A></strong>(string customAccessList='')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setIsDeleted()">setIsDeleted</A></strong>(boolean IsDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setIsEditDeleteLimited()">setIsEditDeleteLimited</A></strong>(boolean isEditDeleteLimited)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setIsGradable()">setIsGradable</A></strong>(boolean isGradable)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setIsHiddenFromAccess()">setIsHiddenFromAccess</A></strong>(boolean isHiddenFromAccess)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setIsHiddenUntilPost()">setIsHiddenUntilPost</A></strong>(boolean isHiddenUntilPost)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setIsLimitTopicCreation()">setIsLimitTopicCreation</A></strong>(boolean isLimitTopicCreation)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setMakeReadOnlyOn()">setMakeReadOnlyOn</A></strong>(any makeReadOnlyOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setPBPageID()">setPBPageID</A></strong>(numeric pbPageID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setSortOrder()">setSortOrder</A></strong>(numeric sortOrder)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setStatus()">setStatus</A></strong>(numeric status)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setUseMakeReadOnlyOn()">setUseMakeReadOnlyOn</A></strong>(boolean UseMakeReadOnlyOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setbbsTopics()">setbbsTopics</A></strong>(any bbsTopics)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsCategory.html#setlinkedToPages()">setlinkedToPages</A></strong>(any linkedToPages='')
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.bbs.model.tools.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/bbs/model/tools/bean.html" title="class in core.modules.bbs.model.tools">core.modules.bbs.model.tools.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/bbs/model/tools/bean.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../core/modules/bbs/model/tools/bean.html#getSnapShot_old()">getSnapShot_old</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric bbsCategoryID='0'], [numeric bbsCategoryGroupID='0'], [numeric bbsID='0'], [string bbsCategoryName=''], [string bbsCategoryDescription=''], [numeric sortOrder='0'], [numeric createdBy='0'], [string createdOn=''], [boolean IsDeleted='0'], [numeric courseGroupID='0'], [string courseGroupName='0'], [boolean isHiddenUntilPost='0'], [boolean isEditDeleteLimited='0'], [boolean isLimitTopicCreation='0'], [boolean isHiddenFromAccess='0'], [boolean useMakeReadOnlyOn='0'], [any makeReadOnlyOn=''], [array bbsTopics='[runtime expression]'], [numeric access='0'], [any accessibleBy='[runtime expression]'], [string customAccessList=''], [numeric status='0'], [any linkedToPages='[runtime expression]'], [numeric pbPageID='0'], [boolean isGradable='0'], [any availStart=''])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>bbsCategoryID</code></dd>
+		
+			<dd><code>bbsCategoryGroupID</code></dd>
+		
+			<dd><code>bbsID</code></dd>
+		
+			<dd><code>bbsCategoryName</code></dd>
+		
+			<dd><code>bbsCategoryDescription</code></dd>
+		
+			<dd><code>sortOrder</code></dd>
+		
+			<dd><code>createdBy</code></dd>
+		
+			<dd><code>createdOn</code></dd>
+		
+			<dd><code>IsDeleted</code></dd>
+		
+			<dd><code>courseGroupID</code></dd>
+		
+			<dd><code>courseGroupName</code></dd>
+		
+			<dd><code>isHiddenUntilPost</code></dd>
+		
+			<dd><code>isEditDeleteLimited</code></dd>
+		
+			<dd><code>isLimitTopicCreation</code></dd>
+		
+			<dd><code>isHiddenFromAccess</code></dd>
+		
+			<dd><code>useMakeReadOnlyOn</code></dd>
+		
+			<dd><code>makeReadOnlyOn</code></dd>
+		
+			<dd><code>bbsTopics</code></dd>
+		
+			<dd><code>access</code></dd>
+		
+			<dd><code>accessibleBy</code></dd>
+		
+			<dd><code>customAccessList</code></dd>
+		
+			<dd><code>status</code></dd>
+		
+			<dd><code>linkedToPages</code></dd>
+		
+			<dd><code>pbPageID</code></dd>
+		
+			<dd><code>isGradable</code></dd>
+		
+			<dd><code>availStart</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="getAccess()"><!-- --></a>
+	<h3>
+		getAccess 
+	</h3>
+
+	<kbd>public numeric <strong>getAccess</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAccessibleBy()"><!-- --></a>
+	<h3>
+		getAccessibleBy 
+	</h3>
+
+	<kbd>public any <strong>getAccessibleBy</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAvailStart()"><!-- --></a>
+	<h3>
+		getAvailStart 
+	</h3>
+
+	<kbd>public any <strong>getAvailStart</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsCategoryDescription()"><!-- --></a>
+	<h3>
+		getBbsCategoryDescription 
+	</h3>
+
+	<kbd>public string <strong>getBbsCategoryDescription</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsCategoryGroupID()"><!-- --></a>
+	<h3>
+		getBbsCategoryGroupID 
+	</h3>
+
+	<kbd>public numeric <strong>getBbsCategoryGroupID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsCategoryID()"><!-- --></a>
+	<h3>
+		getBbsCategoryID 
+	</h3>
+
+	<kbd>public numeric <strong>getBbsCategoryID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsCategoryName()"><!-- --></a>
+	<h3>
+		getBbsCategoryName 
+	</h3>
+
+	<kbd>public string <strong>getBbsCategoryName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsID()"><!-- --></a>
+	<h3>
+		getBbsID 
+	</h3>
+
+	<kbd>public numeric <strong>getBbsID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseGroupID()"><!-- --></a>
+	<h3>
+		getCourseGroupID 
+	</h3>
+
+	<kbd>public numeric <strong>getCourseGroupID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseGroupName()"><!-- --></a>
+	<h3>
+		getCourseGroupName 
+	</h3>
+
+	<kbd>public string <strong>getCourseGroupName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCreatedBy()"><!-- --></a>
+	<h3>
+		getCreatedBy 
+	</h3>
+
+	<kbd>public numeric <strong>getCreatedBy</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCreatedOn()"><!-- --></a>
+	<h3>
+		getCreatedOn 
+	</h3>
+
+	<kbd>public string <strong>getCreatedOn</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCustomAccessList()"><!-- --></a>
+	<h3>
+		getCustomAccessList 
+	</h3>
+
+	<kbd>public string <strong>getCustomAccessList</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsDeleted()"><!-- --></a>
+	<h3>
+		getIsDeleted 
+	</h3>
+
+	<kbd>public boolean <strong>getIsDeleted</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsEditDeleteLimited()"><!-- --></a>
+	<h3>
+		getIsEditDeleteLimited 
+	</h3>
+
+	<kbd>public boolean <strong>getIsEditDeleteLimited</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsGradable()"><!-- --></a>
+	<h3>
+		getIsGradable 
+	</h3>
+
+	<kbd>public boolean <strong>getIsGradable</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsHiddenFromAccess()"><!-- --></a>
+	<h3>
+		getIsHiddenFromAccess 
+	</h3>
+
+	<kbd>public boolean <strong>getIsHiddenFromAccess</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsHiddenUntilPost()"><!-- --></a>
+	<h3>
+		getIsHiddenUntilPost 
+	</h3>
+
+	<kbd>public boolean <strong>getIsHiddenUntilPost</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsLimitTopicCreation()"><!-- --></a>
+	<h3>
+		getIsLimitTopicCreation 
+	</h3>
+
+	<kbd>public boolean <strong>getIsLimitTopicCreation</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMakeReadOnlyOn()"><!-- --></a>
+	<h3>
+		getMakeReadOnlyOn 
+	</h3>
+
+	<kbd>public any <strong>getMakeReadOnlyOn</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPBPageID()"><!-- --></a>
+	<h3>
+		getPBPageID 
+	</h3>
+
+	<kbd>public numeric <strong>getPBPageID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSortOrder()"><!-- --></a>
+	<h3>
+		getSortOrder 
+	</h3>
+
+	<kbd>public numeric <strong>getSortOrder</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStatus()"><!-- --></a>
+	<h3>
+		getStatus 
+	</h3>
+
+	<kbd>public numeric <strong>getStatus</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getUseMakeReadOnlyOn()"><!-- --></a>
+	<h3>
+		getUseMakeReadOnlyOn 
+	</h3>
+
+	<kbd>public boolean <strong>getUseMakeReadOnlyOn</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getbbsTopics()"><!-- --></a>
+	<h3>
+		getbbsTopics 
+	</h3>
+
+	<kbd>public any <strong>getbbsTopics</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getlinkedToPages()"><!-- --></a>
+	<h3>
+		getlinkedToPages 
+	</h3>
+
+	<kbd>public any <strong>getlinkedToPages</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAccess()"><!-- --></a>
+	<h3>
+		setAccess 
+	</h3>
+
+	<kbd>public void <strong>setAccess</strong>(numeric Access)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Access</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAccessibleBy()"><!-- --></a>
+	<h3>
+		setAccessibleBy 
+	</h3>
+
+	<kbd>public void <strong>setAccessibleBy</strong>(any accessibleBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>accessibleBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAvailStart()"><!-- --></a>
+	<h3>
+		setAvailStart 
+	</h3>
+
+	<kbd>public void <strong>setAvailStart</strong>(any availStart)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>availStart</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsCategoryDescription()"><!-- --></a>
+	<h3>
+		setBbsCategoryDescription 
+	</h3>
+
+	<kbd>public void <strong>setBbsCategoryDescription</strong>(string bbsCategoryDescription)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsCategoryDescription</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsCategoryGroupID()"><!-- --></a>
+	<h3>
+		setBbsCategoryGroupID 
+	</h3>
+
+	<kbd>public void <strong>setBbsCategoryGroupID</strong>(numeric bbsCategoryGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsCategoryGroupID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsCategoryID()"><!-- --></a>
+	<h3>
+		setBbsCategoryID 
+	</h3>
+
+	<kbd>public void <strong>setBbsCategoryID</strong>(numeric bbsCategoryID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsCategoryID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsCategoryName()"><!-- --></a>
+	<h3>
+		setBbsCategoryName 
+	</h3>
+
+	<kbd>public void <strong>setBbsCategoryName</strong>(string bbsCategoryName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsCategoryName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsID()"><!-- --></a>
+	<h3>
+		setBbsID 
+	</h3>
+
+	<kbd>public void <strong>setBbsID</strong>(numeric bbsID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseGroupID()"><!-- --></a>
+	<h3>
+		setCourseGroupID 
+	</h3>
+
+	<kbd>public void <strong>setCourseGroupID</strong>(numeric courseGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseGroupName()"><!-- --></a>
+	<h3>
+		setCourseGroupName 
+	</h3>
+
+	<kbd>public void <strong>setCourseGroupName</strong>(string courseGroupName='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCreatedBy()"><!-- --></a>
+	<h3>
+		setCreatedBy 
+	</h3>
+
+	<kbd>public void <strong>setCreatedBy</strong>(numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCreatedOn()"><!-- --></a>
+	<h3>
+		setCreatedOn 
+	</h3>
+
+	<kbd>public void <strong>setCreatedOn</strong>(string createdOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCustomAccessList()"><!-- --></a>
+	<h3>
+		setCustomAccessList 
+	</h3>
+
+	<kbd>public void <strong>setCustomAccessList</strong>(string customAccessList='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>customAccessList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsDeleted()"><!-- --></a>
+	<h3>
+		setIsDeleted 
+	</h3>
+
+	<kbd>public void <strong>setIsDeleted</strong>(boolean IsDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>IsDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsEditDeleteLimited()"><!-- --></a>
+	<h3>
+		setIsEditDeleteLimited 
+	</h3>
+
+	<kbd>public void <strong>setIsEditDeleteLimited</strong>(boolean isEditDeleteLimited)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isEditDeleteLimited</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsGradable()"><!-- --></a>
+	<h3>
+		setIsGradable 
+	</h3>
+
+	<kbd>public void <strong>setIsGradable</strong>(boolean isGradable)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isGradable</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsHiddenFromAccess()"><!-- --></a>
+	<h3>
+		setIsHiddenFromAccess 
+	</h3>
+
+	<kbd>public void <strong>setIsHiddenFromAccess</strong>(boolean isHiddenFromAccess)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isHiddenFromAccess</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsHiddenUntilPost()"><!-- --></a>
+	<h3>
+		setIsHiddenUntilPost 
+	</h3>
+
+	<kbd>public void <strong>setIsHiddenUntilPost</strong>(boolean isHiddenUntilPost)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isHiddenUntilPost</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsLimitTopicCreation()"><!-- --></a>
+	<h3>
+		setIsLimitTopicCreation 
+	</h3>
+
+	<kbd>public void <strong>setIsLimitTopicCreation</strong>(boolean isLimitTopicCreation)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isLimitTopicCreation</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setMakeReadOnlyOn()"><!-- --></a>
+	<h3>
+		setMakeReadOnlyOn 
+	</h3>
+
+	<kbd>public void <strong>setMakeReadOnlyOn</strong>(any makeReadOnlyOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>makeReadOnlyOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPBPageID()"><!-- --></a>
+	<h3>
+		setPBPageID 
+	</h3>
+
+	<kbd>public void <strong>setPBPageID</strong>(numeric pbPageID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbPageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSortOrder()"><!-- --></a>
+	<h3>
+		setSortOrder 
+	</h3>
+
+	<kbd>public void <strong>setSortOrder</strong>(numeric sortOrder)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sortOrder</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setStatus()"><!-- --></a>
+	<h3>
+		setStatus 
+	</h3>
+
+	<kbd>public void <strong>setStatus</strong>(numeric status)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>status</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setUseMakeReadOnlyOn()"><!-- --></a>
+	<h3>
+		setUseMakeReadOnlyOn 
+	</h3>
+
+	<kbd>public void <strong>setUseMakeReadOnlyOn</strong>(boolean UseMakeReadOnlyOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>UseMakeReadOnlyOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setbbsTopics()"><!-- --></a>
+	<h3>
+		setbbsTopics 
+	</h3>
+
+	<kbd>public void <strong>setbbsTopics</strong>(any bbsTopics)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsTopics</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setlinkedToPages()"><!-- --></a>
+	<h3>
+		setlinkedToPages 
+	</h3>
+
+	<kbd>public void <strong>setlinkedToPages</strong>(any linkedToPages='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>linkedToPages</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

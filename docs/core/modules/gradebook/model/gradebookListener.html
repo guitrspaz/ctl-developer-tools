@@ -1,0 +1,2900 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>gradebookListener</title>
+	<meta name="keywords" content="core.modules.gradebook.model.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?core/modules/gradebook/model/gradebookListener.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.gradebook.model"><span class="label label-success">core.modules.gradebook.model</span></a>
+</div>
+
+<h2>
+
+Class
+gradebookListener</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">MachII.framework.BaseComponent
+      <img src="../../../../resources/inherit.gif" alt="extended by ">MachII.framework.Listener
+        <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">com.distance.base.listener</a>
+          <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../core/modules/gradebook/model/tools/listener.html" title="class in core.modules.gradebook.model.tools">core.modules.gradebook.model.tools.listener</a>
+            <img src="../../../../resources/inherit.gif" alt="extended by ">core.modules.gradebook.model.gradebookListener
+</pre>
+
+
+
+<div id="class-hint">
+	<p>gradebookListener</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: gradebookListener 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#gradebookManager()">gradebookManager</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#GETGRADEBOOKMANAGER()">GETGRADEBOOKMANAGER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/gradebook/model/gradebookListener.html" title="class in core.modules.gradebook.model">gradebookListener</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#SETGRADEBOOKMANAGER()">SETGRADEBOOKMANAGER</A></strong>(any gradebookManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#announceProperAdminEvent()">announceProperAdminEvent</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#callFeedbacks()">callFeedbacks</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#checkGradeExistance()">checkGradeExistance</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#clearReportCaches()">clearReportCaches</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#configure()">configure</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initialize this listener as part of the Mach-II framework startup.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#createLetterGradeChart()">createLetterGradeChart</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#deleteCategory()">deleteCategory</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#deleteCustomGradepoints()">deleteCustomGradepoints</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#deleteFeedback()">deleteFeedback</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#deleteGrade()">deleteGrade</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#deleteGradedItem()">deleteGradedItem</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#displayIndividualStudentGrades()">displayIndividualStudentGrades</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#displaySentEmailMessage()">displaySentEmailMessage</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#generateReportData()">generateReportData</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getAllProspectiveSources()">getAllProspectiveSources</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getCategory()">getCategory</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getCategoryJSON()">getCategoryJSON</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getFeedbackAndFinalGradeByGroupID()">getFeedbackAndFinalGradeByGroupID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getFeedbackAndFinalGradeByStudentID()">getFeedbackAndFinalGradeByStudentID</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getFeedbackAndItemSetupDetails()">getFeedbackAndItemSetupDetails</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getFinalGradesForRoster()">getFinalGradesForRoster</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getGradedItem()">getGradedItem</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getGradedItemSetup()">getGradedItemSetup</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getGradedItems()">getGradedItems</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getGradedItemsAsStruct()">getGradedItemsAsStruct</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getGroupsForGrading()">getGroupsForGrading</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getGroupsForOffering()">getGroupsForOffering</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getLetterGradeSetup()">getLetterGradeSetup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getLetterGradeSetupForGradedItem()">getLetterGradeSetupForGradedItem</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getProspectiveItemsByGradedItem()">getProspectiveItemsByGradedItem</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getSetup()">getSetup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getSetupJSon()">getSetupJSon</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getSetupWithNumbersTaken()">getSetupWithNumbersTaken</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getStatisticsAsArray()">getStatisticsAsArray</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getStatisticsAsStruct()">getStatisticsAsStruct</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getStudentForGradingWithGraduationStatus()">getStudentForGradingWithGraduationStatus</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getStudentGradeHistoryBySetupID()">getStudentGradeHistoryBySetupID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getStudentsForGrading()">getStudentsForGrading</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getTextFeedback()">getTextFeedback</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#getfilefeedbackDownload()">getfilefeedbackDownload</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#giveStudentsFullCredit()">giveStudentsFullCredit</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#hasAnyGradesforThisOffering()">hasAnyGradesforThisOffering</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#isAnyGradedItemGraded()">isAnyGradedItemGraded</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#isFinalGradeReady()">isFinalGradeReady</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#makeSlug()">makeSlug</A></strong>([string title=''], [string divider='-'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#manageGradedItem()">manageGradedItem</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#prepareFinalGrade()">prepareFinalGrade</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#prepareFinalGradePrintout()">prepareFinalGradePrintout</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#prepareFinalGradePrintoutInExcel()">prepareFinalGradePrintoutInExcel</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#prepareGradeReportData()">prepareGradeReportData</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#prepareGradeReportDataAsArray()">prepareGradeReportDataAsArray</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#prepareGradeReportDataAsStruct()">prepareGradeReportDataAsStruct</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#rematchUnmatchedGlobalFeedbackFiles()">rematchUnmatchedGlobalFeedbackFiles</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#resetGradeModifiedDate()">resetGradeModifiedDate</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#returnFinalGradeExcelWorkbook()">returnFinalGradeExcelWorkbook</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#saveCategory()">saveCategory</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#saveFileFeedback()">saveFileFeedback</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#saveGrade()">saveGrade</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#saveGroupGrade()">saveGroupGrade</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#saveLetterGradeConversion()">saveLetterGradeConversion</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#sendFeedbackAll()">sendFeedbackAll</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#sendFeedbackAllByGroup()">sendFeedbackAllByGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#sendFeedbackAllByStudent()">sendFeedbackAllByStudent</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#sendFeedbackByGroup()">sendFeedbackByGroup</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#sendFeedbackIndividual()">sendFeedbackIndividual</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#showHideAllGradesByGradedItem()">showHideAllGradesByGradedItem</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateAllGradedItemOrder()">updateAllGradedItemOrder</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateCategoryOrder()">updateCategoryOrder</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateCustomGradePoints()">updateCustomGradePoints</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateDisplayFinalGrade()">updateDisplayFinalGrade</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateDisplayGrade()">updateDisplayGrade</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateGradedItemOrder()">updateGradedItemOrder</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateGradingSystem()">updateGradingSystem</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateItemPercentages()">updateItemPercentages</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#updateTextFeedback()">updateTextFeedback</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebookListener.html#uploadGlobalFileFeedback()">uploadGlobalFileFeedback</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.gradebook.model.tools.listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../core/modules/gradebook/model/tools/listener.html" title="class in core.modules.gradebook.model.tools">core.modules.gradebook.model.tools.listener</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../core/modules/gradebook/model/tools/listener.html#GETGRADETRANSFERORIGINS()">GETGRADETRANSFERORIGINS</a>, <a href="../../../../core/modules/gradebook/model/tools/listener.html#SETGRADETRANSFERORIGINS()">SETGRADETRANSFERORIGINS</a>, <a href="../../../../core/modules/gradebook/model/tools/listener.html#create()">create</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">com.distance.base.listener</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/listener.html#GETAPPFACTORYNAME()">GETAPPFACTORYNAME</a>, <a href="../../../../com/distance/base/listener.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../com/distance/base/listener.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../com/distance/base/listener.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../com/distance/base/listener.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../com/distance/base/listener.html#GETCALLER()">GETCALLER</a>, <a href="../../../../com/distance/base/listener.html#GETCHILD()">GETCHILD</a>, <a href="../../../../com/distance/base/listener.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../com/distance/base/listener.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/listener.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../com/distance/base/listener.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../com/distance/base/listener.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../com/distance/base/listener.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../com/distance/base/listener.html#GETHASH()">GETHASH</a>, <a href="../../../../com/distance/base/listener.html#GETLOADED()">GETLOADED</a>, <a href="../../../../com/distance/base/listener.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../com/distance/base/listener.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../com/distance/base/listener.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../com/distance/base/listener.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../com/distance/base/listener.html#GETSERVICEFACTORY()">GETSERVICEFACTORY</a>, <a href="../../../../com/distance/base/listener.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../com/distance/base/listener.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/listener.html#GETUTILITIESSERVICEPROVIDER()">GETUTILITIESSERVICEPROVIDER</a>, <a href="../../../../com/distance/base/listener.html#QueryToArray()">QueryToArray</a>, <a href="../../../../com/distance/base/listener.html#SETAPPFACTORYNAME()">SETAPPFACTORYNAME</a>, <a href="../../../../com/distance/base/listener.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../com/distance/base/listener.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../com/distance/base/listener.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../com/distance/base/listener.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../com/distance/base/listener.html#SETCALLER()">SETCALLER</a>, <a href="../../../../com/distance/base/listener.html#SETCHILD()">SETCHILD</a>, <a href="../../../../com/distance/base/listener.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../com/distance/base/listener.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/listener.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../com/distance/base/listener.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../com/distance/base/listener.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../com/distance/base/listener.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../com/distance/base/listener.html#SETHASH()">SETHASH</a>, <a href="../../../../com/distance/base/listener.html#SETLOADED()">SETLOADED</a>, <a href="../../../../com/distance/base/listener.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../com/distance/base/listener.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../com/distance/base/listener.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../com/distance/base/listener.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../com/distance/base/listener.html#SETSERVICEFACTORY()">SETSERVICEFACTORY</a>, <a href="../../../../com/distance/base/listener.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../com/distance/base/listener.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/listener.html#SETUTILITIESSERVICEPROVIDER()">SETUTILITIESSERVICEPROVIDER</a>, <a href="../../../../com/distance/base/listener.html#addCacheRegionToGlobalVars()">addCacheRegionToGlobalVars</a>, <a href="../../../../com/distance/base/listener.html#arrayNotation()">arrayNotation</a>, <a href="../../../../com/distance/base/listener.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../com/distance/base/listener.html#clearCaches()">clearCaches</a>, <a href="../../../../com/distance/base/listener.html#configureRegion()">configureRegion</a>, <a href="../../../../com/distance/base/listener.html#createLog()">createLog</a>, <a href="../../../../com/distance/base/listener.html#getDefaultRegion()">getDefaultRegion</a>, <a href="../../../../com/distance/base/listener.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../com/distance/base/listener.html#getSharedRegion()">getSharedRegion</a>, <a href="../../../../com/distance/base/listener.html#getStackTrace()">getStackTrace</a>, <a href="../../../../com/distance/base/listener.html#init()">init</a>, <a href="../../../../com/distance/base/listener.html#logInit()">logInit</a>, <a href="../../../../com/distance/base/listener.html#makeFunctName()">makeFunctName</a>, <a href="../../../../com/distance/base/listener.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../com/distance/base/listener.html#objectToStruct()">objectToStruct</a>, <a href="../../../../com/distance/base/listener.html#paraFormat()">paraFormat</a>, <a href="../../../../com/distance/base/listener.html#processCacheData()">processCacheData</a>, <a href="../../../../com/distance/base/listener.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../com/distance/base/listener.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../com/distance/base/listener.html#stringToAscii()">stringToAscii</a>, <a href="../../../../com/distance/base/listener.html#stripHTML()">stripHTML</a>, <a href="../../../../com/distance/base/listener.html#structToArray()">structToArray</a>, <a href="../../../../com/distance/base/listener.html#wordCount()">wordCount</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.Listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.Listener</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../MachII/framework/Listener.html#getInvoker()">getInvoker</a>, <a href="../../../../MachII/framework/Listener.html#setInvoker()">setInvoker</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.BaseComponent"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.BaseComponent</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../MachII/framework/BaseComponent.html#addHTMLHeadElement()">addHTMLHeadElement</a>, <a href="../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByName()">addHTTPHeaderByName</a>, <a href="../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByStatus()">addHTTPHeaderByStatus</a>, <a href="../../../../MachII/framework/BaseComponent.html#announceEvent()">announceEvent</a>, <a href="../../../../MachII/framework/BaseComponent.html#announceEventInModule()">announceEventInModule</a>, <a href="../../../../MachII/framework/BaseComponent.html#bindValue()">bindValue</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildCurrentUrl()">buildCurrentUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildRouteUrl()">buildRouteUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildUrl()">buildUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildUrlToModule()">buildUrlToModule</a>, <a href="../../../../MachII/framework/BaseComponent.html#deconfigure()">deconfigure</a>, <a href="../../../../MachII/framework/BaseComponent.html#getAppManager()">getAppManager</a>, <a href="../../../../MachII/framework/BaseComponent.html#getAssert()">getAssert</a>, <a href="../../../../MachII/framework/BaseComponent.html#getComponentNameForLogging()">getComponentNameForLogging</a>, <a href="../../../../MachII/framework/BaseComponent.html#getLog()">getLog</a>, <a href="../../../../MachII/framework/BaseComponent.html#getParameter()">getParameter</a>, <a href="../../../../MachII/framework/BaseComponent.html#getParameterNames()">getParameterNames</a>, <a href="../../../../MachII/framework/BaseComponent.html#getParameters()">getParameters</a>, <a href="../../../../MachII/framework/BaseComponent.html#getProperty()">getProperty</a>, <a href="../../../../MachII/framework/BaseComponent.html#getPropertyManager()">getPropertyManager</a>, <a href="../../../../MachII/framework/BaseComponent.html#getProxy()">getProxy</a>, <a href="../../../../MachII/framework/BaseComponent.html#getUtils()">getUtils</a>, <a href="../../../../MachII/framework/BaseComponent.html#hasParameter()">hasParameter</a>, <a href="../../../../MachII/framework/BaseComponent.html#isParameterDefined()">isParameterDefined</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectEvent()">redirectEvent</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectEventInModule()">redirectEventInModule</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectRoute()">redirectRoute</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectUrl()">redirectUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#resolveValueByEnvironment()">resolveValueByEnvironment</a>, <a href="../../../../MachII/framework/BaseComponent.html#setAppManager()">setAppManager</a>, <a href="../../../../MachII/framework/BaseComponent.html#setLog()">setLog</a>, <a href="../../../../MachII/framework/BaseComponent.html#setParameter()">setParameter</a>, <a href="../../../../MachII/framework/BaseComponent.html#setParameters()">setParameters</a>, <a href="../../../../MachII/framework/BaseComponent.html#setProperty()">setProperty</a>, <a href="../../../../MachII/framework/BaseComponent.html#setProxy()">setProxy</a>, <a href="../../../../MachII/framework/BaseComponent.html#uploadFile()">uploadFile</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="gradebookManager()"><!-- --></a>
+		<h3>gradebookManager</h3>
+
+		<kbd>
+			property any <strong>gradebookManager</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETGRADEBOOKMANAGER()"><!-- --></a>
+	<h3>
+		GETGRADEBOOKMANAGER 
+	</h3>
+
+	<kbd>public any <strong>GETGRADEBOOKMANAGER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEBOOKMANAGER()"><!-- --></a>
+	<h3>
+		SETGRADEBOOKMANAGER 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/gradebook/model/gradebookListener.html" title="class in core.modules.gradebook.model">gradebookListener</a> <strong>SETGRADEBOOKMANAGER</strong>(any gradebookManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="announceProperAdminEvent()"><!-- --></a>
+	<h3>
+		announceProperAdminEvent 
+	</h3>
+
+	<kbd>public void <strong>announceProperAdminEvent</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="callFeedbacks()"><!-- --></a>
+	<h3>
+		callFeedbacks 
+	</h3>
+
+	<kbd>public Struct <strong>callFeedbacks</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="checkGradeExistance()"><!-- --></a>
+	<h3>
+		checkGradeExistance 
+	</h3>
+
+	<kbd>public string <strong>checkGradeExistance</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearReportCaches()"><!-- --></a>
+	<h3>
+		clearReportCaches 
+	</h3>
+
+	<kbd>public void <strong>clearReportCaches</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>public void <strong>configure</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I initialize this listener as part of the Mach-II framework startup.</p>
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../core/modules/gradebook/model/tools/listener.html#configure()">configure</a></code>
+			in class
+			<code>
+				<a href="../../../../core/modules/gradebook/model/tools/listener.html" title="class in core.modules.gradebook.model.tools">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createLetterGradeChart()"><!-- --></a>
+	<h3>
+		createLetterGradeChart 
+	</h3>
+
+	<kbd>public Query <strong>createLetterGradeChart</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCategory()"><!-- --></a>
+	<h3>
+		deleteCategory 
+	</h3>
+
+	<kbd>public void <strong>deleteCategory</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCustomGradepoints()"><!-- --></a>
+	<h3>
+		deleteCustomGradepoints 
+	</h3>
+
+	<kbd>public void <strong>deleteCustomGradepoints</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteFeedback()"><!-- --></a>
+	<h3>
+		deleteFeedback 
+	</h3>
+
+	<kbd>public Struct <strong>deleteFeedback</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteGrade()"><!-- --></a>
+	<h3>
+		deleteGrade 
+	</h3>
+
+	<kbd>public Struct <strong>deleteGrade</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteGradedItem()"><!-- --></a>
+	<h3>
+		deleteGradedItem 
+	</h3>
+
+	<kbd>public Struct <strong>deleteGradedItem</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="displayIndividualStudentGrades()"><!-- --></a>
+	<h3>
+		displayIndividualStudentGrades 
+	</h3>
+
+	<kbd>public Struct <strong>displayIndividualStudentGrades</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="displaySentEmailMessage()"><!-- --></a>
+	<h3>
+		displaySentEmailMessage 
+	</h3>
+
+	<kbd>public struct <strong>displaySentEmailMessage</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="generateReportData()"><!-- --></a>
+	<h3>
+		generateReportData 
+	</h3>
+
+	<kbd>public struct <strong>generateReportData</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllProspectiveSources()"><!-- --></a>
+	<h3>
+		getAllProspectiveSources 
+	</h3>
+
+	<kbd>public Struct <strong>getAllProspectiveSources</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCategory()"><!-- --></a>
+	<h3>
+		getCategory 
+	</h3>
+
+	<kbd>public Struct <strong>getCategory</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCategoryJSON()"><!-- --></a>
+	<h3>
+		getCategoryJSON 
+	</h3>
+
+	<kbd>public string <strong>getCategoryJSON</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFeedbackAndFinalGradeByGroupID()"><!-- --></a>
+	<h3>
+		getFeedbackAndFinalGradeByGroupID 
+	</h3>
+
+	<kbd>public Struct <strong>getFeedbackAndFinalGradeByGroupID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFeedbackAndFinalGradeByStudentID()"><!-- --></a>
+	<h3>
+		getFeedbackAndFinalGradeByStudentID 
+	</h3>
+
+	<kbd>public Struct <strong>getFeedbackAndFinalGradeByStudentID</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFeedbackAndItemSetupDetails()"><!-- --></a>
+	<h3>
+		getFeedbackAndItemSetupDetails 
+	</h3>
+
+	<kbd>public Struct <strong>getFeedbackAndItemSetupDetails</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFinalGradesForRoster()"><!-- --></a>
+	<h3>
+		getFinalGradesForRoster 
+	</h3>
+
+	<kbd>public Struct <strong>getFinalGradesForRoster</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradedItem()"><!-- --></a>
+	<h3>
+		getGradedItem 
+	</h3>
+
+	<kbd>public Struct <strong>getGradedItem</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradedItemSetup()"><!-- --></a>
+	<h3>
+		getGradedItemSetup 
+	</h3>
+
+	<kbd>public Any <strong>getGradedItemSetup</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradedItems()"><!-- --></a>
+	<h3>
+		getGradedItems 
+	</h3>
+
+	<kbd>public Array <strong>getGradedItems</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradedItemsAsStruct()"><!-- --></a>
+	<h3>
+		getGradedItemsAsStruct 
+	</h3>
+
+	<kbd>public struct <strong>getGradedItemsAsStruct</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGroupsForGrading()"><!-- --></a>
+	<h3>
+		getGroupsForGrading 
+	</h3>
+
+	<kbd>public Struct <strong>getGroupsForGrading</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGroupsForOffering()"><!-- --></a>
+	<h3>
+		getGroupsForOffering 
+	</h3>
+
+	<kbd>public Struct <strong>getGroupsForOffering</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLetterGradeSetup()"><!-- --></a>
+	<h3>
+		getLetterGradeSetup 
+	</h3>
+
+	<kbd>public Struct <strong>getLetterGradeSetup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLetterGradeSetupForGradedItem()"><!-- --></a>
+	<h3>
+		getLetterGradeSetupForGradedItem 
+	</h3>
+
+	<kbd>public Struct <strong>getLetterGradeSetupForGradedItem</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProspectiveItemsByGradedItem()"><!-- --></a>
+	<h3>
+		getProspectiveItemsByGradedItem 
+	</h3>
+
+	<kbd>public Struct <strong>getProspectiveItemsByGradedItem</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSetup()"><!-- --></a>
+	<h3>
+		getSetup 
+	</h3>
+
+	<kbd>public Struct <strong>getSetup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSetupJSon()"><!-- --></a>
+	<h3>
+		getSetupJSon 
+	</h3>
+
+	<kbd>public Struct <strong>getSetupJSon</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSetupWithNumbersTaken()"><!-- --></a>
+	<h3>
+		getSetupWithNumbersTaken 
+	</h3>
+
+	<kbd>public Struct <strong>getSetupWithNumbersTaken</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStatisticsAsArray()"><!-- --></a>
+	<h3>
+		getStatisticsAsArray 
+	</h3>
+
+	<kbd>public Array <strong>getStatisticsAsArray</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStatisticsAsStruct()"><!-- --></a>
+	<h3>
+		getStatisticsAsStruct 
+	</h3>
+
+	<kbd>public Struct <strong>getStatisticsAsStruct</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentForGradingWithGraduationStatus()"><!-- --></a>
+	<h3>
+		getStudentForGradingWithGraduationStatus 
+	</h3>
+
+	<kbd>public Query <strong>getStudentForGradingWithGraduationStatus</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentGradeHistoryBySetupID()"><!-- --></a>
+	<h3>
+		getStudentGradeHistoryBySetupID 
+	</h3>
+
+	<kbd>public query <strong>getStudentGradeHistoryBySetupID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsForGrading()"><!-- --></a>
+	<h3>
+		getStudentsForGrading 
+	</h3>
+
+	<kbd>public Any <strong>getStudentsForGrading</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTextFeedback()"><!-- --></a>
+	<h3>
+		getTextFeedback 
+	</h3>
+
+	<kbd>public string <strong>getTextFeedback</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getfilefeedbackDownload()"><!-- --></a>
+	<h3>
+		getfilefeedbackDownload 
+	</h3>
+
+	<kbd>public Struct <strong>getfilefeedbackDownload</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="giveStudentsFullCredit()"><!-- --></a>
+	<h3>
+		giveStudentsFullCredit 
+	</h3>
+
+	<kbd>public String <strong>giveStudentsFullCredit</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="hasAnyGradesforThisOffering()"><!-- --></a>
+	<h3>
+		hasAnyGradesforThisOffering 
+	</h3>
+
+	<kbd>public Struct <strong>hasAnyGradesforThisOffering</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isAnyGradedItemGraded()"><!-- --></a>
+	<h3>
+		isAnyGradedItemGraded 
+	</h3>
+
+	<kbd>public Struct <strong>isAnyGradedItemGraded</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isFinalGradeReady()"><!-- --></a>
+	<h3>
+		isFinalGradeReady 
+	</h3>
+
+	<kbd>public Struct <strong>isFinalGradeReady</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeSlug()"><!-- --></a>
+	<h3>
+		makeSlug 
+	</h3>
+
+	<kbd>remote string <strong>makeSlug</strong>([string title=''], [string divider='-'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/listener.html#makeSlug()">makeSlug</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>title</code></dd>
+		
+		<dd><code>divider</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="manageGradedItem()"><!-- --></a>
+	<h3>
+		manageGradedItem 
+	</h3>
+
+	<kbd>public String <strong>manageGradedItem</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareFinalGrade()"><!-- --></a>
+	<h3>
+		prepareFinalGrade 
+	</h3>
+
+	<kbd>public xml <strong>prepareFinalGrade</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareFinalGradePrintout()"><!-- --></a>
+	<h3>
+		prepareFinalGradePrintout 
+	</h3>
+
+	<kbd>public struct <strong>prepareFinalGradePrintout</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareFinalGradePrintoutInExcel()"><!-- --></a>
+	<h3>
+		prepareFinalGradePrintoutInExcel 
+	</h3>
+
+	<kbd>public struct <strong>prepareFinalGradePrintoutInExcel</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareGradeReportData()"><!-- --></a>
+	<h3>
+		prepareGradeReportData 
+	</h3>
+
+	<kbd>public Query <strong>prepareGradeReportData</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareGradeReportDataAsArray()"><!-- --></a>
+	<h3>
+		prepareGradeReportDataAsArray 
+	</h3>
+
+	<kbd>public array <strong>prepareGradeReportDataAsArray</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareGradeReportDataAsStruct()"><!-- --></a>
+	<h3>
+		prepareGradeReportDataAsStruct 
+	</h3>
+
+	<kbd>public struct <strong>prepareGradeReportDataAsStruct</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="rematchUnmatchedGlobalFeedbackFiles()"><!-- --></a>
+	<h3>
+		rematchUnmatchedGlobalFeedbackFiles 
+	</h3>
+
+	<kbd>public any <strong>rematchUnmatchedGlobalFeedbackFiles</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="resetGradeModifiedDate()"><!-- --></a>
+	<h3>
+		resetGradeModifiedDate 
+	</h3>
+
+	<kbd>public Struct <strong>resetGradeModifiedDate</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnFinalGradeExcelWorkbook()"><!-- --></a>
+	<h3>
+		returnFinalGradeExcelWorkbook 
+	</h3>
+
+	<kbd>public string <strong>returnFinalGradeExcelWorkbook</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveCategory()"><!-- --></a>
+	<h3>
+		saveCategory 
+	</h3>
+
+	<kbd>public String <strong>saveCategory</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveFileFeedback()"><!-- --></a>
+	<h3>
+		saveFileFeedback 
+	</h3>
+
+	<kbd>public String <strong>saveFileFeedback</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveGrade()"><!-- --></a>
+	<h3>
+		saveGrade 
+	</h3>
+
+	<kbd>public Struct <strong>saveGrade</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveGroupGrade()"><!-- --></a>
+	<h3>
+		saveGroupGrade 
+	</h3>
+
+	<kbd>public Struct <strong>saveGroupGrade</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveLetterGradeConversion()"><!-- --></a>
+	<h3>
+		saveLetterGradeConversion 
+	</h3>
+
+	<kbd>public string <strong>saveLetterGradeConversion</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendFeedbackAll()"><!-- --></a>
+	<h3>
+		sendFeedbackAll 
+	</h3>
+
+	<kbd>public Struct <strong>sendFeedbackAll</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendFeedbackAllByGroup()"><!-- --></a>
+	<h3>
+		sendFeedbackAllByGroup 
+	</h3>
+
+	<kbd>public Struct <strong>sendFeedbackAllByGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendFeedbackAllByStudent()"><!-- --></a>
+	<h3>
+		sendFeedbackAllByStudent 
+	</h3>
+
+	<kbd>public Struct <strong>sendFeedbackAllByStudent</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendFeedbackByGroup()"><!-- --></a>
+	<h3>
+		sendFeedbackByGroup 
+	</h3>
+
+	<kbd>public Struct <strong>sendFeedbackByGroup</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendFeedbackIndividual()"><!-- --></a>
+	<h3>
+		sendFeedbackIndividual 
+	</h3>
+
+	<kbd>public Struct <strong>sendFeedbackIndividual</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="showHideAllGradesByGradedItem()"><!-- --></a>
+	<h3>
+		showHideAllGradesByGradedItem 
+	</h3>
+
+	<kbd>public Struct <strong>showHideAllGradesByGradedItem</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateAllGradedItemOrder()"><!-- --></a>
+	<h3>
+		updateAllGradedItemOrder 
+	</h3>
+
+	<kbd>public string <strong>updateAllGradedItemOrder</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateCategoryOrder()"><!-- --></a>
+	<h3>
+		updateCategoryOrder 
+	</h3>
+
+	<kbd>public string <strong>updateCategoryOrder</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateCustomGradePoints()"><!-- --></a>
+	<h3>
+		updateCustomGradePoints 
+	</h3>
+
+	<kbd>public void <strong>updateCustomGradePoints</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateDisplayFinalGrade()"><!-- --></a>
+	<h3>
+		updateDisplayFinalGrade 
+	</h3>
+
+	<kbd>public xml <strong>updateDisplayFinalGrade</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateDisplayGrade()"><!-- --></a>
+	<h3>
+		updateDisplayGrade 
+	</h3>
+
+	<kbd>public Struct <strong>updateDisplayGrade</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateGradedItemOrder()"><!-- --></a>
+	<h3>
+		updateGradedItemOrder 
+	</h3>
+
+	<kbd>public xml <strong>updateGradedItemOrder</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateGradingSystem()"><!-- --></a>
+	<h3>
+		updateGradingSystem 
+	</h3>
+
+	<kbd>public xml <strong>updateGradingSystem</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateItemPercentages()"><!-- --></a>
+	<h3>
+		updateItemPercentages 
+	</h3>
+
+	<kbd>public xml <strong>updateItemPercentages</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateTextFeedback()"><!-- --></a>
+	<h3>
+		updateTextFeedback 
+	</h3>
+
+	<kbd>public String <strong>updateTextFeedback</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="uploadGlobalFileFeedback()"><!-- --></a>
+	<h3>
+		uploadGlobalFileFeedback 
+	</h3>
+
+	<kbd>public Struct <strong>uploadGlobalFileFeedback</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

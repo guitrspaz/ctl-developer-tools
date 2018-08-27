@@ -1,0 +1,2028 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>memberGateway</title>
+	<meta name="keywords" content="core.modules.portfolio.model.member.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/portfolio/model/member/memberGateway.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.portfolio.model.member"><span class="label label-success">core.modules.portfolio.model.member</span></a>
+</div>
+
+<h2>
+
+Class
+memberGateway</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html" title="class in core.modules.portfolio.model.tools">core.modules.portfolio.model.tools.gatewayTools</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.portfolio.model.member.memberGateway
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I'm the gateway object that queries about multiple records from advisor and cohort tables.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: memberGateway 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="memberGateway.html#init()">init</A></strong>(string dsn)
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#addAdminToProgram()">addAdminToProgram</A></strong>(numeric ProgramID, numeric StuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#addListOfAdminsToProgram()">addListOfAdminsToProgram</A></strong>(numeric ProgramID, string AdminList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#addListOfStudentsToCohort()">addListOfStudentsToCohort</A></strong>(numeric CohortID, numeric ProgramID, numeric createdBy, string StuList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#addStudentForAdvisorID()">addStudentForAdvisorID</A></strong>(numeric advisorID='0', numeric portfolioUserID='0', numeric programID='0', string advisorRoleIDList='')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#addStudentToCohort()">addStudentToCohort</A></strong>(numeric cohortID, numeric ProgramID, numeric StuID, numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#deleteAdminFromProgram()">deleteAdminFromProgram</A></strong>(numeric ProgramID, numeric StuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#deleteAllAdminsFromProgram()">deleteAllAdminsFromProgram</A></strong>(numeric ProgramID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#deleteAllStudentsFromCohort()">deleteAllStudentsFromCohort</A></strong>(numeric cohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#deleteStudentForAdvisorID()">deleteStudentForAdvisorID</A></strong>(numeric advisorID='0', numeric portfolioUserID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#deleteStudentFromCohort()">deleteStudentFromCohort</A></strong>(numeric cohortID, numeric StuID, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#deleteStudentsForAdvisorID()">deleteStudentsForAdvisorID</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#editListOfAdminsInProgram()">editListOfAdminsInProgram</A></strong>(numeric ProgramID, string AdminList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#editListOfStudentsInCohort()">editListOfStudentsInCohort</A></strong>(numeric CohortID, numeric ProgramID, string StuList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#findUserByJHEDID()">findUserByJHEDID</A></strong>(string jhedID, numeric maxLevel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAdminsForProgramID()">getAdminsForProgramID</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAdvisorInfo()">getAdvisorInfo</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAdvisorRoleIDForRoleName()">getAdvisorRoleIDForRoleName</A></strong>(string advisorRole='')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAdvisorsForTouchpointTemplateAndStuID()">getAdvisorsForTouchpointTemplateAndStuID</A></strong>(numeric touchpointTemplateID='0', numeric StuID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdminsAndAdvisorsForExclusionList()">getAllAdminsAndAdvisorsForExclusionList</A></strong>(numeric programID='0', numeric cohortID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdvisorRoles()">getAllAdvisorRoles</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdvisorRolesForTouchpointTemplateID()">getAllAdvisorRolesForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdvisors()">getAllAdvisors</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdvisorsByPortfolioUserID()">getAllAdvisorsByPortfolioUserID</A></strong>(numeric portfolioUserID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdvisorsForProgramID()">getAllAdvisorsForProgramID</A></strong>(numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllAdvisorsForTouchpointTemplateID()">getAllAdvisorsForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllCohortsByProgramID()">getAllCohortsByProgramID</A></strong>(numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllPortfolioIDsByAdvisorID()">getAllPortfolioIDsByAdvisorID</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllPortfoliosForCohortID()">getAllPortfoliosForCohortID</A></strong>(numeric CohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllProgramNamesAndAdmins()">getAllProgramNamesAndAdmins</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllStudentsForAdvisorID()">getAllStudentsForAdvisorID</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getAllStudentsForCohortID()">getAllStudentsForCohortID</A></strong>(numeric CohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getCohortByStuID()">getCohortByStuID</A></strong>(numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getInfoForStuAndProgramID()">getInfoForStuAndProgramID</A></strong>(numeric programID='0', numeric stuID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getPortfolioForStuAndCohortID()">getPortfolioForStuAndCohortID</A></strong>(numeric StuID, numeric CohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getPortfolioInfoForCohort()">getPortfolioInfoForCohort</A></strong>(string portfolioList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getProgramsForAdminID()">getProgramsForAdminID</A></strong>(numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getStuInfoForCohort()">getStuInfoForCohort</A></strong>(string stuList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getStudentsByProgramID()">getStudentsByProgramID</A></strong>(numeric programID='0', [string alphaFilter='all'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns a list of students in a program based on its cohort.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#getStudentsWithNoAdvisorForProgramID()">getStudentsWithNoAdvisorForProgramID</A></strong>(numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#isDuplicateAdvisor()">isDuplicateAdvisor</A></strong>(numeric advisorUserID='0', numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#isDuplicateCohortStudent()">isDuplicateCohortStudent</A></strong>(numeric stuID='0', numeric cohortID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#isUserAnAdmin()">isUserAnAdmin</A></strong>(numeric stuID, numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#listMinus()">listMinus</A></strong>(any listOne='', any listTwo='')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#processAdvisorExcelFile()">processAdvisorExcelFile</A></strong>(numeric programID, string fileName, string fileExt)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#processCohortExcelFile()">processCohortExcelFile</A></strong>(numeric cohortID, numeric programID, string fileName, string fileExt, numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#searchByName()">searchByName</A></strong>(string searchString, numeric maxLevel, boolean excludeAdmins)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Searches for a matching student or faculty member name and basic information based on the passed search string.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#searchByNameAndProgram()">searchByNameAndProgram</A></strong>(string searchString, numeric programID='0', numeric minLevel, numeric maxLevel)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Searches for a matching student name and basic information based on the passed search string.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#searchPortfoliosByNameAndCohort()">searchPortfoliosByNameAndCohort</A></strong>(string searchString, numeric cohortID='0', numeric minLevel, numeric maxLevel)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Searches for portfolio by a matching student name and basic information based on the passed search string.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#searchPortfoliosByNameAndProgram()">searchPortfoliosByNameAndProgram</A></strong>(string searchString, numeric programID='0', numeric minLevel, numeric maxLevel)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Searches for portfolio by a matching student name and basic information based on the passed search string.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#setAdvisorDAO()">setAdvisorDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/advisorDAO.html" title="class in core.modules.portfolio.model.member">advisorDAO</a> AdvisorDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: AdvisorDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#setportfolioDAO()">setportfolioDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioDAO</a> portfolioDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: PortfolioDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="memberGateway.html#settouchpointGateway()">settouchpointGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchpointGateway.html" title="class in core.modules.portfolio.model.touchpoint">touchpointGateway</a> touchpointGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: touchpointGateway.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.portfolio.model.tools.gatewayTools"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html" title="class in core.modules.portfolio.model.tools">core.modules.portfolio.model.tools.gatewayTools</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html#returnFileNameFriendlyString()">returnFileNameFriendlyString</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="addAdminToProgram()"><!-- --></a>
+	<h3>
+		addAdminToProgram 
+	</h3>
+
+	<kbd>public boolean <strong>addAdminToProgram</strong>(numeric ProgramID, numeric StuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>StuID</code> - Student ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addListOfAdminsToProgram()"><!-- --></a>
+	<h3>
+		addListOfAdminsToProgram 
+	</h3>
+
+	<kbd>public boolean <strong>addListOfAdminsToProgram</strong>(numeric ProgramID, string AdminList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>AdminList</code> - List of Admin IDs</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addListOfStudentsToCohort()"><!-- --></a>
+	<h3>
+		addListOfStudentsToCohort 
+	</h3>
+
+	<kbd>public boolean <strong>addListOfStudentsToCohort</strong>(numeric CohortID, numeric ProgramID, numeric createdBy, string StuList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CohortID</code> - Cohort ID</dd>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>createdBy</code> - Admin ID</dd>
+		
+		<dd><code>StuList</code> - List of Student IDs</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStudentForAdvisorID()"><!-- --></a>
+	<h3>
+		addStudentForAdvisorID 
+	</h3>
+
+	<kbd>public boolean <strong>addStudentForAdvisorID</strong>(numeric advisorID='0', numeric portfolioUserID='0', numeric programID='0', string advisorRoleIDList='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		<dd><code>portfolioUserID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>advisorRoleIDList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStudentToCohort()"><!-- --></a>
+	<h3>
+		addStudentToCohort 
+	</h3>
+
+	<kbd>public boolean <strong>addStudentToCohort</strong>(numeric cohortID, numeric ProgramID, numeric StuID, numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code> - Cohort ID</dd>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>StuID</code> - Student ID</dd>
+		
+		<dd><code>createdBy</code> - Admin ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAdminFromProgram()"><!-- --></a>
+	<h3>
+		deleteAdminFromProgram 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAdminFromProgram</strong>(numeric ProgramID, numeric StuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>StuID</code> - Stu ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAllAdminsFromProgram()"><!-- --></a>
+	<h3>
+		deleteAllAdminsFromProgram 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAllAdminsFromProgram</strong>(numeric ProgramID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAllStudentsFromCohort()"><!-- --></a>
+	<h3>
+		deleteAllStudentsFromCohort 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAllStudentsFromCohort</strong>(numeric cohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code> - Cohort ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStudentForAdvisorID()"><!-- --></a>
+	<h3>
+		deleteStudentForAdvisorID 
+	</h3>
+
+	<kbd>public boolean <strong>deleteStudentForAdvisorID</strong>(numeric advisorID='0', numeric portfolioUserID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		<dd><code>portfolioUserID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStudentFromCohort()"><!-- --></a>
+	<h3>
+		deleteStudentFromCohort 
+	</h3>
+
+	<kbd>public boolean <strong>deleteStudentFromCohort</strong>(numeric cohortID, numeric StuID, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code> - Cohort ID</dd>
+		
+		<dd><code>StuID</code> - Student ID</dd>
+		
+		<dd><code>deletedBy</code> - Admin ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStudentsForAdvisorID()"><!-- --></a>
+	<h3>
+		deleteStudentsForAdvisorID 
+	</h3>
+
+	<kbd>public boolean <strong>deleteStudentsForAdvisorID</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editListOfAdminsInProgram()"><!-- --></a>
+	<h3>
+		editListOfAdminsInProgram 
+	</h3>
+
+	<kbd>public boolean <strong>editListOfAdminsInProgram</strong>(numeric ProgramID, string AdminList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>AdminList</code> - List of Admin IDs</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editListOfStudentsInCohort()"><!-- --></a>
+	<h3>
+		editListOfStudentsInCohort 
+	</h3>
+
+	<kbd>public boolean <strong>editListOfStudentsInCohort</strong>(numeric CohortID, numeric ProgramID, string StuList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CohortID</code> - Cohort ID</dd>
+		
+		<dd><code>ProgramID</code> - Program ID</dd>
+		
+		<dd><code>StuList</code> - List of Student IDs</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="findUserByJHEDID()"><!-- --></a>
+	<h3>
+		findUserByJHEDID 
+	</h3>
+
+	<kbd>public query <strong>findUserByJHEDID</strong>(string jhedID, numeric maxLevel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>jhedID</code> - jhedID</dd>
+		
+		<dd><code>maxLevel</code> - userLevel</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdminsForProgramID()"><!-- --></a>
+	<h3>
+		getAdminsForProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAdminsForProgramID</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdvisorInfo()"><!-- --></a>
+	<h3>
+		getAdvisorInfo 
+	</h3>
+
+	<kbd>public query <strong>getAdvisorInfo</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdvisorRoleIDForRoleName()"><!-- --></a>
+	<h3>
+		getAdvisorRoleIDForRoleName 
+	</h3>
+
+	<kbd>public numeric <strong>getAdvisorRoleIDForRoleName</strong>(string advisorRole='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorRole</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdvisorsForTouchpointTemplateAndStuID()"><!-- --></a>
+	<h3>
+		getAdvisorsForTouchpointTemplateAndStuID 
+	</h3>
+
+	<kbd>public query <strong>getAdvisorsForTouchpointTemplateAndStuID</strong>(numeric touchpointTemplateID='0', numeric StuID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		<dd><code>StuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdminsAndAdvisorsForExclusionList()"><!-- --></a>
+	<h3>
+		getAllAdminsAndAdvisorsForExclusionList 
+	</h3>
+
+	<kbd>public array <strong>getAllAdminsAndAdvisorsForExclusionList</strong>(numeric programID='0', numeric cohortID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorRoles()"><!-- --></a>
+	<h3>
+		getAllAdvisorRoles 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorRoles</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorRolesForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllAdvisorRolesForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public string <strong>getAllAdvisorRolesForTouchpointTemplateID</strong>(numeric touchpointTemplateID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisors()"><!-- --></a>
+	<h3>
+		getAllAdvisors 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisors</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsByPortfolioUserID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsByPortfolioUserID 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorsByPortfolioUserID</strong>(numeric portfolioUserID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioUserID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsForProgramID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsForProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorsForProgramID</strong>(numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorsForTouchpointTemplateID</strong>(numeric touchpointTemplateID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCohortsByProgramID()"><!-- --></a>
+	<h3>
+		getAllCohortsByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllCohortsByProgramID</strong>(numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPortfolioIDsByAdvisorID()"><!-- --></a>
+	<h3>
+		getAllPortfolioIDsByAdvisorID 
+	</h3>
+
+	<kbd>public query <strong>getAllPortfolioIDsByAdvisorID</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPortfoliosForCohortID()"><!-- --></a>
+	<h3>
+		getAllPortfoliosForCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllPortfoliosForCohortID</strong>(numeric CohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllProgramNamesAndAdmins()"><!-- --></a>
+	<h3>
+		getAllProgramNamesAndAdmins 
+	</h3>
+
+	<kbd>public query <strong>getAllProgramNamesAndAdmins</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsForAdvisorID()"><!-- --></a>
+	<h3>
+		getAllStudentsForAdvisorID 
+	</h3>
+
+	<kbd>public query <strong>getAllStudentsForAdvisorID</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsForCohortID()"><!-- --></a>
+	<h3>
+		getAllStudentsForCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllStudentsForCohortID</strong>(numeric CohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCohortByStuID()"><!-- --></a>
+	<h3>
+		getCohortByStuID 
+	</h3>
+
+	<kbd>public query <strong>getCohortByStuID</strong>(numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getInfoForStuAndProgramID()"><!-- --></a>
+	<h3>
+		getInfoForStuAndProgramID 
+	</h3>
+
+	<kbd>public query <strong>getInfoForStuAndProgramID</strong>(numeric programID='0', numeric stuID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioForStuAndCohortID()"><!-- --></a>
+	<h3>
+		getPortfolioForStuAndCohortID 
+	</h3>
+
+	<kbd>public numeric <strong>getPortfolioForStuAndCohortID</strong>(numeric StuID, numeric CohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>StuID</code></dd>
+		
+		<dd><code>CohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioInfoForCohort()"><!-- --></a>
+	<h3>
+		getPortfolioInfoForCohort 
+	</h3>
+
+	<kbd>public query <strong>getPortfolioInfoForCohort</strong>(string portfolioList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioList</code> - List of students for cohort</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramsForAdminID()"><!-- --></a>
+	<h3>
+		getProgramsForAdminID 
+	</h3>
+
+	<kbd>public query <strong>getProgramsForAdminID</strong>(numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStuInfoForCohort()"><!-- --></a>
+	<h3>
+		getStuInfoForCohort 
+	</h3>
+
+	<kbd>public query <strong>getStuInfoForCohort</strong>(string stuList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuList</code> - List of students for cohort</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsByProgramID()"><!-- --></a>
+	<h3>
+		getStudentsByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getStudentsByProgramID</strong>(numeric programID='0', [string alphaFilter='all'])</kbd>
+
+	<br><br>
+
+	
+		<p>returns a list of students in a program based on its cohort.  can have optional alpha filter to restrict last name to that letter</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>alphaFilter</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWithNoAdvisorForProgramID()"><!-- --></a>
+	<h3>
+		getStudentsWithNoAdvisorForProgramID 
+	</h3>
+
+	<kbd>public query <strong>getStudentsWithNoAdvisorForProgramID</strong>(numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isDuplicateAdvisor()"><!-- --></a>
+	<h3>
+		isDuplicateAdvisor 
+	</h3>
+
+	<kbd>public numeric <strong>isDuplicateAdvisor</strong>(numeric advisorUserID='0', numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorUserID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isDuplicateCohortStudent()"><!-- --></a>
+	<h3>
+		isDuplicateCohortStudent 
+	</h3>
+
+	<kbd>public numeric <strong>isDuplicateCohortStudent</strong>(numeric stuID='0', numeric cohortID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isUserAnAdmin()"><!-- --></a>
+	<h3>
+		isUserAnAdmin 
+	</h3>
+
+	<kbd>public numeric <strong>isUserAnAdmin</strong>(numeric stuID, numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="listMinus()"><!-- --></a>
+	<h3>
+		listMinus 
+	</h3>
+
+	<kbd>public any <strong>listMinus</strong>(any listOne='', any listTwo='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>listOne</code></dd>
+		
+		<dd><code>listTwo</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processAdvisorExcelFile()"><!-- --></a>
+	<h3>
+		processAdvisorExcelFile 
+	</h3>
+
+	<kbd>public any <strong>processAdvisorExcelFile</strong>(numeric programID, string fileName, string fileExt)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>fileName</code></dd>
+		
+		<dd><code>fileExt</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processCohortExcelFile()"><!-- --></a>
+	<h3>
+		processCohortExcelFile 
+	</h3>
+
+	<kbd>public any <strong>processCohortExcelFile</strong>(numeric cohortID, numeric programID, string fileName, string fileExt, numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>fileName</code></dd>
+		
+		<dd><code>fileExt</code></dd>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="searchByName()"><!-- --></a>
+	<h3>
+		searchByName 
+	</h3>
+
+	<kbd>public any <strong>searchByName</strong>(string searchString, numeric maxLevel, boolean excludeAdmins)</kbd>
+
+	<br><br>
+
+	
+		<p>Searches for a matching student or faculty member name and basic information based on the passed search string.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code> - Minimum 2 character string to search against</dd>
+		
+		<dd><code>maxLevel</code> - User level</dd>
+		
+		<dd><code>excludeAdmins</code> - Admin flag</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="searchByNameAndProgram()"><!-- --></a>
+	<h3>
+		searchByNameAndProgram 
+	</h3>
+
+	<kbd>public any <strong>searchByNameAndProgram</strong>(string searchString, numeric programID='0', numeric minLevel, numeric maxLevel)</kbd>
+
+	<br><br>
+
+	
+		<p>Searches for a matching student name and basic information based on the passed search string.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code> - Minimum 2 character string to search against</dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>minLevel</code> - User level</dd>
+		
+		<dd><code>maxLevel</code> - User level</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="searchPortfoliosByNameAndCohort()"><!-- --></a>
+	<h3>
+		searchPortfoliosByNameAndCohort 
+	</h3>
+
+	<kbd>public any <strong>searchPortfoliosByNameAndCohort</strong>(string searchString, numeric cohortID='0', numeric minLevel, numeric maxLevel)</kbd>
+
+	<br><br>
+
+	
+		<p>Searches for portfolio by a matching student name and basic information based on the passed search string.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code> - Minimum 2 character string to search against</dd>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>minLevel</code> - User level</dd>
+		
+		<dd><code>maxLevel</code> - User level</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="searchPortfoliosByNameAndProgram()"><!-- --></a>
+	<h3>
+		searchPortfoliosByNameAndProgram 
+	</h3>
+
+	<kbd>public any <strong>searchPortfoliosByNameAndProgram</strong>(string searchString, numeric programID='0', numeric minLevel, numeric maxLevel)</kbd>
+
+	<br><br>
+
+	
+		<p>Searches for portfolio by a matching student name and basic information based on the passed search string.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code> - Minimum 2 character string to search against</dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>minLevel</code> - User level</dd>
+		
+		<dd><code>maxLevel</code> - User level</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAdvisorDAO()"><!-- --></a>
+	<h3>
+		setAdvisorDAO 
+	</h3>
+
+	<kbd>public void <strong>setAdvisorDAO</strong>(<a href="../../../../../core/modules/portfolio/model/member/advisorDAO.html" title="class in core.modules.portfolio.model.member">advisorDAO</a> AdvisorDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: AdvisorDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AdvisorDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setportfolioDAO()"><!-- --></a>
+	<h3>
+		setportfolioDAO 
+	</h3>
+
+	<kbd>public void <strong>setportfolioDAO</strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioDAO</a> portfolioDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: PortfolioDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="settouchpointGateway()"><!-- --></a>
+	<h3>
+		settouchpointGateway 
+	</h3>
+
+	<kbd>public void <strong>settouchpointGateway</strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchpointGateway.html" title="class in core.modules.portfolio.model.touchpoint">touchpointGateway</a> touchpointGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: touchpointGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

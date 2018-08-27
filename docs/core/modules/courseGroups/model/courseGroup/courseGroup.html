@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>courseGroup</title>
+	<meta name="keywords" content="core.modules.courseGroups.model.courseGroup.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/courseGroups/model/courseGroup/courseGroup.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.courseGroups.model.courseGroup"><span class="label label-success">core.modules.courseGroups.model.courseGroup</span></a>
+</div>
+
+<h2>
+
+Class
+courseGroup</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.courseGroups.model.courseGroup.courseGroup
+</pre>
+
+
+
+<div id="class-hint">
+	<p>A bean which models the course group object in this system.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: courseGroup 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="courseGroup.html#init()">init</A></strong>([numeric courseGroupID='0'], [numeric courseID='0'], [numeric courseOfferingID='0'], [boolean isDeleted='false'], [string groupName=''], [boolean visibleToStudents='true'], [boolean bbsCategoryForGroup='false'], [numeric bbsCategoryID='0'], [any qryGroupMembers='0'], [date dateCreated='[runtime expression]'], [date lastModified='[runtime expression]'], [boolean isEditable='1'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getBBSCategoryForGroup()">getBBSCategoryForGroup</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getBBSCategoryID()">getBBSCategoryID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getCourseGroupID()">getCourseGroupID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getCourseID()">getCourseID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getCourseOfferingID()">getCourseOfferingID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getDateCreated()">getDateCreated</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getGroupName()">getGroupName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getInvalidFields()">getInvalidFields</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a comma-separated list of data fields that are invalid in this courseGroup bean.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getIsDeleted()">getIsDeleted</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getIsEditable()">getIsEditable</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getLastModified()">getLastModified</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getMissingFields()">getMissingFields</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a comma-separated list of data fields that are missing from this courseGroup bean.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getQryGroupMembers()">getQryGroupMembers</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getSnapShot()">getSnapShot</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a struct containing all of this bean's instance data.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#getVisibleToStudents()">getVisibleToStudents</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setBBSCategoryForGroup()">setBBSCategoryForGroup</A></strong>(boolean bbsCategoryForGroup)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setBBSCategoryID()">setBBSCategoryID</A></strong>(numeric BBSCategoryID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setCourseGroupID()">setCourseGroupID</A></strong>(numeric courseGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setCourseID()">setCourseID</A></strong>(numeric courseID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setCourseOfferingID()">setCourseOfferingID</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setDateCreated()">setDateCreated</A></strong>(date dateCreated)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setGroupName()">setGroupName</A></strong>(string groupName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setIsDeleted()">setIsDeleted</A></strong>(boolean isDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setIsEditable()">setIsEditable</A></strong>([boolean isEditable='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setLastModified()">setLastModified</A></strong>(date lastModified)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setQryGroupMembers()">setQryGroupMembers</A></strong>(any qryGroupMembers)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#setVisibleToStudents()">setVisibleToStudents</A></strong>(boolean visibleToStudents)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="courseGroup.html#validate()">validate</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I validate all the data fields in this courseGroup.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric courseGroupID='0'], [numeric courseID='0'], [numeric courseOfferingID='0'], [boolean isDeleted='false'], [string groupName=''], [boolean visibleToStudents='true'], [boolean bbsCategoryForGroup='false'], [numeric bbsCategoryID='0'], [any qryGroupMembers='0'], [date dateCreated='[runtime expression]'], [date lastModified='[runtime expression]'], [boolean isEditable='1'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>courseGroupID</code> - The PKEY ID of this courseGroup</dd>
+		
+			<dd><code>courseID</code> - The FKEY ID of the course this group belongs to</dd>
+		
+			<dd><code>courseOfferingID</code> - The PKEY ID of this courseOffeirng</dd>
+		
+			<dd><code>isDeleted</code> - The boolean value indicating if this courseGroup has been deleted</dd>
+		
+			<dd><code>groupName</code> - The string value of the group's name</dd>
+		
+			<dd><code>visibleToStudents</code> - The boolean value indicating if this group name should normally be displayed to students</dd>
+		
+			<dd><code>bbsCategoryForGroup</code> - The boolean value indicating if this group should also have a BBS category</dd>
+		
+			<dd><code>bbsCategoryID</code> - The numeric value of the corresponding bbs categoryID for this group, if any</dd>
+		
+			<dd><code>qryGroupMembers</code> - The query containing information about members of this group</dd>
+		
+			<dd><code>dateCreated</code> - The date value of the last time the object record was created</dd>
+		
+			<dd><code>lastModified</code> - The date value of the last time the object record was modified</dd>
+		
+			<dd><code>isEditable</code> - The course group can be edited</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="getBBSCategoryForGroup()"><!-- --></a>
+	<h3>
+		getBBSCategoryForGroup 
+	</h3>
+
+	<kbd>public boolean <strong>getBBSCategoryForGroup</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBBSCategoryID()"><!-- --></a>
+	<h3>
+		getBBSCategoryID 
+	</h3>
+
+	<kbd>public numeric <strong>getBBSCategoryID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseGroupID()"><!-- --></a>
+	<h3>
+		getCourseGroupID 
+	</h3>
+
+	<kbd>public numeric <strong>getCourseGroupID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseID()"><!-- --></a>
+	<h3>
+		getCourseID 
+	</h3>
+
+	<kbd>public numeric <strong>getCourseID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseOfferingID()"><!-- --></a>
+	<h3>
+		getCourseOfferingID 
+	</h3>
+
+	<kbd>public numeric <strong>getCourseOfferingID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDateCreated()"><!-- --></a>
+	<h3>
+		getDateCreated 
+	</h3>
+
+	<kbd>public date <strong>getDateCreated</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGroupName()"><!-- --></a>
+	<h3>
+		getGroupName 
+	</h3>
+
+	<kbd>public string <strong>getGroupName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getInvalidFields()"><!-- --></a>
+	<h3>
+		getInvalidFields 
+	</h3>
+
+	<kbd>public string <strong>getInvalidFields</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return a comma-separated list of data fields that are invalid in this courseGroup bean.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsDeleted()"><!-- --></a>
+	<h3>
+		getIsDeleted 
+	</h3>
+
+	<kbd>public boolean <strong>getIsDeleted</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsEditable()"><!-- --></a>
+	<h3>
+		getIsEditable 
+	</h3>
+
+	<kbd>public boolean <strong>getIsEditable</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLastModified()"><!-- --></a>
+	<h3>
+		getLastModified 
+	</h3>
+
+	<kbd>public date <strong>getLastModified</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMissingFields()"><!-- --></a>
+	<h3>
+		getMissingFields 
+	</h3>
+
+	<kbd>public string <strong>getMissingFields</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return a comma-separated list of data fields that are missing from this courseGroup bean.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getQryGroupMembers()"><!-- --></a>
+	<h3>
+		getQryGroupMembers 
+	</h3>
+
+	<kbd>public any <strong>getQryGroupMembers</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSnapShot()"><!-- --></a>
+	<h3>
+		getSnapShot 
+	</h3>
+
+	<kbd>public struct <strong>getSnapShot</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a struct containing all of this bean's instance data.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getVisibleToStudents()"><!-- --></a>
+	<h3>
+		getVisibleToStudents 
+	</h3>
+
+	<kbd>public boolean <strong>getVisibleToStudents</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBBSCategoryForGroup()"><!-- --></a>
+	<h3>
+		setBBSCategoryForGroup 
+	</h3>
+
+	<kbd>public void <strong>setBBSCategoryForGroup</strong>(boolean bbsCategoryForGroup)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsCategoryForGroup</code> - The boolean value indicating if this group shoudl also have a BBS category</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBBSCategoryID()"><!-- --></a>
+	<h3>
+		setBBSCategoryID 
+	</h3>
+
+	<kbd>public void <strong>setBBSCategoryID</strong>(numeric BBSCategoryID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>BBSCategoryID</code> - The numeric value of the corresponding BBS categoryID for this group, if any</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseGroupID()"><!-- --></a>
+	<h3>
+		setCourseGroupID 
+	</h3>
+
+	<kbd>public void <strong>setCourseGroupID</strong>(numeric courseGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupID</code> - The PKEY ID of this courseGroup</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseID()"><!-- --></a>
+	<h3>
+		setCourseID 
+	</h3>
+
+	<kbd>public void <strong>setCourseID</strong>(numeric courseID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code> - The FKEY ID of the course this group belongs to</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseOfferingID()"><!-- --></a>
+	<h3>
+		setCourseOfferingID 
+	</h3>
+
+	<kbd>public void <strong>setCourseOfferingID</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code> - The FKEY ID of the course offering this group belongs to</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setDateCreated()"><!-- --></a>
+	<h3>
+		setDateCreated 
+	</h3>
+
+	<kbd>public void <strong>setDateCreated</strong>(date dateCreated)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dateCreated</code> - The date value of the last time the object record was created</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setGroupName()"><!-- --></a>
+	<h3>
+		setGroupName 
+	</h3>
+
+	<kbd>public void <strong>setGroupName</strong>(string groupName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>groupName</code> - The string value of the group's name</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsDeleted()"><!-- --></a>
+	<h3>
+		setIsDeleted 
+	</h3>
+
+	<kbd>public void <strong>setIsDeleted</strong>(boolean isDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDeleted</code> - The boolean value indicating if this courseGroup has been deleted</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsEditable()"><!-- --></a>
+	<h3>
+		setIsEditable 
+	</h3>
+
+	<kbd>public void <strong>setIsEditable</strong>([boolean isEditable='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isEditable</code> - The course group can be edited</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setLastModified()"><!-- --></a>
+	<h3>
+		setLastModified 
+	</h3>
+
+	<kbd>public void <strong>setLastModified</strong>(date lastModified)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lastModified</code> - The date value of the last time the object record was modified</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setQryGroupMembers()"><!-- --></a>
+	<h3>
+		setQryGroupMembers 
+	</h3>
+
+	<kbd>public void <strong>setQryGroupMembers</strong>(any qryGroupMembers)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>qryGroupMembers</code> - The query containing information about members of this group</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setVisibleToStudents()"><!-- --></a>
+	<h3>
+		setVisibleToStudents 
+	</h3>
+
+	<kbd>public void <strong>setVisibleToStudents</strong>(boolean visibleToStudents)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>visibleToStudents</code> - The boolean value indicating if this group name should normally be displayed to students</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I validate all the data fields in this courseGroup.</p>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

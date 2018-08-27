@@ -1,0 +1,3258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>paymentHistory</title>
+	<meta name="keywords" content="com.distance.myCourses4.paymentHistory.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?com/distance/myCourses4/paymentHistory/paymentHistory.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.myCourses4.paymentHistory"><span class="label label-success">com.distance.myCourses4.paymentHistory</span></a>
+</div>
+
+<h2>
+
+Class
+paymentHistory</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">com.distance.myCourses4.paymentHistory.paymentHistory
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am the bean of the blah objects.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#CCType()">CCType</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#authorizationCode()">authorizationCode</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#avsCode()">avsCode</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#clientID()">clientID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#courseOfferingID()">courseOfferingID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#createdOn()">createdOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#creditTypeID()">creditTypeID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#enrollmentID()">enrollmentID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#externalTraceNumber()">externalTraceNumber</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#lastModified()">lastModified</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#mAccount()">mAccount</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#nameOnCard()">nameOnCard</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#paymentAmount()">paymentAmount</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#paymentDate()">paymentDate</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#paymentHistoryID()">paymentHistoryID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#paymentMethod()">paymentMethod</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#paymentTypeName()">paymentTypeName</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#providerJoinsArray()">providerJoinsArray</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#pwUniqueID()">pwUniqueID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#result()">result</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#resultXML()">resultXML</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#sapCostCenter()">sapCostCenter</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#serviceTransactionNumber()">serviceTransactionNumber</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#stuID()">stuID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">validate = numeric</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETAUTHORIZATIONCODE()">GETAUTHORIZATIONCODE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETAVSCODE()">GETAVSCODE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETCCTYPE()">GETCCTYPE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETCLIENTID()">GETCLIENTID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETCOURSEOFFERINGID()">GETCOURSEOFFERINGID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETCREATEDON()">GETCREATEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETCREDITTYPEID()">GETCREDITTYPEID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETENROLLMENTID()">GETENROLLMENTID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETEXTERNALTRACENUMBER()">GETEXTERNALTRACENUMBER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETLASTMODIFIED()">GETLASTMODIFIED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETMACCOUNT()">GETMACCOUNT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETNAMEONCARD()">GETNAMEONCARD</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPAYMENTAMOUNT()">GETPAYMENTAMOUNT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPAYMENTDATE()">GETPAYMENTDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPAYMENTHISTORYID()">GETPAYMENTHISTORYID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPAYMENTMETHOD()">GETPAYMENTMETHOD</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPAYMENTTYPENAME()">GETPAYMENTTYPENAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPROVIDERJOINSARRAY()">GETPROVIDERJOINSARRAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETPWUNIQUEID()">GETPWUNIQUEID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETRESULT()">GETRESULT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETRESULTXML()">GETRESULTXML</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETSAPCOSTCENTER()">GETSAPCOSTCENTER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETSERVICETRANSACTIONNUMBER()">GETSERVICETRANSACTIONNUMBER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#GETSTUID()">GETSTUID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETAUTHORIZATIONCODE()">SETAUTHORIZATIONCODE</A></strong>(string authorizationCode)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETAVSCODE()">SETAVSCODE</A></strong>(string avsCode)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETCCTYPE()">SETCCTYPE</A></strong>(string CCType)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETCLIENTID()">SETCLIENTID</A></strong>(numeric clientID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETCOURSEOFFERINGID()">SETCOURSEOFFERINGID</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETCREATEDON()">SETCREATEDON</A></strong>(date createdOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETCREDITTYPEID()">SETCREDITTYPEID</A></strong>(numeric creditTypeID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETENROLLMENTID()">SETENROLLMENTID</A></strong>(numeric enrollmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETEXTERNALTRACENUMBER()">SETEXTERNALTRACENUMBER</A></strong>(string externalTraceNumber)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETLASTMODIFIED()">SETLASTMODIFIED</A></strong>(date lastModified)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETMACCOUNT()">SETMACCOUNT</A></strong>(string mAccount)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETNAMEONCARD()">SETNAMEONCARD</A></strong>(string nameOnCard)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPAYMENTAMOUNT()">SETPAYMENTAMOUNT</A></strong>(numeric paymentAmount)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPAYMENTDATE()">SETPAYMENTDATE</A></strong>(date paymentDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPAYMENTHISTORYID()">SETPAYMENTHISTORYID</A></strong>(numeric paymentHistoryID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPAYMENTMETHOD()">SETPAYMENTMETHOD</A></strong>(string paymentMethod)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPAYMENTTYPENAME()">SETPAYMENTTYPENAME</A></strong>(string paymentTypeName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPROVIDERJOINSARRAY()">SETPROVIDERJOINSARRAY</A></strong>(array providerJoinsArray)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETPWUNIQUEID()">SETPWUNIQUEID</A></strong>(numeric pwUniqueID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETRESULT()">SETRESULT</A></strong>(string result)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETRESULTXML()">SETRESULTXML</A></strong>(string resultXML)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETSAPCOSTCENTER()">SETSAPCOSTCENTER</A></strong>(string sapCostCenter)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETSERVICETRANSACTIONNUMBER()">SETSERVICETRANSACTIONNUMBER</A></strong>(string serviceTransactionNumber)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a></code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#SETSTUID()">SETSTUID</A></strong>(numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="paymentHistory.html#validate()">validate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="CCType()"><!-- --></a>
+		<h3>CCType</h3>
+
+		<kbd>
+			property string <strong>CCType</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="authorizationCode()"><!-- --></a>
+		<h3>authorizationCode</h3>
+
+		<kbd>
+			property string <strong>authorizationCode</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="avsCode()"><!-- --></a>
+		<h3>avsCode</h3>
+
+		<kbd>
+			property string <strong>avsCode</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="clientID()"><!-- --></a>
+		<h3>clientID</h3>
+
+		<kbd>
+			property numeric <strong>clientID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseOfferingID()"><!-- --></a>
+		<h3>courseOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>courseOfferingID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createdOn()"><!-- --></a>
+		<h3>createdOn</h3>
+
+		<kbd>
+			property date <strong>createdOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="creditTypeID()"><!-- --></a>
+		<h3>creditTypeID</h3>
+
+		<kbd>
+			property numeric <strong>creditTypeID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="enrollmentID()"><!-- --></a>
+		<h3>enrollmentID</h3>
+
+		<kbd>
+			property numeric <strong>enrollmentID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="externalTraceNumber()"><!-- --></a>
+		<h3>externalTraceNumber</h3>
+
+		<kbd>
+			property string <strong>externalTraceNumber</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="lastModified()"><!-- --></a>
+		<h3>lastModified</h3>
+
+		<kbd>
+			property date <strong>lastModified</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="mAccount()"><!-- --></a>
+		<h3>mAccount</h3>
+
+		<kbd>
+			property string <strong>mAccount</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="nameOnCard()"><!-- --></a>
+		<h3>nameOnCard</h3>
+
+		<kbd>
+			property string <strong>nameOnCard</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="paymentAmount()"><!-- --></a>
+		<h3>paymentAmount</h3>
+
+		<kbd>
+			property numeric <strong>paymentAmount</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="paymentDate()"><!-- --></a>
+		<h3>paymentDate</h3>
+
+		<kbd>
+			property date <strong>paymentDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="paymentHistoryID()"><!-- --></a>
+		<h3>paymentHistoryID</h3>
+
+		<kbd>
+			property numeric <strong>paymentHistoryID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="paymentMethod()"><!-- --></a>
+		<h3>paymentMethod</h3>
+
+		<kbd>
+			property string <strong>paymentMethod</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="paymentTypeName()"><!-- --></a>
+		<h3>paymentTypeName</h3>
+
+		<kbd>
+			property string <strong>paymentTypeName</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="providerJoinsArray()"><!-- --></a>
+		<h3>providerJoinsArray</h3>
+
+		<kbd>
+			property array <strong>providerJoinsArray</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pwUniqueID()"><!-- --></a>
+		<h3>pwUniqueID</h3>
+
+		<kbd>
+			property numeric <strong>pwUniqueID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="result()"><!-- --></a>
+		<h3>result</h3>
+
+		<kbd>
+			property string <strong>result</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="resultXML()"><!-- --></a>
+		<h3>resultXML</h3>
+
+		<kbd>
+			property string <strong>resultXML</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="sapCostCenter()"><!-- --></a>
+		<h3>sapCostCenter</h3>
+
+		<kbd>
+			property string <strong>sapCostCenter</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="serviceTransactionNumber()"><!-- --></a>
+		<h3>serviceTransactionNumber</h3>
+
+		<kbd>
+			property string <strong>serviceTransactionNumber</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="stuID()"><!-- --></a>
+		<h3>stuID</h3>
+
+		<kbd>
+			property numeric <strong>stuID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>validate</code> - numeric</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETAUTHORIZATIONCODE()"><!-- --></a>
+	<h3>
+		GETAUTHORIZATIONCODE 
+	</h3>
+
+	<kbd>public string <strong>GETAUTHORIZATIONCODE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETAVSCODE()"><!-- --></a>
+	<h3>
+		GETAVSCODE 
+	</h3>
+
+	<kbd>public string <strong>GETAVSCODE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCCTYPE()"><!-- --></a>
+	<h3>
+		GETCCTYPE 
+	</h3>
+
+	<kbd>public string <strong>GETCCTYPE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCLIENTID()"><!-- --></a>
+	<h3>
+		GETCLIENTID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCLIENTID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		GETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOURSEOFFERINGID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDON()"><!-- --></a>
+	<h3>
+		GETCREATEDON 
+	</h3>
+
+	<kbd>public date <strong>GETCREATEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREDITTYPEID()"><!-- --></a>
+	<h3>
+		GETCREDITTYPEID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCREDITTYPEID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETENROLLMENTID()"><!-- --></a>
+	<h3>
+		GETENROLLMENTID 
+	</h3>
+
+	<kbd>public numeric <strong>GETENROLLMENTID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETEXTERNALTRACENUMBER()"><!-- --></a>
+	<h3>
+		GETEXTERNALTRACENUMBER 
+	</h3>
+
+	<kbd>public string <strong>GETEXTERNALTRACENUMBER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETLASTMODIFIED()"><!-- --></a>
+	<h3>
+		GETLASTMODIFIED 
+	</h3>
+
+	<kbd>public date <strong>GETLASTMODIFIED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMACCOUNT()"><!-- --></a>
+	<h3>
+		GETMACCOUNT 
+	</h3>
+
+	<kbd>public string <strong>GETMACCOUNT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNAMEONCARD()"><!-- --></a>
+	<h3>
+		GETNAMEONCARD 
+	</h3>
+
+	<kbd>public string <strong>GETNAMEONCARD</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAYMENTAMOUNT()"><!-- --></a>
+	<h3>
+		GETPAYMENTAMOUNT 
+	</h3>
+
+	<kbd>public numeric <strong>GETPAYMENTAMOUNT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAYMENTDATE()"><!-- --></a>
+	<h3>
+		GETPAYMENTDATE 
+	</h3>
+
+	<kbd>public date <strong>GETPAYMENTDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAYMENTHISTORYID()"><!-- --></a>
+	<h3>
+		GETPAYMENTHISTORYID 
+	</h3>
+
+	<kbd>public numeric <strong>GETPAYMENTHISTORYID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAYMENTMETHOD()"><!-- --></a>
+	<h3>
+		GETPAYMENTMETHOD 
+	</h3>
+
+	<kbd>public string <strong>GETPAYMENTMETHOD</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAYMENTTYPENAME()"><!-- --></a>
+	<h3>
+		GETPAYMENTTYPENAME 
+	</h3>
+
+	<kbd>public string <strong>GETPAYMENTTYPENAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPROVIDERJOINSARRAY()"><!-- --></a>
+	<h3>
+		GETPROVIDERJOINSARRAY 
+	</h3>
+
+	<kbd>public array <strong>GETPROVIDERJOINSARRAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPWUNIQUEID()"><!-- --></a>
+	<h3>
+		GETPWUNIQUEID 
+	</h3>
+
+	<kbd>public numeric <strong>GETPWUNIQUEID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRESULT()"><!-- --></a>
+	<h3>
+		GETRESULT 
+	</h3>
+
+	<kbd>public string <strong>GETRESULT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRESULTXML()"><!-- --></a>
+	<h3>
+		GETRESULTXML 
+	</h3>
+
+	<kbd>public string <strong>GETRESULTXML</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSAPCOSTCENTER()"><!-- --></a>
+	<h3>
+		GETSAPCOSTCENTER 
+	</h3>
+
+	<kbd>public string <strong>GETSAPCOSTCENTER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSERVICETRANSACTIONNUMBER()"><!-- --></a>
+	<h3>
+		GETSERVICETRANSACTIONNUMBER 
+	</h3>
+
+	<kbd>public string <strong>GETSERVICETRANSACTIONNUMBER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSTUID()"><!-- --></a>
+	<h3>
+		GETSTUID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSTUID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETAUTHORIZATIONCODE()"><!-- --></a>
+	<h3>
+		SETAUTHORIZATIONCODE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETAUTHORIZATIONCODE</strong>(string authorizationCode)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>authorizationCode</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETAVSCODE()"><!-- --></a>
+	<h3>
+		SETAVSCODE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETAVSCODE</strong>(string avsCode)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>avsCode</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCCTYPE()"><!-- --></a>
+	<h3>
+		SETCCTYPE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETCCTYPE</strong>(string CCType)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CCType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCLIENTID()"><!-- --></a>
+	<h3>
+		SETCLIENTID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETCLIENTID</strong>(numeric clientID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>clientID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		SETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETCOURSEOFFERINGID</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDON()"><!-- --></a>
+	<h3>
+		SETCREATEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETCREATEDON</strong>(date createdOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREDITTYPEID()"><!-- --></a>
+	<h3>
+		SETCREDITTYPEID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETCREDITTYPEID</strong>(numeric creditTypeID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>creditTypeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETENROLLMENTID()"><!-- --></a>
+	<h3>
+		SETENROLLMENTID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETENROLLMENTID</strong>(numeric enrollmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>enrollmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETEXTERNALTRACENUMBER()"><!-- --></a>
+	<h3>
+		SETEXTERNALTRACENUMBER 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETEXTERNALTRACENUMBER</strong>(string externalTraceNumber)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>externalTraceNumber</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETLASTMODIFIED()"><!-- --></a>
+	<h3>
+		SETLASTMODIFIED 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETLASTMODIFIED</strong>(date lastModified)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lastModified</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMACCOUNT()"><!-- --></a>
+	<h3>
+		SETMACCOUNT 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETMACCOUNT</strong>(string mAccount)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mAccount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNAMEONCARD()"><!-- --></a>
+	<h3>
+		SETNAMEONCARD 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETNAMEONCARD</strong>(string nameOnCard)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>nameOnCard</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAYMENTAMOUNT()"><!-- --></a>
+	<h3>
+		SETPAYMENTAMOUNT 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPAYMENTAMOUNT</strong>(numeric paymentAmount)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paymentAmount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAYMENTDATE()"><!-- --></a>
+	<h3>
+		SETPAYMENTDATE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPAYMENTDATE</strong>(date paymentDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paymentDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAYMENTHISTORYID()"><!-- --></a>
+	<h3>
+		SETPAYMENTHISTORYID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPAYMENTHISTORYID</strong>(numeric paymentHistoryID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paymentHistoryID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAYMENTMETHOD()"><!-- --></a>
+	<h3>
+		SETPAYMENTMETHOD 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPAYMENTMETHOD</strong>(string paymentMethod)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paymentMethod</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAYMENTTYPENAME()"><!-- --></a>
+	<h3>
+		SETPAYMENTTYPENAME 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPAYMENTTYPENAME</strong>(string paymentTypeName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paymentTypeName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPROVIDERJOINSARRAY()"><!-- --></a>
+	<h3>
+		SETPROVIDERJOINSARRAY 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPROVIDERJOINSARRAY</strong>(array providerJoinsArray)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>providerJoinsArray</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPWUNIQUEID()"><!-- --></a>
+	<h3>
+		SETPWUNIQUEID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETPWUNIQUEID</strong>(numeric pwUniqueID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pwUniqueID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRESULT()"><!-- --></a>
+	<h3>
+		SETRESULT 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETRESULT</strong>(string result)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>result</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRESULTXML()"><!-- --></a>
+	<h3>
+		SETRESULTXML 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETRESULTXML</strong>(string resultXML)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>resultXML</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSAPCOSTCENTER()"><!-- --></a>
+	<h3>
+		SETSAPCOSTCENTER 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETSAPCOSTCENTER</strong>(string sapCostCenter)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sapCostCenter</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSERVICETRANSACTIONNUMBER()"><!-- --></a>
+	<h3>
+		SETSERVICETRANSACTIONNUMBER 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETSERVICETRANSACTIONNUMBER</strong>(string serviceTransactionNumber)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>serviceTransactionNumber</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSTUID()"><!-- --></a>
+	<h3>
+		SETSTUID 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/paymentHistory/paymentHistory.html" title="class in com.distance.myCourses4.paymentHistory">paymentHistory</a> <strong>SETSTUID</strong>(numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

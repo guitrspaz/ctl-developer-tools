@@ -1,0 +1,1827 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>gradebook2Facade</title>
+	<meta name="keywords" content="core.modules.gradebook2.api.facades.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/gradebook2/api/facades/gradebook2Facade.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.gradebook2.api.facades"><span class="label label-success">core.modules.gradebook2.api.facades</span></a>
+</div>
+
+<h2>
+
+Class
+gradebook2Facade</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/api.html" title="class in com.distance.base">com.distance.base.api</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.gradebook2.api.facades.gradebook2Facade
+</pre>
+
+
+
+<div id="class-hint">
+	<p>This facade will communicate and provide information to the other modules</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: gradebook2Facade 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#categoryService()">categoryService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#communicationService()">communicationService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#feedbackService()">feedbackService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#gradeService()">gradeService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#gradebookService()">gradebookService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#gradebookSetupHistoryService()">gradebookSetupHistoryService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#gradedItemService()">gradedItemService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="gradebook2Facade.html#init()">init</A></strong>(String dsn)
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETCATEGORYSERVICE()">GETCATEGORYSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETCOMMUNICATIONSERVICE()">GETCOMMUNICATIONSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETFEEDBACKSERVICE()">GETFEEDBACKSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETGRADEBOOKSERVICE()">GETGRADEBOOKSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETGRADEBOOKSETUPHISTORYSERVICE()">GETGRADEBOOKSETUPHISTORYSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETGRADEDITEMSERVICE()">GETGRADEDITEMSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#GETGRADESERVICE()">GETGRADESERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETCATEGORYSERVICE()">SETCATEGORYSERVICE</A></strong>(any categoryService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETCOMMUNICATIONSERVICE()">SETCOMMUNICATIONSERVICE</A></strong>(any communicationService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETFEEDBACKSERVICE()">SETFEEDBACKSERVICE</A></strong>(any feedbackService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETGRADEBOOKSERVICE()">SETGRADEBOOKSERVICE</A></strong>(any gradebookService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETGRADEBOOKSETUPHISTORYSERVICE()">SETGRADEBOOKSETUPHISTORYSERVICE</A></strong>(any gradebookSetupHistoryService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETGRADEDITEMSERVICE()">SETGRADEDITEMSERVICE</A></strong>(any gradedItemService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#SETGRADESERVICE()">SETGRADESERVICE</A></strong>(any gradeService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#addGradeImportInfoToQueue()">addGradeImportInfoToQueue</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric gradedItemID, numeric sourceModuleID, numeric sourceModuleItemID, numeric gradeTypeID, string gradingConfiguration)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#calculateStudentGrade()">calculateStudentGrade</A></strong>(struct gradebook, numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#copyGradebook()">copyGradebook</A></strong>(numeric sourceOfferingID, numeric targetOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#deleteImportGrade()">deleteImportGrade</A></strong>(numeric gradeID, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getAllgradesByGradedItemID()">getAllgradesByGradedItemID</A></strong>(Numeric gradedItemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getCurrentOfferingsWithGradebooks()">getCurrentOfferingsWithGradebooks</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getFeedbacksByGradedItemID()">getFeedbacksByGradedItemID</A></strong>(numeric gradedItemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getGradeAndFeedbackInfoBySourceModule()">getGradeAndFeedbackInfoBySourceModule</A></strong>(numeric sourceModuleID, numeric courseofferingID, numeric modifiedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getGradeAndFeedbackInfoBySourceModuleAndItem()">getGradeAndFeedbackInfoBySourceModuleAndItem</A></strong>(numeric sourcemoduleID, numeric sourcemoduleItemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getGradebookForOffering()">getGradebookForOffering</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getGradedItemsForImport()">getGradedItemsForImport</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getLatestGradebook()">getLatestGradebook</A></strong>(numeric gradebookID, [numeric courseOfferingID])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID()">getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID</A></strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID()">getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID</A></strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#getStudentGradeForItem()">getStudentGradeForItem</A></strong>(numeric stuID, numeric gradedItemID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#importGrade()">importGrade</A></strong>(<a href="../../../../../core/modules/gradebook2/model/grade/grade.html" title="class in core.modules.gradebook2.model.grade">grade</a> grade, string appName, numeric gradeTypeID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#saveGradebookSetupHistory()">saveGradebookSetupHistory</A></strong>(<a href="../../../../../core/modules/gradebook2/model/gradebookSetupHistory/gradebookSetupHistory.html" title="class in core.modules.gradebook2.model.gradebookSetupHistory">gradebookSetupHistory</a> gradebookSetupHistory)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradebook2Facade.html#updateStudentFinalGrade()">updateStudentFinalGrade</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID, string gradeValue, string stuGradeValue, [boolean isFinalScore='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.api"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/api.html" title="class in com.distance.base">com.distance.base.api</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/api.html#GETCATALOGDSN()">GETCATALOGDSN</a>, <a href="../../../../../com/distance/base/api.html#GETDSN()">GETDSN</a>, <a href="../../../../../com/distance/base/api.html#GETKEY()">GETKEY</a>, <a href="../../../../../com/distance/base/api.html#GETSIMPSONLOC()">GETSIMPSONLOC</a>, <a href="../../../../../com/distance/base/api.html#SETCATALOGDSN()">SETCATALOGDSN</a>, <a href="../../../../../com/distance/base/api.html#SETDSN()">SETDSN</a>, <a href="../../../../../com/distance/base/api.html#SETKEY()">SETKEY</a>, <a href="../../../../../com/distance/base/api.html#SETSIMPSONLOC()">SETSIMPSONLOC</a>, <a href="../../../../../com/distance/base/api.html#configureFacade()">configureFacade</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(String dsn)</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="categoryService()"><!-- --></a>
+		<h3>categoryService</h3>
+
+		<kbd>
+			property any <strong>categoryService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="communicationService()"><!-- --></a>
+		<h3>communicationService</h3>
+
+		<kbd>
+			property any <strong>communicationService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="feedbackService()"><!-- --></a>
+		<h3>feedbackService</h3>
+
+		<kbd>
+			property any <strong>feedbackService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradeService()"><!-- --></a>
+		<h3>gradeService</h3>
+
+		<kbd>
+			property any <strong>gradeService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradebookService()"><!-- --></a>
+		<h3>gradebookService</h3>
+
+		<kbd>
+			property any <strong>gradebookService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradebookSetupHistoryService()"><!-- --></a>
+		<h3>gradebookSetupHistoryService</h3>
+
+		<kbd>
+			property any <strong>gradebookSetupHistoryService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradedItemService()"><!-- --></a>
+		<h3>gradedItemService</h3>
+
+		<kbd>
+			property any <strong>gradedItemService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETCATEGORYSERVICE()"><!-- --></a>
+	<h3>
+		GETCATEGORYSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETCATEGORYSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOMMUNICATIONSERVICE()"><!-- --></a>
+	<h3>
+		GETCOMMUNICATIONSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETCOMMUNICATIONSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFEEDBACKSERVICE()"><!-- --></a>
+	<h3>
+		GETFEEDBACKSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETFEEDBACKSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEBOOKSERVICE()"><!-- --></a>
+	<h3>
+		GETGRADEBOOKSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETGRADEBOOKSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEBOOKSETUPHISTORYSERVICE()"><!-- --></a>
+	<h3>
+		GETGRADEBOOKSETUPHISTORYSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETGRADEBOOKSETUPHISTORYSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEDITEMSERVICE()"><!-- --></a>
+	<h3>
+		GETGRADEDITEMSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETGRADEDITEMSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADESERVICE()"><!-- --></a>
+	<h3>
+		GETGRADESERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETGRADESERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCATEGORYSERVICE()"><!-- --></a>
+	<h3>
+		SETCATEGORYSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETCATEGORYSERVICE</strong>(any categoryService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>categoryService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOMMUNICATIONSERVICE()"><!-- --></a>
+	<h3>
+		SETCOMMUNICATIONSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETCOMMUNICATIONSERVICE</strong>(any communicationService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>communicationService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFEEDBACKSERVICE()"><!-- --></a>
+	<h3>
+		SETFEEDBACKSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETFEEDBACKSERVICE</strong>(any feedbackService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>feedbackService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEBOOKSERVICE()"><!-- --></a>
+	<h3>
+		SETGRADEBOOKSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETGRADEBOOKSERVICE</strong>(any gradebookService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEBOOKSETUPHISTORYSERVICE()"><!-- --></a>
+	<h3>
+		SETGRADEBOOKSETUPHISTORYSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETGRADEBOOKSETUPHISTORYSERVICE</strong>(any gradebookSetupHistoryService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookSetupHistoryService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEDITEMSERVICE()"><!-- --></a>
+	<h3>
+		SETGRADEDITEMSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETGRADEDITEMSERVICE</strong>(any gradedItemService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADESERVICE()"><!-- --></a>
+	<h3>
+		SETGRADESERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/api/facades/gradebook2Facade.html" title="class in core.modules.gradebook2.api.facades">gradebook2Facade</a> <strong>SETGRADESERVICE</strong>(any gradeService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addGradeImportInfoToQueue()"><!-- --></a>
+	<h3>
+		addGradeImportInfoToQueue 
+	</h3>
+
+	<kbd>public any <strong>addGradeImportInfoToQueue</strong>(numeric gradebookID, numeric courseOfferingID, numeric gradedItemID, numeric sourceModuleID, numeric sourceModuleItemID, numeric gradeTypeID, string gradingConfiguration)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>sourceModuleID</code></dd>
+		
+		<dd><code>sourceModuleItemID</code></dd>
+		
+		<dd><code>gradeTypeID</code></dd>
+		
+		<dd><code>gradingConfiguration</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateStudentGrade()"><!-- --></a>
+	<h3>
+		calculateStudentGrade 
+	</h3>
+
+	<kbd>public void <strong>calculateStudentGrade</strong>(struct gradebook, numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebook</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyGradebook()"><!-- --></a>
+	<h3>
+		copyGradebook 
+	</h3>
+
+	<kbd>public boolean <strong>copyGradebook</strong>(numeric sourceOfferingID, numeric targetOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sourceOfferingID</code></dd>
+		
+		<dd><code>targetOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteImportGrade()"><!-- --></a>
+	<h3>
+		deleteImportGrade 
+	</h3>
+
+	<kbd>public any <strong>deleteImportGrade</strong>(numeric gradeID, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllgradesByGradedItemID()"><!-- --></a>
+	<h3>
+		getAllgradesByGradedItemID 
+	</h3>
+
+	<kbd>public query <strong>getAllgradesByGradedItemID</strong>(Numeric gradedItemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentOfferingsWithGradebooks()"><!-- --></a>
+	<h3>
+		getCurrentOfferingsWithGradebooks 
+	</h3>
+
+	<kbd>public query <strong>getCurrentOfferingsWithGradebooks</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFeedbacksByGradedItemID()"><!-- --></a>
+	<h3>
+		getFeedbacksByGradedItemID 
+	</h3>
+
+	<kbd>public struct <strong>getFeedbacksByGradedItemID</strong>(numeric gradedItemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradeAndFeedbackInfoBySourceModule()"><!-- --></a>
+	<h3>
+		getGradeAndFeedbackInfoBySourceModule 
+	</h3>
+
+	<kbd>public struct <strong>getGradeAndFeedbackInfoBySourceModule</strong>(numeric sourceModuleID, numeric courseofferingID, numeric modifiedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sourceModuleID</code></dd>
+		
+		<dd><code>courseofferingID</code></dd>
+		
+		<dd><code>modifiedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradeAndFeedbackInfoBySourceModuleAndItem()"><!-- --></a>
+	<h3>
+		getGradeAndFeedbackInfoBySourceModuleAndItem 
+	</h3>
+
+	<kbd>public struct <strong>getGradeAndFeedbackInfoBySourceModuleAndItem</strong>(numeric sourcemoduleID, numeric sourcemoduleItemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sourcemoduleID</code></dd>
+		
+		<dd><code>sourcemoduleItemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradebookForOffering()"><!-- --></a>
+	<h3>
+		getGradebookForOffering 
+	</h3>
+
+	<kbd>public struct <strong>getGradebookForOffering</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradedItemsForImport()"><!-- --></a>
+	<h3>
+		getGradedItemsForImport 
+	</h3>
+
+	<kbd>public array <strong>getGradedItemsForImport</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLatestGradebook()"><!-- --></a>
+	<h3>
+		getLatestGradebook 
+	</h3>
+
+	<kbd>public struct <strong>getLatestGradebook</strong>(numeric gradebookID, [numeric courseOfferingID])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID()"><!-- --></a>
+	<h3>
+		getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID 
+	</h3>
+
+	<kbd>public query <strong>getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID</strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID()"><!-- --></a>
+	<h3>
+		getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID 
+	</h3>
+
+	<kbd>public array <strong>getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID</strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentGradeForItem()"><!-- --></a>
+	<h3>
+		getStudentGradeForItem 
+	</h3>
+
+	<kbd>public struct <strong>getStudentGradeForItem</strong>(numeric stuID, numeric gradedItemID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importGrade()"><!-- --></a>
+	<h3>
+		importGrade 
+	</h3>
+
+	<kbd>public numeric <strong>importGrade</strong>(<a href="../../../../../core/modules/gradebook2/model/grade/grade.html" title="class in core.modules.gradebook2.model.grade">grade</a> grade, string appName, numeric gradeTypeID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>grade</code></dd>
+		
+		<dd><code>appName</code></dd>
+		
+		<dd><code>gradeTypeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveGradebookSetupHistory()"><!-- --></a>
+	<h3>
+		saveGradebookSetupHistory 
+	</h3>
+
+	<kbd>public void <strong>saveGradebookSetupHistory</strong>(<a href="../../../../../core/modules/gradebook2/model/gradebookSetupHistory/gradebookSetupHistory.html" title="class in core.modules.gradebook2.model.gradebookSetupHistory">gradebookSetupHistory</a> gradebookSetupHistory)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookSetupHistory</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateStudentFinalGrade()"><!-- --></a>
+	<h3>
+		updateStudentFinalGrade 
+	</h3>
+
+	<kbd>public void <strong>updateStudentFinalGrade</strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID, string gradeValue, string stuGradeValue, [boolean isFinalScore='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>gradeValue</code></dd>
+		
+		<dd><code>stuGradeValue</code></dd>
+		
+		<dd><code>isFinalScore</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>
