@@ -35,7 +35,8 @@ component{
 			'display':"core",
 			'moduleVersion':this.version,
 			'debugMode':false,
-			'defaultLog':'moduleLog.'&this.modelNamespace
+			'defaultLog':'moduleLog.'&this.modelNamespace,
+			'moduleBase':moduleMapping
 		};
 
 		/* layout settings */
