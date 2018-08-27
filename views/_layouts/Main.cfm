@@ -58,11 +58,13 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="##" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="glyphicon glyphicon-info-sign"></i> Framework <b class="caret"></b>
+							<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Framework <span class="caret"></span>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
-							<li><a href="#event.buildLink('main')#"><strong>Application Properties</a></strong></li>
-							<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
+							<li><a href="#event.buildLink('main')#">Application Properties</a></li>
+							<li><a href="#event.buildLink('main.dump')#">Event Dumper</a></li>
+							<li class="divider"></li>
+							<li><a href="http://coldbox.ortusbooks.com">Help Manual</a></li>
 						</ul>
 					</li>
 				</ul>
