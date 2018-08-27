@@ -36,7 +36,10 @@ component{
 			'moduleVersion':this.version,
 			'debugMode':false,
 			'defaultLog':'moduleLog.'&this.modelNamespace,
-			'docbox':new docbox.DocBox( strategy="class.path", properties={} )
+			'docbox':new docbox.DocBox(properties={
+				'projectTitle':"CoursePlus",
+				'outputDir':ExpandPath( '/docs' )
+			})
 		};
 
 		/* layout settings */
