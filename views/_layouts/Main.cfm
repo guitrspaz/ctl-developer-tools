@@ -61,7 +61,7 @@
 							<i class="glyphicon glyphicon-info-sign"></i> About <b class="caret"></b>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
-							<li><a href="#event.buildLink('main')#">Application Properties</a></li>
+							<li><a href="#event.buildLink('main')#"><strong>Application Properties</a></strong></li>
 							<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
 						</ul>
 					</li>
