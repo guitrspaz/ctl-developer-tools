@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Coldbox!</title>
-	<meta name="description" content="ColdBox Application Template">
-    <meta name="author" content="Ortus Solutions, Corp">
+	<title>CoursePlus Developer Tools</title>
+	<meta name="description" content="CoursePlus Developer Tools">
+    <meta name="author" content="CTL">
 	<!---Base URL --->
 	<base href="#event.getHTMLBaseURL()#" />
 	<!---css --->
