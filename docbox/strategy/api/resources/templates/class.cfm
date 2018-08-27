@@ -585,7 +585,7 @@ Class
 							param.required = false;
 						}
 
-						if(NOT param.required)
+						if(isValid('boolean',param.required) AND NOT param.required)
 						{
 							builder.append("[");
 						}
@@ -602,7 +602,7 @@ Class
 							builder.append("='" & param.default & "'");
 						}
 
-						if(NOT param.required)
+						if(isValid('boolean',param.required) AND NOT param.required)
 						{
 							builder.append("]");
 						}

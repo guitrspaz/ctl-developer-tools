@@ -136,10 +136,10 @@ component{
 
 		docbox.generate(
 			source=[{
-				'dir':'/core',
+				'dir':ExpandPath('/core'),
 				'mapping':'core'
 			},{
-				'dir':'/com',
+				'dir':ExpandPath('/com'),
 				'mapping':'com'
 			}],
 			mapping="docs"
