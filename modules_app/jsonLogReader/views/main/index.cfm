@@ -3,7 +3,7 @@
 		<div class="row">
 			<form name="pageForm" id="pageForm" class="ml-form" action="#event.buildLink('json')#" method="post">
 				<div class="form-group">
-					<label for="jsonData">Paste Log Data</label>
+					<label for="jsonData">Paste JSON</label>
 					<textarea class="form-control" contenteditable="true" name="jsonData" id="jsonData" rows="12"><cfif StructKeyExists(prc,'jsonData')>#prc.jsonData#</cfif></textarea>
 				</div>
 				<div class="btn-group" role="group" aria-label="formButtons">
