@@ -46,11 +46,9 @@
 						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 					</a>
 					<ul id="tools-submenu" class="dropdown-menu">
-						<li><a href="#event.buildLink('main')#"><strong>Home</strong></a></li>
 						<li><a href="#event.buildLink('')#"><strong>Log Reader</strong></a></li>
 						<li><a href="#event.getHTMLBaseURL()#docs" target="_blank"><strong>API Docs</strong></a></li>
 						<li><a href="#event.buildLink('testing')#"><strong>Test Browser</strong></a></li>
-						<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
 					</ul>
 				</div>
 			</div>
@@ -63,15 +61,8 @@
 							<i class="glyphicon glyphicon-info-sign"></i> About <b class="caret"></b>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
-							 <li><a href=""><strong>#getSetting("codename",1)# (#getsetting("suffix",1)#)</strong></a></li>
-							 <li><a href="http://coldbox.ortusbooks.com"><i class="glyphicon glyphicon-book"></i> Help Manual</a></li>
-							 <li><a href="mailto:bugs@coldbox.org?subject=DataBoss Bug Report"><i class="glyphicon glyphicon-fire"></i> Report a Bug</a></li>
-							 <li><a href="mailto:info@coldbox.org?subject=DataBoss Feedback"><i class="glyphicon glyphicon-bullhorn"></i> Send Us Feedback</a></li>
-							 <li><a href="http://www.ortussolutions.com/products/coldbox"><i class="glyphicon glyphicon-home"></i> Professional Support</a></li>
-							 <li class="divider"></li>
-							 <li class="centered">
-							 	<img width="150" src="views/_includes/images/ColdBoxLogo2015_300.png" alt="logo"/>
-							 </li>
+							<li><a href="#event.buildLink('main')#">Application Properties</a></li>
+							<li><a href="#event.buildLink('main.dump')#"><strong>Event Dumper</strong></a></li>
 						</ul>
 					</li>
 				</ul>
