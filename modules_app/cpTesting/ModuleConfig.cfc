@@ -36,7 +36,8 @@ component{
 			'moduleVersion':this.version,
 			'debugMode':false,
 			'defaultLog':'moduleLog.'&this.modelNamespace,
-			'moduleBase':moduleMapping
+			'moduleBase':moduleMapping,
+			'pageTitle':this.title
 		};
 
 		/* layout settings */
