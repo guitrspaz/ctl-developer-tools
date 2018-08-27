@@ -11,7 +11,9 @@ component extends="coldbox.system.EventHandler"{
 
 	// Default Action
 	function index(event,rc,prc){
-		prc['sectionTitle']="TestSuite Module";
+		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
+		prc['sectionTitle']=prc.settings.title;
+		prc['moduleBase']=prc.settings.moduleBase;
 		event.setView("main/index");
 	}
 }
