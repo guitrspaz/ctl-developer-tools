@@ -37,7 +37,7 @@ component{
 
 	//app mappings
 	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
-	this.mappings['/docbox']=COLDBOX_APP_ROOT_PATH&"modules/docbox";
+	this.mappings['/docbox']=COLDBOX_APP_ROOT_PATH&"docbox";
 
 	// application start
 	public boolean function onApplicationStart(){
