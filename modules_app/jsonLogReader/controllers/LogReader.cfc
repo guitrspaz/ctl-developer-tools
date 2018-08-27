@@ -12,7 +12,7 @@ component extends="coldbox.system.EventHandler"{
 	// Default Action
 	function index(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.jsonLogReader.settings;
-		prc['sectionTitle']=prc.settings.title;
+		prc['sectionTitle']="Log Reader";
 		prc['moduleBase']=prc.settings.moduleBase;
 		if(structKeyExists(rc,'jsonData')){
 			try{
