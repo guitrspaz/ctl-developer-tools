@@ -36,7 +36,7 @@ component{
 			'moduleVersion':this.version,
 			'debugMode':false,
 			'defaultLog':'moduleLog.'&this.modelNamespace,
-			'docbox':new DocBox( strategy="class.path", properties={} )
+			'docbox':new docbox.DocBox( strategy="class.path", properties={} )
 		};
 
 		/* layout settings */
