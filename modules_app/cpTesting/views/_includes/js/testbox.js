@@ -120,8 +120,8 @@ if( jQuery!==null ){
 			});
 			*/
 		}).fail(function(data,err){
+			console.log('extendedInfo',{data:data,error:err});
 			jQuery('#tb-results').html('<div class="alert alert-danger"><span class="glyphicon glyphicon-repeat glyphicon-alert" aria-hidden="true"></span>&nbsp;The following error occurred: '+err.message+' See the console for more information.</div>');
-			//console.log('extendedInfo',{data:data,error:err});
 		});
 	}
 }
