@@ -1,0 +1,1 @@
+<cfscript>WriteOutput(renderView());</cfscript>
