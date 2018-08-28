@@ -27,7 +27,7 @@ component
 		return this;
 	}
 
-	public String function buildBreadCrumbs( required String link,required String path ){
+	public String function buildBreadCrumbs( required String link,required String path,Array defaults=[] ){
 		var errorStruct={
 			'start':Now(),
 			'logType':'warning',
@@ -37,10 +37,13 @@ component
 			'link':'/'
 		};
 		try{
-			errorStruct.result&='<ol class="breadcrumb pull-left">';
-			errorStruct.result&='<li class="package"><a href="#arguments.link#/path/:com">com</a></li>';
-			errorStruct.result&='<li class="package"><a href="#arguments.link#/path/:core">core</a></li>';
-			errorStruct.result&='</ol>';
+			if( ArrayLen(arguments.suites) ){
+				errorStruct.result&='<ol class="breadcrumb pull-left">';
+				for(var p=1;p<ArrayLen(arguments.suites);p++ ){
+					errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(arguments.suites[p],'/',':','ALL'),'::',':','ALL')&'">'&Trim(arguments.suites[p])&'</a></li>';
+				}
+				errorStruct.result&='</ol>';
+			}
 			errorStruct.result&='<ol class="breadcrumb pull-left">';
 			for( var a=1;a<=ArrayLen(errorStruct.sections);a++ ){
 				if( Len(Trim(errorStruct.sections[a])) ){

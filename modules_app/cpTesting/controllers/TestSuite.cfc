@@ -12,12 +12,13 @@ component extends="coldbox.system.EventHandler"{
 	// Default Action
 	function index(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
+		prc['suites']=['/src/tests/suites'];
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
-			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):'/com'
+			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
-		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root);
+		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root,prc.suites);
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.root,'/',':','ALL');
 		prc.testData['directories']=directoryList(
 			ExpandPath(prc.testData.root),
@@ -34,7 +35,7 @@ component extends="coldbox.system.EventHandler"{
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
 			'bundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
-			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):'/com'
+			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
