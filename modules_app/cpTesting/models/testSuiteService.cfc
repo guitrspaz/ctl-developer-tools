@@ -27,4 +27,43 @@ component
 		return this;
 	}
 
+	public String function buildBreadCrumbs( required String link,required String path ){
+		var errorStruct={
+			'start':Now(),
+			'logType':'warning',
+			'result':'',
+			'stackTrace':getStackTrace(),
+			'sections':ListToArray(arguments.path,'/'),
+			'link':'/'
+		};
+		try{
+			errorStruct.result&='<ol class="breadcrumb pull-left">';
+			errorStruct.result&='<li class="package"><a href="#arguments.link#/path/:com">com</a></li>';
+			errorStruct.result&='<li class="package"><a href="#arguments.link#/path/:core">core</a></li>';
+			errorStruct.result&='</ol>';
+			errorStruct.result&='<ol class="breadcrumb pull-left">';
+			for( var a=1;a<=ArrayLen(errorStruct.sections);a++ ){
+				if( Len(Trim(errorStruct.sections[a])) ){
+					errorStruct.link&='/'&Trim(errorStruct.sections[a]);
+					errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(errorStruct.link,'/',':','ALL'),'::',':','ALL')&'">'&Trim(errorStruct.sections[a])&'</a></li>';
+				}
+			}
+			errorStruct.result&='</ol>';
+			errorStruct['logType']='information';
+		} catch(Any e){
+			errorStruct['cfcatch']=e;
+			errorStruct['logType']='error';
+		}
+		errorStruct['end']=Now();
+		errorStruct['diff']=DateDiff('s',errorStruct.start,errorStruct.end);
+		if( errorStruct.logType!='information' || this.getdebugMode() ){
+			createLog(
+				logName=this.getdefaultLog(),
+				logType=errorStruct.logType,
+				functName=this.getcaller()&".buildBreadCrumbs()",
+				args=errorStruct
+			);
+		}
+		return errorStruct.result;
+	}
 }

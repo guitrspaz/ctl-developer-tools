@@ -16,12 +16,12 @@ component{
 	this['version']="0.0.1";
 	this['viewParentLookup']=true;// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
 	this['layoutParentLookup']=true;// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
-	this['inheritEntryPoint']=false;
-	this['entryPoint']="/json";// The module entry point using SES
+	this['inheritEntryPoint']=true;
+	this['entryPoint']="/jsonLogReader";// The module entry point using SES
 	this['autoMapModels']=false;
-	this['modelNamespace']="json";
-	this['cfmapping']="json";
-	this['aliases']=[];
+	this['modelNamespace']="jsonLogReader";
+	this['cfmapping']="jsonLogReader";
+	this['aliases']=['json'];
 	this['parseParentSettings']=true;
 	//this['dependencies']=[ "JavaLoader", "CFCouchbase" ];
 

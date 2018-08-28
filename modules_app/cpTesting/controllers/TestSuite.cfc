@@ -15,9 +15,16 @@ component extends="coldbox.system.EventHandler"{
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
-			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?URLDecode(rc.path):'/'
+			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):'/com'
 		};
-		prc['testSuiteService']=getInstance('testSuiteService');
+		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root);
+		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.root,'/',':','ALL');
+		prc.testData['directories']=directoryList(
+			ExpandPath(prc.testData.root),
+			false,
+			'query'
+		);
+		prc.testData['package']=ArrayToList(ListToArray(prc.testData.root,'/'),'.');
 		event.setView("main/index");
 	}
 
@@ -26,9 +33,11 @@ component extends="coldbox.system.EventHandler"{
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
-			'bundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?URLDecode(rc.testBundles):'',
-			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?URLDecode(rc.directory):'/'
+			'bundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
+			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):'/com'
 		};
+		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
+		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
 		event.setView("main/runner");
 	}
 }

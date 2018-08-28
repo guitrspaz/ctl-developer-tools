@@ -16,12 +16,12 @@ component{
 	this['version']="0.0.1";
 	this['viewParentLookup']=true;// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
 	this['layoutParentLookup']=true;// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
-	this['inheritEntryPoint']=false;
-	this['entryPoint']="/testing";// The module entry point using SES
+	this['inheritEntryPoint']=true;
+	this['entryPoint']="/cpTesting";// The module entry point using SES
 	this['autoMapModels']=false;
-	this['modelNamespace']="testing";
-	this['cfmapping']="testing";
-	this['aliases']=[];
+	this['modelNamespace']="cpTesting";
+	this['cfmapping']="cpTesting";
+	this['aliases']=['testing'];
 	this['parseParentSettings']=true;
 	//this['dependencies']=[ "JavaLoader", "CFCouchbase" ];
 
@@ -59,9 +59,7 @@ component{
 
 		/* SES Routes */
 		routes=[
-			// Module Entry Point
 			{ 'pattern':"/", 'handler':"TestSuite", 'action':"index" },
-			// Convention Route
 			{ 'pattern':"/:handler/:action?" }
 		];
 
