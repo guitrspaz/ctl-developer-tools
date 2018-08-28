@@ -28,12 +28,12 @@ component
 		getPageContext().getResponse().setContentType( "text/html" );
 
 		// bundle stats
-		variables.bundleStats = arguments.results.getBundleStats();
+		variables['bundleStats'] = arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL = application['base']&'assets/cfm/runner.cfm?directory='&url.directory;
-		if( structKeyExists( url, "method") ){ variables.baseURL&= "&method=#URLEncodedFormat( url.method )#"; }
-		if( structKeyExists( url, "output") ){ variables.baseURL&= "&output=#URLEncodedFormat( url.output )#"; }
+		variables['baseURL']=(StructKeyExists(arguments.options,'baseURL'))?Trim(arguments.options.baseURL):'/';
+		if( structKeyExists( url, "method") ){ variables.baseURL&= "/method/#URLEncodedFormat( url.method )#"; }
+		if( structKeyExists( url, "output") ){ variables.baseURL&= "/output/#URLEncodedFormat( url.output )#"; }
 
 		// prepare incoming params
 		if( !structKeyExists( url, "testMethod") ){ url.testMethod = ""; }
@@ -42,8 +42,12 @@ component
 		if( !structKeyExists( url, "testBundles") ){ url.testBundles = ""; }
 
 		// prepare the report
-		savecontent variable="local.report"{
-			include application['base']&'assets/cfm/templates/html.cfm';
+		try{
+			savecontent variable="local.report"{
+				include arguments.options.base&'views/_includes/cfm/templates/html.cfm';
+			}
+		} catch(Any e){
+			local.report=e;
 		}
 		return local.report;
 	}

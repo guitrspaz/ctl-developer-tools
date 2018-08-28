@@ -21,7 +21,8 @@ component extends="coldbox.system.EventHandler"{
 		});
 		prc['testData']={
 			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
-			'reporter':prc.settings.testReporter
+			'reporter':prc.settings.testReporter,
+			'options':{}
 		};
 		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root,prc.suites,prc.exclusions);
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.root,'/',':','ALL');
@@ -31,6 +32,8 @@ component extends="coldbox.system.EventHandler"{
 			'query'
 		);
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.root,'/'),'.');
+		prc.testData.options['baseURL']=event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#:#prc.testData.directories.name#');
+		prc.testData.options['base']=prc.settings.moduleRoot;
 		event.setView("main/index");
 	}
 
@@ -41,11 +44,14 @@ component extends="coldbox.system.EventHandler"{
 		prc['testData']={
 			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
 			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
-			'reporter':prc.settings.testReporter
+			'reporter':prc.settings.testReporter,
+			'options':{}
 		};
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
+		prc.testData.options['baseURL']=event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#:#prc.testData.directories.name#');
+		prc.testData.options['base']=prc.settings.moduleRoot;
 		event.setView(view="main/runner",layout="Blank");
 	}
 }
