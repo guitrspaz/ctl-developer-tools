@@ -4,7 +4,7 @@
 		<div class="site-content-contain">
 			<div id="content" class="site-content">
 				<div id="primary" class="content-area">
-					<h1>#prc.sectionTitle#</h1>
+					<h2>#prc.sectionTitle#</h2>
 					<p>
 						Below is a listing of the files and folders starting from your root <code>#prc.testData.root#</code>.  You can click on individual tests in order to execute them
 						or click on the <strong>Run All</strong> button above and it will execute a directory runner from the visible folder.
