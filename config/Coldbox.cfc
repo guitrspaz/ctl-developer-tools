@@ -57,7 +57,9 @@ component{
 		/* custom settings */
 		settings={
 			'appVersion':'0.0.1',
-			'defaultLog':'developerTools',
+			'appHash':application.getname(),
+			'ctlEmail':'ctlhelp@jhu.edu',
+			'defaultLog':application.getname()&'.AppLog',
 			'debugMode':false,
 			'testSetting':true,
 		    'dsn':{
@@ -128,7 +130,7 @@ component{
 			}
 		};
 
-		/* DocBox */
+		/* DocBox
 		docbox=new docbox.DocBox(properties={
 			'projectTitle':"CoursePlus",
 			'outputDir':ExpandPath( '/docs' )
@@ -144,6 +146,7 @@ component{
 			}],
 			mapping="docs"
 		);
+		*/
 
 		/* module setting overrides
 		moduleSettings={

@@ -7,7 +7,7 @@
 * @modified: Tuesday, 03/01/2016 08:24:54 AM
 */
 
-component singleton
+component
 	displayname="models.base.dao"
 	extends="models.base.service"
 	output="false"

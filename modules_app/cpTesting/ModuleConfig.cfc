@@ -18,7 +18,7 @@ component{
 	this['layoutParentLookup']=true;// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
 	this['inheritEntryPoint']=false;
 	this['entryPoint']="/testing";// The module entry point using SES
-	this['autoMapModels']=true;
+	this['autoMapModels']=false;
 	this['modelNamespace']="testing";
 	this['cfmapping']="testing";
 	this['aliases']=[];
@@ -33,11 +33,14 @@ component{
 		/* module settings - stored in the main configuration settings struct as modules.{moduleName}.settings */
 		settings={
 			'display':"core",
+			'moduleName':this.title,
+			'moduleRoot':moduleMapping,
 			'moduleVersion':this.version,
+			'modulePrefix':this.modelNamespace,
 			'debugMode':false,
-			'defaultLog':'moduleLog.'&this.modelNamespace,
-			'moduleBase':moduleMapping,
-			'pageTitle':this.title
+			'defaultLog':controller.getSetting('appHash')&'.ModuleLog.'&this.modelNamespace,
+			'pageTitle':this.title,
+			'testBox':new testbox.system.TestBox()
 		};
 
 		/* layout settings */
@@ -54,17 +57,6 @@ component{
 			'modelsLocation':"models"
 		};
 
-		/* datasources
-			datasources={
-				'dsn'={
-					'name'="dbname",
-					'dbType'="SQL",
-					'username'="root",
-					'password'="root"
-				}
-			};
-		*/
-
 		/* SES Routes */
 		routes=[
 			// Module Entry Point
@@ -73,22 +65,8 @@ component{
 			{ 'pattern':"/:handler/:action?" }
 		];
 
-		/* Interceptor Config
-			interceptorSettings={
-				customInterceptionPoints="onModuleError"
-			};
-		*/
-
-		/* Interceptors
-			interceptors=[{
-				'name':"modulesecurity",
-				'class':moduleMapping&'.interceptors.security',
-				'properties':{
-					'URLMatch':'/api-docs',
-					'loginURL':'/api-docs/login'
-				}
-			}];
-		*/
+		/* Map Services */
+		binder.mapDirectory(Right(moduleMapping,Len(moduleMapping)-1)).initWith(argumentCollection=settings);
     }
 
 	/************************************** IMPLICIT ACTIONS *********************************************/

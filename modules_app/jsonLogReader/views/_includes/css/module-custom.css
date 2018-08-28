@@ -5,7 +5,7 @@ div#pageFooter{
 	margin-top:60px;
 }
 
-.ml-form,.ml-cfdump-table { margin:20px auto; position:relative; width:80%; }
+.ml-form,.ml-cfdump-table { margin:20px auto; position:relative; /* width:80%; */ }
 .ml-cfdump-table .cfdump_struct, .ml-cfdump-table .cfdump_array{
 	display:table;
 	position:relative;

@@ -8,7 +8,7 @@
 * @modified: Wednesday, 03/15/2017 08:29:29 AM
 */
 
-component singleton
+component
 	displayname="moduleProperties"
 	output="false"
 	accessors="true"

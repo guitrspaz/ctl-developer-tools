@@ -13,7 +13,22 @@ component extends="coldbox.system.EventHandler"{
 	function index(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
 		prc['sectionTitle']=prc.settings.pageTitle;
-		prc['moduleBase']=prc.settings.moduleBase;
+		prc['moduleRoot']=prc.settings.moduleRoot;
+		prc['testData']={
+			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?URLDecode(rc.path):'/'
+		};
+		prc['testSuiteService']=getInstance('testSuiteService');
 		event.setView("main/index");
+	}
+
+	function runner(event,rc,prc){
+		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
+		prc['sectionTitle']=prc.settings.pageTitle;
+		prc['moduleRoot']=prc.settings.moduleRoot;
+		prc['testData']={
+			'bundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?URLDecode(rc.testBundles):'',
+			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?URLDecode(rc.directory):'/'
+		};
+		event.setView("main/runner");
 	}
 }

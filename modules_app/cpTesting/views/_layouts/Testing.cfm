@@ -1,13 +1,13 @@
 <cfscript>
 	/* module javascripts */
 	prc['scripts']=[
-		prc.moduleBase&'/views/_includes/js/testbox.js'
+		prc.moduleRoot&'/views/_includes/js/testbox.js'
 	];
 
 	/* module css */
 	prc['css']=[
-		prc.moduleBase&'/views/_includes/css/html.css',
-		prc.moduleBase&'/views/_includes/css/testbox.css'
+		prc.moduleRoot&'/views/_includes/css/html.css',
+		prc.moduleRoot&'/views/_includes/css/testbox.css'
 	];
 
 	/* Render to default layout */

@@ -13,7 +13,7 @@ component extends="coldbox.system.EventHandler"{
 	function index(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.jsonLogReader.settings;
 		prc['sectionTitle']=prc.settings.pageTitle;
-		prc['moduleBase']=prc.settings.moduleBase;
+		prc['moduleRoot']=prc.settings.moduleRoot;
 		if(structKeyExists(rc,'jsonData')){
 			try{
 				prc['jsonData']=Duplicate(rc.jsonData);
