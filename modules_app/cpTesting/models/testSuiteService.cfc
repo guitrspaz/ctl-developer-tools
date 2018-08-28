@@ -39,7 +39,7 @@ component
 			'result':'',
 			'stackTrace':getStackTrace(),
 			'sections':ListToArray(arguments.path,'/'),
-			'link':'/'
+			'link':(ArrayLen(arguments.suites))?arguments.suites[1]:'/'
 		};
 		try{
 			if( ArrayLen(arguments.suites) ){
