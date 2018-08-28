@@ -50,7 +50,7 @@ component extends="coldbox.system.EventHandler"{
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
-		prc.testData.options['baseURL']=event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#:#prc.testData.directories.name#');
+		prc.testData.options['baseURL']=event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#');
 		prc.testData.options['base']=prc.settings.moduleRoot;
 		event.setView(view="main/runner",layout="Blank");
 	}
