@@ -27,7 +27,12 @@ component
 		return this;
 	}
 
-	public String function buildBreadCrumbs( required String link,required String path,Array suites=[] ){
+	public String function buildBreadCrumbs(
+		required String link,
+		required String path,
+		Array suites=[],
+		Array exclusions=[]
+	){
 		var errorStruct={
 			'start':Now(),
 			'logType':'warning',
@@ -40,18 +45,20 @@ component
 			if( ArrayLen(arguments.suites) ){
 				errorStruct.result&='<ol class="breadcrumb pull-left">';
 				for(var p=1;p<=ArrayLen(arguments.suites);p++ ){
-					errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(arguments.suites[p],'/',':','ALL'),'::',':','ALL')&'">'&Trim(arguments.suites[p])&'</a></li>';
+					errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(arguments.suites[p],'/',':','ALL'),'::',':','ALL')&'">'&Trim(ListLast(arguments.suites[p],'/'))&'</a></li>';
 				}
 				errorStruct.result&='</ol>';
 			}
-			errorStruct.result&='<ol class="breadcrumb pull-left">';
-			for( var a=1;a<=ArrayLen(errorStruct.sections);a++ ){
-				if( Len(Trim(errorStruct.sections[a])) ){
-					errorStruct.link&='/'&Trim(errorStruct.sections[a]);
-					errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(errorStruct.link,'/',':','ALL'),'::',':','ALL')&'">'&Trim(errorStruct.sections[a])&'</a></li>';
+			if( ArrayLen(errorStruct.sections) ){
+				errorStruct.result&='<ol class="breadcrumb pull-left">';
+				for( var a=1;a<=ArrayLen(errorStruct.sections);a++ ){
+					if( Len(Trim(errorStruct.sections[a])) && !ArrayFindNoCase(arguments.exclusions,Trim(errorStruct.sections[a])) ){
+						errorStruct.link&='/'&Trim(errorStruct.sections[a]);
+						errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(errorStruct.link,'/',':','ALL'),'::',':','ALL')&'">'&Trim(errorStruct.sections[a])&'</a></li>';
+					}
 				}
+				errorStruct.result&='</ol>';
 			}
-			errorStruct.result&='</ol>';
 			errorStruct['logType']='information';
 		} catch(Any e){
 			errorStruct['cfcatch']=e;

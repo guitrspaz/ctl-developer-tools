@@ -15,10 +15,14 @@ component extends="coldbox.system.EventHandler"{
 		prc['suites']=['/src/tests/suites'];
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
+		prc['exclusions']=[];
+		prc.suites.each(function(suite){
+			ArrayAppend(prc.exclusions,ListToArray(suite,'/'),true);
+		});
 		prc['testData']={
 			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
-		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root,prc.suites);
+		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root,prc.suites,prc.exclusions);
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.root,'/',':','ALL');
 		prc.testData['directories']=directoryList(
 			ExpandPath(prc.testData.root),
