@@ -39,7 +39,7 @@ component extends="coldbox.system.EventHandler"{
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
-			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
+			'bundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
 			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
 			'reporter':prc.settings.testReporter
 		};
