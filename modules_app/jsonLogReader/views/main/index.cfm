@@ -1,7 +1,7 @@
 <cfoutput>
 	<article id="articleTop" class="container-fluid">
 		<div>
-			<h1>#prc.sectionTitle#</h1>
+			<h2>#prc.sectionTitle#</h2>
 		</div>
 		<form name="articleForm" id="pageForm" class="ml-form" action="#event.buildLink('')#" method="post">
 			<div class="form-group">
