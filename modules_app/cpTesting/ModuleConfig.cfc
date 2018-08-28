@@ -40,6 +40,7 @@ component{
 			'debugMode':false,
 			'defaultLog':controller.getSetting('appHash')&'.ModuleLog.'&this.modelNamespace,
 			'pageTitle':this.title,
+			'testReporter':'HTMLReporter',
 			'testBox':new testbox.system.TestBox()
 		};
 

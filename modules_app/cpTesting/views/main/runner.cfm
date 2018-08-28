@@ -1,5 +1,1 @@
-<!--- runner --->
-<cfoutput>
-	<!--- <cfdump var="#event#" /> --->
-	<cfdump var="#prc#" />
-</cfoutput>
+<cfscript>WriteOutput(prc.settings.testBox.runRemote(prc.testData));</cfscript>
