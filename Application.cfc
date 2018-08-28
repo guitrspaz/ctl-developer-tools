@@ -42,9 +42,6 @@ component{
 	// application start
 	public boolean function onApplicationStart(){
 		application['cbBootstrap']=new coldbox.system.Bootstrap( COLDBOX_CONFIG_FILE, COLDBOX_APP_ROOT_PATH, COLDBOX_APP_KEY, COLDBOX_APP_MAPPING );
-		application['serverPath']=ReplaceNoCase(cgi.PATH_TRANSLATED,cgi.SCRIPT_NAME,'','ONE');
-		application['fullPath']=getDirectoryFromPath(getCurrentTemplatePath());
-		application['base']=(FindNoCase(application.serverPath,application.fullPath))?ReplaceNoCase(application.fullPath,application.serverPath,'','ONE'):'/';
 		application.cbBootstrap.loadColdbox();
 		return true;
 	}
