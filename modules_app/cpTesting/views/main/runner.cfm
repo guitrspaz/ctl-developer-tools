@@ -1,1 +1,1 @@
-<cfscript>WriteOutput(prc.settings.testBox.runRemote(argumentCollection=prc.testData));</cfscript>
+<cfscript>WriteOutput(ReplaceNoCase(prc.settings.testBox.runRemote(argumentCollection=prc.testData),'//','','ONE'));</cfscript>
