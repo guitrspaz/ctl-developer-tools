@@ -27,7 +27,7 @@ component
 		return this;
 	}
 
-	public String function buildBreadCrumbs( required String link,required String path,Array defaults=[] ){
+	public String function buildBreadCrumbs( required String link,required String path,Array suites=[] ){
 		var errorStruct={
 			'start':Now(),
 			'logType':'warning',
