@@ -1,1 +1,1 @@
-<cfscript>WriteOutput(renderView());</cfscript>
+<cfscript>WriteOutput(ReplaceNoCase(renderView(),'//','','ONE'));</cfscript>
