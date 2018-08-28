@@ -5,7 +5,7 @@
 			<h1>#prc.sectionTitle#</h1>
 		</div>
 		--->
-		<form name="articleForm" id="pageForm" class="ml-form" action="#event.buildLink('json')#" method="post">
+		<form name="articleForm" id="pageForm" class="ml-form" action="#event.buildLink('')#" method="post">
 			<div class="form-group">
 				<label for="jsonData">Paste JSON</label>
 				<textarea class="form-control" contenteditable="true" name="jsonData" id="jsonData" rows="12"><cfif StructKeyExists(prc,'jsonData')>#prc.jsonData#</cfif></textarea>
