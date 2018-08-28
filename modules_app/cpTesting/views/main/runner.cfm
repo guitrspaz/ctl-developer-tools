@@ -1,1 +1,1 @@
-<cfscript>WriteOutput(prc.settings.testBox.runRemote(prc.testData));</cfscript>
+<cfscript>WriteOutput(prc.settings.testBox.runRemote(argumentCollection=prc.testData));</cfscript>
