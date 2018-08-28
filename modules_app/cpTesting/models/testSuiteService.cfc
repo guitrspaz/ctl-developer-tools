@@ -39,7 +39,7 @@ component
 		try{
 			if( ArrayLen(arguments.suites) ){
 				errorStruct.result&='<ol class="breadcrumb pull-left">';
-				for(var p=1;p<ArrayLen(arguments.suites);p++ ){
+				for(var p=1;p<=ArrayLen(arguments.suites);p++ ){
 					errorStruct.result&='<li><a href="'&arguments.link&'/path/'&ReplaceNoCase(ReplaceNoCase(arguments.suites[p],'/',':','ALL'),'::',':','ALL')&'">'&Trim(arguments.suites[p])&'</a></li>';
 				}
 				errorStruct.result&='</ol>';
