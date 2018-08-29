@@ -40,13 +40,6 @@ component{
 
 	// application start
 	public boolean function onApplicationStart(){
-		//application root web path
-		application['webPath']=ReplaceNoCase(cgi.PATH_TRANSLATED,cgi.SCRIPT_NAME,'','ONE');
-		//application root server path
-		application['serverPath']=getDirectoryFromPath(getCurrentTemplatePath());
-		//translated application path
-		application['base']=(FindNoCase(application.webPath,application.serverPath))?ReplaceNoCase(application.serverPath,application.webPath,'','ONE'):'/';
-
 		//Bootstrapper
 		application['cbBootstrap']=new coldbox.system.Bootstrap( COLDBOX_CONFIG_FILE, COLDBOX_APP_ROOT_PATH, COLDBOX_APP_KEY, COLDBOX_APP_MAPPING );
 
