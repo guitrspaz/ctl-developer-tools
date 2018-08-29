@@ -34,12 +34,13 @@ component{
 		getPageContext().getResponse().setContentType( "text/html" );
 
 		// bundle stats
-		variables.bundleStats = arguments.results.getBundleStats();
+		variables.bundleStats=arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL = "/index.cfm/testing:TestSuite/runner";
-		if( structKeyExists( url, "method") ){ variables.baseURL&="/method/"&url.method; }
-		if( structKeyExists( url, "output") ){ variables.baseURL&="/output/"&url.output; }
+		variables.baseURL="/index.cfm/testing:TestSuite/runner";
+		if( structKeyExists( url,'directory') ){ variables.baseURL&='/directory/'&ReplaceNoCase(url.directory,'/',':','ALL'); }
+		if( structKeyExists( url,'method') ){ variables.baseURL&="/method/"&url.method; }
+		if( structKeyExists( url,'output') ){ variables.baseURL&="/output/"&url.output; }
 
 		// prepare incoming params
 		if( !structKeyExists( url, "testMethod") ){ url.testMethod = ""; }
