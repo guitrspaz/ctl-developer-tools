@@ -1,4 +1,6 @@
 component
+	displayname="reporters.HTMLReporter"
+	accessors="true"
 {
 	property name='name' getter="true" setter="true" default="HTML";
 	property name='directory' getter="true" setter="true" default="/";
