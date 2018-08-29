@@ -39,15 +39,16 @@
 									<a href="#event.buildLink('testing:TestSuite.index',true,true,'','path=#prc.testData.encodedRoot#:#prc.testData.directories.name#')#"><span style="text-transform:capitalize;">#prc.testData.directories.name#</span></a>
 								</li>
 							<cfelseif listLast( prc.testData.directories.name, ".") EQ "cfc" and prc.testData.directories.name NEQ "Application.cfc">
+								<cfset newname=ReplaceNoCase(prc.testData.directories.name,'.cfc','','ONE') />
 								<li class="list-group-item">
 									<span class="btn-group">
 										<a class="btn btn-success tb-dir-btn tb-file-btn"
 											role="button"
-											href="#event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#&testBundles=#prc.testData.package#.#prc.testData.directories.name#')#"
+											href="#event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#&testBundles=#prc.testData.package#.#newname#')#"
 										><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
 									</span>
 									<a class="tb-file-btn"
-										href="#event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#&testBundles=#prc.testData.package#.#prc.testData.directories.name#')#"
+										href="#event.buildLink('testing:TestSuite.runner',true,true,'','directory=#prc.testData.encodedRoot#&testBundles=#prc.testData.package#.#newname#')#"
 									><span style="text-transform:capitalize;">#prc.testData.directories.name#</span></a>
 								</li>
 							</cfif>
