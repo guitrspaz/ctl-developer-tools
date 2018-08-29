@@ -12,7 +12,7 @@ component extends="coldbox.system.EventHandler"{
 	// Default Action
 	function index(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
-		prc['suites']=['/src/tests/suites'];
+		prc['suites']=prc.settings.testSuites;
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['exclusions']=[];
@@ -35,6 +35,7 @@ component extends="coldbox.system.EventHandler"{
 
 	function runner(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
+		prc['suites']=prc.settings.testSuites;
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={

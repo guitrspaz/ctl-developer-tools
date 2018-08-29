@@ -39,6 +39,7 @@ component{
 			'debugMode':false,
 			'defaultLog':controller.getSetting('appHash')&'.ModuleLog.'&this.modelNamespace,
 			'pageTitle':this.title,
+			'testSuites':['/src/tests/suites'],
 			'testReporter':ArrayToList(ListToArray(moduleMapping,'/'),'.')&'.reporters.HTMLReporter'
 		};
 
