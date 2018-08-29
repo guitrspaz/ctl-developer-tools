@@ -51,6 +51,12 @@ component extends="coldbox.system.EventHandler"{
 		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
 		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
 		prc.results=prc.testBox.run(argumentCollection=prc.testData);
+		if( StructKeyExists(prc.results,'bundleStats') && isValid('array',prc.results.bundleStats) && ArrayLen(prc.results.bundleStats) ){
+			var bs=prc.results.bundleStats.filter(function(bundle){
+				return (structKeyExists(bundle,'totalSuites') && Val(bundle.totalSuites) )?true:false;
+			});
+			prc.results.bundleStats=bs;
+		}
 		event.setView(view="main/runner",layout="Blank");
 	}
 }
