@@ -10,11 +10,11 @@ component
 	property name='testBundles' getter="true" setter="true" default="";
 
 	function init(){
-		arguments.each(function(key,value){
-			if( !isNull(key) && !isNull(value) && structKeyExists(this,'set'&key) ){
-				Evaluate('this.set'&key&'('&value&')');
+		for(var arg in arguments){
+			if( structKeyExists(this,'set'&arg) ){
+				Evaluate('this.set'&arg&'('&arguments[arg]&')');
 			}
-		});
+		}
 		return this;
 	}
 
