@@ -1,34 +1,20 @@
-component
-	displayname="reporters.HTMLReporter"
-	accessors="true"
-{
-	property name='name' getter="true" setter="true" default="HTML";
-	property name='directory' getter="true" setter="true" default="/";
-	property name='testMethod' getter="true" setter="true" default="";
-	property name='testSpecs' getter="true" setter="true" default="";
-	property name='testSuites' getter="true" setter="true" default="";
-	property name='testBundles' getter="true" setter="true" default="";
+/**
+* Copyright Since 2005 TestBox Framework by Luis Majano and Ortus Solutions, Corp
+* www.ortussolutions.com
+* ---
+* A simple HTML reporter
+*/
+component{
 
 	function init(){
-		if( StructKeyExists(arguments,'name') ){
-			this.setname(arguments.name);
-		}
-		if( StructKeyExists(arguments,'directory') ){
-			this.setdirectory(arguments.directory);
-		}
-		if( StructKeyExists(arguments,'testMethod') ){
-			this.settestMethod(arguments.testMethod);
-		}
-		if( StructKeyExists(arguments,'testSpecs') ){
-			this.settestSpecs(arguments.testSpecs);
-		}
-		if( StructKeyExists(arguments,'testSuites') ){
-			this.settestSuites(arguments.testSuites);
-		}
-		if( StructKeyExists(arguments,'testBundles') ){
-			this.settestBundles(arguments.testBundles);
-		}
 		return this;
+	}
+
+	/**
+	* Get the name of the reporter
+	*/
+	function getName(){
+		return "Simple";
 	}
 
 	/**
@@ -48,20 +34,24 @@ component
 		getPageContext().getResponse().setContentType( "text/html" );
 
 		// bundle stats
-		variables.bundleStats=arguments.results.getBundleStats();
-		variables.directory=this.getdirectory();
-		variables.testMethod=this.gettestMethod();
-		variables.testSpecs=this.gettestSpecs();
-		variables.testSuites=this.gettestSuites();
-		variables.testBundles=this.gettestBundles();
+		variables.bundleStats = arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL='/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(this.getdirectory()),'/',':');
+		variables.baseURL = "?";
+		if( structKeyExists( url, "method") ){ variables.baseURL&= "method=#URLEncodedFormat( url.method )#"; }
+		if( structKeyExists( url, "output") ){ variables.baseURL&= "output=#URLEncodedFormat( url.output )#"; }
+
+		// prepare incoming params
+		if( !structKeyExists( url, "testMethod") ){ url.testMethod = ""; }
+		if( !structKeyExists( url, "testSpecs") ){ url.testSpecs = ""; }
+		if( !structKeyExists( url, "testSuites") ){ url.testSuites = ""; }
+		if( !structKeyExists( url, "testBundles") ){ url.testBundles = ""; }
 
 		// prepare the report
 		savecontent variable="local.report"{
-			include 'templates/html.cfm';
+			include "assets/simple.cfm";
 		}
+
 		return local.report;
 	}
 

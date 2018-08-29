@@ -47,8 +47,7 @@ component extends="coldbox.system.EventHandler"{
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
-		prc.reporter=CreateObject('component',prc.settings.testReporter).init(argumentCollection=prc.testData);
-		prc.testBox=new testbox.system.TestBox(reporter=prc.reporter);
+		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
 
 		event.setView(view="main/runner",layout="Blank");
 	}
