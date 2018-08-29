@@ -43,7 +43,7 @@
 		<div class="box bundle" id="bundleStats_#thisBundle.path#" data-bundle="#thisBundle.path#">
 
 			<!--- bundle stats --->
-			<h2><a href="#variables.baseURL#/testBundles/#URLEncodedFormat( thisBundle.path )#" title="Run only this bundle" class="tb-file-btn">#thisBundle.name#</a> (#thisBundle.totalDuration# ms)</h2>
+			<h2><a href="#variables.baseURL#/testBundles/#thisBundle.path#" title="Run only this bundle" class="tb-file-btn">#thisBundle.name#</a> (#thisBundle.totalDuration# ms)</h2>
 			[ Suites/Specs: #thisBundle.totalSuites#/#thisBundle.totalSpecs# ]
 			[ <span class="specStatus passed" 	data-status="passed" data-bundleid="#thisBundle.id#">Pass: #thisBundle.totalPass#</span> ]
 			[ <span class="specStatus failed" 	data-status="failed" data-bundleid="#thisBundle.id#">Failures: #thisBundle.totalFail#</span> ]
@@ -109,7 +109,7 @@
 				<ul>
 				<div class="spec #lcase( local.thisSpec.status )#" data-bundleid="#arguments.bundleStats.id#" data-specid="#local.thisSpec.id#">
 					<li>
-						<a href="#variables.baseURL#/testSpecs/#URLEncodedFormat( local.thisSpec.name )#/testBundles/#URLEncodedFormat( arguments.bundleStats.path )#" class="tb-file-btn #lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
+						<a href="#variables.baseURL#/testSpecs/#URLEncodedFormat( local.thisSpec.name )#/testBundles/#arguments.bundleStats.path#" class="tb-file-btn #lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
 
 						<cfif local.thisSpec.status eq "failed">
 							- <strong>#htmlEditFormat( local.thisSpec.failMessage )#</strong>
