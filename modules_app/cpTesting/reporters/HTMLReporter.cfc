@@ -37,7 +37,7 @@ component{
 		variables.bundleStats = arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL = "/index.cfm/testing:TestSuite.runner/";
+		variables.baseURL = "/index.cfm/testing:TestSuite.runner";
 		if( structKeyExists( url, "method") ){ variables.baseURL&="/method/"&url.method; }
 		if( structKeyExists( url, "output") ){ variables.baseURL&="/output/"&url.output; }
 
