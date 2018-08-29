@@ -49,9 +49,5 @@ component extends="coldbox.system.EventHandler"{
 
 		//view
 		event.setView(view="main/runner",layout="Blank");
-
-		//for tests
-		variables.testBundles=prc.testData.testBundles;
-		variables.directory=prc.testData.directory;
 	}
 }
