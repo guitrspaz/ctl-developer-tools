@@ -48,7 +48,7 @@ component extends="coldbox.system.EventHandler"{
 			'mapping':prc.testData.package,
 			'recurse':true
 		};
-		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':','ALL');
+		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
 		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
 
 		event.setView(view="main/runner",layout="Blank");
