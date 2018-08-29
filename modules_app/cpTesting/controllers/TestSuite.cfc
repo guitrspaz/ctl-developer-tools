@@ -49,8 +49,8 @@ component extends="coldbox.system.EventHandler"{
 			'mapping':prc.testData.package,
 			'recurse':false
 		};
-		prc.testData['options']=StructCopy(prc.testData);
 		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
+		prc.testData['options']=StructCopy(prc.testData);
 		prc.testBox=new testbox.system.TestBox(argumentCollection=prc.testData);
 		prc.results=prc.testBox.run(argumentCollection=prc.testData);
 		if( isValid('struct',prc.results) && StructKeyExists(prc.results,'bundleStats') && isValid('array',prc.results.bundleStats) && ArrayLen(prc.results.bundleStats) ){
