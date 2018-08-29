@@ -36,6 +36,7 @@ component extends="coldbox.system.EventHandler"{
 	function runner(event,rc,prc){
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
 		prc['suites']=prc.settings.testSuites;
+		prc['reporter']=prc.settings.testReporter;
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
@@ -44,14 +45,16 @@ component extends="coldbox.system.EventHandler"{
 			'testSpecs':( structKeyExists(rc,'testSpecs') && Len(Trim(rc.testSpecs)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testSpecs,':','/','ALL'),'/'),'.'),','):[],
 			'package':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.directory,':','/','ALL'),'/'),'.'):ArrayToList(ListToArray(ReplaceNoCase(prc.suites[1],':','/','ALL'),'/'),'.')
 		};
-		prc.testData['reporter']=prc.settings.testReporter;
 		prc.testData['directory']={
 			'mapping':prc.testData.package,
 			'recurse':false
 		};
 		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
 		prc.testData['options']=StructCopy(prc.testData);
-		prc.testBox=new testbox.system.TestBox(argumentCollection=prc.testData);
+		prc.testBox=new testbox.system.TestBox(reporter={
+			type=prc.reporter,
+			options=prc.testData
+		});
 		prc.results=prc.testBox.run(argumentCollection=prc.testData);
 		if( isValid('struct',prc.results) && StructKeyExists(prc.results,'bundleStats') && isValid('array',prc.results.bundleStats) && ArrayLen(prc.results.bundleStats) ){
 			var bs=prc.results.bundleStats.filter(function(bundle){
