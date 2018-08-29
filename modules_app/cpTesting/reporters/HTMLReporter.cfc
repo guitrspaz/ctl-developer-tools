@@ -49,7 +49,7 @@ component{
 
 		// prepare the report
 		savecontent variable="local.report"{
-			include "assets/html.cfm";
+			include "templates/html.cfm";
 		}
 
 		return local.report;
