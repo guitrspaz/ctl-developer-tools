@@ -26,7 +26,7 @@
 			</div>
 			<cfscript>
 				appData=application.filter(function(key,value){
-					return ( isNull(key) || isNull(value) || !isSimpleValue(value) )?false:true;
+					return ( isNull(key) || isNull(value) || !isObject(value) )?false:true;
 				});
 			</cfscript>
 			<ul class="list-group">
@@ -34,7 +34,6 @@
 					<li class="list-group-item">#i#: #appData[i]#</li>
 				</cfloop>
 			</ul>
-			--->
 		</section>
 
 		<section id="eventHandlers">
