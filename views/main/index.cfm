@@ -20,6 +20,17 @@
 <div class="row">
 	<div class="col-md-9">
 
+		<section id="applicationVariables">
+			<div class="page-header">
+				<h2>Registered Application Variables</h2>
+			</div>
+			<ul class="list-group">
+				<cfloop collection="#application#" item="i">
+					<li class="list-group-item">#i#: #application[i]#</li>
+				</cfloop>
+			</ul>
+		</section>
+
 		<section id="eventHandlers">
 			<div class="page-header">
 				<h2>Registered Event Handlers</h2>
