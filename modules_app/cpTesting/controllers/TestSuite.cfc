@@ -43,8 +43,7 @@ component extends="coldbox.system.EventHandler"{
 			'testSpecs':( structKeyExists(rc,'testSpecs') && Len(Trim(rc.testSpecs)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testSpecs,':','/','ALL'),'/'),'.'):'',
 			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
-
-		prc.testData['bundles']=prc.testData.testBundles;
+		prc.testData.reporter=prc.settings.testReporter;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
 		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
