@@ -4,5 +4,5 @@
 	variables.directory=prc.testData.directory;
 	WriteDump(var=prc.testData,label='data');
 	//WriteDump(var=prc.testBox,label='testbox');
-	WriteDump(var=prc.testBox.run(argumentCollection=prc.testData));
+	WriteDump(var=prc.results);
 </cfscript>
