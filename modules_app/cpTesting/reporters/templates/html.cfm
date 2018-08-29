@@ -181,9 +181,8 @@
 		<li>
 			<cfset testSuites=arguments.suiteStats.name />
 			<cfset testBundles=ReplaceNoCase(arguments.bundleStats.path,'/',':','ALL') />
-			<a title="Total: #arguments.suiteStats.totalSpecs# Passed:#arguments.suiteStats.totalPass# Failed:#arguments.suiteStats.totalFail# Errors:#arguments.suiteStats.totalError# Skipped:#arguments.suiteStats.totalSkipped#"
-			   href="#variables.baseURL#/testSuites/#testSuites#/testBundles/#testBundles#"
-			   class="inc-tb-file-btn #lcase( arguments.suiteStats.status )#"><strong>+#arguments.suiteStats.name#</strong></a>
+			<span title="Total: #arguments.suiteStats.totalSpecs# Passed:#arguments.suiteStats.totalPass# Failed:#arguments.suiteStats.totalFail# Errors:#arguments.suiteStats.totalError# Skipped:#arguments.suiteStats.totalSkipped#"
+			   class="inc-tb-file-btn #lcase( arguments.suiteStats.status )#"><strong>+#arguments.suiteStats.name#</strong></span>
 			(#arguments.suiteStats.totalDuration# ms)
 		</li>
 			<cfloop array="#arguments.suiteStats.specStats#" index="local.thisSpec">
@@ -194,7 +193,7 @@
 					<li>
 						<cfset testSpecs=URLEncodedFormat( local.thisSpec.name ) />
 						<cfset testBundles=ReplaceNoCase(arguments.bundleStats.path,'/',':','ALL') />
-						<a href="#variables.baseURL#/testSpecs/#testSpecs#/testBundles/#testBundles#" class="inc-tb-file-btn #lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
+						<span class="inc-tb-file-btn #lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</span>
 
 						<cfif local.thisSpec.status eq "failed">
 							- <strong>#htmlEditFormat( local.thisSpec.failMessage )#</strong>
