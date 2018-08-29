@@ -29,7 +29,7 @@ component{
 		struct options={}
 	){
 		getPageContext().getResponse().setContentType( "application/json" );
-		return serializeJSON( arguments.results.getMemento() );
+		return serializeJSON( arguments.results.getMemento(),false,false );
 	}
 
 }
