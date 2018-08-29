@@ -43,8 +43,6 @@ component{
 			'testReporter':ArrayToList(ListToArray(moduleMapping,'/'),'.')&'.reporters.HTMLReporter'
 		};
 
-		settings['testBox']=new testbox.system.TestBox(reporter=CreateObject('component',settings.testReporter).init());
-
 		/* layout settings */
 		layoutSettings={
 			'defaultLayout':"Testing.cfm"
