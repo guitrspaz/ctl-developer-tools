@@ -28,8 +28,8 @@ component{
 		required testbox.system.TestBox testbox,
 		struct options={}
 	){
-		//getPageContext().getResponse().setContentType( "application/json" );
-		return arguments.results.getMemento();
+		getPageContext().getResponse().setContentType( "application/json" );
+		return serializeJSON( arguments.results.getMemento() );
 	}
 
 }
