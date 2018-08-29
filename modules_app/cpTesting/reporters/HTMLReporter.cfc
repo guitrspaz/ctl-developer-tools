@@ -10,10 +10,23 @@ component
 	property name='testBundles' getter="true" setter="true" default="";
 
 	function init(){
-		for(var arg in arguments){
-			if( structKeyExists(this,'set'&arg) ){
-				Evaluate('this.set'&arg&'('&arguments[arg]&')');
-			}
+		if( StructKeyExists(arguments,'name') ){
+			this.setname(arguments.name);
+		}
+		if( StructKeyExists(arguments,'directory') ){
+			this.setdirectory(arguments.directory);
+		}
+		if( StructKeyExists(arguments,'testMethod') ){
+			this.settestMethod(arguments.testMethod);
+		}
+		if( StructKeyExists(arguments,'testSpecs') ){
+			this.settestSpecs(arguments.testSpecs);
+		}
+		if( StructKeyExists(arguments,'testSuites') ){
+			this.settestSuites(arguments.testSuites);
+		}
+		if( StructKeyExists(arguments,'testBundles') ){
+			this.settestBundles(arguments.testBundles);
 		}
 		return this;
 	}
