@@ -37,11 +37,15 @@ component extends="coldbox.system.EventHandler"{
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
+		var directory=( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.directory,':','/','ALL'),'/'),'.'):ArrayToList(ListToArray(ReplaceNoCase(prc.suites[1],':','/','ALL'),'/'),'.');
 		prc['testData']={
 			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'),','):[],
 			'testSuites':( structKeyExists(rc,'testSuites') && Len(Trim(rc.testSuites)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testSuites,':','/','ALL'),'/'),'.'),','):[],
 			'testSpecs':( structKeyExists(rc,'testSpecs') && Len(Trim(rc.testSpecs)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testSpecs,':','/','ALL'),'/'),'.'),','):[],
-			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
+			'directory':{
+				'mapping':directory,
+				'recurse':true
+			}
 		};
 		prc.testData['reporter']=prc.settings.testReporter;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
