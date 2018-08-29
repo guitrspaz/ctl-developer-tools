@@ -3,7 +3,7 @@
 * www.ortussolutions.com
 * ---
 * A JSON reporter
-*/ 
+*/
 component{
 
 	function init(){ return this; }
@@ -23,13 +23,13 @@ component{
 	* @testbox.hint The TestBox core object
 	* @options.hint A structure of options this reporter needs to build the report with
 	*/
-	any function runReport( 
+	any function runReport(
 		required testbox.system.TestResult results,
 		required testbox.system.TestBox testbox,
 		struct options={}
 	){
-		getPageContext().getResponse().setContentType( "application/json" );
-		return serializeJSON( arguments.results.getMemento() );
+		//getPageContext().getResponse().setContentType( "application/json" );
+		return arguments.results.getMemento();
 	}
-	
+
 }
