@@ -38,7 +38,7 @@ component{
 
 		// prepare base links
 		variables.baseURL="/index.cfm/testing:TestSuite/runner";
-		WriteLog(SerializeJSON({url:url,variables:variables},false,false),'information','yes','HTMLReporterLog');
+		WriteLog(SerializeJSON({url:url,variables:variables,local:local},false,false),'information','yes','HTMLReporterLog');
 		if( structKeyExists( url,'directory') ){ variables.baseURL&='/directory/'&ReplaceNoCase(url.directory,'/',':','ALL'); }
 		if( structKeyExists( url,'method') ){ variables.baseURL&="/method/"&url.method; }
 		if( structKeyExists( url,'output') ){ variables.baseURL&="/output/"&url.output; }
