@@ -47,7 +47,7 @@ component extends="coldbox.system.EventHandler"{
 		};
 		prc.testData['directory']={
 			'mapping':prc.testData.package,
-			'recurse':false
+			'recurse':(ArrayLen(prc.testData.testBundles))?false:true
 		};
 		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
 		prc.testData['options']=StructCopy(prc.testData);
