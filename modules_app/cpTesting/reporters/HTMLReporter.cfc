@@ -31,14 +31,13 @@ component
 		variables.bundleStats = arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL = '/index.cfm/testing:TestSuite.runner/';
-		//variables.baseURL = '/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(url.directory),'/',':');
+		variables.baseURL = '/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(variables.directory),'/',':');
 
 		// prepare incoming params
-		if( !structKeyExists( url, "testMethod") ){ url.testMethod=""; }
-		if( !structKeyExists( url, "testSpecs") ){ url.testSpecs=""; }
-		if( !structKeyExists( url, "testSuites") ){ url.testSuites=""; }
-		if( !structKeyExists( url, "testBundles") ){ url.testBundles=""; }
+		if( !structKeyExists( variables, "testMethod") ){ variables.testMethod=""; }
+		if( !structKeyExists( variables, "testSpecs") ){ variables.testSpecs=""; }
+		if( !structKeyExists( variables, "testSuites") ){ variables.testSuites=""; }
+		if( !structKeyExists( variables, "testBundles") ){ variables.testBundles=""; }
 
 		// prepare the report
 		savecontent variable="local.report"{
