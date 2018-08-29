@@ -6,6 +6,8 @@
 
 	/* module css */
 	prc['css']=[
+		prc.moduleRoot&'/views/_includes/css/html.css',
+		prc.moduleRoot&'/views/_includes/css/testbox.css'
 	];
 
 	/* Render to default layout */
