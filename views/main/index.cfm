@@ -24,11 +24,14 @@
 			<div class="page-header">
 				<h2>Registered Application Variables</h2>
 			</div>
+			<cfdump var="#application#" />
+			<!---
 			<ul class="list-group">
 				<cfloop collection="#application#" item="i">
 					<li class="list-group-item">#i#: #application[i]#</li>
 				</cfloop>
 			</ul>
+			--->
 		</section>
 
 		<section id="eventHandlers">
