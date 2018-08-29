@@ -45,7 +45,8 @@ component extends="coldbox.system.EventHandler"{
 		};
 
 		//set the directory here
-		prc.settings.testBox.setReporter(Evaluate('new '&prc.testData.reporter&'(argumentCollection='&prc.testData&')'));
+		var reporter=CreateObject('component',prc.testData.reporter).init(argumentCollection=prc.testData);
+		prc.settings.testBox.setReporter(reporter);
 
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
