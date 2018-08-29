@@ -34,7 +34,7 @@
 <!--- Bundle Info --->
 <cfloop array="#variables.bundleStats#" index="thisBundle">
 	<!--- Skip if not in the includes list --->
-	<cfif len( url.testBundles ) and !listFindNoCase( url.testBundles, thisBundle.path )>
+	<cfif len( variables.testBundles ) and !listFindNoCase( variables.testBundles, thisBundle.path )>
 		<cfcontinue>
 	</cfif>
 	<cfif thisBundle.totalSuites OR thisBundle.totalSpecs>
@@ -42,7 +42,7 @@
 		<div class="box bundle" id="bundleStats_#thisBundle.path#" data-bundle="#thisBundle.path#">
 
 			<!--- bundle stats --->
-			<h2><a href="#variables.baseURL#&testBundles=#URLEncodedFormat( thisBundle.path )#" title="Run only this bundle" class="tb-file-btn">#thisBundle.name#</a> (#thisBundle.totalDuration# ms)</h2>
+			<h2><a href="#variables.baseURL#/testBundles/#URLEncodedFormat( thisBundle.path )#" title="Run only this bundle" class="tb-file-btn">#thisBundle.name#</a> (#thisBundle.totalDuration# ms)</h2>
 			[ Suites/Specs: #thisBundle.totalSuites#/#thisBundle.totalSpecs# ]
 			[ <span class="specStatus passed" 	data-status="passed" data-bundleid="#thisBundle.id#">Pass: #thisBundle.totalPass#</span> ]
 			[ <span class="specStatus failed" 	data-status="failed" data-bundleid="#thisBundle.id#">Failures: #thisBundle.totalFail#</span> ]
@@ -98,7 +98,7 @@
 		<!--- Suite Results --->
 		<li>
 			<a title="Total: #arguments.suiteStats.totalSpecs# Passed:#arguments.suiteStats.totalPass# Failed:#arguments.suiteStats.totalFail# Errors:#arguments.suiteStats.totalError# Skipped:#arguments.suiteStats.totalSkipped#"
-			   href="#variables.baseURL#&testSuites=#URLEncodedFormat( arguments.suiteStats.name )#&testBundles=#URLEncodedFormat( arguments.bundleStats.path )#"
+			   href="#variables.baseURL#/testSuites/#URLEncodedFormat( arguments.suiteStats.name )#/testBundles/#URLEncodedFormat( arguments.bundleStats.path )#"
 			   class="tb-file-btn bt#lcase( arguments.suiteStats.status )#"><strong>+#arguments.suiteStats.name#</strong></a>
 			(#arguments.suiteStats.totalDuration# ms)
 		</li>
@@ -108,7 +108,7 @@
 				<ul>
 				<div class="spec #lcase( local.thisSpec.status )#" data-bundleid="#arguments.bundleStats.id#" data-specid="#local.thisSpec.id#">
 					<li>
-						<a href="#variables.baseURL#&testSpecs=#URLEncodedFormat( local.thisSpec.name )#&testBundles=#URLEncodedFormat( arguments.bundleStats.path )#" class="tb-file-btn #lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
+						<a href="#variables.baseURL#/testSpecs/#URLEncodedFormat( local.thisSpec.name )#/testBundles/#URLEncodedFormat( arguments.bundleStats.path )#" class="tb-file-btn #lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
 
 						<cfif local.thisSpec.status eq "failed">
 							- <strong>#htmlEditFormat( local.thisSpec.failMessage )#</strong>

@@ -40,6 +40,8 @@ component extends="coldbox.system.EventHandler"{
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
 			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
+			'testSuites':( structKeyExists(rc,'testSuites') && Len(Trim(rc.testSuites)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testSuites,':','/','ALL'),'/'),'.'):'',
+			'testSpecs':( structKeyExists(rc,'testSpecs') && Len(Trim(rc.testSpecs)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testSpecs,':','/','ALL'),'/'),'.'):'',
 			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
 			'reporter':prc.settings.testReporter
 		};

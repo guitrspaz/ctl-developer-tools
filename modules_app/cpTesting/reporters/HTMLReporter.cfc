@@ -49,6 +49,11 @@ component
 
 		// bundle stats
 		variables.bundleStats=arguments.results.getBundleStats();
+		variables.directory=this.getdirectory();
+		variables.testMethod=this.gettestMethod();
+		variables.testSpecs=this.gettestSpecs();
+		variables.testSuites=this.gettestSuites();
+		variables.testBundles=this.gettestBundles();
 
 		// prepare base links
 		variables.baseURL='/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(this.getdirectory()),'/',':');
