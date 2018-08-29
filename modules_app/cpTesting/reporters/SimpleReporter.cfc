@@ -50,7 +50,7 @@ component{
 
 		// prepare the report
 		savecontent variable="local.report"{
-			include getDirectoryFromPath( getCurrentTemplatePath() )&"templates/simple.cfm";
+			include "templates/simple.cfm";
 		}
 
 		return local.report;
