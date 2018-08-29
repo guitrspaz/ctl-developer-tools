@@ -105,7 +105,7 @@ if( jQuery!==null ){
 	}
 	function runTests(src){
 		jQuery('#tb-results').html('<div class="alert alert-info"><span class="glyphicon glyphicon-repeat normal-right-spinner" aria-hidden="true"></span>&nbsp;Please wait while tests are running...</div>');
-		//console.log(src);
+		console.log(src);
 		jQuery.ajax({
 			url:src,
 			method:'get',
