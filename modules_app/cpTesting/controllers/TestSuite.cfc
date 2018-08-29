@@ -50,9 +50,7 @@ component extends="coldbox.system.EventHandler"{
 		};
 		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
 		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
-		prc.results=prc.testBox.run(argumentCollection=prc.testData).filter(function(testSuite){
-			return (isValid('struct',testSuite) && structKeyExists(testSuite,'totalDuration') && Val(testSuite.totalDuration))?true:false;
-		});
+		prc.results=prc.testBox.run(argumentCollection=prc.testData);
 		event.setView(view="main/runner",layout="Blank");
 	}
 }
