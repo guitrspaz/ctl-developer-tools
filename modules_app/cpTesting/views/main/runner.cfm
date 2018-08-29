@@ -7,12 +7,3 @@
 		WriteDump(var=prc.results);
 	}
 </cfscript>
-<script type="text/javascript">
-	if( jQuery!==null ){
-		jQuery(document).on('click','.tb-file-btn',function(event){
-			event.preventDefault();
-			runTests(jQuery(event.currentTarget).attr('href'));
-			return false;
-		});
-	}
-</script>
