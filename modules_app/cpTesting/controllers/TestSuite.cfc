@@ -37,18 +37,17 @@ component extends="coldbox.system.EventHandler"{
 		prc['settings']=controller.getConfigSettings().modules.cpTesting.settings;
 		prc['sectionTitle']=prc.settings.pageTitle;
 		prc['moduleRoot']=prc.settings.moduleRoot;
-		var directory=( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.directory,':','/','ALL'),'/'),'.'):ArrayToList(ListToArray(ReplaceNoCase(prc.suites[1],':','/','ALL'),'/'),'.');
 		prc['testData']={
 			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'),','):[],
 			'testSuites':( structKeyExists(rc,'testSuites') && Len(Trim(rc.testSuites)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testSuites,':','/','ALL'),'/'),'.'),','):[],
 			'testSpecs':( structKeyExists(rc,'testSpecs') && Len(Trim(rc.testSpecs)) )?ListToArray(ArrayToList(ListToArray(ReplaceNoCase(rc.testSpecs,':','/','ALL'),'/'),'.'),','):[],
-			'directory':{
-				'mapping':directory,
-				'recurse':true
-			}
+			'package':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.directory,':','/','ALL'),'/'),'.'):ArrayToList(ListToArray(ReplaceNoCase(prc.suites[1],':','/','ALL'),'/'),'.')
 		};
 		prc.testData['reporter']=prc.settings.testReporter;
-		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
+		prc.testData['directory']={
+			'mapping':prc.testData.package,
+			'recurse':true
+		};
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':','ALL');
 		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
 
