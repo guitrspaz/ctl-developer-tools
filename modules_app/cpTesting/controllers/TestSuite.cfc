@@ -43,10 +43,15 @@ component extends="coldbox.system.EventHandler"{
 			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
 			'reporter':prc.settings.testReporter
 		};
-		prc.testData['options']=StructCopy(prc.testData);
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
+
+		//view
 		event.setView(view="main/runner",layout="Blank");
+
+		//for tests
+		variables.testBundles=prc.testData.testBundles;
+		variables.directory=prc.testData.directory;
 	}
 }
