@@ -20,8 +20,7 @@ component extends="coldbox.system.EventHandler"{
 			ArrayAppend(prc.exclusions,ListToArray(suite,'/'),true);
 		});
 		prc['testData']={
-			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
-			'reporter':prc.settings.testReporter
+			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
 		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root,prc.suites,prc.exclusions);
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.root,'/',':','ALL');
@@ -40,9 +39,9 @@ component extends="coldbox.system.EventHandler"{
 		prc['moduleRoot']=prc.settings.moduleRoot;
 		prc['testData']={
 			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
-			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
-			'reporter':prc.settings.testReporter
+			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
+		prc.testData['reporter']=Evaluate('new '&prc.settings.testReporter&'(argumentCollection='&prc.testData&')');
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');

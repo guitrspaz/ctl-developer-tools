@@ -1,14 +1,19 @@
 component
 {
-	function init(){
-		return this;
-	}
+	property name='name' getter="true" setter="true" default="HTML";
+	property name='directory' getter="true" setter="true" default="/";
+	property name='testMethod' getter="true" setter="true" default="";
+	property name='testSpecs' getter="true" setter="true" default="";
+	property name='testSuites' getter="true" setter="true" default="";
+	property name='testBundles' getter="true" setter="true" default="";
 
-	/**
-	* Get the name of the reporter
-	*/
-	function getName(){
-		return "HTML";
+	function init(){
+		arguments.each(function(key,value){
+			if( !isNull(key) && !isNull(value) && structKeyExists(this,'set'&key) ){
+				Evaluate('this.set'&key&'('&value&')');
+			}
+		});
+		return this;
 	}
 
 	/**
@@ -28,16 +33,10 @@ component
 		getPageContext().getResponse().setContentType( "text/html" );
 
 		// bundle stats
-		variables.bundleStats = arguments.results.getBundleStats();
+		variables.bundleStats=arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL = '/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(variables.directory),'/',':');
-
-		// prepare incoming params
-		if( !structKeyExists( variables, "testMethod") ){ variables.testMethod=""; }
-		if( !structKeyExists( variables, "testSpecs") ){ variables.testSpecs=""; }
-		if( !structKeyExists( variables, "testSuites") ){ variables.testSuites=""; }
-		if( !structKeyExists( variables, "testBundles") ){ variables.testBundles=""; }
+		variables.baseURL='/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(this.getdirectory()),'/',':');
 
 		// prepare the report
 		savecontent variable="local.report"{
