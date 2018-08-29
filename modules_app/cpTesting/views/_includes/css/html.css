@@ -13,7 +13,7 @@
 	-webkit-hyphens: auto;
 	hyphens: auto;
 }
-#tb-results h1,h2,h3,h4 { margin-top: 3px;}
+#tb-results h1,#tb-results h2,#tb-results h3,#tb-results h4 { margin-top: 3px;}
 #tb-results h1 { font-size: 14px;}
 #tb-results h2 { font-size: 13px;}
 #tb-results h3 { font-size: 12px;}
