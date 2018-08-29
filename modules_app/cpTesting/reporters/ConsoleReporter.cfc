@@ -2,17 +2,20 @@
 * Copyright Since 2005 TestBox Framework by Luis Majano and Ortus Solutions, Corp
 * www.ortussolutions.com
 * ---
-* A raw reporter
+* A text reporter
 */ 
 component{
 
-	function init(){ return this; }
+	function init(){ 
+		variables.out = createObject("Java", "java.lang.System").out;
+		return this; 
+	}
 
 	/**
 	* Get the name of the reporter
 	*/
 	function getName(){
-		return "Raw";
+		return "Console";
 	}
 
 	/**
@@ -28,7 +31,20 @@ component{
 		required testbox.system.TestBox testbox,
 		struct options={}
 	){
-		return arguments.results.getMemento();
+		// content type
+		getPageContext().getResponse().setContentType( "text/plain" );
+		// bundle stats
+		variables.bundleStats = arguments.results.getBundleStats();
+		
+		// prepare the report
+		savecontent variable="local.report"{
+			include "assets/text.cfm";
+		}
+
+		// send to console
+		variables.out.printLn( local.report );
+
+		return "Report Sent To Console";
 	}
 	
 }

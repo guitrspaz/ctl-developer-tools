@@ -2,17 +2,19 @@
 * Copyright Since 2005 TestBox Framework by Luis Majano and Ortus Solutions, Corp
 * www.ortussolutions.com
 * ---
-* A raw reporter
+* A tap reporter http://testanything.org/
 */ 
 component{
 
-	function init(){ return this; }
+	function init(){ 
+		return this; 
+	}
 
 	/**
 	* Get the name of the reporter
 	*/
 	function getName(){
-		return "Raw";
+		return "Tap";
 	}
 
 	/**
@@ -28,7 +30,17 @@ component{
 		required testbox.system.TestBox testbox,
 		struct options={}
 	){
-		return arguments.results.getMemento();
+		// content type
+		getPageContext().getResponse().setContentType( "text/plain" );
+		// bundle stats
+		variables.bundleStats = arguments.results.getBundleStats();
+		
+		// prepare the report
+		savecontent variable="local.report"{
+			include "assets/tap.cfm";
+		}
+
+		return local.report;
 	}
 	
 }

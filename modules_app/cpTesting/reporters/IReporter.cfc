@@ -2,18 +2,14 @@
 * Copyright Since 2005 TestBox Framework by Luis Majano and Ortus Solutions, Corp
 * www.ortussolutions.com
 * ---
-* A raw reporter
+* The TestBox main reporting interface for producing awesome testing reports
 */ 
-component{
-
-	function init(){ return this; }
+interface{
 
 	/**
 	* Get the name of the reporter
 	*/
-	function getName(){
-		return "Raw";
-	}
+	function getName();
 
 	/**
 	* Do the reporting thing here using the incoming test results
@@ -26,9 +22,6 @@ component{
 	any function runReport( 
 		required testbox.system.TestResult results,
 		required testbox.system.TestBox testbox,
-		struct options={}
-	){
-		return arguments.results.getMemento();
-	}
+		struct options={} );
 	
 }
