@@ -50,7 +50,7 @@ component extends="coldbox.system.EventHandler"{
 			'recurse':true
 		};
 		prc.testData['encodedRoot']=':'&ReplaceNoCase(prc.testData.package,'.',':','ALL');
-		prc.testBox=new testbox.system.TestBox(reporter=prc.settings.testReporter);
+		prc.testBox=new testbox.system.TestBox();
 		prc.results=prc.testBox.run(argumentCollection=prc.testData);
 		if( isValid('struct',prc.results) && StructKeyExists(prc.results,'bundleStats') && isValid('array',prc.results.bundleStats) && ArrayLen(prc.results.bundleStats) ){
 			var bs=prc.results.bundleStats.filter(function(bundle){
