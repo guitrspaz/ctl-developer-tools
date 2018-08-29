@@ -42,12 +42,13 @@
 	<div class="box bundle" id="bundleStats_#thisBundle.path#" data-bundle="#thisBundle.path#">
 
 		<!--- bundle stats --->
-		<h2><a href="#variables.baseURL#&testBundles=#URLEncodedFormat( thisBundle.path )#" title="Run only this bundle">#thisBundle.path#</a> (#thisBundle.totalDuration# ms)</h2>
+		<cfset testBundles=ReplaceNoCase(thisBundle.path,'/',':','ALL') />
+		<h2><a href="#variables.baseURL#/testBundles/#testBundles#" title="Run only this bundle">#thisBundle.path#</a> (#thisBundle.totalDuration# ms)</h2>
 		[ Suites/Specs: #thisBundle.totalSuites#/#thisBundle.totalSpecs# ]
-		[ <span class="specStatus passed" 	data-status="passed" data-bundleid="#thisBundle.id#">Pass: #thisBundle.totalPass#</span> ]
-		[ <span class="specStatus failed" 	data-status="failed" data-bundleid="#thisBundle.id#">Failures: #thisBundle.totalFail#</span> ]
-		[ <span class="specStatus error" 	data-status="error" data-bundleid="#thisBundle.id#">Errors: #thisBundle.totalError#</span> ]
-		[ <span class="specStatus skipped" 	data-status="skipped" data-bundleid="#thisBundle.id#">Skipped: #thisBundle.totalSkipped#</span> ]
+		[ <span class="specStatus passed" data-status="passed" data-bundleid="#thisBundle.id#">Pass: #thisBundle.totalPass#</span> ]
+		[ <span class="specStatus failed" data-status="failed" data-bundleid="#thisBundle.id#">Failures: #thisBundle.totalFail#</span> ]
+		[ <span class="specStatus error" data-status="error" data-bundleid="#thisBundle.id#">Errors: #thisBundle.totalError#</span> ]
+		[ <span class="specStatus skipped" data-status="skipped" data-bundleid="#thisBundle.id#">Skipped: #thisBundle.totalSkipped#</span> ]
 		[ <span class="reset" title="Clear status filters">Reset</span> ]
 
 		<!-- Globa Error --->
@@ -75,10 +76,15 @@
 					<h1>#thisDebug.label#</h1>
 					<cfdump var="#thisDebug#" />
 					<cfif structKeyExists(thisDebug,'data')>
-						<cfdump var="#thisDebug.data#" 		label="#thisDebug.label# - #dateFormat( thisDebug.timestamp, "short" )# at #timeFormat( thisDebug.timestamp, "full")#" top="#thisDebug.top#"/>
+						<cfdump var="#thisDebug.data#"
+							label="#thisDebug.label# - #dateFormat( thisDebug.timestamp, "short" )# at #timeFormat( thisDebug.timestamp, "full")#"
+							top="#thisDebug.top#"
+						/>
 					</cfif>
 					<cfif structKeyExists(thisDebug,'thread')>
-						<cfdump var="#thisDebug.thread#" 	label="Thread data">
+						<cfdump var="#thisDebug.thread#"
+							label="Thread data"
+						/>
 					</cfif>
 					<p>&nbsp;</p>
 				</cfloop>
@@ -166,8 +172,10 @@
 		<cfoutput>
 		<!--- Suite Results --->
 		<li>
+			<cfset testSuites=arguments.suiteStats.name />
+			<cfset testBundles=ReplaceNoCase(arguments.bundleStats.path,'/',':','ALL') />
 			<a title="Total: #arguments.suiteStats.totalSpecs# Passed:#arguments.suiteStats.totalPass# Failed:#arguments.suiteStats.totalFail# Errors:#arguments.suiteStats.totalError# Skipped:#arguments.suiteStats.totalSkipped#"
-			   href="#variables.baseURL#&testSuites=#URLEncodedFormat( arguments.suiteStats.name )#&testBundles=#URLEncodedFormat( arguments.bundleStats.path )#"
+			   href="#variables.baseURL#/testSuites/#testSuites#/testBundles/#testBundles#"
 			   class="#lcase( arguments.suiteStats.status )#"><strong>+#arguments.suiteStats.name#</strong></a>
 			(#arguments.suiteStats.totalDuration# ms)
 		</li>
@@ -177,7 +185,9 @@
 				<ul>
 				<div class="spec #lcase( local.thisSpec.status )#" data-bundleid="#arguments.bundleStats.id#" data-specid="#local.thisSpec.id#">
 					<li>
-						<a href="#variables.baseURL#&testSpecs=#URLEncodedFormat( local.thisSpec.name )#&testBundles=#URLEncodedFormat( arguments.bundleStats.path )#" class="#lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
+						<cfset testSpecs=URLEncodedFormat( local.thisSpec.name ) />
+						<cfset testBundles=ReplaceNoCase(arguments.bundleStats.path,'/',':','ALL') />
+						<a href="#variables.baseURL#/testSpecs/#testSpecs#/testBundles/#testBundles#" class="#lcase( local.thisSpec.status )#">#local.thisSpec.name# (#local.thisSpec.totalDuration# ms)</a>
 
 						<cfif local.thisSpec.status eq "failed">
 							- <strong>#htmlEditFormat( local.thisSpec.failMessage )#</strong>

@@ -37,9 +37,9 @@ component{
 		variables.bundleStats = arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL = "?";
-		if( structKeyExists( url, "method") ){ variables.baseURL&= "method=#URLEncodedFormat( url.method )#"; }
-		if( structKeyExists( url, "output") ){ variables.baseURL&= "output=#URLEncodedFormat( url.output )#"; }
+		variables.baseURL = "/index.cfm/testing:TestSuite.runner/";
+		if( structKeyExists( url, "method") ){ variables.baseURL&="/method/"&url.method; }
+		if( structKeyExists( url, "output") ){ variables.baseURL&="/output/"&url.output; }
 
 		// prepare incoming params
 		if( !structKeyExists( url, "testMethod") ){ url.testMethod = ""; }
@@ -49,7 +49,7 @@ component{
 
 		// prepare the report
 		savecontent variable="local.report"{
-			include "assets/simple.cfm";
+			include "assets/html.cfm";
 		}
 
 		return local.report;
