@@ -8,6 +8,8 @@
 
 <!--- Header --->
 <p>TestBox v#testbox.getVersion()#</p>
+<cfdump var="#testbox#" />
+<cfdump var="#results#" />
 
 <!--- Global Stats --->
 <div class="box" id="globalStats">
