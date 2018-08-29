@@ -31,7 +31,7 @@ component
 		variables.bundleStats = arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL='/index.cfm/testing:TestSuite.runner';
+		variables.baseURL = '/index.cfm/testing:TestSuite.runner/';
 		//variables.baseURL = '/index.cfm/testing:TestSuite.runner/directory/'&ReplaceNoCase(Trim(url.directory),'/',':');
 
 		// prepare incoming params
@@ -41,12 +41,10 @@ component
 		if( !structKeyExists( url, "testBundles") ){ url.testBundles=""; }
 
 		// prepare the report
-		/*
 		savecontent variable="local.report"{
 			include 'templates/html.cfm';
 		}
-		*/
-		return variables;
+		return local.report;
 	}
 
 }
