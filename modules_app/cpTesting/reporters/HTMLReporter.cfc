@@ -38,16 +38,44 @@ component{
 
 		// prepare base links
 		variables.baseURL="/index.cfm/testing:TestSuite/runner";
-		WriteLog(SerializeJSON({'arguments':arguments.filter(function(key,value){ return (!isNull(value) && !isObject(value)); })},false,false),'information','yes','HTMLReporterLog');
-		if( structKeyExists( url,'directory') ){ variables.baseURL&='/directory/'&ReplaceNoCase(url.directory,'/',':','ALL'); }
-		if( structKeyExists( url,'method') ){ variables.baseURL&="/method/"&url.method; }
-		if( structKeyExists( url,'output') ){ variables.baseURL&="/output/"&url.output; }
+		if( structKeyExists( arguments.options,'encodedRoot') ){ variables.baseURL&='/directory/'&ReplaceNoCase(arguments.options.encodedRoot,'/',':','ALL'); }
+		if( structKeyExists( arguments.options,'method') ){ variables.baseURL&="/method/"&arguments.options.method; }
+		if( structKeyExists( arguments.options,'output') ){ variables.baseURL&="/output/"&arguments.options.output; }
 
 		// prepare incoming params
-		if( !structKeyExists( url, "testMethod") ){ url.testMethod = ""; }
-		if( !structKeyExists( url, "testSpecs") ){ url.testSpecs = ""; }
-		if( !structKeyExists( url, "testSuites") ){ url.testSuites = ""; }
-		if( !structKeyExists( url, "testBundles") ){ url.testBundles = ""; }
+		if( !structKeyExists( url,"testMethod") ){ url.testMethod=""; }
+		if( !structKeyExists( url,"testSpecs") ){ url.testSpecs=""; }
+		if( !structKeyExists( url,"testSuites") ){ url.testSuites=""; }
+		if( !structKeyExists( url,"testBundles") ){ url.testBundles=""; }
+
+		if( structKeyExists( arguments.options,'testMethod') ){
+			if( isValid('array',arguments.options.testMethod) ){
+				url.testMethod=ArrayToList(arguments.options.testMethod,',');
+			} else if( isValid('string',arguments.testMethod) ){
+				url.testMethod=URLDecode(arguments.options.testMethod);
+			}
+		}
+		if( structKeyExists( arguments.options,'testSpecs') ){
+			if( isValid('array',arguments.options.testSpecs) ){
+				url.testSpecs=ArrayToList(arguments.options.testSpecs,',');
+			} else if( isValid('string',arguments.testSpecs) ){
+				url.testSpecs=URLDecode(arguments.options.testSpecs);
+			}
+		}
+		if( structKeyExists( arguments.options,'testSuites') ){
+			if( isValid('array',arguments.options.testSuites) ){
+				url.testSuites=ArrayToList(arguments.options.testSuites,',');
+			} else if( isValid('string',arguments.testSuites) ){
+				url.testSuites=URLDecode(arguments.options.testSuites);
+			}
+		}
+		if( structKeyExists( arguments.options,'testBundles') ){
+			if( isValid('array',arguments.options.testBundles) ){
+				url.testBundles=ArrayToList(arguments.options.testBundles,',');
+			} else if( isValid('string',arguments.testBundles) ){
+				url.testBundles=URLDecode(arguments.options.testBundles);
+			}
+		}
 
 		// prepare the report
 		savecontent variable="local.report"{
