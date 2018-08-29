@@ -8,7 +8,7 @@
 
 <!--- Header --->
 <p>TestBox v#testbox.getVersion()#</p>
-<cfdump var="#testbox#" />
+<cfdump var="#prc#" />
 <!--- <cfdump var="#results#" /> --->
 
 <!--- Global Stats --->
