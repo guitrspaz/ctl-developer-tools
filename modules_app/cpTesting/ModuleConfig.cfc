@@ -41,8 +41,9 @@ component{
 			'defaultLog':controller.getSetting('appHash')&'.ModuleLog.'&this.modelNamespace,
 			'pageTitle':this.title,
 			'testReporter':ArrayToList(ListToArray(moduleMapping,'/'),'.')&'.reporters.HTMLReporter',
-			'testBox':new testbox.system.TestBox()
 		};
+
+		settings['testBox']=new testbox.system.TestBox(reporter=CreateObject('component',settings.testReporter).init());
 
 		/* layout settings */
 		layoutSettings={

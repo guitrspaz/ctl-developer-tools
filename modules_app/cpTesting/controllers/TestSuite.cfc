@@ -20,8 +20,7 @@ component extends="coldbox.system.EventHandler"{
 			ArrayAppend(prc.exclusions,ListToArray(suite,'/'),true);
 		});
 		prc['testData']={
-			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
-			'reporter':prc.settings.testReporter
+			'root':( structKeyExists(rc,'path') && Len(Trim(rc.path)) )?ReplaceNoCase(ReplaceNoCase(rc.path,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
 		prc.testData['breadcrumbs']=getInstance('testSuiteService').buildBreadCrumbs(event.buildLink('testing:TestSuite.index'),prc.testData.root,prc.suites,prc.exclusions);
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.root,'/',':','ALL');
@@ -42,11 +41,10 @@ component extends="coldbox.system.EventHandler"{
 			'testBundles':( structKeyExists(rc,'testBundles') && Len(Trim(rc.testBundles)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testBundles,':','/','ALL'),'/'),'.'):'',
 			'testSuites':( structKeyExists(rc,'testSuites') && Len(Trim(rc.testSuites)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testSuites,':','/','ALL'),'/'),'.'):'',
 			'testSpecs':( structKeyExists(rc,'testSpecs') && Len(Trim(rc.testSpecs)) )?ArrayToList(ListToArray(ReplaceNoCase(rc.testSpecs,':','/','ALL'),'/'),'.'):'',
-			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1],
-			'reporter':prc.settings.testReporter
+			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
 
-		//set the directory here
+		//set the testing metadata here
 		prc.settings.testBox.getReporter().init(argumentCollection=prc.testData);
 
 		prc.testData['bundles']=prc.testData.testBundles;
