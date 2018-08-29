@@ -28,12 +28,15 @@
 				appData=application.filter(function(key,value){
 					return ( isNull(key) || isNull(value) || !isObject(value) )?false:true;
 				});
+				WriteDump(var=appData);
 			</cfscript>
+			<!---
 			<ul class="list-group">
 				<cfloop collection="#appData#" item="i">
 					<li class="list-group-item">#i#: #appData[i]#</li>
 				</cfloop>
 			</ul>
+			--->
 		</section>
 
 		<section id="eventHandlers">
