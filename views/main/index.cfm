@@ -24,11 +24,14 @@
 			<div class="page-header">
 				<h2>Registered Application Variables</h2>
 			</div>
-			<cfdump var="#application#" />
-			<!---
+			<cfscript>
+				appData=application.filter(function(key,value){
+					return ( isNull(key) || isNull(value) || !isSimpleValue(value) )?false:true;
+				});
+			</cfscript>
 			<ul class="list-group">
-				<cfloop collection="#application#" item="i">
-					<li class="list-group-item">#i#: #application[i]#</li>
+				<cfloop collection="#appData#" item="i">
+					<li class="list-group-item">#i#: #appData[i]#</li>
 				</cfloop>
 			</ul>
 			--->
