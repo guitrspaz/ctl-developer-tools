@@ -44,9 +44,6 @@ component extends="coldbox.system.EventHandler"{
 			'directory':( structKeyExists(rc,'directory') && Len(Trim(rc.directory)) )?ReplaceNoCase(ReplaceNoCase(rc.directory,':','/','ALL'),ExpandPath('/'),'/'):prc.suites[1]
 		};
 
-		//set the testing metadata here
-		//prc.settings.testBox.getReporter().init(argumentCollection=prc.testData);
-
 		prc.testData['bundles']=prc.testData.testBundles;
 		prc.testData['package']=ArrayToList(ListToArray(prc.testData.directory,'/'),'.');
 		prc.testData['encodedRoot']=ReplaceNoCase(prc.testData.directory,'/',':');
