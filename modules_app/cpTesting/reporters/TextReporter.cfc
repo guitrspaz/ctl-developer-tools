@@ -37,7 +37,7 @@ component{
 
 		// prepare the report
 		savecontent variable="local.report"{
-			include "assets/text.cfm";
+			include getDirectoryFromPath( getCurrentTemplatePath() )&"templates/text.cfm";
 		}
 
 		return reReplace( trim( local.report ), '[\r\n]+', chr(10), 'all' );
