@@ -7,6 +7,9 @@
 
 <!--- Header --->
 <p>TestBox v#testbox.getVersion()#</p>
+<cfdump var="#variables#" />
+<cfdump var="#arguments#" />
+<cfabort />
 <!--- Global Stats --->
 <div class="box" id="globalStats">
 <div class="buttonBar">
