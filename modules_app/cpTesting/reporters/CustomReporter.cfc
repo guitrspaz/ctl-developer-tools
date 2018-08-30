@@ -1,9 +1,12 @@
 /**
-* Copyright Since 2005 TestBox Framework by Luis Majano and Ortus Solutions, Corp
-* www.ortussolutions.com
-* ---
-* A simple HTML reporter
+* @name: CustomReporter
+* @hint: Custom Reporter for the Testing Module
+* @author: Chris Schroeder (schroeder@jhu.edu)
+* @copyright: Johns Hopkins University
+* @created: Thursday, 08/30/2018 08:34:35 AM
+* @modified: Thursday, 08/30/2018 08:34:41 AM
 */
+
 component{
 
 	function init(){
@@ -14,7 +17,7 @@ component{
 	* Get the name of the reporter
 	*/
 	function getName(){
-		return "Simple";
+		return "Custom";
 	}
 
 	/**
@@ -79,7 +82,7 @@ component{
 
 		// prepare the report
 		savecontent variable="local.report"{
-			include "templates/html.cfm";
+			include "templates/custom.cfm";
 		}
 
 		return local.report;

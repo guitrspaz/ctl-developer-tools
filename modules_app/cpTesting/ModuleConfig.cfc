@@ -40,7 +40,7 @@ component{
 			'defaultLog':controller.getSetting('appHash')&'.ModuleLog.'&this.modelNamespace,
 			'pageTitle':this.title,
 			'testSuites':['/src/tests/suites'],
-			'testReporter':ArrayToList(ListToArray(moduleMapping,'/'),'.')&'.reporters.HTMLReporter'
+			'testReporter':ArrayToList(ListToArray(moduleMapping,'/'),'.')&'.reporters.CustomReporter'
 		};
 
 		/* layout settings */
