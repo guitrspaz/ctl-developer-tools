@@ -43,7 +43,6 @@
 				<ul class="list-group">
 					<cfloop collection="#getSetting("Modules")#" item="thisModule">
 						<cfset moduleConfig=getModuleConfig( thisModule ) />
-						<cfdump var="#moduleConfig#" /><cfabort />
 						<cfif NOT ArrayFind(moduleConfig.aliases,thisModule)>
 							<li class="list-group-item">
 								<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint))>
