@@ -42,16 +42,18 @@
 			<cfelse>
 				<ul class="list-group">
 					<cfloop collection="#getSetting("Modules")#" item="thisModule">
-						<cfset moduleConfig=getModuleConfig( thisModule ) />
+						<cfscript>
+							moduleConfig=getModuleConfig( thisModule );
+						</cfscript>
 						<cfif NOT ArrayFind(moduleConfig.aliases,thisModule)>
 							<li class="list-group-item">
 								<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint))>
 									<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
-									<cfif FindNoCase('/modules_app/',moduleConfig.mapping)><span class="label label-primary">Custom</span></cfif>
-									<cfif FindNoCase('/modules/',moduleConfig.mapping)><span class="label label-default">System</span></cfif>
 								<cfelse>
 									<span class="text-muted">#thisModule#</span>
 								</cfif>
+								<cfif FindNoCase('/modules_app/',moduleConfig.mapping)><span class="label label-primary pull-right">Custom</span></cfif>
+								<cfif FindNoCase('/modules/',moduleConfig.mapping)><span class="label label-default pull-right">System</span></cfif>
 							</li>
 						</cfif>
 					</cfloop>
