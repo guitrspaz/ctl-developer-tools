@@ -130,7 +130,7 @@ component{
 			}
 		};
 
-		/* DocBox
+		/* DocBox */
 		docbox=new docbox.DocBox(properties={
 			'projectTitle':"CoursePlus",
 			'outputDir':ExpandPath( '/docs' )
@@ -146,7 +146,6 @@ component{
 			}],
 			mapping="docs"
 		);
-		*/
 
 		/* module setting overrides
 		moduleSettings={
