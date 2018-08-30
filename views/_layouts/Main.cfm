@@ -47,6 +47,7 @@
 							<li><a href="#event.buildLink('testing:TestSuite.index')#"><strong>Test Browser</strong></a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#event.buildLink(event.getCurrentRoutedURL())#?fwreinit=1"><strong>Reload Application</strong></a></li>
+							<li><a href="#event.buildLink('docs.reload')#"><strong>Recompile API Docs</strong></a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#event.buildLink('main')#">Application Properties</a></li>
 							<li><a href="#event.buildLink('main.dump')#">ColdBox Event Dump</a></li>
