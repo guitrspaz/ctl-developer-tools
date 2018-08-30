@@ -42,7 +42,8 @@
 			<cfelse>
 				<ul class="list-group">
 					<cfloop collection="#getSetting("Modules")#" item="thisModule">
-						<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint))>
+						<cfset moduleConfig=getModuleConfig( thisModule ) />
+						<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint)) AND NOT ArrayFind(moduleConfig.aliases,thisModule)>
 							<li class="list-group-item">
 								<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
 							</li>
