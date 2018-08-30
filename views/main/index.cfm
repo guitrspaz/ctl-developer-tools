@@ -43,9 +43,13 @@
 				<ul class="list-group">
 					<cfloop collection="#getSetting("Modules")#" item="thisModule">
 						<cfset moduleConfig=getModuleConfig( thisModule ) />
-						<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint)) AND NOT ArrayFind(moduleConfig.aliases,thisModule)>
+						<cfif NOT ArrayFind(moduleConfig.aliases,thisModule)>
 							<li class="list-group-item">
-								<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
+								<cfif Len(Trim(getModuleConfig( thisModule ).inheritedEntryPoint))>
+									<a href="#event.buildLink( getModuleConfig( thisModule ).inheritedEntryPoint )#">#thisModule#</a>
+								<cfelse>
+									<span class="text-muted">#thisModule#</span>
+								</cfif>
 							</li>
 						</cfif>
 					</cfloop>
