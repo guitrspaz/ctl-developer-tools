@@ -35,9 +35,10 @@ component{
 	COLDBOX_APP_KEY="";
 
 	//app mappings
-	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
+	this.mappings['/coldbox']=COLDBOX_APP_ROOT_PATH&"coldbox";
 	this.mappings['/docbox']=COLDBOX_APP_ROOT_PATH&"docbox";
 	this.mappings['/testbox']=COLDBOX_APP_ROOT_PATH&"testbox";
+	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
 
 	// application start
 	public boolean function onApplicationStart(){
