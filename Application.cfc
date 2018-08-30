@@ -46,7 +46,10 @@ component{
 	public boolean function onApplicationStart(){
 		//Bootstrapper
 		application['cbBootstrap']=new coldbox.system.Bootstrap( COLDBOX_CONFIG_FILE, COLDBOX_APP_ROOT_PATH, COLDBOX_APP_KEY, COLDBOX_APP_MAPPING );
+
+		//Load ColdBox
 		application.cbBootstrap.loadColdbox();
+
 		return true;
 	}
 

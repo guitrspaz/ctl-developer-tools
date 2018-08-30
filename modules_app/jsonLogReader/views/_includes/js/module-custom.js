@@ -16,6 +16,11 @@ if( jQuery!==null ){
 	}
 
 	jQuery(document).ready(function(){
+		if( jQuery('#jsonData').text().trim()=='' ){
+			jQuery('#jsonData').focus();
+		} else {
+			console.log(jQuery('#jsonData').text());
+		}
 		jQuery(document).on('click','#reset',function(e){
 			e.preventDefault();
 			jQuery('#jsonData').text('');

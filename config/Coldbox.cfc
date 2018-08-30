@@ -67,7 +67,8 @@ component{
 		        'type':'SQL'
 		    },
 		    'SSLRequired':true,
-		    'SSLPattern':'.*'
+		    'SSLPattern':'.*',
+		    'instanceHash':Hash(CreateUUID())
 		};
 
 		/**

@@ -1,3 +1,6 @@
+<!--- gets instance hash without reliance on controllers --->
+<cfset prc.instanceHash=event.getController().getConfigSettings().instanceHash />
+
 <cfoutput>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,22 +12,22 @@
 	<!---Base URL --->
 	<base href="#event.getHTMLBaseURL()#" />
 	<!---css --->
-	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="views/_includes/css/application-custom.css" rel="stylesheet" type="text/css" />
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css?ih=#prc.instanceHash#" rel="stylesheet" type="text/css" />
+	<link href="views/_includes/css/application-custom.css?ih=#prc.instanceHash#" rel="stylesheet" type="text/css" />
 	<cfif structKeyExists(prc,'css') AND isValid('array',prc.css)>
 		<cfloop from="1" to="#ArrayLen(prc.css)#" index="c">
-			<link href="#prc.css[c]#" rel="stylesheet" type="text/css" />
+			<link href="#prc.css[c]#?ih=#prc.instanceHash#" rel="stylesheet" type="text/css" />
 		</cfloop>
 	</cfif>
 	<!---js --->
-	<script type="text/javascript" src="node_modules/requirejs/require.js"></script>
+	<script type="text/javascript" src="node_modules/requirejs/require.js?ih=#prc.instanceHash#"></script>
 	<!--- <script type="text/javascript" src="node_modules/normalize/lib/normalize.js"></script> --->
-	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="views/_includes/js/application-custom.js"></script>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js?ih=#prc.instanceHash#"></script>
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js?ih=#prc.instanceHash#"></script>
+	<script src="views/_includes/js/application-custom.js?ih=#prc.instanceHash#"></script>
 	<cfif structKeyExists(prc,'scripts') AND isValid('array',prc.scripts)>
 		<cfloop from="1" to="#ArrayLen(prc.scripts)#" index="s">
-			<script src="#prc.scripts[s]#" type="text/javascript"></script>
+			<script src="#prc.scripts[s]#?ih=#prc.instanceHash#" type="text/javascript"></script>
 		</cfloop>
 	</cfif>
 </head>
