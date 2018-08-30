@@ -37,7 +37,7 @@ component{
 		variables.bundleStats=arguments.results.getBundleStats();
 
 		// prepare base links
-		variables.baseURL="/index.cfm/testing:TestSuite/runner";
+		variables.baseURL=( structKeyExists( arguments.options,'baseURL') )?arguments.options.baseURL:"/";
 		if( structKeyExists( arguments.options,'encodedRoot') ){ variables.baseURL&='/directory/'&ReplaceNoCase(arguments.options.encodedRoot,'/',':','ALL'); }
 		if( structKeyExists( arguments.options,'method') ){ variables.baseURL&="/method/"&arguments.options.method; }
 		if( structKeyExists( arguments.options,'output') ){ variables.baseURL&="/output/"&arguments.options.output; }
