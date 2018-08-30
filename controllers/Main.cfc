@@ -15,18 +15,6 @@ component extends="coldbox.system.EventHandler"{
 		event.setView("main/index");
 	}
 
-	// Do something
-	function oops(event,rc,prc){
-		prc['sectionTitle']="Oops!";
-		event.setView("main/index");
-	}
-
-	// Do something
-	function docs(event,rc,prc){
-		prc['sectionTitle']="DocBox";
-		event.setView("main/docs");
-	}
-
 	function dump(event,rc,prc){
 		prc['sectionTitle']='Data Dump';
 		prc['configuration']=controller.getConfigSettings();
