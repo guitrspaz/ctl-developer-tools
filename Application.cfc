@@ -28,7 +28,7 @@ component{
 	// COLDBOX STATIC PROPERTY, DO NOT CHANGE UNLESS THIS IS NOT THE ROOT OF YOUR COLDBOX APP
 	COLDBOX_APP_ROOT_PATH=getDirectoryFromPath( getCurrentTemplatePath() );
 	// The web server mapping to this application. Used for remote purposes or static purposes
-	COLDBOX_APP_MAPPING="";
+	COLDBOX_APP_MAPPING=(!FindNoCase('developer-tools',CGI.HTTP_HOST))?'/src/share/developer-tools':'';
 	// COLDBOX PROPERTIES
 	COLDBOX_CONFIG_FILE="";
 	// COLDBOX APPLICATION KEY OVERRIDE
@@ -44,7 +44,12 @@ component{
 	public boolean function onApplicationStart(){
 		//Bootstrapper
 		application['cbBootstrap']=new coldbox.system.Bootstrap( COLDBOX_CONFIG_FILE, COLDBOX_APP_ROOT_PATH, COLDBOX_APP_KEY, COLDBOX_APP_MAPPING );
-
+		WriteLog(SerializeJSON({
+			'COLDBOX_CONFIG_FILE':COLDBOX_CONFIG_FILE,
+			'COLDBOX_APP_ROOT_PATH':COLDBOX_APP_ROOT_PATH,
+			'COLDBOX_APP_KEY':COLDBOX_APP_KEY,
+			'COLDBOX_APP_MAPPING':COLDBOX_APP_MAPPING
+		},false,false),'information','yes',this.name&'.AppLog');
 		application.cbBootstrap.loadColdbox();
 		return true;
 	}
