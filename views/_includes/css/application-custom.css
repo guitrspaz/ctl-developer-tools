@@ -27,3 +27,11 @@ body * {
 	margin-bottom: 0;
 	color: #555;
 }
+
+.ctl-dt-btn-nav{
+	margin-top:8px;
+}
+
+.ctl-dt-btn-brand{
+	margin-top:6px;
+}

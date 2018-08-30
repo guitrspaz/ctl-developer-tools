@@ -21,4 +21,10 @@
 *.rtf    diff=astextplain
 *.RTF    diff=astextplain
 
+# Custom
+*.gitattributes export-ignore
+*.gitignore export-ignore
+*.project export-ignore
+*.DS_Store export-ignore
+*README.md export-ignore
 *package-lock.json export-ignore
