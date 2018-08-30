@@ -16,4 +16,5 @@ logs/*.*
 coldbox/*
 testbox/*
 modules/*
+docs/*
 **/apidocs/**
