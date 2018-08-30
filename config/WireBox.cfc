@@ -50,7 +50,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 		};
 
 		// Map Bindings below
-		mapDirectory('models').initWith(argumentCollection=getProperties());
+		mapDirectory(appMapping&'models').initWith(argumentCollection=getProperties());
 	}
 
 	function onLoad(){
