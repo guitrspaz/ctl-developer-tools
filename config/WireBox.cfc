@@ -13,6 +13,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 	* Configure WireBox, that's it!
 	*/
 	function configure(){
+		var mappingPath=(Len(appMapping))?appMapping&'/':'';//set up the path to use for mapping directories
 
 		// The WireBox configuration structure DSL
 		wireBox={
@@ -50,7 +51,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 		};
 
 		// Map Bindings below
-		mapDirectory(appMapping&'models').initWith(argumentCollection=getProperties());
+		mapDirectory(mappingPath&'models').initWith(argumentCollection=getProperties());
 	}
 
 	function onLoad(){
