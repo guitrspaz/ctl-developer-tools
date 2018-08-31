@@ -1,5 +1,5 @@
 /**
-* @name: handlers.Docs
+* @name: controllers.Docs
 * @hint: Handler for the Main layout
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
