@@ -16,7 +16,7 @@ component extends="coldbox.system.EventHandler"{
 	}
 
 	function dump(event,rc,prc){
-		prc['sectionTitle']='Data Dump';
+		prc['sectionTitle']='Event Dump';
 		prc['configuration']=controller.getConfigSettings();
 		prc['serviceProps']={
 			'dsn':prc.configuration.dsn.name,

@@ -54,7 +54,7 @@
 							<li><a href="#event.buildLink('testing:TestSuite.index')#"><strong>Test Browser</strong></a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#event.buildLink('main')#">Application Properties</a></li>
-							<li><a href="#event.buildLink('main.dump')#">ColdBox Event Dump</a></li>
+							<li><a href="#event.buildLink('main.dump')#">Event Dump</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="http://coldbox.ortusbooks.com" target="_blank">ColdBox Manual</a></li>
 							<li><a href="http://testbox.ortusbooks.com" target="_blank">TestBox Manual</a></li>
