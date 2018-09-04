@@ -13,7 +13,7 @@ component{
 	this['author']="Chris Schroeder";
 	this['webURL']="";
 	this['description']="A module for parsing JSON data";
-	this['version']="0.0.1";
+	this['version']="1.0.0";
 	this['viewParentLookup']=true;// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
 	this['layoutParentLookup']=true;// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
 	this['inheritEntryPoint']=true;
