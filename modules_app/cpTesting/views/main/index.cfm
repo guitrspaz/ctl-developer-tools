@@ -1,6 +1,6 @@
 <cfoutput>
 	<article id="articleTop" class="container-fluid">
-		<div class="alert alert-default">
+		<div class="alert alert-info">
 			<p>Below is a listing of the files and folders starting from your root <code>#prc.testData.root#</code>.  You can click on individual tests in order to execute them
 			or click on the <strong>Run All</strong> button above and it will execute a directory runner from the visible folder.</p>
 		</div>
