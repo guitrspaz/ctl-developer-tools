@@ -135,12 +135,17 @@
 			    <li class="list-group-item"><code>/config/ColdBox.cfc</code>: Your application configuration file</li>
 				<li class="list-group-item"><code>/config/Routes.cfm</code>: Your URL Mappings</li>
 			    <li class="list-group-item"><code>/config/WireBox.cfc</code>: Your WireBox Binder</li>
+			    <li class="list-group-item"><code>/coldbox</code>: Your ColdBox framework</li>
 			    <li class="list-group-item"><code>/controllers</code>: Your application event handlers</li>
+			    <li class="list-group-item"><code>/docbox</code>: Your DocBox framework</li>
+			    <li class="list-group-item"><code>/docs</code>: Your DocBox documentation output</li>
 			    <li class="list-group-item"><code>/interceptors</code>: System interceptors</li>
 			    <li class="list-group-item"><code>/lib</code>: Where Jar files can be integrated</li>
 				<li class="list-group-item"><code>/models</code>: Your model layer</li>
 				<li class="list-group-item"><code>/modules</code>: Your application modules</li>
 				<li class="list-group-item"><code>/modules_app</code>: Your custom modules</li>
+				<li class="list-group-item"><code>/node_modules</code>: Your NodeJS modules</li>
+				<li class="list-group-item"><code>/testbox</code>: Your TestBox framework</li>
 				<li class="list-group-item"><code>/tests</code>: Your BDD testing harness (Just DO IT!!)</li>
 				<li class="list-group-item"><code>/views</code>: Your application views</li>
 				<li class="list-group-item"><code>/views/_layouts</code>:Your application skin layouts</li>

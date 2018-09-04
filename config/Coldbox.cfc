@@ -56,7 +56,7 @@ component{
 
 		/* custom settings */
 		settings={
-			'appVersion':'1.0.0',
+			'appVersion':'1.0.1',
 			'appHash':application.getname(),
 			'ctlEmail':'ctlhelp@jhu.edu',
 			'defaultLog':application.getname()&'.AppLog',
