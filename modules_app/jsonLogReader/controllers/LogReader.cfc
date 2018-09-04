@@ -1,5 +1,5 @@
 /**
-* @name: LogReader
+* @name: jsonLogReader.controllers.LogReader
 * @hint: Handler for the JSON Module
 * @author: Chris Schroeder (schroeder@jhu.edu)
 * @copyright: Johns Hopkins University
