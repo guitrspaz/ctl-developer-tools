@@ -2,7 +2,7 @@
 	<article id="articleTop" class="container-fluid">
 		<div class="ctl-dt-alert-header">
 			<div class="alert alert-info">
-				<p>Paste JSON or serialized log content into the field below to convert to a ColdFusion object.</p>
+				<p>Enter JSON or serialized log content into the field below to convert to a ColdFusion object.</p>
 			</div>
 		</div>
 		<form name="articleForm" id="pageForm" class="ml-form" action="#event.buildLink('')#" method="post">
