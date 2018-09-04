@@ -1,0 +1,2154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>rubricService</title>
+	<meta name="keywords" content="core.modules.rubrics.model.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?core/modules/rubrics/model/rubricService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.rubrics.model"><span class="label label-success">core.modules.rubrics.model</span></a>
+</div>
+
+<h2>
+
+Class
+rubricService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../core/modules/rubrics/model/tools/gateway.html" title="class in core.modules.rubrics.model.tools">core.modules.rubrics.model.tools.gateway</a>
+          <img src="../../../../resources/inherit.gif" alt="extended by ">core.modules.rubrics.model.rubricService
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: rubricService 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#peerEvalFacade()">peerEvalFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#rubricDAO()">rubricDAO</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="rubricService.html#init()">init</A></strong>(String defaultLog, Boolean debugMode, String ctlemail, String cacheRegion, Array cacheScopes, Struct cacheTypes)
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#GETPEEREVALFACADE()">GETPEEREVALFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#GETRUBRICDAO()">GETRUBRICDAO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/rubrics/model/rubricService.html" title="class in core.modules.rubrics.model">rubricService</a></code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#SETPEEREVALFACADE()">SETPEEREVALFACADE</A></strong>(any peerEvalFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/rubrics/model/rubricService.html" title="class in core.modules.rubrics.model">rubricService</a></code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#SETRUBRICDAO()">SETRUBRICDAO</A></strong>(any rubricDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#addRubricToGradedItem()">addRubricToGradedItem</A></strong>(Numeric itemID, Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#calculateAverage()">calculateAverage</A></strong>(numeric questionID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculates the average for a question.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#calculateMedian()">calculateMedian</A></strong>(numeric questionID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculates the median for a question.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a></code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#copyRubric()">copyRubric</A></strong>(Numeric itemID, Numeric rubricID, Numeric courseOfferingID, [String rubricTitle=''], [any format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#countRubricExamples()">countRubricExamples</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#countRubricQuestions()">countRubricQuestions</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#countRubricsForOffering()">countRubricsForOffering</A></strong>(Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#createRubric()">createRubric</A></strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [any format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#createRubricAnswer()">createRubricAnswer</A></strong>(Numeric rubricID, Numeric questionID, [String answerText=''], [String answerInstruction=''], [String answerExample=''], [String answerValue=''], [Numeric orderIndex='0'], [String format='object'], [Boolean needsUpdate='1'], Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#createRubricQuestion()">createRubricQuestion</A></strong>(Numeric rubricID, [String questionText=''], [Numeric questionValue='0'], [Numeric orderIndex='0'], [String format='object'], [Array answers='[runtime expression]'], [Boolean needsUpdate='1'], Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#deleteRubric()">deleteRubric</A></strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#deleteRubricAnswer()">deleteRubricAnswer</A></strong>(<a href="../../../../core/modules/rubrics/model/rubricAnswer.html" title="class in core.modules.rubrics.model">rubricAnswer</a> answer, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#deleteRubricAnswers()">deleteRubricAnswers</A></strong>(Numeric questionID, Numeric rubricID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#deleteRubricQuestion()">deleteRubricQuestion</A></strong>(<a href="../../../../core/modules/rubrics/model/rubricQuestion.html" title="class in core.modules.rubrics.model">rubricQuestion</a> question, Numeric courseOfferingID, [Boolean needsUpdate='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#deleteRubricQuestions()">deleteRubricQuestions</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getItemIDFromRubricID()">getItemIDFromRubricID</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getMostChosenAssessmentAnswers()">getMostChosenAssessmentAnswers</A></strong>([numeric questionID='0'], [numeric rubricID='0'], [numeric itemID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns an array of items most chosen.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getRubricFromOldRubricID()">getRubricFromOldRubricID</A></strong>(Numeric oldRubricID, Numeric courseOfferingID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getRubricIDFromItemID()">getRubricIDFromItemID</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getRubricIDFromOldRubricID()">getRubricIDFromOldRubricID</A></strong>(Numeric oldRubricID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getRubricKeys()">getRubricKeys</A></strong>(numeric courseOfferingID, [numeric itemID='0'], [numeric oldRubricID='0'], [string addNulls='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns a string of rubricIDs.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#getSetups()">getSetups</A></strong>([numeric setupID='0'], [numeric courseOfferingID='0'], [numeric rubricID='0'], [numeric itemID='0'], [numeric max='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns a setup configuration with its metadata.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readExamples()">readExamples</A></strong>([Numeric exampleID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readGradedItem()">readGradedItem</A></strong>(Numeric itemID, [String format='struct'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readQuestionMaxPoints()">readQuestionMaxPoints</A></strong>(Numeric questionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readRubric()">readRubric</A></strong>(Numeric rubricID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readRubricAnswer()">readRubricAnswer</A></strong>(Numeric answerID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readRubricAnswers()">readRubricAnswers</A></strong>(Numeric questionID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readRubricQuestion()">readRubricQuestion</A></strong>(Numeric questionID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readRubricQuestions()">readRubricQuestions</A></strong>(Numeric rubricID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#readRubrics()">readRubrics</A></strong>([Numeric rubricID='0'], Numeric courseOfferingID='0', [Numeric itemID='0'], [Numeric oldOfferingID='0'], [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Void</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#reorderRubrics()">reorderRubrics</A></strong>([String rubricKeys=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#returnBaseandCeilingIDs()">returnBaseandCeilingIDs</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns base and celing rubricID, questionID and answerID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#returnRubricAsJSON()">returnRubricAsJSON</A></strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, Numeric courseOfferingID, [Boolean isSystemTemplate='0'], [Numeric userID='3562'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#saveExample()">saveExample</A></strong>(Struct rubric, [Numeric exampleID='0'], [Numeric orderIndex='0'], [Boolean isDeleted='false'], [String hash='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#saveRubric()">saveRubric</A></strong>(Struct rubric)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Struct</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#saveRubricQuestion()">saveRubricQuestion</A></strong>(Struct question)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;numeric</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#saveSetup()">saveSetup</A></strong>([numeric setupID='0'], [numeric copiedFrom='0'], [numeric courseOfferingID='0'], [numeric userID='3562'], [numeric rubricID='0'], [string setupData='[runtime expression]'], [boolean isSystemTemplate='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saves a template setup.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#updateRubric()">updateRubric</A></strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [String cascade='0'], [Numeric userID='3562'], [Boolean isSystemTemplate='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#updateRubricAnswer()">updateRubricAnswer</A></strong>(<a href="../../../../core/modules/rubrics/model/rubricAnswer.html" title="class in core.modules.rubrics.model">rubricAnswer</a> answer, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#updateRubricChoiceData()">updateRubricChoiceData</A></strong>(Numeric rubricID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#updateRubricData()">updateRubricData</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#updateRubricMetaData()">updateRubricMetaData</A></strong>(Numeric rubricID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="rubricService.html#updateRubricQuestion()">updateRubricQuestion</A></strong>(<a href="../../../../core/modules/rubrics/model/rubricQuestion.html" title="class in core.modules.rubrics.model">rubricQuestion</a> question, Numeric courseOfferingID, [Boolean cascade='0'], [Boolean needsUpdate='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.rubrics.model.tools.gateway"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../core/modules/rubrics/model/tools/gateway.html" title="class in core.modules.rubrics.model.tools">core.modules.rubrics.model.tools.gateway</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../core/modules/rubrics/model/tools/gateway.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../core/modules/rubrics/model/tools/gateway.html#setAssignedItems()">setAssignedItems</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(String defaultLog, Boolean debugMode, String ctlemail, String cacheRegion, Array cacheScopes, Struct cacheTypes)</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>defaultLog</code></dd>
+		
+			<dd><code>debugMode</code></dd>
+		
+			<dd><code>ctlemail</code></dd>
+		
+			<dd><code>cacheRegion</code></dd>
+		
+			<dd><code>cacheScopes</code></dd>
+		
+			<dd><code>cacheTypes</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="peerEvalFacade()"><!-- --></a>
+		<h3>peerEvalFacade</h3>
+
+		<kbd>
+			property any <strong>peerEvalFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="rubricDAO()"><!-- --></a>
+		<h3>rubricDAO</h3>
+
+		<kbd>
+			property any <strong>rubricDAO</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETPEEREVALFACADE()"><!-- --></a>
+	<h3>
+		GETPEEREVALFACADE 
+	</h3>
+
+	<kbd>public any <strong>GETPEEREVALFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRUBRICDAO()"><!-- --></a>
+	<h3>
+		GETRUBRICDAO 
+	</h3>
+
+	<kbd>public any <strong>GETRUBRICDAO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPEEREVALFACADE()"><!-- --></a>
+	<h3>
+		SETPEEREVALFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/rubrics/model/rubricService.html" title="class in core.modules.rubrics.model">rubricService</a> <strong>SETPEEREVALFACADE</strong>(any peerEvalFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>peerEvalFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRUBRICDAO()"><!-- --></a>
+	<h3>
+		SETRUBRICDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/rubrics/model/rubricService.html" title="class in core.modules.rubrics.model">rubricService</a> <strong>SETRUBRICDAO</strong>(any rubricDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addRubricToGradedItem()"><!-- --></a>
+	<h3>
+		addRubricToGradedItem 
+	</h3>
+
+	<kbd>private Boolean <strong>addRubricToGradedItem</strong>(Numeric itemID, Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateAverage()"><!-- --></a>
+	<h3>
+		calculateAverage 
+	</h3>
+
+	<kbd>public any <strong>calculateAverage</strong>(numeric questionID)</kbd>
+
+	<br><br>
+
+	
+		<p>calculates the average for a question</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateMedian()"><!-- --></a>
+	<h3>
+		calculateMedian 
+	</h3>
+
+	<kbd>public any <strong>calculateMedian</strong>(numeric questionID)</kbd>
+
+	<br><br>
+
+	
+		<p>calculates the median for a question</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyRubric()"><!-- --></a>
+	<h3>
+		copyRubric 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> <strong>copyRubric</strong>(Numeric itemID, Numeric rubricID, Numeric courseOfferingID, [String rubricTitle=''], [any format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>rubricTitle</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="countRubricExamples()"><!-- --></a>
+	<h3>
+		countRubricExamples 
+	</h3>
+
+	<kbd>public Numeric <strong>countRubricExamples</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="countRubricQuestions()"><!-- --></a>
+	<h3>
+		countRubricQuestions 
+	</h3>
+
+	<kbd>public Numeric <strong>countRubricQuestions</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="countRubricsForOffering()"><!-- --></a>
+	<h3>
+		countRubricsForOffering 
+	</h3>
+
+	<kbd>public Numeric <strong>countRubricsForOffering</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createRubric()"><!-- --></a>
+	<h3>
+		createRubric 
+	</h3>
+
+	<kbd>public Any <strong>createRubric</strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [any format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createRubricAnswer()"><!-- --></a>
+	<h3>
+		createRubricAnswer 
+	</h3>
+
+	<kbd>public Any <strong>createRubricAnswer</strong>(Numeric rubricID, Numeric questionID, [String answerText=''], [String answerInstruction=''], [String answerExample=''], [String answerValue=''], [Numeric orderIndex='0'], [String format='object'], [Boolean needsUpdate='1'], Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>answerText</code></dd>
+		
+		<dd><code>answerInstruction</code></dd>
+		
+		<dd><code>answerExample</code></dd>
+		
+		<dd><code>answerValue</code></dd>
+		
+		<dd><code>orderIndex</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		<dd><code>needsUpdate</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createRubricQuestion()"><!-- --></a>
+	<h3>
+		createRubricQuestion 
+	</h3>
+
+	<kbd>public Any <strong>createRubricQuestion</strong>(Numeric rubricID, [String questionText=''], [Numeric questionValue='0'], [Numeric orderIndex='0'], [String format='object'], [Array answers='[runtime expression]'], [Boolean needsUpdate='1'], Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>questionText</code></dd>
+		
+		<dd><code>questionValue</code></dd>
+		
+		<dd><code>orderIndex</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		<dd><code>answers</code></dd>
+		
+		<dd><code>needsUpdate</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteRubric()"><!-- --></a>
+	<h3>
+		deleteRubric 
+	</h3>
+
+	<kbd>public Boolean <strong>deleteRubric</strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubric</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteRubricAnswer()"><!-- --></a>
+	<h3>
+		deleteRubricAnswer 
+	</h3>
+
+	<kbd>public Boolean <strong>deleteRubricAnswer</strong>(<a href="../../../../core/modules/rubrics/model/rubricAnswer.html" title="class in core.modules.rubrics.model">rubricAnswer</a> answer, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>answer</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteRubricAnswers()"><!-- --></a>
+	<h3>
+		deleteRubricAnswers 
+	</h3>
+
+	<kbd>public Boolean <strong>deleteRubricAnswers</strong>(Numeric questionID, Numeric rubricID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteRubricQuestion()"><!-- --></a>
+	<h3>
+		deleteRubricQuestion 
+	</h3>
+
+	<kbd>public Boolean <strong>deleteRubricQuestion</strong>(<a href="../../../../core/modules/rubrics/model/rubricQuestion.html" title="class in core.modules.rubrics.model">rubricQuestion</a> question, Numeric courseOfferingID, [Boolean needsUpdate='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>question</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>needsUpdate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteRubricQuestions()"><!-- --></a>
+	<h3>
+		deleteRubricQuestions 
+	</h3>
+
+	<kbd>public Boolean <strong>deleteRubricQuestions</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getItemIDFromRubricID()"><!-- --></a>
+	<h3>
+		getItemIDFromRubricID 
+	</h3>
+
+	<kbd>public Numeric <strong>getItemIDFromRubricID</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMostChosenAssessmentAnswers()"><!-- --></a>
+	<h3>
+		getMostChosenAssessmentAnswers 
+	</h3>
+
+	<kbd>public array <strong>getMostChosenAssessmentAnswers</strong>([numeric questionID='0'], [numeric rubricID='0'], [numeric itemID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>returns an array of items most chosen</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricFromOldRubricID()"><!-- --></a>
+	<h3>
+		getRubricFromOldRubricID 
+	</h3>
+
+	<kbd>public Any <strong>getRubricFromOldRubricID</strong>(Numeric oldRubricID, Numeric courseOfferingID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldRubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricIDFromItemID()"><!-- --></a>
+	<h3>
+		getRubricIDFromItemID 
+	</h3>
+
+	<kbd>public Numeric <strong>getRubricIDFromItemID</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricIDFromOldRubricID()"><!-- --></a>
+	<h3>
+		getRubricIDFromOldRubricID 
+	</h3>
+
+	<kbd>public Numeric <strong>getRubricIDFromOldRubricID</strong>(Numeric oldRubricID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldRubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricKeys()"><!-- --></a>
+	<h3>
+		getRubricKeys 
+	</h3>
+
+	<kbd>public string <strong>getRubricKeys</strong>(numeric courseOfferingID, [numeric itemID='0'], [numeric oldRubricID='0'], [string addNulls='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>returns a string of rubricIDs</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>oldRubricID</code></dd>
+		
+		<dd><code>addNulls</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSetups()"><!-- --></a>
+	<h3>
+		getSetups 
+	</h3>
+
+	<kbd>public struct <strong>getSetups</strong>([numeric setupID='0'], [numeric courseOfferingID='0'], [numeric rubricID='0'], [numeric itemID='0'], [numeric max='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>returns a setup configuration with its metadata</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>setupID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>max</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readExamples()"><!-- --></a>
+	<h3>
+		readExamples 
+	</h3>
+
+	<kbd>public Array <strong>readExamples</strong>([Numeric exampleID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>exampleID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readGradedItem()"><!-- --></a>
+	<h3>
+		readGradedItem 
+	</h3>
+
+	<kbd>public Any <strong>readGradedItem</strong>(Numeric itemID, [String format='struct'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readQuestionMaxPoints()"><!-- --></a>
+	<h3>
+		readQuestionMaxPoints 
+	</h3>
+
+	<kbd>public Numeric <strong>readQuestionMaxPoints</strong>(Numeric questionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubric()"><!-- --></a>
+	<h3>
+		readRubric 
+	</h3>
+
+	<kbd>public Any <strong>readRubric</strong>(Numeric rubricID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricAnswer()"><!-- --></a>
+	<h3>
+		readRubricAnswer 
+	</h3>
+
+	<kbd>public Any <strong>readRubricAnswer</strong>(Numeric answerID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>answerID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricAnswers()"><!-- --></a>
+	<h3>
+		readRubricAnswers 
+	</h3>
+
+	<kbd>public Array <strong>readRubricAnswers</strong>(Numeric questionID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricQuestion()"><!-- --></a>
+	<h3>
+		readRubricQuestion 
+	</h3>
+
+	<kbd>public Any <strong>readRubricQuestion</strong>(Numeric questionID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricQuestions()"><!-- --></a>
+	<h3>
+		readRubricQuestions 
+	</h3>
+
+	<kbd>public Array <strong>readRubricQuestions</strong>(Numeric rubricID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubrics()"><!-- --></a>
+	<h3>
+		readRubrics 
+	</h3>
+
+	<kbd>public Array <strong>readRubrics</strong>([Numeric rubricID='0'], Numeric courseOfferingID='0', [Numeric itemID='0'], [Numeric oldOfferingID='0'], [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>oldOfferingID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderRubrics()"><!-- --></a>
+	<h3>
+		reorderRubrics 
+	</h3>
+
+	<kbd>public Void <strong>reorderRubrics</strong>([String rubricKeys=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricKeys</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnBaseandCeilingIDs()"><!-- --></a>
+	<h3>
+		returnBaseandCeilingIDs 
+	</h3>
+
+	<kbd>public array <strong>returnBaseandCeilingIDs</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>returns base and celing rubricID, questionID and answerID</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnRubricAsJSON()"><!-- --></a>
+	<h3>
+		returnRubricAsJSON 
+	</h3>
+
+	<kbd>public String <strong>returnRubricAsJSON</strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, Numeric courseOfferingID, [Boolean isSystemTemplate='0'], [Numeric userID='3562'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>isSystemTemplate</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveExample()"><!-- --></a>
+	<h3>
+		saveExample 
+	</h3>
+
+	<kbd>public Numeric <strong>saveExample</strong>(Struct rubric, [Numeric exampleID='0'], [Numeric orderIndex='0'], [Boolean isDeleted='false'], [String hash='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>exampleID</code></dd>
+		
+		<dd><code>orderIndex</code></dd>
+		
+		<dd><code>isDeleted</code></dd>
+		
+		<dd><code>hash</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveRubric()"><!-- --></a>
+	<h3>
+		saveRubric 
+	</h3>
+
+	<kbd>public Struct <strong>saveRubric</strong>(Struct rubric)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubric</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveRubricQuestion()"><!-- --></a>
+	<h3>
+		saveRubricQuestion 
+	</h3>
+
+	<kbd>private Struct <strong>saveRubricQuestion</strong>(Struct question)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>question</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveSetup()"><!-- --></a>
+	<h3>
+		saveSetup 
+	</h3>
+
+	<kbd>remote numeric <strong>saveSetup</strong>([numeric setupID='0'], [numeric copiedFrom='0'], [numeric courseOfferingID='0'], [numeric userID='3562'], [numeric rubricID='0'], [string setupData='[runtime expression]'], [boolean isSystemTemplate='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>saves a template setup</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>setupID</code></dd>
+		
+		<dd><code>copiedFrom</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>setupData</code></dd>
+		
+		<dd><code>isSystemTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubric()"><!-- --></a>
+	<h3>
+		updateRubric 
+	</h3>
+
+	<kbd>public Boolean <strong>updateRubric</strong>(<a href="../../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [String cascade='0'], [Numeric userID='3562'], [Boolean isSystemTemplate='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>cascade</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>isSystemTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricAnswer()"><!-- --></a>
+	<h3>
+		updateRubricAnswer 
+	</h3>
+
+	<kbd>public Boolean <strong>updateRubricAnswer</strong>(<a href="../../../../core/modules/rubrics/model/rubricAnswer.html" title="class in core.modules.rubrics.model">rubricAnswer</a> answer, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>answer</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricChoiceData()"><!-- --></a>
+	<h3>
+		updateRubricChoiceData 
+	</h3>
+
+	<kbd>public Boolean <strong>updateRubricChoiceData</strong>(Numeric rubricID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricData()"><!-- --></a>
+	<h3>
+		updateRubricData 
+	</h3>
+
+	<kbd>public Boolean <strong>updateRubricData</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricMetaData()"><!-- --></a>
+	<h3>
+		updateRubricMetaData 
+	</h3>
+
+	<kbd>private Boolean <strong>updateRubricMetaData</strong>(Numeric rubricID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricQuestion()"><!-- --></a>
+	<h3>
+		updateRubricQuestion 
+	</h3>
+
+	<kbd>public Boolean <strong>updateRubricQuestion</strong>(<a href="../../../../core/modules/rubrics/model/rubricQuestion.html" title="class in core.modules.rubrics.model">rubricQuestion</a> question, Numeric courseOfferingID, [Boolean cascade='0'], [Boolean needsUpdate='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>question</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>cascade</code></dd>
+		
+		<dd><code>needsUpdate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

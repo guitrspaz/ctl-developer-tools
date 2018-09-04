@@ -1,0 +1,2097 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>moduleProperties</title>
+	<meta name="keywords" content="com.distance.base.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../index.html?com/distance/base/moduleProperties.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.base"><span class="label label-success">com.distance.base</span></a>
+</div>
+
+<h2>
+
+Class
+moduleProperties</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../resources/inherit.gif" alt="extended by "><a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../resources/inherit.gif" alt="extended by ">com.distance.base.moduleProperties
+</pre>
+
+
+
+<div class="panel panel-default">
+	<div class="panel-heading"><strong>Direct Known Subclasses:</strong></div>
+  	<div class="panel-body">
+	
+		<a href="../../../com/distance/myCourses4/jhsphCatalog/properties/catalogProperties.html" title="class in com.distance.base">catalogProperties</a>
+	,
+		<a href="../../../core/model/security/authProperties.html" title="class in com.distance.base">authProperties</a>
+	,
+		<a href="../../../core/modules/CPscheduleBuilder/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/gradebook/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/gradebook2/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/ltSlides/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/onlineLibrary/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/peerEvaluations/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/rubrics/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/scheduleBuilder/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/survey/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	,
+		<a href="../../../core/modules/survey2/properties/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+	
+	</div>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: moduleProperties 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: moduleProperties 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I am a base module property 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Chris Schroeder (schroeder@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				package: 
+				: com.distance.base. 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: Wednesday, 03/15/2017 08:29:29 AM 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: Wednesday, 03/15/2017 08:29:29 AM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#adminEmail()">adminEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>ctlhelp@jhu.edu</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#applicationRoot()">applicationRoot</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>/core</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#blueprints()">blueprints</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#catalogDSN()">catalogDSN</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#defaultEvent()">defaultEvent</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>home</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#devEmail()">devEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>ctlhelp@jhu.edu</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#devID()">devID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>3562</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#filePath()">filePath</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>/fileDepot</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#hasOwnProperties()">hasOwnProperties</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>true</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#paramAliases()">paramAliases</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#propertyScopes()">propertyScopes</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#tempFileDir()">tempFileDir</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>/fileDepot/tmp</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="moduleProperties.html#init()">init</A></strong>()
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETADMINEMAIL()">GETADMINEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETAPPLICATIONROOT()">GETAPPLICATIONROOT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETBLUEPRINTS()">GETBLUEPRINTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETCATALOGDSN()">GETCATALOGDSN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDEFAULTEVENT()">GETDEFAULTEVENT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDEVEMAIL()">GETDEVEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDEVID()">GETDEVID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETFILEPATH()">GETFILEPATH</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETHASOWNPROPERTIES()">GETHASOWNPROPERTIES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETPARAMALIASES()">GETPARAMALIASES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETPROPERTYSCOPES()">GETPROPERTYSCOPES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETTEMPFILEDIR()">GETTEMPFILEDIR</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETADMINEMAIL()">SETADMINEMAIL</A></strong>(string adminEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETAPPLICATIONROOT()">SETAPPLICATIONROOT</A></strong>(string applicationRoot)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETBLUEPRINTS()">SETBLUEPRINTS</A></strong>(struct blueprints)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETCATALOGDSN()">SETCATALOGDSN</A></strong>(string catalogDSN)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDEFAULTEVENT()">SETDEFAULTEVENT</A></strong>(string defaultEvent)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDEVEMAIL()">SETDEVEMAIL</A></strong>(string devEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDEVID()">SETDEVID</A></strong>(numeric devID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETFILEPATH()">SETFILEPATH</A></strong>(string filePath)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETHASOWNPROPERTIES()">SETHASOWNPROPERTIES</A></strong>(boolean hasOwnProperties)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETPARAMALIASES()">SETPARAMALIASES</A></strong>(struct paramAliases)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETPROPERTYSCOPES()">SETPROPERTYSCOPES</A></strong>(array propertyScopes)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETTEMPFILEDIR()">SETTEMPFILEDIR</A></strong>(string tempFileDir)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Void</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#configure()">configure</A></strong>([String adminEmail], [Array blueprints='[runtime expression]'], [Array cacheScopes='[runtime expression]'], [Struct cacheTypes='[runtime expression]'], [String cacheRegion=''], [String catalogDSN=''], [Date compareDate='[runtime expression]'], [Boolean debugMode='0'], [String defaultEvent], [String defaultLog='com.distance.base'], [Date defaultDate='[runtime expression]'], [String devEmail], [Numeric devID], [String filePath='/fileDepot'], [Boolean hasOwnProperties], [String moduleName], [String moduleRoot], [String modulePrefix], [String moduleVersion], [Struct paramAliases='[runtime expression]'], [Boolean sharedCache='false'], [String supportEmail='ctlhelp@jhu.edu'], [String tempFileDir='/fileDepot/tmp'], [Array propertyScopes='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Struct</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#returnBuiltBlueprints()">returnBuiltBlueprints</A></strong>(Array blueprints)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#returnProperties()">returnProperties</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>()</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="adminEmail()"><!-- --></a>
+		<h3>adminEmail</h3>
+
+		<kbd>
+			property string <strong>adminEmail</strong> 
+			= [ctlhelp@jhu.edu]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="applicationRoot()"><!-- --></a>
+		<h3>applicationRoot</h3>
+
+		<kbd>
+			property string <strong>applicationRoot</strong> 
+			= [/core]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="blueprints()"><!-- --></a>
+		<h3>blueprints</h3>
+
+		<kbd>
+			property struct <strong>blueprints</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="catalogDSN()"><!-- --></a>
+		<h3>catalogDSN</h3>
+
+		<kbd>
+			property string <strong>catalogDSN</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="defaultEvent()"><!-- --></a>
+		<h3>defaultEvent</h3>
+
+		<kbd>
+			property string <strong>defaultEvent</strong> 
+			= [home]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="devEmail()"><!-- --></a>
+		<h3>devEmail</h3>
+
+		<kbd>
+			property string <strong>devEmail</strong> 
+			= [ctlhelp@jhu.edu]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="devID()"><!-- --></a>
+		<h3>devID</h3>
+
+		<kbd>
+			property numeric <strong>devID</strong> 
+			= [3562]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="filePath()"><!-- --></a>
+		<h3>filePath</h3>
+
+		<kbd>
+			property string <strong>filePath</strong> 
+			= [/fileDepot]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="hasOwnProperties()"><!-- --></a>
+		<h3>hasOwnProperties</h3>
+
+		<kbd>
+			property boolean <strong>hasOwnProperties</strong> 
+			= [true]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="paramAliases()"><!-- --></a>
+		<h3>paramAliases</h3>
+
+		<kbd>
+			property struct <strong>paramAliases</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="propertyScopes()"><!-- --></a>
+		<h3>propertyScopes</h3>
+
+		<kbd>
+			property array <strong>propertyScopes</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="tempFileDir()"><!-- --></a>
+		<h3>tempFileDir</h3>
+
+		<kbd>
+			property string <strong>tempFileDir</strong> 
+			= [/fileDepot/tmp]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETADMINEMAIL()"><!-- --></a>
+	<h3>
+		GETADMINEMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETADMINEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETAPPLICATIONROOT()"><!-- --></a>
+	<h3>
+		GETAPPLICATIONROOT 
+	</h3>
+
+	<kbd>public string <strong>GETAPPLICATIONROOT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETBLUEPRINTS()"><!-- --></a>
+	<h3>
+		GETBLUEPRINTS 
+	</h3>
+
+	<kbd>public struct <strong>GETBLUEPRINTS</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a></code>
+			in class
+			<code>
+				<a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCATALOGDSN()"><!-- --></a>
+	<h3>
+		GETCATALOGDSN 
+	</h3>
+
+	<kbd>public string <strong>GETCATALOGDSN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEFAULTEVENT()"><!-- --></a>
+	<h3>
+		GETDEFAULTEVENT 
+	</h3>
+
+	<kbd>public string <strong>GETDEFAULTEVENT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEVEMAIL()"><!-- --></a>
+	<h3>
+		GETDEVEMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETDEVEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEVID()"><!-- --></a>
+	<h3>
+		GETDEVID 
+	</h3>
+
+	<kbd>public numeric <strong>GETDEVID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFILEPATH()"><!-- --></a>
+	<h3>
+		GETFILEPATH 
+	</h3>
+
+	<kbd>public string <strong>GETFILEPATH</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a></code>
+			in class
+			<code>
+				<a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHASOWNPROPERTIES()"><!-- --></a>
+	<h3>
+		GETHASOWNPROPERTIES 
+	</h3>
+
+	<kbd>public boolean <strong>GETHASOWNPROPERTIES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPARAMALIASES()"><!-- --></a>
+	<h3>
+		GETPARAMALIASES 
+	</h3>
+
+	<kbd>public struct <strong>GETPARAMALIASES</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a></code>
+			in class
+			<code>
+				<a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPROPERTYSCOPES()"><!-- --></a>
+	<h3>
+		GETPROPERTYSCOPES 
+	</h3>
+
+	<kbd>public array <strong>GETPROPERTYSCOPES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTEMPFILEDIR()"><!-- --></a>
+	<h3>
+		GETTEMPFILEDIR 
+	</h3>
+
+	<kbd>public string <strong>GETTEMPFILEDIR</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETADMINEMAIL()"><!-- --></a>
+	<h3>
+		SETADMINEMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETADMINEMAIL</strong>(string adminEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>adminEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETAPPLICATIONROOT()"><!-- --></a>
+	<h3>
+		SETAPPLICATIONROOT 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETAPPLICATIONROOT</strong>(string applicationRoot)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>applicationRoot</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETBLUEPRINTS()"><!-- --></a>
+	<h3>
+		SETBLUEPRINTS 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETBLUEPRINTS</strong>(struct blueprints)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a></code>
+			in class
+			<code>
+				<a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>blueprints</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCATALOGDSN()"><!-- --></a>
+	<h3>
+		SETCATALOGDSN 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETCATALOGDSN</strong>(string catalogDSN)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>catalogDSN</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTEVENT()"><!-- --></a>
+	<h3>
+		SETDEFAULTEVENT 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETDEFAULTEVENT</strong>(string defaultEvent)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultEvent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEVEMAIL()"><!-- --></a>
+	<h3>
+		SETDEVEMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETDEVEMAIL</strong>(string devEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>devEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEVID()"><!-- --></a>
+	<h3>
+		SETDEVID 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETDEVID</strong>(numeric devID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>devID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFILEPATH()"><!-- --></a>
+	<h3>
+		SETFILEPATH 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETFILEPATH</strong>(string filePath)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a></code>
+			in class
+			<code>
+				<a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>filePath</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHASOWNPROPERTIES()"><!-- --></a>
+	<h3>
+		SETHASOWNPROPERTIES 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETHASOWNPROPERTIES</strong>(boolean hasOwnProperties)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>hasOwnProperties</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPARAMALIASES()"><!-- --></a>
+	<h3>
+		SETPARAMALIASES 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETPARAMALIASES</strong>(struct paramAliases)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a></code>
+			in class
+			<code>
+				<a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paramAliases</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPROPERTYSCOPES()"><!-- --></a>
+	<h3>
+		SETPROPERTYSCOPES 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETPROPERTYSCOPES</strong>(array propertyScopes)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>propertyScopes</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTEMPFILEDIR()"><!-- --></a>
+	<h3>
+		SETTEMPFILEDIR 
+	</h3>
+
+	<kbd>public <a href="../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a> <strong>SETTEMPFILEDIR</strong>(string tempFileDir)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>tempFileDir</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>private Void <strong>configure</strong>([String adminEmail], [Array blueprints='[runtime expression]'], [Array cacheScopes='[runtime expression]'], [Struct cacheTypes='[runtime expression]'], [String cacheRegion=''], [String catalogDSN=''], [Date compareDate='[runtime expression]'], [Boolean debugMode='0'], [String defaultEvent], [String defaultLog='com.distance.base'], [Date defaultDate='[runtime expression]'], [String devEmail], [Numeric devID], [String filePath='/fileDepot'], [Boolean hasOwnProperties], [String moduleName], [String moduleRoot], [String modulePrefix], [String moduleVersion], [Struct paramAliases='[runtime expression]'], [Boolean sharedCache='false'], [String supportEmail='ctlhelp@jhu.edu'], [String tempFileDir='/fileDepot/tmp'], [Array propertyScopes='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>adminEmail</code></dd>
+		
+		<dd><code>blueprints</code></dd>
+		
+		<dd><code>cacheScopes</code></dd>
+		
+		<dd><code>cacheTypes</code></dd>
+		
+		<dd><code>cacheRegion</code></dd>
+		
+		<dd><code>catalogDSN</code></dd>
+		
+		<dd><code>compareDate</code></dd>
+		
+		<dd><code>debugMode</code></dd>
+		
+		<dd><code>defaultEvent</code></dd>
+		
+		<dd><code>defaultLog</code></dd>
+		
+		<dd><code>defaultDate</code></dd>
+		
+		<dd><code>devEmail</code></dd>
+		
+		<dd><code>devID</code></dd>
+		
+		<dd><code>filePath</code></dd>
+		
+		<dd><code>hasOwnProperties</code></dd>
+		
+		<dd><code>moduleName</code></dd>
+		
+		<dd><code>moduleRoot</code></dd>
+		
+		<dd><code>modulePrefix</code></dd>
+		
+		<dd><code>moduleVersion</code></dd>
+		
+		<dd><code>paramAliases</code></dd>
+		
+		<dd><code>sharedCache</code></dd>
+		
+		<dd><code>supportEmail</code></dd>
+		
+		<dd><code>tempFileDir</code></dd>
+		
+		<dd><code>propertyScopes</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnBuiltBlueprints()"><!-- --></a>
+	<h3>
+		returnBuiltBlueprints 
+	</h3>
+
+	<kbd>private Struct <strong>returnBuiltBlueprints</strong>(Array blueprints)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>blueprints</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnProperties()"><!-- --></a>
+	<h3>
+		returnProperties 
+	</h3>
+
+	<kbd>public Struct <strong>returnProperties</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

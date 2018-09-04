@@ -1,8 +1,5 @@
 <cfoutput>
 	<article id="articleTop" class="container-fluid">
-		<div>
-			<h2>#prc.sectionTitle#</h2>
-		</div>
 		<form name="articleForm" id="pageForm" class="ml-form" action="#event.buildLink('')#" method="post">
 			<div class="form-group">
 				<textarea class="form-control" contenteditable="true" name="jsonData" id="jsonData" placeholder="Paste JSON data..." rows="12"><cfif StructKeyExists(prc,'jsonData')>#prc.jsonData#</cfif></textarea>

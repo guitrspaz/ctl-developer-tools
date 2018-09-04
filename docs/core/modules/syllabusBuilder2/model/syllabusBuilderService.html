@@ -1,0 +1,1424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>syllabusBuilderService</title>
+	<meta name="keywords" content="core.modules.syllabusBuilder2.model.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?core/modules/syllabusBuilder2/model/syllabusBuilderService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.syllabusBuilder2.model"><span class="label label-success">core.modules.syllabusBuilder2.model</span></a>
+</div>
+
+<h2>
+
+Class
+syllabusBuilderService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">core.modules.syllabusBuilder2.model.syllabusBuilderService
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I'm the service layer for the syllabus builder</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: syllabusBuilderService 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: yes 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="syllabusBuilderService.html#init()">init</A></strong>(string dsn, any createPendingLogURL)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm the initalization method.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#cleanStagingData()">cleanStagingData</A></strong>([<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#copyFromCoursePlus()">copyFromCoursePlus</A></strong>(numeric catalogID, numeric syllabusID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#copyFromMyCourses()">copyFromMyCourses</A></strong>(numeric prevSyllabusID, numeric syllabusID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;<a href="../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a></code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#createCoreSection()">createCoreSection</A></strong>(numeric syllabusID, numeric SectionTypeID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#createNewSyllabus()">createNewSyllabus</A></strong>(numeric courseID='0', numeric courseOfferingID='0', numeric catalogID='0', numeric createdBy='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make a syllabus based on catalog and old syllabus information.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#deleteSection()">deleteSection</A></strong>(numeric sectionID='0', [numeric deletedBy='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete a section.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getCatalogDiffByQuarter()">getCatalogDiffByQuarter</A></strong>([numeric academicYear], [date academicTermID])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getCatalogInfoByCatalogID()">getCatalogInfoByCatalogID</A></strong>(numeric catalogID='0', [boolean doNotUseCache])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a structure of catalog information.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getCatalogInfoByCourseOfferingID()">getCatalogInfoByCourseOfferingID</A></strong>(numeric courseOfferingID='0', [boolean doNotUseCache])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a structure of catalog information.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getOtherSectionsOfCourse()">getOtherSectionsOfCourse</A></strong>(string courseNumber)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getRecentChangesOfCatalogSectionsByQuarter()">getRecentChangesOfCatalogSectionsByQuarter</A></strong>([date endDate='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a></code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getSectionForEditing()">getSectionForEditing</A></strong>(numeric sectionID='0', struct coursePendingStatus='[runtime expression]')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getSectionsBySyllabusID()">getSectionsBySyllabusID</A></strong>(numeric syllabusID='0', string coreSectionTypes='', struct coursePendingStatus='[runtime expression]')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return an array of the sections in a syllabus.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a></code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getSyllabusByCourseOfferingID()">getSyllabusByCourseOfferingID</A></strong>(numeric courseOfferingID='0', [boolean doNotUseCache])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getUserVisit()">getUserVisit</A></strong>(numeric syllabusID='0', numeric userID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check if user has visited this particular syllabus.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#getYearReport()">getYearReport</A></strong>(numeric year)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#isLibItemInSyllabus()">isLibItemInSyllabus</A></strong>(numeric libItemID='0', numeric syllabusID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I check to see if an library item either is marked to show in the syllabus 'files from the online library' section or if it is linked to any other section.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#markCoreSectionAsEdited()">markCoreSectionAsEdited</A></strong>(numeric syllabusID, numeric userID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;struct</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#queryRowToStruct()">queryRowToStruct</A></strong>(query qry)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#revertSectionsBackToCatalog()">revertSectionsBackToCatalog</A></strong>(numeric syllabusID='0', numeric catalogID='0', numeric createdBy='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I revert certain section back to original catalog content.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#saveSection()">saveSection</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section, [boolean doNotSaveContentInfo])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I enter section and section content info into the database via an UPDATE or CREATE.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#saveSectionSort()">saveSectionSort</A></strong>(array sectionIDs='[runtime expression]')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I save the sorting order of sections in a syllabus.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#saveSyllabus()">saveSyllabus</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I save the room info into the syllabus table.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#sendCoreSectionsForReview()">sendCoreSectionsForReview</A></strong>(numeric catalogID, numeric syllabusID, numeric lastModBy, struct author, string environmentName, boolean test='false')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setHelperMethods()">setHelperMethods</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/tools/helperMethods.html" title="class in core.modules.syllabusBuilder2.model.tools">helperMethods</a> helperMethods)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: helperMethods.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setMyCoursesFacade()">setMyCoursesFacade</A></strong>(any myCoursesFacade)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: myCoursesFacade.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setSylCatalogGateway()">setSylCatalogGateway</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/catalog/sylCatalogGateway.html" title="class in core.modules.syllabusBuilder2.model.catalog">sylCatalogGateway</a> sylCatalogGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: sylCatalogGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setSylSectionContentGateway()">setSylSectionContentGateway</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/sectionContent/sylSectionContentGateway.html" title="class in core.modules.syllabusBuilder2.model.sectionContent">sylSectionContentGateway</a> sylSectionContentGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: sylSectionContentGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setSylSectionDAO()">setSylSectionDAO</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/section/sylSectionDAO.html" title="class in core.modules.syllabusBuilder2.model.section">sylSectionDAO</a> sylSectionDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: sylSectionDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setSylSectionGateway()">setSylSectionGateway</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/section/sylSectionGateway.html" title="class in core.modules.syllabusBuilder2.model.section">sylSectionGateway</a> sylSectionGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: sylSectionGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#setSyllabusDAO()">setSyllabusDAO</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabusDAO.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabusDAO</a> syllabusDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: syllabusDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a></code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#syncContactsWithCatalog()">syncContactsWithCatalog</A></strong>(<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus, query contactsQ, numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="syllabusBuilderService.html#unDeleteSection()">unDeleteSection</A></strong>(numeric sectionID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete a section.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn, any createPendingLogURL)</kbd>
+
+	<br><br>
+
+	
+	<p>I'm the initalization method</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - the DSN passed by the application</dd>
+		
+			<dd><code>createPendingLogURL</code> - the url to the webservice to create pending course change logs in the course system</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="cleanStagingData()"><!-- --></a>
+	<h3>
+		cleanStagingData 
+	</h3>
+
+	<kbd>public boolean <strong>cleanStagingData</strong>([<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabus</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyFromCoursePlus()"><!-- --></a>
+	<h3>
+		copyFromCoursePlus 
+	</h3>
+
+	<kbd>public void <strong>copyFromCoursePlus</strong>(numeric catalogID, numeric syllabusID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>catalogID</code></dd>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyFromMyCourses()"><!-- --></a>
+	<h3>
+		copyFromMyCourses 
+	</h3>
+
+	<kbd>public void <strong>copyFromMyCourses</strong>(numeric prevSyllabusID, numeric syllabusID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>prevSyllabusID</code></dd>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createCoreSection()"><!-- --></a>
+	<h3>
+		createCoreSection 
+	</h3>
+
+	<kbd>private <a href="../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> <strong>createCoreSection</strong>(numeric syllabusID, numeric SectionTypeID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		<dd><code>SectionTypeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createNewSyllabus()"><!-- --></a>
+	<h3>
+		createNewSyllabus 
+	</h3>
+
+	<kbd>public void <strong>createNewSyllabus</strong>(numeric courseID='0', numeric courseOfferingID='0', numeric catalogID='0', numeric createdBy='0')</kbd>
+
+	<br><br>
+
+	
+		<p>Make a syllabus based on catalog and old syllabus information.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>catalogID</code></dd>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteSection()"><!-- --></a>
+	<h3>
+		deleteSection 
+	</h3>
+
+	<kbd>public void <strong>deleteSection</strong>(numeric sectionID='0', [numeric deletedBy='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>delete a section</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCatalogDiffByQuarter()"><!-- --></a>
+	<h3>
+		getCatalogDiffByQuarter 
+	</h3>
+
+	<kbd>public any <strong>getCatalogDiffByQuarter</strong>([numeric academicYear], [date academicTermID])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>academicYear</code></dd>
+		
+		<dd><code>academicTermID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCatalogInfoByCatalogID()"><!-- --></a>
+	<h3>
+		getCatalogInfoByCatalogID 
+	</h3>
+
+	<kbd>public Struct <strong>getCatalogInfoByCatalogID</strong>(numeric catalogID='0', [boolean doNotUseCache])</kbd>
+
+	<br><br>
+
+	
+		<p>I return a structure of catalog information</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>catalogID</code></dd>
+		
+		<dd><code>doNotUseCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCatalogInfoByCourseOfferingID()"><!-- --></a>
+	<h3>
+		getCatalogInfoByCourseOfferingID 
+	</h3>
+
+	<kbd>public Struct <strong>getCatalogInfoByCourseOfferingID</strong>(numeric courseOfferingID='0', [boolean doNotUseCache])</kbd>
+
+	<br><br>
+
+	
+		<p>I return a structure of catalog information</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>doNotUseCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOtherSectionsOfCourse()"><!-- --></a>
+	<h3>
+		getOtherSectionsOfCourse 
+	</h3>
+
+	<kbd>public struct <strong>getOtherSectionsOfCourse</strong>(string courseNumber)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseNumber</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRecentChangesOfCatalogSectionsByQuarter()"><!-- --></a>
+	<h3>
+		getRecentChangesOfCatalogSectionsByQuarter 
+	</h3>
+
+	<kbd>public any <strong>getRecentChangesOfCatalogSectionsByQuarter</strong>([date endDate='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>endDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSectionForEditing()"><!-- --></a>
+	<h3>
+		getSectionForEditing 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> <strong>getSectionForEditing</strong>(numeric sectionID='0', struct coursePendingStatus='[runtime expression]')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionID</code></dd>
+		
+		<dd><code>coursePendingStatus</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSectionsBySyllabusID()"><!-- --></a>
+	<h3>
+		getSectionsBySyllabusID 
+	</h3>
+
+	<kbd>public array <strong>getSectionsBySyllabusID</strong>(numeric syllabusID='0', string coreSectionTypes='', struct coursePendingStatus='[runtime expression]')</kbd>
+
+	<br><br>
+
+	
+		<p>return an array of the sections in a syllabus</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		<dd><code>coreSectionTypes</code> - a list of sectionTypeIDs that are core sections</dd>
+		
+		<dd><code>coursePendingStatus</code> - this is the status object for core sections that are under review. its not exactly required and will be an empty struct if it doesnt exist</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSyllabusByCourseOfferingID()"><!-- --></a>
+	<h3>
+		getSyllabusByCourseOfferingID 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> <strong>getSyllabusByCourseOfferingID</strong>(numeric courseOfferingID='0', [boolean doNotUseCache])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>doNotUseCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getUserVisit()"><!-- --></a>
+	<h3>
+		getUserVisit 
+	</h3>
+
+	<kbd>public Numeric <strong>getUserVisit</strong>(numeric syllabusID='0', numeric userID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>check if user has visited this particular syllabus.  if not, insert row into visit table and return false.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getYearReport()"><!-- --></a>
+	<h3>
+		getYearReport 
+	</h3>
+
+	<kbd>public any <strong>getYearReport</strong>(numeric year)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>year</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isLibItemInSyllabus()"><!-- --></a>
+	<h3>
+		isLibItemInSyllabus 
+	</h3>
+
+	<kbd>public boolean <strong>isLibItemInSyllabus</strong>(numeric libItemID='0', numeric syllabusID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>I check to see if an library item either is marked to show in the syllabus 'files from the online library' section or if it is linked to any other section.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>libItemID</code></dd>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="markCoreSectionAsEdited()"><!-- --></a>
+	<h3>
+		markCoreSectionAsEdited 
+	</h3>
+
+	<kbd>public void <strong>markCoreSectionAsEdited</strong>(numeric syllabusID, numeric userID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="queryRowToStruct()"><!-- --></a>
+	<h3>
+		queryRowToStruct 
+	</h3>
+
+	<kbd>private struct <strong>queryRowToStruct</strong>(query qry)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>qry</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="revertSectionsBackToCatalog()"><!-- --></a>
+	<h3>
+		revertSectionsBackToCatalog 
+	</h3>
+
+	<kbd>public void <strong>revertSectionsBackToCatalog</strong>(numeric syllabusID='0', numeric catalogID='0', numeric createdBy='0')</kbd>
+
+	<br><br>
+
+	
+		<p>I revert certain section back to original catalog content</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		<dd><code>catalogID</code></dd>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveSection()"><!-- --></a>
+	<h3>
+		saveSection 
+	</h3>
+
+	<kbd>public numeric <strong>saveSection</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section, [boolean doNotSaveContentInfo])</kbd>
+
+	<br><br>
+
+	
+		<p>I enter section and section content info into the database via an UPDATE or CREATE</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		<dd><code>doNotSaveContentInfo</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveSectionSort()"><!-- --></a>
+	<h3>
+		saveSectionSort 
+	</h3>
+
+	<kbd>public void <strong>saveSectionSort</strong>(array sectionIDs='[runtime expression]')</kbd>
+
+	<br><br>
+
+	
+		<p>I save the sorting order of sections in a syllabus</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionIDs</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveSyllabus()"><!-- --></a>
+	<h3>
+		saveSyllabus 
+	</h3>
+
+	<kbd>public void <strong>saveSyllabus</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus)</kbd>
+
+	<br><br>
+
+	
+		<p>I save the room info into the syllabus table</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabus</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendCoreSectionsForReview()"><!-- --></a>
+	<h3>
+		sendCoreSectionsForReview 
+	</h3>
+
+	<kbd>public any <strong>sendCoreSectionsForReview</strong>(numeric catalogID, numeric syllabusID, numeric lastModBy, struct author, string environmentName, boolean test='false')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>catalogID</code></dd>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		<dd><code>lastModBy</code></dd>
+		
+		<dd><code>author</code></dd>
+		
+		<dd><code>environmentName</code></dd>
+		
+		<dd><code>test</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setHelperMethods()"><!-- --></a>
+	<h3>
+		setHelperMethods 
+	</h3>
+
+	<kbd>public void <strong>setHelperMethods</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/tools/helperMethods.html" title="class in core.modules.syllabusBuilder2.model.tools">helperMethods</a> helperMethods)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: helperMethods</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>helperMethods</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setMyCoursesFacade()"><!-- --></a>
+	<h3>
+		setMyCoursesFacade 
+	</h3>
+
+	<kbd>public void <strong>setMyCoursesFacade</strong>(any myCoursesFacade)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: myCoursesFacade</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>myCoursesFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSylCatalogGateway()"><!-- --></a>
+	<h3>
+		setSylCatalogGateway 
+	</h3>
+
+	<kbd>public void <strong>setSylCatalogGateway</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/catalog/sylCatalogGateway.html" title="class in core.modules.syllabusBuilder2.model.catalog">sylCatalogGateway</a> sylCatalogGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: sylCatalogGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sylCatalogGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSylSectionContentGateway()"><!-- --></a>
+	<h3>
+		setSylSectionContentGateway 
+	</h3>
+
+	<kbd>public void <strong>setSylSectionContentGateway</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/sectionContent/sylSectionContentGateway.html" title="class in core.modules.syllabusBuilder2.model.sectionContent">sylSectionContentGateway</a> sylSectionContentGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: sylSectionContentGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sylSectionContentGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSylSectionDAO()"><!-- --></a>
+	<h3>
+		setSylSectionDAO 
+	</h3>
+
+	<kbd>public void <strong>setSylSectionDAO</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/section/sylSectionDAO.html" title="class in core.modules.syllabusBuilder2.model.section">sylSectionDAO</a> sylSectionDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: sylSectionDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sylSectionDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSylSectionGateway()"><!-- --></a>
+	<h3>
+		setSylSectionGateway 
+	</h3>
+
+	<kbd>public void <strong>setSylSectionGateway</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/section/sylSectionGateway.html" title="class in core.modules.syllabusBuilder2.model.section">sylSectionGateway</a> sylSectionGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: sylSectionGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sylSectionGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSyllabusDAO()"><!-- --></a>
+	<h3>
+		setSyllabusDAO 
+	</h3>
+
+	<kbd>public void <strong>setSyllabusDAO</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabusDAO.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabusDAO</a> syllabusDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: syllabusDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="syncContactsWithCatalog()"><!-- --></a>
+	<h3>
+		syncContactsWithCatalog 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> <strong>syncContactsWithCatalog</strong>(<a href="../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus, query contactsQ, numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabus</code></dd>
+		
+		<dd><code>contactsQ</code></dd>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unDeleteSection()"><!-- --></a>
+	<h3>
+		unDeleteSection 
+	</h3>
+
+	<kbd>public void <strong>unDeleteSection</strong>(numeric sectionID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>delete a section</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

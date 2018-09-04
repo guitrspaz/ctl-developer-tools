@@ -1,0 +1,3750 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>survey</title>
+	<meta name="keywords" content="core.modules.survey2.model.survey.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/survey2/model/survey/survey.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.survey2.model.survey"><span class="label label-success">core.modules.survey2.model.survey</span></a>
+</div>
+
+<h2>
+
+Class
+survey</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/survey2/model/tools/bean.html" title="class in core.modules.survey2.model.tools">core.modules.survey2.model.tools.bean</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.survey2.model.survey.survey
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I set the global properties of a survey</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: survey 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: survey 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Pete Lombardo (pete.lombardo@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: Thu Feb  8 10:39:32 2018 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: Mon Feb 12 11:24:00 2018 NOTES:    surveyType field -- fka surveyOriginID: 1 = Lec, 2 = LT, 0 = Other templateType field-- fka isTemplate and isSystemWideTemplate: 0 = not a template, 1 = systemwide template 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#classLectureSessionJoins()">classLectureSessionJoins</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>[]</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#classSessionID()">classSessionID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#closeDate()">closeDate</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#courseOfferingID()">courseOfferingID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#createdBy()">createdBy</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#createdOn()">createdOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#endAccessTime()">endAccessTime</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#eventID()">eventID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isAnonymous()">isAnonymous</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>true</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isDeleted()">isDeleted</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isRequiredForOffering()">isRequiredForOffering</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#modifiedBy()">modifiedBy</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#modifiedOn()">modifiedOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#notificationEmail()">notificationEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#oldCourseOfferingID()">oldCourseOfferingID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#oldSurveyID()">oldSurveyID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#openDate()">openDate</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#pageJoins()">pageJoins</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>[]</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyID()">surveyID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyInstructionText()">surveyInstructionText</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyLabel()">surveyLabel</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>Survey</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyQuestions()">surveyQuestions</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>[]</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyResponses()">surveyResponses</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>[]</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyTitle()">surveyTitle</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyType()">surveyType</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#templateType()">templateType</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="survey.html#init()">init</A></strong>([Numeric surveyID='0'], [Numeric courseOfferingID='0'], [Numeric eventID='0'], [Boolean isDeleted='false'], [String surveyLabel='Survey'], [String surveyTitle=''], [Numeric surveyType='0'], [Numeric templateType='0'], [Boolean isRequiredForOffering='false'], [Date endAccessTime='[runtime expression]'], [Date openDate='[runtime expression]'], [Date closeDate='[runtime expression]'], [Boolean isAnonymous='true'], [String notificationEmail=''], [Date createdOn='[runtime expression]'], [Numeric createdBy='0'], [Date modifiedOn='[runtime expression]'], [Numeric modifiedBy='0'], [Numeric oldSurveyID='0'], [Numeric oldCourseOfferingID='0'], [String surveyInstructionText=''], [Any surveyQuestions='[runtime expression]'], [Any surveyResponses='[runtime expression]'], [Any classLectureSessionJoins='[runtime expression]'], [Any pageJoins='[runtime expression]'], [numeric classSessionID='0'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETCLASSLECTURESESSIONJOINS()">GETCLASSLECTURESESSIONJOINS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETCLASSSESSIONID()">GETCLASSSESSIONID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETCLOSEDATE()">GETCLOSEDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETCOURSEOFFERINGID()">GETCOURSEOFFERINGID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETCREATEDBY()">GETCREATEDBY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETCREATEDON()">GETCREATEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETENDACCESSTIME()">GETENDACCESSTIME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETEVENTID()">GETEVENTID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISANONYMOUS()">GETISANONYMOUS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISDELETED()">GETISDELETED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISREQUIREDFOROFFERING()">GETISREQUIREDFOROFFERING</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETMODIFIEDBY()">GETMODIFIEDBY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETMODIFIEDON()">GETMODIFIEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETNOTIFICATIONEMAIL()">GETNOTIFICATIONEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETOLDCOURSEOFFERINGID()">GETOLDCOURSEOFFERINGID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETOLDSURVEYID()">GETOLDSURVEYID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETOPENDATE()">GETOPENDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETPAGEJOINS()">GETPAGEJOINS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYID()">GETSURVEYID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYINSTRUCTIONTEXT()">GETSURVEYINSTRUCTIONTEXT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYLABEL()">GETSURVEYLABEL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYQUESTIONS()">GETSURVEYQUESTIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYRESPONSES()">GETSURVEYRESPONSES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYTITLE()">GETSURVEYTITLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYTYPE()">GETSURVEYTYPE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETTEMPLATETYPE()">GETTEMPLATETYPE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETCLASSLECTURESESSIONJOINS()">SETCLASSLECTURESESSIONJOINS</A></strong>(Any classLectureSessionJoins)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETCLASSSESSIONID()">SETCLASSSESSIONID</A></strong>(numeric classSessionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETCLOSEDATE()">SETCLOSEDATE</A></strong>(date closeDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETCOURSEOFFERINGID()">SETCOURSEOFFERINGID</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETCREATEDBY()">SETCREATEDBY</A></strong>(numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETCREATEDON()">SETCREATEDON</A></strong>(date createdOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETENDACCESSTIME()">SETENDACCESSTIME</A></strong>(date endAccessTime)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETEVENTID()">SETEVENTID</A></strong>(numeric eventID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISANONYMOUS()">SETISANONYMOUS</A></strong>(boolean isAnonymous)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISDELETED()">SETISDELETED</A></strong>(boolean isDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISREQUIREDFOROFFERING()">SETISREQUIREDFOROFFERING</A></strong>(boolean isRequiredForOffering)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETMODIFIEDBY()">SETMODIFIEDBY</A></strong>(numeric modifiedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETMODIFIEDON()">SETMODIFIEDON</A></strong>(date modifiedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETNOTIFICATIONEMAIL()">SETNOTIFICATIONEMAIL</A></strong>(string notificationEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETOLDCOURSEOFFERINGID()">SETOLDCOURSEOFFERINGID</A></strong>(numeric oldCourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETOLDSURVEYID()">SETOLDSURVEYID</A></strong>(numeric oldSurveyID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETOPENDATE()">SETOPENDATE</A></strong>(date openDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETPAGEJOINS()">SETPAGEJOINS</A></strong>(Any pageJoins)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYID()">SETSURVEYID</A></strong>(numeric surveyID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYINSTRUCTIONTEXT()">SETSURVEYINSTRUCTIONTEXT</A></strong>(string surveyInstructionText)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYLABEL()">SETSURVEYLABEL</A></strong>(string surveyLabel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYQUESTIONS()">SETSURVEYQUESTIONS</A></strong>(Any surveyQuestions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYRESPONSES()">SETSURVEYRESPONSES</A></strong>(Any surveyResponses)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYTITLE()">SETSURVEYTITLE</A></strong>(string surveyTitle)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYTYPE()">SETSURVEYTYPE</A></strong>(numeric surveyType)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETTEMPLATETYPE()">SETTEMPLATETYPE</A></strong>(numeric templateType)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.survey2.model.tools.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/survey2/model/tools/bean.html" title="class in core.modules.survey2.model.tools">core.modules.survey2.model.tools.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/survey2/model/tools/bean.html#initBean()">initBean</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/bean.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/bean.html#GETPROTOTYPE()">GETPROTOTYPE</a>, <a href="../../../../../com/distance/base/bean.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/bean.html#SETPROTOTYPE()">SETPROTOTYPE</a>, <a href="../../../../../com/distance/base/bean.html#configure()">configure</a>, <a href="../../../../../com/distance/base/bean.html#dump()">dump</a>, <a href="../../../../../com/distance/base/bean.html#makeFunctName()">makeFunctName</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([Numeric surveyID='0'], [Numeric courseOfferingID='0'], [Numeric eventID='0'], [Boolean isDeleted='false'], [String surveyLabel='Survey'], [String surveyTitle=''], [Numeric surveyType='0'], [Numeric templateType='0'], [Boolean isRequiredForOffering='false'], [Date endAccessTime='[runtime expression]'], [Date openDate='[runtime expression]'], [Date closeDate='[runtime expression]'], [Boolean isAnonymous='true'], [String notificationEmail=''], [Date createdOn='[runtime expression]'], [Numeric createdBy='0'], [Date modifiedOn='[runtime expression]'], [Numeric modifiedBy='0'], [Numeric oldSurveyID='0'], [Numeric oldCourseOfferingID='0'], [String surveyInstructionText=''], [Any surveyQuestions='[runtime expression]'], [Any surveyResponses='[runtime expression]'], [Any classLectureSessionJoins='[runtime expression]'], [Any pageJoins='[runtime expression]'], [numeric classSessionID='0'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>surveyID</code></dd>
+		
+			<dd><code>courseOfferingID</code></dd>
+		
+			<dd><code>eventID</code></dd>
+		
+			<dd><code>isDeleted</code></dd>
+		
+			<dd><code>surveyLabel</code></dd>
+		
+			<dd><code>surveyTitle</code></dd>
+		
+			<dd><code>surveyType</code></dd>
+		
+			<dd><code>templateType</code></dd>
+		
+			<dd><code>isRequiredForOffering</code></dd>
+		
+			<dd><code>endAccessTime</code></dd>
+		
+			<dd><code>openDate</code></dd>
+		
+			<dd><code>closeDate</code></dd>
+		
+			<dd><code>isAnonymous</code></dd>
+		
+			<dd><code>notificationEmail</code></dd>
+		
+			<dd><code>createdOn</code></dd>
+		
+			<dd><code>createdBy</code></dd>
+		
+			<dd><code>modifiedOn</code></dd>
+		
+			<dd><code>modifiedBy</code></dd>
+		
+			<dd><code>oldSurveyID</code></dd>
+		
+			<dd><code>oldCourseOfferingID</code></dd>
+		
+			<dd><code>surveyInstructionText</code></dd>
+		
+			<dd><code>surveyQuestions</code></dd>
+		
+			<dd><code>surveyResponses</code></dd>
+		
+			<dd><code>classLectureSessionJoins</code></dd>
+		
+			<dd><code>pageJoins</code></dd>
+		
+			<dd><code>classSessionID</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="classLectureSessionJoins()"><!-- --></a>
+		<h3>classLectureSessionJoins</h3>
+
+		<kbd>
+			property Any <strong>classLectureSessionJoins</strong> 
+			= [[]]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="classSessionID()"><!-- --></a>
+		<h3>classSessionID</h3>
+
+		<kbd>
+			property numeric <strong>classSessionID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="closeDate()"><!-- --></a>
+		<h3>closeDate</h3>
+
+		<kbd>
+			property date <strong>closeDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseOfferingID()"><!-- --></a>
+		<h3>courseOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>courseOfferingID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createdBy()"><!-- --></a>
+		<h3>createdBy</h3>
+
+		<kbd>
+			property numeric <strong>createdBy</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createdOn()"><!-- --></a>
+		<h3>createdOn</h3>
+
+		<kbd>
+			property date <strong>createdOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="endAccessTime()"><!-- --></a>
+		<h3>endAccessTime</h3>
+
+		<kbd>
+			property date <strong>endAccessTime</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="eventID()"><!-- --></a>
+		<h3>eventID</h3>
+
+		<kbd>
+			property numeric <strong>eventID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isAnonymous()"><!-- --></a>
+		<h3>isAnonymous</h3>
+
+		<kbd>
+			property boolean <strong>isAnonymous</strong> 
+			= [true]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDeleted()"><!-- --></a>
+		<h3>isDeleted</h3>
+
+		<kbd>
+			property boolean <strong>isDeleted</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isRequiredForOffering()"><!-- --></a>
+		<h3>isRequiredForOffering</h3>
+
+		<kbd>
+			property boolean <strong>isRequiredForOffering</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="modifiedBy()"><!-- --></a>
+		<h3>modifiedBy</h3>
+
+		<kbd>
+			property numeric <strong>modifiedBy</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="modifiedOn()"><!-- --></a>
+		<h3>modifiedOn</h3>
+
+		<kbd>
+			property date <strong>modifiedOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="notificationEmail()"><!-- --></a>
+		<h3>notificationEmail</h3>
+
+		<kbd>
+			property string <strong>notificationEmail</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="oldCourseOfferingID()"><!-- --></a>
+		<h3>oldCourseOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>oldCourseOfferingID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="oldSurveyID()"><!-- --></a>
+		<h3>oldSurveyID</h3>
+
+		<kbd>
+			property numeric <strong>oldSurveyID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="openDate()"><!-- --></a>
+		<h3>openDate</h3>
+
+		<kbd>
+			property date <strong>openDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageJoins()"><!-- --></a>
+		<h3>pageJoins</h3>
+
+		<kbd>
+			property Any <strong>pageJoins</strong> 
+			= [[]]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyID()"><!-- --></a>
+		<h3>surveyID</h3>
+
+		<kbd>
+			property numeric <strong>surveyID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyInstructionText()"><!-- --></a>
+		<h3>surveyInstructionText</h3>
+
+		<kbd>
+			property string <strong>surveyInstructionText</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyLabel()"><!-- --></a>
+		<h3>surveyLabel</h3>
+
+		<kbd>
+			property string <strong>surveyLabel</strong> 
+			= [Survey]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyQuestions()"><!-- --></a>
+		<h3>surveyQuestions</h3>
+
+		<kbd>
+			property Any <strong>surveyQuestions</strong> 
+			= [[]]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyResponses()"><!-- --></a>
+		<h3>surveyResponses</h3>
+
+		<kbd>
+			property Any <strong>surveyResponses</strong> 
+			= [[]]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyTitle()"><!-- --></a>
+		<h3>surveyTitle</h3>
+
+		<kbd>
+			property string <strong>surveyTitle</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyType()"><!-- --></a>
+		<h3>surveyType</h3>
+
+		<kbd>
+			property numeric <strong>surveyType</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="templateType()"><!-- --></a>
+		<h3>templateType</h3>
+
+		<kbd>
+			property numeric <strong>templateType</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETCLASSLECTURESESSIONJOINS()"><!-- --></a>
+	<h3>
+		GETCLASSLECTURESESSIONJOINS 
+	</h3>
+
+	<kbd>public Any <strong>GETCLASSLECTURESESSIONJOINS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCLASSSESSIONID()"><!-- --></a>
+	<h3>
+		GETCLASSSESSIONID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCLASSSESSIONID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCLOSEDATE()"><!-- --></a>
+	<h3>
+		GETCLOSEDATE 
+	</h3>
+
+	<kbd>public date <strong>GETCLOSEDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		GETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOURSEOFFERINGID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDBY()"><!-- --></a>
+	<h3>
+		GETCREATEDBY 
+	</h3>
+
+	<kbd>public numeric <strong>GETCREATEDBY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDON()"><!-- --></a>
+	<h3>
+		GETCREATEDON 
+	</h3>
+
+	<kbd>public date <strong>GETCREATEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#GETCREATEDON()">GETCREATEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETENDACCESSTIME()"><!-- --></a>
+	<h3>
+		GETENDACCESSTIME 
+	</h3>
+
+	<kbd>public date <strong>GETENDACCESSTIME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETEVENTID()"><!-- --></a>
+	<h3>
+		GETEVENTID 
+	</h3>
+
+	<kbd>public numeric <strong>GETEVENTID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISANONYMOUS()"><!-- --></a>
+	<h3>
+		GETISANONYMOUS 
+	</h3>
+
+	<kbd>public boolean <strong>GETISANONYMOUS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISDELETED()"><!-- --></a>
+	<h3>
+		GETISDELETED 
+	</h3>
+
+	<kbd>public boolean <strong>GETISDELETED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISREQUIREDFOROFFERING()"><!-- --></a>
+	<h3>
+		GETISREQUIREDFOROFFERING 
+	</h3>
+
+	<kbd>public boolean <strong>GETISREQUIREDFOROFFERING</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODIFIEDBY()"><!-- --></a>
+	<h3>
+		GETMODIFIEDBY 
+	</h3>
+
+	<kbd>public numeric <strong>GETMODIFIEDBY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODIFIEDON()"><!-- --></a>
+	<h3>
+		GETMODIFIEDON 
+	</h3>
+
+	<kbd>public date <strong>GETMODIFIEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#GETMODIFIEDON()">GETMODIFIEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNOTIFICATIONEMAIL()"><!-- --></a>
+	<h3>
+		GETNOTIFICATIONEMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETNOTIFICATIONEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETOLDCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		GETOLDCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public numeric <strong>GETOLDCOURSEOFFERINGID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETOLDSURVEYID()"><!-- --></a>
+	<h3>
+		GETOLDSURVEYID 
+	</h3>
+
+	<kbd>public numeric <strong>GETOLDSURVEYID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETOPENDATE()"><!-- --></a>
+	<h3>
+		GETOPENDATE 
+	</h3>
+
+	<kbd>public date <strong>GETOPENDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAGEJOINS()"><!-- --></a>
+	<h3>
+		GETPAGEJOINS 
+	</h3>
+
+	<kbd>public Any <strong>GETPAGEJOINS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYID()"><!-- --></a>
+	<h3>
+		GETSURVEYID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSURVEYID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYINSTRUCTIONTEXT()"><!-- --></a>
+	<h3>
+		GETSURVEYINSTRUCTIONTEXT 
+	</h3>
+
+	<kbd>public string <strong>GETSURVEYINSTRUCTIONTEXT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYLABEL()"><!-- --></a>
+	<h3>
+		GETSURVEYLABEL 
+	</h3>
+
+	<kbd>public string <strong>GETSURVEYLABEL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYQUESTIONS()"><!-- --></a>
+	<h3>
+		GETSURVEYQUESTIONS 
+	</h3>
+
+	<kbd>public Any <strong>GETSURVEYQUESTIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYRESPONSES()"><!-- --></a>
+	<h3>
+		GETSURVEYRESPONSES 
+	</h3>
+
+	<kbd>public Any <strong>GETSURVEYRESPONSES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYTITLE()"><!-- --></a>
+	<h3>
+		GETSURVEYTITLE 
+	</h3>
+
+	<kbd>public string <strong>GETSURVEYTITLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYTYPE()"><!-- --></a>
+	<h3>
+		GETSURVEYTYPE 
+	</h3>
+
+	<kbd>public numeric <strong>GETSURVEYTYPE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTEMPLATETYPE()"><!-- --></a>
+	<h3>
+		GETTEMPLATETYPE 
+	</h3>
+
+	<kbd>public numeric <strong>GETTEMPLATETYPE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCLASSLECTURESESSIONJOINS()"><!-- --></a>
+	<h3>
+		SETCLASSLECTURESESSIONJOINS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETCLASSLECTURESESSIONJOINS</strong>(Any classLectureSessionJoins)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>classLectureSessionJoins</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCLASSSESSIONID()"><!-- --></a>
+	<h3>
+		SETCLASSSESSIONID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETCLASSSESSIONID</strong>(numeric classSessionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>classSessionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCLOSEDATE()"><!-- --></a>
+	<h3>
+		SETCLOSEDATE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETCLOSEDATE</strong>(date closeDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>closeDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		SETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETCOURSEOFFERINGID</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDBY()"><!-- --></a>
+	<h3>
+		SETCREATEDBY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETCREATEDBY</strong>(numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDON()"><!-- --></a>
+	<h3>
+		SETCREATEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETCREATEDON</strong>(date createdOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#SETCREATEDON()">SETCREATEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETENDACCESSTIME()"><!-- --></a>
+	<h3>
+		SETENDACCESSTIME 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETENDACCESSTIME</strong>(date endAccessTime)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>endAccessTime</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETEVENTID()"><!-- --></a>
+	<h3>
+		SETEVENTID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETEVENTID</strong>(numeric eventID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>eventID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISANONYMOUS()"><!-- --></a>
+	<h3>
+		SETISANONYMOUS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETISANONYMOUS</strong>(boolean isAnonymous)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isAnonymous</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISDELETED()"><!-- --></a>
+	<h3>
+		SETISDELETED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETISDELETED</strong>(boolean isDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISREQUIREDFOROFFERING()"><!-- --></a>
+	<h3>
+		SETISREQUIREDFOROFFERING 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETISREQUIREDFOROFFERING</strong>(boolean isRequiredForOffering)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isRequiredForOffering</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODIFIEDBY()"><!-- --></a>
+	<h3>
+		SETMODIFIEDBY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETMODIFIEDBY</strong>(numeric modifiedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modifiedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODIFIEDON()"><!-- --></a>
+	<h3>
+		SETMODIFIEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETMODIFIEDON</strong>(date modifiedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/bean.html#SETMODIFIEDON()">SETMODIFIEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modifiedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNOTIFICATIONEMAIL()"><!-- --></a>
+	<h3>
+		SETNOTIFICATIONEMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETNOTIFICATIONEMAIL</strong>(string notificationEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>notificationEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETOLDCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		SETOLDCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETOLDCOURSEOFFERINGID</strong>(numeric oldCourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldCourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETOLDSURVEYID()"><!-- --></a>
+	<h3>
+		SETOLDSURVEYID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETOLDSURVEYID</strong>(numeric oldSurveyID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldSurveyID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETOPENDATE()"><!-- --></a>
+	<h3>
+		SETOPENDATE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETOPENDATE</strong>(date openDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>openDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAGEJOINS()"><!-- --></a>
+	<h3>
+		SETPAGEJOINS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETPAGEJOINS</strong>(Any pageJoins)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageJoins</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYID()"><!-- --></a>
+	<h3>
+		SETSURVEYID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYID</strong>(numeric surveyID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYINSTRUCTIONTEXT()"><!-- --></a>
+	<h3>
+		SETSURVEYINSTRUCTIONTEXT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYINSTRUCTIONTEXT</strong>(string surveyInstructionText)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyInstructionText</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYLABEL()"><!-- --></a>
+	<h3>
+		SETSURVEYLABEL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYLABEL</strong>(string surveyLabel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyLabel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYQUESTIONS()"><!-- --></a>
+	<h3>
+		SETSURVEYQUESTIONS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYQUESTIONS</strong>(Any surveyQuestions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyQuestions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYRESPONSES()"><!-- --></a>
+	<h3>
+		SETSURVEYRESPONSES 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYRESPONSES</strong>(Any surveyResponses)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyResponses</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYTITLE()"><!-- --></a>
+	<h3>
+		SETSURVEYTITLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYTITLE</strong>(string surveyTitle)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyTitle</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYTYPE()"><!-- --></a>
+	<h3>
+		SETSURVEYTYPE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETSURVEYTYPE</strong>(numeric surveyType)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTEMPLATETYPE()"><!-- --></a>
+	<h3>
+		SETTEMPLATETYPE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey2/model/survey/survey.html" title="class in core.modules.survey2.model.survey">survey</a> <strong>SETTEMPLATETYPE</strong>(numeric templateType)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>templateType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

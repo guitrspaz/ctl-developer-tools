@@ -1,0 +1,1461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>agNewsFeed</title>
+	<meta name="keywords" content="core.modules.feedAggregator.model.agNewsFeed.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/feedAggregator/model/agNewsFeed/agNewsFeed.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.feedAggregator.model.agNewsFeed"><span class="label label-success">core.modules.feedAggregator.model.agNewsFeed</span></a>
+</div>
+
+<h2>
+
+Class
+agNewsFeed</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.feedAggregator.model.agNewsFeed.agNewsFeed
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: agNewsFeed 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#OldPageIDList()">OldPageIDList</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#courseID()">courseID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#courseOfferingID()">courseOfferingID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#isError()">isError</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#maxItems()">maxItems</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#newsFeedID()">newsFeedID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#newsFeedName()">newsFeedName</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#newsFeedURL()">newsFeedURL</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#pageIDList()">pageIDList</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="agNewsFeed.html#init()">init</A></strong>([string newsFeedID=''], [string courseID=''], [string courseOfferingID=''], [string newsFeedName=''], [string newsFeedURL=''], [string maxItems=''], [string isError=''], [string pageIDList=''], [string OldPageIDList=''])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#dump()">dump</A></strong>([boolean abort='false'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getMemento()">getMemento</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getOldPageIDList()">getOldPageIDList</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getPageIDList()">getPageIDList</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getcourseID()">getcourseID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getcourseOfferingID()">getcourseOfferingID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getisError()">getisError</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getmaxItems()">getmaxItems</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getnewsFeedID()">getnewsFeedID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getnewsFeedName()">getnewsFeedName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#getnewsFeedURL()">getnewsFeedURL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/feedAggregator/model/agNewsFeed/agNewsFeed.html" title="class in core.modules.feedAggregator.model.agNewsFeed">agNewsFeed</a></code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setMemento()">setMemento</A></strong>(struct memento)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setOldPageIDList()">setOldPageIDList</A></strong>(string OldPageIDList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setPageIDList()">setPageIDList</A></strong>(string PageIDList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setcourseID()">setcourseID</A></strong>(string courseID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setcourseOfferingID()">setcourseOfferingID</A></strong>(string courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setisError()">setisError</A></strong>(string isError)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setmaxItems()">setmaxItems</A></strong>(string maxItems)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setnewsFeedID()">setnewsFeedID</A></strong>(string newsFeedID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setnewsFeedName()">setnewsFeedName</A></strong>(string newsFeedName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#setnewsFeedURL()">setnewsFeedURL</A></strong>(string newsFeedURL)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="agNewsFeed.html#validate()">validate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([string newsFeedID=''], [string courseID=''], [string courseOfferingID=''], [string newsFeedName=''], [string newsFeedURL=''], [string maxItems=''], [string isError=''], [string pageIDList=''], [string OldPageIDList=''])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>newsFeedID</code></dd>
+		
+			<dd><code>courseID</code></dd>
+		
+			<dd><code>courseOfferingID</code></dd>
+		
+			<dd><code>newsFeedName</code></dd>
+		
+			<dd><code>newsFeedURL</code></dd>
+		
+			<dd><code>maxItems</code></dd>
+		
+			<dd><code>isError</code></dd>
+		
+			<dd><code>pageIDList</code></dd>
+		
+			<dd><code>OldPageIDList</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="OldPageIDList()"><!-- --></a>
+		<h3>OldPageIDList</h3>
+
+		<kbd>
+			property string <strong>OldPageIDList</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseID()"><!-- --></a>
+		<h3>courseID</h3>
+
+		<kbd>
+			property numeric <strong>courseID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseOfferingID()"><!-- --></a>
+		<h3>courseOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>courseOfferingID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isError()"><!-- --></a>
+		<h3>isError</h3>
+
+		<kbd>
+			property numeric <strong>isError</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="maxItems()"><!-- --></a>
+		<h3>maxItems</h3>
+
+		<kbd>
+			property numeric <strong>maxItems</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="newsFeedID()"><!-- --></a>
+		<h3>newsFeedID</h3>
+
+		<kbd>
+			property numeric <strong>newsFeedID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="newsFeedName()"><!-- --></a>
+		<h3>newsFeedName</h3>
+
+		<kbd>
+			property string <strong>newsFeedName</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="newsFeedURL()"><!-- --></a>
+		<h3>newsFeedURL</h3>
+
+		<kbd>
+			property string <strong>newsFeedURL</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageIDList()"><!-- --></a>
+		<h3>pageIDList</h3>
+
+		<kbd>
+			property string <strong>pageIDList</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="dump()"><!-- --></a>
+	<h3>
+		dump 
+	</h3>
+
+	<kbd>public any <strong>dump</strong>([boolean abort='false'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>abort</code></dd>
+		
+		</dl>
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>void</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMemento()"><!-- --></a>
+	<h3>
+		getMemento 
+	</h3>
+
+	<kbd>public struct <strong>getMemento</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOldPageIDList()"><!-- --></a>
+	<h3>
+		getOldPageIDList 
+	</h3>
+
+	<kbd>public string <strong>getOldPageIDList</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageIDList()"><!-- --></a>
+	<h3>
+		getPageIDList 
+	</h3>
+
+	<kbd>public string <strong>getPageIDList</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getcourseID()"><!-- --></a>
+	<h3>
+		getcourseID 
+	</h3>
+
+	<kbd>public string <strong>getcourseID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getcourseOfferingID()"><!-- --></a>
+	<h3>
+		getcourseOfferingID 
+	</h3>
+
+	<kbd>public string <strong>getcourseOfferingID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getisError()"><!-- --></a>
+	<h3>
+		getisError 
+	</h3>
+
+	<kbd>public string <strong>getisError</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getmaxItems()"><!-- --></a>
+	<h3>
+		getmaxItems 
+	</h3>
+
+	<kbd>public string <strong>getmaxItems</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getnewsFeedID()"><!-- --></a>
+	<h3>
+		getnewsFeedID 
+	</h3>
+
+	<kbd>public string <strong>getnewsFeedID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getnewsFeedName()"><!-- --></a>
+	<h3>
+		getnewsFeedName 
+	</h3>
+
+	<kbd>public string <strong>getnewsFeedName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getnewsFeedURL()"><!-- --></a>
+	<h3>
+		getnewsFeedURL 
+	</h3>
+
+	<kbd>public string <strong>getnewsFeedURL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setMemento()"><!-- --></a>
+	<h3>
+		setMemento 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/feedAggregator/model/agNewsFeed/agNewsFeed.html" title="class in core.modules.feedAggregator.model.agNewsFeed">agNewsFeed</a> <strong>setMemento</strong>(struct memento)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>memento</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setOldPageIDList()"><!-- --></a>
+	<h3>
+		setOldPageIDList 
+	</h3>
+
+	<kbd>public void <strong>setOldPageIDList</strong>(string OldPageIDList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>OldPageIDList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageIDList()"><!-- --></a>
+	<h3>
+		setPageIDList 
+	</h3>
+
+	<kbd>public void <strong>setPageIDList</strong>(string PageIDList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>PageIDList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcourseID()"><!-- --></a>
+	<h3>
+		setcourseID 
+	</h3>
+
+	<kbd>public void <strong>setcourseID</strong>(string courseID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcourseOfferingID()"><!-- --></a>
+	<h3>
+		setcourseOfferingID 
+	</h3>
+
+	<kbd>public void <strong>setcourseOfferingID</strong>(string courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setisError()"><!-- --></a>
+	<h3>
+		setisError 
+	</h3>
+
+	<kbd>public void <strong>setisError</strong>(string isError)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setmaxItems()"><!-- --></a>
+	<h3>
+		setmaxItems 
+	</h3>
+
+	<kbd>public void <strong>setmaxItems</strong>(string maxItems)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>maxItems</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setnewsFeedID()"><!-- --></a>
+	<h3>
+		setnewsFeedID 
+	</h3>
+
+	<kbd>public void <strong>setnewsFeedID</strong>(string newsFeedID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>newsFeedID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setnewsFeedName()"><!-- --></a>
+	<h3>
+		setnewsFeedName 
+	</h3>
+
+	<kbd>public void <strong>setnewsFeedName</strong>(string newsFeedName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>newsFeedName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setnewsFeedURL()"><!-- --></a>
+	<h3>
+		setnewsFeedURL 
+	</h3>
+
+	<kbd>public void <strong>setnewsFeedURL</strong>(string newsFeedURL)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>newsFeedURL</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public array <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

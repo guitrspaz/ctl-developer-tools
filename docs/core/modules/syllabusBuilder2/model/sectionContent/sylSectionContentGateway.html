@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>sylSectionContentGateway</title>
+	<meta name="keywords" content="core.modules.syllabusBuilder2.model.sectionContent.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/syllabusBuilder2/model/sectionContent/sylSectionContentGateway.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.syllabusBuilder2.model.sectionContent"><span class="label label-success">core.modules.syllabusBuilder2.model.sectionContent</span></a>
+</div>
+
+<h2>
+
+Class
+sylSectionContentGateway</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/syllabusBuilder2/model/tools/DAOtools.html" title="class in core.modules.syllabusBuilder2.model.tools">core.modules.syllabusBuilder2.model.tools.DAOtools</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.syllabusBuilder2.model.sectionContent.sylSectionContentGateway
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I'm in charge of functions relating to the sectionContent table</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: sylSectionContentGateway 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="sylSectionContentGateway.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm the initalization method.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#copyCatalogInfoToDraft()">copyCatalogInfoToDraft</A></strong>([<a href="../../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#deleteAllSectionContentFromStaging()">deleteAllSectionContentFromStaging</A></strong>(numeric syllabusID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;array</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getAllContactSectionBySectionID()">getAllContactSectionBySectionID</A></strong>(numeric sectionID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieve an array of contactGroups->contacts for a section.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;struct</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getAllContentTextBySectionID()">getAllContentTextBySectionID</A></strong>(numeric sectionID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieve the text content of a section.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;array</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getAllObjectivesBySectionID()">getAllObjectivesBySectionID</A></strong>(numeric sectionID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieve an array of objectives for a section.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getAllSectionContentBySection()">getAllSectionContentBySection</A></strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieve all section content for a particular section in the form of an array.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getPreObjectiveTexts()">getPreObjectiveTexts</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getSectionContentFromStaging()">getSectionContentFromStaging</A></strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieves a section content from the staging DB if available, if not, it will get it from regular.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#getStagingContentBySyllabusID()">getStagingContentBySyllabusID</A></strong>(numeric syllabusID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieves rows from syl_coreStatging.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#insertStagingContent()">insertStagingContent</A></strong>(array rows)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#saveContactSectionContent()">saveContactSectionContent</A></strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#saveObjectiveSectionContent()">saveObjectiveSectionContent</A></strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#saveSectionContent()">saveSectionContent</A></strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I save the sectionContent of a section into its appropriate table(s) based on section type.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="sylSectionContentGateway.html#saveTextSectionContent()">saveTextSectionContent</A></strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.syllabusBuilder2.model.tools.daoTools"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/syllabusBuilder2/model/tools/DAOtools.html" title="class in core.modules.syllabusBuilder2.model.tools">core.modules.syllabusBuilder2.model.tools.DAOtools</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/syllabusBuilder2/model/tools/daoTools.html#queryRowToStruct()">queryRowToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I'm the initalization method</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="copyCatalogInfoToDraft()"><!-- --></a>
+	<h3>
+		copyCatalogInfoToDraft 
+	</h3>
+
+	<kbd>public void <strong>copyCatalogInfoToDraft</strong>([<a href="../../../../../core/modules/syllabusBuilder2/model/syllabus/syllabus.html" title="class in core.modules.syllabusBuilder2.model.syllabus">syllabus</a> syllabus])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabus</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAllSectionContentFromStaging()"><!-- --></a>
+	<h3>
+		deleteAllSectionContentFromStaging 
+	</h3>
+
+	<kbd>public void <strong>deleteAllSectionContentFromStaging</strong>(numeric syllabusID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllContactSectionBySectionID()"><!-- --></a>
+	<h3>
+		getAllContactSectionBySectionID 
+	</h3>
+
+	<kbd>private array <strong>getAllContactSectionBySectionID</strong>(numeric sectionID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>retrieve an array of contactGroups->contacts for a section</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllContentTextBySectionID()"><!-- --></a>
+	<h3>
+		getAllContentTextBySectionID 
+	</h3>
+
+	<kbd>private struct <strong>getAllContentTextBySectionID</strong>(numeric sectionID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>retrieve the text content of a section</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllObjectivesBySectionID()"><!-- --></a>
+	<h3>
+		getAllObjectivesBySectionID 
+	</h3>
+
+	<kbd>private array <strong>getAllObjectivesBySectionID</strong>(numeric sectionID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>retrieve an array of objectives for a section</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllSectionContentBySection()"><!-- --></a>
+	<h3>
+		getAllSectionContentBySection 
+	</h3>
+
+	<kbd>public any <strong>getAllSectionContentBySection</strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)</kbd>
+
+	<br><br>
+
+	
+		<p>retrieve all section content for a particular section in the form of an array.  return type could be an array or a structure</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPreObjectiveTexts()"><!-- --></a>
+	<h3>
+		getPreObjectiveTexts 
+	</h3>
+
+	<kbd>public query <strong>getPreObjectiveTexts</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSectionContentFromStaging()"><!-- --></a>
+	<h3>
+		getSectionContentFromStaging 
+	</h3>
+
+	<kbd>public any <strong>getSectionContentFromStaging</strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)</kbd>
+
+	<br><br>
+
+	
+		<p>retrieves a section content from the staging DB if available, if not, it will get it from regular.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStagingContentBySyllabusID()"><!-- --></a>
+	<h3>
+		getStagingContentBySyllabusID 
+	</h3>
+
+	<kbd>public query <strong>getStagingContentBySyllabusID</strong>(numeric syllabusID)</kbd>
+
+	<br><br>
+
+	
+		<p>retrieves rows from syl_coreStatging</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>syllabusID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="insertStagingContent()"><!-- --></a>
+	<h3>
+		insertStagingContent 
+	</h3>
+
+	<kbd>public void <strong>insertStagingContent</strong>(array rows)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rows</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveContactSectionContent()"><!-- --></a>
+	<h3>
+		saveContactSectionContent 
+	</h3>
+
+	<kbd>private void <strong>saveContactSectionContent</strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveObjectiveSectionContent()"><!-- --></a>
+	<h3>
+		saveObjectiveSectionContent 
+	</h3>
+
+	<kbd>private void <strong>saveObjectiveSectionContent</strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveSectionContent()"><!-- --></a>
+	<h3>
+		saveSectionContent 
+	</h3>
+
+	<kbd>public void <strong>saveSectionContent</strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)</kbd>
+
+	<br><br>
+
+	
+		<p>I save the sectionContent of a section into its appropriate table(s) based on section type</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveTextSectionContent()"><!-- --></a>
+	<h3>
+		saveTextSectionContent 
+	</h3>
+
+	<kbd>private void <strong>saveTextSectionContent</strong>(<a href="../../../../../core/modules/syllabusBuilder2/model/section/section.html" title="class in core.modules.syllabusBuilder2.model.section">section</a> section)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>section</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

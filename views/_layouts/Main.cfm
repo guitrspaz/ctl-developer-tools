@@ -39,7 +39,11 @@
 				<div class="pull-right ctl-dt-btn-brand"><a href="#event.buildLink('main')#">CTL Developer Tools Application</a></div>
 				<div class="pull-left">
 					<div class="btn-group">
-						<a href="#event.buildLink('')#" class="btn btn-primary">Tools</a>
+						<cfif StructKeyExists(prc,'sectionTitle')>
+							<a href="#event.buildLink(event.getCurrentEvent())#" class="btn btn-primary">#prc.sectionTitle#</a>
+						<cfelse>
+							<a href="#event.buildLink('')#" class="btn btn-primary">Tools</a>
+						</cfif>
 						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="caret"></span>
 							<span class="sr-only">Toggle Dropdown</span>

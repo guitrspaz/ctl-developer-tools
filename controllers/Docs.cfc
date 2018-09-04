@@ -11,7 +11,7 @@ component extends="coldbox.system.EventHandler"{
 
 	// Default Action
 	function index(event,rc,prc){
-		prc['sectionTitle']="DocBox";
+		prc['sectionTitle']="CoursePlus API Documentation";
 		event.setView("docs/index");
 	}
 
@@ -19,7 +19,7 @@ component extends="coldbox.system.EventHandler"{
 	function reload(event,rc,prc){
 		//increase timeout for compiling
 		createObject( "java", "coldfusion.tagext.lang.SettingTag" ).setRequestTimeout( javaCast( "double", 600 ) );
-		prc['sectionTitle']="DocBox";
+		prc['sectionTitle']="CoursePlus API Documentation";
 		var docbox=new docbox.DocBox(properties={
 			'projectTitle':"CoursePlus",
 			'outputDir':ExpandPath( '/docs' )

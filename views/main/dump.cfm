@@ -1,5 +1,8 @@
 <!--- put content here --->
 <cfscript>
-	//WriteDump(var=prc,label="Controller Variables");
-	WriteDump(var=event,label="Event");
+	//WriteOutput('<p>'&event.getCurrentRoutedNamespace()&'</p>');
+	//WriteOutput('<p>'&event.getCurrentRoutedEvent()&'</p>');
+	//WriteOutput('<p>'&event.getCurrentEvent()&'</p>');
+	//WriteOutput('<p>'&event.getCurrentAction()&'</p>');
+	WriteDump(var=prc,label="Event");
 </cfscript>

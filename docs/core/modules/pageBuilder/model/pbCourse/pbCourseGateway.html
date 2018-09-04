@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pbCourseGateway</title>
+	<meta name="keywords" content="core.modules.pageBuilder.model.pbCourse.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/pageBuilder/model/pbCourse/pbCourseGateway.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.pageBuilder.model.pbCourse"><span class="label label-success">core.modules.pageBuilder.model.pbCourse</span></a>
+</div>
+
+<h2>
+
+Class
+pbCourseGateway</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.pageBuilder.model.pbCourse.pbCourseGateway
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am a data gateway to pages</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: Page Gateway 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="pbCourseGateway.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize the course gateway.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getAllBSS()">getAllBSS</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve all bbs names and ID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getAvailableLectures()">getAvailableLectures</A></strong>(numeric pageBuilderID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a list of available lecture numbers.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getCurrentCourses()">getCurrentCourses</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return the most current count of courses based on the start of the current offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getHomepagefacultyImages()">getHomepagefacultyImages</A></strong>(Numeric pbID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getLastHomePageFacultyImageSort()">getLastHomePageFacultyImageSort</A></strong>(Numeric pbID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getOldPages()">getOldPages</A></strong>(<a href="../../../../../core/modules/pageBuilder/model/pbCourse/pbCourse.html" title="class in core.modules.pageBuilder.model.pbCourse">pbCourse</a> courseObj)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getSectionIDMap()">getSectionIDMap</A></strong>(numeric courseID, numeric thisPBID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#getTrackedSectionsByPageBuilder()">getTrackedSectionsByPageBuilder</A></strong>(numeric pageBuilderID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve tracked sections by pagebuilder then return in an array.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#isCourseBeingBackedUp()">isCourseBeingBackedUp</A></strong>(Numeric courseID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#isCurrentPBBeingCopied()">isCurrentPBBeingCopied</A></strong>(numeric courseID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#isFacultyListPublished()">isFacultyListPublished</A></strong>(numeric courseofferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return YES if the faculty list is published.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbCourseGateway.html#startBackup()">startBackup</A></strong>(Numeric oldPageBuilderID, [<a href="../../../../../core/modules/pageBuilder/model/pbCourse/pbCourse.html" title="class in core.modules.pageBuilder.model.pbCourse">pbCourse</a> newPageBuilder])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I create a new backup record in the pb_courseBackup table .
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize the course gateway.</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - I am the data source name.</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="getAllBSS()"><!-- --></a>
+	<h3>
+		getAllBSS 
+	</h3>
+
+	<kbd>public query <strong>getAllBSS</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve all bbs names and ID</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAvailableLectures()"><!-- --></a>
+	<h3>
+		getAvailableLectures 
+	</h3>
+
+	<kbd>public string <strong>getAvailableLectures</strong>(numeric pageBuilderID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a list of available lecture numbers</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageBuilderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentCourses()"><!-- --></a>
+	<h3>
+		getCurrentCourses 
+	</h3>
+
+	<kbd>public query <strong>getCurrentCourses</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return the most current count of courses based on the start of the current offering</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getHomepagefacultyImages()"><!-- --></a>
+	<h3>
+		getHomepagefacultyImages 
+	</h3>
+
+	<kbd>public query <strong>getHomepagefacultyImages</strong>(Numeric pbID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLastHomePageFacultyImageSort()"><!-- --></a>
+	<h3>
+		getLastHomePageFacultyImageSort 
+	</h3>
+
+	<kbd>public query <strong>getLastHomePageFacultyImageSort</strong>(Numeric pbID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOldPages()"><!-- --></a>
+	<h3>
+		getOldPages 
+	</h3>
+
+	<kbd>public query <strong>getOldPages</strong>(<a href="../../../../../core/modules/pageBuilder/model/pbCourse/pbCourse.html" title="class in core.modules.pageBuilder.model.pbCourse">pbCourse</a> courseObj)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseObj</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSectionIDMap()"><!-- --></a>
+	<h3>
+		getSectionIDMap 
+	</h3>
+
+	<kbd>public struct <strong>getSectionIDMap</strong>(numeric courseID, numeric thisPBID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>thisPBID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTrackedSectionsByPageBuilder()"><!-- --></a>
+	<h3>
+		getTrackedSectionsByPageBuilder 
+	</h3>
+
+	<kbd>public array <strong>getTrackedSectionsByPageBuilder</strong>(numeric pageBuilderID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve tracked sections by pagebuilder then return in an array</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageBuilderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isCourseBeingBackedUp()"><!-- --></a>
+	<h3>
+		isCourseBeingBackedUp 
+	</h3>
+
+	<kbd>public boolean <strong>isCourseBeingBackedUp</strong>(Numeric courseID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code> - the latest courseOfferingID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isCurrentPBBeingCopied()"><!-- --></a>
+	<h3>
+		isCurrentPBBeingCopied 
+	</h3>
+
+	<kbd>public boolean <strong>isCurrentPBBeingCopied</strong>(numeric courseID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isFacultyListPublished()"><!-- --></a>
+	<h3>
+		isFacultyListPublished 
+	</h3>
+
+	<kbd>public boolean <strong>isFacultyListPublished</strong>(numeric courseofferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return YES if the faculty list is published</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseofferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="startBackup()"><!-- --></a>
+	<h3>
+		startBackup 
+	</h3>
+
+	<kbd>public void <strong>startBackup</strong>(Numeric oldPageBuilderID, [<a href="../../../../../core/modules/pageBuilder/model/pbCourse/pbCourse.html" title="class in core.modules.pageBuilder.model.pbCourse">pbCourse</a> newPageBuilder])</kbd>
+
+	<br><br>
+
+	
+		<p>I create a new backup record in the pb_courseBackup table </p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldPageBuilderID</code></dd>
+		
+		<dd><code>newPageBuilder</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

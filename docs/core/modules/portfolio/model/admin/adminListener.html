@@ -1,0 +1,3655 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>adminListener</title>
+	<meta name="keywords" content="core.modules.portfolio.model.admin.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/portfolio/model/admin/adminListener.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.portfolio.model.admin"><span class="label label-success">core.modules.portfolio.model.admin</span></a>
+</div>
+
+<h2>
+
+Class
+adminListener</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">MachII.framework.BaseComponent
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">MachII.framework.Listener
+        <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.portfolio.model.admin.adminListener
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I'm the machII listener for portfolio admin objects</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: adminListener 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#AddNewCustomDueDateForTouchpoint()">AddNewCustomDueDateForTouchpoint</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#GetEvidenceZipFileStatusForTouchpointTemplateID()">GetEvidenceZipFileStatusForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets information about whether zip file exists.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addAdvisor()">addAdvisor</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addCohort()">addCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addCompetencyGroup()">addCompetencyGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addCompetencySet()">addCompetencySet</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addCompetencyTemplateForGroup()">addCompetencyTemplateForGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addCustomTouchpointDateForPortfolio()">addCustomTouchpointDateForPortfolio</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addProgram()">addProgram</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addSchoolwideCompetency()">addSchoolwideCompetency</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addStuToCohort()">addStuToCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addStudentForAdvisorID()">addStudentForAdvisorID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addStudentForAdvisorIDForm()">addStudentForAdvisorIDForm</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#addTouchpointTemplate()">addTouchpointTemplate</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#changeIndivDueDate()">changeIndivDueDate</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#configure()">configure</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I init this listener.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#createEvidenceZipFileForTouchpointTemplateID()">createEvidenceZipFileForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zips evidence files.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteAdvisor()">deleteAdvisor</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteCohort()">deleteCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteCompetencyGroup()">deleteCompetencyGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteCompetencySet()">deleteCompetencySet</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteCompetencyTemplateForGroup()">deleteCompetencyTemplateForGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteProgram()">deleteProgram</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteSchoolwideCompetency()">deleteSchoolwideCompetency</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteStuFromCohort()">deleteStuFromCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteStudentForAdvisorID()">deleteStudentForAdvisorID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#deleteTouchpointTemplate()">deleteTouchpointTemplate</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#downloadProgramLibrary()">downloadProgramLibrary</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editCohort()">editCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editCompetencyGroup()">editCompetencyGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editCompetencyLevel()">editCompetencyLevel</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editCompetencySet()">editCompetencySet</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editCompetencyTemplateForGroup()">editCompetencyTemplateForGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editProgram()">editProgram</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editReflectionRating()">editReflectionRating</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editSchoolwideCompetency()">editSchoolwideCompetency</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#editTouchpointTemplate()">editTouchpointTemplate</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAdminInfoForProgram()">getAdminInfoForProgram</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAdminsForProgramID()">getAdminsForProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAdvisorInfo()">getAdvisorInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllAdvisorRoles()">getAllAdvisorRoles</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllAdvisorRolesForTouchpointTemplateID()">getAllAdvisorRolesForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllAdvisorsForProgramID()">getAllAdvisorsForProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllAdvisorsForTouchpointTemplateID()">getAllAdvisorsForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllCohortsByProgramID()">getAllCohortsByProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllCompetencyGroupTemplatesByCohortID()">getAllCompetencyGroupTemplatesByCohortID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllCompetencyGroupTemplatesByProgramID()">getAllCompetencyGroupTemplatesByProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllCompetencySetsByProgramID()">getAllCompetencySetsByProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns available competency sets.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllCompetencyTemplatesByProgramID()">getAllCompetencyTemplatesByProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllPendingReviewsByTouchpointTemplateID()">getAllPendingReviewsByTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllPortfoliosForCohortID()">getAllPortfoliosForCohortID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllProgramNamesAndAdmins()">getAllProgramNamesAndAdmins</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllPrograms()">getAllPrograms</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllRemindersForTouchpointID()">getAllRemindersForTouchpointID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllRemindersForTouchpointTemplateID()">getAllRemindersForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllStudentsForAdvisorID()">getAllStudentsForAdvisorID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllStudentsForCohortID()">getAllStudentsForCohortID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllTouchpointCompletionInfoForCohortID()">getAllTouchpointCompletionInfoForCohortID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllTouchpointTemplatesByCohortID()">getAllTouchpointTemplatesByCohortID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllTouchpointsForTemplateID()">getAllTouchpointsForTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAllUsersForSearchBoxAutoComplete()">getAllUsersForSearchBoxAutoComplete</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getAvailableCompetencyGroupsByCompetencySetID()">getAvailableCompetencyGroupsByCompetencySetID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns available competency sets.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCohortInfo()">getCohortInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a cohort.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCohortUsersForSearchBoxAutoComplete()">getCohortUsersForSearchBoxAutoComplete</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCompetencyGroupTemplateInfoForList()">getCompetencyGroupTemplateInfoForList</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCompetencyLevels()">getCompetencyLevels</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCompetencyTemplateInfoForList()">getCompetencyTemplateInfoForList</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCurrentTouchpointsWithReminderInfo()">getCurrentTouchpointsWithReminderInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCustomDateTouchpointsForTemplateIDAsArray()">getCustomDateTouchpointsForTemplateIDAsArray</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getCustomDatesForTemplateID()">getCustomDatesForTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getEvidenceZipNameForTouchpointTemplateID()">getEvidenceZipNameForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets file name for zip download.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getEvidenceZipProgressForTouchpointTemplateID()">getEvidenceZipProgressForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets status of zip file copy for progress bar.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getInfoForStuAndProgramID()">getInfoForStuAndProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getOverallCompetencyRatingsForCohort()">getOverallCompetencyRatingsForCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getPastTouchpointsWithReminderInfo()">getPastTouchpointsWithReminderInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getPortfolioInfoForCohort()">getPortfolioInfoForCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a></code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getProgramInfo()">getProgramInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a program.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getProgramLibraryByCohortID()">getProgramLibraryByCohortID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getProgramLibraryByProgramID()">getProgramLibraryByProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getProgramUsersForSearchBoxAutoComplete()">getProgramUsersForSearchBoxAutoComplete</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getProgramsForAdminID()">getProgramsForAdminID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getReflectionRatings()">getReflectionRatings</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getReflectionsForTouchpointTemplateID()">getReflectionsForTouchpointTemplateID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getSchoolWideCompetencyTemplates()">getSchoolWideCompetencyTemplates</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getStuInfoForCohort()">getStuInfoForCohort</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getStudentsWhoHaveCompletedTouchpoint()">getStudentsWhoHaveCompletedTouchpoint</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getStudentsWhoHaveNotCompletedTouchpoint()">getStudentsWhoHaveNotCompletedTouchpoint</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getStudentsWithNoAdvisorForProgramID()">getStudentsWithNoAdvisorForProgramID</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a></code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getTouchpointTemplateInfo()">getTouchpointTemplateInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a touchpointTemplate.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getTouchpointWithStuInfo()">getTouchpointWithStuInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getTouchpointsForTemplateIDAndCustomDate()">getTouchpointsForTemplateIDAndCustomDate</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a></code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getcompetencyGroupInfo()">getcompetencyGroupInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a competency Group.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a></code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#getcompetencySetInfo()">getcompetencySetInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a competency set.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#processAdvisorExcelFile()">processAdvisorExcelFile</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#processCohortExcelFile()">processCohortExcelFile</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#removeCustomTouchpointDateForPortfolio()">removeCustomTouchpointDateForPortfolio</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#reorderCompetencyTemplatesInGroup()">reorderCompetencyTemplatesInGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#reorderSchoolwideCompetencies()">reorderSchoolwideCompetencies</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#reorderTouchpointTemplates()">reorderTouchpointTemplates</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#saveCompetencyOption()">saveCompetencyOption</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#saveProgramLibraryGroup()">saveProgramLibraryGroup</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#sendAdvisorTouchpointReminder()">sendAdvisorTouchpointReminder</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#sendStuTouchpointReminder()">sendStuTouchpointReminder</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#toggleHiddenFromAdvisors()">toggleHiddenFromAdvisors</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#uploadAdvisorExcelFile()">uploadAdvisorExcelFile</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminListener.html#uploadCohortExcelFile()">uploadCohortExcelFile</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.Listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.Listener</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../MachII/framework/Listener.html#getInvoker()">getInvoker</a>, <a href="../../../../../MachII/framework/Listener.html#init()">init</a>, <a href="../../../../../MachII/framework/Listener.html#setInvoker()">setInvoker</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.BaseComponent"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.BaseComponent</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../MachII/framework/BaseComponent.html#addHTMLHeadElement()">addHTMLHeadElement</a>, <a href="../../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByName()">addHTTPHeaderByName</a>, <a href="../../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByStatus()">addHTTPHeaderByStatus</a>, <a href="../../../../../MachII/framework/BaseComponent.html#announceEvent()">announceEvent</a>, <a href="../../../../../MachII/framework/BaseComponent.html#announceEventInModule()">announceEventInModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#bindValue()">bindValue</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildCurrentUrl()">buildCurrentUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildRouteUrl()">buildRouteUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildUrl()">buildUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildUrlToModule()">buildUrlToModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#deconfigure()">deconfigure</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getAppManager()">getAppManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getAssert()">getAssert</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getComponentNameForLogging()">getComponentNameForLogging</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getLog()">getLog</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameter()">getParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameterNames()">getParameterNames</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameters()">getParameters</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getProperty()">getProperty</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getPropertyManager()">getPropertyManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getProxy()">getProxy</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getUtils()">getUtils</a>, <a href="../../../../../MachII/framework/BaseComponent.html#hasParameter()">hasParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#isParameterDefined()">isParameterDefined</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectEvent()">redirectEvent</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectEventInModule()">redirectEventInModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectRoute()">redirectRoute</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectUrl()">redirectUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#resolveValueByEnvironment()">resolveValueByEnvironment</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setAppManager()">setAppManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setLog()">setLog</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setParameter()">setParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setParameters()">setParameters</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setProperty()">setProperty</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setProxy()">setProxy</a>, <a href="../../../../../MachII/framework/BaseComponent.html#uploadFile()">uploadFile</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="AddNewCustomDueDateForTouchpoint()"><!-- --></a>
+	<h3>
+		AddNewCustomDueDateForTouchpoint 
+	</h3>
+
+	<kbd>public any <strong>AddNewCustomDueDateForTouchpoint</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetEvidenceZipFileStatusForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		GetEvidenceZipFileStatusForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public boolean <strong>GetEvidenceZipFileStatusForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets information about whether zip file exists.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addAdvisor()"><!-- --></a>
+	<h3>
+		addAdvisor 
+	</h3>
+
+	<kbd>public any <strong>addAdvisor</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCohort()"><!-- --></a>
+	<h3>
+		addCohort 
+	</h3>
+
+	<kbd>public any <strong>addCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCompetencyGroup()"><!-- --></a>
+	<h3>
+		addCompetencyGroup 
+	</h3>
+
+	<kbd>public any <strong>addCompetencyGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCompetencySet()"><!-- --></a>
+	<h3>
+		addCompetencySet 
+	</h3>
+
+	<kbd>public any <strong>addCompetencySet</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCompetencyTemplateForGroup()"><!-- --></a>
+	<h3>
+		addCompetencyTemplateForGroup 
+	</h3>
+
+	<kbd>public any <strong>addCompetencyTemplateForGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCustomTouchpointDateForPortfolio()"><!-- --></a>
+	<h3>
+		addCustomTouchpointDateForPortfolio 
+	</h3>
+
+	<kbd>public boolean <strong>addCustomTouchpointDateForPortfolio</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="addProgram()"><!-- --></a>
+	<h3>
+		addProgram 
+	</h3>
+
+	<kbd>public any <strong>addProgram</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addSchoolwideCompetency()"><!-- --></a>
+	<h3>
+		addSchoolwideCompetency 
+	</h3>
+
+	<kbd>public any <strong>addSchoolwideCompetency</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStuToCohort()"><!-- --></a>
+	<h3>
+		addStuToCohort 
+	</h3>
+
+	<kbd>public any <strong>addStuToCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStudentForAdvisorID()"><!-- --></a>
+	<h3>
+		addStudentForAdvisorID 
+	</h3>
+
+	<kbd>public any <strong>addStudentForAdvisorID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStudentForAdvisorIDForm()"><!-- --></a>
+	<h3>
+		addStudentForAdvisorIDForm 
+	</h3>
+
+	<kbd>public any <strong>addStudentForAdvisorIDForm</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addTouchpointTemplate()"><!-- --></a>
+	<h3>
+		addTouchpointTemplate 
+	</h3>
+
+	<kbd>public any <strong>addTouchpointTemplate</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="changeIndivDueDate()"><!-- --></a>
+	<h3>
+		changeIndivDueDate 
+	</h3>
+
+	<kbd>public any <strong>changeIndivDueDate</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>public void <strong>configure</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I init this listener.</p>
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../MachII/framework/BaseComponent.html#configure()">configure</a></code>
+			in class
+			<code>
+				MachII.framework.BaseComponent
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createEvidenceZipFileForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		createEvidenceZipFileForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public boolean <strong>createEvidenceZipFileForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Zips evidence files.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAdvisor()"><!-- --></a>
+	<h3>
+		deleteAdvisor 
+	</h3>
+
+	<kbd>public any <strong>deleteAdvisor</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCohort()"><!-- --></a>
+	<h3>
+		deleteCohort 
+	</h3>
+
+	<kbd>public any <strong>deleteCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCompetencyGroup()"><!-- --></a>
+	<h3>
+		deleteCompetencyGroup 
+	</h3>
+
+	<kbd>public any <strong>deleteCompetencyGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCompetencySet()"><!-- --></a>
+	<h3>
+		deleteCompetencySet 
+	</h3>
+
+	<kbd>public any <strong>deleteCompetencySet</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCompetencyTemplateForGroup()"><!-- --></a>
+	<h3>
+		deleteCompetencyTemplateForGroup 
+	</h3>
+
+	<kbd>public any <strong>deleteCompetencyTemplateForGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteProgram()"><!-- --></a>
+	<h3>
+		deleteProgram 
+	</h3>
+
+	<kbd>public any <strong>deleteProgram</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteSchoolwideCompetency()"><!-- --></a>
+	<h3>
+		deleteSchoolwideCompetency 
+	</h3>
+
+	<kbd>public any <strong>deleteSchoolwideCompetency</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStuFromCohort()"><!-- --></a>
+	<h3>
+		deleteStuFromCohort 
+	</h3>
+
+	<kbd>public any <strong>deleteStuFromCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStudentForAdvisorID()"><!-- --></a>
+	<h3>
+		deleteStudentForAdvisorID 
+	</h3>
+
+	<kbd>public any <strong>deleteStudentForAdvisorID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteTouchpointTemplate()"><!-- --></a>
+	<h3>
+		deleteTouchpointTemplate 
+	</h3>
+
+	<kbd>public any <strong>deleteTouchpointTemplate</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="downloadProgramLibrary()"><!-- --></a>
+	<h3>
+		downloadProgramLibrary 
+	</h3>
+
+	<kbd>public any <strong>downloadProgramLibrary</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCohort()"><!-- --></a>
+	<h3>
+		editCohort 
+	</h3>
+
+	<kbd>public any <strong>editCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencyGroup()"><!-- --></a>
+	<h3>
+		editCompetencyGroup 
+	</h3>
+
+	<kbd>public any <strong>editCompetencyGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencyLevel()"><!-- --></a>
+	<h3>
+		editCompetencyLevel 
+	</h3>
+
+	<kbd>public any <strong>editCompetencyLevel</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencySet()"><!-- --></a>
+	<h3>
+		editCompetencySet 
+	</h3>
+
+	<kbd>public any <strong>editCompetencySet</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencyTemplateForGroup()"><!-- --></a>
+	<h3>
+		editCompetencyTemplateForGroup 
+	</h3>
+
+	<kbd>public any <strong>editCompetencyTemplateForGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editProgram()"><!-- --></a>
+	<h3>
+		editProgram 
+	</h3>
+
+	<kbd>public any <strong>editProgram</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editReflectionRating()"><!-- --></a>
+	<h3>
+		editReflectionRating 
+	</h3>
+
+	<kbd>public any <strong>editReflectionRating</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editSchoolwideCompetency()"><!-- --></a>
+	<h3>
+		editSchoolwideCompetency 
+	</h3>
+
+	<kbd>public any <strong>editSchoolwideCompetency</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editTouchpointTemplate()"><!-- --></a>
+	<h3>
+		editTouchpointTemplate 
+	</h3>
+
+	<kbd>public any <strong>editTouchpointTemplate</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdminInfoForProgram()"><!-- --></a>
+	<h3>
+		getAdminInfoForProgram 
+	</h3>
+
+	<kbd>public any <strong>getAdminInfoForProgram</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdminsForProgramID()"><!-- --></a>
+	<h3>
+		getAdminsForProgramID 
+	</h3>
+
+	<kbd>public any <strong>getAdminsForProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdvisorInfo()"><!-- --></a>
+	<h3>
+		getAdvisorInfo 
+	</h3>
+
+	<kbd>public any <strong>getAdvisorInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorRoles()"><!-- --></a>
+	<h3>
+		getAllAdvisorRoles 
+	</h3>
+
+	<kbd>public any <strong>getAllAdvisorRoles</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorRolesForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllAdvisorRolesForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public string <strong>getAllAdvisorRolesForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsForProgramID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsForProgramID 
+	</h3>
+
+	<kbd>public any <strong>getAllAdvisorsForProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorsForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCohortsByProgramID()"><!-- --></a>
+	<h3>
+		getAllCohortsByProgramID 
+	</h3>
+
+	<kbd>public any <strong>getAllCohortsByProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencyGroupTemplatesByCohortID()"><!-- --></a>
+	<h3>
+		getAllCompetencyGroupTemplatesByCohortID 
+	</h3>
+
+	<kbd>public any <strong>getAllCompetencyGroupTemplatesByCohortID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencyGroupTemplatesByProgramID()"><!-- --></a>
+	<h3>
+		getAllCompetencyGroupTemplatesByProgramID 
+	</h3>
+
+	<kbd>public any <strong>getAllCompetencyGroupTemplatesByProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencySetsByProgramID()"><!-- --></a>
+	<h3>
+		getAllCompetencySetsByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllCompetencySetsByProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns available competency sets.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencyTemplatesByProgramID()"><!-- --></a>
+	<h3>
+		getAllCompetencyTemplatesByProgramID 
+	</h3>
+
+	<kbd>public any <strong>getAllCompetencyTemplatesByProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPendingReviewsByTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllPendingReviewsByTouchpointTemplateID 
+	</h3>
+
+	<kbd>public array <strong>getAllPendingReviewsByTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPortfoliosForCohortID()"><!-- --></a>
+	<h3>
+		getAllPortfoliosForCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllPortfoliosForCohortID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllProgramNamesAndAdmins()"><!-- --></a>
+	<h3>
+		getAllProgramNamesAndAdmins 
+	</h3>
+
+	<kbd>public any <strong>getAllProgramNamesAndAdmins</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPrograms()"><!-- --></a>
+	<h3>
+		getAllPrograms 
+	</h3>
+
+	<kbd>public any <strong>getAllPrograms</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllRemindersForTouchpointID()"><!-- --></a>
+	<h3>
+		getAllRemindersForTouchpointID 
+	</h3>
+
+	<kbd>public struct <strong>getAllRemindersForTouchpointID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllRemindersForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllRemindersForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public struct <strong>getAllRemindersForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsForAdvisorID()"><!-- --></a>
+	<h3>
+		getAllStudentsForAdvisorID 
+	</h3>
+
+	<kbd>public any <strong>getAllStudentsForAdvisorID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsForCohortID()"><!-- --></a>
+	<h3>
+		getAllStudentsForCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllStudentsForCohortID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllTouchpointCompletionInfoForCohortID()"><!-- --></a>
+	<h3>
+		getAllTouchpointCompletionInfoForCohortID 
+	</h3>
+
+	<kbd>public array <strong>getAllTouchpointCompletionInfoForCohortID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllTouchpointTemplatesByCohortID()"><!-- --></a>
+	<h3>
+		getAllTouchpointTemplatesByCohortID 
+	</h3>
+
+	<kbd>public any <strong>getAllTouchpointTemplatesByCohortID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllTouchpointsForTemplateID()"><!-- --></a>
+	<h3>
+		getAllTouchpointsForTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getAllTouchpointsForTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllUsersForSearchBoxAutoComplete()"><!-- --></a>
+	<h3>
+		getAllUsersForSearchBoxAutoComplete 
+	</h3>
+
+	<kbd>public any <strong>getAllUsersForSearchBoxAutoComplete</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAvailableCompetencyGroupsByCompetencySetID()"><!-- --></a>
+	<h3>
+		getAvailableCompetencyGroupsByCompetencySetID 
+	</h3>
+
+	<kbd>public string <strong>getAvailableCompetencyGroupsByCompetencySetID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns available competency sets.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCohortInfo()"><!-- --></a>
+	<h3>
+		getCohortInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>getCohortInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a cohort.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing an ID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCohortUsersForSearchBoxAutoComplete()"><!-- --></a>
+	<h3>
+		getCohortUsersForSearchBoxAutoComplete 
+	</h3>
+
+	<kbd>public any <strong>getCohortUsersForSearchBoxAutoComplete</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyGroupTemplateInfoForList()"><!-- --></a>
+	<h3>
+		getCompetencyGroupTemplateInfoForList 
+	</h3>
+
+	<kbd>public any <strong>getCompetencyGroupTemplateInfoForList</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyLevels()"><!-- --></a>
+	<h3>
+		getCompetencyLevels 
+	</h3>
+
+	<kbd>public any <strong>getCompetencyLevels</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyTemplateInfoForList()"><!-- --></a>
+	<h3>
+		getCompetencyTemplateInfoForList 
+	</h3>
+
+	<kbd>public any <strong>getCompetencyTemplateInfoForList</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentTouchpointsWithReminderInfo()"><!-- --></a>
+	<h3>
+		getCurrentTouchpointsWithReminderInfo 
+	</h3>
+
+	<kbd>public query <strong>getCurrentTouchpointsWithReminderInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCustomDateTouchpointsForTemplateIDAsArray()"><!-- --></a>
+	<h3>
+		getCustomDateTouchpointsForTemplateIDAsArray 
+	</h3>
+
+	<kbd>public array <strong>getCustomDateTouchpointsForTemplateIDAsArray</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCustomDatesForTemplateID()"><!-- --></a>
+	<h3>
+		getCustomDatesForTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getCustomDatesForTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEvidenceZipNameForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getEvidenceZipNameForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public string <strong>getEvidenceZipNameForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets file name for zip download.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEvidenceZipProgressForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getEvidenceZipProgressForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public struct <strong>getEvidenceZipProgressForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets status of zip file copy for progress bar.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getInfoForStuAndProgramID()"><!-- --></a>
+	<h3>
+		getInfoForStuAndProgramID 
+	</h3>
+
+	<kbd>public any <strong>getInfoForStuAndProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOverallCompetencyRatingsForCohort()"><!-- --></a>
+	<h3>
+		getOverallCompetencyRatingsForCohort 
+	</h3>
+
+	<kbd>public query <strong>getOverallCompetencyRatingsForCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPastTouchpointsWithReminderInfo()"><!-- --></a>
+	<h3>
+		getPastTouchpointsWithReminderInfo 
+	</h3>
+
+	<kbd>public query <strong>getPastTouchpointsWithReminderInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioInfoForCohort()"><!-- --></a>
+	<h3>
+		getPortfolioInfoForCohort 
+	</h3>
+
+	<kbd>public any <strong>getPortfolioInfoForCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramInfo()"><!-- --></a>
+	<h3>
+		getProgramInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a> <strong>getProgramInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a program.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing an ID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramLibraryByCohortID()"><!-- --></a>
+	<h3>
+		getProgramLibraryByCohortID 
+	</h3>
+
+	<kbd>public any <strong>getProgramLibraryByCohortID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramLibraryByProgramID()"><!-- --></a>
+	<h3>
+		getProgramLibraryByProgramID 
+	</h3>
+
+	<kbd>public any <strong>getProgramLibraryByProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramUsersForSearchBoxAutoComplete()"><!-- --></a>
+	<h3>
+		getProgramUsersForSearchBoxAutoComplete 
+	</h3>
+
+	<kbd>public any <strong>getProgramUsersForSearchBoxAutoComplete</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramsForAdminID()"><!-- --></a>
+	<h3>
+		getProgramsForAdminID 
+	</h3>
+
+	<kbd>public any <strong>getProgramsForAdminID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getReflectionRatings()"><!-- --></a>
+	<h3>
+		getReflectionRatings 
+	</h3>
+
+	<kbd>public any <strong>getReflectionRatings</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getReflectionsForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getReflectionsForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getReflectionsForTouchpointTemplateID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSchoolWideCompetencyTemplates()"><!-- --></a>
+	<h3>
+		getSchoolWideCompetencyTemplates 
+	</h3>
+
+	<kbd>public any <strong>getSchoolWideCompetencyTemplates</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStuInfoForCohort()"><!-- --></a>
+	<h3>
+		getStuInfoForCohort 
+	</h3>
+
+	<kbd>public any <strong>getStuInfoForCohort</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoHaveCompletedTouchpoint()"><!-- --></a>
+	<h3>
+		getStudentsWhoHaveCompletedTouchpoint 
+	</h3>
+
+	<kbd>public any <strong>getStudentsWhoHaveCompletedTouchpoint</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoHaveNotCompletedTouchpoint()"><!-- --></a>
+	<h3>
+		getStudentsWhoHaveNotCompletedTouchpoint 
+	</h3>
+
+	<kbd>public array <strong>getStudentsWhoHaveNotCompletedTouchpoint</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWithNoAdvisorForProgramID()"><!-- --></a>
+	<h3>
+		getStudentsWithNoAdvisorForProgramID 
+	</h3>
+
+	<kbd>public any <strong>getStudentsWithNoAdvisorForProgramID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointTemplateInfo()"><!-- --></a>
+	<h3>
+		getTouchpointTemplateInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> <strong>getTouchpointTemplateInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a touchpointTemplate.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing an ID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointWithStuInfo()"><!-- --></a>
+	<h3>
+		getTouchpointWithStuInfo 
+	</h3>
+
+	<kbd>public query <strong>getTouchpointWithStuInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointsForTemplateIDAndCustomDate()"><!-- --></a>
+	<h3>
+		getTouchpointsForTemplateIDAndCustomDate 
+	</h3>
+
+	<kbd>public query <strong>getTouchpointsForTemplateIDAndCustomDate</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getcompetencyGroupInfo()"><!-- --></a>
+	<h3>
+		getcompetencyGroupInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a> <strong>getcompetencyGroupInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a competency Group.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing an ID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getcompetencySetInfo()"><!-- --></a>
+	<h3>
+		getcompetencySetInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a> <strong>getcompetencySetInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a competency set.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event, containing an ID for querying the db.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processAdvisorExcelFile()"><!-- --></a>
+	<h3>
+		processAdvisorExcelFile 
+	</h3>
+
+	<kbd>public any <strong>processAdvisorExcelFile</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processCohortExcelFile()"><!-- --></a>
+	<h3>
+		processCohortExcelFile 
+	</h3>
+
+	<kbd>public any <strong>processCohortExcelFile</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="removeCustomTouchpointDateForPortfolio()"><!-- --></a>
+	<h3>
+		removeCustomTouchpointDateForPortfolio 
+	</h3>
+
+	<kbd>public boolean <strong>removeCustomTouchpointDateForPortfolio</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderCompetencyTemplatesInGroup()"><!-- --></a>
+	<h3>
+		reorderCompetencyTemplatesInGroup 
+	</h3>
+
+	<kbd>public any <strong>reorderCompetencyTemplatesInGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderSchoolwideCompetencies()"><!-- --></a>
+	<h3>
+		reorderSchoolwideCompetencies 
+	</h3>
+
+	<kbd>public any <strong>reorderSchoolwideCompetencies</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderTouchpointTemplates()"><!-- --></a>
+	<h3>
+		reorderTouchpointTemplates 
+	</h3>
+
+	<kbd>public any <strong>reorderTouchpointTemplates</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveCompetencyOption()"><!-- --></a>
+	<h3>
+		saveCompetencyOption 
+	</h3>
+
+	<kbd>public any <strong>saveCompetencyOption</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveProgramLibraryGroup()"><!-- --></a>
+	<h3>
+		saveProgramLibraryGroup 
+	</h3>
+
+	<kbd>public any <strong>saveProgramLibraryGroup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendAdvisorTouchpointReminder()"><!-- --></a>
+	<h3>
+		sendAdvisorTouchpointReminder 
+	</h3>
+
+	<kbd>public any <strong>sendAdvisorTouchpointReminder</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendStuTouchpointReminder()"><!-- --></a>
+	<h3>
+		sendStuTouchpointReminder 
+	</h3>
+
+	<kbd>public any <strong>sendStuTouchpointReminder</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toggleHiddenFromAdvisors()"><!-- --></a>
+	<h3>
+		toggleHiddenFromAdvisors 
+	</h3>
+
+	<kbd>public any <strong>toggleHiddenFromAdvisors</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="uploadAdvisorExcelFile()"><!-- --></a>
+	<h3>
+		uploadAdvisorExcelFile 
+	</h3>
+
+	<kbd>public any <strong>uploadAdvisorExcelFile</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="uploadCohortExcelFile()"><!-- --></a>
+	<h3>
+		uploadCohortExcelFile 
+	</h3>
+
+	<kbd>public any <strong>uploadCohortExcelFile</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

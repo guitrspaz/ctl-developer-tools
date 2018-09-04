@@ -1,0 +1,1638 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pbPageGateway</title>
+	<meta name="keywords" content="core.modules.pageBuilder.model.pbPage.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/pageBuilder/model/pbPage/pbPageGateway.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.pageBuilder.model.pbPage"><span class="label label-success">core.modules.pageBuilder.model.pbPage</span></a>
+</div>
+
+<h2>
+
+Class
+pbPageGateway</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.pageBuilder.model.pbPage.pbPageGateway
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am a data gateway to pages</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: Page Gateway 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#pbSectionGateway()">pbSectionGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="pbPageGateway.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize the page gateway.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#GETPBSECTIONGATEWAY()">GETPBSECTIONGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageGateway.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#SETPBSECTIONGATEWAY()">SETPBSECTIONGATEWAY</A></strong>(any pbSectionGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#copyLibraryItemsByPageID()">copyLibraryItemsByPageID</A></strong>(Numeric sourcePageID, Numeric targetPageID, Numeric sourceCourseOfferingID, Numeric targetCourseOfferingID, Numeric sourceCourseID, Numeric targetCourseID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#findPageInCalendar()">findPageInCalendar</A></strong>(string pageString='')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I search for the page's URL in the course calendar events.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllLectures()">getAllLectures</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllPageMaterialsByClassSessionID()">getAllPageMaterialsByClassSessionID</A></strong>(Numeric classSessionID, [Numeric pageID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllPageMaterialsByPageID()">getAllPageMaterialsByPageID</A></strong>(Numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllPagesByCourse()">getAllPagesByCourse</A></strong>(Numeric courseID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllPagesByCourseOffering()">getAllPagesByCourseOffering</A></strong>(numeric courseOfferingID, [boolean includeIsArchived='0'], [string sortType='default'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllPagesForCopying()">getAllPagesForCopying</A></strong>(numeric PageBuilderID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing all pages for a course instance for copying purposes.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getAllSectionsByPageID()">getAllSectionsByPageID</A></strong>(numeric pageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query of all sections that are in a page based on its layout data.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getDuplicateLectures()">getDuplicateLectures</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getDuplicateLecturesByPageID()">getDuplicateLecturesByPageID</A></strong>(numeric pageID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getLectureMaterialInfoByItemID()">getLectureMaterialInfoByItemID</A></strong>(numeric sectionItemID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing sectionItem info across offerings based on a sectionitemID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getLectureSectionInfo()">getLectureSectionInfo</A></strong>(numeric courseOfferingID, [boolean audioOnly='true'], [boolean publishedOnly='true'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing section info for lectures for the purposes of populating mp3 files with this information.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getLectureSectionInfoInSB()">getLectureSectionInfoInSB</A></strong>(numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing section info for lectures in schedulebuilder.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getOfferingDataForImport()">getOfferingDataForImport</A></strong>(Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPageByCourseOfferingIDAndLectureNumber()">getPageByCourseOfferingIDAndLectureNumber</A></strong>(numeric courseOfferingID, numeric lectureNum)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I take in a lecture number and a course Offering ID and return its pageID in pagebuilder.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPageDataForImport()">getPageDataForImport</A></strong>(Numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPageIDFromCopyOfPageID()">getPageIDFromCopyOfPageID</A></strong>(Numeric copyOfPageID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPageTypeByPageID()">getPageTypeByPageID</A></strong>(numeric pageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return the pageType by a pageID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPageTypeName()">getPageTypeName</A></strong>(numeric pageType)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return the pageTypeName of a pageType.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPagebuilderByPageID()">getPagebuilderByPageID</A></strong>(numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPagesByCourseID()">getPagesByCourseID</A></strong>(numeric courseID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing all the pages for a course instance by offering ID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPagesByPageBuilderID()">getPagesByPageBuilderID</A></strong>(numeric PageBuilderID, [boolean includeIsArchived='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing all the pages for a course instance.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPagesForQC()">getPagesForQC</A></strong>(numeric PageBuilderID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query containing all the pages for a course instance that are set for QC or published (basically no work in progress).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#getPublicPagesByCourseOfferingID()">getPublicPagesByCourseOfferingID</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#importPage()">importPage</A></strong>(Numeric sourceOfferingID, Numeric sourceCourseID, Numeric sourcePageID, Numeric targetOfferingID, Numeric targetCourseID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#isLinked()">isLinked</A></strong>(Numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#processPublishedActions()">processPublishedActions</A></strong>(<a href="../../../../../core/modules/pageBuilder/model/pbCourse/pbCourse.html" title="class in core.modules.pageBuilder.model.pbCourse">pbCourse</a> courseObj, <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> page, struct creator, [numeric eventID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I handle additional processing of status changes.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#recordPageAccess()">recordPageAccess</A></strong>(<a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> page, numeric userID='0', numeric courseOfferingID='0', numeric LMInPage='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Records that a user requested a specific page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#resolveAuxApplinks()">resolveAuxApplinks</A></strong>(numeric oldPageID, numeric newPageID, numeric published='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I copy over old pageID's and its joins with file and weblinks and event builder urls.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#updateOldPageIDsInEventBuilder()">updateOldPageIDsInEventBuilder</A></strong>(numeric courseID, numeric thisPBID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#updatePageLayout()">updatePageLayout</A></strong>(numeric pageID='0', numeric pageBuilderID='0', array layoutArray='arrayNew(2)', numeric numOfColumns='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I edit the layout of sessions of a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageGateway.html#updatePublishMulti()">updatePublishMulti</A></strong>(array pageIDs='arrayNew(1)', boolean pageAction='false')
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/dao.html#GETDSN()">GETDSN</a>, <a href="../../../../../com/distance/base/dao.html#SETDSN()">SETDSN</a>, <a href="../../../../../com/distance/base/dao.html#configureDAO()">configureDAO</a>, <a href="../../../../../com/distance/base/dao.html#getFormattedUser()">getFormattedUser</a>, <a href="../../../../../com/distance/base/dao.html#getUser()">getUser</a>, <a href="../../../../../com/distance/base/dao.html#getcourseIdFromCourseOfferingId()">getcourseIdFromCourseOfferingId</a>, <a href="../../../../../com/distance/base/dao.html#gethardCodeDSN()">gethardCodeDSN</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize the page gateway.</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - I am the data source name.</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="pbSectionGateway()"><!-- --></a>
+		<h3>pbSectionGateway</h3>
+
+		<kbd>
+			property any <strong>pbSectionGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETPBSECTIONGATEWAY()"><!-- --></a>
+	<h3>
+		GETPBSECTIONGATEWAY 
+	</h3>
+
+	<kbd>public any <strong>GETPBSECTIONGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBSECTIONGATEWAY()"><!-- --></a>
+	<h3>
+		SETPBSECTIONGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageGateway.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageGateway</a> <strong>SETPBSECTIONGATEWAY</strong>(any pbSectionGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbSectionGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyLibraryItemsByPageID()"><!-- --></a>
+	<h3>
+		copyLibraryItemsByPageID 
+	</h3>
+
+	<kbd>public struct <strong>copyLibraryItemsByPageID</strong>(Numeric sourcePageID, Numeric targetPageID, Numeric sourceCourseOfferingID, Numeric targetCourseOfferingID, Numeric sourceCourseID, Numeric targetCourseID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sourcePageID</code></dd>
+		
+		<dd><code>targetPageID</code></dd>
+		
+		<dd><code>sourceCourseOfferingID</code></dd>
+		
+		<dd><code>targetCourseOfferingID</code></dd>
+		
+		<dd><code>sourceCourseID</code></dd>
+		
+		<dd><code>targetCourseID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="findPageInCalendar()"><!-- --></a>
+	<h3>
+		findPageInCalendar 
+	</h3>
+
+	<kbd>public query <strong>findPageInCalendar</strong>(string pageString='')</kbd>
+
+	<br><br>
+
+	
+		<p>I search for the page's URL in the course calendar events</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageString</code> - the url for the page</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllLectures()"><!-- --></a>
+	<h3>
+		getAllLectures 
+	</h3>
+
+	<kbd>public query <strong>getAllLectures</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPageMaterialsByClassSessionID()"><!-- --></a>
+	<h3>
+		getAllPageMaterialsByClassSessionID 
+	</h3>
+
+	<kbd>public Query <strong>getAllPageMaterialsByClassSessionID</strong>(Numeric classSessionID, [Numeric pageID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>classSessionID</code></dd>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPageMaterialsByPageID()"><!-- --></a>
+	<h3>
+		getAllPageMaterialsByPageID 
+	</h3>
+
+	<kbd>public Query <strong>getAllPageMaterialsByPageID</strong>(Numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPagesByCourse()"><!-- --></a>
+	<h3>
+		getAllPagesByCourse 
+	</h3>
+
+	<kbd>public query <strong>getAllPagesByCourse</strong>(Numeric courseID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPagesByCourseOffering()"><!-- --></a>
+	<h3>
+		getAllPagesByCourseOffering 
+	</h3>
+
+	<kbd>public query <strong>getAllPagesByCourseOffering</strong>(numeric courseOfferingID, [boolean includeIsArchived='0'], [string sortType='default'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>includeIsArchived</code></dd>
+		
+		<dd><code>sortType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPagesForCopying()"><!-- --></a>
+	<h3>
+		getAllPagesForCopying 
+	</h3>
+
+	<kbd>public query <strong>getAllPagesForCopying</strong>(numeric PageBuilderID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing all pages for a course instance for copying purposes</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>PageBuilderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllSectionsByPageID()"><!-- --></a>
+	<h3>
+		getAllSectionsByPageID 
+	</h3>
+
+	<kbd>public query <strong>getAllSectionsByPageID</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query of all sections that are in a page based on its layout data.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code> - I am the page ID in which to query section information</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDuplicateLectures()"><!-- --></a>
+	<h3>
+		getDuplicateLectures 
+	</h3>
+
+	<kbd>public query <strong>getDuplicateLectures</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDuplicateLecturesByPageID()"><!-- --></a>
+	<h3>
+		getDuplicateLecturesByPageID 
+	</h3>
+
+	<kbd>public query <strong>getDuplicateLecturesByPageID</strong>(numeric pageID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureMaterialInfoByItemID()"><!-- --></a>
+	<h3>
+		getLectureMaterialInfoByItemID 
+	</h3>
+
+	<kbd>public any <strong>getLectureMaterialInfoByItemID</strong>(numeric sectionItemID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing sectionItem info across offerings based on a sectionitemID</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionItemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureSectionInfo()"><!-- --></a>
+	<h3>
+		getLectureSectionInfo 
+	</h3>
+
+	<kbd>public query <strong>getLectureSectionInfo</strong>(numeric courseOfferingID, [boolean audioOnly='true'], [boolean publishedOnly='true'])</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing section info for lectures for the purposes of populating mp3 files with this information</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>audioOnly</code></dd>
+		
+		<dd><code>publishedOnly</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureSectionInfoInSB()"><!-- --></a>
+	<h3>
+		getLectureSectionInfoInSB 
+	</h3>
+
+	<kbd>public query <strong>getLectureSectionInfoInSB</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing section info for lectures in schedulebuilder</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOfferingDataForImport()"><!-- --></a>
+	<h3>
+		getOfferingDataForImport 
+	</h3>
+
+	<kbd>public Query <strong>getOfferingDataForImport</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageByCourseOfferingIDAndLectureNumber()"><!-- --></a>
+	<h3>
+		getPageByCourseOfferingIDAndLectureNumber 
+	</h3>
+
+	<kbd>public numeric <strong>getPageByCourseOfferingIDAndLectureNumber</strong>(numeric courseOfferingID, numeric lectureNum)</kbd>
+
+	<br><br>
+
+	
+		<p>I take in a lecture number and a course Offering ID and return its pageID in pagebuilder</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>lectureNum</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageDataForImport()"><!-- --></a>
+	<h3>
+		getPageDataForImport 
+	</h3>
+
+	<kbd>public Query <strong>getPageDataForImport</strong>(Numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageIDFromCopyOfPageID()"><!-- --></a>
+	<h3>
+		getPageIDFromCopyOfPageID 
+	</h3>
+
+	<kbd>public Numeric <strong>getPageIDFromCopyOfPageID</strong>(Numeric copyOfPageID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>copyOfPageID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageTypeByPageID()"><!-- --></a>
+	<h3>
+		getPageTypeByPageID 
+	</h3>
+
+	<kbd>public string <strong>getPageTypeByPageID</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return the pageType by a pageID</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageTypeName()"><!-- --></a>
+	<h3>
+		getPageTypeName 
+	</h3>
+
+	<kbd>public string <strong>getPageTypeName</strong>(numeric pageType)</kbd>
+
+	<br><br>
+
+	
+		<p>I return the pageTypeName of a pageType</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPagebuilderByPageID()"><!-- --></a>
+	<h3>
+		getPagebuilderByPageID 
+	</h3>
+
+	<kbd>public query <strong>getPagebuilderByPageID</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPagesByCourseID()"><!-- --></a>
+	<h3>
+		getPagesByCourseID 
+	</h3>
+
+	<kbd>public query <strong>getPagesByCourseID</strong>(numeric courseID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing all the pages for a course instance by offering ID. this is used by both weblinks and online library</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPagesByPageBuilderID()"><!-- --></a>
+	<h3>
+		getPagesByPageBuilderID 
+	</h3>
+
+	<kbd>public query <strong>getPagesByPageBuilderID</strong>(numeric PageBuilderID, [boolean includeIsArchived='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing all the pages for a course instance</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>PageBuilderID</code></dd>
+		
+		<dd><code>includeIsArchived</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPagesForQC()"><!-- --></a>
+	<h3>
+		getPagesForQC 
+	</h3>
+
+	<kbd>public query <strong>getPagesForQC</strong>(numeric PageBuilderID)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query containing all the pages for a course instance that are set for QC or published (basically no work in progress)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>PageBuilderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPublicPagesByCourseOfferingID()"><!-- --></a>
+	<h3>
+		getPublicPagesByCourseOfferingID 
+	</h3>
+
+	<kbd>public query <strong>getPublicPagesByCourseOfferingID</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importPage()"><!-- --></a>
+	<h3>
+		importPage 
+	</h3>
+
+	<kbd>public Query <strong>importPage</strong>(Numeric sourceOfferingID, Numeric sourceCourseID, Numeric sourcePageID, Numeric targetOfferingID, Numeric targetCourseID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sourceOfferingID</code></dd>
+		
+		<dd><code>sourceCourseID</code></dd>
+		
+		<dd><code>sourcePageID</code></dd>
+		
+		<dd><code>targetOfferingID</code></dd>
+		
+		<dd><code>targetCourseID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isLinked()"><!-- --></a>
+	<h3>
+		isLinked 
+	</h3>
+
+	<kbd>public Boolean <strong>isLinked</strong>(Numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processPublishedActions()"><!-- --></a>
+	<h3>
+		processPublishedActions 
+	</h3>
+
+	<kbd>public void <strong>processPublishedActions</strong>(<a href="../../../../../core/modules/pageBuilder/model/pbCourse/pbCourse.html" title="class in core.modules.pageBuilder.model.pbCourse">pbCourse</a> courseObj, <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> page, struct creator, [numeric eventID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>I handle additional processing of status changes.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseObj</code></dd>
+		
+		<dd><code>page</code></dd>
+		
+		<dd><code>creator</code></dd>
+		
+		<dd><code>eventID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recordPageAccess()"><!-- --></a>
+	<h3>
+		recordPageAccess 
+	</h3>
+
+	<kbd>public void <strong>recordPageAccess</strong>(<a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> page, numeric userID='0', numeric courseOfferingID='0', numeric LMInPage='0')</kbd>
+
+	<br><br>
+
+	
+		<p>Records that a user requested a specific page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>page</code></dd>
+		
+		<dd><code>userID</code> - userID of the user we want record page viewing information for</dd>
+		
+		<dd><code>courseOfferingID</code> - offeringID PKEY of the offering we want to record for</dd>
+		
+		<dd><code>LMInPage</code> - </dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="resolveAuxApplinks()"><!-- --></a>
+	<h3>
+		resolveAuxApplinks 
+	</h3>
+
+	<kbd>public void <strong>resolveAuxApplinks</strong>(numeric oldPageID, numeric newPageID, numeric published='0')</kbd>
+
+	<br><br>
+
+	
+		<p>I copy over old pageID's and its joins with file and weblinks and event builder urls</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldPageID</code></dd>
+		
+		<dd><code>newPageID</code></dd>
+		
+		<dd><code>published</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateOldPageIDsInEventBuilder()"><!-- --></a>
+	<h3>
+		updateOldPageIDsInEventBuilder 
+	</h3>
+
+	<kbd>public struct <strong>updateOldPageIDsInEventBuilder</strong>(numeric courseID, numeric thisPBID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>thisPBID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePageLayout()"><!-- --></a>
+	<h3>
+		updatePageLayout 
+	</h3>
+
+	<kbd>public void <strong>updatePageLayout</strong>(numeric pageID='0', numeric pageBuilderID='0', array layoutArray='arrayNew(2)', numeric numOfColumns='0')</kbd>
+
+	<br><br>
+
+	
+		<p>I edit the layout of sessions of a page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code> - the page ID for this particular layout</dd>
+		
+		<dd><code>pageBuilderID</code> - the pageBuilderID for this layout</dd>
+		
+		<dd><code>layoutArray</code> - An array that stores the layout information of a page</dd>
+		
+		<dd><code>numOfColumns</code> - the number of columns of this page.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePublishMulti()"><!-- --></a>
+	<h3>
+		updatePublishMulti 
+	</h3>
+
+	<kbd>public void <strong>updatePublishMulti</strong>(array pageIDs='arrayNew(1)', boolean pageAction='false')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageIDs</code></dd>
+		
+		<dd><code>pageAction</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1749 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>moduleProperties</title>
+	<meta name="keywords" content="core.modules.s3Upload.properties.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?core/modules/s3Upload/properties/moduleProperties.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.s3Upload.properties"><span class="label label-success">core.modules.s3Upload.properties</span></a>
+</div>
+
+<h2>
+
+Class
+moduleProperties</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">com.distance.base.moduleProperties</a>
+        <img src="../../../../resources/inherit.gif" alt="extended by ">core.modules.s3Upload.properties.moduleProperties
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: s3Upload.properties.moduleProperties 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: rubrics.moduleProperties 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I am the module properties for rubrics 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Chris Schroeder (schroeder@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				date: 
+				: Tuesday, 10/11/2016 10:17:12 AM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#defaultBucket()">defaultBucket</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#defaultEvent()">defaultEvent</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#developerEmail()">developerEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#dsn()">dsn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#helpEmail()">helpEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#helpName()">helpName</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#holdingPen()">holdingPen</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#maxHeight()">maxHeight</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#maxWidth()">maxWidth</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#readPermission()">readPermission</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#useS3()">useS3</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="moduleProperties.html#init()">init</A></strong>()
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDEFAULTBUCKET()">GETDEFAULTBUCKET</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDEFAULTEVENT()">GETDEFAULTEVENT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETDSN()">GETDSN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETHELPEMAIL()">GETHELPEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETHELPNAME()">GETHELPNAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETHOLDINGPEN()">GETHOLDINGPEN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETMAXHEIGHT()">GETMAXHEIGHT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETMAXWIDTH()">GETMAXWIDTH</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETREADPERMISSION()">GETREADPERMISSION</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#GETUSES3()">GETUSES3</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDEFAULTBUCKET()">SETDEFAULTBUCKET</A></strong>(string defaultBucket)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDEFAULTEVENT()">SETDEFAULTEVENT</A></strong>(string defaultEvent)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</A></strong>(string developerEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETDSN()">SETDSN</A></strong>(string dsn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETHELPEMAIL()">SETHELPEMAIL</A></strong>(string helpEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETHELPNAME()">SETHELPNAME</A></strong>(string helpName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETHOLDINGPEN()">SETHOLDINGPEN</A></strong>(string holdingPen)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETMAXHEIGHT()">SETMAXHEIGHT</A></strong>(string maxHeight)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETMAXWIDTH()">SETMAXWIDTH</A></strong>(string maxWidth)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETREADPERMISSION()">SETREADPERMISSION</A></strong>(array readPermission)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a></code>
+		</td>
+		<td>
+			<strong><a href="moduleProperties.html#SETUSES3()">SETUSES3</A></strong>(string useS3)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.moduleProperties"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">com.distance.base.moduleProperties</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/moduleProperties.html#GETADMINEMAIL()">GETADMINEMAIL</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETAPPLICATIONROOT()">GETAPPLICATIONROOT</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETCATALOGDSN()">GETCATALOGDSN</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETDEVEMAIL()">GETDEVEMAIL</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETDEVID()">GETDEVID</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETHASOWNPROPERTIES()">GETHASOWNPROPERTIES</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETPROPERTYSCOPES()">GETPROPERTYSCOPES</a>, <a href="../../../../com/distance/base/moduleProperties.html#GETTEMPFILEDIR()">GETTEMPFILEDIR</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETADMINEMAIL()">SETADMINEMAIL</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETAPPLICATIONROOT()">SETAPPLICATIONROOT</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETCATALOGDSN()">SETCATALOGDSN</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETDEVEMAIL()">SETDEVEMAIL</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETDEVID()">SETDEVID</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETHASOWNPROPERTIES()">SETHASOWNPROPERTIES</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETPROPERTYSCOPES()">SETPROPERTYSCOPES</a>, <a href="../../../../com/distance/base/moduleProperties.html#SETTEMPFILEDIR()">SETTEMPFILEDIR</a>, <a href="../../../../com/distance/base/moduleProperties.html#configure()">configure</a>, <a href="../../../../com/distance/base/moduleProperties.html#returnBuiltBlueprints()">returnBuiltBlueprints</a>, <a href="../../../../com/distance/base/moduleProperties.html#returnProperties()">returnProperties</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>()</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="defaultBucket()"><!-- --></a>
+		<h3>defaultBucket</h3>
+
+		<kbd>
+			property string <strong>defaultBucket</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="defaultEvent()"><!-- --></a>
+		<h3>defaultEvent</h3>
+
+		<kbd>
+			property string <strong>defaultEvent</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="developerEmail()"><!-- --></a>
+		<h3>developerEmail</h3>
+
+		<kbd>
+			property string <strong>developerEmail</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="dsn()"><!-- --></a>
+		<h3>dsn</h3>
+
+		<kbd>
+			property string <strong>dsn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="helpEmail()"><!-- --></a>
+		<h3>helpEmail</h3>
+
+		<kbd>
+			property string <strong>helpEmail</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="helpName()"><!-- --></a>
+		<h3>helpName</h3>
+
+		<kbd>
+			property string <strong>helpName</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="holdingPen()"><!-- --></a>
+		<h3>holdingPen</h3>
+
+		<kbd>
+			property string <strong>holdingPen</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="maxHeight()"><!-- --></a>
+		<h3>maxHeight</h3>
+
+		<kbd>
+			property string <strong>maxHeight</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="maxWidth()"><!-- --></a>
+		<h3>maxWidth</h3>
+
+		<kbd>
+			property string <strong>maxWidth</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="readPermission()"><!-- --></a>
+		<h3>readPermission</h3>
+
+		<kbd>
+			property array <strong>readPermission</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="useS3()"><!-- --></a>
+		<h3>useS3</h3>
+
+		<kbd>
+			property string <strong>useS3</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETDEFAULTBUCKET()"><!-- --></a>
+	<h3>
+		GETDEFAULTBUCKET 
+	</h3>
+
+	<kbd>public string <strong>GETDEFAULTBUCKET</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEFAULTEVENT()"><!-- --></a>
+	<h3>
+		GETDEFAULTEVENT 
+	</h3>
+
+	<kbd>public string <strong>GETDEFAULTEVENT</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/moduleProperties.html#GETDEFAULTEVENT()">GETDEFAULTEVENT</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEVELOPEREMAIL()"><!-- --></a>
+	<h3>
+		GETDEVELOPEREMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETDEVELOPEREMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDSN()"><!-- --></a>
+	<h3>
+		GETDSN 
+	</h3>
+
+	<kbd>public string <strong>GETDSN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHELPEMAIL()"><!-- --></a>
+	<h3>
+		GETHELPEMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETHELPEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHELPNAME()"><!-- --></a>
+	<h3>
+		GETHELPNAME 
+	</h3>
+
+	<kbd>public string <strong>GETHELPNAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHOLDINGPEN()"><!-- --></a>
+	<h3>
+		GETHOLDINGPEN 
+	</h3>
+
+	<kbd>public string <strong>GETHOLDINGPEN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMAXHEIGHT()"><!-- --></a>
+	<h3>
+		GETMAXHEIGHT 
+	</h3>
+
+	<kbd>public string <strong>GETMAXHEIGHT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMAXWIDTH()"><!-- --></a>
+	<h3>
+		GETMAXWIDTH 
+	</h3>
+
+	<kbd>public string <strong>GETMAXWIDTH</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETREADPERMISSION()"><!-- --></a>
+	<h3>
+		GETREADPERMISSION 
+	</h3>
+
+	<kbd>public array <strong>GETREADPERMISSION</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSES3()"><!-- --></a>
+	<h3>
+		GETUSES3 
+	</h3>
+
+	<kbd>public string <strong>GETUSES3</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTBUCKET()"><!-- --></a>
+	<h3>
+		SETDEFAULTBUCKET 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETDEFAULTBUCKET</strong>(string defaultBucket)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultBucket</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTEVENT()"><!-- --></a>
+	<h3>
+		SETDEFAULTEVENT 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETDEFAULTEVENT</strong>(string defaultEvent)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/moduleProperties.html#SETDEFAULTEVENT()">SETDEFAULTEVENT</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/moduleProperties.html" title="class in com.distance.base">moduleProperties</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultEvent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEVELOPEREMAIL()"><!-- --></a>
+	<h3>
+		SETDEVELOPEREMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETDEVELOPEREMAIL</strong>(string developerEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">coursePlusObject</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>developerEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDSN()"><!-- --></a>
+	<h3>
+		SETDSN 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETDSN</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dsn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHELPEMAIL()"><!-- --></a>
+	<h3>
+		SETHELPEMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETHELPEMAIL</strong>(string helpEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>helpEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHELPNAME()"><!-- --></a>
+	<h3>
+		SETHELPNAME 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETHELPNAME</strong>(string helpName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>helpName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHOLDINGPEN()"><!-- --></a>
+	<h3>
+		SETHOLDINGPEN 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETHOLDINGPEN</strong>(string holdingPen)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>holdingPen</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMAXHEIGHT()"><!-- --></a>
+	<h3>
+		SETMAXHEIGHT 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETMAXHEIGHT</strong>(string maxHeight)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>maxHeight</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMAXWIDTH()"><!-- --></a>
+	<h3>
+		SETMAXWIDTH 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETMAXWIDTH</strong>(string maxWidth)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>maxWidth</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETREADPERMISSION()"><!-- --></a>
+	<h3>
+		SETREADPERMISSION 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETREADPERMISSION</strong>(array readPermission)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>readPermission</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSES3()"><!-- --></a>
+	<h3>
+		SETUSES3 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/s3Upload/properties/moduleProperties.html" title="class in core.modules.s3Upload.properties">moduleProperties</a> <strong>SETUSES3</strong>(string useS3)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>useS3</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

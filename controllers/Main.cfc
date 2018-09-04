@@ -24,8 +24,8 @@ component extends="coldbox.system.EventHandler"{
 			'defaultLog':prc.configuration.defaultLog,
 			'moduleVersion':prc.configuration.appVersion
 		};
-		prc['service']=getInstance(name='service',initArguments=prc.serviceProps);
-		prc['dao']=getInstance(name='dao',initArguments=prc.serviceProps);
+		//prc['service']=getInstance(name='service',initArguments=prc.serviceProps);
+		//prc['dao']=getInstance(name='dao',initArguments=prc.serviceProps);
 		prc['event']=event.getCollection();
 		event.setView("main/dump");
 	}

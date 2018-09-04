@@ -1,0 +1,1108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>page</title>
+	<meta name="keywords" content="core.modules.wiki.model.page.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/wiki/model/page/page.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.wiki.model.page"><span class="label label-success">core.modules.wiki.model.page</span></a>
+</div>
+
+<h2>
+
+Class
+page</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.wiki.model.page.page
+</pre>
+
+
+
+<div id="class-hint">
+	<p>A bean which models the page form.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: page 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="page.html#init()">init</A></strong>([numeric pageID='0'], [numeric wikiPageVersionID='0'], [numeric authorID='0'], [numeric wikiOfferingID='0'], [numeric versionID='0'], [string pageTitle=''], [string pageContent=''], [string pageChanges=''], [numeric mainPageFlag='0'], [date dateCreated='[runtime expression]'], [struct author='[runtime expression]'], [numeric versionCount='0'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="page.html#dump()">dump</A></strong>([boolean abort='FALSE'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getAnchors()">getAnchors</A></strong>([string theString=''], [struct container='[runtime expression]'], [numeric startPos='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getAuthor()">getAuthor</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getAuthorID()">getAuthorID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getDateCreated()">getDateCreated</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getMainPageFlag()">getMainPageFlag</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getPageChanges()">getPageChanges</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getPageContent()">getPageContent</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getPageID()">getPageID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getPageTitle()">getPageTitle</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getSnapShot()">getSnapShot</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getVersionCount()">getVersionCount</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getVersionID()">getVersionID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getWikiOfferingID()">getWikiOfferingID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="page.html#getWikiPageVersionID()">getWikiPageVersionID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="page.html#parseContent()">parseContent</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setAuthor()">setAuthor</A></strong>(struct author)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setAuthorID()">setAuthorID</A></strong>(numeric authorID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setDateCreated()">setDateCreated</A></strong>(date dateCreated)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setMainPageFlag()">setMainPageFlag</A></strong>(numeric mainPageFlag)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setPageChanges()">setPageChanges</A></strong>(string pageChanges)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setPageContent()">setPageContent</A></strong>(string pageContent)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setPageID()">setPageID</A></strong>(numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setPageTitle()">setPageTitle</A></strong>(string pageTitle)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setVersionCount()">setVersionCount</A></strong>(numeric VersionCount)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setVersionID()">setVersionID</A></strong>(numeric versionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setWikiOfferingID()">setWikiOfferingID</A></strong>(numeric wikiOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="page.html#setWikiPageVersionID()">setWikiPageVersionID</A></strong>(numeric wikiPageVersionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="page.html#validate()">validate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric pageID='0'], [numeric wikiPageVersionID='0'], [numeric authorID='0'], [numeric wikiOfferingID='0'], [numeric versionID='0'], [string pageTitle=''], [string pageContent=''], [string pageChanges=''], [numeric mainPageFlag='0'], [date dateCreated='[runtime expression]'], [struct author='[runtime expression]'], [numeric versionCount='0'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>pageID</code></dd>
+		
+			<dd><code>wikiPageVersionID</code></dd>
+		
+			<dd><code>authorID</code></dd>
+		
+			<dd><code>wikiOfferingID</code></dd>
+		
+			<dd><code>versionID</code></dd>
+		
+			<dd><code>pageTitle</code></dd>
+		
+			<dd><code>pageContent</code></dd>
+		
+			<dd><code>pageChanges</code></dd>
+		
+			<dd><code>mainPageFlag</code></dd>
+		
+			<dd><code>dateCreated</code></dd>
+		
+			<dd><code>author</code></dd>
+		
+			<dd><code>versionCount</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="dump()"><!-- --></a>
+	<h3>
+		dump 
+	</h3>
+
+	<kbd>public any <strong>dump</strong>([boolean abort='FALSE'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>abort</code></dd>
+		
+		</dl>
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>void</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAnchors()"><!-- --></a>
+	<h3>
+		getAnchors 
+	</h3>
+
+	<kbd>private any <strong>getAnchors</strong>([string theString=''], [struct container='[runtime expression]'], [numeric startPos='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>theString</code></dd>
+		
+		<dd><code>container</code></dd>
+		
+		<dd><code>startPos</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAuthor()"><!-- --></a>
+	<h3>
+		getAuthor 
+	</h3>
+
+	<kbd>public struct <strong>getAuthor</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAuthorID()"><!-- --></a>
+	<h3>
+		getAuthorID 
+	</h3>
+
+	<kbd>public numeric <strong>getAuthorID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDateCreated()"><!-- --></a>
+	<h3>
+		getDateCreated 
+	</h3>
+
+	<kbd>public numeric <strong>getDateCreated</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMainPageFlag()"><!-- --></a>
+	<h3>
+		getMainPageFlag 
+	</h3>
+
+	<kbd>public numeric <strong>getMainPageFlag</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageChanges()"><!-- --></a>
+	<h3>
+		getPageChanges 
+	</h3>
+
+	<kbd>public string <strong>getPageChanges</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageContent()"><!-- --></a>
+	<h3>
+		getPageContent 
+	</h3>
+
+	<kbd>public string <strong>getPageContent</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageID()"><!-- --></a>
+	<h3>
+		getPageID 
+	</h3>
+
+	<kbd>public numeric <strong>getPageID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageTitle()"><!-- --></a>
+	<h3>
+		getPageTitle 
+	</h3>
+
+	<kbd>public string <strong>getPageTitle</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSnapShot()"><!-- --></a>
+	<h3>
+		getSnapShot 
+	</h3>
+
+	<kbd>public struct <strong>getSnapShot</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getVersionCount()"><!-- --></a>
+	<h3>
+		getVersionCount 
+	</h3>
+
+	<kbd>public numeric <strong>getVersionCount</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getVersionID()"><!-- --></a>
+	<h3>
+		getVersionID 
+	</h3>
+
+	<kbd>public numeric <strong>getVersionID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getWikiOfferingID()"><!-- --></a>
+	<h3>
+		getWikiOfferingID 
+	</h3>
+
+	<kbd>public numeric <strong>getWikiOfferingID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getWikiPageVersionID()"><!-- --></a>
+	<h3>
+		getWikiPageVersionID 
+	</h3>
+
+	<kbd>public numeric <strong>getWikiPageVersionID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="parseContent()"><!-- --></a>
+	<h3>
+		parseContent 
+	</h3>
+
+	<kbd>public struct <strong>parseContent</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAuthor()"><!-- --></a>
+	<h3>
+		setAuthor 
+	</h3>
+
+	<kbd>public void <strong>setAuthor</strong>(struct author)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>author</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAuthorID()"><!-- --></a>
+	<h3>
+		setAuthorID 
+	</h3>
+
+	<kbd>public void <strong>setAuthorID</strong>(numeric authorID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>authorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setDateCreated()"><!-- --></a>
+	<h3>
+		setDateCreated 
+	</h3>
+
+	<kbd>public void <strong>setDateCreated</strong>(date dateCreated)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dateCreated</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setMainPageFlag()"><!-- --></a>
+	<h3>
+		setMainPageFlag 
+	</h3>
+
+	<kbd>public void <strong>setMainPageFlag</strong>(numeric mainPageFlag)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mainPageFlag</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageChanges()"><!-- --></a>
+	<h3>
+		setPageChanges 
+	</h3>
+
+	<kbd>public void <strong>setPageChanges</strong>(string pageChanges)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageChanges</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageContent()"><!-- --></a>
+	<h3>
+		setPageContent 
+	</h3>
+
+	<kbd>public void <strong>setPageContent</strong>(string pageContent)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageContent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageID()"><!-- --></a>
+	<h3>
+		setPageID 
+	</h3>
+
+	<kbd>public void <strong>setPageID</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageTitle()"><!-- --></a>
+	<h3>
+		setPageTitle 
+	</h3>
+
+	<kbd>public void <strong>setPageTitle</strong>(string pageTitle)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageTitle</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setVersionCount()"><!-- --></a>
+	<h3>
+		setVersionCount 
+	</h3>
+
+	<kbd>public void <strong>setVersionCount</strong>(numeric VersionCount)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>VersionCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setVersionID()"><!-- --></a>
+	<h3>
+		setVersionID 
+	</h3>
+
+	<kbd>public void <strong>setVersionID</strong>(numeric versionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>versionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setWikiOfferingID()"><!-- --></a>
+	<h3>
+		setWikiOfferingID 
+	</h3>
+
+	<kbd>public void <strong>setWikiOfferingID</strong>(numeric wikiOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setWikiPageVersionID()"><!-- --></a>
+	<h3>
+		setWikiPageVersionID 
+	</h3>
+
+	<kbd>public void <strong>setWikiPageVersionID</strong>(numeric wikiPageVersionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiPageVersionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

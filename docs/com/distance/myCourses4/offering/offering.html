@@ -1,0 +1,3383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>offering</title>
+	<meta name="keywords" content="com.distance.myCourses4.offering.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?com/distance/myCourses4/offering/offering.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.myCourses4.offering"><span class="label label-success">com.distance.myCourses4.offering</span></a>
+</div>
+
+<h2>
+
+Class
+offering</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">com.distance.myCourses4.offering.offering
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I model offering objects in the MyCourses4 system.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: offering 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#assignedID()">assignedID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The FKEY numeric value of the userID of the Instructional Designer for this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = assignedID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#assignedTW()">assignedTW</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The FKEY numeric value of the userID of the Technical Writer for this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = assignedTW</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#assignedWD()">assignedWD</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The FKEY numeric value of the userID of the Web Developer for this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = assignedWD</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#copiedFromOfferingID()">copiedFromOfferingID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integer value of the course offering ID from which this offering was copied, if any.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = copiedFromOfferingID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#courseCredits()">courseCredits</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric value of the number of credits this course is worth.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = courseCredits</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#courseID()">courseID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The FKEY numeric value for the course to which this offering belongs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = courseID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#courseNumber()">courseNumber</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the course number to which this offering belongs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = courseNumber</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#courseShort()">courseShort</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the shortened title of the course to which this offering belongs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = courseShort</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#courseTitle()">courseTitle</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the title of the course to which this offering belongs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = courseTitle</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#creditTypeIDArray()">creditTypeIDArray</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Credit Type ID Array Assigned to this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = creditTypeIDArray</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#emailAddressDomain()">emailAddressDomain</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = emailAddressDomain</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#endDate()">endDate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The date value of the end date of this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = endDate</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#enrollmentStats()">enrollmentStats</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A structure of information about enrollment totals.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = enrollmentStats</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#excludeFromEnrollment()">excludeFromEnrollment</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if we should not process enrollment for this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = excludeFromEnrollment</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#hasEReserve()">hasEReserve</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this offering has eReserve.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = hasEReserve</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isCancelled()">isCancelled</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this offering has been cancelled.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isCancelled</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isContentCopied()">isContentCopied</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if the content for this offering has been fully copied.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isContentCopied</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isDeleted()">isDeleted</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this offering has been deleted.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isDeleted</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isOnlineCourse()">isOnlineCourse</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this is a fully online course.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isOnlineCourse</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isOpenToStudents()">isOpenToStudents</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this offering website is open to students.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isOpenToStudents</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isTraining()">isTraining</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this is an on-demand training module.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isTraining</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isUsingPanopto()">isUsingPanopto</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this offering has using panopto.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isUsingPanopto</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isUsingScheduleBuilder()">isUsingScheduleBuilder</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sets whether an on-campus course site uses scheduleBuilder or lectureSessions.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isUsingScheduleBuilder</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#isisTermID()">isisTermID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric value of the SPH term in ISIS in which the offering occurs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isisTermID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhsphAcademicTerm()">jhsphAcademicTerm</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string name of term in which the offering occurs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhsphAcademicTerm</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhsphAcademicTermID()">jhsphAcademicTermID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric value of term in which the offering occurs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhsphAcademicTermID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhsphAcademicYear()">jhsphAcademicYear</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric value of academic year in which the offering occurs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhsphAcademicYear</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhsphCatalogID()">jhsphCatalogID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric FKEY of the JHSPH catalog ID for this offering of this course.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhsphCatalogID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhsphDeptID()">jhsphDeptID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The integer value of the JHSPH department in which this course is offered.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhsphDeptID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhsphDeptName()">jhsphDeptName</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string name of the JHSPH department in which this course is offered.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhsphDeptName</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#jhuCMNTermID()">jhuCMNTermID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric value of the CMN_TERMID term in ISIS in which the offering occurs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhuCMNTermID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#lastModified()">lastModified</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The date value indicating when last this record was modified in the database.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = lastModified</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#offeringID()">offeringID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The integer PKEY value of this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = offeringID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#offersPrintCertificate()">offersPrintCertificate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if this offering offers a printable certificate of completion.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = offersPrintCertificate</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#prereqCourseList()">prereqCourseList</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = prereqCourseList</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#providerIDArray()">providerIDArray</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An array of provider IDs.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = providerIDArray</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#qryEnrollment()">qryEnrollment</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The query representing the enrollment for this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = qryEnrollment</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#startDate()">startDate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The date value of the start of this offering.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = startDate</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#surveyModuleVersionNumber()">surveyModuleVersionNumber</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Is this the offering before may 15 2018.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = surveyModuleVersionNumber</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>1</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#useCustomStartDate()">useCustomStartDate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean indicating if a custom start date should be used instead of the standard term start date.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = useCustomStartDate</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#validSAPCostCenter()">validSAPCostCenter</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF this course offering belongs to a course that has a valid, costCenter entry, this is it.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = validSAPCostCenter</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="offering.html#init()">init</A></strong>([numeric offeringID='0'], [boolean isDeleted='0'], [numeric courseID='0'], [string courseTitle=''], [string courseNumber=''], [numeric courseCredits='0'], [string courseShort=''], [numeric jhsphCatalogID='0'], [date startDate='[runtime expression]'], [date endDate='[runtime expression]'], [numeric jhsphAcademicYear='0'], [numeric jhsphAcademicTermID='0'], [string jhsphAcademicTerm=''], [numeric jhsphDeptID='0'], [string jhsphDeptName=''], [numeric isisTermID='0'], [numeric jhuCMNTermID='0'], [boolean excludeFromEnrollment='false'], [boolean isOnlineCourse='false'], [boolean isUsingScheduleBuilder='false'], [boolean isTraining='false'], [boolean offersPrintCertificate='false'], [boolean isOpenToStudents='false'], [boolean isCancelled='false'], [boolean isContentCopied='false'], [numeric copiedFromOfferingID='0'], [boolean useCustomStartDate='false'], [boolean hasEReserve='0'], [numeric assignedID='0'], [numeric assignedTW='0'], [numeric assignedWD='0'], [query qryEnrollment='[runtime expression]'], [struct enrollmentStats='[runtime expression]'], [string lastModified='[runtime expression]'], [string emailAddressDomain=''], [string prereqCourseList=''], [Array creditTypeIDArray='[runtime expression]'], [string validSAPCostCenter=''], [array providerIDArray='[runtime expression]'], [numeric surveyModuleVersionNumber='1'], [boolean isUsingPanopto='0'])
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#dump()">dump</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#getErrors()">getErrors</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#onMissingMethod()">onMissingMethod</A></strong>([string missingMethodName], [struct missingMethodArguments])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#setCourseNumber()">setCourseNumber</A></strong>(string courseNumber)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#toStruct()">toStruct</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="offering.html#validate()">validate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric offeringID='0'], [boolean isDeleted='0'], [numeric courseID='0'], [string courseTitle=''], [string courseNumber=''], [numeric courseCredits='0'], [string courseShort=''], [numeric jhsphCatalogID='0'], [date startDate='[runtime expression]'], [date endDate='[runtime expression]'], [numeric jhsphAcademicYear='0'], [numeric jhsphAcademicTermID='0'], [string jhsphAcademicTerm=''], [numeric jhsphDeptID='0'], [string jhsphDeptName=''], [numeric isisTermID='0'], [numeric jhuCMNTermID='0'], [boolean excludeFromEnrollment='false'], [boolean isOnlineCourse='false'], [boolean isUsingScheduleBuilder='false'], [boolean isTraining='false'], [boolean offersPrintCertificate='false'], [boolean isOpenToStudents='false'], [boolean isCancelled='false'], [boolean isContentCopied='false'], [numeric copiedFromOfferingID='0'], [boolean useCustomStartDate='false'], [boolean hasEReserve='0'], [numeric assignedID='0'], [numeric assignedTW='0'], [numeric assignedWD='0'], [query qryEnrollment='[runtime expression]'], [struct enrollmentStats='[runtime expression]'], [string lastModified='[runtime expression]'], [string emailAddressDomain=''], [string prereqCourseList=''], [Array creditTypeIDArray='[runtime expression]'], [string validSAPCostCenter=''], [array providerIDArray='[runtime expression]'], [numeric surveyModuleVersionNumber='1'], [boolean isUsingPanopto='0'])</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object.</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>offeringID</code> - The PKEY integer value of this offering</dd>
+		
+			<dd><code>isDeleted</code> - The boolean indicating if this offering has been deleted from the system</dd>
+		
+			<dd><code>courseID</code> - The FKEY numeric value for the course to which this offering belongs.</dd>
+		
+			<dd><code>courseTitle</code> - The string value of the title of the course to which this offering belongs.</dd>
+		
+			<dd><code>courseNumber</code> - The string value of the course number to which this offering belongs.</dd>
+		
+			<dd><code>courseCredits</code> - The numeric value of the number of credits this course is worth.</dd>
+		
+			<dd><code>courseShort</code> - The string value of the shortened title of the course to which this offering belongs.</dd>
+		
+			<dd><code>jhsphCatalogID</code> - The numeric FKEY of the JHSPH catalog ID for this offering of this course.</dd>
+		
+			<dd><code>startDate</code> - The date value of the start of this offering.</dd>
+		
+			<dd><code>endDate</code> - The date value of the end date of this offering.</dd>
+		
+			<dd><code>jhsphAcademicYear</code> - The numeric value of academic year in which the offering occurs.</dd>
+		
+			<dd><code>jhsphAcademicTermID</code> - The numeric value of term in which the offering occurs.</dd>
+		
+			<dd><code>jhsphAcademicTerm</code> - The string name of term in which the offering occurs.</dd>
+		
+			<dd><code>jhsphDeptID</code> - The numeric value of JHSPH academic department in which the offering occurs.</dd>
+		
+			<dd><code>jhsphDeptName</code> - The string name of department in which the offering occurs.</dd>
+		
+			<dd><code>isisTermID</code> - The numeric value of the SPH term in ISIS in which the offering occurs.</dd>
+		
+			<dd><code>jhuCMNTermID</code> - The numeric value of the CMN_TERMID term in ISIS in which the offering occurs. Used by non-SPH courses.</dd>
+		
+			<dd><code>excludeFromEnrollment</code> - Boolean indicating if we should not process enrollment for this offering.</dd>
+		
+			<dd><code>isOnlineCourse</code> - Boolean indicating if this is a fully online course.</dd>
+		
+			<dd><code>isUsingScheduleBuilder</code> - Boolean indicating if this course is using scheduleBuilder or lectureSessions.</dd>
+		
+			<dd><code>isTraining</code> - Boolean indicating if this is an on-demand training module.</dd>
+		
+			<dd><code>offersPrintCertificate</code> - Boolean indicating if this offering offers a printable certificate of completion.</dd>
+		
+			<dd><code>isOpenToStudents</code> - Boolean indicating if this offering website is open to students.</dd>
+		
+			<dd><code>isCancelled</code> - Boolean indicating if this offering has been cancelled.</dd>
+		
+			<dd><code>isContentCopied</code> - Boolean indicating if the content for this offering has been fully copied.</dd>
+		
+			<dd><code>copiedFromOfferingID</code> - Integer value of the course offering ID from which this offering was copied, if any.</dd>
+		
+			<dd><code>useCustomStartDate</code> - Boolean indicating if a custom start date should be used instead of the standard term start date.</dd>
+		
+			<dd><code>hasEReserve</code> - The boolean indicating if this offering has eReserve</dd>
+		
+			<dd><code>assignedID</code> - The FKEY numeric value of the userID of the Instructional Designer for this offering.</dd>
+		
+			<dd><code>assignedTW</code> - The FKEY numeric value of the userID of the Technical Writer for this offering.</dd>
+		
+			<dd><code>assignedWD</code> - The FKEY numeric value of the Web Developer for this offering.</dd>
+		
+			<dd><code>qryEnrollment</code> - The query representing the enrollment for this offering.</dd>
+		
+			<dd><code>enrollmentStats</code> - A structure of information about enrollment totals by student type.</dd>
+		
+			<dd><code>lastModified</code> - The datetime value of when this course was last updated</dd>
+		
+			<dd><code>emailAddressDomain</code> - </dd>
+		
+			<dd><code>prereqCourseList</code> - </dd>
+		
+			<dd><code>creditTypeIDArray</code> - Credit Type Array Assigned to this offering... only applies to isTraining offerings</dd>
+		
+			<dd><code>validSAPCostCenter</code> - course sap cost center, if a valid one exists.</dd>
+		
+			<dd><code>providerIDArray</code> - An array of provider IDs for this course</dd>
+		
+			<dd><code>surveyModuleVersionNumber</code> - Is this the offering before may 15 2018</dd>
+		
+			<dd><code>isUsingPanopto</code> - The boolean indicating if this offering using panopto</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="assignedID()"><!-- --></a>
+		<h3>assignedID</h3>
+
+		<kbd>
+			property numeric <strong>assignedID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The FKEY numeric value of the userID of the Instructional Designer for this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - assignedID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="assignedTW()"><!-- --></a>
+		<h3>assignedTW</h3>
+
+		<kbd>
+			property numeric <strong>assignedTW</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The FKEY numeric value of the userID of the Technical Writer for this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - assignedTW</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="assignedWD()"><!-- --></a>
+		<h3>assignedWD</h3>
+
+		<kbd>
+			property numeric <strong>assignedWD</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The FKEY numeric value of the userID of the Web Developer for this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - assignedWD</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="copiedFromOfferingID()"><!-- --></a>
+		<h3>copiedFromOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>copiedFromOfferingID</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Integer value of the course offering ID from which this offering was copied, if any.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - copiedFromOfferingID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseCredits()"><!-- --></a>
+		<h3>courseCredits</h3>
+
+		<kbd>
+			property numeric <strong>courseCredits</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric value of the number of credits this course is worth.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - courseCredits</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseID()"><!-- --></a>
+		<h3>courseID</h3>
+
+		<kbd>
+			property numeric <strong>courseID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The FKEY numeric value for the course to which this offering belongs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - courseID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseNumber()"><!-- --></a>
+		<h3>courseNumber</h3>
+
+		<kbd>
+			property string <strong>courseNumber</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the course number to which this offering belongs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - courseNumber</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseShort()"><!-- --></a>
+		<h3>courseShort</h3>
+
+		<kbd>
+			property string <strong>courseShort</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the shortened title of the course to which this offering belongs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - courseShort</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseTitle()"><!-- --></a>
+		<h3>courseTitle</h3>
+
+		<kbd>
+			property string <strong>courseTitle</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the title of the course to which this offering belongs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - courseTitle</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="creditTypeIDArray()"><!-- --></a>
+		<h3>creditTypeIDArray</h3>
+
+		<kbd>
+			property Array <strong>creditTypeIDArray</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Credit Type ID Array Assigned to this offering... only applies to isTraining offerings</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - creditTypeIDArray</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="emailAddressDomain()"><!-- --></a>
+		<h3>emailAddressDomain</h3>
+
+		<kbd>
+			property string <strong>emailAddressDomain</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - emailAddressDomain</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="endDate()"><!-- --></a>
+		<h3>endDate</h3>
+
+		<kbd>
+			property date <strong>endDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The date value of the end date of this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - endDate</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="enrollmentStats()"><!-- --></a>
+		<h3>enrollmentStats</h3>
+
+		<kbd>
+			property struct <strong>enrollmentStats</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>A structure of information about enrollment totals.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - enrollmentStats</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="excludeFromEnrollment()"><!-- --></a>
+		<h3>excludeFromEnrollment</h3>
+
+		<kbd>
+			property boolean <strong>excludeFromEnrollment</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if we should not process enrollment for this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - excludeFromEnrollment</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="hasEReserve()"><!-- --></a>
+		<h3>hasEReserve</h3>
+
+		<kbd>
+			property boolean <strong>hasEReserve</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this offering has eReserve.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - hasEReserve</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isCancelled()"><!-- --></a>
+		<h3>isCancelled</h3>
+
+		<kbd>
+			property boolean <strong>isCancelled</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this offering has been cancelled.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isCancelled</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isContentCopied()"><!-- --></a>
+		<h3>isContentCopied</h3>
+
+		<kbd>
+			property boolean <strong>isContentCopied</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if the content for this offering has been fully copied.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isContentCopied</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDeleted()"><!-- --></a>
+		<h3>isDeleted</h3>
+
+		<kbd>
+			property boolean <strong>isDeleted</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this offering has been deleted.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isDeleted</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isOnlineCourse()"><!-- --></a>
+		<h3>isOnlineCourse</h3>
+
+		<kbd>
+			property boolean <strong>isOnlineCourse</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this is a fully online course.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isOnlineCourse</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isOpenToStudents()"><!-- --></a>
+		<h3>isOpenToStudents</h3>
+
+		<kbd>
+			property boolean <strong>isOpenToStudents</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this offering website is open to students.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isOpenToStudents</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isTraining()"><!-- --></a>
+		<h3>isTraining</h3>
+
+		<kbd>
+			property boolean <strong>isTraining</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this is an on-demand training module.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isTraining</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isUsingPanopto()"><!-- --></a>
+		<h3>isUsingPanopto</h3>
+
+		<kbd>
+			property boolean <strong>isUsingPanopto</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this offering has using panopto.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isUsingPanopto</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isUsingScheduleBuilder()"><!-- --></a>
+		<h3>isUsingScheduleBuilder</h3>
+
+		<kbd>
+			property boolean <strong>isUsingScheduleBuilder</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Sets whether an on-campus course site uses scheduleBuilder or lectureSessions.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isUsingScheduleBuilder</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isisTermID()"><!-- --></a>
+		<h3>isisTermID</h3>
+
+		<kbd>
+			property numeric <strong>isisTermID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric value of the SPH term in ISIS in which the offering occurs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isisTermID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhsphAcademicTerm()"><!-- --></a>
+		<h3>jhsphAcademicTerm</h3>
+
+		<kbd>
+			property string <strong>jhsphAcademicTerm</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string name of term in which the offering occurs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhsphAcademicTerm</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhsphAcademicTermID()"><!-- --></a>
+		<h3>jhsphAcademicTermID</h3>
+
+		<kbd>
+			property numeric <strong>jhsphAcademicTermID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric value of term in which the offering occurs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhsphAcademicTermID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhsphAcademicYear()"><!-- --></a>
+		<h3>jhsphAcademicYear</h3>
+
+		<kbd>
+			property numeric <strong>jhsphAcademicYear</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric value of academic year in which the offering occurs.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhsphAcademicYear</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhsphCatalogID()"><!-- --></a>
+		<h3>jhsphCatalogID</h3>
+
+		<kbd>
+			property numeric <strong>jhsphCatalogID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric FKEY of the JHSPH catalog ID for this offering of this course.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhsphCatalogID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhsphDeptID()"><!-- --></a>
+		<h3>jhsphDeptID</h3>
+
+		<kbd>
+			property numeric <strong>jhsphDeptID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The integer value of the JHSPH department in which this course is offered.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhsphDeptID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhsphDeptName()"><!-- --></a>
+		<h3>jhsphDeptName</h3>
+
+		<kbd>
+			property string <strong>jhsphDeptName</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string name of the JHSPH department in which this course is offered.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhsphDeptName</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhuCMNTermID()"><!-- --></a>
+		<h3>jhuCMNTermID</h3>
+
+		<kbd>
+			property numeric <strong>jhuCMNTermID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric value of the CMN_TERMID term in ISIS in which the offering occurs. Used by non-SPH courses.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhuCMNTermID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="lastModified()"><!-- --></a>
+		<h3>lastModified</h3>
+
+		<kbd>
+			property date <strong>lastModified</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The date value indicating when last this record was modified in the database.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - lastModified</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="offeringID()"><!-- --></a>
+		<h3>offeringID</h3>
+
+		<kbd>
+			property numeric <strong>offeringID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The integer PKEY value of this offering</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - offeringID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="offersPrintCertificate()"><!-- --></a>
+		<h3>offersPrintCertificate</h3>
+
+		<kbd>
+			property boolean <strong>offersPrintCertificate</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if this offering offers a printable certificate of completion.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - offersPrintCertificate</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="prereqCourseList()"><!-- --></a>
+		<h3>prereqCourseList</h3>
+
+		<kbd>
+			property string <strong>prereqCourseList</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - prereqCourseList</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="providerIDArray()"><!-- --></a>
+		<h3>providerIDArray</h3>
+
+		<kbd>
+			property array <strong>providerIDArray</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>An array of provider IDs</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - providerIDArray</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="qryEnrollment()"><!-- --></a>
+		<h3>qryEnrollment</h3>
+
+		<kbd>
+			property query <strong>qryEnrollment</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The query representing the enrollment for this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - qryEnrollment</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="startDate()"><!-- --></a>
+		<h3>startDate</h3>
+
+		<kbd>
+			property date <strong>startDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The date value of the start of this offering.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - startDate</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyModuleVersionNumber()"><!-- --></a>
+		<h3>surveyModuleVersionNumber</h3>
+
+		<kbd>
+			property numeric <strong>surveyModuleVersionNumber</strong> 
+			= [1]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Is this the offering before may 15 2018</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - surveyModuleVersionNumber</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="useCustomStartDate()"><!-- --></a>
+		<h3>useCustomStartDate</h3>
+
+		<kbd>
+			property boolean <strong>useCustomStartDate</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean indicating if a custom start date should be used instead of the standard term start date.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - useCustomStartDate</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="validSAPCostCenter()"><!-- --></a>
+		<h3>validSAPCostCenter</h3>
+
+		<kbd>
+			property string <strong>validSAPCostCenter</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>IF this course offering belongs to a course that has a valid, costCenter entry, this is it.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - validSAPCostCenter</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="dump()"><!-- --></a>
+	<h3>
+		dump 
+	</h3>
+
+	<kbd>public void <strong>dump</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getErrors()"><!-- --></a>
+	<h3>
+		getErrors 
+	</h3>
+
+	<kbd>public array <strong>getErrors</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="onMissingMethod()"><!-- --></a>
+	<h3>
+		onMissingMethod 
+	</h3>
+
+	<kbd>public any <strong>onMissingMethod</strong>([string missingMethodName], [struct missingMethodArguments])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>missingMethodName</code></dd>
+		
+		<dd><code>missingMethodArguments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseNumber()"><!-- --></a>
+	<h3>
+		setCourseNumber 
+	</h3>
+
+	<kbd>public void <strong>setCourseNumber</strong>(string courseNumber)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseNumber</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toStruct()"><!-- --></a>
+	<h3>
+		toStruct 
+	</h3>
+
+	<kbd>public struct <strong>toStruct</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

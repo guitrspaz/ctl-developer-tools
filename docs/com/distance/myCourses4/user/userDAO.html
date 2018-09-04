@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>userDAO</title>
+	<meta name="keywords" content="com.distance.myCourses4.user.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?com/distance/myCourses4/user/userDAO.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.myCourses4.user"><span class="label label-success">com.distance.myCourses4.user</span></a>
+</div>
+
+<h2>
+
+Class
+userDAO</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">com.distance.myCourses4.user.userDAO
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I handle CRUD functionality for user objects</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: userDAO 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="userDAO.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>package&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#create()">create</A></strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I persist a user object in the database.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>package&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#delete()">delete</A></strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I delete a user from the database.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;string</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#generateRandomStringID()">generateRandomStringID</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a string value representing a random, non-sequential numeric identifier for the user in the system.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>package&nbsp;<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a></code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#read()">read</A></strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user, numeric userID, [boolean loadEnrollment='false'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I read in a user object.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>package&nbsp;Any</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#readBasic()">readBasic</A></strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user, numeric userID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A basic crud read that does not include any info about user security or enrollment/involvement, as the core read() function does.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#setEnrollmentService()">setEnrollmentService</A></strong>(<a href="../../../../com/distance/myCourses4/enrollment/enrollmentService.html" title="class in com.distance.myCourses4.enrollment">enrollmentService</a> enrollmentService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: enrollmentService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#setGeographyService()">setGeographyService</A></strong>(<a href="../../../../com/distance/myCourses4/utils/geographyService.html" title="class in com.distance.myCourses4.utils">geographyService</a> geographyService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: geographyService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#setPortfolioAccessService()">setPortfolioAccessService</A></strong>(<a href="../../../../com/distance/myCourses4/portfolio/portfolioAccessService.html" title="class in com.distance.myCourses4.portfolio">portfolioAccessService</a> portfolioAccessService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: portfolioAccessService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#setStringUtils()">setStringUtils</A></strong>(<a href="../../../../com/ctlt/utils/stringUtils.html" title="class in com.ctlt.utils">stringUtils</a> stringUtils)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: stringUtils.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#setUserSecurityService()">setUserSecurityService</A></strong>(<a href="../../../../com/distance/myCourses4/userSecurity/userSecurityService.html" title="class in com.distance.myCourses4.userSecurity">userSecurityService</a> userSecurityService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: userSecurityService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>package&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="userDAO.html#update()">update</A></strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update information about a user object.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - The DSN of the application, passed to me by the component who initializes me</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="create()"><!-- --></a>
+	<h3>
+		create 
+	</h3>
+
+	<kbd>package void <strong>create</strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user)</kbd>
+
+	<br><br>
+
+	
+		<p>I persist a user object in the database</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>user</code> - I am the user to create.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="delete()"><!-- --></a>
+	<h3>
+		delete 
+	</h3>
+
+	<kbd>package void <strong>delete</strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user)</kbd>
+
+	<br><br>
+
+	
+		<p>I delete a user from the database</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>user</code> - I am the user whose record should be deleted.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="generateRandomStringID()"><!-- --></a>
+	<h3>
+		generateRandomStringID 
+	</h3>
+
+	<kbd>private string <strong>generateRandomStringID</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a string value representing a random, non-sequential numeric identifier for the user in the system.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="read()"><!-- --></a>
+	<h3>
+		read 
+	</h3>
+
+	<kbd>package <a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> <strong>read</strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user, numeric userID, [boolean loadEnrollment='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>I read in a user object</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>user</code> - I am the user to read.</dd>
+		
+		<dd><code>userID</code> - The PKEY ID of the user to retrieve.</dd>
+		
+		<dd><code>loadEnrollment</code> - Boolean value indicating if we should load enrollment information for the user, defaults to false</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readBasic()"><!-- --></a>
+	<h3>
+		readBasic 
+	</h3>
+
+	<kbd>package Any <strong>readBasic</strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user, numeric userID)</kbd>
+
+	<br><br>
+
+	
+		<p>A basic crud read that does not include any info about user security or enrollment/involvement, as the core read() function does</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>user</code> - I am the user to read.</dd>
+		
+		<dd><code>userID</code> - The PKEY ID of the user to retrieve.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setEnrollmentService()"><!-- --></a>
+	<h3>
+		setEnrollmentService 
+	</h3>
+
+	<kbd>public void <strong>setEnrollmentService</strong>(<a href="../../../../com/distance/myCourses4/enrollment/enrollmentService.html" title="class in com.distance.myCourses4.enrollment">enrollmentService</a> enrollmentService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: enrollmentService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>enrollmentService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setGeographyService()"><!-- --></a>
+	<h3>
+		setGeographyService 
+	</h3>
+
+	<kbd>public void <strong>setGeographyService</strong>(<a href="../../../../com/distance/myCourses4/utils/geographyService.html" title="class in com.distance.myCourses4.utils">geographyService</a> geographyService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: geographyService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>geographyService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPortfolioAccessService()"><!-- --></a>
+	<h3>
+		setPortfolioAccessService 
+	</h3>
+
+	<kbd>public void <strong>setPortfolioAccessService</strong>(<a href="../../../../com/distance/myCourses4/portfolio/portfolioAccessService.html" title="class in com.distance.myCourses4.portfolio">portfolioAccessService</a> portfolioAccessService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: portfolioAccessService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioAccessService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setStringUtils()"><!-- --></a>
+	<h3>
+		setStringUtils 
+	</h3>
+
+	<kbd>public void <strong>setStringUtils</strong>(<a href="../../../../com/ctlt/utils/stringUtils.html" title="class in com.ctlt.utils">stringUtils</a> stringUtils)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: stringUtils</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stringUtils</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setUserSecurityService()"><!-- --></a>
+	<h3>
+		setUserSecurityService 
+	</h3>
+
+	<kbd>public void <strong>setUserSecurityService</strong>(<a href="../../../../com/distance/myCourses4/userSecurity/userSecurityService.html" title="class in com.distance.myCourses4.userSecurity">userSecurityService</a> userSecurityService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: userSecurityService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userSecurityService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="update()"><!-- --></a>
+	<h3>
+		update 
+	</h3>
+
+	<kbd>package void <strong>update</strong>(<a href="../../../../com/distance/myCourses4/user/user.html" title="class in com.distance.myCourses4.user">user</a> user)</kbd>
+
+	<br><br>
+
+	
+		<p>I update information about a user object</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>user</code> - I am the user to update.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

@@ -1,0 +1,777 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>diff</title>
+	<meta name="keywords" content="core.modules.wiki.model.util.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/wiki/model/util/diff.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.wiki.model.util"><span class="label label-success">core.modules.wiki.model.util</span></a>
+</div>
+
+<h2>
+
+Class
+diff</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.wiki.model.util.diff
+</pre>
+
+
+
+<div id="class-hint">
+	<p>Text file differencing engine</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: Diff 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				namespace 
+				: org.rickosborne 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#AddDifference()">AddDifference</A></strong>(query Result, string Operation, string AtFirst, string AtSecond, [numeric Count])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given a result query, add the new difference to it.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#Diff()">Diff</A></strong>(any First, any Second)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#DiffArrays()">DiffArrays</A></strong>(array First, array Second)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the difference between two arrays.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#DiffArrays_v1()">DiffArrays_v1</A></strong>(array First, array Second)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the difference between two arrays.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#DiffFiles()">DiffFiles</A></strong>(string First, string Second, [string EndOfLine='
+'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the differences between two files, given the specified line terminator.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#DiffQueries()">DiffQueries</A></strong>(query First, query Second, [string ColumnList])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the difference between two queries.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#DiffStrings()">DiffStrings</A></strong>(string First, string Second, [string EndOfLine='
+'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the differences between two strings, given the specified line terminator.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#DiffStructs()">DiffStructs</A></strong>(struct First, struct Second, [boolean IncludeContent='false'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute the differences between two structures.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#HashifyArrays()">HashifyArrays</A></strong>(struct Arrays)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take two arrays and convert their contents into unique numbers.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#LCS()">LCS</A></strong>(query Result, struct Args, numeric LowerA, numeric UpperA, numeric LowerB, numeric UpperB, [numeric RecurseCount='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#LinearDiffArrays()">LinearDiffArrays</A></strong>(array First, array Second)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#Parallelize()">Parallelize</A></strong>(query Differences, array First, array Second)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#ResultColumnList()">ResultColumnList</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the list of columns present in any result query.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;array</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#SMS()">SMS</A></strong>(struct Args, numeric LowerA, numeric UpperA, numeric LowerB, numeric UpperB)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shortest Middle Snake.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="diff.html#UnifiedDiffArrays()">UnifiedDiffArrays</A></strong>(query Differences, array First, array Second, [numeric Context='3'])
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="AddDifference()"><!-- --></a>
+	<h3>
+		AddDifference 
+	</h3>
+
+	<kbd>public any <strong>AddDifference</strong>(query Result, string Operation, string AtFirst, string AtSecond, [numeric Count])</kbd>
+
+	<br><br>
+
+	
+		<p>Given a result query, add the new difference to it</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Result</code></dd>
+		
+		<dd><code>Operation</code></dd>
+		
+		<dd><code>AtFirst</code></dd>
+		
+		<dd><code>AtSecond</code></dd>
+		
+		<dd><code>Count</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="Diff()"><!-- --></a>
+	<h3>
+		Diff 
+	</h3>
+
+	<kbd>public query <strong>Diff</strong>(any First, any Second)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="DiffArrays()"><!-- --></a>
+	<h3>
+		DiffArrays 
+	</h3>
+
+	<kbd>public query <strong>DiffArrays</strong>(array First, array Second)</kbd>
+
+	<br><br>
+
+	
+		<p>Compute the difference between two arrays</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="DiffArrays_v1()"><!-- --></a>
+	<h3>
+		DiffArrays_v1 
+	</h3>
+
+	<kbd>public query <strong>DiffArrays_v1</strong>(array First, array Second)</kbd>
+
+	<br><br>
+
+	
+		<p>Compute the difference between two arrays</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="DiffFiles()"><!-- --></a>
+	<h3>
+		DiffFiles 
+	</h3>
+
+	<kbd>public query <strong>DiffFiles</strong>(string First, string Second, [string EndOfLine='
+'])</kbd>
+
+	<br><br>
+
+	
+		<p>Compute the differences between two files, given the specified line terminator</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		<dd><code>EndOfLine</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="DiffQueries()"><!-- --></a>
+	<h3>
+		DiffQueries 
+	</h3>
+
+	<kbd>public query <strong>DiffQueries</strong>(query First, query Second, [string ColumnList])</kbd>
+
+	<br><br>
+
+	
+		<p>Compute the difference between two queries</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		<dd><code>ColumnList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="DiffStrings()"><!-- --></a>
+	<h3>
+		DiffStrings 
+	</h3>
+
+	<kbd>public query <strong>DiffStrings</strong>(string First, string Second, [string EndOfLine='
+'])</kbd>
+
+	<br><br>
+
+	
+		<p>Compute the differences between two strings, given the specified line terminator</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		<dd><code>EndOfLine</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="DiffStructs()"><!-- --></a>
+	<h3>
+		DiffStructs 
+	</h3>
+
+	<kbd>public query <strong>DiffStructs</strong>(struct First, struct Second, [boolean IncludeContent='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>Compute the differences between two structures</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		<dd><code>IncludeContent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="HashifyArrays()"><!-- --></a>
+	<h3>
+		HashifyArrays 
+	</h3>
+
+	<kbd>private void <strong>HashifyArrays</strong>(struct Arrays)</kbd>
+
+	<br><br>
+
+	
+		<p>Take two arrays and convert their contents into unique numbers</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Arrays</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="LCS()"><!-- --></a>
+	<h3>
+		LCS 
+	</h3>
+
+	<kbd>private void <strong>LCS</strong>(query Result, struct Args, numeric LowerA, numeric UpperA, numeric LowerB, numeric UpperB, [numeric RecurseCount='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Result</code></dd>
+		
+		<dd><code>Args</code></dd>
+		
+		<dd><code>LowerA</code></dd>
+		
+		<dd><code>UpperA</code></dd>
+		
+		<dd><code>LowerB</code></dd>
+		
+		<dd><code>UpperB</code></dd>
+		
+		<dd><code>RecurseCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="LinearDiffArrays()"><!-- --></a>
+	<h3>
+		LinearDiffArrays 
+	</h3>
+
+	<kbd>public query <strong>LinearDiffArrays</strong>(array First, array Second)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="Parallelize()"><!-- --></a>
+	<h3>
+		Parallelize 
+	</h3>
+
+	<kbd>public query <strong>Parallelize</strong>(query Differences, array First, array Second)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Differences</code></dd>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="ResultColumnList()"><!-- --></a>
+	<h3>
+		ResultColumnList 
+	</h3>
+
+	<kbd>public string <strong>ResultColumnList</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Return the list of columns present in any result query</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SMS()"><!-- --></a>
+	<h3>
+		SMS 
+	</h3>
+
+	<kbd>private array <strong>SMS</strong>(struct Args, numeric LowerA, numeric UpperA, numeric LowerB, numeric UpperB)</kbd>
+
+	<br><br>
+
+	
+		<p>Shortest Middle Snake</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Args</code></dd>
+		
+		<dd><code>LowerA</code></dd>
+		
+		<dd><code>UpperA</code></dd>
+		
+		<dd><code>LowerB</code></dd>
+		
+		<dd><code>UpperB</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="UnifiedDiffArrays()"><!-- --></a>
+	<h3>
+		UnifiedDiffArrays 
+	</h3>
+
+	<kbd>public query <strong>UnifiedDiffArrays</strong>(query Differences, array First, array Second, [numeric Context='3'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Differences</code></dd>
+		
+		<dd><code>First</code></dd>
+		
+		<dd><code>Second</code></dd>
+		
+		<dd><code>Context</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

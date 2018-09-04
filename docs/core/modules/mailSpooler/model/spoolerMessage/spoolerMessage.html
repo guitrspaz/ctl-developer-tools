@@ -1,0 +1,3987 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>spoolerMessage</title>
+	<meta name="keywords" content="core.modules.mailSpooler.model.spoolerMessage.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.mailSpooler.model.spoolerMessage"><span class="label label-success">core.modules.mailSpooler.model.spoolerMessage</span></a>
+</div>
+
+<h2>
+
+Class
+spoolerMessage</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.mailSpooler.model.spoolerMessage.spoolerMessage
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am the message bean in the spooler app.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#Importance()">Importance</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>normal</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SMTPPassword()">SMTPPassword</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SMTPPort()">SMTPPort</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SMTPServerName()">SMTPServerName</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SMTPUseSSL()">SMTPUseSSL</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SMTPUsername()">SMTPUsername</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#XSender()">XSender</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#attachmentArr()">attachmentArr</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#courseOfferingID()">courseOfferingID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#createDateTime()">createDateTime</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#customDateTimeToSend()">customDateTimeToSend</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#failto()">failto</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#isSent()">isSent</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#mailerID()">mailerID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageBCC()">messageBCC</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageCC()">messageCC</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageCharSet()">messageCharSet</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>UTF-8</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageHTMLBody()">messageHTMLBody</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageSubject()">messageSubject</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageTextBody()">messageTextBody</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#messageUUID()">messageUUID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#numberOfAttempts()">numberOfAttempts</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#priority()">priority</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>3</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#receiverEmail()">receiverEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#receiverID()">receiverID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#replyto()">replyto</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#senderEmail()">senderEmail</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#senderID()">senderID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#senderModule()">senderModule</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#wraptext()">wraptext</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETATTACHMENTARR()">GETATTACHMENTARR</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETCOURSEOFFERINGID()">GETCOURSEOFFERINGID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETCREATEDATETIME()">GETCREATEDATETIME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETCUSTOMDATETIMETOSEND()">GETCUSTOMDATETIMETOSEND</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETFAILTO()">GETFAILTO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETIMPORTANCE()">GETIMPORTANCE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETISSENT()">GETISSENT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMAILERID()">GETMAILERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGEBCC()">GETMESSAGEBCC</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGECC()">GETMESSAGECC</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGECHARSET()">GETMESSAGECHARSET</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGEHTMLBODY()">GETMESSAGEHTMLBODY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGESUBJECT()">GETMESSAGESUBJECT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGETEXTBODY()">GETMESSAGETEXTBODY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETMESSAGEUUID()">GETMESSAGEUUID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETNUMBEROFATTEMPTS()">GETNUMBEROFATTEMPTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETPRIORITY()">GETPRIORITY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETRECEIVEREMAIL()">GETRECEIVEREMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETRECEIVERID()">GETRECEIVERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETREPLYTO()">GETREPLYTO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSENDEREMAIL()">GETSENDEREMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSENDERID()">GETSENDERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSENDERMODULE()">GETSENDERMODULE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSMTPPASSWORD()">GETSMTPPASSWORD</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSMTPPORT()">GETSMTPPORT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSMTPSERVERNAME()">GETSMTPSERVERNAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSMTPUSERNAME()">GETSMTPUSERNAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETSMTPUSESSL()">GETSMTPUSESSL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETWRAPTEXT()">GETWRAPTEXT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#GETXSENDER()">GETXSENDER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETATTACHMENTARR()">SETATTACHMENTARR</A></strong>(array attachmentArr)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETCOURSEOFFERINGID()">SETCOURSEOFFERINGID</A></strong>(numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETCREATEDATETIME()">SETCREATEDATETIME</A></strong>(date createDateTime)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETCUSTOMDATETIMETOSEND()">SETCUSTOMDATETIMETOSEND</A></strong>(date customDateTimeToSend)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETFAILTO()">SETFAILTO</A></strong>(string failto)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETIMPORTANCE()">SETIMPORTANCE</A></strong>(string Importance)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETISSENT()">SETISSENT</A></strong>(boolean isSent)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMAILERID()">SETMAILERID</A></strong>(string mailerID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGEBCC()">SETMESSAGEBCC</A></strong>(string messageBCC)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGECC()">SETMESSAGECC</A></strong>(string messageCC)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGECHARSET()">SETMESSAGECHARSET</A></strong>(string messageCharSet)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGEHTMLBODY()">SETMESSAGEHTMLBODY</A></strong>(string messageHTMLBody)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGESUBJECT()">SETMESSAGESUBJECT</A></strong>(string messageSubject)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGETEXTBODY()">SETMESSAGETEXTBODY</A></strong>(string messageTextBody)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETMESSAGEUUID()">SETMESSAGEUUID</A></strong>(string messageUUID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETNUMBEROFATTEMPTS()">SETNUMBEROFATTEMPTS</A></strong>(numeric numberOfAttempts)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETPRIORITY()">SETPRIORITY</A></strong>(numeric priority)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETRECEIVEREMAIL()">SETRECEIVEREMAIL</A></strong>(string receiverEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETRECEIVERID()">SETRECEIVERID</A></strong>(string receiverID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETREPLYTO()">SETREPLYTO</A></strong>(string replyto)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSENDEREMAIL()">SETSENDEREMAIL</A></strong>(string senderEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSENDERID()">SETSENDERID</A></strong>(numeric senderID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSENDERMODULE()">SETSENDERMODULE</A></strong>(string senderModule)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSMTPPASSWORD()">SETSMTPPASSWORD</A></strong>(string SMTPPassword)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSMTPPORT()">SETSMTPPORT</A></strong>(string SMTPPort)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSMTPSERVERNAME()">SETSMTPSERVERNAME</A></strong>(string SMTPServerName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSMTPUSERNAME()">SETSMTPUSERNAME</A></strong>(string SMTPUsername)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETSMTPUSESSL()">SETSMTPUSESSL</A></strong>(boolean SMTPUseSSL)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETWRAPTEXT()">SETWRAPTEXT</A></strong>(numeric wraptext)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a></code>
+		</td>
+		<td>
+			<strong><a href="spoolerMessage.html#SETXSENDER()">SETXSENDER</A></strong>(string XSender)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="Importance()"><!-- --></a>
+		<h3>Importance</h3>
+
+		<kbd>
+			property string <strong>Importance</strong> 
+			= [normal]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="SMTPPassword()"><!-- --></a>
+		<h3>SMTPPassword</h3>
+
+		<kbd>
+			property string <strong>SMTPPassword</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="SMTPPort()"><!-- --></a>
+		<h3>SMTPPort</h3>
+
+		<kbd>
+			property string <strong>SMTPPort</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="SMTPServerName()"><!-- --></a>
+		<h3>SMTPServerName</h3>
+
+		<kbd>
+			property string <strong>SMTPServerName</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="SMTPUseSSL()"><!-- --></a>
+		<h3>SMTPUseSSL</h3>
+
+		<kbd>
+			property boolean <strong>SMTPUseSSL</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="SMTPUsername()"><!-- --></a>
+		<h3>SMTPUsername</h3>
+
+		<kbd>
+			property string <strong>SMTPUsername</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="XSender()"><!-- --></a>
+		<h3>XSender</h3>
+
+		<kbd>
+			property string <strong>XSender</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="attachmentArr()"><!-- --></a>
+		<h3>attachmentArr</h3>
+
+		<kbd>
+			property array <strong>attachmentArr</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseOfferingID()"><!-- --></a>
+		<h3>courseOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>courseOfferingID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createDateTime()"><!-- --></a>
+		<h3>createDateTime</h3>
+
+		<kbd>
+			property date <strong>createDateTime</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="customDateTimeToSend()"><!-- --></a>
+		<h3>customDateTimeToSend</h3>
+
+		<kbd>
+			property date <strong>customDateTimeToSend</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="failto()"><!-- --></a>
+		<h3>failto</h3>
+
+		<kbd>
+			property string <strong>failto</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isSent()"><!-- --></a>
+		<h3>isSent</h3>
+
+		<kbd>
+			property boolean <strong>isSent</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="mailerID()"><!-- --></a>
+		<h3>mailerID</h3>
+
+		<kbd>
+			property string <strong>mailerID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageBCC()"><!-- --></a>
+		<h3>messageBCC</h3>
+
+		<kbd>
+			property string <strong>messageBCC</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageCC()"><!-- --></a>
+		<h3>messageCC</h3>
+
+		<kbd>
+			property string <strong>messageCC</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageCharSet()"><!-- --></a>
+		<h3>messageCharSet</h3>
+
+		<kbd>
+			property string <strong>messageCharSet</strong> 
+			= [UTF-8]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageHTMLBody()"><!-- --></a>
+		<h3>messageHTMLBody</h3>
+
+		<kbd>
+			property string <strong>messageHTMLBody</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageSubject()"><!-- --></a>
+		<h3>messageSubject</h3>
+
+		<kbd>
+			property string <strong>messageSubject</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageTextBody()"><!-- --></a>
+		<h3>messageTextBody</h3>
+
+		<kbd>
+			property string <strong>messageTextBody</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="messageUUID()"><!-- --></a>
+		<h3>messageUUID</h3>
+
+		<kbd>
+			property string <strong>messageUUID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="numberOfAttempts()"><!-- --></a>
+		<h3>numberOfAttempts</h3>
+
+		<kbd>
+			property numeric <strong>numberOfAttempts</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="priority()"><!-- --></a>
+		<h3>priority</h3>
+
+		<kbd>
+			property numeric <strong>priority</strong> 
+			= [3]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="receiverEmail()"><!-- --></a>
+		<h3>receiverEmail</h3>
+
+		<kbd>
+			property string <strong>receiverEmail</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="receiverID()"><!-- --></a>
+		<h3>receiverID</h3>
+
+		<kbd>
+			property string <strong>receiverID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="replyto()"><!-- --></a>
+		<h3>replyto</h3>
+
+		<kbd>
+			property string <strong>replyto</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="senderEmail()"><!-- --></a>
+		<h3>senderEmail</h3>
+
+		<kbd>
+			property string <strong>senderEmail</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="senderID()"><!-- --></a>
+		<h3>senderID</h3>
+
+		<kbd>
+			property numeric <strong>senderID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="senderModule()"><!-- --></a>
+		<h3>senderModule</h3>
+
+		<kbd>
+			property string <strong>senderModule</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="wraptext()"><!-- --></a>
+		<h3>wraptext</h3>
+
+		<kbd>
+			property numeric <strong>wraptext</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETATTACHMENTARR()"><!-- --></a>
+	<h3>
+		GETATTACHMENTARR 
+	</h3>
+
+	<kbd>public array <strong>GETATTACHMENTARR</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		GETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOURSEOFFERINGID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDATETIME()"><!-- --></a>
+	<h3>
+		GETCREATEDATETIME 
+	</h3>
+
+	<kbd>public date <strong>GETCREATEDATETIME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCUSTOMDATETIMETOSEND()"><!-- --></a>
+	<h3>
+		GETCUSTOMDATETIMETOSEND 
+	</h3>
+
+	<kbd>public date <strong>GETCUSTOMDATETIMETOSEND</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFAILTO()"><!-- --></a>
+	<h3>
+		GETFAILTO 
+	</h3>
+
+	<kbd>public string <strong>GETFAILTO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETIMPORTANCE()"><!-- --></a>
+	<h3>
+		GETIMPORTANCE 
+	</h3>
+
+	<kbd>public string <strong>GETIMPORTANCE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISSENT()"><!-- --></a>
+	<h3>
+		GETISSENT 
+	</h3>
+
+	<kbd>public boolean <strong>GETISSENT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMAILERID()"><!-- --></a>
+	<h3>
+		GETMAILERID 
+	</h3>
+
+	<kbd>public string <strong>GETMAILERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGEBCC()"><!-- --></a>
+	<h3>
+		GETMESSAGEBCC 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGEBCC</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGECC()"><!-- --></a>
+	<h3>
+		GETMESSAGECC 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGECC</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGECHARSET()"><!-- --></a>
+	<h3>
+		GETMESSAGECHARSET 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGECHARSET</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGEHTMLBODY()"><!-- --></a>
+	<h3>
+		GETMESSAGEHTMLBODY 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGEHTMLBODY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGESUBJECT()"><!-- --></a>
+	<h3>
+		GETMESSAGESUBJECT 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGESUBJECT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGETEXTBODY()"><!-- --></a>
+	<h3>
+		GETMESSAGETEXTBODY 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGETEXTBODY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMESSAGEUUID()"><!-- --></a>
+	<h3>
+		GETMESSAGEUUID 
+	</h3>
+
+	<kbd>public string <strong>GETMESSAGEUUID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNUMBEROFATTEMPTS()"><!-- --></a>
+	<h3>
+		GETNUMBEROFATTEMPTS 
+	</h3>
+
+	<kbd>public numeric <strong>GETNUMBEROFATTEMPTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPRIORITY()"><!-- --></a>
+	<h3>
+		GETPRIORITY 
+	</h3>
+
+	<kbd>public numeric <strong>GETPRIORITY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRECEIVEREMAIL()"><!-- --></a>
+	<h3>
+		GETRECEIVEREMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETRECEIVEREMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRECEIVERID()"><!-- --></a>
+	<h3>
+		GETRECEIVERID 
+	</h3>
+
+	<kbd>public string <strong>GETRECEIVERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETREPLYTO()"><!-- --></a>
+	<h3>
+		GETREPLYTO 
+	</h3>
+
+	<kbd>public string <strong>GETREPLYTO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSENDEREMAIL()"><!-- --></a>
+	<h3>
+		GETSENDEREMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETSENDEREMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSENDERID()"><!-- --></a>
+	<h3>
+		GETSENDERID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSENDERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSENDERMODULE()"><!-- --></a>
+	<h3>
+		GETSENDERMODULE 
+	</h3>
+
+	<kbd>public string <strong>GETSENDERMODULE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSMTPPASSWORD()"><!-- --></a>
+	<h3>
+		GETSMTPPASSWORD 
+	</h3>
+
+	<kbd>public string <strong>GETSMTPPASSWORD</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSMTPPORT()"><!-- --></a>
+	<h3>
+		GETSMTPPORT 
+	</h3>
+
+	<kbd>public string <strong>GETSMTPPORT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSMTPSERVERNAME()"><!-- --></a>
+	<h3>
+		GETSMTPSERVERNAME 
+	</h3>
+
+	<kbd>public string <strong>GETSMTPSERVERNAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSMTPUSERNAME()"><!-- --></a>
+	<h3>
+		GETSMTPUSERNAME 
+	</h3>
+
+	<kbd>public string <strong>GETSMTPUSERNAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSMTPUSESSL()"><!-- --></a>
+	<h3>
+		GETSMTPUSESSL 
+	</h3>
+
+	<kbd>public boolean <strong>GETSMTPUSESSL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETWRAPTEXT()"><!-- --></a>
+	<h3>
+		GETWRAPTEXT 
+	</h3>
+
+	<kbd>public numeric <strong>GETWRAPTEXT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETXSENDER()"><!-- --></a>
+	<h3>
+		GETXSENDER 
+	</h3>
+
+	<kbd>public string <strong>GETXSENDER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETATTACHMENTARR()"><!-- --></a>
+	<h3>
+		SETATTACHMENTARR 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETATTACHMENTARR</strong>(array attachmentArr)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>attachmentArr</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOURSEOFFERINGID()"><!-- --></a>
+	<h3>
+		SETCOURSEOFFERINGID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETCOURSEOFFERINGID</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDATETIME()"><!-- --></a>
+	<h3>
+		SETCREATEDATETIME 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETCREATEDATETIME</strong>(date createDateTime)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createDateTime</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCUSTOMDATETIMETOSEND()"><!-- --></a>
+	<h3>
+		SETCUSTOMDATETIMETOSEND 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETCUSTOMDATETIMETOSEND</strong>(date customDateTimeToSend)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>customDateTimeToSend</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFAILTO()"><!-- --></a>
+	<h3>
+		SETFAILTO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETFAILTO</strong>(string failto)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>failto</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETIMPORTANCE()"><!-- --></a>
+	<h3>
+		SETIMPORTANCE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETIMPORTANCE</strong>(string Importance)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Importance</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISSENT()"><!-- --></a>
+	<h3>
+		SETISSENT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETISSENT</strong>(boolean isSent)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isSent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMAILERID()"><!-- --></a>
+	<h3>
+		SETMAILERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMAILERID</strong>(string mailerID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mailerID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGEBCC()"><!-- --></a>
+	<h3>
+		SETMESSAGEBCC 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGEBCC</strong>(string messageBCC)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageBCC</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGECC()"><!-- --></a>
+	<h3>
+		SETMESSAGECC 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGECC</strong>(string messageCC)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageCC</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGECHARSET()"><!-- --></a>
+	<h3>
+		SETMESSAGECHARSET 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGECHARSET</strong>(string messageCharSet)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageCharSet</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGEHTMLBODY()"><!-- --></a>
+	<h3>
+		SETMESSAGEHTMLBODY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGEHTMLBODY</strong>(string messageHTMLBody)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageHTMLBody</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGESUBJECT()"><!-- --></a>
+	<h3>
+		SETMESSAGESUBJECT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGESUBJECT</strong>(string messageSubject)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageSubject</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGETEXTBODY()"><!-- --></a>
+	<h3>
+		SETMESSAGETEXTBODY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGETEXTBODY</strong>(string messageTextBody)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageTextBody</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMESSAGEUUID()"><!-- --></a>
+	<h3>
+		SETMESSAGEUUID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETMESSAGEUUID</strong>(string messageUUID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageUUID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNUMBEROFATTEMPTS()"><!-- --></a>
+	<h3>
+		SETNUMBEROFATTEMPTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETNUMBEROFATTEMPTS</strong>(numeric numberOfAttempts)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>numberOfAttempts</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPRIORITY()"><!-- --></a>
+	<h3>
+		SETPRIORITY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETPRIORITY</strong>(numeric priority)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>priority</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRECEIVEREMAIL()"><!-- --></a>
+	<h3>
+		SETRECEIVEREMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETRECEIVEREMAIL</strong>(string receiverEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>receiverEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRECEIVERID()"><!-- --></a>
+	<h3>
+		SETRECEIVERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETRECEIVERID</strong>(string receiverID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>receiverID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETREPLYTO()"><!-- --></a>
+	<h3>
+		SETREPLYTO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETREPLYTO</strong>(string replyto)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>replyto</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSENDEREMAIL()"><!-- --></a>
+	<h3>
+		SETSENDEREMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSENDEREMAIL</strong>(string senderEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>senderEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSENDERID()"><!-- --></a>
+	<h3>
+		SETSENDERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSENDERID</strong>(numeric senderID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>senderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSENDERMODULE()"><!-- --></a>
+	<h3>
+		SETSENDERMODULE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSENDERMODULE</strong>(string senderModule)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>senderModule</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSMTPPASSWORD()"><!-- --></a>
+	<h3>
+		SETSMTPPASSWORD 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSMTPPASSWORD</strong>(string SMTPPassword)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>SMTPPassword</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSMTPPORT()"><!-- --></a>
+	<h3>
+		SETSMTPPORT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSMTPPORT</strong>(string SMTPPort)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>SMTPPort</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSMTPSERVERNAME()"><!-- --></a>
+	<h3>
+		SETSMTPSERVERNAME 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSMTPSERVERNAME</strong>(string SMTPServerName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>SMTPServerName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSMTPUSERNAME()"><!-- --></a>
+	<h3>
+		SETSMTPUSERNAME 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSMTPUSERNAME</strong>(string SMTPUsername)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>SMTPUsername</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSMTPUSESSL()"><!-- --></a>
+	<h3>
+		SETSMTPUSESSL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETSMTPUSESSL</strong>(boolean SMTPUseSSL)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>SMTPUseSSL</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETWRAPTEXT()"><!-- --></a>
+	<h3>
+		SETWRAPTEXT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETWRAPTEXT</strong>(numeric wraptext)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wraptext</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETXSENDER()"><!-- --></a>
+	<h3>
+		SETXSENDER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/mailSpooler/model/spoolerMessage/spoolerMessage.html" title="class in core.modules.mailSpooler.model.spoolerMessage">spoolerMessage</a> <strong>SETXSENDER</strong>(string XSender)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>XSender</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

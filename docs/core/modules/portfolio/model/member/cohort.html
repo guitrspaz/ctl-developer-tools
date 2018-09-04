@@ -1,0 +1,1736 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>cohort</title>
+	<meta name="keywords" content="core.modules.portfolio.model.member.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/portfolio/model/member/cohort.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.portfolio.model.member"><span class="label label-success">core.modules.portfolio.model.member</span></a>
+</div>
+
+<h2>
+
+Class
+cohort</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/portfolio/model/tools/bean.html" title="class in core.modules.portfolio.model.tools">core.modules.portfolio.model.tools.bean</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.portfolio.model.member.cohort
+</pre>
+
+
+
+<div id="class-hint">
+	<p>An cohort bean.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: cohort 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#cohortID()">cohortID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#cohortStartDate()">cohortStartDate</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#competencySetID()">competencySetID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#createdBy()">createdBy</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#hiddenFromAdvisors()">hiddenFromAdvisors</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#programCoordinatorID()">programCoordinatorID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#programID()">programID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#stuList()">stuList</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#students()">students</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#title()">title</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#touchPointTemplates()">touchPointTemplates</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#touchpointsFromCohortID()">touchpointsFromCohortID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="cohort.html#init()">init</A></strong>(numeric cohortID='0', numeric programID='0', numeric programCoordinatorID='0', string title='', [date cohortStartDate='[runtime expression]'], numeric competencySetID='0', string stuList='', numeric touchpointsFromCohortID='0', numeric createdBy='0', array students='[runtime expression]', array touchPointTemplates='[runtime expression]', boolean hiddenFromAdvisors='0')
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETCOHORTID()">GETCOHORTID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETCOHORTSTARTDATE()">GETCOHORTSTARTDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETCOMPETENCYSETID()">GETCOMPETENCYSETID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETCREATEDBY()">GETCREATEDBY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETHIDDENFROMADVISORS()">GETHIDDENFROMADVISORS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETPROGRAMCOORDINATORID()">GETPROGRAMCOORDINATORID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETPROGRAMID()">GETPROGRAMID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETSTUDENTS()">GETSTUDENTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETSTULIST()">GETSTULIST</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETTITLE()">GETTITLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETTOUCHPOINTSFROMCOHORTID()">GETTOUCHPOINTSFROMCOHORTID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#GETTOUCHPOINTTEMPLATES()">GETTOUCHPOINTTEMPLATES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETCOHORTID()">SETCOHORTID</A></strong>(numeric cohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETCOHORTSTARTDATE()">SETCOHORTSTARTDATE</A></strong>(date cohortStartDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETCOMPETENCYSETID()">SETCOMPETENCYSETID</A></strong>(numeric competencySetID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETCREATEDBY()">SETCREATEDBY</A></strong>(numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETHIDDENFROMADVISORS()">SETHIDDENFROMADVISORS</A></strong>(boolean hiddenFromAdvisors)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETPROGRAMCOORDINATORID()">SETPROGRAMCOORDINATORID</A></strong>(numeric programCoordinatorID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETPROGRAMID()">SETPROGRAMID</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETSTUDENTS()">SETSTUDENTS</A></strong>(array students)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETSTULIST()">SETSTULIST</A></strong>(string stuList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETTITLE()">SETTITLE</A></strong>(string title)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETTOUCHPOINTSFROMCOHORTID()">SETTOUCHPOINTSFROMCOHORTID</A></strong>(numeric touchpointsFromCohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="cohort.html#SETTOUCHPOINTTEMPLATES()">SETTOUCHPOINTTEMPLATES</A></strong>(array touchPointTemplates)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.portfolio.model.tools.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/portfolio/model/tools/bean.html" title="class in core.modules.portfolio.model.tools">core.modules.portfolio.model.tools.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/portfolio/model/tools/bean.html#getMemento()">getMemento</a>, <a href="../../../../../core/modules/portfolio/model/tools/bean.html#getSnapshot()">getSnapshot</a>, <a href="../../../../../core/modules/portfolio/model/tools/bean.html#toJSON()">toJSON</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(numeric cohortID='0', numeric programID='0', numeric programCoordinatorID='0', string title='', [date cohortStartDate='[runtime expression]'], numeric competencySetID='0', string stuList='', numeric touchpointsFromCohortID='0', numeric createdBy='0', array students='[runtime expression]', array touchPointTemplates='[runtime expression]', boolean hiddenFromAdvisors='0')</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>cohortID</code></dd>
+		
+			<dd><code>programID</code></dd>
+		
+			<dd><code>programCoordinatorID</code></dd>
+		
+			<dd><code>title</code></dd>
+		
+			<dd><code>cohortStartDate</code></dd>
+		
+			<dd><code>competencySetID</code></dd>
+		
+			<dd><code>stuList</code></dd>
+		
+			<dd><code>touchpointsFromCohortID</code></dd>
+		
+			<dd><code>createdBy</code></dd>
+		
+			<dd><code>students</code></dd>
+		
+			<dd><code>touchPointTemplates</code></dd>
+		
+			<dd><code>hiddenFromAdvisors</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="cohortID()"><!-- --></a>
+		<h3>cohortID</h3>
+
+		<kbd>
+			property numeric <strong>cohortID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="cohortStartDate()"><!-- --></a>
+		<h3>cohortStartDate</h3>
+
+		<kbd>
+			property date <strong>cohortStartDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="competencySetID()"><!-- --></a>
+		<h3>competencySetID</h3>
+
+		<kbd>
+			property numeric <strong>competencySetID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createdBy()"><!-- --></a>
+		<h3>createdBy</h3>
+
+		<kbd>
+			property numeric <strong>createdBy</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="hiddenFromAdvisors()"><!-- --></a>
+		<h3>hiddenFromAdvisors</h3>
+
+		<kbd>
+			property boolean <strong>hiddenFromAdvisors</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="programCoordinatorID()"><!-- --></a>
+		<h3>programCoordinatorID</h3>
+
+		<kbd>
+			property numeric <strong>programCoordinatorID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="programID()"><!-- --></a>
+		<h3>programID</h3>
+
+		<kbd>
+			property numeric <strong>programID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="stuList()"><!-- --></a>
+		<h3>stuList</h3>
+
+		<kbd>
+			property string <strong>stuList</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="students()"><!-- --></a>
+		<h3>students</h3>
+
+		<kbd>
+			property array <strong>students</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="title()"><!-- --></a>
+		<h3>title</h3>
+
+		<kbd>
+			property string <strong>title</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="touchPointTemplates()"><!-- --></a>
+		<h3>touchPointTemplates</h3>
+
+		<kbd>
+			property array <strong>touchPointTemplates</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="touchpointsFromCohortID()"><!-- --></a>
+		<h3>touchpointsFromCohortID</h3>
+
+		<kbd>
+			property numeric <strong>touchpointsFromCohortID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETCOHORTID()"><!-- --></a>
+	<h3>
+		GETCOHORTID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOHORTID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOHORTSTARTDATE()"><!-- --></a>
+	<h3>
+		GETCOHORTSTARTDATE 
+	</h3>
+
+	<kbd>public date <strong>GETCOHORTSTARTDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOMPETENCYSETID()"><!-- --></a>
+	<h3>
+		GETCOMPETENCYSETID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOMPETENCYSETID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDBY()"><!-- --></a>
+	<h3>
+		GETCREATEDBY 
+	</h3>
+
+	<kbd>public numeric <strong>GETCREATEDBY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHIDDENFROMADVISORS()"><!-- --></a>
+	<h3>
+		GETHIDDENFROMADVISORS 
+	</h3>
+
+	<kbd>public boolean <strong>GETHIDDENFROMADVISORS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPROGRAMCOORDINATORID()"><!-- --></a>
+	<h3>
+		GETPROGRAMCOORDINATORID 
+	</h3>
+
+	<kbd>public numeric <strong>GETPROGRAMCOORDINATORID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPROGRAMID()"><!-- --></a>
+	<h3>
+		GETPROGRAMID 
+	</h3>
+
+	<kbd>public numeric <strong>GETPROGRAMID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSTUDENTS()"><!-- --></a>
+	<h3>
+		GETSTUDENTS 
+	</h3>
+
+	<kbd>public array <strong>GETSTUDENTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSTULIST()"><!-- --></a>
+	<h3>
+		GETSTULIST 
+	</h3>
+
+	<kbd>public string <strong>GETSTULIST</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTITLE()"><!-- --></a>
+	<h3>
+		GETTITLE 
+	</h3>
+
+	<kbd>public string <strong>GETTITLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTOUCHPOINTSFROMCOHORTID()"><!-- --></a>
+	<h3>
+		GETTOUCHPOINTSFROMCOHORTID 
+	</h3>
+
+	<kbd>public numeric <strong>GETTOUCHPOINTSFROMCOHORTID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTOUCHPOINTTEMPLATES()"><!-- --></a>
+	<h3>
+		GETTOUCHPOINTTEMPLATES 
+	</h3>
+
+	<kbd>public array <strong>GETTOUCHPOINTTEMPLATES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOHORTID()"><!-- --></a>
+	<h3>
+		SETCOHORTID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETCOHORTID</strong>(numeric cohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOHORTSTARTDATE()"><!-- --></a>
+	<h3>
+		SETCOHORTSTARTDATE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETCOHORTSTARTDATE</strong>(date cohortStartDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortStartDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOMPETENCYSETID()"><!-- --></a>
+	<h3>
+		SETCOMPETENCYSETID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETCOMPETENCYSETID</strong>(numeric competencySetID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySetID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDBY()"><!-- --></a>
+	<h3>
+		SETCREATEDBY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETCREATEDBY</strong>(numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHIDDENFROMADVISORS()"><!-- --></a>
+	<h3>
+		SETHIDDENFROMADVISORS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETHIDDENFROMADVISORS</strong>(boolean hiddenFromAdvisors)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>hiddenFromAdvisors</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPROGRAMCOORDINATORID()"><!-- --></a>
+	<h3>
+		SETPROGRAMCOORDINATORID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETPROGRAMCOORDINATORID</strong>(numeric programCoordinatorID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programCoordinatorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPROGRAMID()"><!-- --></a>
+	<h3>
+		SETPROGRAMID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETPROGRAMID</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSTUDENTS()"><!-- --></a>
+	<h3>
+		SETSTUDENTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETSTUDENTS</strong>(array students)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>students</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSTULIST()"><!-- --></a>
+	<h3>
+		SETSTULIST 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETSTULIST</strong>(string stuList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTITLE()"><!-- --></a>
+	<h3>
+		SETTITLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETTITLE</strong>(string title)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>title</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTOUCHPOINTSFROMCOHORTID()"><!-- --></a>
+	<h3>
+		SETTOUCHPOINTSFROMCOHORTID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETTOUCHPOINTSFROMCOHORTID</strong>(numeric touchpointsFromCohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointsFromCohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTOUCHPOINTTEMPLATES()"><!-- --></a>
+	<h3>
+		SETTOUCHPOINTTEMPLATES 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>SETTOUCHPOINTTEMPLATES</strong>(array touchPointTemplates)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchPointTemplates</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

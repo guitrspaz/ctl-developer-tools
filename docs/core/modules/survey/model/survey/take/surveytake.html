@@ -1,0 +1,1945 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>surveytake</title>
+	<meta name="keywords" content="core.modules.survey.model.survey.take.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../../index.html?core/modules/survey/model/survey/take/surveytake.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.survey.model.survey.take"><span class="label label-success">core.modules.survey.model.survey.take</span></a>
+</div>
+
+<h2>
+
+Class
+surveytake</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a>
+        <img src="../../../../../../resources/inherit.gif" alt="extended by ">core.modules.survey.model.survey.take.surveytake
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: surveyTake 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: surveytake 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I return a survey take object 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Chris Schroeder (schroeder@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: Sunday, 11/20/2016 09:11:37 PM 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: Sunday, 11/20/2016 09:11:37 PM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#answeredQuestions()">answeredQuestions</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#createdOn()">createdOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#defaultUserLevel()">defaultUserLevel</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>1000</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#isCTL()">isCTL</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#isDeleted()">isDeleted</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#isStudent()">isStudent</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#modifiedOn()">modifiedOn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#randomStringID()">randomStringID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#surveyOriginJoinID()">surveyOriginJoinID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#surveyTakeID()">surveyTakeID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#userID()">userID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#userLevelInCourse()">userLevelInCourse</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>1000</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="surveytake.html#init()">init</A></strong>([Numeric surveyTakeID='0'], [Numeric surveyOriginJoinID='0'], [Numeric userID='0'], [Date createdOn='[runtime expression]'], [Date modifiedOn='[runtime expression]'], [Boolean isDeleted='0'], [String randomStringID=''], [Numeric defaultUserLevel='1000'], [Numeric userLevelInCourse='1000'], [any isStudent='0'], [any isCTL='0'], [any answeredQuestions='[runtime expression]'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETANSWEREDQUESTIONS()">GETANSWEREDQUESTIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETCREATEDON()">GETCREATEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETDEFAULTUSERLEVEL()">GETDEFAULTUSERLEVEL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETISCTL()">GETISCTL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETISDELETED()">GETISDELETED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETISSTUDENT()">GETISSTUDENT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETMODIFIEDON()">GETMODIFIEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETRANDOMSTRINGID()">GETRANDOMSTRINGID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETSURVEYORIGINJOINID()">GETSURVEYORIGINJOINID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETSURVEYTAKEID()">GETSURVEYTAKEID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETUSERID()">GETUSERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#GETUSERLEVELINCOURSE()">GETUSERLEVELINCOURSE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETANSWEREDQUESTIONS()">SETANSWEREDQUESTIONS</A></strong>(Array answeredQuestions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETCREATEDON()">SETCREATEDON</A></strong>(date createdOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETDEFAULTUSERLEVEL()">SETDEFAULTUSERLEVEL</A></strong>(numeric defaultUserLevel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETISCTL()">SETISCTL</A></strong>(boolean isCTL)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETISDELETED()">SETISDELETED</A></strong>(boolean isDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETISSTUDENT()">SETISSTUDENT</A></strong>(boolean isStudent)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETMODIFIEDON()">SETMODIFIEDON</A></strong>(date modifiedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETRANDOMSTRINGID()">SETRANDOMSTRINGID</A></strong>(string randomStringID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETSURVEYORIGINJOINID()">SETSURVEYORIGINJOINID</A></strong>(numeric surveyOriginJoinID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETSURVEYTAKEID()">SETSURVEYTAKEID</A></strong>(numeric surveyTakeID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETUSERID()">SETUSERID</A></strong>(numeric userID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a></code>
+		</td>
+		<td>
+			<strong><a href="surveytake.html#SETUSERLEVELINCOURSE()">SETUSERLEVELINCOURSE</A></strong>(numeric userLevelInCourse)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../../com/distance/base/bean.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../../com/distance/base/bean.html#GETPROTOTYPE()">GETPROTOTYPE</a>, <a href="../../../../../../com/distance/base/bean.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../../com/distance/base/bean.html#SETPROTOTYPE()">SETPROTOTYPE</a>, <a href="../../../../../../com/distance/base/bean.html#configure()">configure</a>, <a href="../../../../../../com/distance/base/bean.html#dump()">dump</a>, <a href="../../../../../../com/distance/base/bean.html#makeFunctName()">makeFunctName</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([Numeric surveyTakeID='0'], [Numeric surveyOriginJoinID='0'], [Numeric userID='0'], [Date createdOn='[runtime expression]'], [Date modifiedOn='[runtime expression]'], [Boolean isDeleted='0'], [String randomStringID=''], [Numeric defaultUserLevel='1000'], [Numeric userLevelInCourse='1000'], [any isStudent='0'], [any isCTL='0'], [any answeredQuestions='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>surveyTakeID</code></dd>
+		
+			<dd><code>surveyOriginJoinID</code></dd>
+		
+			<dd><code>userID</code></dd>
+		
+			<dd><code>createdOn</code></dd>
+		
+			<dd><code>modifiedOn</code></dd>
+		
+			<dd><code>isDeleted</code></dd>
+		
+			<dd><code>randomStringID</code></dd>
+		
+			<dd><code>defaultUserLevel</code></dd>
+		
+			<dd><code>userLevelInCourse</code></dd>
+		
+			<dd><code>isStudent</code></dd>
+		
+			<dd><code>isCTL</code></dd>
+		
+			<dd><code>answeredQuestions</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="answeredQuestions()"><!-- --></a>
+		<h3>answeredQuestions</h3>
+
+		<kbd>
+			property Array <strong>answeredQuestions</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="createdOn()"><!-- --></a>
+		<h3>createdOn</h3>
+
+		<kbd>
+			property date <strong>createdOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="defaultUserLevel()"><!-- --></a>
+		<h3>defaultUserLevel</h3>
+
+		<kbd>
+			property numeric <strong>defaultUserLevel</strong> 
+			= [1000]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isCTL()"><!-- --></a>
+		<h3>isCTL</h3>
+
+		<kbd>
+			property boolean <strong>isCTL</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDeleted()"><!-- --></a>
+		<h3>isDeleted</h3>
+
+		<kbd>
+			property boolean <strong>isDeleted</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isStudent()"><!-- --></a>
+		<h3>isStudent</h3>
+
+		<kbd>
+			property boolean <strong>isStudent</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="modifiedOn()"><!-- --></a>
+		<h3>modifiedOn</h3>
+
+		<kbd>
+			property date <strong>modifiedOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="randomStringID()"><!-- --></a>
+		<h3>randomStringID</h3>
+
+		<kbd>
+			property string <strong>randomStringID</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyOriginJoinID()"><!-- --></a>
+		<h3>surveyOriginJoinID</h3>
+
+		<kbd>
+			property numeric <strong>surveyOriginJoinID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyTakeID()"><!-- --></a>
+		<h3>surveyTakeID</h3>
+
+		<kbd>
+			property numeric <strong>surveyTakeID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userID()"><!-- --></a>
+		<h3>userID</h3>
+
+		<kbd>
+			property numeric <strong>userID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userLevelInCourse()"><!-- --></a>
+		<h3>userLevelInCourse</h3>
+
+		<kbd>
+			property numeric <strong>userLevelInCourse</strong> 
+			= [1000]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETANSWEREDQUESTIONS()"><!-- --></a>
+	<h3>
+		GETANSWEREDQUESTIONS 
+	</h3>
+
+	<kbd>public Array <strong>GETANSWEREDQUESTIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCREATEDON()"><!-- --></a>
+	<h3>
+		GETCREATEDON 
+	</h3>
+
+	<kbd>public date <strong>GETCREATEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../../com/distance/base/bean.html#GETCREATEDON()">GETCREATEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEFAULTUSERLEVEL()"><!-- --></a>
+	<h3>
+		GETDEFAULTUSERLEVEL 
+	</h3>
+
+	<kbd>public numeric <strong>GETDEFAULTUSERLEVEL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISCTL()"><!-- --></a>
+	<h3>
+		GETISCTL 
+	</h3>
+
+	<kbd>public boolean <strong>GETISCTL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISDELETED()"><!-- --></a>
+	<h3>
+		GETISDELETED 
+	</h3>
+
+	<kbd>public boolean <strong>GETISDELETED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISSTUDENT()"><!-- --></a>
+	<h3>
+		GETISSTUDENT 
+	</h3>
+
+	<kbd>public boolean <strong>GETISSTUDENT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODIFIEDON()"><!-- --></a>
+	<h3>
+		GETMODIFIEDON 
+	</h3>
+
+	<kbd>public date <strong>GETMODIFIEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../../com/distance/base/bean.html#GETMODIFIEDON()">GETMODIFIEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRANDOMSTRINGID()"><!-- --></a>
+	<h3>
+		GETRANDOMSTRINGID 
+	</h3>
+
+	<kbd>public string <strong>GETRANDOMSTRINGID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYORIGINJOINID()"><!-- --></a>
+	<h3>
+		GETSURVEYORIGINJOINID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSURVEYORIGINJOINID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYTAKEID()"><!-- --></a>
+	<h3>
+		GETSURVEYTAKEID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSURVEYTAKEID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERID()"><!-- --></a>
+	<h3>
+		GETUSERID 
+	</h3>
+
+	<kbd>public numeric <strong>GETUSERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERLEVELINCOURSE()"><!-- --></a>
+	<h3>
+		GETUSERLEVELINCOURSE 
+	</h3>
+
+	<kbd>public numeric <strong>GETUSERLEVELINCOURSE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETANSWEREDQUESTIONS()"><!-- --></a>
+	<h3>
+		SETANSWEREDQUESTIONS 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETANSWEREDQUESTIONS</strong>(Array answeredQuestions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>answeredQuestions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCREATEDON()"><!-- --></a>
+	<h3>
+		SETCREATEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETCREATEDON</strong>(date createdOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../../com/distance/base/bean.html#SETCREATEDON()">SETCREATEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTUSERLEVEL()"><!-- --></a>
+	<h3>
+		SETDEFAULTUSERLEVEL 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETDEFAULTUSERLEVEL</strong>(numeric defaultUserLevel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultUserLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISCTL()"><!-- --></a>
+	<h3>
+		SETISCTL 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETISCTL</strong>(boolean isCTL)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isCTL</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISDELETED()"><!-- --></a>
+	<h3>
+		SETISDELETED 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETISDELETED</strong>(boolean isDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISSTUDENT()"><!-- --></a>
+	<h3>
+		SETISSTUDENT 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETISSTUDENT</strong>(boolean isStudent)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isStudent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODIFIEDON()"><!-- --></a>
+	<h3>
+		SETMODIFIEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETMODIFIEDON</strong>(date modifiedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../../com/distance/base/bean.html#SETMODIFIEDON()">SETMODIFIEDON</a></code>
+			in class
+			<code>
+				<a href="../../../../../../com/distance/base/bean.html" title="class in com.distance.base">bean</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modifiedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRANDOMSTRINGID()"><!-- --></a>
+	<h3>
+		SETRANDOMSTRINGID 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETRANDOMSTRINGID</strong>(string randomStringID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>randomStringID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYORIGINJOINID()"><!-- --></a>
+	<h3>
+		SETSURVEYORIGINJOINID 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETSURVEYORIGINJOINID</strong>(numeric surveyOriginJoinID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyOriginJoinID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYTAKEID()"><!-- --></a>
+	<h3>
+		SETSURVEYTAKEID 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETSURVEYTAKEID</strong>(numeric surveyTakeID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyTakeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERID()"><!-- --></a>
+	<h3>
+		SETUSERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETUSERID</strong>(numeric userID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERLEVELINCOURSE()"><!-- --></a>
+	<h3>
+		SETUSERLEVELINCOURSE 
+	</h3>
+
+	<kbd>public <a href="../../../../../../core/modules/survey/model/survey/take/surveytake.html" title="class in core.modules.survey.model.survey.take">surveytake</a> <strong>SETUSERLEVELINCOURSE</strong>(numeric userLevelInCourse)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userLevelInCourse</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

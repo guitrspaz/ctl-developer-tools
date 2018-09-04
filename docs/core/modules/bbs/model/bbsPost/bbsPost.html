@@ -1,0 +1,1626 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>bbsPost</title>
+	<meta name="keywords" content="core.modules.bbs.model.bbsPost.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/bbs/model/bbsPost/bbsPost.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.bbs.model.bbsPost"><span class="label label-success">core.modules.bbs.model.bbsPost</span></a>
+</div>
+
+<h2>
+
+Class
+bbsPost</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/bbs/model/tools/bean.html" title="class in core.modules.bbs.model.tools">core.modules.bbs.model.tools.bean</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.bbs.model.bbsPost.bbsPost
+</pre>
+
+
+
+<div id="class-hint">
+	<p>A bean which models the bbsPost form.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: bbsPost 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="bbsPost.html#init()">init</A></strong>([numeric bbsPostID='0'], [numeric offeringID='0'], [numeric bbsTopicID='0'], [numeric parentPostID='0'], [date createdOn='[runtime expression]'], [numeric createdBy='0'], [string createdByName=''], [string bbsPostName=''], [numeric lastEditedBy='0'], [string lastEditedByName=''], [date lastEditedOn='[runtime expression]'], [string importantMessage=''], [numeric importantBy='0'], [string importantByName=''], [boolean isDeleted='0'], [numeric deletedBy='0'], [string deletedByName=''], [date deletedOn='[runtime expression]'], [string bbsPostContent=''], [array childPosts='[runtime expression]'], [boolean hasAttachments='0'], [any attachments=''], [any agreements=''])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getAgreements()">getAgreements</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getAttachments()">getAttachments</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getBbsPostContent()">getBbsPostContent</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getBbsPostID()">getBbsPostID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getBbsPostName()">getBbsPostName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getBbsTopicID()">getBbsTopicID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getChildPosts()">getChildPosts</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getCreatedBy()">getCreatedBy</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getCreatedOn()">getCreatedOn</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getDeletedBy()">getDeletedBy</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getDeletedByName()">getDeletedByName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getDeletedOn()">getDeletedOn</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getHasAttachments()">getHasAttachments</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getImportantBy()">getImportantBy</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getImportantByName()">getImportantByName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getImportantMessage()">getImportantMessage</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getIsDeleted()">getIsDeleted</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getLastEditedBy()">getLastEditedBy</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getLastEditedOn()">getLastEditedOn</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getOfferingID()">getOfferingID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getParentPostID()">getParentPostID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getcreatedByName()">getcreatedByName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#getlastEditedByName()">getlastEditedByName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setAgreements()">setAgreements</A></strong>(any Agreements)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setAttachments()">setAttachments</A></strong>(any Attachments)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setBbsPostContent()">setBbsPostContent</A></strong>(string bbsPostContent)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setBbsPostID()">setBbsPostID</A></strong>(numeric bbsPostID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setBbsPostName()">setBbsPostName</A></strong>(string bbsPostName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setBbsTopicID()">setBbsTopicID</A></strong>(numeric bbsTopicID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setChildPosts()">setChildPosts</A></strong>(array childPosts)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setCreatedBy()">setCreatedBy</A></strong>(numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setCreatedOn()">setCreatedOn</A></strong>(date createdOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setDeletedBy()">setDeletedBy</A></strong>(numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setDeletedByName()">setDeletedByName</A></strong>(string deletedByName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setDeletedOn()">setDeletedOn</A></strong>(date deletedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setHasAttachments()">setHasAttachments</A></strong>(boolean HasAttachments)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setImportantBy()">setImportantBy</A></strong>(any importantBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setImportantByName()">setImportantByName</A></strong>(string importantByName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setImportantMessage()">setImportantMessage</A></strong>(string importantMessage)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setIsDeleted()">setIsDeleted</A></strong>(boolean isDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setLastEditedBy()">setLastEditedBy</A></strong>(numeric lastEditedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setLastEditedOn()">setLastEditedOn</A></strong>(date lastEditedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setOfferingID()">setOfferingID</A></strong>(numeric OfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setParentPostID()">setParentPostID</A></strong>(numeric parentPostID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setcreatedByName()">setcreatedByName</A></strong>(string createdByName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="bbsPost.html#setlastEditedByName()">setlastEditedByName</A></strong>(string lastEditedByName)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.bbs.model.tools.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/bbs/model/tools/bean.html" title="class in core.modules.bbs.model.tools">core.modules.bbs.model.tools.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/bbs/model/tools/bean.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../core/modules/bbs/model/tools/bean.html#getSnapShot_old()">getSnapShot_old</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric bbsPostID='0'], [numeric offeringID='0'], [numeric bbsTopicID='0'], [numeric parentPostID='0'], [date createdOn='[runtime expression]'], [numeric createdBy='0'], [string createdByName=''], [string bbsPostName=''], [numeric lastEditedBy='0'], [string lastEditedByName=''], [date lastEditedOn='[runtime expression]'], [string importantMessage=''], [numeric importantBy='0'], [string importantByName=''], [boolean isDeleted='0'], [numeric deletedBy='0'], [string deletedByName=''], [date deletedOn='[runtime expression]'], [string bbsPostContent=''], [array childPosts='[runtime expression]'], [boolean hasAttachments='0'], [any attachments=''], [any agreements=''])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>bbsPostID</code></dd>
+		
+			<dd><code>offeringID</code></dd>
+		
+			<dd><code>bbsTopicID</code></dd>
+		
+			<dd><code>parentPostID</code></dd>
+		
+			<dd><code>createdOn</code></dd>
+		
+			<dd><code>createdBy</code></dd>
+		
+			<dd><code>createdByName</code></dd>
+		
+			<dd><code>bbsPostName</code></dd>
+		
+			<dd><code>lastEditedBy</code></dd>
+		
+			<dd><code>lastEditedByName</code></dd>
+		
+			<dd><code>lastEditedOn</code></dd>
+		
+			<dd><code>importantMessage</code></dd>
+		
+			<dd><code>importantBy</code></dd>
+		
+			<dd><code>importantByName</code></dd>
+		
+			<dd><code>isDeleted</code></dd>
+		
+			<dd><code>deletedBy</code></dd>
+		
+			<dd><code>deletedByName</code></dd>
+		
+			<dd><code>deletedOn</code></dd>
+		
+			<dd><code>bbsPostContent</code></dd>
+		
+			<dd><code>childPosts</code></dd>
+		
+			<dd><code>hasAttachments</code></dd>
+		
+			<dd><code>attachments</code></dd>
+		
+			<dd><code>agreements</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="getAgreements()"><!-- --></a>
+	<h3>
+		getAgreements 
+	</h3>
+
+	<kbd>public any <strong>getAgreements</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAttachments()"><!-- --></a>
+	<h3>
+		getAttachments 
+	</h3>
+
+	<kbd>public any <strong>getAttachments</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsPostContent()"><!-- --></a>
+	<h3>
+		getBbsPostContent 
+	</h3>
+
+	<kbd>public string <strong>getBbsPostContent</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsPostID()"><!-- --></a>
+	<h3>
+		getBbsPostID 
+	</h3>
+
+	<kbd>public numeric <strong>getBbsPostID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsPostName()"><!-- --></a>
+	<h3>
+		getBbsPostName 
+	</h3>
+
+	<kbd>public string <strong>getBbsPostName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBbsTopicID()"><!-- --></a>
+	<h3>
+		getBbsTopicID 
+	</h3>
+
+	<kbd>public numeric <strong>getBbsTopicID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getChildPosts()"><!-- --></a>
+	<h3>
+		getChildPosts 
+	</h3>
+
+	<kbd>public array <strong>getChildPosts</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCreatedBy()"><!-- --></a>
+	<h3>
+		getCreatedBy 
+	</h3>
+
+	<kbd>public numeric <strong>getCreatedBy</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCreatedOn()"><!-- --></a>
+	<h3>
+		getCreatedOn 
+	</h3>
+
+	<kbd>public date <strong>getCreatedOn</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDeletedBy()"><!-- --></a>
+	<h3>
+		getDeletedBy 
+	</h3>
+
+	<kbd>public numeric <strong>getDeletedBy</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDeletedByName()"><!-- --></a>
+	<h3>
+		getDeletedByName 
+	</h3>
+
+	<kbd>public string <strong>getDeletedByName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDeletedOn()"><!-- --></a>
+	<h3>
+		getDeletedOn 
+	</h3>
+
+	<kbd>public date <strong>getDeletedOn</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getHasAttachments()"><!-- --></a>
+	<h3>
+		getHasAttachments 
+	</h3>
+
+	<kbd>public boolean <strong>getHasAttachments</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getImportantBy()"><!-- --></a>
+	<h3>
+		getImportantBy 
+	</h3>
+
+	<kbd>public any <strong>getImportantBy</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getImportantByName()"><!-- --></a>
+	<h3>
+		getImportantByName 
+	</h3>
+
+	<kbd>public string <strong>getImportantByName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getImportantMessage()"><!-- --></a>
+	<h3>
+		getImportantMessage 
+	</h3>
+
+	<kbd>public string <strong>getImportantMessage</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsDeleted()"><!-- --></a>
+	<h3>
+		getIsDeleted 
+	</h3>
+
+	<kbd>public boolean <strong>getIsDeleted</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLastEditedBy()"><!-- --></a>
+	<h3>
+		getLastEditedBy 
+	</h3>
+
+	<kbd>public numeric <strong>getLastEditedBy</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLastEditedOn()"><!-- --></a>
+	<h3>
+		getLastEditedOn 
+	</h3>
+
+	<kbd>public date <strong>getLastEditedOn</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOfferingID()"><!-- --></a>
+	<h3>
+		getOfferingID 
+	</h3>
+
+	<kbd>public numeric <strong>getOfferingID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getParentPostID()"><!-- --></a>
+	<h3>
+		getParentPostID 
+	</h3>
+
+	<kbd>public numeric <strong>getParentPostID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getcreatedByName()"><!-- --></a>
+	<h3>
+		getcreatedByName 
+	</h3>
+
+	<kbd>public string <strong>getcreatedByName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getlastEditedByName()"><!-- --></a>
+	<h3>
+		getlastEditedByName 
+	</h3>
+
+	<kbd>public string <strong>getlastEditedByName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAgreements()"><!-- --></a>
+	<h3>
+		setAgreements 
+	</h3>
+
+	<kbd>public void <strong>setAgreements</strong>(any Agreements)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Agreements</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAttachments()"><!-- --></a>
+	<h3>
+		setAttachments 
+	</h3>
+
+	<kbd>public void <strong>setAttachments</strong>(any Attachments)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Attachments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsPostContent()"><!-- --></a>
+	<h3>
+		setBbsPostContent 
+	</h3>
+
+	<kbd>public void <strong>setBbsPostContent</strong>(string bbsPostContent)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsPostContent</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsPostID()"><!-- --></a>
+	<h3>
+		setBbsPostID 
+	</h3>
+
+	<kbd>public void <strong>setBbsPostID</strong>(numeric bbsPostID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsPostID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsPostName()"><!-- --></a>
+	<h3>
+		setBbsPostName 
+	</h3>
+
+	<kbd>public void <strong>setBbsPostName</strong>(string bbsPostName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsPostName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setBbsTopicID()"><!-- --></a>
+	<h3>
+		setBbsTopicID 
+	</h3>
+
+	<kbd>public void <strong>setBbsTopicID</strong>(numeric bbsTopicID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bbsTopicID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setChildPosts()"><!-- --></a>
+	<h3>
+		setChildPosts 
+	</h3>
+
+	<kbd>public void <strong>setChildPosts</strong>(array childPosts)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>childPosts</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCreatedBy()"><!-- --></a>
+	<h3>
+		setCreatedBy 
+	</h3>
+
+	<kbd>public void <strong>setCreatedBy</strong>(numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCreatedOn()"><!-- --></a>
+	<h3>
+		setCreatedOn 
+	</h3>
+
+	<kbd>public void <strong>setCreatedOn</strong>(date createdOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setDeletedBy()"><!-- --></a>
+	<h3>
+		setDeletedBy 
+	</h3>
+
+	<kbd>public void <strong>setDeletedBy</strong>(numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setDeletedByName()"><!-- --></a>
+	<h3>
+		setDeletedByName 
+	</h3>
+
+	<kbd>public void <strong>setDeletedByName</strong>(string deletedByName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>deletedByName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setDeletedOn()"><!-- --></a>
+	<h3>
+		setDeletedOn 
+	</h3>
+
+	<kbd>public void <strong>setDeletedOn</strong>(date deletedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>deletedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setHasAttachments()"><!-- --></a>
+	<h3>
+		setHasAttachments 
+	</h3>
+
+	<kbd>public void <strong>setHasAttachments</strong>(boolean HasAttachments)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>HasAttachments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setImportantBy()"><!-- --></a>
+	<h3>
+		setImportantBy 
+	</h3>
+
+	<kbd>public void <strong>setImportantBy</strong>(any importantBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>importantBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setImportantByName()"><!-- --></a>
+	<h3>
+		setImportantByName 
+	</h3>
+
+	<kbd>public void <strong>setImportantByName</strong>(string importantByName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>importantByName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setImportantMessage()"><!-- --></a>
+	<h3>
+		setImportantMessage 
+	</h3>
+
+	<kbd>public void <strong>setImportantMessage</strong>(string importantMessage)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>importantMessage</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsDeleted()"><!-- --></a>
+	<h3>
+		setIsDeleted 
+	</h3>
+
+	<kbd>public void <strong>setIsDeleted</strong>(boolean isDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setLastEditedBy()"><!-- --></a>
+	<h3>
+		setLastEditedBy 
+	</h3>
+
+	<kbd>public void <strong>setLastEditedBy</strong>(numeric lastEditedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lastEditedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setLastEditedOn()"><!-- --></a>
+	<h3>
+		setLastEditedOn 
+	</h3>
+
+	<kbd>public void <strong>setLastEditedOn</strong>(date lastEditedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lastEditedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setOfferingID()"><!-- --></a>
+	<h3>
+		setOfferingID 
+	</h3>
+
+	<kbd>public void <strong>setOfferingID</strong>(numeric OfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>OfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setParentPostID()"><!-- --></a>
+	<h3>
+		setParentPostID 
+	</h3>
+
+	<kbd>public void <strong>setParentPostID</strong>(numeric parentPostID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>parentPostID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcreatedByName()"><!-- --></a>
+	<h3>
+		setcreatedByName 
+	</h3>
+
+	<kbd>public void <strong>setcreatedByName</strong>(string createdByName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>createdByName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setlastEditedByName()"><!-- --></a>
+	<h3>
+		setlastEditedByName 
+	</h3>
+
+	<kbd>public void <strong>setlastEditedByName</strong>(string lastEditedByName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lastEditedByName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

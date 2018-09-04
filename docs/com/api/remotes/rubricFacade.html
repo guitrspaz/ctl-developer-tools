@@ -1,0 +1,5996 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>rubricFacade</title>
+	<meta name="keywords" content="com.api.remotes.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../index.html?com/api/remotes/rubricFacade.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.api.remotes"><span class="label label-success">com.api.remotes</span></a>
+</div>
+
+<h2>
+
+Class
+rubricFacade</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../resources/inherit.gif" alt="extended by ">com.api.remotes.rubricFacade
+</pre>
+
+
+
+<div id="class-hint">
+	<p>Abstract Base Class for Aop Based Remote Proxy Beans</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: rubricFacade:RemoteProxyBean 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#ArrayJoin()">ArrayJoin</A></strong>(Array base, Array addOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#ArrayOfStructSort()">ArrayOfStructSort</A></strong>(Array base, [String sortType='text'], [String sortOrder='ASC'], [String pathToSubElement=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETBASECLASS()">GETBASECLASS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETBLUEPRINTS()">GETBLUEPRINTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCACHENAME()">GETCACHENAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCACHEREGION()">GETCACHEREGION</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCACHESCOPES()">GETCACHESCOPES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCACHETYPES()">GETCACHETYPES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCALLER()">GETCALLER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCATALOGDSN()">GETCATALOGDSN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCHILD()">GETCHILD</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCOMPAREDATE()">GETCOMPAREDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETCTLEMAIL()">GETCTLEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETDEBUGMODE()">GETDEBUGMODE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETDEFAULTDATE()">GETDEFAULTDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETDEFAULTLOG()">GETDEFAULTLOG</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETDSN()">GETDSN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETFILEPATH()">GETFILEPATH</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETHASH()">GETHASH</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETKEY()">GETKEY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETLOADED()">GETLOADED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETMODULENAME()">GETMODULENAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETMODULEPREFIX()">GETMODULEPREFIX</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETMODULEROOT()">GETMODULEROOT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETMODULEVERSION()">GETMODULEVERSION</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETPARAMALIASES()">GETPARAMALIASES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETRUBRICMANAGER()">GETRUBRICMANAGER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETSHAREDCACHE()">GETSHAREDCACHE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETSIMPSONLOC()">GETSIMPSONLOC</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#GETSYSTEMUSER()">GETSYSTEMUSER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#Merge()">Merge</A></strong>(Array leftArray, Array rightArray, Any key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#MergeSort()">MergeSort</A></strong>(Array Arr, Any key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#QueryToArray()">QueryToArray</A></strong>(Query qry, [Array rowRange])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</A></strong>(Struct appCacheRegions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETBASECLASS()">SETBASECLASS</A></strong>(string baseClass)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETBLUEPRINTS()">SETBLUEPRINTS</A></strong>(struct blueprints)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCACHENAME()">SETCACHENAME</A></strong>(String cacheName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCACHEREGION()">SETCACHEREGION</A></strong>(String cacheRegion)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCACHESCOPES()">SETCACHESCOPES</A></strong>(Array cacheScopes)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCACHETYPES()">SETCACHETYPES</A></strong>(Struct cacheTypes)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCALLER()">SETCALLER</A></strong>(String caller)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCATALOGDSN()">SETCATALOGDSN</A></strong>(string catalogDSN)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCHILD()">SETCHILD</A></strong>(Struct child)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCOMPAREDATE()">SETCOMPAREDATE</A></strong>(Date compareDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</A></strong>(Date configuredAt)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETCTLEMAIL()">SETCTLEMAIL</A></strong>(String ctlemail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETDEBUGMODE()">SETDEBUGMODE</A></strong>(Boolean debugMode)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETDEFAULTDATE()">SETDEFAULTDATE</A></strong>(Date defaultDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETDEFAULTLOG()">SETDEFAULTLOG</A></strong>(String defaultLog)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</A></strong>(String developerEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETDSN()">SETDSN</A></strong>(string dsn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</A></strong>(array extendedInclusions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETFILEPATH()">SETFILEPATH</A></strong>(string filePath)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETHASH()">SETHASH</A></strong>(String hash)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETKEY()">SETKEY</A></strong>(string key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</A></strong>(Array knownLocalCacheRegions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</A></strong>(Array knownSharedCacheRegions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETLOADED()">SETLOADED</A></strong>(Boolean loaded)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETMODULENAME()">SETMODULENAME</A></strong>(string moduleName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETMODULEPREFIX()">SETMODULEPREFIX</A></strong>(string modulePrefix)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETMODULEROOT()">SETMODULEROOT</A></strong>(string moduleRoot)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETMODULEVERSION()">SETMODULEVERSION</A></strong>(string moduleVersion)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETPARAMALIASES()">SETPARAMALIASES</A></strong>(Struct paramAliases)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETRUBRICMANAGER()">SETRUBRICMANAGER</A></strong>(any rubricManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETSHAREDCACHE()">SETSHAREDCACHE</A></strong>(Boolean sharedCache)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETSIMPSONLOC()">SETSIMPSONLOC</A></strong>(string simpsonLoc)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</A></strong>(String supportEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#SETSYSTEMUSER()">SETSYSTEMUSER</A></strong>(Numeric systemUser)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#aggregateDefineableProperties()">aggregateDefineableProperties</A></strong>([Struct metaData='[runtime expression]'], [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Struct defineableProperties='[runtime expression]'], [Array definedKeys], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#appendAttrs()">appendAttrs</A></strong>(xml node, String attrName, Any attrVal)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#arrayToStruct()">arrayToStruct</A></strong>(Array a)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#buildBaseXml()">buildBaseXml</A></strong>(String rootNode, Struct attributes)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#calculateAverage()">calculateAverage</A></strong>(Numeric questionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#calculateMedian()">calculateMedian</A></strong>(Numeric questionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#callMethod()">callMethod</A></strong>(string methodName, struct args)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#checkForPrototype()">checkForPrototype</A></strong>([any n])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#clearCaches()">clearCaches</A></strong>([Array cacheScopes='[runtime expression]'], [Array types='[runtime expression]'], [Struct params='[runtime expression]'], [Boolean isGlobal='0'], [Boolean restrictedGlobal='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configure()">configure</A></strong>([String cacheName='serviceObject'], [Struct paramAliases='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configureAppCacheRegions()">configureAppCacheRegions</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configureCPObject()">configureCPObject</A></strong>([Boolean sharedCache])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configureCacheRegion()">configureCacheRegion</A></strong>([Boolean sharedCache='false'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configureFacade()">configureFacade</A></strong>([String cacheName], [Boolean sharedCache='false'], [String cacheRegion], [Array cacheScopes], [Struct cacheTypes], [String caller='[runtime expression]'], [String catalogDSN], [Struct child='[runtime expression]'], [Date compareDate='[runtime expression]'], [Boolean debugMode='false'], [String defaultLog='api'], [Date defaultDate='[runtime expression]'], [String dsn], [String key], [Struct paramAliases], [String simpsonLoc], [String supportEmail])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configureModuleCacheRegion()">configureModuleCacheRegion</A></strong>([String cacheRegion=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#configureParamAliases()">configureParamAliases</A></strong>([Struct aliases='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#countRubricQuestions()">countRubricQuestions</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#createLog()">createLog</A></strong>([String logName='[runtime expression]'], String functName, [String moduleName], [Struct args='[runtime expression]'], [Struct jsonStruct='[runtime expression]'], [String message], [String logType='information'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#createRubricFromTemplate()">createRubricFromTemplate</A></strong>(Numeric courseOfferingID, Numeric itemID, [Numeric sourceRubricID='0'], [Numeric sourceSetupID='0'], [String rubricTitle=''], [Numeric userID='3562'], [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#deleteRubric()">deleteRubric</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#doLogging()">doLogging</A></strong>([Struct altLogs='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#existsInPackages()">existsInPackages</A></strong>(String objectClass, [Array packages='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#filterIsBasic()">filterIsBasic</A></strong>(String key, Any value, [Array forceIncludeKeys='[runtime expression]'], [Array forceExcludeKeys='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#filterProperties()">filterProperties</A></strong>(Struct propertyData, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#filterStudents()">filterStudents</A></strong>(Query fullEnrollment, [Numeric minUserLevel='500'], [Numeric maxUserLevel='599'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#findArrayItemsInString()">findArrayItemsInString</A></strong>(Array arr, String st)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#findPluralName()">findPluralName</A></strong>(String name, [Boolean hasPlural='false'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</A></strong>(Struct cacheData)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#formatParams()">formatParams</A></strong>(Array i, Struct p)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getBeanDefinitions()">getBeanDefinitions</A></strong>(Coldspring.beans.BeanFactory serviceFactory)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getHashedReportFileName()">getHashedReportFileName</A></strong>([Array identifiers='[runtime expression]'], [String encoding='SHA'], [String prefix='pe-'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getMostChosenAssessmentAnswer()">getMostChosenAssessmentAnswer</A></strong>(Numeric questionID, [Numeric ownerID='0'], [Numeric ownerGroupID='0'], [Numeric evaluatorID='0'], [Numeric evaluatorGroupID='0'], [Boolean format='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getObjectAsStructure()">getObjectAsStructure</A></strong>([Array includeParents], [Numeric currentLevel], [Array extendedInclusions], [Boolean throwOnError])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getOfferingEnrollment()">getOfferingEnrollment</A></strong>(Numeric courseOfferingID, [String format='query'], [Boolean randomize='false'], [Query enrollmentQuery], [Any myCoursesInterface])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getRubricFromOldRubricID()">getRubricFromOldRubricID</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getRubricIDFromItemID()">getRubricIDFromItemID</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getRubricIDFromOldRubricID()">getRubricIDFromOldRubricID</A></strong>(Numeric rubricID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getRubricKeys()">getRubricKeys</A></strong>(Numeric courseOfferingID, [Numeric itemID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getRubricsForOffering()">getRubricsForOffering</A></strong>(Numeric courseOfferingID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getSetups()">getSetups</A></strong>([Numeric setupID='0'], Numeric courseOfferingID, Numeric itemID, [Numeric rubricID='0'], [Numeric max='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getSnapShot()">getSnapShot</A></strong>([Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#getStackTrace()">getStackTrace</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#handleFormArray()">handleFormArray</A></strong>(Any formArray='[runtime expression]')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#hasConfigure()">hasConfigure</A></strong>([any obj])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#importComplexProperty()">importComplexProperty</A></strong>([Any complexProperty], [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#importNodes()">importNodes</A></strong>(xml doc, Any children, [Struct attrs='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#importObject()">importObject</A></strong>(Any obj, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#importRubricQuestionsFromTemplate()">importRubricQuestionsFromTemplate</A></strong>(Numeric courseOfferingID, [Numeric sourceRubricID='0'], [Numeric sourceSetupID='0'], <a href="../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#initAppCacheRegions()">initAppCacheRegions</A></strong>([Struct child='[runtime expression]'], [String caller='com.distance.base.coursePlusObject'], [Struct props])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#isUnique()">isUnique</A></strong>(Any source, String key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#loadCacheRegions()">loadCacheRegions</A></strong>([String sharedRegion=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#logInit()">logInit</A></strong>(String logName, [Boolean trace='false'], [Struct extendedInfo='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#makeBlueprint()">makeBlueprint</A></strong>(String objectClass, [any includeParents='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#makeFunctName()">makeFunctName</A></strong>(String functName, String objName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#makeSlug()">makeSlug</A></strong>([String title=''], [String divider='-'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#manageDecimals()">manageDecimals</A></strong>(Any num, [Numeric decimals='4'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#mergeCacheTypes()">mergeCacheTypes</A></strong>([Struct g='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#objectToStruct()">objectToStruct</A></strong>(Any obj, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#paraFormat()">paraFormat</A></strong>(String unformattedText, [String class=''], [String flag=''], [Boolean stripflag='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#propertyCallback()">propertyCallback</A></strong>(String key, Any value, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</A></strong>(Array metaProps, String objectName, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean accessors='false'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</A></strong>(Array objects)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#queryRowToStruct()">queryRowToStruct</A></strong>(Query qry, [any row='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#randomizeKeys()">randomizeKeys</A></strong>([String keyList=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readExistingCacheRegions()">readExistingCacheRegions</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readRubric()">readRubric</A></strong>(Numeric rubricID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readRubricAnswer()">readRubricAnswer</A></strong>(Numeric answerID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readRubricAnswers()">readRubricAnswers</A></strong>(Numeric questionID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readRubricQuestion()">readRubricQuestion</A></strong>(Numeric questionID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readRubricQuestions()">readRubricQuestions</A></strong>(Numeric rubricID, [Boolean returnAnswers='1'], [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#readRubrics()">readRubrics</A></strong>([Numeric rubricID='0'], [Numeric itemID='0'], Numeric courseOfferingID, [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#reorderRubrics()">reorderRubrics</A></strong>([String rubricKeys=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</A></strong>(String str)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnAppCacheRegions()">returnAppCacheRegions</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnCacheName()">returnCacheName</A></strong>(String prefix, [String type='bean'], [Struct params='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnCacheRegion()">returnCacheRegion</A></strong>([Boolean sharedCache='false'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnCompareDate()">returnCompareDate</A></strong>([Date compareDate='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnDefaultDate()">returnDefaultDate</A></strong>([Date defaultDate='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnNull()">returnNull</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnProperties()">returnProperties</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnRubricAsJSON()">returnRubricAsJSON</A></strong>([Numeric userID='3562'], Numeric courseOfferingID, <a href="../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [Boolean isSystemTemplate='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnService()">returnService</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnStructModel()">returnStructModel</A></strong>(String modelName, Struct params)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#returnTypeDefault()">returnTypeDefault</A></strong>(String type)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#reverseStruct()">reverseStruct</A></strong>(Struct structObj)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#saveRubric()">saveRubric</A></strong>(Numeric coID, Numeric itemID, [Numeric rubricID='0'], [Numeric userID='3562'], [Struct formData='[runtime expression]'], [String formFieldnames=''], [String format='object'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#sendToDeveloper()">sendToDeveloper</A></strong>([String subject='Send To Developer'], [Array params='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#setup()">setup</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#stringToAscii()">stringToAscii</A></strong>([String str=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#stripHTML()">stripHTML</A></strong>(String unformattedText)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#structToArray()">structToArray</A></strong>(Struct s)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#toNativeFormat()">toNativeFormat</A></strong>([String format='struct'], [Struct model='[runtime expression]'], [Any obj])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#toStruct()">toStruct</A></strong>([Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</A></strong>(String url, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#updateRubric()">updateRubric</A></strong>([Numeric userID='3562'], [Boolean cascade='0'], <a href="../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [Boolean isSystemTemplate='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#updateRubricChoiceData()">updateRubricChoiceData</A></strong>(Numeric rubricID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#updateRubricData()">updateRubricData</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#validateProperty()">validateProperty</A></strong>(String propertyName, String objectName, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#wordCount()">wordCount</A></strong>([any wordsToCount])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#xmlExtractChildren()">xmlExtractChildren</A></strong>(Any objectKey, Any objectValue)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#xmlNodeToStruct()">xmlNodeToStruct</A></strong>(any xmlObject)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#xmlObjectToStruct()">xmlObjectToStruct</A></strong>(xml xmlObject, [Struct blueprints='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#zeroCallback()">zeroCallback</A></strong>([Any obj], [String key], [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="rubricFacade.html#zeroOut()">zeroOut</A></strong>(Any obj, [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'], [Boolean throwOnError='false'])
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="ArrayJoin()"><!-- --></a>
+	<h3>
+		ArrayJoin 
+	</h3>
+
+	<kbd>remote any <strong>ArrayJoin</strong>(Array base, Array addOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>base</code></dd>
+		
+		<dd><code>addOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="ArrayOfStructSort()"><!-- --></a>
+	<h3>
+		ArrayOfStructSort 
+	</h3>
+
+	<kbd>remote any <strong>ArrayOfStructSort</strong>(Array base, [String sortType='text'], [String sortOrder='ASC'], [String pathToSubElement=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>base</code></dd>
+		
+		<dd><code>sortType</code></dd>
+		
+		<dd><code>sortOrder</code></dd>
+		
+		<dd><code>pathToSubElement</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETAPPCACHEREGIONS()"><!-- --></a>
+	<h3>
+		GETAPPCACHEREGIONS 
+	</h3>
+
+	<kbd>remote any <strong>GETAPPCACHEREGIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETBASECLASS()"><!-- --></a>
+	<h3>
+		GETBASECLASS 
+	</h3>
+
+	<kbd>remote any <strong>GETBASECLASS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETBLUEPRINTS()"><!-- --></a>
+	<h3>
+		GETBLUEPRINTS 
+	</h3>
+
+	<kbd>remote any <strong>GETBLUEPRINTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCACHENAME()"><!-- --></a>
+	<h3>
+		GETCACHENAME 
+	</h3>
+
+	<kbd>remote any <strong>GETCACHENAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCACHEREGION()"><!-- --></a>
+	<h3>
+		GETCACHEREGION 
+	</h3>
+
+	<kbd>remote any <strong>GETCACHEREGION</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCACHESCOPES()"><!-- --></a>
+	<h3>
+		GETCACHESCOPES 
+	</h3>
+
+	<kbd>remote any <strong>GETCACHESCOPES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCACHETYPES()"><!-- --></a>
+	<h3>
+		GETCACHETYPES 
+	</h3>
+
+	<kbd>remote any <strong>GETCACHETYPES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCALLER()"><!-- --></a>
+	<h3>
+		GETCALLER 
+	</h3>
+
+	<kbd>remote any <strong>GETCALLER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCATALOGDSN()"><!-- --></a>
+	<h3>
+		GETCATALOGDSN 
+	</h3>
+
+	<kbd>remote any <strong>GETCATALOGDSN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCHILD()"><!-- --></a>
+	<h3>
+		GETCHILD 
+	</h3>
+
+	<kbd>remote any <strong>GETCHILD</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOMPAREDATE()"><!-- --></a>
+	<h3>
+		GETCOMPAREDATE 
+	</h3>
+
+	<kbd>remote any <strong>GETCOMPAREDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCONFIGUREDAT()"><!-- --></a>
+	<h3>
+		GETCONFIGUREDAT 
+	</h3>
+
+	<kbd>remote any <strong>GETCONFIGUREDAT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCTLEMAIL()"><!-- --></a>
+	<h3>
+		GETCTLEMAIL 
+	</h3>
+
+	<kbd>remote any <strong>GETCTLEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEBUGMODE()"><!-- --></a>
+	<h3>
+		GETDEBUGMODE 
+	</h3>
+
+	<kbd>remote any <strong>GETDEBUGMODE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEFAULTDATE()"><!-- --></a>
+	<h3>
+		GETDEFAULTDATE 
+	</h3>
+
+	<kbd>remote any <strong>GETDEFAULTDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEFAULTLOG()"><!-- --></a>
+	<h3>
+		GETDEFAULTLOG 
+	</h3>
+
+	<kbd>remote any <strong>GETDEFAULTLOG</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEVELOPEREMAIL()"><!-- --></a>
+	<h3>
+		GETDEVELOPEREMAIL 
+	</h3>
+
+	<kbd>remote any <strong>GETDEVELOPEREMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDSN()"><!-- --></a>
+	<h3>
+		GETDSN 
+	</h3>
+
+	<kbd>remote any <strong>GETDSN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETEXTENDEDINCLUSIONS()"><!-- --></a>
+	<h3>
+		GETEXTENDEDINCLUSIONS 
+	</h3>
+
+	<kbd>remote any <strong>GETEXTENDEDINCLUSIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFILEPATH()"><!-- --></a>
+	<h3>
+		GETFILEPATH 
+	</h3>
+
+	<kbd>remote any <strong>GETFILEPATH</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETHASH()"><!-- --></a>
+	<h3>
+		GETHASH 
+	</h3>
+
+	<kbd>remote any <strong>GETHASH</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETKEY()"><!-- --></a>
+	<h3>
+		GETKEY 
+	</h3>
+
+	<kbd>remote any <strong>GETKEY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETKNOWNLOCALCACHEREGIONS()"><!-- --></a>
+	<h3>
+		GETKNOWNLOCALCACHEREGIONS 
+	</h3>
+
+	<kbd>remote any <strong>GETKNOWNLOCALCACHEREGIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETKNOWNSHAREDCACHEREGIONS()"><!-- --></a>
+	<h3>
+		GETKNOWNSHAREDCACHEREGIONS 
+	</h3>
+
+	<kbd>remote any <strong>GETKNOWNSHAREDCACHEREGIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETLOADED()"><!-- --></a>
+	<h3>
+		GETLOADED 
+	</h3>
+
+	<kbd>remote any <strong>GETLOADED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODULENAME()"><!-- --></a>
+	<h3>
+		GETMODULENAME 
+	</h3>
+
+	<kbd>remote any <strong>GETMODULENAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODULEPREFIX()"><!-- --></a>
+	<h3>
+		GETMODULEPREFIX 
+	</h3>
+
+	<kbd>remote any <strong>GETMODULEPREFIX</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODULEROOT()"><!-- --></a>
+	<h3>
+		GETMODULEROOT 
+	</h3>
+
+	<kbd>remote any <strong>GETMODULEROOT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMODULEVERSION()"><!-- --></a>
+	<h3>
+		GETMODULEVERSION 
+	</h3>
+
+	<kbd>remote any <strong>GETMODULEVERSION</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPARAMALIASES()"><!-- --></a>
+	<h3>
+		GETPARAMALIASES 
+	</h3>
+
+	<kbd>remote any <strong>GETPARAMALIASES</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRUBRICMANAGER()"><!-- --></a>
+	<h3>
+		GETRUBRICMANAGER 
+	</h3>
+
+	<kbd>remote any <strong>GETRUBRICMANAGER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSHAREDCACHE()"><!-- --></a>
+	<h3>
+		GETSHAREDCACHE 
+	</h3>
+
+	<kbd>remote any <strong>GETSHAREDCACHE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSIMPSONLOC()"><!-- --></a>
+	<h3>
+		GETSIMPSONLOC 
+	</h3>
+
+	<kbd>remote any <strong>GETSIMPSONLOC</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSUPPORTEMAIL()"><!-- --></a>
+	<h3>
+		GETSUPPORTEMAIL 
+	</h3>
+
+	<kbd>remote any <strong>GETSUPPORTEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSYSTEMUSER()"><!-- --></a>
+	<h3>
+		GETSYSTEMUSER 
+	</h3>
+
+	<kbd>remote any <strong>GETSYSTEMUSER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="Merge()"><!-- --></a>
+	<h3>
+		Merge 
+	</h3>
+
+	<kbd>remote any <strong>Merge</strong>(Array leftArray, Array rightArray, Any key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>leftArray</code></dd>
+		
+		<dd><code>rightArray</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="MergeSort()"><!-- --></a>
+	<h3>
+		MergeSort 
+	</h3>
+
+	<kbd>remote any <strong>MergeSort</strong>(Array Arr, Any key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Arr</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="QueryToArray()"><!-- --></a>
+	<h3>
+		QueryToArray 
+	</h3>
+
+	<kbd>remote any <strong>QueryToArray</strong>(Query qry, [Array rowRange])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>qry</code></dd>
+		
+		<dd><code>rowRange</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETAPPCACHEREGIONS()"><!-- --></a>
+	<h3>
+		SETAPPCACHEREGIONS 
+	</h3>
+
+	<kbd>remote any <strong>SETAPPCACHEREGIONS</strong>(Struct appCacheRegions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>appCacheRegions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETBASECLASS()"><!-- --></a>
+	<h3>
+		SETBASECLASS 
+	</h3>
+
+	<kbd>remote any <strong>SETBASECLASS</strong>(string baseClass)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>baseClass</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETBLUEPRINTS()"><!-- --></a>
+	<h3>
+		SETBLUEPRINTS 
+	</h3>
+
+	<kbd>remote any <strong>SETBLUEPRINTS</strong>(struct blueprints)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>blueprints</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCACHENAME()"><!-- --></a>
+	<h3>
+		SETCACHENAME 
+	</h3>
+
+	<kbd>remote any <strong>SETCACHENAME</strong>(String cacheName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCACHEREGION()"><!-- --></a>
+	<h3>
+		SETCACHEREGION 
+	</h3>
+
+	<kbd>remote any <strong>SETCACHEREGION</strong>(String cacheRegion)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheRegion</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCACHESCOPES()"><!-- --></a>
+	<h3>
+		SETCACHESCOPES 
+	</h3>
+
+	<kbd>remote any <strong>SETCACHESCOPES</strong>(Array cacheScopes)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheScopes</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCACHETYPES()"><!-- --></a>
+	<h3>
+		SETCACHETYPES 
+	</h3>
+
+	<kbd>remote any <strong>SETCACHETYPES</strong>(Struct cacheTypes)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheTypes</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCALLER()"><!-- --></a>
+	<h3>
+		SETCALLER 
+	</h3>
+
+	<kbd>remote any <strong>SETCALLER</strong>(String caller)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>caller</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCATALOGDSN()"><!-- --></a>
+	<h3>
+		SETCATALOGDSN 
+	</h3>
+
+	<kbd>remote any <strong>SETCATALOGDSN</strong>(string catalogDSN)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>catalogDSN</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCHILD()"><!-- --></a>
+	<h3>
+		SETCHILD 
+	</h3>
+
+	<kbd>remote any <strong>SETCHILD</strong>(Struct child)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>child</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOMPAREDATE()"><!-- --></a>
+	<h3>
+		SETCOMPAREDATE 
+	</h3>
+
+	<kbd>remote any <strong>SETCOMPAREDATE</strong>(Date compareDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>compareDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCONFIGUREDAT()"><!-- --></a>
+	<h3>
+		SETCONFIGUREDAT 
+	</h3>
+
+	<kbd>remote any <strong>SETCONFIGUREDAT</strong>(Date configuredAt)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>configuredAt</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCTLEMAIL()"><!-- --></a>
+	<h3>
+		SETCTLEMAIL 
+	</h3>
+
+	<kbd>remote any <strong>SETCTLEMAIL</strong>(String ctlemail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ctlemail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEBUGMODE()"><!-- --></a>
+	<h3>
+		SETDEBUGMODE 
+	</h3>
+
+	<kbd>remote any <strong>SETDEBUGMODE</strong>(Boolean debugMode)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>debugMode</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTDATE()"><!-- --></a>
+	<h3>
+		SETDEFAULTDATE 
+	</h3>
+
+	<kbd>remote any <strong>SETDEFAULTDATE</strong>(Date defaultDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTLOG()"><!-- --></a>
+	<h3>
+		SETDEFAULTLOG 
+	</h3>
+
+	<kbd>remote any <strong>SETDEFAULTLOG</strong>(String defaultLog)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultLog</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEVELOPEREMAIL()"><!-- --></a>
+	<h3>
+		SETDEVELOPEREMAIL 
+	</h3>
+
+	<kbd>remote any <strong>SETDEVELOPEREMAIL</strong>(String developerEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>developerEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDSN()"><!-- --></a>
+	<h3>
+		SETDSN 
+	</h3>
+
+	<kbd>remote any <strong>SETDSN</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dsn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETEXTENDEDINCLUSIONS()"><!-- --></a>
+	<h3>
+		SETEXTENDEDINCLUSIONS 
+	</h3>
+
+	<kbd>remote any <strong>SETEXTENDEDINCLUSIONS</strong>(array extendedInclusions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFILEPATH()"><!-- --></a>
+	<h3>
+		SETFILEPATH 
+	</h3>
+
+	<kbd>remote any <strong>SETFILEPATH</strong>(string filePath)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>filePath</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETHASH()"><!-- --></a>
+	<h3>
+		SETHASH 
+	</h3>
+
+	<kbd>remote any <strong>SETHASH</strong>(String hash)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>hash</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETKEY()"><!-- --></a>
+	<h3>
+		SETKEY 
+	</h3>
+
+	<kbd>remote any <strong>SETKEY</strong>(string key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETKNOWNLOCALCACHEREGIONS()"><!-- --></a>
+	<h3>
+		SETKNOWNLOCALCACHEREGIONS 
+	</h3>
+
+	<kbd>remote any <strong>SETKNOWNLOCALCACHEREGIONS</strong>(Array knownLocalCacheRegions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>knownLocalCacheRegions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETKNOWNSHAREDCACHEREGIONS()"><!-- --></a>
+	<h3>
+		SETKNOWNSHAREDCACHEREGIONS 
+	</h3>
+
+	<kbd>remote any <strong>SETKNOWNSHAREDCACHEREGIONS</strong>(Array knownSharedCacheRegions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>knownSharedCacheRegions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETLOADED()"><!-- --></a>
+	<h3>
+		SETLOADED 
+	</h3>
+
+	<kbd>remote any <strong>SETLOADED</strong>(Boolean loaded)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>loaded</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODULENAME()"><!-- --></a>
+	<h3>
+		SETMODULENAME 
+	</h3>
+
+	<kbd>remote any <strong>SETMODULENAME</strong>(string moduleName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>moduleName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODULEPREFIX()"><!-- --></a>
+	<h3>
+		SETMODULEPREFIX 
+	</h3>
+
+	<kbd>remote any <strong>SETMODULEPREFIX</strong>(string modulePrefix)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modulePrefix</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODULEROOT()"><!-- --></a>
+	<h3>
+		SETMODULEROOT 
+	</h3>
+
+	<kbd>remote any <strong>SETMODULEROOT</strong>(string moduleRoot)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>moduleRoot</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMODULEVERSION()"><!-- --></a>
+	<h3>
+		SETMODULEVERSION 
+	</h3>
+
+	<kbd>remote any <strong>SETMODULEVERSION</strong>(string moduleVersion)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>moduleVersion</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPARAMALIASES()"><!-- --></a>
+	<h3>
+		SETPARAMALIASES 
+	</h3>
+
+	<kbd>remote any <strong>SETPARAMALIASES</strong>(Struct paramAliases)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>paramAliases</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRUBRICMANAGER()"><!-- --></a>
+	<h3>
+		SETRUBRICMANAGER 
+	</h3>
+
+	<kbd>remote any <strong>SETRUBRICMANAGER</strong>(any rubricManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSHAREDCACHE()"><!-- --></a>
+	<h3>
+		SETSHAREDCACHE 
+	</h3>
+
+	<kbd>remote any <strong>SETSHAREDCACHE</strong>(Boolean sharedCache)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sharedCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSIMPSONLOC()"><!-- --></a>
+	<h3>
+		SETSIMPSONLOC 
+	</h3>
+
+	<kbd>remote any <strong>SETSIMPSONLOC</strong>(string simpsonLoc)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>simpsonLoc</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSUPPORTEMAIL()"><!-- --></a>
+	<h3>
+		SETSUPPORTEMAIL 
+	</h3>
+
+	<kbd>remote any <strong>SETSUPPORTEMAIL</strong>(String supportEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>supportEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSYSTEMUSER()"><!-- --></a>
+	<h3>
+		SETSYSTEMUSER 
+	</h3>
+
+	<kbd>remote any <strong>SETSYSTEMUSER</strong>(Numeric systemUser)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>systemUser</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="aggregateDefineableProperties()"><!-- --></a>
+	<h3>
+		aggregateDefineableProperties 
+	</h3>
+
+	<kbd>remote any <strong>aggregateDefineableProperties</strong>([Struct metaData='[runtime expression]'], [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Struct defineableProperties='[runtime expression]'], [Array definedKeys], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>metaData</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>defineableProperties</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="appendAttrs()"><!-- --></a>
+	<h3>
+		appendAttrs 
+	</h3>
+
+	<kbd>remote any <strong>appendAttrs</strong>(xml node, String attrName, Any attrVal)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>node</code></dd>
+		
+		<dd><code>attrName</code></dd>
+		
+		<dd><code>attrVal</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="arrayToStruct()"><!-- --></a>
+	<h3>
+		arrayToStruct 
+	</h3>
+
+	<kbd>remote any <strong>arrayToStruct</strong>(Array a)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>a</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="buildBaseXml()"><!-- --></a>
+	<h3>
+		buildBaseXml 
+	</h3>
+
+	<kbd>remote any <strong>buildBaseXml</strong>(String rootNode, Struct attributes)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rootNode</code></dd>
+		
+		<dd><code>attributes</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateAverage()"><!-- --></a>
+	<h3>
+		calculateAverage 
+	</h3>
+
+	<kbd>remote any <strong>calculateAverage</strong>(Numeric questionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateMedian()"><!-- --></a>
+	<h3>
+		calculateMedian 
+	</h3>
+
+	<kbd>remote any <strong>calculateMedian</strong>(Numeric questionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="callMethod()"><!-- --></a>
+	<h3>
+		callMethod 
+	</h3>
+
+	<kbd>private any <strong>callMethod</strong>(string methodName, struct args)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>methodName</code></dd>
+		
+		<dd><code>args</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="checkForPrototype()"><!-- --></a>
+	<h3>
+		checkForPrototype 
+	</h3>
+
+	<kbd>remote any <strong>checkForPrototype</strong>([any n])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>n</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearCaches()"><!-- --></a>
+	<h3>
+		clearCaches 
+	</h3>
+
+	<kbd>remote any <strong>clearCaches</strong>([Array cacheScopes='[runtime expression]'], [Array types='[runtime expression]'], [Struct params='[runtime expression]'], [Boolean isGlobal='0'], [Boolean restrictedGlobal='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheScopes</code></dd>
+		
+		<dd><code>types</code></dd>
+		
+		<dd><code>params</code></dd>
+		
+		<dd><code>isGlobal</code></dd>
+		
+		<dd><code>restrictedGlobal</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>remote any <strong>configure</strong>([String cacheName='serviceObject'], [Struct paramAliases='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheName</code></dd>
+		
+		<dd><code>paramAliases</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configureAppCacheRegions()"><!-- --></a>
+	<h3>
+		configureAppCacheRegions 
+	</h3>
+
+	<kbd>remote any <strong>configureAppCacheRegions</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="configureCPObject()"><!-- --></a>
+	<h3>
+		configureCPObject 
+	</h3>
+
+	<kbd>remote any <strong>configureCPObject</strong>([Boolean sharedCache])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sharedCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configureCacheRegion()"><!-- --></a>
+	<h3>
+		configureCacheRegion 
+	</h3>
+
+	<kbd>remote any <strong>configureCacheRegion</strong>([Boolean sharedCache='false'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sharedCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configureFacade()"><!-- --></a>
+	<h3>
+		configureFacade 
+	</h3>
+
+	<kbd>remote any <strong>configureFacade</strong>([String cacheName], [Boolean sharedCache='false'], [String cacheRegion], [Array cacheScopes], [Struct cacheTypes], [String caller='[runtime expression]'], [String catalogDSN], [Struct child='[runtime expression]'], [Date compareDate='[runtime expression]'], [Boolean debugMode='false'], [String defaultLog='api'], [Date defaultDate='[runtime expression]'], [String dsn], [String key], [Struct paramAliases], [String simpsonLoc], [String supportEmail])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheName</code></dd>
+		
+		<dd><code>sharedCache</code></dd>
+		
+		<dd><code>cacheRegion</code></dd>
+		
+		<dd><code>cacheScopes</code></dd>
+		
+		<dd><code>cacheTypes</code></dd>
+		
+		<dd><code>caller</code></dd>
+		
+		<dd><code>catalogDSN</code></dd>
+		
+		<dd><code>child</code></dd>
+		
+		<dd><code>compareDate</code></dd>
+		
+		<dd><code>debugMode</code></dd>
+		
+		<dd><code>defaultLog</code></dd>
+		
+		<dd><code>defaultDate</code></dd>
+		
+		<dd><code>dsn</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		<dd><code>paramAliases</code></dd>
+		
+		<dd><code>simpsonLoc</code></dd>
+		
+		<dd><code>supportEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configureModuleCacheRegion()"><!-- --></a>
+	<h3>
+		configureModuleCacheRegion 
+	</h3>
+
+	<kbd>remote any <strong>configureModuleCacheRegion</strong>([String cacheRegion=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheRegion</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configureParamAliases()"><!-- --></a>
+	<h3>
+		configureParamAliases 
+	</h3>
+
+	<kbd>remote any <strong>configureParamAliases</strong>([Struct aliases='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>aliases</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="countRubricQuestions()"><!-- --></a>
+	<h3>
+		countRubricQuestions 
+	</h3>
+
+	<kbd>remote any <strong>countRubricQuestions</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createLog()"><!-- --></a>
+	<h3>
+		createLog 
+	</h3>
+
+	<kbd>remote any <strong>createLog</strong>([String logName='[runtime expression]'], String functName, [String moduleName], [Struct args='[runtime expression]'], [Struct jsonStruct='[runtime expression]'], [String message], [String logType='information'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>logName</code></dd>
+		
+		<dd><code>functName</code></dd>
+		
+		<dd><code>moduleName</code></dd>
+		
+		<dd><code>args</code></dd>
+		
+		<dd><code>jsonStruct</code></dd>
+		
+		<dd><code>message</code></dd>
+		
+		<dd><code>logType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createRubricFromTemplate()"><!-- --></a>
+	<h3>
+		createRubricFromTemplate 
+	</h3>
+
+	<kbd>remote any <strong>createRubricFromTemplate</strong>(Numeric courseOfferingID, Numeric itemID, [Numeric sourceRubricID='0'], [Numeric sourceSetupID='0'], [String rubricTitle=''], [Numeric userID='3562'], [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>sourceRubricID</code></dd>
+		
+		<dd><code>sourceSetupID</code></dd>
+		
+		<dd><code>rubricTitle</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteRubric()"><!-- --></a>
+	<h3>
+		deleteRubric 
+	</h3>
+
+	<kbd>remote any <strong>deleteRubric</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="doLogging()"><!-- --></a>
+	<h3>
+		doLogging 
+	</h3>
+
+	<kbd>remote any <strong>doLogging</strong>([Struct altLogs='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>altLogs</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="existsInPackages()"><!-- --></a>
+	<h3>
+		existsInPackages 
+	</h3>
+
+	<kbd>remote any <strong>existsInPackages</strong>(String objectClass, [Array packages='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>objectClass</code></dd>
+		
+		<dd><code>packages</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="filterIsBasic()"><!-- --></a>
+	<h3>
+		filterIsBasic 
+	</h3>
+
+	<kbd>remote any <strong>filterIsBasic</strong>(String key, Any value, [Array forceIncludeKeys='[runtime expression]'], [Array forceExcludeKeys='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>key</code></dd>
+		
+		<dd><code>value</code></dd>
+		
+		<dd><code>forceIncludeKeys</code></dd>
+		
+		<dd><code>forceExcludeKeys</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="filterProperties()"><!-- --></a>
+	<h3>
+		filterProperties 
+	</h3>
+
+	<kbd>remote any <strong>filterProperties</strong>(Struct propertyData, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>propertyData</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="filterStudents()"><!-- --></a>
+	<h3>
+		filterStudents 
+	</h3>
+
+	<kbd>remote any <strong>filterStudents</strong>(Query fullEnrollment, [Numeric minUserLevel='500'], [Numeric maxUserLevel='599'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fullEnrollment</code></dd>
+		
+		<dd><code>minUserLevel</code></dd>
+		
+		<dd><code>maxUserLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="findArrayItemsInString()"><!-- --></a>
+	<h3>
+		findArrayItemsInString 
+	</h3>
+
+	<kbd>remote any <strong>findArrayItemsInString</strong>(Array arr, String st)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>arr</code></dd>
+		
+		<dd><code>st</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="findPluralName()"><!-- --></a>
+	<h3>
+		findPluralName 
+	</h3>
+
+	<kbd>remote any <strong>findPluralName</strong>(String name, [Boolean hasPlural='false'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>name</code></dd>
+		
+		<dd><code>hasPlural</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="formatCacheKeyArrayData()"><!-- --></a>
+	<h3>
+		formatCacheKeyArrayData 
+	</h3>
+
+	<kbd>remote any <strong>formatCacheKeyArrayData</strong>(Struct cacheData)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheData</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="formatParams()"><!-- --></a>
+	<h3>
+		formatParams 
+	</h3>
+
+	<kbd>remote any <strong>formatParams</strong>(Array i, Struct p)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>i</code></dd>
+		
+		<dd><code>p</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBeanDefinitions()"><!-- --></a>
+	<h3>
+		getBeanDefinitions 
+	</h3>
+
+	<kbd>remote any <strong>getBeanDefinitions</strong>(Coldspring.beans.BeanFactory serviceFactory)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>serviceFactory</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getHashedReportFileName()"><!-- --></a>
+	<h3>
+		getHashedReportFileName 
+	</h3>
+
+	<kbd>remote any <strong>getHashedReportFileName</strong>([Array identifiers='[runtime expression]'], [String encoding='SHA'], [String prefix='pe-'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>identifiers</code></dd>
+		
+		<dd><code>encoding</code></dd>
+		
+		<dd><code>prefix</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMostChosenAssessmentAnswer()"><!-- --></a>
+	<h3>
+		getMostChosenAssessmentAnswer 
+	</h3>
+
+	<kbd>remote any <strong>getMostChosenAssessmentAnswer</strong>(Numeric questionID, [Numeric ownerID='0'], [Numeric ownerGroupID='0'], [Numeric evaluatorID='0'], [Numeric evaluatorGroupID='0'], [Boolean format='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>ownerID</code></dd>
+		
+		<dd><code>ownerGroupID</code></dd>
+		
+		<dd><code>evaluatorID</code></dd>
+		
+		<dd><code>evaluatorGroupID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getObjectAsStructure()"><!-- --></a>
+	<h3>
+		getObjectAsStructure 
+	</h3>
+
+	<kbd>remote any <strong>getObjectAsStructure</strong>([Array includeParents], [Numeric currentLevel], [Array extendedInclusions], [Boolean throwOnError])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOfferingEnrollment()"><!-- --></a>
+	<h3>
+		getOfferingEnrollment 
+	</h3>
+
+	<kbd>remote any <strong>getOfferingEnrollment</strong>(Numeric courseOfferingID, [String format='query'], [Boolean randomize='false'], [Query enrollmentQuery], [Any myCoursesInterface])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		<dd><code>randomize</code></dd>
+		
+		<dd><code>enrollmentQuery</code></dd>
+		
+		<dd><code>myCoursesInterface</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricFromOldRubricID()"><!-- --></a>
+	<h3>
+		getRubricFromOldRubricID 
+	</h3>
+
+	<kbd>remote any <strong>getRubricFromOldRubricID</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricIDFromItemID()"><!-- --></a>
+	<h3>
+		getRubricIDFromItemID 
+	</h3>
+
+	<kbd>remote any <strong>getRubricIDFromItemID</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricIDFromOldRubricID()"><!-- --></a>
+	<h3>
+		getRubricIDFromOldRubricID 
+	</h3>
+
+	<kbd>remote any <strong>getRubricIDFromOldRubricID</strong>(Numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricKeys()"><!-- --></a>
+	<h3>
+		getRubricKeys 
+	</h3>
+
+	<kbd>remote any <strong>getRubricKeys</strong>(Numeric courseOfferingID, [Numeric itemID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getRubricsForOffering()"><!-- --></a>
+	<h3>
+		getRubricsForOffering 
+	</h3>
+
+	<kbd>remote any <strong>getRubricsForOffering</strong>(Numeric courseOfferingID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSetups()"><!-- --></a>
+	<h3>
+		getSetups 
+	</h3>
+
+	<kbd>remote any <strong>getSetups</strong>([Numeric setupID='0'], Numeric courseOfferingID, Numeric itemID, [Numeric rubricID='0'], [Numeric max='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>setupID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>max</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSnapShot()"><!-- --></a>
+	<h3>
+		getSnapShot 
+	</h3>
+
+	<kbd>remote any <strong>getSnapShot</strong>([Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStackTrace()"><!-- --></a>
+	<h3>
+		getStackTrace 
+	</h3>
+
+	<kbd>remote any <strong>getStackTrace</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="handleFormArray()"><!-- --></a>
+	<h3>
+		handleFormArray 
+	</h3>
+
+	<kbd>remote any <strong>handleFormArray</strong>(Any formArray='[runtime expression]')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>formArray</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="hasConfigure()"><!-- --></a>
+	<h3>
+		hasConfigure 
+	</h3>
+
+	<kbd>remote any <strong>hasConfigure</strong>([any obj])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importComplexProperty()"><!-- --></a>
+	<h3>
+		importComplexProperty 
+	</h3>
+
+	<kbd>remote any <strong>importComplexProperty</strong>([Any complexProperty], [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>complexProperty</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importNodes()"><!-- --></a>
+	<h3>
+		importNodes 
+	</h3>
+
+	<kbd>remote any <strong>importNodes</strong>(xml doc, Any children, [Struct attrs='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>doc</code></dd>
+		
+		<dd><code>children</code></dd>
+		
+		<dd><code>attrs</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importObject()"><!-- --></a>
+	<h3>
+		importObject 
+	</h3>
+
+	<kbd>remote any <strong>importObject</strong>(Any obj, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importRubricQuestionsFromTemplate()"><!-- --></a>
+	<h3>
+		importRubricQuestionsFromTemplate 
+	</h3>
+
+	<kbd>remote any <strong>importRubricQuestionsFromTemplate</strong>(Numeric courseOfferingID, [Numeric sourceRubricID='0'], [Numeric sourceSetupID='0'], <a href="../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>sourceRubricID</code></dd>
+		
+		<dd><code>sourceSetupID</code></dd>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="initAppCacheRegions()"><!-- --></a>
+	<h3>
+		initAppCacheRegions 
+	</h3>
+
+	<kbd>remote any <strong>initAppCacheRegions</strong>([Struct child='[runtime expression]'], [String caller='com.distance.base.coursePlusObject'], [Struct props])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>child</code></dd>
+		
+		<dd><code>caller</code></dd>
+		
+		<dd><code>props</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isUnique()"><!-- --></a>
+	<h3>
+		isUnique 
+	</h3>
+
+	<kbd>remote any <strong>isUnique</strong>(Any source, String key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>source</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="loadCacheRegions()"><!-- --></a>
+	<h3>
+		loadCacheRegions 
+	</h3>
+
+	<kbd>remote any <strong>loadCacheRegions</strong>([String sharedRegion=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sharedRegion</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="logInit()"><!-- --></a>
+	<h3>
+		logInit 
+	</h3>
+
+	<kbd>remote any <strong>logInit</strong>(String logName, [Boolean trace='false'], [Struct extendedInfo='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>logName</code></dd>
+		
+		<dd><code>trace</code></dd>
+		
+		<dd><code>extendedInfo</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeBlueprint()"><!-- --></a>
+	<h3>
+		makeBlueprint 
+	</h3>
+
+	<kbd>remote any <strong>makeBlueprint</strong>(String objectClass, [any includeParents='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>objectClass</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeFunctName()"><!-- --></a>
+	<h3>
+		makeFunctName 
+	</h3>
+
+	<kbd>remote any <strong>makeFunctName</strong>(String functName, String objName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>functName</code></dd>
+		
+		<dd><code>objName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeSlug()"><!-- --></a>
+	<h3>
+		makeSlug 
+	</h3>
+
+	<kbd>remote any <strong>makeSlug</strong>([String title=''], [String divider='-'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>title</code></dd>
+		
+		<dd><code>divider</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="manageDecimals()"><!-- --></a>
+	<h3>
+		manageDecimals 
+	</h3>
+
+	<kbd>remote any <strong>manageDecimals</strong>(Any num, [Numeric decimals='4'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>num</code></dd>
+		
+		<dd><code>decimals</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="mergeCacheTypes()"><!-- --></a>
+	<h3>
+		mergeCacheTypes 
+	</h3>
+
+	<kbd>remote any <strong>mergeCacheTypes</strong>([Struct g='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>g</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="objectToStruct()"><!-- --></a>
+	<h3>
+		objectToStruct 
+	</h3>
+
+	<kbd>remote any <strong>objectToStruct</strong>(Any obj, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="paraFormat()"><!-- --></a>
+	<h3>
+		paraFormat 
+	</h3>
+
+	<kbd>remote any <strong>paraFormat</strong>(String unformattedText, [String class=''], [String flag=''], [Boolean stripflag='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>unformattedText</code></dd>
+		
+		<dd><code>class</code></dd>
+		
+		<dd><code>flag</code></dd>
+		
+		<dd><code>stripflag</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="propertyCallback()"><!-- --></a>
+	<h3>
+		propertyCallback 
+	</h3>
+
+	<kbd>remote any <strong>propertyCallback</strong>(String key, Any value, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>key</code></dd>
+		
+		<dd><code>value</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="propertyMetaDataToStruct()"><!-- --></a>
+	<h3>
+		propertyMetaDataToStruct 
+	</h3>
+
+	<kbd>remote any <strong>propertyMetaDataToStruct</strong>(Array metaProps, String objectName, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean accessors='false'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>metaProps</code></dd>
+		
+		<dd><code>objectName</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>accessors</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="queryFromArrayOfComplexObjects()"><!-- --></a>
+	<h3>
+		queryFromArrayOfComplexObjects 
+	</h3>
+
+	<kbd>remote any <strong>queryFromArrayOfComplexObjects</strong>(Array objects)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>objects</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="queryRowToStruct()"><!-- --></a>
+	<h3>
+		queryRowToStruct 
+	</h3>
+
+	<kbd>remote any <strong>queryRowToStruct</strong>(Query qry, [any row='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>qry</code></dd>
+		
+		<dd><code>row</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="randomizeKeys()"><!-- --></a>
+	<h3>
+		randomizeKeys 
+	</h3>
+
+	<kbd>remote any <strong>randomizeKeys</strong>([String keyList=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>keyList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readExistingCacheRegions()"><!-- --></a>
+	<h3>
+		readExistingCacheRegions 
+	</h3>
+
+	<kbd>remote any <strong>readExistingCacheRegions</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubric()"><!-- --></a>
+	<h3>
+		readRubric 
+	</h3>
+
+	<kbd>remote any <strong>readRubric</strong>(Numeric rubricID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricAnswer()"><!-- --></a>
+	<h3>
+		readRubricAnswer 
+	</h3>
+
+	<kbd>remote any <strong>readRubricAnswer</strong>(Numeric answerID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>answerID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricAnswers()"><!-- --></a>
+	<h3>
+		readRubricAnswers 
+	</h3>
+
+	<kbd>remote any <strong>readRubricAnswers</strong>(Numeric questionID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricQuestion()"><!-- --></a>
+	<h3>
+		readRubricQuestion 
+	</h3>
+
+	<kbd>remote any <strong>readRubricQuestion</strong>(Numeric questionID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubricQuestions()"><!-- --></a>
+	<h3>
+		readRubricQuestions 
+	</h3>
+
+	<kbd>remote any <strong>readRubricQuestions</strong>(Numeric rubricID, [Boolean returnAnswers='1'], [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>returnAnswers</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readRubrics()"><!-- --></a>
+	<h3>
+		readRubrics 
+	</h3>
+
+	<kbd>remote any <strong>readRubrics</strong>([Numeric rubricID='0'], [Numeric itemID='0'], Numeric courseOfferingID, [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderRubrics()"><!-- --></a>
+	<h3>
+		reorderRubrics 
+	</h3>
+
+	<kbd>remote any <strong>reorderRubrics</strong>([String rubricKeys=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricKeys</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="replaceUnwantedCharacters()"><!-- --></a>
+	<h3>
+		replaceUnwantedCharacters 
+	</h3>
+
+	<kbd>remote any <strong>replaceUnwantedCharacters</strong>(String str)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>str</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnAppCacheRegions()"><!-- --></a>
+	<h3>
+		returnAppCacheRegions 
+	</h3>
+
+	<kbd>remote any <strong>returnAppCacheRegions</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnCacheName()"><!-- --></a>
+	<h3>
+		returnCacheName 
+	</h3>
+
+	<kbd>remote any <strong>returnCacheName</strong>(String prefix, [String type='bean'], [Struct params='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>prefix</code></dd>
+		
+		<dd><code>type</code></dd>
+		
+		<dd><code>params</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnCacheRegion()"><!-- --></a>
+	<h3>
+		returnCacheRegion 
+	</h3>
+
+	<kbd>remote any <strong>returnCacheRegion</strong>([Boolean sharedCache='false'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sharedCache</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnCompareDate()"><!-- --></a>
+	<h3>
+		returnCompareDate 
+	</h3>
+
+	<kbd>remote any <strong>returnCompareDate</strong>([Date compareDate='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>compareDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnDefaultDate()"><!-- --></a>
+	<h3>
+		returnDefaultDate 
+	</h3>
+
+	<kbd>remote any <strong>returnDefaultDate</strong>([Date defaultDate='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnNull()"><!-- --></a>
+	<h3>
+		returnNull 
+	</h3>
+
+	<kbd>remote any <strong>returnNull</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnProperties()"><!-- --></a>
+	<h3>
+		returnProperties 
+	</h3>
+
+	<kbd>remote any <strong>returnProperties</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnRubricAsJSON()"><!-- --></a>
+	<h3>
+		returnRubricAsJSON 
+	</h3>
+
+	<kbd>remote any <strong>returnRubricAsJSON</strong>([Numeric userID='3562'], Numeric courseOfferingID, <a href="../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [Boolean isSystemTemplate='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>isSystemTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnService()"><!-- --></a>
+	<h3>
+		returnService 
+	</h3>
+
+	<kbd>remote any <strong>returnService</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnStructModel()"><!-- --></a>
+	<h3>
+		returnStructModel 
+	</h3>
+
+	<kbd>remote any <strong>returnStructModel</strong>(String modelName, Struct params)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modelName</code></dd>
+		
+		<dd><code>params</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnTypeDefault()"><!-- --></a>
+	<h3>
+		returnTypeDefault 
+	</h3>
+
+	<kbd>remote any <strong>returnTypeDefault</strong>(String type)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>type</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reverseStruct()"><!-- --></a>
+	<h3>
+		reverseStruct 
+	</h3>
+
+	<kbd>remote any <strong>reverseStruct</strong>(Struct structObj)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>structObj</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveRubric()"><!-- --></a>
+	<h3>
+		saveRubric 
+	</h3>
+
+	<kbd>remote any <strong>saveRubric</strong>(Numeric coID, Numeric itemID, [Numeric rubricID='0'], [Numeric userID='3562'], [Struct formData='[runtime expression]'], [String formFieldnames=''], [String format='object'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>coID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>formData</code></dd>
+		
+		<dd><code>formFieldnames</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendToDeveloper()"><!-- --></a>
+	<h3>
+		sendToDeveloper 
+	</h3>
+
+	<kbd>remote any <strong>sendToDeveloper</strong>([String subject='Send To Developer'], [Array params='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>subject</code></dd>
+		
+		<dd><code>params</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setup()"><!-- --></a>
+	<h3>
+		setup 
+	</h3>
+
+	<kbd>public void <strong>setup</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="stringToAscii()"><!-- --></a>
+	<h3>
+		stringToAscii 
+	</h3>
+
+	<kbd>remote any <strong>stringToAscii</strong>([String str=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>str</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="stripHTML()"><!-- --></a>
+	<h3>
+		stripHTML 
+	</h3>
+
+	<kbd>remote any <strong>stripHTML</strong>(String unformattedText)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>unformattedText</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="structToArray()"><!-- --></a>
+	<h3>
+		structToArray 
+	</h3>
+
+	<kbd>remote any <strong>structToArray</strong>(Struct s)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>s</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toNativeFormat()"><!-- --></a>
+	<h3>
+		toNativeFormat 
+	</h3>
+
+	<kbd>remote any <strong>toNativeFormat</strong>([String format='struct'], [Struct model='[runtime expression]'], [Any obj])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>format</code></dd>
+		
+		<dd><code>model</code></dd>
+		
+		<dd><code>obj</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toStruct()"><!-- --></a>
+	<h3>
+		toStruct 
+	</h3>
+
+	<kbd>remote any <strong>toStruct</strong>([Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateCourseOfferingIDInString()"><!-- --></a>
+	<h3>
+		updateCourseOfferingIDInString 
+	</h3>
+
+	<kbd>remote any <strong>updateCourseOfferingIDInString</strong>(String url, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>url</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubric()"><!-- --></a>
+	<h3>
+		updateRubric 
+	</h3>
+
+	<kbd>remote any <strong>updateRubric</strong>([Numeric userID='3562'], [Boolean cascade='0'], <a href="../../../core/modules/rubrics/model/rubric.html" title="class in core.modules.rubrics.model">rubric</a> rubric, [Boolean isSystemTemplate='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>cascade</code></dd>
+		
+		<dd><code>rubric</code></dd>
+		
+		<dd><code>isSystemTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricChoiceData()"><!-- --></a>
+	<h3>
+		updateRubricChoiceData 
+	</h3>
+
+	<kbd>remote any <strong>updateRubricChoiceData</strong>(Numeric rubricID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateRubricData()"><!-- --></a>
+	<h3>
+		updateRubricData 
+	</h3>
+
+	<kbd>remote any <strong>updateRubricData</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="validateProperty()"><!-- --></a>
+	<h3>
+		validateProperty 
+	</h3>
+
+	<kbd>remote any <strong>validateProperty</strong>(String propertyName, String objectName, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Array definedKeys='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>propertyName</code></dd>
+		
+		<dd><code>objectName</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>definedKeys</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="wordCount()"><!-- --></a>
+	<h3>
+		wordCount 
+	</h3>
+
+	<kbd>remote any <strong>wordCount</strong>([any wordsToCount])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wordsToCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="xmlExtractChildren()"><!-- --></a>
+	<h3>
+		xmlExtractChildren 
+	</h3>
+
+	<kbd>remote any <strong>xmlExtractChildren</strong>(Any objectKey, Any objectValue)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>objectKey</code></dd>
+		
+		<dd><code>objectValue</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="xmlNodeToStruct()"><!-- --></a>
+	<h3>
+		xmlNodeToStruct 
+	</h3>
+
+	<kbd>remote any <strong>xmlNodeToStruct</strong>(any xmlObject)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>xmlObject</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="xmlObjectToStruct()"><!-- --></a>
+	<h3>
+		xmlObjectToStruct 
+	</h3>
+
+	<kbd>remote any <strong>xmlObjectToStruct</strong>(xml xmlObject, [Struct blueprints='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>xmlObject</code></dd>
+		
+		<dd><code>blueprints</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="zeroCallback()"><!-- --></a>
+	<h3>
+		zeroCallback 
+	</h3>
+
+	<kbd>remote any <strong>zeroCallback</strong>([Any obj], [String key], [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		<dd><code>ignoreKeys</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="zeroOut()"><!-- --></a>
+	<h3>
+		zeroOut 
+	</h3>
+
+	<kbd>remote any <strong>zeroOut</strong>(Any obj, [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'], [Boolean throwOnError='false'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>ignoreKeys</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>
