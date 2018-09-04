@@ -11,7 +11,7 @@ component extends="coldbox.system.EventHandler"{
 
 	// Default Action
 	function index(event,rc,prc){
-		prc['sectionTitle']="Welcome to ColdBox!";
+		prc['sectionTitle']="ColdBox Application Properties";
 		event.setView("main/index");
 	}
 
