@@ -1,7 +1,0 @@
-#ignore these files
-.*
-!.gitignore
-settings.xml
-*.iml
-tests/output/*
-tests/node_modules
