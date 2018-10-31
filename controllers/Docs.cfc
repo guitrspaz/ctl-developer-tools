@@ -22,7 +22,7 @@ component extends="coldbox.system.EventHandler"{
 		prc['sectionTitle']="CoursePlus API Documentation";
 		var docbox=new docbox.DocBox(properties={
 			'projectTitle':"CoursePlus",
-			'outputDir':ExpandPath( '/docs' )
+			'outputDir':ExpandPath( '/fileDepot/code-docs' )
 		});
 
 		docbox.generate(
