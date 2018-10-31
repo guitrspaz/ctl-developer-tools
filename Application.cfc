@@ -39,7 +39,7 @@ component{
 	this.mappings['/docbox']=COLDBOX_APP_ROOT_PATH&"docbox";
 	this.mappings['/testbox']=COLDBOX_APP_ROOT_PATH&"testbox";
 	this.mappings['/models']=COLDBOX_APP_ROOT_PATH&"models";
-	this.mappings['/code-docs']=(FindNoCase('-web',CGI.HTTP_HOST))?'/code-docs':"/fileDepot/code-docs";
+	this.mappings['/code-docs']=(DirectoryExists('/code-docs'))?'/code-docs':'/fileDepot/code-docs';
 	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
 
 	// application start
