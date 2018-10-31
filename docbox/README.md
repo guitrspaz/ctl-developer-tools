@@ -6,8 +6,8 @@
 ```
 ██████╗  ██████╗  ██████╗██████╗  ██████╗ ██╗  ██╗
 ██╔══██╗██╔═══██╗██╔════╝██╔══██╗██╔═══██╗╚██╗██╔╝
-██║  ██║██║   ██║██║     ██████╔╝██║   ██║ ╚███╔╝ 
-██║  ██║██║   ██║██║     ██╔══██╗██║   ██║ ██╔██╗ 
+██║  ██║██║   ██║██║     ██████╔╝██║   ██║ ╚███╔╝
+██║  ██║██║   ██║██║     ██╔══██╗██║   ██║ ██╔██╗
 ██████╔╝╚██████╔╝╚██████╗██████╔╝╚██████╔╝██╔╝ ██╗
 ╚═════╝  ╚═════╝  ╚═════╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
 ```
@@ -31,7 +31,7 @@ Use the DocBox library to generate API docs from your CFC files.  Install Docbox
 
 ```bash
 box install docbox
-```  
+```
 
 ### Standalone Application
 If you want to use DocBox for document generation in your CFML application, then just drop it into any location and create a `/docbox` mapping to it.  You will then instantiate the `DocBox` generator class with a `strategy` and `properties` for the strategy.
@@ -41,9 +41,9 @@ If you want to use DocBox for document generation in your CFML application, then
 docbox = new DocBox( strategy="class.path", properties={} );
 
 // create with default strategy
-docbox = new DocBox( properties = { 
-    projectTitle="My Docs", 
-    outputDir="#expandPath( '/docs' )#"
+docbox = new DocBox( properties = {
+    projectTitle="My Docs",
+    outputDir="#expandPath( '/code-docs' )#"
 });
 ```
 

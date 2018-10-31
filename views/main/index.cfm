@@ -138,7 +138,7 @@
 			    <li class="list-group-item"><code>/coldbox</code>: Your ColdBox framework</li>
 			    <li class="list-group-item"><code>/controllers</code>: Your application event handlers</li>
 			    <li class="list-group-item"><code>/docbox</code>: Your DocBox framework</li>
-			    <li class="list-group-item"><code>/docs</code>: Your DocBox documentation output</li>
+			    <li class="list-group-item"><code>/code-docs</code>: Your DocBox documentation output</li>
 			    <li class="list-group-item"><code>/interceptors</code>: System interceptors</li>
 			    <li class="list-group-item"><code>/lib</code>: Where Jar files can be integrated</li>
 				<li class="list-group-item"><code>/models</code>: Your model layer</li>
