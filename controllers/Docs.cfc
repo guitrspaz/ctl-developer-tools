@@ -24,7 +24,6 @@ component extends="coldbox.system.EventHandler"{
 			'projectTitle':"CoursePlus",
 			'outputDir':'/docs'
 		});
-
 		docbox.generate(
 			source=[{
 				'dir':ExpandPath('/core'),
