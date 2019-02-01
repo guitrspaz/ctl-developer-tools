@@ -13,8 +13,8 @@ logs/*.*
 **/bower_components/*
 
 ## Ignored Dependencies
-coldbox/*
-testbox/*
-modules/*
-#docs/*
+#coldbox/*
+#testbox/*
+#modules/*
+docs/*
 **/apidocs/**
