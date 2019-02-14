@@ -8,13 +8,8 @@ component {
 	// Module Properties
 	this.title 				= "cborm";
 	this.author 			= "Ortus Solutions";
-	this.webURL 			= "http://www.ortussolutions.com";
+	this.webURL 			= "https://www.ortussolutions.com";
 	this.description 		= "ColdBox ORM enhancements for Hibernate";
-	this.version			= "1.4.0+79";
-	// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
-	this.viewParentLookup 	= true;
-	// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
-	this.layoutParentLookup = true;
 	// Model Namespace
 	this.modelNamespace		= "cborm";
 	// CF Mapping
@@ -31,9 +26,10 @@ component {
 		if( variables.keyExists( "coldboxVersion" ) ){
 			dslPath &= "5";
 		}
-		
+
 		// Register Custom DSL, don't map it because it is too late, mapping DSLs are only good by the parent app
-		controller.getWireBox().registerDSL( namespace="entityService", path=dslPath );
+		controller.getWireBox()
+			.registerDSL( namespace="entityService", path=dslPath );
 
 		// Custom Declared Points
 		interceptorSettings = {

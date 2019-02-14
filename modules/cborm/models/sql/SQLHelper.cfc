@@ -1,9 +1,10 @@
 /**
-* Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
-* www.ortussolutions.com
-* ---
-* Simple utility for extracting SQL from native Criteria Query objects
-*/
+ * Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
+ * www.ortussolutions.com
+ * ---
+ * Simple utility for extracting SQL from native Criteria Query objects.
+ * One SQL Helper is created per CriteriaBuilder
+ */
 component accessors="true"{
 
     /**
@@ -22,15 +23,16 @@ component accessors="true"{
     property name="returnExecutableSql" type="boolean"  default="false";
 
     /**
-    * Constructor
-    * @criteriaBuilder The builder this helper is linked to
-    * @returnExecutableSql To return the executable SQL or not
-    * @formatSQL Pretty format the SQL or not
-    */
-    SQLHelper function init( 
+     * Constructor
+	 *
+     * @criteriaBuilder The builder this helper is linked to
+     * @returnExecutableSql To return the executable SQL or not
+     * @formatSQL Pretty format the SQL or not
+     */
+    SQLHelper function init(
         required any criteriaBuilder,
-        boolean returnExecutableSql = false, 
-        boolean formatSql = false  
+        boolean returnExecutableSql = false,
+        boolean formatSql = false
     ){
 
         // Setup properties
@@ -38,30 +40,78 @@ component accessors="true"{
         variables.entityName    = variables.cb.getEntityName();
         variables.criteriaImpl  = variables.cb.getNativeCriteria();
         variables.ormSession    = variables.criteriaImpl.getSession();
-        variables.factory       = ormSession.getFactory();
-        
-        // get formatter for sql string beautification
-        if( findNoCase( "coldfusion", server.coldfusion.productName ) AND 
-            listFirst( server.coldfusion.productVersion ) gte 11
-        ){
-            variables.formatter  = createObject( "java", "org.hibernate.engine.jdbc.internal.BasicFormatterImpl" );
-        } else {
-            variables.formatter  = createObject( "java", "org.hibernate.jdbc.util.BasicFormatterImpl" );
-        }
-        
+        variables.ormFactory	= variables.ormSession.getFactory();
+
+		// Load Hibernate Properties Accordingly to version
+        setupHibernateProperties();
+
         // set properties
         variables.log                   = [];
         variables.formatSQL             = arguments.formatSQL;
         variables.returnExecutableSql   = arguments.returnExecutableSql;
 
         return this;
-    }
+	}
+
+	/**
+	 * Setup hibernate class properties according to Hibernate version with CFML Engine
+	 */
+	private function setupHibernateProperties(){
+		// get formatter for sql string beautification: ACF vs Lucee
+        if( findNoCase( "coldfusion", server.coldfusion.productName ) ){
+			// Formatter Support
+			variables.formatter  = createObject( "java", "org.hibernate.engine.jdbc.internal.BasicFormatterImpl" );
+
+			// Dialect Specific Setup: Hibernate 4vs5 differences
+			if( listFirst( server.coldfusion.productVersion ) gte 2018 ){
+				variables.hibernateVersion = "5";
+				// Set SQL Dialect ACF2018:Hibernate5.2+
+				var jdbcServiceClass 	= createObject( "java", "org.hibernate.engine.jdbc.spi.JdbcServices" ).getClass();
+				var jdbcService 		= variables.ormFactory.getServiceRegistry().getService( jdbcServiceClass );
+				variables.dialect 		= jdbcService.getDialect();
+				variables.dialectSupport = {
+					limit           					: variables.dialect.getLimitHandler().supportsLimit(),
+					limitOffset     					: variables.dialect.getLimitHandler().supportsLimitOffset(),
+					useMaxForLimit  					: variables.dialect.getLimitHandler().useMaxForLimit(),
+					forceLimitUsage 					: variables.dialect.getLimitHandler().forceLimitUsage(),
+					bindLimitParametersFirst 			: variables.dialect.getLimitHandler().bindLimitParametersFirst(),
+					bindLimitParametersInReverseOrder 	: variables.dialect.getLimitHandler().bindLimitParametersInReverseOrder()
+				};
+			} else {
+				// Hibernate 4+
+				variables.dialect 			= variables.ormFactory.getDialect();
+				variables.hibernateVersion 	= "4";
+				variables.dialectSupport 	= {
+					limit           					: variables.dialect.supportsLimit(),
+					limitOffset     					: variables.dialect.supportsLimitOffset(),
+					useMaxForLimit  					: variables.dialect.useMaxForLimit(),
+					forceLimitUsage 					: variables.dialect.forceLimitUsage(),
+					bindLimitParametersFirst 			: variables.dialect.bindLimitParametersFirst(),
+					bindLimitParametersInReverseOrder 	: variables.dialect.bindLimitParametersInReverseOrder()
+				};
+			}
+        } else {
+			// Lucee Hibernate 3+, waayyyyy old.
+			variables.hibernateVersion 	= "3";
+			variables.formatter  		= createObject( "java", "org.hibernate.jdbc.util.BasicFormatterImpl" );
+			variables.dialect 			= variables.ormFactory.getDialect();
+			variables.dialectSupport 	= {
+				limit           					: variables.dialect.supportsLimit(),
+				limitOffset     					: variables.dialect.supportsLimitOffset(),
+				useMaxForLimit  					: variables.dialect.useMaxForLimit(),
+				forceLimitUsage 					: variables.dialect.forceLimitUsage(),
+				bindLimitParametersFirst 			: variables.dialect.bindLimitParametersFirst(),
+				bindLimitParametersInReverseOrder 	: variables.dialect.bindLimitParametersInReverseOrder()
+			};
+		}
+	}
 
     /**
      * Logs current state of criteria to internal tracking log
+	 *
      * @label The label for the log record
      */
-    SQLHelper function log( required string label="Criteria" ) {
+    SQLHelper function log( string label="Criteria" ) {
         var logentry = {
             "type" = arguments.label,
             "sql"  = getSQL( argumentCollection=arguments )
@@ -73,24 +123,25 @@ component accessors="true"{
 
     /**
      * Returns the SQL string that will be prepared for the criteria object at the time of request
+	 *
      * @returnExecutableSql Whether or not to do query param replacements on returned SQL string
      * @formatSql Whether to format the sql
      */
-    string function getSQL( 
-        required boolean returnExecutableSql=getReturnExecutableSql(), 
-        required boolean formatSql=getFormatSql() 
+    string function getSQL(
+        boolean returnExecutableSql=getReturnExecutableSql(),
+        boolean formatSql=getFormatSql()
     ){
 
         var sql             = getCriteriaJoinWalker().getSQLstring();
         var selection       = getQueryParameters().getRowSelection();
         var useLimit        = useLimit( selection );
         var hasFirstRow     = getFirstRow( selection ) > 0;
-        var useOffset       = hasFirstRow && useLimit && getDialect().supportsLimitOffset();
-       
+        var useOffset       = hasFirstRow && useLimit && variables.dialectSupport.limitOffset;
+
         // try to add limit/offset in
         if( useLimit ) {
-            sql = getDialect().getLimitstring( 
-                sql, 
+            sql = getDialect().getLimitstring(
+                sql,
                 useOffset ? getFirstRow(selection) : 0,
                 getMaxOrLimit( selection )
             );
@@ -100,26 +151,28 @@ component accessors="true"{
         if( arguments.returnExecutableSql ) {
             sql = replaceQueryParameters( sql, arguments.formatSql );
         }
-        
+
         // if we want to beautify the sql string
         if( arguments.formatSql ) {
             sql = applyFormatting( sql );
         }
-        
+
         return sql;
     }
 
     /**
      * Applies pretty formatting to a sql string
+	 *
      * @sql The SQL string to format
      */
     string function applyFormatting( required string sql ) {
         return "<pre>" & variables.formatter.format( arguments.sql ) & "</pre>";
     }
 
-    /** 
+    /**
      * Gets the positional SQL parameter values from the criteria query
-     * return array
+	 *
+     * @return array
      */
     array function getPositionalSQLParameterValues() {
         return getCriteriaQueryTranslator().getQueryParameters().getPositionalParameterValues();
@@ -189,17 +242,16 @@ component accessors="true"{
     /**
      * Retrieves the correct dialect of the database engine
      */
-    any function getDialect() {
-        return variables.factory.getDialect();
+    any function getDialect(){
+		return variables.dialect;
     }
 
     /**
     * Is there a limit in the logging offset
     */
     Boolean function canLogLimitOffset() {
-        var dialect = getDialect();
         var max     = !isNull( variables.criteriaImpl.getMaxResults() ) ? variables.criteriaImpl.getMaxResults() : 0;
-        return dialect.supportsLimitOffset() && max > 0;
+        return variables.dialectSupport.limitOffset && max > 0;
     }
 
     /********************************* PRIVATE *********************************/
@@ -243,22 +295,22 @@ component accessors="true"{
         // prepare some meta about the limit info...need to handle this separately
         var useLimit = useLimit( selection );
         var firstRow = dialect.convertToFirstRowValue( getFirstRow( selection ) );
-        var hasFirstRow = dialect.supportsLimitOffset() && ( firstRow > 0 || dialect.forceLimitUsage() );
-        var useOffset = hasFirstRow && useLimit && dialect.supportsLimitOffset();
-        var reverse = dialect.bindLimitParametersInReverseOrder();
-        /** 
-            APPROACH: 
+        var hasFirstRow = variables.dialectSupport.limitOffset && ( firstRow > 0 || variables.dialectSupport.forceLimitUsage );
+        var useOffset = hasFirstRow && useLimit && variables.dialectSupport.limitOffset;
+        var reverse = variables.dialectSupport.bindLimitParametersInReverseOrder;
+        /**
+            APPROACH:
             Unfortunately, there does not seem to be any really good way to retrieve the SQL that will be executed,
             since it isn't actually sent to the db engine as executable SQL
             So, we have to rely upon the QueryTranslator to provide us details about positional paramters that are going to be sent
             However, the "limit/offset" data isn't handled by the Translator, so we also need to spin up a regular SQL Query to determine
-            how many total ordinal parameters are getting sent with the query string. 
+            how many total ordinal parameters are getting sent with the query string.
 
             This, combined with info that Hibernate knows about each db dialect, we can smartly fill in the gaps for the "limit/offset"
-            information, as well as fill in the ordinal parameters values and return a SQL string that is as close to the actual string 
+            information, as well as fill in the ordinal parameters values and return a SQL string that is as close to the actual string
             that will be executed on the db as possible.
 
-            So the actual idea is to take the ordinal parameter values and types which QueryTranslator knows about, and intelligently add to 
+            So the actual idea is to take the ordinal parameter values and types which QueryTranslator knows about, and intelligently add to
             those lists based on the dialect of the database engine.
          */
         // if we have positional parameters
@@ -270,7 +322,7 @@ component accessors="true"{
                 // we'll reuse this
                 var integerType = createObject( "java", "org.hibernate.type.IntegerType" );
                 // Ex: Engines like SQL Server put limits first
-                if( dialect.bindLimitParametersFirst() ) {
+                if( variables.dialectSupport.bindLimitParametersFirst ) {
                     positionalValues = bindLimitParameters( positionalValues, false, selection );
                     // add for max/limit
                     arrayInsertAt( positionalTypes, 1, integerType );
@@ -319,10 +371,10 @@ component accessors="true"{
      * @append Whether values are appended or prepended to the array
      * @selection The current row selection
      */
-    private Array function bindLimitParameters( 
-        required Array positionalValues, 
-        required Boolean append, 
-        required any selection 
+    private Array function bindLimitParameters(
+        required Array positionalValues,
+        required Boolean append,
+        required any selection
     ){
         var dialect = getDialect();
         // trackers
@@ -331,7 +383,7 @@ component accessors="true"{
         // prepare some meta about the limit info
         var firstRow    = dialect.convertToFirstRowValue( getFirstRow( arguments.selection ) );
         var lastRow     = getMaxOrLimit( arguments.selection );
-        var hasFirstRow = dialect.supportsLimitOffset() && ( firstRow > 0 || dialect.forceLimitUsage() );
+        var hasFirstRow = variables.dialectSupport.limitOffset && ( firstRow > 0 || dialect.forceLimitUsage() );
         var reverse     = dialect.bindLimitParametersInReverseOrder();
         // has offset...need to add both limit and offset
         if ( hasFirstRow ) {
@@ -368,7 +420,7 @@ component accessors="true"{
      * @selection The current row selection
      */
     private Boolean function useLimit( required any selection ) {
-        return getDialect().supportsLimit() && hasMaxRows( argumentCollection=arguments );
+        return variables.dialectSupport.limit && hasMaxRows( argumentCollection=arguments );
     }
 
     /**
@@ -392,39 +444,45 @@ component accessors="true"{
      * @selection The current row selection
      */
     private Numeric function getMaxOrLimit( required any selection ) {
-        var dialect     = getDialect();
-        var firstRow    = dialect.convertToFirstRowValue( getFirstRow( arguments.selection ) );
+        var firstRow    = getDialect().convertToFirstRowValue( getFirstRow( arguments.selection ) );
         var lastRow     = arguments.selection.getMaxRows().intValue();
-        return dialect.useMaxForLimit() ? lastRow + firstRow : lastRow;
+        return variables.dialectSupport.useMaxForLimit ? lastRow + firstRow : lastRow;
     }
 
-    /** 
+    /**
      * gets an instance of CriteriaJoinWalker, which can allow for translating criteria query into a sql string
      * @return org.hibernate.loader.criteria.CriteriaJoinWalker
      */
     private any function getCriteriaJoinWalker() {
+		// More Diff on Hibernate Versions: Remove when standardized
+		if( variables.hibernateVersion gte 5 ){
+			var persister = variables.ormFactory.getMetaModel().entityPersister( variables.entityName );
+		} else {
+			var persister = variables.ormFactory.getEntityPersister( variables.entityName );
+		}
+
         // not nearly as cool as the walking dead kind, but is still handy for turning a criteria into a sql string ;)
         return createObject( "java", "org.hibernate.loader.criteria.CriteriaJoinWalker" ).init(
-            variables.factory.getEntityPersister( variables.entityName ), // persister (loadable)
-            getCriteriaQueryTranslator(), // translator 
-            variables.factory, // factory
+            persister, // persister (loadable)
+            getCriteriaQueryTranslator(), // translator
+            variables.ormFactory, // factory
             variables.criteriaImpl, // criteria
             variables.entityName, // rootEntityName
             variables.ormSession.getLoadQueryInfluencers() // loadQueryInfluencers
         );
     }
 
-    /** 
+    /**
      * gets an instance of CriteriaQueryTranslator, which can prepares criteria query for conversion to SQL
      * @return org.hibernate.loader.criteria.CriteriaQueryTranslator
      */
     private any function getCriteriaQueryTranslator() {
         // create new criteria query translator; we'll use this to build up the query string
         return createObject( "java", "org.hibernate.loader.criteria.CriteriaQueryTranslator" ).init(
-            variables.factory, // factory
+            variables.ormFactory, // factory
             variables.criteriaImpl, // criteria
             variables.entityName,  // rootEntityName
             variables.criteriaImpl.getAlias() // rootSQLAlias
-        );  
-    } 
+        );
+    }
 }

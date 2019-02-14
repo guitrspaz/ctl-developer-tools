@@ -1,4 +1,4 @@
-﻿<!-----------------------------------------------------------------------
+<!-----------------------------------------------------------------------
 ********************************************************************************
 Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
 www.ortussolutions.com
@@ -294,8 +294,8 @@ Description :
  				<cfcontinue />
  			</cfif>
 
-			<!--- Remove .cfc and /\ with . notation--->
-			<cfset thisTargetPath = reReplace( arguments.packagePath & "." & replaceNoCase( qObjects.name, ".cfc", ""), "(/|\\)", ".", "all")>
+			<!--- Eliminate leading slash, remove .cfc and /\ with . notation--->
+			<cfset thisTargetPath = reReplace( reReplace( arguments.packagePath, '^/', '' ) & "." & replaceNoCase( qObjects.name, ".cfc", ""), "(/|\\)", ".", "all")>
 
 			<!--- Include/Exclude --->
 			<cfif ( len( arguments.include ) AND reFindNoCase( arguments.include, thisTargetPath ) )
@@ -311,7 +311,7 @@ Description :
 
 				<!--- Influence --->
 				<cfif structKeyExists( arguments, "influence" )>
-					<cfset arguments.influence( this, thisTargetPath )>
+					<cfset arguments.influence( this, thisTargetPath, currentMapping[ 1 ] )>
 				</cfif>
 
 				<!--- Do this right away so aliases are picked up before this mapping potentially gets overwritten

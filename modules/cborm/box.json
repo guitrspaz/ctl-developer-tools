@@ -1,17 +1,19 @@
 {
     "name":"ColdBox ORM Extensions",
-    "version":"1.4.0+79",
-    "location":"http://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cborm/1.4.0/cborm-1.4.0.zip",
+    "version":"1.5.0+84",
+    "location":"http://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cborm/1.5.0/cborm-1.5.0.zip",
     "author":"Ortus Solutions <info@ortussolutions.com",
-    "slug":"cborm",
-    "type":"modules",
     "homepage":"https://github.com/coldbox-modules/cbox-cborm",
     "documentation":"https://github.com/coldbox-modules/cbox-cborm/wiki",
     "repository":{
         "type":"git",
         "url":"https://github.com/coldbox-modules/cbox-cborm"
     },
+    "bugs":"https://github.com/coldbox-modules/cbox-cborm/issues",
     "shortDescription":"Enhances the ColdFusion ORM with tons of utilities.",
+    "slug":"cborm",
+    "type":"modules",
+    "keywords":"hibernate, orm extensions, orm, coldfusion orm, cfml orm",
     "license":[
         {
             "type":"Apache2",
@@ -28,10 +30,6 @@
     },
     "ignore":[
         "**/.*",
-        "tests",
-        "*/.md"
-    ],
-    "installPaths":{
-        "cbvalidation":"modules/cbvalidation"
-    }
+        "test-harness"
+    ]
 }

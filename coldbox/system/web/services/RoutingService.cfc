@@ -112,9 +112,13 @@ component extends="coldbox.system.web.services.BaseService" accessors="true"{
 					.setThreadSafe( true )
 					.setScope(
 						wirebox.getBinder().SCOPES.SINGLETON
-					);
+					)
+					.addDIConstructorArgument( name="controller", value=controller );
 				// Create the Router
 				variables.router = wirebox.getInstance( "router@coldbox" );
+				// Register the Router as an Interceptor as well.
+				variables.controller.getInterceptorService()
+					.registerInterceptor( interceptorObject = variables.router );
 				// Process it
 				variables.router.configure();
 				break;
@@ -167,15 +171,19 @@ component extends="coldbox.system.web.services.BaseService" accessors="true"{
 			return;
 		}
 
+		// Enable SES
+		arguments.event.setSESEnabled( true );
+
 		// Activate and record the incoming URL for multi-domain hosting
-		arguments.event
-			.setSESEnabled( true )
-			.setSESBaseURL(
-				"http" &
-				( event.isSSL() ? "s" : "" ) &
-				"://#cgi.HTTP_HOST##variables.routingAppMapping#" &
-				( variables.router.getFullRewrites() ? "" : "index.cfm" )
-			);
+		if( variables.router.getMultiDomainDiscovery() ){
+			arguments.event
+				.setSESBaseURL(
+					"http" &
+					( event.isSSL() ? "s" : "" ) &
+					"://#cgi.HTTP_HOST##variables.routingAppMapping#" &
+					( variables.router.getFullRewrites() ? "" : "index.cfm" )
+				);
+		}
 
 		// Check for invalid URLs if in strict mode via unique URLs
 		if( variables.router.getUniqueURLs() ){
@@ -616,7 +624,8 @@ component extends="coldbox.system.web.services.BaseService" accessors="true"{
 		// check accepts headers for the best match
 		else{
 			// Process Accept Headers
-			var match = event.getHTTPHeader( "Accept", "" ).listToArray()
+			var acceptHeader = event.getHTTPHeader( "Accept", "" ) ?: "";
+			var match = acceptHeader.listToArray()
 				// Discover the matching extension
 				.reduce( function( previous, thisAccept ){
 					// If we found, just return

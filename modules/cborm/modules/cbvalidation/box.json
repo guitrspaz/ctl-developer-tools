@@ -30,8 +30,5 @@
         "tests/*",
         ".git*"
     ],
-    "scripts":{},
-    "installPaths":{
-        "cbi18n":"modules/cbi18n"
-    }
+    "scripts":{}
 }

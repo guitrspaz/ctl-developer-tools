@@ -335,7 +335,8 @@
 			source     = arguments.mapping.getPath(),
 			query      = "results.items",
 			properties = "results.metadata",
-			timeout    = "20"
+			timeout    = "20",
+			userAgent  = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
 		);
 
 		return results;
@@ -385,6 +386,12 @@
 
 			// ColdBox Context DSL
 			case "coldbox" : {
+				if( !variables.injector.isColdBoxLinked() ){
+					throw(
+						message	= "The DSLNamespace: #DSLNamespace# cannot be used as it requires a ColdBox Context",
+						type	= "Builder.IllegalDSLException"
+					);
+				}
 				refLocal.dependency = variables.coldboxDSL.process( argumentCollection=arguments );
 				break;
 			}
@@ -455,15 +462,24 @@
 
 		// was dependency required? If so, then throw exception
 		if( arguments.definition.required ){
+
+			// Build human-readable description of the mapping
+			var depDesc = [];
+			if( !isNull( arguments.definition.name ) ) { depDesc.append( "Name of '#arguments.definition.name#'" ); }
+			if( !isNull( arguments.definition.DSL ) ) { depDesc.append( "DSL of '#arguments.definition.DSL#'" ); }
+			if( !isNull( arguments.definition.REF ) ) { depDesc.append( "REF of '#arguments.definition.REF#'" ); }
+
+			var injectMessage = "The target '#arguments.targetID#' requested a missing dependency with a #depDesc.toList( ' and ' )#";
+
 			// Logging
 			if( variables.log.canError() ){
-				variables.log.error( "Target: #arguments.targetID# -> DSL Definition: #arguments.definition.toString()# did not produce any resulting dependency" );
+				variables.log.error( injectMessage, arguments.definition );
 			}
 
 			// Throw exception as DSL Dependency requested was not located
 			throw(
-				message = "The DSL Definition #arguments.definition.toString()# did not produce any resulting dependency",
-				detail  = "The target requesting the dependency is: '#arguments.targetID#'",
+				message = injectMessage,
+				detail  = arguments.definition.toString(),
 				type    = "Builder.DSLDependencyNotFoundException"
 			);
 		}
@@ -706,6 +722,11 @@
 				} );
 		}
 
+		// Copy init only if the base object has it and the child doesn't.
+		if( !structKeyExists( arguments.target, "init" ) AND structKeyExists( baseObject, "init" ) ){
+			arguments.target.injectMixin( 'init', baseObject.init );
+		}
+
 		baseObject.getVariablesMixin()
 			// filter out overrides
 			.filter( function( key, value ) {
@@ -713,7 +734,9 @@
 			} )
 			.each( function( propertyName, propertyValue ){
 				// inject the property/method now
-				target.injectPropertyMixin( propertyName, propertyValue );
+				if( !isNull( propertyValue ) ) {
+					target.injectPropertyMixin( propertyName, propertyValue );
+				}
 				// Do we need to do automatic generic getter/setters
 				if( generateAccessors and baseProperties.keyExists( propertyName ) ){
 
