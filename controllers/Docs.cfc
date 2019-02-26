@@ -31,6 +31,9 @@ component extends="coldbox.system.EventHandler"{
 			},{
 				'dir':ExpandPath('/com'),
 				'mapping':'com'
+			},{
+				'dir':ExpandPath('/myCourses'),
+				'mapping':'myCourses'
 			}],
 			mapping="docs"
 		);
