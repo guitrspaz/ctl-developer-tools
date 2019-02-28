@@ -35,7 +35,7 @@ component extends="coldbox.system.EventHandler"{
 				'dir':ExpandPath('/myCourses'),
 				'mapping':'myCourses'
 			}],
-			mapping="docs"
+			mapping="code-docs"
 		);
 
 		setNextEvent(event='docs',persist='',ssl=true);
