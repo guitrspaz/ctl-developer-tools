@@ -3,7 +3,7 @@ component{
 	// Application properties
 	this['name']=hash( getCurrentTemplatePath() );
 	this['sessionManagement']=true;
-	this['sessionTimeout']=createTimeSpan(0,0,30,0);
+	this['sessionTimeout']=createTimeSpan(0,1,30,0);
 	this['setClientCookies']=true;
 
 	// Java Integration
@@ -39,7 +39,7 @@ component{
 	this.mappings['/docbox']=COLDBOX_APP_ROOT_PATH&"docbox";
 	this.mappings['/testbox']=COLDBOX_APP_ROOT_PATH&"testbox";
 	this.mappings['/models']=COLDBOX_APP_ROOT_PATH&"models";
-	this.mappings['/code-docs']=COLDBOX_APP_ROOT_PATH&"code-docs";
+	//this.mappings['/code-docs']=ExpandPath("/code-docs");
 	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
 
 	// application start
@@ -75,6 +75,15 @@ component{
 	}
 
 	public boolean function onMissingTemplate( template ){
+		var errorStruct={
+			'attrs':{
+				'timeStamp':Now(),
+				'template':template,
+				'stackTrace':getStackTrace()
+			},
+			'caller':this.name&'.onMissingTemplate() > '
+		};
+		WriteLog(errorStruct.caller & SerializeJSON(errorStruct.attrs),"error","yes",this.name&".MissingTemplateLog");
 		return application.cbBootstrap.onMissingTemplate( argumentCollection=arguments );
 	}
 
