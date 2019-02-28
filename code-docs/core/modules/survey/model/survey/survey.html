@@ -1,0 +1,5066 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>survey</title>
+	<meta name="keywords" content="core.modules.survey.model.survey.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/survey/model/survey/survey.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.survey.model.survey"><span class="label label-success">core.modules.survey.model.survey</span></a>
+</div>
+
+<h2>
+
+Class
+survey</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/survey/model/tools/surveyView.html" title="class in core.modules.survey.model.tools">core.modules.survey.model.tools.surveyView</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">core.modules.survey.model.survey.originJoin.surveyOriginJoin</a>
+            <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.survey.model.survey.survey
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: survey 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: survey 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I create a survey object 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Chris Schroeder (schroeder@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: Friday, 01/27/2017 08:10:22 AM 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: Friday, 01/27/2017 08:10:22 AM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#discoveryStatus()">discoveryStatus</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>newSurvey</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#endAccessTime()">endAccessTime</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The time when the access to survey is over.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#finishedStudents()">finishedStudents</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of students who finished the survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isAnonymous()">isAnonymous</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean value indicating if the survey is anonymous or not.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>1</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isDeleted()">isDeleted</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean value indicating if the survey deleted or not.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isDisplayAfterCompletion()">isDisplayAfterCompletion</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean value representing wheter the results will be displayed or not.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isDisplayEveryone()">isDisplayEveryone</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean value that indicates if the results are will be displayed to everyone.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isSystemWideTemplate()">isSystemWideTemplate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Is a system-wide template.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#isTemplate()">isTemplate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boolean value indicating if this is a tempete survey or not.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#joinCreatedOn()">joinCreatedOn</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; date join was created.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#joinDeleted()">joinDeleted</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is join deleted.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#joinModifiedOn()">joinModifiedOn</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; date join was modified.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#lectureSubTitle()">lectureSubTitle</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#linkURL()">linkURL</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#nonStudentsTaken()">nonStudentsTaken</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of non-students that have taken this Survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#notificationEmail()">notificationEmail</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email Notification list in case this survey is non-anonymous.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#numberOfStudentsTaken()">numberOfStudentsTaken</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of Students that have taken this Survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#pbPages()">pbPages</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Array of pbPages to link to.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#populated()">populated</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; survey was populated with real data.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#questions()">questions</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; questions in an Array of Stuctures format.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#requiredForOffering()">requiredForOffering</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#responders()">responders</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; responders to the survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#resultURL()">resultURL</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#suppressLectNum()">suppressLectNum</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>1</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyClassSessions()">surveyClassSessions</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Array of on-campus class sessions to link to - alias for classSessions.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyHash()">surveyHash</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UUID of the Survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyIndicator()">surveyIndicator</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String that will represent survey Activity.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>Survey</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/instructions/surveyInstructions.html" title="class in core.modules.survey.model.survey.instructions">surveyInstructions</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyInstruction()">surveyInstruction</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; surveyInstruction.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyInstructionID()">surveyInstructionID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; surveyInstructionID.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyInstructionText()">surveyInstructionText</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text instructions.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyOrigin()">surveyOrigin</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Origin Object.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#surveyTitle()">surveyTitle</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Title of the survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>Untitled</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#tab()">tab</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The tab this item will be shown under.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>tabOther</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#totalStudents()">totalStudents</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of students who are enrolled in the class.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#transferredSurveyID()">transferredSurveyID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PK Value of the Default Survey.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#userID()">userID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#userStatus()">userStatus</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="survey.html#init()">init</A></strong>([Array classSessions='[runtime expression]'], [Array pbPages='[runtime expression]'], [Date closeDate='[runtime expression]'], [String courseFacultyNames=''], [Numeric courseOfferingID='0'], [Numeric courseID='0'], [Date createdOn='[runtime expression]'], [String discoveryStatus='newSurvey'], [Numeric droppedStudents='0'], [Date endAccessTime='[runtime expression]'], [Numeric finishedStudents='0'], [Boolean isAnonymous='1'], [Boolean isDeleted='0'], [Boolean isDisplayAfterCompletion='0'], [Boolean isDisplayEveryone='0'], [Boolean isOnlineCourse='1'], [Boolean isSystemWideTemplate='0'], [Boolean isTemplate='0'], [Date joinCreatedOn='[runtime expression]'], [Boolean joinDeleted='0'], [Date joinModifiedOn='[runtime expression]'], [Numeric lectureNumber='0'], [String lectureSubTitle=''], [String linkURL=''], [Date modifiedOn='[runtime expression]'], [String notificationEmail=''], [Numeric nonStudentsTaken='0'], [Numeric numberOfStudentsTaken='0'], [Date openDate='[runtime expression]'], [Boolean openStatus='1'], [String originTitle=''], [Boolean populated='0'], [Array questions='[runtime expression]'], [Array responders='[runtime expression]'], [String resultURL=''], [Boolean requiredForOffering='false'], [Boolean suppressLectNum='1'], [String surveyHash='[runtime expression]'], [Numeric surveyID='0'], [String surveyIndicator='Survey'], [Numeric surveyInstructionID='0'], [String surveyInstructionText=''], [Numeric surveyOriginJoinID='0'], [Numeric surveyOriginalSourceID='0'], [Numeric surveyOriginID='0'], [String surveyOriginName=''], [String surveyTitle='Untitled'], [String tab='tabOther'], [Numeric totalStudents='0'], [Numeric transferredsurveyID='0'], [Numeric userID='0'], [Boolean userStatus='0'], [Struct visibilityData='[runtime expression]'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETDISCOVERYSTATUS()">GETDISCOVERYSTATUS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETENDACCESSTIME()">GETENDACCESSTIME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETFINISHEDSTUDENTS()">GETFINISHEDSTUDENTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISANONYMOUS()">GETISANONYMOUS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISDELETED()">GETISDELETED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISDISPLAYAFTERCOMPLETION()">GETISDISPLAYAFTERCOMPLETION</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISDISPLAYEVERYONE()">GETISDISPLAYEVERYONE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISSYSTEMWIDETEMPLATE()">GETISSYSTEMWIDETEMPLATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETISTEMPLATE()">GETISTEMPLATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETJOINCREATEDON()">GETJOINCREATEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETJOINDELETED()">GETJOINDELETED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>date</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETJOINMODIFIEDON()">GETJOINMODIFIEDON</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETLECTURESUBTITLE()">GETLECTURESUBTITLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETLINKURL()">GETLINKURL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETNONSTUDENTSTAKEN()">GETNONSTUDENTSTAKEN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETNOTIFICATIONEMAIL()">GETNOTIFICATIONEMAIL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETNUMBEROFSTUDENTSTAKEN()">GETNUMBEROFSTUDENTSTAKEN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETPBPAGES()">GETPBPAGES</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETPOPULATED()">GETPOPULATED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETQUESTIONS()">GETQUESTIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETREQUIREDFOROFFERING()">GETREQUIREDFOROFFERING</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETRESPONDERS()">GETRESPONDERS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETRESULTURL()">GETRESULTURL</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSUPPRESSLECTNUM()">GETSUPPRESSLECTNUM</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYCLASSSESSIONS()">GETSURVEYCLASSSESSIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYHASH()">GETSURVEYHASH</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYINDICATOR()">GETSURVEYINDICATOR</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/instructions/surveyInstructions.html" title="class in core.modules.survey.model.survey.instructions">surveyInstructions</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYINSTRUCTION()">GETSURVEYINSTRUCTION</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYINSTRUCTIONID()">GETSURVEYINSTRUCTIONID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYINSTRUCTIONTEXT()">GETSURVEYINSTRUCTIONTEXT</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYORIGIN()">GETSURVEYORIGIN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETSURVEYTITLE()">GETSURVEYTITLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETTAB()">GETTAB</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETTOTALSTUDENTS()">GETTOTALSTUDENTS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETTRANSFERREDSURVEYID()">GETTRANSFERREDSURVEYID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETUSERID()">GETUSERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#GETUSERSTATUS()">GETUSERSTATUS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETDISCOVERYSTATUS()">SETDISCOVERYSTATUS</A></strong>(string discoveryStatus)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETENDACCESSTIME()">SETENDACCESSTIME</A></strong>(date endAccessTime)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETFINISHEDSTUDENTS()">SETFINISHEDSTUDENTS</A></strong>(numeric finishedStudents)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISANONYMOUS()">SETISANONYMOUS</A></strong>(boolean isAnonymous)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISDELETED()">SETISDELETED</A></strong>(boolean isDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISDISPLAYAFTERCOMPLETION()">SETISDISPLAYAFTERCOMPLETION</A></strong>(boolean isDisplayAfterCompletion)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISDISPLAYEVERYONE()">SETISDISPLAYEVERYONE</A></strong>(boolean isDisplayEveryone)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISSYSTEMWIDETEMPLATE()">SETISSYSTEMWIDETEMPLATE</A></strong>(boolean isSystemWideTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETISTEMPLATE()">SETISTEMPLATE</A></strong>(boolean isTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETJOINCREATEDON()">SETJOINCREATEDON</A></strong>(date joinCreatedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETJOINDELETED()">SETJOINDELETED</A></strong>(boolean joinDeleted)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETJOINMODIFIEDON()">SETJOINMODIFIEDON</A></strong>(date joinModifiedOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETLECTURESUBTITLE()">SETLECTURESUBTITLE</A></strong>(string lectureSubTitle)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETLINKURL()">SETLINKURL</A></strong>(string linkURL)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETNONSTUDENTSTAKEN()">SETNONSTUDENTSTAKEN</A></strong>(numeric nonStudentsTaken)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETNOTIFICATIONEMAIL()">SETNOTIFICATIONEMAIL</A></strong>(string notificationEmail)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETNUMBEROFSTUDENTSTAKEN()">SETNUMBEROFSTUDENTSTAKEN</A></strong>(numeric numberOfStudentsTaken)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETPBPAGES()">SETPBPAGES</A></strong>(array pbPages)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETPOPULATED()">SETPOPULATED</A></strong>(boolean populated)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETQUESTIONS()">SETQUESTIONS</A></strong>(Array questions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETREQUIREDFOROFFERING()">SETREQUIREDFOROFFERING</A></strong>(boolean requiredForOffering)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETRESPONDERS()">SETRESPONDERS</A></strong>(array responders)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETRESULTURL()">SETRESULTURL</A></strong>(string resultURL)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSUPPRESSLECTNUM()">SETSUPPRESSLECTNUM</A></strong>(boolean suppressLectNum)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYCLASSSESSIONS()">SETSURVEYCLASSSESSIONS</A></strong>(array surveyClassSessions)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYHASH()">SETSURVEYHASH</A></strong>(string surveyHash)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYINDICATOR()">SETSURVEYINDICATOR</A></strong>(string surveyIndicator)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYINSTRUCTION()">SETSURVEYINSTRUCTION</A></strong>(<a href="../../../../../core/modules/survey/model/survey/instructions/surveyInstructions.html" title="class in core.modules.survey.model.survey.instructions">surveyInstructions</a> surveyInstruction)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYINSTRUCTIONID()">SETSURVEYINSTRUCTIONID</A></strong>(numeric surveyInstructionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYINSTRUCTIONTEXT()">SETSURVEYINSTRUCTIONTEXT</A></strong>(String surveyInstructionText)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYORIGIN()">SETSURVEYORIGIN</A></strong>(<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a> surveyOrigin)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETSURVEYTITLE()">SETSURVEYTITLE</A></strong>(string surveyTitle)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETTAB()">SETTAB</A></strong>(string tab)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETTOTALSTUDENTS()">SETTOTALSTUDENTS</A></strong>(numeric totalStudents)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETTRANSFERREDSURVEYID()">SETTRANSFERREDSURVEYID</A></strong>(numeric transferredSurveyID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETUSERID()">SETUSERID</A></strong>(numeric userID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a></code>
+		</td>
+		<td>
+			<strong><a href="survey.html#SETUSERSTATUS()">SETUSERSTATUS</A></strong>(Boolean userStatus)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="survey.html#determineLinkRoot()">determineLinkRoot</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.survey.model.survey.originJoin.surveyOriginJoin"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">core.modules.survey.model.survey.originJoin.surveyOriginJoin</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETCLASSSESSIONS()">GETCLASSSESSIONS</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETCLOSEDATE()">GETCLOSEDATE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETCOURSEFACULTYNAMES()">GETCOURSEFACULTYNAMES</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETCOURSEID()">GETCOURSEID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETCOURSEOFFERINGID()">GETCOURSEOFFERINGID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETCREATEDON()">GETCREATEDON</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETDROPPEDSTUDENTS()">GETDROPPEDSTUDENTS</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETISONLINECOURSE()">GETISONLINECOURSE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETLECTURENUMBER()">GETLECTURENUMBER</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETMODIFIEDON()">GETMODIFIEDON</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETOPENDATE()">GETOPENDATE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETOPENSTATUS()">GETOPENSTATUS</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETORIGINTITLE()">GETORIGINTITLE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETSURVEYID()">GETSURVEYID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETSURVEYORIGINALSOURCEID()">GETSURVEYORIGINALSOURCEID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETSURVEYORIGINID()">GETSURVEYORIGINID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETSURVEYORIGINJOINID()">GETSURVEYORIGINJOINID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETSURVEYORIGINNAME()">GETSURVEYORIGINNAME</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETCLASSSESSIONS()">SETCLASSSESSIONS</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETCLOSEDATE()">SETCLOSEDATE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETCOURSEFACULTYNAMES()">SETCOURSEFACULTYNAMES</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETCOURSEID()">SETCOURSEID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETCOURSEOFFERINGID()">SETCOURSEOFFERINGID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETCREATEDON()">SETCREATEDON</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETDROPPEDSTUDENTS()">SETDROPPEDSTUDENTS</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETISONLINECOURSE()">SETISONLINECOURSE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETLECTURENUMBER()">SETLECTURENUMBER</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETMODIFIEDON()">SETMODIFIEDON</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETOPENDATE()">SETOPENDATE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETOPENSTATUS()">SETOPENSTATUS</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETORIGINTITLE()">SETORIGINTITLE</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETSURVEYID()">SETSURVEYID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETSURVEYORIGINALSOURCEID()">SETSURVEYORIGINALSOURCEID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETSURVEYORIGINID()">SETSURVEYORIGINID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETSURVEYORIGINJOINID()">SETSURVEYORIGINJOINID</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETSURVEYORIGINNAME()">SETSURVEYORIGINNAME</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#configureSurveyOriginJoin()">configureSurveyOriginJoin</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#getLectureNum()">getLectureNum</a>, <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#setLectureNum()">setLectureNum</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.survey.model.tools.surveyView"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/survey/model/tools/surveyView.html" title="class in core.modules.survey.model.tools">core.modules.survey.model.tools.surveyView</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/survey/model/tools/surveyView.html#GETATTRS()">GETATTRS</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#GETPROPS()">GETPROPS</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#GETVISIBILITYDATA()">GETVISIBILITYDATA</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#SETATTRS()">SETATTRS</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#SETPROPS()">SETPROPS</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#SETVISIBILITYDATA()">SETVISIBILITYDATA</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#createQuestionView()">createQuestionView</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#createResultsView()">createResultsView</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#getResponsesInRowExcelFormat()">getResponsesInRowExcelFormat</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#manageLinkVisibility()">manageLinkVisibility</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#returnLinkVisibility()">returnLinkVisibility</a>, <a href="../../../../../core/modules/survey/model/tools/surveyView.html#stripText()">stripText</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/bean.html" title="class in com.distance.base">com.distance.base.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/bean.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/bean.html#GETPROTOTYPE()">GETPROTOTYPE</a>, <a href="../../../../../com/distance/base/bean.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/bean.html#SETPROTOTYPE()">SETPROTOTYPE</a>, <a href="../../../../../com/distance/base/bean.html#configure()">configure</a>, <a href="../../../../../com/distance/base/bean.html#dump()">dump</a>, <a href="../../../../../com/distance/base/bean.html#makeFunctName()">makeFunctName</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([Array classSessions='[runtime expression]'], [Array pbPages='[runtime expression]'], [Date closeDate='[runtime expression]'], [String courseFacultyNames=''], [Numeric courseOfferingID='0'], [Numeric courseID='0'], [Date createdOn='[runtime expression]'], [String discoveryStatus='newSurvey'], [Numeric droppedStudents='0'], [Date endAccessTime='[runtime expression]'], [Numeric finishedStudents='0'], [Boolean isAnonymous='1'], [Boolean isDeleted='0'], [Boolean isDisplayAfterCompletion='0'], [Boolean isDisplayEveryone='0'], [Boolean isOnlineCourse='1'], [Boolean isSystemWideTemplate='0'], [Boolean isTemplate='0'], [Date joinCreatedOn='[runtime expression]'], [Boolean joinDeleted='0'], [Date joinModifiedOn='[runtime expression]'], [Numeric lectureNumber='0'], [String lectureSubTitle=''], [String linkURL=''], [Date modifiedOn='[runtime expression]'], [String notificationEmail=''], [Numeric nonStudentsTaken='0'], [Numeric numberOfStudentsTaken='0'], [Date openDate='[runtime expression]'], [Boolean openStatus='1'], [String originTitle=''], [Boolean populated='0'], [Array questions='[runtime expression]'], [Array responders='[runtime expression]'], [String resultURL=''], [Boolean requiredForOffering='false'], [Boolean suppressLectNum='1'], [String surveyHash='[runtime expression]'], [Numeric surveyID='0'], [String surveyIndicator='Survey'], [Numeric surveyInstructionID='0'], [String surveyInstructionText=''], [Numeric surveyOriginJoinID='0'], [Numeric surveyOriginalSourceID='0'], [Numeric surveyOriginID='0'], [String surveyOriginName=''], [String surveyTitle='Untitled'], [String tab='tabOther'], [Numeric totalStudents='0'], [Numeric transferredsurveyID='0'], [Numeric userID='0'], [Boolean userStatus='0'], [Struct visibilityData='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>classSessions</code></dd>
+		
+			<dd><code>pbPages</code></dd>
+		
+			<dd><code>closeDate</code></dd>
+		
+			<dd><code>courseFacultyNames</code></dd>
+		
+			<dd><code>courseOfferingID</code></dd>
+		
+			<dd><code>courseID</code></dd>
+		
+			<dd><code>createdOn</code></dd>
+		
+			<dd><code>discoveryStatus</code></dd>
+		
+			<dd><code>droppedStudents</code></dd>
+		
+			<dd><code>endAccessTime</code></dd>
+		
+			<dd><code>finishedStudents</code></dd>
+		
+			<dd><code>isAnonymous</code></dd>
+		
+			<dd><code>isDeleted</code></dd>
+		
+			<dd><code>isDisplayAfterCompletion</code></dd>
+		
+			<dd><code>isDisplayEveryone</code></dd>
+		
+			<dd><code>isOnlineCourse</code></dd>
+		
+			<dd><code>isSystemWideTemplate</code></dd>
+		
+			<dd><code>isTemplate</code></dd>
+		
+			<dd><code>joinCreatedOn</code></dd>
+		
+			<dd><code>joinDeleted</code></dd>
+		
+			<dd><code>joinModifiedOn</code></dd>
+		
+			<dd><code>lectureNumber</code></dd>
+		
+			<dd><code>lectureSubTitle</code></dd>
+		
+			<dd><code>linkURL</code></dd>
+		
+			<dd><code>modifiedOn</code></dd>
+		
+			<dd><code>notificationEmail</code></dd>
+		
+			<dd><code>nonStudentsTaken</code></dd>
+		
+			<dd><code>numberOfStudentsTaken</code></dd>
+		
+			<dd><code>openDate</code></dd>
+		
+			<dd><code>openStatus</code></dd>
+		
+			<dd><code>originTitle</code></dd>
+		
+			<dd><code>populated</code></dd>
+		
+			<dd><code>questions</code></dd>
+		
+			<dd><code>responders</code></dd>
+		
+			<dd><code>resultURL</code></dd>
+		
+			<dd><code>requiredForOffering</code></dd>
+		
+			<dd><code>suppressLectNum</code></dd>
+		
+			<dd><code>surveyHash</code></dd>
+		
+			<dd><code>surveyID</code></dd>
+		
+			<dd><code>surveyIndicator</code></dd>
+		
+			<dd><code>surveyInstructionID</code></dd>
+		
+			<dd><code>surveyInstructionText</code></dd>
+		
+			<dd><code>surveyOriginJoinID</code></dd>
+		
+			<dd><code>surveyOriginalSourceID</code></dd>
+		
+			<dd><code>surveyOriginID</code></dd>
+		
+			<dd><code>surveyOriginName</code></dd>
+		
+			<dd><code>surveyTitle</code></dd>
+		
+			<dd><code>tab</code></dd>
+		
+			<dd><code>totalStudents</code></dd>
+		
+			<dd><code>transferredsurveyID</code></dd>
+		
+			<dd><code>userID</code></dd>
+		
+			<dd><code>userStatus</code></dd>
+		
+			<dd><code>visibilityData</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="discoveryStatus()"><!-- --></a>
+		<h3>discoveryStatus</h3>
+
+		<kbd>
+			property string <strong>discoveryStatus</strong> 
+			= [newSurvey]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="endAccessTime()"><!-- --></a>
+		<h3>endAccessTime</h3>
+
+		<kbd>
+			property date <strong>endAccessTime</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The time when the access to survey is over</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="finishedStudents()"><!-- --></a>
+		<h3>finishedStudents</h3>
+
+		<kbd>
+			property numeric <strong>finishedStudents</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Number of students who finished the survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isAnonymous()"><!-- --></a>
+		<h3>isAnonymous</h3>
+
+		<kbd>
+			property boolean <strong>isAnonymous</strong> 
+			= [1]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean value indicating if the survey is anonymous or not</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDeleted()"><!-- --></a>
+		<h3>isDeleted</h3>
+
+		<kbd>
+			property boolean <strong>isDeleted</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean value indicating if the survey deleted or not</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDisplayAfterCompletion()"><!-- --></a>
+		<h3>isDisplayAfterCompletion</h3>
+
+		<kbd>
+			property boolean <strong>isDisplayAfterCompletion</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean value representing wheter the results will be displayed or not</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isDisplayEveryone()"><!-- --></a>
+		<h3>isDisplayEveryone</h3>
+
+		<kbd>
+			property boolean <strong>isDisplayEveryone</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean value that indicates if the results are will be displayed to everyone</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isSystemWideTemplate()"><!-- --></a>
+		<h3>isSystemWideTemplate</h3>
+
+		<kbd>
+			property boolean <strong>isSystemWideTemplate</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Is a system-wide template</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isTemplate()"><!-- --></a>
+		<h3>isTemplate</h3>
+
+		<kbd>
+			property boolean <strong>isTemplate</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Boolean value indicating if this is a tempete survey or not</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="joinCreatedOn()"><!-- --></a>
+		<h3>joinCreatedOn</h3>
+
+		<kbd>
+			property date <strong>joinCreatedOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>date join was created</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="joinDeleted()"><!-- --></a>
+		<h3>joinDeleted</h3>
+
+		<kbd>
+			property boolean <strong>joinDeleted</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>is join deleted</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="joinModifiedOn()"><!-- --></a>
+		<h3>joinModifiedOn</h3>
+
+		<kbd>
+			property date <strong>joinModifiedOn</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>date join was modified</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="lectureSubTitle()"><!-- --></a>
+		<h3>lectureSubTitle</h3>
+
+		<kbd>
+			property string <strong>lectureSubTitle</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="linkURL()"><!-- --></a>
+		<h3>linkURL</h3>
+
+		<kbd>
+			property string <strong>linkURL</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="nonStudentsTaken()"><!-- --></a>
+		<h3>nonStudentsTaken</h3>
+
+		<kbd>
+			property numeric <strong>nonStudentsTaken</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Number of non-students that have taken this Survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="notificationEmail()"><!-- --></a>
+		<h3>notificationEmail</h3>
+
+		<kbd>
+			property string <strong>notificationEmail</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Email Notification list in case this survey is non-anonymous</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="numberOfStudentsTaken()"><!-- --></a>
+		<h3>numberOfStudentsTaken</h3>
+
+		<kbd>
+			property numeric <strong>numberOfStudentsTaken</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Number of Students that have taken this Survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbPages()"><!-- --></a>
+		<h3>pbPages</h3>
+
+		<kbd>
+			property array <strong>pbPages</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Array of pbPages to link to.  This is for 'Other' surveys, not lecture evals.</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="populated()"><!-- --></a>
+		<h3>populated</h3>
+
+		<kbd>
+			property boolean <strong>populated</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>survey was populated with real data</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="questions()"><!-- --></a>
+		<h3>questions</h3>
+
+		<kbd>
+			property Array <strong>questions</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>questions in an Array of Stuctures format</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="requiredForOffering()"><!-- --></a>
+		<h3>requiredForOffering</h3>
+
+		<kbd>
+			property boolean <strong>requiredForOffering</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="responders()"><!-- --></a>
+		<h3>responders</h3>
+
+		<kbd>
+			property array <strong>responders</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>responders to the survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="resultURL()"><!-- --></a>
+		<h3>resultURL</h3>
+
+		<kbd>
+			property string <strong>resultURL</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="suppressLectNum()"><!-- --></a>
+		<h3>suppressLectNum</h3>
+
+		<kbd>
+			property boolean <strong>suppressLectNum</strong> 
+			= [1]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyClassSessions()"><!-- --></a>
+		<h3>surveyClassSessions</h3>
+
+		<kbd>
+			property array <strong>surveyClassSessions</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Array of on-campus class sessions to link to - alias for classSessions</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyHash()"><!-- --></a>
+		<h3>surveyHash</h3>
+
+		<kbd>
+			property string <strong>surveyHash</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>UUID of the Survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyIndicator()"><!-- --></a>
+		<h3>surveyIndicator</h3>
+
+		<kbd>
+			property string <strong>surveyIndicator</strong> 
+			= [Survey]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>String that will represent survey Activity</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyInstruction()"><!-- --></a>
+		<h3>surveyInstruction</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/survey/model/survey/instructions/surveyInstructions.html" title="class in core.modules.survey.model.survey.instructions">surveyInstructions</a> <strong>surveyInstruction</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>surveyInstruction</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyInstructionID()"><!-- --></a>
+		<h3>surveyInstructionID</h3>
+
+		<kbd>
+			property numeric <strong>surveyInstructionID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>surveyInstructionID</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyInstructionText()"><!-- --></a>
+		<h3>surveyInstructionText</h3>
+
+		<kbd>
+			property String <strong>surveyInstructionText</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Text instructions</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyOrigin()"><!-- --></a>
+		<h3>surveyOrigin</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a> <strong>surveyOrigin</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Origin Object</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyTitle()"><!-- --></a>
+		<h3>surveyTitle</h3>
+
+		<kbd>
+			property string <strong>surveyTitle</strong> 
+			= [Untitled]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Title of the survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="tab()"><!-- --></a>
+		<h3>tab</h3>
+
+		<kbd>
+			property string <strong>tab</strong> 
+			= [tabOther]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The tab this item will be shown under</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="totalStudents()"><!-- --></a>
+		<h3>totalStudents</h3>
+
+		<kbd>
+			property numeric <strong>totalStudents</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>Number of students who are enrolled in the class</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="transferredSurveyID()"><!-- --></a>
+		<h3>transferredSurveyID</h3>
+
+		<kbd>
+			property numeric <strong>transferredSurveyID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>PK Value of the Default Survey</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userID()"><!-- --></a>
+		<h3>userID</h3>
+
+		<kbd>
+			property numeric <strong>userID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userStatus()"><!-- --></a>
+		<h3>userStatus</h3>
+
+		<kbd>
+			property Boolean <strong>userStatus</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETDISCOVERYSTATUS()"><!-- --></a>
+	<h3>
+		GETDISCOVERYSTATUS 
+	</h3>
+
+	<kbd>public string <strong>GETDISCOVERYSTATUS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETENDACCESSTIME()"><!-- --></a>
+	<h3>
+		GETENDACCESSTIME 
+	</h3>
+
+	<kbd>public date <strong>GETENDACCESSTIME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFINISHEDSTUDENTS()"><!-- --></a>
+	<h3>
+		GETFINISHEDSTUDENTS 
+	</h3>
+
+	<kbd>public numeric <strong>GETFINISHEDSTUDENTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISANONYMOUS()"><!-- --></a>
+	<h3>
+		GETISANONYMOUS 
+	</h3>
+
+	<kbd>public boolean <strong>GETISANONYMOUS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISDELETED()"><!-- --></a>
+	<h3>
+		GETISDELETED 
+	</h3>
+
+	<kbd>public boolean <strong>GETISDELETED</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETISDELETED()">GETISDELETED</a></code>
+			in class
+			<code>
+				<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISDISPLAYAFTERCOMPLETION()"><!-- --></a>
+	<h3>
+		GETISDISPLAYAFTERCOMPLETION 
+	</h3>
+
+	<kbd>public boolean <strong>GETISDISPLAYAFTERCOMPLETION</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISDISPLAYEVERYONE()"><!-- --></a>
+	<h3>
+		GETISDISPLAYEVERYONE 
+	</h3>
+
+	<kbd>public boolean <strong>GETISDISPLAYEVERYONE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISSYSTEMWIDETEMPLATE()"><!-- --></a>
+	<h3>
+		GETISSYSTEMWIDETEMPLATE 
+	</h3>
+
+	<kbd>public boolean <strong>GETISSYSTEMWIDETEMPLATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISTEMPLATE()"><!-- --></a>
+	<h3>
+		GETISTEMPLATE 
+	</h3>
+
+	<kbd>public boolean <strong>GETISTEMPLATE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETJOINCREATEDON()"><!-- --></a>
+	<h3>
+		GETJOINCREATEDON 
+	</h3>
+
+	<kbd>public date <strong>GETJOINCREATEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETJOINDELETED()"><!-- --></a>
+	<h3>
+		GETJOINDELETED 
+	</h3>
+
+	<kbd>public boolean <strong>GETJOINDELETED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETJOINMODIFIEDON()"><!-- --></a>
+	<h3>
+		GETJOINMODIFIEDON 
+	</h3>
+
+	<kbd>public date <strong>GETJOINMODIFIEDON</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETLECTURESUBTITLE()"><!-- --></a>
+	<h3>
+		GETLECTURESUBTITLE 
+	</h3>
+
+	<kbd>public string <strong>GETLECTURESUBTITLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETLINKURL()"><!-- --></a>
+	<h3>
+		GETLINKURL 
+	</h3>
+
+	<kbd>public string <strong>GETLINKURL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNONSTUDENTSTAKEN()"><!-- --></a>
+	<h3>
+		GETNONSTUDENTSTAKEN 
+	</h3>
+
+	<kbd>public numeric <strong>GETNONSTUDENTSTAKEN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNOTIFICATIONEMAIL()"><!-- --></a>
+	<h3>
+		GETNOTIFICATIONEMAIL 
+	</h3>
+
+	<kbd>public string <strong>GETNOTIFICATIONEMAIL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNUMBEROFSTUDENTSTAKEN()"><!-- --></a>
+	<h3>
+		GETNUMBEROFSTUDENTSTAKEN 
+	</h3>
+
+	<kbd>public numeric <strong>GETNUMBEROFSTUDENTSTAKEN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBPAGES()"><!-- --></a>
+	<h3>
+		GETPBPAGES 
+	</h3>
+
+	<kbd>public array <strong>GETPBPAGES</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#GETPBPAGES()">GETPBPAGES</a></code>
+			in class
+			<code>
+				<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPOPULATED()"><!-- --></a>
+	<h3>
+		GETPOPULATED 
+	</h3>
+
+	<kbd>public boolean <strong>GETPOPULATED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETQUESTIONS()"><!-- --></a>
+	<h3>
+		GETQUESTIONS 
+	</h3>
+
+	<kbd>public Array <strong>GETQUESTIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETREQUIREDFOROFFERING()"><!-- --></a>
+	<h3>
+		GETREQUIREDFOROFFERING 
+	</h3>
+
+	<kbd>public boolean <strong>GETREQUIREDFOROFFERING</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRESPONDERS()"><!-- --></a>
+	<h3>
+		GETRESPONDERS 
+	</h3>
+
+	<kbd>public array <strong>GETRESPONDERS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETRESULTURL()"><!-- --></a>
+	<h3>
+		GETRESULTURL 
+	</h3>
+
+	<kbd>public string <strong>GETRESULTURL</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSUPPRESSLECTNUM()"><!-- --></a>
+	<h3>
+		GETSUPPRESSLECTNUM 
+	</h3>
+
+	<kbd>public boolean <strong>GETSUPPRESSLECTNUM</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYCLASSSESSIONS()"><!-- --></a>
+	<h3>
+		GETSURVEYCLASSSESSIONS 
+	</h3>
+
+	<kbd>public array <strong>GETSURVEYCLASSSESSIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYHASH()"><!-- --></a>
+	<h3>
+		GETSURVEYHASH 
+	</h3>
+
+	<kbd>public string <strong>GETSURVEYHASH</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYINDICATOR()"><!-- --></a>
+	<h3>
+		GETSURVEYINDICATOR 
+	</h3>
+
+	<kbd>public string <strong>GETSURVEYINDICATOR</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYINSTRUCTION()"><!-- --></a>
+	<h3>
+		GETSURVEYINSTRUCTION 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/instructions/surveyInstructions.html" title="class in core.modules.survey.model.survey.instructions">surveyInstructions</a> <strong>GETSURVEYINSTRUCTION</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYINSTRUCTIONID()"><!-- --></a>
+	<h3>
+		GETSURVEYINSTRUCTIONID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSURVEYINSTRUCTIONID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYINSTRUCTIONTEXT()"><!-- --></a>
+	<h3>
+		GETSURVEYINSTRUCTIONTEXT 
+	</h3>
+
+	<kbd>public String <strong>GETSURVEYINSTRUCTIONTEXT</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYORIGIN()"><!-- --></a>
+	<h3>
+		GETSURVEYORIGIN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a> <strong>GETSURVEYORIGIN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYTITLE()"><!-- --></a>
+	<h3>
+		GETSURVEYTITLE 
+	</h3>
+
+	<kbd>public string <strong>GETSURVEYTITLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTAB()"><!-- --></a>
+	<h3>
+		GETTAB 
+	</h3>
+
+	<kbd>public string <strong>GETTAB</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTOTALSTUDENTS()"><!-- --></a>
+	<h3>
+		GETTOTALSTUDENTS 
+	</h3>
+
+	<kbd>public numeric <strong>GETTOTALSTUDENTS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTRANSFERREDSURVEYID()"><!-- --></a>
+	<h3>
+		GETTRANSFERREDSURVEYID 
+	</h3>
+
+	<kbd>public numeric <strong>GETTRANSFERREDSURVEYID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERID()"><!-- --></a>
+	<h3>
+		GETUSERID 
+	</h3>
+
+	<kbd>public numeric <strong>GETUSERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERSTATUS()"><!-- --></a>
+	<h3>
+		GETUSERSTATUS 
+	</h3>
+
+	<kbd>public Boolean <strong>GETUSERSTATUS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDISCOVERYSTATUS()"><!-- --></a>
+	<h3>
+		SETDISCOVERYSTATUS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETDISCOVERYSTATUS</strong>(string discoveryStatus)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>discoveryStatus</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETENDACCESSTIME()"><!-- --></a>
+	<h3>
+		SETENDACCESSTIME 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETENDACCESSTIME</strong>(date endAccessTime)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>endAccessTime</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFINISHEDSTUDENTS()"><!-- --></a>
+	<h3>
+		SETFINISHEDSTUDENTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETFINISHEDSTUDENTS</strong>(numeric finishedStudents)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>finishedStudents</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISANONYMOUS()"><!-- --></a>
+	<h3>
+		SETISANONYMOUS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETISANONYMOUS</strong>(boolean isAnonymous)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isAnonymous</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISDELETED()"><!-- --></a>
+	<h3>
+		SETISDELETED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETISDELETED</strong>(boolean isDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETISDELETED()">SETISDELETED</a></code>
+			in class
+			<code>
+				<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISDISPLAYAFTERCOMPLETION()"><!-- --></a>
+	<h3>
+		SETISDISPLAYAFTERCOMPLETION 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETISDISPLAYAFTERCOMPLETION</strong>(boolean isDisplayAfterCompletion)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDisplayAfterCompletion</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISDISPLAYEVERYONE()"><!-- --></a>
+	<h3>
+		SETISDISPLAYEVERYONE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETISDISPLAYEVERYONE</strong>(boolean isDisplayEveryone)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isDisplayEveryone</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISSYSTEMWIDETEMPLATE()"><!-- --></a>
+	<h3>
+		SETISSYSTEMWIDETEMPLATE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETISSYSTEMWIDETEMPLATE</strong>(boolean isSystemWideTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isSystemWideTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISTEMPLATE()"><!-- --></a>
+	<h3>
+		SETISTEMPLATE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETISTEMPLATE</strong>(boolean isTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETJOINCREATEDON()"><!-- --></a>
+	<h3>
+		SETJOINCREATEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETJOINCREATEDON</strong>(date joinCreatedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>joinCreatedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETJOINDELETED()"><!-- --></a>
+	<h3>
+		SETJOINDELETED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETJOINDELETED</strong>(boolean joinDeleted)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>joinDeleted</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETJOINMODIFIEDON()"><!-- --></a>
+	<h3>
+		SETJOINMODIFIEDON 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETJOINMODIFIEDON</strong>(date joinModifiedOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>joinModifiedOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETLECTURESUBTITLE()"><!-- --></a>
+	<h3>
+		SETLECTURESUBTITLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETLECTURESUBTITLE</strong>(string lectureSubTitle)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lectureSubTitle</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETLINKURL()"><!-- --></a>
+	<h3>
+		SETLINKURL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETLINKURL</strong>(string linkURL)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>linkURL</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNONSTUDENTSTAKEN()"><!-- --></a>
+	<h3>
+		SETNONSTUDENTSTAKEN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETNONSTUDENTSTAKEN</strong>(numeric nonStudentsTaken)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>nonStudentsTaken</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNOTIFICATIONEMAIL()"><!-- --></a>
+	<h3>
+		SETNOTIFICATIONEMAIL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETNOTIFICATIONEMAIL</strong>(string notificationEmail)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>notificationEmail</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNUMBEROFSTUDENTSTAKEN()"><!-- --></a>
+	<h3>
+		SETNUMBEROFSTUDENTSTAKEN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETNUMBEROFSTUDENTSTAKEN</strong>(numeric numberOfStudentsTaken)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>numberOfStudentsTaken</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBPAGES()"><!-- --></a>
+	<h3>
+		SETPBPAGES 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETPBPAGES</strong>(array pbPages)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html#SETPBPAGES()">SETPBPAGES</a></code>
+			in class
+			<code>
+				<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbPages</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPOPULATED()"><!-- --></a>
+	<h3>
+		SETPOPULATED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETPOPULATED</strong>(boolean populated)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>populated</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETQUESTIONS()"><!-- --></a>
+	<h3>
+		SETQUESTIONS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETQUESTIONS</strong>(Array questions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETREQUIREDFOROFFERING()"><!-- --></a>
+	<h3>
+		SETREQUIREDFOROFFERING 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETREQUIREDFOROFFERING</strong>(boolean requiredForOffering)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>requiredForOffering</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRESPONDERS()"><!-- --></a>
+	<h3>
+		SETRESPONDERS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETRESPONDERS</strong>(array responders)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>responders</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETRESULTURL()"><!-- --></a>
+	<h3>
+		SETRESULTURL 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETRESULTURL</strong>(string resultURL)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>resultURL</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSUPPRESSLECTNUM()"><!-- --></a>
+	<h3>
+		SETSUPPRESSLECTNUM 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSUPPRESSLECTNUM</strong>(boolean suppressLectNum)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>suppressLectNum</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYCLASSSESSIONS()"><!-- --></a>
+	<h3>
+		SETSURVEYCLASSSESSIONS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYCLASSSESSIONS</strong>(array surveyClassSessions)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyClassSessions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYHASH()"><!-- --></a>
+	<h3>
+		SETSURVEYHASH 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYHASH</strong>(string surveyHash)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyHash</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYINDICATOR()"><!-- --></a>
+	<h3>
+		SETSURVEYINDICATOR 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYINDICATOR</strong>(string surveyIndicator)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyIndicator</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYINSTRUCTION()"><!-- --></a>
+	<h3>
+		SETSURVEYINSTRUCTION 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYINSTRUCTION</strong>(<a href="../../../../../core/modules/survey/model/survey/instructions/surveyInstructions.html" title="class in core.modules.survey.model.survey.instructions">surveyInstructions</a> surveyInstruction)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyInstruction</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYINSTRUCTIONID()"><!-- --></a>
+	<h3>
+		SETSURVEYINSTRUCTIONID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYINSTRUCTIONID</strong>(numeric surveyInstructionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyInstructionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYINSTRUCTIONTEXT()"><!-- --></a>
+	<h3>
+		SETSURVEYINSTRUCTIONTEXT 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYINSTRUCTIONTEXT</strong>(String surveyInstructionText)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyInstructionText</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYORIGIN()"><!-- --></a>
+	<h3>
+		SETSURVEYORIGIN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYORIGIN</strong>(<a href="../../../../../core/modules/survey/model/survey/originJoin/surveyOriginJoin.html" title="class in core.modules.survey.model.survey.originJoin">surveyOriginJoin</a> surveyOrigin)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyOrigin</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYTITLE()"><!-- --></a>
+	<h3>
+		SETSURVEYTITLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETSURVEYTITLE</strong>(string surveyTitle)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyTitle</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTAB()"><!-- --></a>
+	<h3>
+		SETTAB 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETTAB</strong>(string tab)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>tab</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTOTALSTUDENTS()"><!-- --></a>
+	<h3>
+		SETTOTALSTUDENTS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETTOTALSTUDENTS</strong>(numeric totalStudents)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>totalStudents</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTRANSFERREDSURVEYID()"><!-- --></a>
+	<h3>
+		SETTRANSFERREDSURVEYID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETTRANSFERREDSURVEYID</strong>(numeric transferredSurveyID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>transferredSurveyID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERID()"><!-- --></a>
+	<h3>
+		SETUSERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETUSERID</strong>(numeric userID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERSTATUS()"><!-- --></a>
+	<h3>
+		SETUSERSTATUS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/survey/model/survey/survey.html" title="class in core.modules.survey.model.survey">survey</a> <strong>SETUSERSTATUS</strong>(Boolean userStatus)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userStatus</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="determineLinkRoot()"><!-- --></a>
+	<h3>
+		determineLinkRoot 
+	</h3>
+
+	<kbd>public String <strong>determineLinkRoot</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

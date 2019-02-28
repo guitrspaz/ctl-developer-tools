@@ -1,0 +1,1642 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>service</title>
+	<meta name="keywords" content="com.distance.base.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../index.html?com/distance/base/service.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.base"><span class="label label-success">com.distance.base</span></a>
+</div>
+
+<h2>
+
+Class
+service</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../resources/inherit.gif" alt="extended by "><a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../resources/inherit.gif" alt="extended by ">com.distance.base.service
+</pre>
+
+
+
+<div class="panel panel-default">
+	<div class="panel-heading"><strong>Direct Known Subclasses:</strong></div>
+  	<div class="panel-body">
+	
+		<a href="../../../com/ctlt/utils/stringUtils.html" title="class in com.distance.base">stringUtils</a>
+	,
+		<a href="../../../com/distance/base/api.html" title="class in com.distance.base">api</a>
+	,
+		<a href="../../../com/distance/base/dao.html" title="class in com.distance.base">dao</a>
+	,
+		<a href="../../../com/distance/myCourses4/offering/offeringContentServiceCoordinator.html" title="class in com.distance.base">offeringContentServiceCoordinator</a>
+	,
+		<a href="../../../com/distance/myCourses4/userSecurity/homer.html" title="class in com.distance.base">homer</a>
+	,
+		<a href="../../../core/model/enrollmentUtils/myCoursesListService.html" title="class in com.distance.base">myCoursesListService</a>
+	,
+		<a href="../../../core/modules/CPscheduleBuilder/model/lectureSessionService.html" title="class in com.distance.base">lectureSessionService</a>
+	,
+		<a href="../../../core/modules/CPscheduleBuilder/model/pageLink/pageLinkService.html" title="class in com.distance.base">pageLinkService</a>
+	,
+		<a href="../../../core/modules/factools/model/factoolsService.html" title="class in com.distance.base">factoolsService</a>
+	,
+		<a href="../../../core/modules/facultyActivity/model/genericFacultyActivityService.html" title="class in com.distance.base">genericFacultyActivityService</a>
+	,
+		<a href="../../../core/modules/gradebook/model/tools/service.html" title="class in com.distance.base">service</a>
+	,
+		<a href="../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in com.distance.base">communicationService</a>
+	,
+		<a href="../../../core/modules/gradebook2/model/feedback/feedbackService.html" title="class in com.distance.base">feedbackService</a>
+	,
+		<a href="../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in com.distance.base">gradeConverter</a>
+	,
+		<a href="../../../core/modules/ltSlides/model/tools/gateway.html" title="class in com.distance.base">gateway</a>
+	,
+		<a href="../../../core/modules/mailer/model/tools/xmlConvertTools.html" title="class in com.distance.base">xmlConvertTools</a>
+	,
+		<a href="../../../core/modules/onlineLibrary/model/library/libraryService.html" title="class in com.distance.base">libraryService</a>
+	,
+		<a href="../../../core/modules/onlineLibrary/model/view/libraryView.html" title="class in com.distance.base">libraryView</a>
+	,
+		<a href="../../../core/modules/pageBuilder/model/pbHistory/pbHistoryService.html" title="class in com.distance.base">pbHistoryService</a>
+	,
+		<a href="../../../core/modules/pageBuilder/model/pbPage/pbLectureSurveyService.html" title="class in com.distance.base">pbLectureSurveyService</a>
+	,
+		<a href="../../../core/modules/pageBuilder/model/pbPage/pbPageEventService.html" title="class in com.distance.base">pbPageEventService</a>
+	,
+		<a href="../../../core/modules/panopto/model/panoptoService.html" title="class in com.distance.base">panoptoService</a>
+	,
+		<a href="../../../core/modules/peerEvaluations/model/tools/service.html" title="class in com.distance.base">service</a>
+	,
+		<a href="../../../core/modules/peerEvaluations/model/tools/upload.html" title="class in com.distance.base">upload</a>
+	,
+		<a href="../../../core/modules/rubrics/model/tools/gateway.html" title="class in com.distance.base">gateway</a>
+	,
+		<a href="../../../core/modules/sbEventCompletion/model/sbEventCompletionService.html" title="class in com.distance.base">sbEventCompletionService</a>
+	,
+		<a href="../../../core/modules/scheduleBuilder/model/tools/service.html" title="class in com.distance.base">service</a>
+	,
+		<a href="../../../core/modules/signupSheets/model/tools/signupTools.html" title="class in com.distance.base">signupTools</a>
+	,
+		<a href="../../../core/modules/survey/model/tools/service.html" title="class in com.distance.base">service</a>
+	,
+		<a href="../../../core/modules/transcriptOrder/model/transcriptOrderGateway.html" title="class in com.distance.base">transcriptOrderGateway</a>
+	,
+		<a href="../../../core/modules/transcriptOrder/model/transcriptOrderService.html" title="class in com.distance.base">transcriptOrderService</a>
+	
+	</div>
+</div>
+
+<div id="class-hint">
+	<p>I create service objects with extra tools</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: com.distance.base.service 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: com.distance.base.service 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I create service objects with extra tools 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Chris Schroeder (schroeder@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: Tuesday, 06/16/2015 07:54:17 AM 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: Tuesday, 06/16/2015 07:54:17 AM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="service.html#init()">init</A></strong>([Struct blueprints='[runtime expression]'], [String cacheName='default'], [String cacheRegion=''], [Array cacheScopes='[runtime expression]'], [Struct cacheTypes='[runtime expression]'], [String caller='[runtime expression]'], [Struct child='[runtime expression]'], [Date compareDate='[runtime expression]'], [String ctlemail='ctlhelp@jhu.edu'], [Boolean debugMode='false'], [Date defaultDate='[runtime expression]'], [String defaultLog='com.distance.base'], [Struct paramAliases='[runtime expression]'], [Boolean sharedCache='false'], [String supportEmail='ctlhelp@jhu.edu'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="service.html#ArrayJoin()">ArrayJoin</A></strong>(Array base, Array addOn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="service.html#ArrayOfStructSort()">ArrayOfStructSort</A></strong>(Array base, [String sortType='text'], [String sortOrder='ASC'], [String pathToSubElement=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="service.html#Merge()">Merge</A></strong>(Array leftArray, Array rightArray, Any key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="service.html#MergeSort()">MergeSort</A></strong>(Array Arr, Any key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Void</code>
+		</td>
+		<td>
+			<strong><a href="service.html#appendAttrs()">appendAttrs</A></strong>(xml node, String attrName, Any attrVal)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="service.html#buildBaseXml()">buildBaseXml</A></strong>(String rootNode, Struct attributes)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="service.html#checkForPrototype()">checkForPrototype</A></strong>([any n])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Void</code>
+		</td>
+		<td>
+			<strong><a href="service.html#configure()">configure</A></strong>([String cacheName='serviceObject'], [Struct paramAliases='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="service.html#filterIsBasic()">filterIsBasic</A></strong>(String key, Any value, [Array forceIncludeKeys='[runtime expression]'], [Array forceExcludeKeys='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Query</code>
+		</td>
+		<td>
+			<strong><a href="service.html#filterStudents()">filterStudents</A></strong>(Query fullEnrollment, [Numeric minUserLevel='500'], [Numeric maxUserLevel='599'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#getBeanDefinitions()">getBeanDefinitions</A></strong>(Coldspring.beans.BeanFactory serviceFactory)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#getHashedReportFileName()">getHashedReportFileName</A></strong>([Array identifiers='[runtime expression]'], [String encoding='SHA'], [String prefix='pe-'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#getOfferingEnrollment()">getOfferingEnrollment</A></strong>(Numeric courseOfferingID, [String format='query'], [Boolean randomize='false'], [Query enrollmentQuery], [Any myCoursesInterface])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="service.html#handleFormArray()">handleFormArray</A></strong>(Any formArray='[runtime expression]')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="service.html#hasConfigure()">hasConfigure</A></strong>([any obj])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#importNodes()">importNodes</A></strong>(xml doc, Any children, [Struct attrs='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="service.html#isUnique()">isUnique</A></strong>(Any source, String key)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#makeFunctName()">makeFunctName</A></strong>(String functName, String objName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#makeSlug()">makeSlug</A></strong>([String title=''], [String divider='-'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#manageDecimals()">manageDecimals</A></strong>(Any num, [Numeric decimals='4'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#objectToStruct()">objectToStruct</A></strong>(Any obj, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#paraFormat()">paraFormat</A></strong>(String unformattedText, [String class=''], [String flag=''], [Boolean stripflag='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#queryRowToStruct()">queryRowToStruct</A></strong>(Query qry, [any row='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#randomizeKeys()">randomizeKeys</A></strong>([String keyList=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</A></strong>(String str)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#returnProperties()">returnProperties</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#returnService()">returnService</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#returnStructModel()">returnStructModel</A></strong>(String modelName, Struct params)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Boolean</code>
+		</td>
+		<td>
+			<strong><a href="service.html#sendToDeveloper()">sendToDeveloper</A></strong>([String subject='Send To Developer'], [Array params='[runtime expression]'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#stripHTML()">stripHTML</A></strong>(String unformattedText)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</A></strong>(String url, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="service.html#wordCount()">wordCount</A></strong>([any wordsToCount])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#xmlExtractChildren()">xmlExtractChildren</A></strong>(Any objectKey, Any objectValue)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="service.html#xmlNodeToStruct()">xmlNodeToStruct</A></strong>(any xmlObject)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#zeroCallback()">zeroCallback</A></strong>([Any obj], [String key], [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="service.html#zeroOut()">zeroOut</A></strong>(Any obj, [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'], [Boolean throwOnError='false'])
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([Struct blueprints='[runtime expression]'], [String cacheName='default'], [String cacheRegion=''], [Array cacheScopes='[runtime expression]'], [Struct cacheTypes='[runtime expression]'], [String caller='[runtime expression]'], [Struct child='[runtime expression]'], [Date compareDate='[runtime expression]'], [String ctlemail='ctlhelp@jhu.edu'], [Boolean debugMode='false'], [Date defaultDate='[runtime expression]'], [String defaultLog='com.distance.base'], [Struct paramAliases='[runtime expression]'], [Boolean sharedCache='false'], [String supportEmail='ctlhelp@jhu.edu'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>blueprints</code></dd>
+		
+			<dd><code>cacheName</code></dd>
+		
+			<dd><code>cacheRegion</code></dd>
+		
+			<dd><code>cacheScopes</code></dd>
+		
+			<dd><code>cacheTypes</code></dd>
+		
+			<dd><code>caller</code></dd>
+		
+			<dd><code>child</code></dd>
+		
+			<dd><code>compareDate</code></dd>
+		
+			<dd><code>ctlemail</code></dd>
+		
+			<dd><code>debugMode</code></dd>
+		
+			<dd><code>defaultDate</code></dd>
+		
+			<dd><code>defaultLog</code></dd>
+		
+			<dd><code>paramAliases</code></dd>
+		
+			<dd><code>sharedCache</code></dd>
+		
+			<dd><code>supportEmail</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="ArrayJoin()"><!-- --></a>
+	<h3>
+		ArrayJoin 
+	</h3>
+
+	<kbd>public Array <strong>ArrayJoin</strong>(Array base, Array addOn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>base</code></dd>
+		
+		<dd><code>addOn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="ArrayOfStructSort()"><!-- --></a>
+	<h3>
+		ArrayOfStructSort 
+	</h3>
+
+	<kbd>public Array <strong>ArrayOfStructSort</strong>(Array base, [String sortType='text'], [String sortOrder='ASC'], [String pathToSubElement=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>base</code></dd>
+		
+		<dd><code>sortType</code></dd>
+		
+		<dd><code>sortOrder</code></dd>
+		
+		<dd><code>pathToSubElement</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="Merge()"><!-- --></a>
+	<h3>
+		Merge 
+	</h3>
+
+	<kbd>public Array <strong>Merge</strong>(Array leftArray, Array rightArray, Any key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>leftArray</code></dd>
+		
+		<dd><code>rightArray</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="MergeSort()"><!-- --></a>
+	<h3>
+		MergeSort 
+	</h3>
+
+	<kbd>public Array <strong>MergeSort</strong>(Array Arr, Any key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>Arr</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="appendAttrs()"><!-- --></a>
+	<h3>
+		appendAttrs 
+	</h3>
+
+	<kbd>private Void <strong>appendAttrs</strong>(xml node, String attrName, Any attrVal)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>node</code></dd>
+		
+		<dd><code>attrName</code></dd>
+		
+		<dd><code>attrVal</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="buildBaseXml()"><!-- --></a>
+	<h3>
+		buildBaseXml 
+	</h3>
+
+	<kbd>public xml <strong>buildBaseXml</strong>(String rootNode, Struct attributes)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>rootNode</code></dd>
+		
+		<dd><code>attributes</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="checkForPrototype()"><!-- --></a>
+	<h3>
+		checkForPrototype 
+	</h3>
+
+	<kbd>public Boolean <strong>checkForPrototype</strong>([any n])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>n</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>private Void <strong>configure</strong>([String cacheName='serviceObject'], [Struct paramAliases='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cacheName</code></dd>
+		
+		<dd><code>paramAliases</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="filterIsBasic()"><!-- --></a>
+	<h3>
+		filterIsBasic 
+	</h3>
+
+	<kbd>public Boolean <strong>filterIsBasic</strong>(String key, Any value, [Array forceIncludeKeys='[runtime expression]'], [Array forceExcludeKeys='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>key</code></dd>
+		
+		<dd><code>value</code></dd>
+		
+		<dd><code>forceIncludeKeys</code></dd>
+		
+		<dd><code>forceExcludeKeys</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="filterStudents()"><!-- --></a>
+	<h3>
+		filterStudents 
+	</h3>
+
+	<kbd>private Query <strong>filterStudents</strong>(Query fullEnrollment, [Numeric minUserLevel='500'], [Numeric maxUserLevel='599'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fullEnrollment</code></dd>
+		
+		<dd><code>minUserLevel</code></dd>
+		
+		<dd><code>maxUserLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getBeanDefinitions()"><!-- --></a>
+	<h3>
+		getBeanDefinitions 
+	</h3>
+
+	<kbd>public Struct <strong>getBeanDefinitions</strong>(Coldspring.beans.BeanFactory serviceFactory)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>serviceFactory</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getHashedReportFileName()"><!-- --></a>
+	<h3>
+		getHashedReportFileName 
+	</h3>
+
+	<kbd>public String <strong>getHashedReportFileName</strong>([Array identifiers='[runtime expression]'], [String encoding='SHA'], [String prefix='pe-'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>identifiers</code></dd>
+		
+		<dd><code>encoding</code></dd>
+		
+		<dd><code>prefix</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOfferingEnrollment()"><!-- --></a>
+	<h3>
+		getOfferingEnrollment 
+	</h3>
+
+	<kbd>public Any <strong>getOfferingEnrollment</strong>(Numeric courseOfferingID, [String format='query'], [Boolean randomize='false'], [Query enrollmentQuery], [Any myCoursesInterface])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		<dd><code>randomize</code></dd>
+		
+		<dd><code>enrollmentQuery</code></dd>
+		
+		<dd><code>myCoursesInterface</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="handleFormArray()"><!-- --></a>
+	<h3>
+		handleFormArray 
+	</h3>
+
+	<kbd>public Array <strong>handleFormArray</strong>(Any formArray='[runtime expression]')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>formArray</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="hasConfigure()"><!-- --></a>
+	<h3>
+		hasConfigure 
+	</h3>
+
+	<kbd>public Boolean <strong>hasConfigure</strong>([any obj])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importNodes()"><!-- --></a>
+	<h3>
+		importNodes 
+	</h3>
+
+	<kbd>private Any <strong>importNodes</strong>(xml doc, Any children, [Struct attrs='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>doc</code></dd>
+		
+		<dd><code>children</code></dd>
+		
+		<dd><code>attrs</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isUnique()"><!-- --></a>
+	<h3>
+		isUnique 
+	</h3>
+
+	<kbd>public Boolean <strong>isUnique</strong>(Any source, String key)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>source</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeFunctName()"><!-- --></a>
+	<h3>
+		makeFunctName 
+	</h3>
+
+	<kbd>public String <strong>makeFunctName</strong>(String functName, String objName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>functName</code></dd>
+		
+		<dd><code>objName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeSlug()"><!-- --></a>
+	<h3>
+		makeSlug 
+	</h3>
+
+	<kbd>remote String <strong>makeSlug</strong>([String title=''], [String divider='-'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>title</code></dd>
+		
+		<dd><code>divider</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="manageDecimals()"><!-- --></a>
+	<h3>
+		manageDecimals 
+	</h3>
+
+	<kbd>public Any <strong>manageDecimals</strong>(Any num, [Numeric decimals='4'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>num</code></dd>
+		
+		<dd><code>decimals</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="objectToStruct()"><!-- --></a>
+	<h3>
+		objectToStruct 
+	</h3>
+
+	<kbd>public Struct <strong>objectToStruct</strong>(Any obj, [Array includeParents='[runtime expression]'], [Numeric currentLevel='1'], [Array extendedInclusions='[runtime expression]'], [Boolean throwOnError='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="paraFormat()"><!-- --></a>
+	<h3>
+		paraFormat 
+	</h3>
+
+	<kbd>public String <strong>paraFormat</strong>(String unformattedText, [String class=''], [String flag=''], [Boolean stripflag='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>unformattedText</code></dd>
+		
+		<dd><code>class</code></dd>
+		
+		<dd><code>flag</code></dd>
+		
+		<dd><code>stripflag</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="queryRowToStruct()"><!-- --></a>
+	<h3>
+		queryRowToStruct 
+	</h3>
+
+	<kbd>public Struct <strong>queryRowToStruct</strong>(Query qry, [any row='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>qry</code></dd>
+		
+		<dd><code>row</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="randomizeKeys()"><!-- --></a>
+	<h3>
+		randomizeKeys 
+	</h3>
+
+	<kbd>public String <strong>randomizeKeys</strong>([String keyList=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>keyList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="replaceUnwantedCharacters()"><!-- --></a>
+	<h3>
+		replaceUnwantedCharacters 
+	</h3>
+
+	<kbd>public Any <strong>replaceUnwantedCharacters</strong>(String str)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>str</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnProperties()"><!-- --></a>
+	<h3>
+		returnProperties 
+	</h3>
+
+	<kbd>public Struct <strong>returnProperties</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnService()"><!-- --></a>
+	<h3>
+		returnService 
+	</h3>
+
+	<kbd>public Any <strong>returnService</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnStructModel()"><!-- --></a>
+	<h3>
+		returnStructModel 
+	</h3>
+
+	<kbd>public Struct <strong>returnStructModel</strong>(String modelName, Struct params)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>modelName</code></dd>
+		
+		<dd><code>params</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendToDeveloper()"><!-- --></a>
+	<h3>
+		sendToDeveloper 
+	</h3>
+
+	<kbd>public Boolean <strong>sendToDeveloper</strong>([String subject='Send To Developer'], [Array params='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>subject</code></dd>
+		
+		<dd><code>params</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="stripHTML()"><!-- --></a>
+	<h3>
+		stripHTML 
+	</h3>
+
+	<kbd>public String <strong>stripHTML</strong>(String unformattedText)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>unformattedText</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateCourseOfferingIDInString()"><!-- --></a>
+	<h3>
+		updateCourseOfferingIDInString 
+	</h3>
+
+	<kbd>public String <strong>updateCourseOfferingIDInString</strong>(String url, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>url</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="wordCount()"><!-- --></a>
+	<h3>
+		wordCount 
+	</h3>
+
+	<kbd>public Numeric <strong>wordCount</strong>([any wordsToCount])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wordsToCount</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="xmlExtractChildren()"><!-- --></a>
+	<h3>
+		xmlExtractChildren 
+	</h3>
+
+	<kbd>public Struct <strong>xmlExtractChildren</strong>(Any objectKey, Any objectValue)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>objectKey</code></dd>
+		
+		<dd><code>objectValue</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="xmlNodeToStruct()"><!-- --></a>
+	<h3>
+		xmlNodeToStruct 
+	</h3>
+
+	<kbd>public Struct <strong>xmlNodeToStruct</strong>(any xmlObject)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>xmlObject</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="zeroCallback()"><!-- --></a>
+	<h3>
+		zeroCallback 
+	</h3>
+
+	<kbd>private Any <strong>zeroCallback</strong>([Any obj], [String key], [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>key</code></dd>
+		
+		<dd><code>ignoreKeys</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="zeroOut()"><!-- --></a>
+	<h3>
+		zeroOut 
+	</h3>
+
+	<kbd>public Any <strong>zeroOut</strong>(Any obj, [Array ignoreKeys='[runtime expression]'], [Array includeParents='[runtime expression]'], [Array extendedInclusions='[runtime expression]'], [Numeric currentLevel='1'], [Boolean throwOnError='false'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		<dd><code>ignoreKeys</code></dd>
+		
+		<dd><code>includeParents</code></dd>
+		
+		<dd><code>extendedInclusions</code></dd>
+		
+		<dd><code>currentLevel</code></dd>
+		
+		<dd><code>throwOnError</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

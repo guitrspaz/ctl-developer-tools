@@ -1,0 +1,2081 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>dropboxAssignmentGateway</title>
+	<meta name="keywords" content="core.modules.dropbox.model.dropboxAssignment.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.dropbox.model.dropboxAssignment"><span class="label label-success">core.modules.dropbox.model.dropboxAssignment</span></a>
+</div>
+
+<h2>
+
+Class
+dropboxAssignmentGateway</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/dropbox/model/tools/dropboxTools.html" title="class in core.modules.dropbox.model.tools">core.modules.dropbox.model.tools.dropboxTools</a>
+            <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.dropbox.model.dropboxAssignment.dropboxAssignmentGateway
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: dropboxAssignmentGateway 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: .dropboxAssignment.dropboxAssignmentGateway 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I return database results for queries involving multiple assignments and contain functions that don't fall within the scope of basic CRUD. 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: WendyJ (wjaklit1@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: 02/05/2009 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				modified: 
+				: 03/08/2018 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentDAO.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#dropboxAssignmentDAO()">dropboxAssignmentDAO</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignmentPart/dropboxAssignmentPartGateway.html" title="class in core.modules.dropbox.model.dropboxAssignmentPart">dropboxAssignmentPartGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#dropboxAssignmentPartGateway()">dropboxAssignmentPartGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxFile/dropboxFileGateway.html" title="class in core.modules.dropbox.model.dropboxFile">dropboxFileGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#dropboxFileGateway()">dropboxFileGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxMail/dropboxMailGateway.html" title="class in core.modules.dropbox.model.dropboxMail">dropboxMailGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#dropboxMailGateway()">dropboxMailGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#myCoursesFacade()">myCoursesFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="dropboxAssignmentGateway.html#init()">init</A></strong>(string dsn, string simpsonLoc)
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentDAO.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GETDROPBOXASSIGNMENTDAO()">GETDROPBOXASSIGNMENTDAO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignmentPart/dropboxAssignmentPartGateway.html" title="class in core.modules.dropbox.model.dropboxAssignmentPart">dropboxAssignmentPartGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GETDROPBOXASSIGNMENTPARTGATEWAY()">GETDROPBOXASSIGNMENTPARTGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxFile/dropboxFileGateway.html" title="class in core.modules.dropbox.model.dropboxFile">dropboxFileGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GETDROPBOXFILEGATEWAY()">GETDROPBOXFILEGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxMail/dropboxMailGateway.html" title="class in core.modules.dropbox.model.dropboxMail">dropboxMailGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GETDROPBOXMAILGATEWAY()">GETDROPBOXMAILGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GETMYCOURSESFACADE()">GETMYCOURSESFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GetAllAnonKeysForAssignment()">GetAllAnonKeysForAssignment</A></strong>(Numeric CourseOfferingID, Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GetAllAnonKeysForOffering()">GetAllAnonKeysForOffering</A></strong>(Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GetAnonKey()">GetAnonKey</A></strong>(Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GetStuIDForAnonKey()">GetStuIDForAnonKey</A></strong>(string anonFileKeyID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#GetTimedLockInfoForStuAndAssignmentID()">GetTimedLockInfoForStuAndAssignmentID</A></strong>(Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#SETDROPBOXASSIGNMENTDAO()">SETDROPBOXASSIGNMENTDAO</A></strong>(<a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentDAO.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentDAO</a> dropboxAssignmentDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#SETDROPBOXASSIGNMENTPARTGATEWAY()">SETDROPBOXASSIGNMENTPARTGATEWAY</A></strong>(<a href="../../../../../core/modules/dropbox/model/dropboxAssignmentPart/dropboxAssignmentPartGateway.html" title="class in core.modules.dropbox.model.dropboxAssignmentPart">dropboxAssignmentPartGateway</a> dropboxAssignmentPartGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#SETDROPBOXFILEGATEWAY()">SETDROPBOXFILEGATEWAY</A></strong>(<a href="../../../../../core/modules/dropbox/model/dropboxFile/dropboxFileGateway.html" title="class in core.modules.dropbox.model.dropboxFile">dropboxFileGateway</a> dropboxFileGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#SETDROPBOXMAILGATEWAY()">SETDROPBOXMAILGATEWAY</A></strong>(<a href="../../../../../core/modules/dropbox/model/dropboxMail/dropboxMailGateway.html" title="class in core.modules.dropbox.model.dropboxMail">dropboxMailGateway</a> dropboxMailGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#SETMYCOURSESFACADE()">SETMYCOURSESFACADE</A></strong>(any myCoursesFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#SetAnonKey()">SetAnonKey</A></strong>(string anonFileKeyID, Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#UpdateDownloadInfoForStuAndAssignmentID()">UpdateDownloadInfoForStuAndAssignmentID</A></strong>(Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#addAssignmentCourseGroupJoin()">addAssignmentCourseGroupJoin</A></strong>(numeric AssignmentID, numeric courseGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#addAssignmentLectureSessionJoin()">addAssignmentLectureSessionJoin</A></strong>(numeric AssignmentID, numeric lectureSessionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#addAssignmentPBPageJoin()">addAssignmentPBPageJoin</A></strong>(numeric assignmentID, numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#deleteAllAssignmentLocksForAssignment()">deleteAllAssignmentLocksForAssignment</A></strong>(Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#deleteAssignmentCourseGroupJoins()">deleteAssignmentCourseGroupJoins</A></strong>(numeric assignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#deleteAssignmentLectureSessionJoins()">deleteAssignmentLectureSessionJoins</A></strong>(numeric assignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#deleteAssignmentLockForStudent()">deleteAssignmentLockForStudent</A></strong>(Numeric StuID, Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>remote&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#deleteAssignmentPBPageJoins()">deleteAssignmentPBPageJoins</A></strong>(numeric assignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getAdvanceReminderStuListForAssignment()">getAdvanceReminderStuListForAssignment</A></strong>(numeric assignmentID, numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getAllAssignments()">getAllAssignments</A></strong>(numeric stuID, numeric courseOfferingID, numeric userLevel, boolean isFaculty)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getAllUsersForAssignment()">getAllUsersForAssignment</A></strong>(numeric assignmentID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getAssignmentByAttributesQuery()">getAssignmentByAttributesQuery</A></strong>([Numeric assignmentID], [Numeric courseOfferingID], [Numeric eventID], [Boolean useAnonFileNames], [Boolean isTimedAssignment])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getAssignmentInfoForFileUpload()">getAssignmentInfoForFileUpload</A></strong>(Numeric AssignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getAssignmentsForPageID()">getAssignmentsForPageID</A></strong>(Numeric pageID, Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getCourseGroupsForAssignment()">getCourseGroupsForAssignment</A></strong>(Numeric assignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getDropBoxCompletionInfoForAssignmentID()">getDropBoxCompletionInfoForAssignmentID</A></strong>(numeric assignmentID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getDropBoxesWithEvents()">getDropBoxesWithEvents</A></strong>(Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getEventsWithNoDropBox()">getEventsWithNoDropBox</A></strong>(Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getLectureSessionsForAssignment()">getLectureSessionsForAssignment</A></strong>(Numeric assignmentID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getLectureSessionsForOffering()">getLectureSessionsForOffering</A></strong>(Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getPBPagesForAssignment()">getPBPagesForAssignment</A></strong>(Numeric AssignmentID, Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#getStandaloneDropBoxes()">getStandaloneDropBoxes</A></strong>(Numeric CourseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#sendAdvanceRemindersForToday()">sendAdvanceRemindersForToday</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#setCourseGroupNameForFileUpload()">setCourseGroupNameForFileUpload</A></strong>(Numeric courseGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#unlockAssignment()">unlockAssignment</A></strong>(<a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignment.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignment</a> thisAssignment)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="dropboxAssignmentGateway.html#updateDropboxFlag()">updateDropboxFlag</A></strong>(Numeric EventID, boolean newValue)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.dropbox.model.tools.dropboxTools"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/dropbox/model/tools/dropboxTools.html" title="class in core.modules.dropbox.model.tools">core.modules.dropbox.model.tools.dropboxTools</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/dropbox/model/tools/dropboxTools.html#getStuInfoForUpload()">getStuInfoForUpload</a>, <a href="../../../../../core/modules/dropbox/model/tools/dropboxTools.html#returnFileNameFriendlyString()">returnFileNameFriendlyString</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/dao.html#GETDSN()">GETDSN</a>, <a href="../../../../../com/distance/base/dao.html#SETDSN()">SETDSN</a>, <a href="../../../../../com/distance/base/dao.html#configureDAO()">configureDAO</a>, <a href="../../../../../com/distance/base/dao.html#getFormattedUser()">getFormattedUser</a>, <a href="../../../../../com/distance/base/dao.html#getUser()">getUser</a>, <a href="../../../../../com/distance/base/dao.html#getcourseIdFromCourseOfferingId()">getcourseIdFromCourseOfferingId</a>, <a href="../../../../../com/distance/base/dao.html#gethardCodeDSN()">gethardCodeDSN</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn, string simpsonLoc)</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code></dd>
+		
+			<dd><code>simpsonLoc</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="dropboxAssignmentDAO()"><!-- --></a>
+		<h3>dropboxAssignmentDAO</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentDAO.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentDAO</a> <strong>dropboxAssignmentDAO</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="dropboxAssignmentPartGateway()"><!-- --></a>
+		<h3>dropboxAssignmentPartGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/dropbox/model/dropboxAssignmentPart/dropboxAssignmentPartGateway.html" title="class in core.modules.dropbox.model.dropboxAssignmentPart">dropboxAssignmentPartGateway</a> <strong>dropboxAssignmentPartGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="dropboxFileGateway()"><!-- --></a>
+		<h3>dropboxFileGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/dropbox/model/dropboxFile/dropboxFileGateway.html" title="class in core.modules.dropbox.model.dropboxFile">dropboxFileGateway</a> <strong>dropboxFileGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="dropboxMailGateway()"><!-- --></a>
+		<h3>dropboxMailGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/dropbox/model/dropboxMail/dropboxMailGateway.html" title="class in core.modules.dropbox.model.dropboxMail">dropboxMailGateway</a> <strong>dropboxMailGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="myCoursesFacade()"><!-- --></a>
+		<h3>myCoursesFacade</h3>
+
+		<kbd>
+			property any <strong>myCoursesFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETDROPBOXASSIGNMENTDAO()"><!-- --></a>
+	<h3>
+		GETDROPBOXASSIGNMENTDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentDAO.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentDAO</a> <strong>GETDROPBOXASSIGNMENTDAO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDROPBOXASSIGNMENTPARTGATEWAY()"><!-- --></a>
+	<h3>
+		GETDROPBOXASSIGNMENTPARTGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignmentPart/dropboxAssignmentPartGateway.html" title="class in core.modules.dropbox.model.dropboxAssignmentPart">dropboxAssignmentPartGateway</a> <strong>GETDROPBOXASSIGNMENTPARTGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDROPBOXFILEGATEWAY()"><!-- --></a>
+	<h3>
+		GETDROPBOXFILEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxFile/dropboxFileGateway.html" title="class in core.modules.dropbox.model.dropboxFile">dropboxFileGateway</a> <strong>GETDROPBOXFILEGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDROPBOXMAILGATEWAY()"><!-- --></a>
+	<h3>
+		GETDROPBOXMAILGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxMail/dropboxMailGateway.html" title="class in core.modules.dropbox.model.dropboxMail">dropboxMailGateway</a> <strong>GETDROPBOXMAILGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMYCOURSESFACADE()"><!-- --></a>
+	<h3>
+		GETMYCOURSESFACADE 
+	</h3>
+
+	<kbd>public any <strong>GETMYCOURSESFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetAllAnonKeysForAssignment()"><!-- --></a>
+	<h3>
+		GetAllAnonKeysForAssignment 
+	</h3>
+
+	<kbd>public query <strong>GetAllAnonKeysForAssignment</strong>(Numeric CourseOfferingID, Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetAllAnonKeysForOffering()"><!-- --></a>
+	<h3>
+		GetAllAnonKeysForOffering 
+	</h3>
+
+	<kbd>public query <strong>GetAllAnonKeysForOffering</strong>(Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetAnonKey()"><!-- --></a>
+	<h3>
+		GetAnonKey 
+	</h3>
+
+	<kbd>public query <strong>GetAnonKey</strong>(Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>StuID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetStuIDForAnonKey()"><!-- --></a>
+	<h3>
+		GetStuIDForAnonKey 
+	</h3>
+
+	<kbd>public numeric <strong>GetStuIDForAnonKey</strong>(string anonFileKeyID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>anonFileKeyID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetTimedLockInfoForStuAndAssignmentID()"><!-- --></a>
+	<h3>
+		GetTimedLockInfoForStuAndAssignmentID 
+	</h3>
+
+	<kbd>public query <strong>GetTimedLockInfoForStuAndAssignmentID</strong>(Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>StuID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDROPBOXASSIGNMENTDAO()"><!-- --></a>
+	<h3>
+		SETDROPBOXASSIGNMENTDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a> <strong>SETDROPBOXASSIGNMENTDAO</strong>(<a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentDAO.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentDAO</a> dropboxAssignmentDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dropboxAssignmentDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDROPBOXASSIGNMENTPARTGATEWAY()"><!-- --></a>
+	<h3>
+		SETDROPBOXASSIGNMENTPARTGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a> <strong>SETDROPBOXASSIGNMENTPARTGATEWAY</strong>(<a href="../../../../../core/modules/dropbox/model/dropboxAssignmentPart/dropboxAssignmentPartGateway.html" title="class in core.modules.dropbox.model.dropboxAssignmentPart">dropboxAssignmentPartGateway</a> dropboxAssignmentPartGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dropboxAssignmentPartGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDROPBOXFILEGATEWAY()"><!-- --></a>
+	<h3>
+		SETDROPBOXFILEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a> <strong>SETDROPBOXFILEGATEWAY</strong>(<a href="../../../../../core/modules/dropbox/model/dropboxFile/dropboxFileGateway.html" title="class in core.modules.dropbox.model.dropboxFile">dropboxFileGateway</a> dropboxFileGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dropboxFileGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDROPBOXMAILGATEWAY()"><!-- --></a>
+	<h3>
+		SETDROPBOXMAILGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a> <strong>SETDROPBOXMAILGATEWAY</strong>(<a href="../../../../../core/modules/dropbox/model/dropboxMail/dropboxMailGateway.html" title="class in core.modules.dropbox.model.dropboxMail">dropboxMailGateway</a> dropboxMailGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dropboxMailGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMYCOURSESFACADE()"><!-- --></a>
+	<h3>
+		SETMYCOURSESFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignmentGateway.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignmentGateway</a> <strong>SETMYCOURSESFACADE</strong>(any myCoursesFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>myCoursesFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SetAnonKey()"><!-- --></a>
+	<h3>
+		SetAnonKey 
+	</h3>
+
+	<kbd>public void <strong>SetAnonKey</strong>(string anonFileKeyID, Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>anonFileKeyID</code></dd>
+		
+		<dd><code>StuID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="UpdateDownloadInfoForStuAndAssignmentID()"><!-- --></a>
+	<h3>
+		UpdateDownloadInfoForStuAndAssignmentID 
+	</h3>
+
+	<kbd>public boolean <strong>UpdateDownloadInfoForStuAndAssignmentID</strong>(Numeric StuID, Numeric CourseOfferingID, Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>StuID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addAssignmentCourseGroupJoin()"><!-- --></a>
+	<h3>
+		addAssignmentCourseGroupJoin 
+	</h3>
+
+	<kbd>remote boolean <strong>addAssignmentCourseGroupJoin</strong>(numeric AssignmentID, numeric courseGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		<dd><code>courseGroupID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addAssignmentLectureSessionJoin()"><!-- --></a>
+	<h3>
+		addAssignmentLectureSessionJoin 
+	</h3>
+
+	<kbd>remote boolean <strong>addAssignmentLectureSessionJoin</strong>(numeric AssignmentID, numeric lectureSessionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		<dd><code>lectureSessionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addAssignmentPBPageJoin()"><!-- --></a>
+	<h3>
+		addAssignmentPBPageJoin 
+	</h3>
+
+	<kbd>remote boolean <strong>addAssignmentPBPageJoin</strong>(numeric assignmentID, numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAllAssignmentLocksForAssignment()"><!-- --></a>
+	<h3>
+		deleteAllAssignmentLocksForAssignment 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAllAssignmentLocksForAssignment</strong>(Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAssignmentCourseGroupJoins()"><!-- --></a>
+	<h3>
+		deleteAssignmentCourseGroupJoins 
+	</h3>
+
+	<kbd>remote boolean <strong>deleteAssignmentCourseGroupJoins</strong>(numeric assignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAssignmentLectureSessionJoins()"><!-- --></a>
+	<h3>
+		deleteAssignmentLectureSessionJoins 
+	</h3>
+
+	<kbd>remote boolean <strong>deleteAssignmentLectureSessionJoins</strong>(numeric assignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAssignmentLockForStudent()"><!-- --></a>
+	<h3>
+		deleteAssignmentLockForStudent 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAssignmentLockForStudent</strong>(Numeric StuID, Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>StuID</code></dd>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAssignmentPBPageJoins()"><!-- --></a>
+	<h3>
+		deleteAssignmentPBPageJoins 
+	</h3>
+
+	<kbd>remote boolean <strong>deleteAssignmentPBPageJoins</strong>(numeric assignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdvanceReminderStuListForAssignment()"><!-- --></a>
+	<h3>
+		getAdvanceReminderStuListForAssignment 
+	</h3>
+
+	<kbd>public string <strong>getAdvanceReminderStuListForAssignment</strong>(numeric assignmentID, numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAssignments()"><!-- --></a>
+	<h3>
+		getAllAssignments 
+	</h3>
+
+	<kbd>public array <strong>getAllAssignments</strong>(numeric stuID, numeric courseOfferingID, numeric userLevel, boolean isFaculty)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>userLevel</code></dd>
+		
+		<dd><code>isFaculty</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllUsersForAssignment()"><!-- --></a>
+	<h3>
+		getAllUsersForAssignment 
+	</h3>
+
+	<kbd>public query <strong>getAllUsersForAssignment</strong>(numeric assignmentID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAssignmentByAttributesQuery()"><!-- --></a>
+	<h3>
+		getAssignmentByAttributesQuery 
+	</h3>
+
+	<kbd>public query <strong>getAssignmentByAttributesQuery</strong>([Numeric assignmentID], [Numeric courseOfferingID], [Numeric eventID], [Boolean useAnonFileNames], [Boolean isTimedAssignment])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>eventID</code></dd>
+		
+		<dd><code>useAnonFileNames</code></dd>
+		
+		<dd><code>isTimedAssignment</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAssignmentInfoForFileUpload()"><!-- --></a>
+	<h3>
+		getAssignmentInfoForFileUpload 
+	</h3>
+
+	<kbd>public struct <strong>getAssignmentInfoForFileUpload</strong>(Numeric AssignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAssignmentsForPageID()"><!-- --></a>
+	<h3>
+		getAssignmentsForPageID 
+	</h3>
+
+	<kbd>public query <strong>getAssignmentsForPageID</strong>(Numeric pageID, Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseGroupsForAssignment()"><!-- --></a>
+	<h3>
+		getCourseGroupsForAssignment 
+	</h3>
+
+	<kbd>public query <strong>getCourseGroupsForAssignment</strong>(Numeric assignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDropBoxCompletionInfoForAssignmentID()"><!-- --></a>
+	<h3>
+		getDropBoxCompletionInfoForAssignmentID 
+	</h3>
+
+	<kbd>public struct <strong>getDropBoxCompletionInfoForAssignmentID</strong>(numeric assignmentID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDropBoxesWithEvents()"><!-- --></a>
+	<h3>
+		getDropBoxesWithEvents 
+	</h3>
+
+	<kbd>public query <strong>getDropBoxesWithEvents</strong>(Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEventsWithNoDropBox()"><!-- --></a>
+	<h3>
+		getEventsWithNoDropBox 
+	</h3>
+
+	<kbd>public query <strong>getEventsWithNoDropBox</strong>(Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureSessionsForAssignment()"><!-- --></a>
+	<h3>
+		getLectureSessionsForAssignment 
+	</h3>
+
+	<kbd>public query <strong>getLectureSessionsForAssignment</strong>(Numeric assignmentID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureSessionsForOffering()"><!-- --></a>
+	<h3>
+		getLectureSessionsForOffering 
+	</h3>
+
+	<kbd>public query <strong>getLectureSessionsForOffering</strong>(Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPBPagesForAssignment()"><!-- --></a>
+	<h3>
+		getPBPagesForAssignment 
+	</h3>
+
+	<kbd>public query <strong>getPBPagesForAssignment</strong>(Numeric AssignmentID, Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AssignmentID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStandaloneDropBoxes()"><!-- --></a>
+	<h3>
+		getStandaloneDropBoxes 
+	</h3>
+
+	<kbd>public query <strong>getStandaloneDropBoxes</strong>(Numeric CourseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendAdvanceRemindersForToday()"><!-- --></a>
+	<h3>
+		sendAdvanceRemindersForToday 
+	</h3>
+
+	<kbd>public any <strong>sendAdvanceRemindersForToday</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCourseGroupNameForFileUpload()"><!-- --></a>
+	<h3>
+		setCourseGroupNameForFileUpload 
+	</h3>
+
+	<kbd>public string <strong>setCourseGroupNameForFileUpload</strong>(Numeric courseGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unlockAssignment()"><!-- --></a>
+	<h3>
+		unlockAssignment 
+	</h3>
+
+	<kbd>public boolean <strong>unlockAssignment</strong>(<a href="../../../../../core/modules/dropbox/model/dropboxAssignment/dropboxAssignment.html" title="class in core.modules.dropbox.model.dropboxAssignment">dropboxAssignment</a> thisAssignment)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>thisAssignment</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateDropboxFlag()"><!-- --></a>
+	<h3>
+		updateDropboxFlag 
+	</h3>
+
+	<kbd>public void <strong>updateDropboxFlag</strong>(Numeric EventID, boolean newValue)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>EventID</code></dd>
+		
+		<dd><code>newValue</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

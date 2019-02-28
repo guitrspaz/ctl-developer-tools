@@ -1,0 +1,4128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>adminService</title>
+	<meta name="keywords" content="core.modules.portfolio.model.admin.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/portfolio/model/admin/adminService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.portfolio.model.admin"><span class="label label-success">core.modules.portfolio.model.admin</span></a>
+</div>
+
+<h2>
+
+Class
+adminService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.portfolio.model.admin.adminService
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="adminService.html#init()">init</A></strong>()
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#AddNewCustomDueDateForTouchpoint()">AddNewCustomDueDateForTouchpoint</A></strong>(numeric touchpointTemplateID, string portfolioList, string customDueDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#GetEvidenceZipFileStatusForTouchpointTemplateID()">GetEvidenceZipFileStatusForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addAdvisor()">addAdvisor</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/advisor.html" title="class in core.modules.portfolio.model.member">advisor</a> advisor)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addCohort()">addCohort</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> cohort)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addCompetencyGroup()">addCompetencyGroup</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a> competencyGroupTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addCompetencySet()">addCompetencySet</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a> competencySet, string selectedTemplates)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addCompetencyTemplateForGroup()">addCompetencyTemplateForGroup</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addCustomTouchpointDateForPortfolio()">addCustomTouchpointDateForPortfolio</A></strong>(numeric touchpointTemplateID, numeric portfolioID, string customDueDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addProgram()">addProgram</A></strong>(<a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a> program)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addSchoolwideCompetency()">addSchoolwideCompetency</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addStuToCohort()">addStuToCohort</A></strong>(numeric cohortID, numeric programID, numeric stuID, numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addStudentForAdvisorID()">addStudentForAdvisorID</A></strong>(numeric advisorID='0', numeric portfolioUserID='0', numeric programID='0', string advisorRoleIDList='')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#addTouchpointTemplate()">addTouchpointTemplate</A></strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> touchpointTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#changeIndivDueDate()">changeIndivDueDate</A></strong>(numeric touchpointTemplateID, numeric portfolioID, string touchpointDueDate, string customDueDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#createEvidenceZipFileForTouchpointTemplateID()">createEvidenceZipFileForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteAdvisor()">deleteAdvisor</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteCohort()">deleteCohort</A></strong>([numeric cohortID], numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteCompetencyGroup()">deleteCompetencyGroup</A></strong>(numeric competencyGroupTemplateID, numeric lastModBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteCompetencySet()">deleteCompetencySet</A></strong>([numeric competencySetID], numeric lastModBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteCompetencyTemplateForGroup()">deleteCompetencyTemplateForGroup</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteProgram()">deleteProgram</A></strong>(numeric programID, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteSchoolwideCompetency()">deleteSchoolwideCompetency</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteStuFromCohort()">deleteStuFromCohort</A></strong>(numeric cohortID, numeric stuID, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteStudentForAdvisorID()">deleteStudentForAdvisorID</A></strong>(numeric advisorID='0', numeric portfolioUserID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#deleteTouchpointTemplate()">deleteTouchpointTemplate</A></strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> touchpointTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editCohort()">editCohort</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> cohort)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editCompetencyGroup()">editCompetencyGroup</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a> competencyGroupTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editCompetencyLevel()">editCompetencyLevel</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyLevel/competencyLevel.html" title="class in core.modules.portfolio.model.competencyLevel">competencyLevel</a> competencyLevel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editCompetencySet()">editCompetencySet</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a> competencySet, string selectedTemplates)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editCompetencyTemplateForGroup()">editCompetencyTemplateForGroup</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editProgram()">editProgram</A></strong>(<a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a> program)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editReflectionRating()">editReflectionRating</A></strong>(<a href="../../../../../core/modules/portfolio/model/reflectionRating/reflectionRating.html" title="class in core.modules.portfolio.model.reflectionRating">reflectionRating</a> reflectionRating)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editSchoolwideCompetency()">editSchoolwideCompetency</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#editTouchpointTemplate()">editTouchpointTemplate</A></strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> touchpointTemplate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAdminInfoForProgram()">getAdminInfoForProgram</A></strong>(string programAdminIDs)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAdminsForProgramID()">getAdminsForProgramID</A></strong>(numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAdvisorInfo()">getAdvisorInfo</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllAdminsAndAdvisorsForExclusionList()">getAllAdminsAndAdvisorsForExclusionList</A></strong>(numeric programID='0', numeric cohortID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllAdvisorRoles()">getAllAdvisorRoles</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllAdvisorRolesForTouchpointTemplateID()">getAllAdvisorRolesForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllAdvisorsForProgramID()">getAllAdvisorsForProgramID</A></strong>(numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllAdvisorsForTouchpointTemplateID()">getAllAdvisorsForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllCohortsByProgramID()">getAllCohortsByProgramID</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllCompetencyGroupTemplatesByCohortID()">getAllCompetencyGroupTemplatesByCohortID</A></strong>(numeric CohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllCompetencyGroupTemplatesByProgramID()">getAllCompetencyGroupTemplatesByProgramID</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllCompetencySetsByProgramID()">getAllCompetencySetsByProgramID</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllCompetencyTemplatesByProgramID()">getAllCompetencyTemplatesByProgramID</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllPendingReviewsByTouchpointTemplateID()">getAllPendingReviewsByTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllPortfoliosForCohortID()">getAllPortfoliosForCohortID</A></strong>(numeric cohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllProgramNamesAndAdmins()">getAllProgramNamesAndAdmins</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllPrograms()">getAllPrograms</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllRemindersForTouchpointID()">getAllRemindersForTouchpointID</A></strong>(numeric touchpointID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllRemindersForTouchpointTemplateID()">getAllRemindersForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID, boolean isExcel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllStudentsForAdvisorID()">getAllStudentsForAdvisorID</A></strong>(numeric advisorID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllStudentsForCohortID()">getAllStudentsForCohortID</A></strong>(numeric cohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllTouchpointCompletionInfoForCohortID()">getAllTouchpointCompletionInfoForCohortID</A></strong>(numeric cohortID, numeric startRow)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllTouchpointTemplatesByCohortID()">getAllTouchpointTemplatesByCohortID</A></strong>(numeric CohortID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllTouchpointsForTemplateID()">getAllTouchpointsForTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAllUsersForSearchBoxAutoComplete()">getAllUsersForSearchBoxAutoComplete</A></strong>(string searchString, numeric maxLevel, boolean excludeAdmins)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getAvailableCompetencyGroupsByCompetencySetID()">getAvailableCompetencyGroupsByCompetencySetID</A></strong>(numeric competencySetID='0', numeric programID='0')
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns available competency groups.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a></code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCohortInfo()">getCohortInfo</A></strong>(numeric cohortID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a cohort.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCohortUsersForSearchBoxAutoComplete()">getCohortUsersForSearchBoxAutoComplete</A></strong>(string searchString, numeric CohortID, numeric minLevel, numeric maxLevel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a></code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCompetencyGroupInfo()">getCompetencyGroupInfo</A></strong>(numeric competencyGroupTemplateID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a competency Set.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCompetencyGroupTemplateInfoForList()">getCompetencyGroupTemplateInfoForList</A></strong>(string competencyGroupTemplateList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCompetencyLevels()">getCompetencyLevels</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a></code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCompetencySetInfo()">getCompetencySetInfo</A></strong>(numeric competencySetID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a competency Set.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCompetencyTemplateInfoForList()">getCompetencyTemplateInfoForList</A></strong>(string competencyTemplateList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCustomDateTouchpointsForTemplateIDAsArray()">getCustomDateTouchpointsForTemplateIDAsArray</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getCustomDatesForTemplateID()">getCustomDatesForTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getEvidenceZipNameForTouchpointTemplateID()">getEvidenceZipNameForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets status of zip file copy for progress bar.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getEvidenceZipProgressForTouchpointTemplateID()">getEvidenceZipProgressForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets status of zip file copy for progress bar.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getInfoForStuAndProgramID()">getInfoForStuAndProgramID</A></strong>(numeric programID='0', numeric stuID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getOverallCompetencyRatingsForCohort()">getOverallCompetencyRatingsForCohort</A></strong>(numeric programID, numeric cohortID, date reportDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getPortfolioInfoForCohort()">getPortfolioInfoForCohort</A></strong>(string portfolioList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a></code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getProgramInfo()">getProgramInfo</A></strong>(numeric programID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a program.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getProgramUsersForSearchBoxAutoComplete()">getProgramUsersForSearchBoxAutoComplete</A></strong>(string searchString, numeric programID, numeric minLevel, numeric maxLevel)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getProgramsForAdminID()">getProgramsForAdminID</A></strong>(numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getReflectionRatings()">getReflectionRatings</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getReflectionsForTouchpointTemplateID()">getReflectionsForTouchpointTemplateID</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getSchoolWideCompetencyTemplates()">getSchoolWideCompetencyTemplates</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getStuInfoForCohort()">getStuInfoForCohort</A></strong>(string stuList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getStudentsWhoHaveCompletedTouchpoint()">getStudentsWhoHaveCompletedTouchpoint</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getStudentsWhoHaveNotCompletedTouchpoint()">getStudentsWhoHaveNotCompletedTouchpoint</A></strong>(numeric touchpointTemplateID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getStudentsWithNoAdvisorForProgramID()">getStudentsWithNoAdvisorForProgramID</A></strong>(numeric programID='0')
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a></code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getTouchpointTemplateInfo()">getTouchpointTemplateInfo</A></strong>(numeric touchpointTemplateID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns info about a touchpointTemplate.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getTouchpointWithStuInfo()">getTouchpointWithStuInfo</A></strong>(numeric touchpointID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getTouchpointsForTemplateIDAndCustomDate()">getTouchpointsForTemplateIDAndCustomDate</A></strong>(numeric touchpointTemplateID, string customDueDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#getTouchpointsWithReminderInfo()">getTouchpointsWithReminderInfo</A></strong>(numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#processAdvisorExcelFile()">processAdvisorExcelFile</A></strong>(numeric programID, string fileName, string fileExt)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#processCohortExcelFile()">processCohortExcelFile</A></strong>(numeric cohortID, numeric programID, string fileName, string fileExt, numeric createdBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#removeCustomTouchpointDateForPortfolio()">removeCustomTouchpointDateForPortfolio</A></strong>(numeric touchpointTemplateID, numeric portfolioID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#reorderSchoolwideCompetencies()">reorderSchoolwideCompetencies</A></strong>(string newOrder)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#reorderTouchpointTemplates()">reorderTouchpointTemplates</A></strong>(string newOrder)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#sendAdvisorTouchpointReminder()">sendAdvisorTouchpointReminder</A></strong>(numeric touchpointTemplateID, string reminderList, numeric advisorRemindedBy, string emailMsg)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#sendAutomatedReminders()">sendAutomatedReminders</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#sendStuTouchpointReminder()">sendStuTouchpointReminder</A></strong>(numeric touchpointTemplateID, string reminderList, numeric reminderSentBy, string emailMsg)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setAdminFileManager()">setAdminFileManager</A></strong>(<a href="../../../../../core/modules/portfolio/model/admin/adminFileManager.html" title="class in core.modules.portfolio.model.admin">adminFileManager</a> adminFileManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setFileUploader()">setFileUploader</A></strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a> fileuploader)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setProgramLibraryService()">setProgramLibraryService</A></strong>(<a href="../../../../../core/modules/portfolio/model/programLibrary/programLibraryService.html" title="class in core.modules.portfolio.model.programLibrary">programLibraryService</a> programLibraryService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setadvisorDAO()">setadvisorDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/advisorDAO.html" title="class in core.modules.portfolio.model.member">advisorDAO</a> advisorDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcohortDAO()">setcohortDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/cohortDAO.html" title="class in core.modules.portfolio.model.member">cohortDAO</a> cohortDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyGateway()">setcompetencyGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyGateway.html" title="class in core.modules.portfolio.model.competency">competencyGateway</a> competencyGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyGroupDAO()">setcompetencyGroupDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupDAO.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupDAO</a> competencyGroupDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyGroupGateway()">setcompetencyGroupGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupGateway.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupGateway</a> competencyGroupGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyGroupTemplateDAO()">setcompetencyGroupTemplateDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplateDAO.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplateDAO</a> competencyGroupTemplateDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyLevelDAO()">setcompetencyLevelDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyLevel/competencyLevelDAO.html" title="class in core.modules.portfolio.model.competencyLevel">competencyLevelDAO</a> competencyLevelDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyLevelGateway()">setcompetencyLevelGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencyLevel/competencyLevelGateway.html" title="class in core.modules.portfolio.model.competencyLevel">competencyLevelGateway</a> competencyLevelGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencySetDAO()">setcompetencySetDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySetDAO.html" title="class in core.modules.portfolio.model.competencySet">competencySetDAO</a> competencySetDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencySetGateway()">setcompetencySetGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySetGateway.html" title="class in core.modules.portfolio.model.competencySet">competencySetGateway</a> competencySetGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setcompetencyTemplateDAO()">setcompetencyTemplateDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplateDAO.html" title="class in core.modules.portfolio.model.competency">competencyTemplateDAO</a> competencyTemplateDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setevidenceGateway()">setevidenceGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a> evidenceGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setmemberGateway()">setmemberGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a> memberGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setprogramDAO()">setprogramDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/program/programDAO.html" title="class in core.modules.portfolio.model.program">programDAO</a> programDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setprogramGateway()">setprogramGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/program/programGateway.html" title="class in core.modules.portfolio.model.program">programGateway</a> programGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setreflectionRatingDAO()">setreflectionRatingDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/reflectionRating/reflectionRatingDAO.html" title="class in core.modules.portfolio.model.reflectionRating">reflectionRatingDAO</a> reflectionRatingDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#setreflectionRatingGateway()">setreflectionRatingGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/reflectionRating/reflectionRatingGateway.html" title="class in core.modules.portfolio.model.reflectionRating">reflectionRatingGateway</a> reflectionRatingGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#settouchpointGateway()">settouchpointGateway</A></strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchpointGateway.html" title="class in core.modules.portfolio.model.touchpoint">touchpointGateway</a> touchpointGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#settouchpointTemplateDAO()">settouchpointTemplateDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplateDAO.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplateDAO</a> touchpointTemplateDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="adminService.html#updateAttachmentsForTouchpoint()">updateAttachmentsForTouchpoint</A></strong>(numeric touchpointTemplateID, array existingAttachments, array newAttachments, string tempFolder)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>()</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="AddNewCustomDueDateForTouchpoint()"><!-- --></a>
+	<h3>
+		AddNewCustomDueDateForTouchpoint 
+	</h3>
+
+	<kbd>public boolean <strong>AddNewCustomDueDateForTouchpoint</strong>(numeric touchpointTemplateID, string portfolioList, string customDueDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code> - ID for touchpoint template</dd>
+		
+		<dd><code>portfolioList</code> - ID for portfolio</dd>
+		
+		<dd><code>customDueDate</code> - Custom due date</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GetEvidenceZipFileStatusForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		GetEvidenceZipFileStatusForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public boolean <strong>GetEvidenceZipFileStatusForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addAdvisor()"><!-- --></a>
+	<h3>
+		addAdvisor 
+	</h3>
+
+	<kbd>public struct <strong>addAdvisor</strong>(<a href="../../../../../core/modules/portfolio/model/member/advisor.html" title="class in core.modules.portfolio.model.member">advisor</a> advisor)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisor</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCohort()"><!-- --></a>
+	<h3>
+		addCohort 
+	</h3>
+
+	<kbd>public any <strong>addCohort</strong>(<a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> cohort)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohort</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCompetencyGroup()"><!-- --></a>
+	<h3>
+		addCompetencyGroup 
+	</h3>
+
+	<kbd>public numeric <strong>addCompetencyGroup</strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a> competencyGroupTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCompetencySet()"><!-- --></a>
+	<h3>
+		addCompetencySet 
+	</h3>
+
+	<kbd>public boolean <strong>addCompetencySet</strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a> competencySet, string selectedTemplates)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySet</code></dd>
+		
+		<dd><code>selectedTemplates</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCompetencyTemplateForGroup()"><!-- --></a>
+	<h3>
+		addCompetencyTemplateForGroup 
+	</h3>
+
+	<kbd>public numeric <strong>addCompetencyTemplateForGroup</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addCustomTouchpointDateForPortfolio()"><!-- --></a>
+	<h3>
+		addCustomTouchpointDateForPortfolio 
+	</h3>
+
+	<kbd>public boolean <strong>addCustomTouchpointDateForPortfolio</strong>(numeric touchpointTemplateID, numeric portfolioID, string customDueDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code> - ID for touchpoint template</dd>
+		
+		<dd><code>portfolioID</code> - ID for portfolio</dd>
+		
+		<dd><code>customDueDate</code> - Custom due date</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addProgram()"><!-- --></a>
+	<h3>
+		addProgram 
+	</h3>
+
+	<kbd>public any <strong>addProgram</strong>(<a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a> program)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>program</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addSchoolwideCompetency()"><!-- --></a>
+	<h3>
+		addSchoolwideCompetency 
+	</h3>
+
+	<kbd>public string <strong>addSchoolwideCompetency</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStuToCohort()"><!-- --></a>
+	<h3>
+		addStuToCohort 
+	</h3>
+
+	<kbd>public any <strong>addStuToCohort</strong>(numeric cohortID, numeric programID, numeric stuID, numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addStudentForAdvisorID()"><!-- --></a>
+	<h3>
+		addStudentForAdvisorID 
+	</h3>
+
+	<kbd>public boolean <strong>addStudentForAdvisorID</strong>(numeric advisorID='0', numeric portfolioUserID='0', numeric programID='0', string advisorRoleIDList='')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		<dd><code>portfolioUserID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>advisorRoleIDList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addTouchpointTemplate()"><!-- --></a>
+	<h3>
+		addTouchpointTemplate 
+	</h3>
+
+	<kbd>public numeric <strong>addTouchpointTemplate</strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> touchpointTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="changeIndivDueDate()"><!-- --></a>
+	<h3>
+		changeIndivDueDate 
+	</h3>
+
+	<kbd>public boolean <strong>changeIndivDueDate</strong>(numeric touchpointTemplateID, numeric portfolioID, string touchpointDueDate, string customDueDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code> - ID for touchpoint template</dd>
+		
+		<dd><code>portfolioID</code> - ID for portfolio</dd>
+		
+		<dd><code>touchpointDueDate</code> - Default due date</dd>
+		
+		<dd><code>customDueDate</code> - Custom due date</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createEvidenceZipFileForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		createEvidenceZipFileForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public boolean <strong>createEvidenceZipFileForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAdvisor()"><!-- --></a>
+	<h3>
+		deleteAdvisor 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAdvisor</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCohort()"><!-- --></a>
+	<h3>
+		deleteCohort 
+	</h3>
+
+	<kbd>public numeric <strong>deleteCohort</strong>([numeric cohortID], numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCompetencyGroup()"><!-- --></a>
+	<h3>
+		deleteCompetencyGroup 
+	</h3>
+
+	<kbd>public numeric <strong>deleteCompetencyGroup</strong>(numeric competencyGroupTemplateID, numeric lastModBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupTemplateID</code></dd>
+		
+		<dd><code>lastModBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCompetencySet()"><!-- --></a>
+	<h3>
+		deleteCompetencySet 
+	</h3>
+
+	<kbd>public numeric <strong>deleteCompetencySet</strong>([numeric competencySetID], numeric lastModBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySetID</code></dd>
+		
+		<dd><code>lastModBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCompetencyTemplateForGroup()"><!-- --></a>
+	<h3>
+		deleteCompetencyTemplateForGroup 
+	</h3>
+
+	<kbd>public numeric <strong>deleteCompetencyTemplateForGroup</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteProgram()"><!-- --></a>
+	<h3>
+		deleteProgram 
+	</h3>
+
+	<kbd>public numeric <strong>deleteProgram</strong>(numeric programID, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteSchoolwideCompetency()"><!-- --></a>
+	<h3>
+		deleteSchoolwideCompetency 
+	</h3>
+
+	<kbd>public boolean <strong>deleteSchoolwideCompetency</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStuFromCohort()"><!-- --></a>
+	<h3>
+		deleteStuFromCohort 
+	</h3>
+
+	<kbd>public any <strong>deleteStuFromCohort</strong>(numeric cohortID, numeric stuID, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteStudentForAdvisorID()"><!-- --></a>
+	<h3>
+		deleteStudentForAdvisorID 
+	</h3>
+
+	<kbd>public boolean <strong>deleteStudentForAdvisorID</strong>(numeric advisorID='0', numeric portfolioUserID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		<dd><code>portfolioUserID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteTouchpointTemplate()"><!-- --></a>
+	<h3>
+		deleteTouchpointTemplate 
+	</h3>
+
+	<kbd>public numeric <strong>deleteTouchpointTemplate</strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> touchpointTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCohort()"><!-- --></a>
+	<h3>
+		editCohort 
+	</h3>
+
+	<kbd>public any <strong>editCohort</strong>(<a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> cohort)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohort</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencyGroup()"><!-- --></a>
+	<h3>
+		editCompetencyGroup 
+	</h3>
+
+	<kbd>public numeric <strong>editCompetencyGroup</strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a> competencyGroupTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencyLevel()"><!-- --></a>
+	<h3>
+		editCompetencyLevel 
+	</h3>
+
+	<kbd>public numeric <strong>editCompetencyLevel</strong>(<a href="../../../../../core/modules/portfolio/model/competencyLevel/competencyLevel.html" title="class in core.modules.portfolio.model.competencyLevel">competencyLevel</a> competencyLevel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencySet()"><!-- --></a>
+	<h3>
+		editCompetencySet 
+	</h3>
+
+	<kbd>public boolean <strong>editCompetencySet</strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a> competencySet, string selectedTemplates)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySet</code></dd>
+		
+		<dd><code>selectedTemplates</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editCompetencyTemplateForGroup()"><!-- --></a>
+	<h3>
+		editCompetencyTemplateForGroup 
+	</h3>
+
+	<kbd>public numeric <strong>editCompetencyTemplateForGroup</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editProgram()"><!-- --></a>
+	<h3>
+		editProgram 
+	</h3>
+
+	<kbd>public any <strong>editProgram</strong>(<a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a> program)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>program</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editReflectionRating()"><!-- --></a>
+	<h3>
+		editReflectionRating 
+	</h3>
+
+	<kbd>public numeric <strong>editReflectionRating</strong>(<a href="../../../../../core/modules/portfolio/model/reflectionRating/reflectionRating.html" title="class in core.modules.portfolio.model.reflectionRating">reflectionRating</a> reflectionRating)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>reflectionRating</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editSchoolwideCompetency()"><!-- --></a>
+	<h3>
+		editSchoolwideCompetency 
+	</h3>
+
+	<kbd>public numeric <strong>editSchoolwideCompetency</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplate.html" title="class in core.modules.portfolio.model.competency">competencyTemplate</a> competencyTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="editTouchpointTemplate()"><!-- --></a>
+	<h3>
+		editTouchpointTemplate 
+	</h3>
+
+	<kbd>public numeric <strong>editTouchpointTemplate</strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> touchpointTemplate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdminInfoForProgram()"><!-- --></a>
+	<h3>
+		getAdminInfoForProgram 
+	</h3>
+
+	<kbd>public query <strong>getAdminInfoForProgram</strong>(string programAdminIDs)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programAdminIDs</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdminsForProgramID()"><!-- --></a>
+	<h3>
+		getAdminsForProgramID 
+	</h3>
+
+	<kbd>public any <strong>getAdminsForProgramID</strong>(numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAdvisorInfo()"><!-- --></a>
+	<h3>
+		getAdvisorInfo 
+	</h3>
+
+	<kbd>public query <strong>getAdvisorInfo</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdminsAndAdvisorsForExclusionList()"><!-- --></a>
+	<h3>
+		getAllAdminsAndAdvisorsForExclusionList 
+	</h3>
+
+	<kbd>public array <strong>getAllAdminsAndAdvisorsForExclusionList</strong>(numeric programID='0', numeric cohortID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorRoles()"><!-- --></a>
+	<h3>
+		getAllAdvisorRoles 
+	</h3>
+
+	<kbd>public any <strong>getAllAdvisorRoles</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorRolesForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllAdvisorRolesForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public string <strong>getAllAdvisorRolesForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsForProgramID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsForProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorsForProgramID</strong>(numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllAdvisorsForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllAdvisorsForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getAllAdvisorsForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCohortsByProgramID()"><!-- --></a>
+	<h3>
+		getAllCohortsByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllCohortsByProgramID</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencyGroupTemplatesByCohortID()"><!-- --></a>
+	<h3>
+		getAllCompetencyGroupTemplatesByCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllCompetencyGroupTemplatesByCohortID</strong>(numeric CohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencyGroupTemplatesByProgramID()"><!-- --></a>
+	<h3>
+		getAllCompetencyGroupTemplatesByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllCompetencyGroupTemplatesByProgramID</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencySetsByProgramID()"><!-- --></a>
+	<h3>
+		getAllCompetencySetsByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllCompetencySetsByProgramID</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCompetencyTemplatesByProgramID()"><!-- --></a>
+	<h3>
+		getAllCompetencyTemplatesByProgramID 
+	</h3>
+
+	<kbd>public query <strong>getAllCompetencyTemplatesByProgramID</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPendingReviewsByTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllPendingReviewsByTouchpointTemplateID 
+	</h3>
+
+	<kbd>public array <strong>getAllPendingReviewsByTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPortfoliosForCohortID()"><!-- --></a>
+	<h3>
+		getAllPortfoliosForCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllPortfoliosForCohortID</strong>(numeric cohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllProgramNamesAndAdmins()"><!-- --></a>
+	<h3>
+		getAllProgramNamesAndAdmins 
+	</h3>
+
+	<kbd>public any <strong>getAllProgramNamesAndAdmins</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPrograms()"><!-- --></a>
+	<h3>
+		getAllPrograms 
+	</h3>
+
+	<kbd>public query <strong>getAllPrograms</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllRemindersForTouchpointID()"><!-- --></a>
+	<h3>
+		getAllRemindersForTouchpointID 
+	</h3>
+
+	<kbd>public array <strong>getAllRemindersForTouchpointID</strong>(numeric touchpointID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllRemindersForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getAllRemindersForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public struct <strong>getAllRemindersForTouchpointTemplateID</strong>(numeric touchpointTemplateID, boolean isExcel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		<dd><code>isExcel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsForAdvisorID()"><!-- --></a>
+	<h3>
+		getAllStudentsForAdvisorID 
+	</h3>
+
+	<kbd>public query <strong>getAllStudentsForAdvisorID</strong>(numeric advisorID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsForCohortID()"><!-- --></a>
+	<h3>
+		getAllStudentsForCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllStudentsForCohortID</strong>(numeric cohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllTouchpointCompletionInfoForCohortID()"><!-- --></a>
+	<h3>
+		getAllTouchpointCompletionInfoForCohortID 
+	</h3>
+
+	<kbd>public array <strong>getAllTouchpointCompletionInfoForCohortID</strong>(numeric cohortID, numeric startRow)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code> - ID for cohort whose touchpoints are to be displayed</dd>
+		
+		<dd><code>startRow</code> - Start row; necessary when we are pulling student info in multiples of 25</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllTouchpointTemplatesByCohortID()"><!-- --></a>
+	<h3>
+		getAllTouchpointTemplatesByCohortID 
+	</h3>
+
+	<kbd>public query <strong>getAllTouchpointTemplatesByCohortID</strong>(numeric CohortID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>CohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllTouchpointsForTemplateID()"><!-- --></a>
+	<h3>
+		getAllTouchpointsForTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getAllTouchpointsForTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllUsersForSearchBoxAutoComplete()"><!-- --></a>
+	<h3>
+		getAllUsersForSearchBoxAutoComplete 
+	</h3>
+
+	<kbd>public any <strong>getAllUsersForSearchBoxAutoComplete</strong>(string searchString, numeric maxLevel, boolean excludeAdmins)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code></dd>
+		
+		<dd><code>maxLevel</code></dd>
+		
+		<dd><code>excludeAdmins</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAvailableCompetencyGroupsByCompetencySetID()"><!-- --></a>
+	<h3>
+		getAvailableCompetencyGroupsByCompetencySetID 
+	</h3>
+
+	<kbd>public string <strong>getAvailableCompetencyGroupsByCompetencySetID</strong>(numeric competencySetID='0', numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<p>Returns available competency groups.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySetID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCohortInfo()"><!-- --></a>
+	<h3>
+		getCohortInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/cohort.html" title="class in core.modules.portfolio.model.member">cohort</a> <strong>getCohortInfo</strong>(numeric cohortID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a cohort.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCohortUsersForSearchBoxAutoComplete()"><!-- --></a>
+	<h3>
+		getCohortUsersForSearchBoxAutoComplete 
+	</h3>
+
+	<kbd>public any <strong>getCohortUsersForSearchBoxAutoComplete</strong>(string searchString, numeric CohortID, numeric minLevel, numeric maxLevel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code></dd>
+		
+		<dd><code>CohortID</code></dd>
+		
+		<dd><code>minLevel</code></dd>
+		
+		<dd><code>maxLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyGroupInfo()"><!-- --></a>
+	<h3>
+		getCompetencyGroupInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplate.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplate</a> <strong>getCompetencyGroupInfo</strong>(numeric competencyGroupTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a competency Set.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyGroupTemplateInfoForList()"><!-- --></a>
+	<h3>
+		getCompetencyGroupTemplateInfoForList 
+	</h3>
+
+	<kbd>public any <strong>getCompetencyGroupTemplateInfoForList</strong>(string competencyGroupTemplateList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupTemplateList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyLevels()"><!-- --></a>
+	<h3>
+		getCompetencyLevels 
+	</h3>
+
+	<kbd>public query <strong>getCompetencyLevels</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencySetInfo()"><!-- --></a>
+	<h3>
+		getCompetencySetInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/competencySet/competencySet.html" title="class in core.modules.portfolio.model.competencySet">competencySet</a> <strong>getCompetencySetInfo</strong>(numeric competencySetID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a competency Set.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySetID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCompetencyTemplateInfoForList()"><!-- --></a>
+	<h3>
+		getCompetencyTemplateInfoForList 
+	</h3>
+
+	<kbd>public any <strong>getCompetencyTemplateInfoForList</strong>(string competencyTemplateList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplateList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCustomDateTouchpointsForTemplateIDAsArray()"><!-- --></a>
+	<h3>
+		getCustomDateTouchpointsForTemplateIDAsArray 
+	</h3>
+
+	<kbd>public array <strong>getCustomDateTouchpointsForTemplateIDAsArray</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCustomDatesForTemplateID()"><!-- --></a>
+	<h3>
+		getCustomDatesForTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getCustomDatesForTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEvidenceZipNameForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getEvidenceZipNameForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public string <strong>getEvidenceZipNameForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets status of zip file copy for progress bar.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEvidenceZipProgressForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getEvidenceZipProgressForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public struct <strong>getEvidenceZipProgressForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets status of zip file copy for progress bar.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getInfoForStuAndProgramID()"><!-- --></a>
+	<h3>
+		getInfoForStuAndProgramID 
+	</h3>
+
+	<kbd>public query <strong>getInfoForStuAndProgramID</strong>(numeric programID='0', numeric stuID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOverallCompetencyRatingsForCohort()"><!-- --></a>
+	<h3>
+		getOverallCompetencyRatingsForCohort 
+	</h3>
+
+	<kbd>public query <strong>getOverallCompetencyRatingsForCohort</strong>(numeric programID, numeric cohortID, date reportDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>reportDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioInfoForCohort()"><!-- --></a>
+	<h3>
+		getPortfolioInfoForCohort 
+	</h3>
+
+	<kbd>public any <strong>getPortfolioInfoForCohort</strong>(string portfolioList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramInfo()"><!-- --></a>
+	<h3>
+		getProgramInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/program/program.html" title="class in core.modules.portfolio.model.program">program</a> <strong>getProgramInfo</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a program.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramUsersForSearchBoxAutoComplete()"><!-- --></a>
+	<h3>
+		getProgramUsersForSearchBoxAutoComplete 
+	</h3>
+
+	<kbd>public any <strong>getProgramUsersForSearchBoxAutoComplete</strong>(string searchString, numeric programID, numeric minLevel, numeric maxLevel)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>searchString</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>minLevel</code></dd>
+		
+		<dd><code>maxLevel</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramsForAdminID()"><!-- --></a>
+	<h3>
+		getProgramsForAdminID 
+	</h3>
+
+	<kbd>public any <strong>getProgramsForAdminID</strong>(numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getReflectionRatings()"><!-- --></a>
+	<h3>
+		getReflectionRatings 
+	</h3>
+
+	<kbd>public query <strong>getReflectionRatings</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getReflectionsForTouchpointTemplateID()"><!-- --></a>
+	<h3>
+		getReflectionsForTouchpointTemplateID 
+	</h3>
+
+	<kbd>public query <strong>getReflectionsForTouchpointTemplateID</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSchoolWideCompetencyTemplates()"><!-- --></a>
+	<h3>
+		getSchoolWideCompetencyTemplates 
+	</h3>
+
+	<kbd>public query <strong>getSchoolWideCompetencyTemplates</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStuInfoForCohort()"><!-- --></a>
+	<h3>
+		getStuInfoForCohort 
+	</h3>
+
+	<kbd>public query <strong>getStuInfoForCohort</strong>(string stuList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoHaveCompletedTouchpoint()"><!-- --></a>
+	<h3>
+		getStudentsWhoHaveCompletedTouchpoint 
+	</h3>
+
+	<kbd>public query <strong>getStudentsWhoHaveCompletedTouchpoint</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoHaveNotCompletedTouchpoint()"><!-- --></a>
+	<h3>
+		getStudentsWhoHaveNotCompletedTouchpoint 
+	</h3>
+
+	<kbd>public array <strong>getStudentsWhoHaveNotCompletedTouchpoint</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWithNoAdvisorForProgramID()"><!-- --></a>
+	<h3>
+		getStudentsWithNoAdvisorForProgramID 
+	</h3>
+
+	<kbd>public query <strong>getStudentsWithNoAdvisorForProgramID</strong>(numeric programID='0')</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointTemplateInfo()"><!-- --></a>
+	<h3>
+		getTouchpointTemplateInfo 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplate.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplate</a> <strong>getTouchpointTemplateInfo</strong>(numeric touchpointTemplateID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns info about a touchpointTemplate.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointWithStuInfo()"><!-- --></a>
+	<h3>
+		getTouchpointWithStuInfo 
+	</h3>
+
+	<kbd>public query <strong>getTouchpointWithStuInfo</strong>(numeric touchpointID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointsForTemplateIDAndCustomDate()"><!-- --></a>
+	<h3>
+		getTouchpointsForTemplateIDAndCustomDate 
+	</h3>
+
+	<kbd>public query <strong>getTouchpointsForTemplateIDAndCustomDate</strong>(numeric touchpointTemplateID, string customDueDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		<dd><code>customDueDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getTouchpointsWithReminderInfo()"><!-- --></a>
+	<h3>
+		getTouchpointsWithReminderInfo 
+	</h3>
+
+	<kbd>public struct <strong>getTouchpointsWithReminderInfo</strong>(numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processAdvisorExcelFile()"><!-- --></a>
+	<h3>
+		processAdvisorExcelFile 
+	</h3>
+
+	<kbd>public any <strong>processAdvisorExcelFile</strong>(numeric programID, string fileName, string fileExt)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>fileName</code></dd>
+		
+		<dd><code>fileExt</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processCohortExcelFile()"><!-- --></a>
+	<h3>
+		processCohortExcelFile 
+	</h3>
+
+	<kbd>public any <strong>processCohortExcelFile</strong>(numeric cohortID, numeric programID, string fileName, string fileExt, numeric createdBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		<dd><code>fileName</code></dd>
+		
+		<dd><code>fileExt</code></dd>
+		
+		<dd><code>createdBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="removeCustomTouchpointDateForPortfolio()"><!-- --></a>
+	<h3>
+		removeCustomTouchpointDateForPortfolio 
+	</h3>
+
+	<kbd>public boolean <strong>removeCustomTouchpointDateForPortfolio</strong>(numeric touchpointTemplateID, numeric portfolioID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code> - ID for touchpoint template</dd>
+		
+		<dd><code>portfolioID</code> - ID for portfolio</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderSchoolwideCompetencies()"><!-- --></a>
+	<h3>
+		reorderSchoolwideCompetencies 
+	</h3>
+
+	<kbd>public boolean <strong>reorderSchoolwideCompetencies</strong>(string newOrder)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>newOrder</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reorderTouchpointTemplates()"><!-- --></a>
+	<h3>
+		reorderTouchpointTemplates 
+	</h3>
+
+	<kbd>public boolean <strong>reorderTouchpointTemplates</strong>(string newOrder)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>newOrder</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendAdvisorTouchpointReminder()"><!-- --></a>
+	<h3>
+		sendAdvisorTouchpointReminder 
+	</h3>
+
+	<kbd>public boolean <strong>sendAdvisorTouchpointReminder</strong>(numeric touchpointTemplateID, string reminderList, numeric advisorRemindedBy, string emailMsg)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		<dd><code>reminderList</code></dd>
+		
+		<dd><code>advisorRemindedBy</code></dd>
+		
+		<dd><code>emailMsg</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendAutomatedReminders()"><!-- --></a>
+	<h3>
+		sendAutomatedReminders 
+	</h3>
+
+	<kbd>public any <strong>sendAutomatedReminders</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendStuTouchpointReminder()"><!-- --></a>
+	<h3>
+		sendStuTouchpointReminder 
+	</h3>
+
+	<kbd>public boolean <strong>sendStuTouchpointReminder</strong>(numeric touchpointTemplateID, string reminderList, numeric reminderSentBy, string emailMsg)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		<dd><code>reminderList</code></dd>
+		
+		<dd><code>reminderSentBy</code></dd>
+		
+		<dd><code>emailMsg</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setAdminFileManager()"><!-- --></a>
+	<h3>
+		setAdminFileManager 
+	</h3>
+
+	<kbd>public void <strong>setAdminFileManager</strong>(<a href="../../../../../core/modules/portfolio/model/admin/adminFileManager.html" title="class in core.modules.portfolio.model.admin">adminFileManager</a> adminFileManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>adminFileManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setFileUploader()"><!-- --></a>
+	<h3>
+		setFileUploader 
+	</h3>
+
+	<kbd>public void <strong>setFileUploader</strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a> fileuploader)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fileuploader</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setProgramLibraryService()"><!-- --></a>
+	<h3>
+		setProgramLibraryService 
+	</h3>
+
+	<kbd>public void <strong>setProgramLibraryService</strong>(<a href="../../../../../core/modules/portfolio/model/programLibrary/programLibraryService.html" title="class in core.modules.portfolio.model.programLibrary">programLibraryService</a> programLibraryService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programLibraryService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setadvisorDAO()"><!-- --></a>
+	<h3>
+		setadvisorDAO 
+	</h3>
+
+	<kbd>public void <strong>setadvisorDAO</strong>(<a href="../../../../../core/modules/portfolio/model/member/advisorDAO.html" title="class in core.modules.portfolio.model.member">advisorDAO</a> advisorDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcohortDAO()"><!-- --></a>
+	<h3>
+		setcohortDAO 
+	</h3>
+
+	<kbd>public void <strong>setcohortDAO</strong>(<a href="../../../../../core/modules/portfolio/model/member/cohortDAO.html" title="class in core.modules.portfolio.model.member">cohortDAO</a> cohortDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>cohortDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyGateway()"><!-- --></a>
+	<h3>
+		setcompetencyGateway 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyGateway</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyGateway.html" title="class in core.modules.portfolio.model.competency">competencyGateway</a> competencyGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyGroupDAO()"><!-- --></a>
+	<h3>
+		setcompetencyGroupDAO 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyGroupDAO</strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupDAO.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupDAO</a> competencyGroupDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyGroupGateway()"><!-- --></a>
+	<h3>
+		setcompetencyGroupGateway 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyGroupGateway</strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupGateway.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupGateway</a> competencyGroupGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyGroupTemplateDAO()"><!-- --></a>
+	<h3>
+		setcompetencyGroupTemplateDAO 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyGroupTemplateDAO</strong>(<a href="../../../../../core/modules/portfolio/model/competencyGroup/competencyGroupTemplateDAO.html" title="class in core.modules.portfolio.model.competencyGroup">competencyGroupTemplateDAO</a> competencyGroupTemplateDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyGroupTemplateDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyLevelDAO()"><!-- --></a>
+	<h3>
+		setcompetencyLevelDAO 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyLevelDAO</strong>(<a href="../../../../../core/modules/portfolio/model/competencyLevel/competencyLevelDAO.html" title="class in core.modules.portfolio.model.competencyLevel">competencyLevelDAO</a> competencyLevelDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyLevelDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyLevelGateway()"><!-- --></a>
+	<h3>
+		setcompetencyLevelGateway 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyLevelGateway</strong>(<a href="../../../../../core/modules/portfolio/model/competencyLevel/competencyLevelGateway.html" title="class in core.modules.portfolio.model.competencyLevel">competencyLevelGateway</a> competencyLevelGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyLevelGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencySetDAO()"><!-- --></a>
+	<h3>
+		setcompetencySetDAO 
+	</h3>
+
+	<kbd>public void <strong>setcompetencySetDAO</strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySetDAO.html" title="class in core.modules.portfolio.model.competencySet">competencySetDAO</a> competencySetDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySetDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencySetGateway()"><!-- --></a>
+	<h3>
+		setcompetencySetGateway 
+	</h3>
+
+	<kbd>public void <strong>setcompetencySetGateway</strong>(<a href="../../../../../core/modules/portfolio/model/competencySet/competencySetGateway.html" title="class in core.modules.portfolio.model.competencySet">competencySetGateway</a> competencySetGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencySetGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcompetencyTemplateDAO()"><!-- --></a>
+	<h3>
+		setcompetencyTemplateDAO 
+	</h3>
+
+	<kbd>public void <strong>setcompetencyTemplateDAO</strong>(<a href="../../../../../core/modules/portfolio/model/competency/competencyTemplateDAO.html" title="class in core.modules.portfolio.model.competency">competencyTemplateDAO</a> competencyTemplateDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>competencyTemplateDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setevidenceGateway()"><!-- --></a>
+	<h3>
+		setevidenceGateway 
+	</h3>
+
+	<kbd>public void <strong>setevidenceGateway</strong>(<a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a> evidenceGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>evidenceGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setmemberGateway()"><!-- --></a>
+	<h3>
+		setmemberGateway 
+	</h3>
+
+	<kbd>public void <strong>setmemberGateway</strong>(<a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a> memberGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>memberGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setprogramDAO()"><!-- --></a>
+	<h3>
+		setprogramDAO 
+	</h3>
+
+	<kbd>public void <strong>setprogramDAO</strong>(<a href="../../../../../core/modules/portfolio/model/program/programDAO.html" title="class in core.modules.portfolio.model.program">programDAO</a> programDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setprogramGateway()"><!-- --></a>
+	<h3>
+		setprogramGateway 
+	</h3>
+
+	<kbd>public void <strong>setprogramGateway</strong>(<a href="../../../../../core/modules/portfolio/model/program/programGateway.html" title="class in core.modules.portfolio.model.program">programGateway</a> programGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>programGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setreflectionRatingDAO()"><!-- --></a>
+	<h3>
+		setreflectionRatingDAO 
+	</h3>
+
+	<kbd>public void <strong>setreflectionRatingDAO</strong>(<a href="../../../../../core/modules/portfolio/model/reflectionRating/reflectionRatingDAO.html" title="class in core.modules.portfolio.model.reflectionRating">reflectionRatingDAO</a> reflectionRatingDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>reflectionRatingDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setreflectionRatingGateway()"><!-- --></a>
+	<h3>
+		setreflectionRatingGateway 
+	</h3>
+
+	<kbd>public void <strong>setreflectionRatingGateway</strong>(<a href="../../../../../core/modules/portfolio/model/reflectionRating/reflectionRatingGateway.html" title="class in core.modules.portfolio.model.reflectionRating">reflectionRatingGateway</a> reflectionRatingGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>reflectionRatingGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="settouchpointGateway()"><!-- --></a>
+	<h3>
+		settouchpointGateway 
+	</h3>
+
+	<kbd>public void <strong>settouchpointGateway</strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchpointGateway.html" title="class in core.modules.portfolio.model.touchpoint">touchpointGateway</a> touchpointGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="settouchpointTemplateDAO()"><!-- --></a>
+	<h3>
+		settouchpointTemplateDAO 
+	</h3>
+
+	<kbd>public void <strong>settouchpointTemplateDAO</strong>(<a href="../../../../../core/modules/portfolio/model/touchpoint/touchPointTemplateDAO.html" title="class in core.modules.portfolio.model.touchpoint">touchPointTemplateDAO</a> touchpointTemplateDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateAttachmentsForTouchpoint()"><!-- --></a>
+	<h3>
+		updateAttachmentsForTouchpoint 
+	</h3>
+
+	<kbd>public array <strong>updateAttachmentsForTouchpoint</strong>(numeric touchpointTemplateID, array existingAttachments, array newAttachments, string tempFolder)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>touchpointTemplateID</code></dd>
+		
+		<dd><code>existingAttachments</code></dd>
+		
+		<dd><code>newAttachments</code></dd>
+		
+		<dd><code>tempFolder</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

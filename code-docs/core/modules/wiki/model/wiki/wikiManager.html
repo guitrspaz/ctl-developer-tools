@@ -1,0 +1,1702 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>wikiManager</title>
+	<meta name="keywords" content="core.modules.wiki.model.wiki.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/wiki/model/wiki/wikiManager.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.wiki.model.wiki"><span class="label label-success">core.modules.wiki.model.wiki</span></a>
+</div>
+
+<h2>
+
+Class
+wikiManager</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.wiki.model.wiki.wikiManager
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I govern functions regarding to a wiki's meta settings and permissions</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: wikiManager 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="wikiManager.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#addWiki()">addWiki</A></strong>(<a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a> bean, [array membershipArray='[runtime expression]'], [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add wiki to DB.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#checkTitleForDuplicate()">checkTitleForDuplicate</A></strong>(string wikiTitle, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#convertToMembershipArray()">convertToMembershipArray</A></strong>(string readList, string writeList)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;takes the two lists and combines them into one membership array.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#copyPastWiki()">copyPastWiki</A></strong>(numeric wikiOfferingID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I take a wiki and make a hardcopy of it, while removing all users/groups from read/write membership (except for faculty/staff).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#copyWikiContents()">copyWikiContents</A></strong>(numeric oldWikiOfferingID, numeric newWikiOfferingID, string oldFilePath, string newFilePath)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#deleteWiki()">deleteWiki</A></strong>(numeric wikiID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete a wiki from the DB.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#duplicateWiki()">duplicateWiki</A></strong>(numeric wikiOfferingID, string wikiTitle, boolean makeCopiesForEachWriter, string readers, string writers, boolean readAll, boolean writeAll, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I take a wiki and make a hardcopy of it.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#finishWiki()">finishWiki</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sets the finished flag on a wikiOffering ( and also alert necessary parties of this status).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getAllCurrentAndArchived()">getAllCurrentAndArchived</A></strong>(numeric courseID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get All current and archived wikis for a course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getAllGroups()">getAllGroups</A></strong>(numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieves all coursegroups that is registered for this course offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getAllHidden()">getAllHidden</A></strong>(numeric courseID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get All current and archived hidden wikis for a course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getAllUsers()">getAllUsers</A></strong>(numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieves all course Users that is registered for this course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getCourseGroupsAndUsers()">getCourseGroupsAndUsers</A></strong>(numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retrieves all the users and coursegroups that is registered for this course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getPastOfferings()">getPastOfferings</A></strong>(numeric wikiID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all wikis from a course that does not belong to this current offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getPastWikis()">getPastWikis</A></strong>(numeric courseID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get All past wikis for a course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getReports()">getReports</A></strong>([numeric wikiOfferingID])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns the usage reports of a wiki offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a></code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getWiki()">getWiki</A></strong>(numeric wikiOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get Wiki information from the DB.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a></code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getWikiFromPageID()">getWikiFromPageID</A></strong>(numeric pageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getWiki information from the DB.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getWikisByKeyword()">getWikisByKeyword</A></strong>(numeric courseID, numeric courseOfferingID, string keyword)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all wikis from a course with a specific keyword.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#getWikisBySearchedWord()">getWikisBySearchedWord</A></strong>(numeric courseID, numeric courseOfferingID, string keyword)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all wikis from a course with a specific word.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#hideWiki()">hideWiki</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sets the hidden flag on a wikiOffering ( and also alert necessary parties of this status).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#lockWiki()">lockWiki</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock a wiki to prevent any changes (regardless of write permissions).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#makeArchive()">makeArchive</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make a previous offering of a wiki an archive.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#removeArchive()">removeArchive</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removes the archive status of a previouisly archived wiki offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setPageDAO()">setPageDAO</A></strong>(<a href="../../../../../core/modules/wiki/model/page/pageDAO.html" title="class in core.modules.wiki.model.page">pageDAO</a> pageDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: pageDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setPageGateway()">setPageGateway</A></strong>(<a href="../../../../../core/modules/wiki/model/page/pageGateway.html" title="class in core.modules.wiki.model.page">pageGateway</a> pageGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: pageGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setPermissionServiceGateway()">setPermissionServiceGateway</A></strong>(<a href="../../../../../core/modules/wiki/model/wiki/permissionServiceGateway.html" title="class in core.modules.wiki.model.wiki">permissionServiceGateway</a> permissionServiceGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: permissionServiceGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setWikiDAO()">setWikiDAO</A></strong>(<a href="../../../../../core/modules/wiki/model/wiki/wikiDAO.html" title="class in core.modules.wiki.model.wiki">wikiDAO</a> wikiDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: wikiDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setWikiGateway()">setWikiGateway</A></strong>(<a href="../../../../../core/modules/wiki/model/wiki/wikiGateway.html" title="class in core.modules.wiki.model.wiki">wikiGateway</a> wikiGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: wikiGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setWikiLogger()">setWikiLogger</A></strong>(<a href="../../../../../core/modules/wiki/model/log/wikiLogger.html" title="class in core.modules.wiki.model.log">wikiLogger</a> wikiLogger)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: wikiLogger.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setfileDAO()">setfileDAO</A></strong>(<a href="../../../../../core/modules/wiki/model/file/fileDAO.html" title="class in core.modules.wiki.model.file">fileDAO</a> fileDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: fileDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#setfileGateway()">setfileGateway</A></strong>(<a href="../../../../../core/modules/wiki/model/file/fileGateway.html" title="class in core.modules.wiki.model.file">fileGateway</a> fileGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: fileGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#sortWikis()">sortWikis</A></strong>(array sortOrder)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saves display order of wikis.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#sortWikisByAlpha()">sortWikisByAlpha</A></strong>(numeric courseID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saves display order of wikis.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#unfinishWiki()">unfinishWiki</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removes the finished flag on a wikiOffering ( and also alert necessary parties of this status).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#unhideWiki()">unhideWiki</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removes the hidden flag on a wikiOffering ( and also alert necessary parties of this status).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#unlockWiki()">unlockWiki</A></strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removes lock on wiki so changes can once be made on it.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#updatePageOrder()">updatePageOrder</A></strong>(string pageList, numeric wikiID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updates the page display order.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="wikiManager.html#updateWiki()">updateWiki</A></strong>(<a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a> bean, [array membershipArray='[runtime expression]'], [<a href="../../../../../core/model/security/monolithSession.html" title="class in core.model.security">monolithSession</a> user='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update Wiki's information in DB.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object.</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - The DSN of the application, passed to me by the listener who initializes me</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="addWiki()"><!-- --></a>
+	<h3>
+		addWiki 
+	</h3>
+
+	<kbd>public any <strong>addWiki</strong>(<a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a> bean, [array membershipArray='[runtime expression]'], [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Add wiki to DB</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bean</code> - I am the wiki object bean to be inserted into the DB</dd>
+		
+		<dd><code>membershipArray</code> - I am an array of membership IDs and permissions for this wiki</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="checkTitleForDuplicate()"><!-- --></a>
+	<h3>
+		checkTitleForDuplicate 
+	</h3>
+
+	<kbd>public boolean <strong>checkTitleForDuplicate</strong>(string wikiTitle, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiTitle</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="convertToMembershipArray()"><!-- --></a>
+	<h3>
+		convertToMembershipArray 
+	</h3>
+
+	<kbd>public array <strong>convertToMembershipArray</strong>(string readList, string writeList)</kbd>
+
+	<br><br>
+
+	
+		<p>takes the two lists and combines them into one membership array</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>readList</code></dd>
+		
+		<dd><code>writeList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyPastWiki()"><!-- --></a>
+	<h3>
+		copyPastWiki 
+	</h3>
+
+	<kbd>public void <strong>copyPastWiki</strong>(numeric wikiOfferingID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>I take a wiki and make a hardcopy of it, while removing all users/groups from read/write membership (except for faculty/staff)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyWikiContents()"><!-- --></a>
+	<h3>
+		copyWikiContents 
+	</h3>
+
+	<kbd>private void <strong>copyWikiContents</strong>(numeric oldWikiOfferingID, numeric newWikiOfferingID, string oldFilePath, string newFilePath)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>oldWikiOfferingID</code></dd>
+		
+		<dd><code>newWikiOfferingID</code></dd>
+		
+		<dd><code>oldFilePath</code></dd>
+		
+		<dd><code>newFilePath</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteWiki()"><!-- --></a>
+	<h3>
+		deleteWiki 
+	</h3>
+
+	<kbd>public void <strong>deleteWiki</strong>(numeric wikiID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>delete a wiki from the DB</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the wiki's identifier</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="duplicateWiki()"><!-- --></a>
+	<h3>
+		duplicateWiki 
+	</h3>
+
+	<kbd>public void <strong>duplicateWiki</strong>(numeric wikiOfferingID, string wikiTitle, boolean makeCopiesForEachWriter, string readers, string writers, boolean readAll, boolean writeAll, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>I take a wiki and make a hardcopy of it</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code></dd>
+		
+		<dd><code>wikiTitle</code></dd>
+		
+		<dd><code>makeCopiesForEachWriter</code></dd>
+		
+		<dd><code>readers</code></dd>
+		
+		<dd><code>writers</code></dd>
+		
+		<dd><code>readAll</code></dd>
+		
+		<dd><code>writeAll</code></dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="finishWiki()"><!-- --></a>
+	<h3>
+		finishWiki 
+	</h3>
+
+	<kbd>public void <strong>finishWiki</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>sets the finished flag on a wikiOffering ( and also alert necessary parties of this status)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllCurrentAndArchived()"><!-- --></a>
+	<h3>
+		getAllCurrentAndArchived 
+	</h3>
+
+	<kbd>public array <strong>getAllCurrentAndArchived</strong>(numeric courseID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>get All current and archived wikis for a course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code> - the course identifier</dd>
+		
+		<dd><code>courseOfferingID</code> - the course identifier</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllGroups()"><!-- --></a>
+	<h3>
+		getAllGroups 
+	</h3>
+
+	<kbd>public any <strong>getAllGroups</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>retrieves all coursegroups that is registered for this course offering</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code> - I am the courseOfferingID for these users/groups</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllHidden()"><!-- --></a>
+	<h3>
+		getAllHidden 
+	</h3>
+
+	<kbd>public array <strong>getAllHidden</strong>(numeric courseID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>get All current and archived hidden wikis for a course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code> - the course identifier</dd>
+		
+		<dd><code>courseOfferingID</code> - the course identifier</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllUsers()"><!-- --></a>
+	<h3>
+		getAllUsers 
+	</h3>
+
+	<kbd>public any <strong>getAllUsers</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>retrieves all course Users that is registered for this course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code> - I am the courseOffering ID for this course</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseGroupsAndUsers()"><!-- --></a>
+	<h3>
+		getCourseGroupsAndUsers 
+	</h3>
+
+	<kbd>public array <strong>getCourseGroupsAndUsers</strong>(numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>retrieves all the users and coursegroups that is registered for this course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code> - I am the course offering ID for these users/groups</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPastOfferings()"><!-- --></a>
+	<h3>
+		getPastOfferings 
+	</h3>
+
+	<kbd>public query <strong>getPastOfferings</strong>(numeric wikiID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>gets all wikis from a course that does not belong to this current offering.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - the wiki identifier</dd>
+		
+		<dd><code>courseOfferingID</code> - the latest course offering ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPastWikis()"><!-- --></a>
+	<h3>
+		getPastWikis 
+	</h3>
+
+	<kbd>public array <strong>getPastWikis</strong>(numeric courseID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>get All past wikis for a course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code> - the course identifier</dd>
+		
+		<dd><code>courseOfferingID</code> - the course identifier</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getReports()"><!-- --></a>
+	<h3>
+		getReports 
+	</h3>
+
+	<kbd>public struct <strong>getReports</strong>([numeric wikiOfferingID])</kbd>
+
+	<br><br>
+
+	
+		<p>returns the usage reports of a wiki offering</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code> - the offering ID of the wiki offering</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getWiki()"><!-- --></a>
+	<h3>
+		getWiki 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a> <strong>getWiki</strong>(numeric wikiOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>get Wiki information from the DB</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code> - The PKEY of the wiki to retrieve</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getWikiFromPageID()"><!-- --></a>
+	<h3>
+		getWikiFromPageID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a> <strong>getWikiFromPageID</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<p>getWiki information from the DB</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code> - the pkey of a page that belongs to the wiki</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getWikisByKeyword()"><!-- --></a>
+	<h3>
+		getWikisByKeyword 
+	</h3>
+
+	<kbd>public array <strong>getWikisByKeyword</strong>(numeric courseID, numeric courseOfferingID, string keyword)</kbd>
+
+	<br><br>
+
+	
+		<p>gets all wikis from a course with a specific keyword</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code> - the course identifier</dd>
+		
+		<dd><code>courseOfferingID</code> - the latest course offering ID</dd>
+		
+		<dd><code>keyword</code> - the keyword to search for</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getWikisBySearchedWord()"><!-- --></a>
+	<h3>
+		getWikisBySearchedWord 
+	</h3>
+
+	<kbd>public query <strong>getWikisBySearchedWord</strong>(numeric courseID, numeric courseOfferingID, string keyword)</kbd>
+
+	<br><br>
+
+	
+		<p>gets all wikis from a course with a specific word</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code> - the course identifier</dd>
+		
+		<dd><code>courseOfferingID</code> - the latest course offering ID</dd>
+		
+		<dd><code>keyword</code> - the keyword to search for</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="hideWiki()"><!-- --></a>
+	<h3>
+		hideWiki 
+	</h3>
+
+	<kbd>public void <strong>hideWiki</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>sets the hidden flag on a wikiOffering ( and also alert necessary parties of this status)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="lockWiki()"><!-- --></a>
+	<h3>
+		lockWiki 
+	</h3>
+
+	<kbd>public void <strong>lockWiki</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>lock a wiki to prevent any changes (regardless of write permissions)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="makeArchive()"><!-- --></a>
+	<h3>
+		makeArchive 
+	</h3>
+
+	<kbd>public void <strong>makeArchive</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>make a previous offering of a wiki an archive</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="removeArchive()"><!-- --></a>
+	<h3>
+		removeArchive 
+	</h3>
+
+	<kbd>public void <strong>removeArchive</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>removes the archive status of a previouisly archived wiki offering</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageDAO()"><!-- --></a>
+	<h3>
+		setPageDAO 
+	</h3>
+
+	<kbd>public void <strong>setPageDAO</strong>(<a href="../../../../../core/modules/wiki/model/page/pageDAO.html" title="class in core.modules.wiki.model.page">pageDAO</a> pageDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: pageDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageGateway()"><!-- --></a>
+	<h3>
+		setPageGateway 
+	</h3>
+
+	<kbd>public void <strong>setPageGateway</strong>(<a href="../../../../../core/modules/wiki/model/page/pageGateway.html" title="class in core.modules.wiki.model.page">pageGateway</a> pageGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: pageGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPermissionServiceGateway()"><!-- --></a>
+	<h3>
+		setPermissionServiceGateway 
+	</h3>
+
+	<kbd>public void <strong>setPermissionServiceGateway</strong>(<a href="../../../../../core/modules/wiki/model/wiki/permissionServiceGateway.html" title="class in core.modules.wiki.model.wiki">permissionServiceGateway</a> permissionServiceGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: permissionServiceGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>permissionServiceGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setWikiDAO()"><!-- --></a>
+	<h3>
+		setWikiDAO 
+	</h3>
+
+	<kbd>public void <strong>setWikiDAO</strong>(<a href="../../../../../core/modules/wiki/model/wiki/wikiDAO.html" title="class in core.modules.wiki.model.wiki">wikiDAO</a> wikiDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: wikiDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setWikiGateway()"><!-- --></a>
+	<h3>
+		setWikiGateway 
+	</h3>
+
+	<kbd>public void <strong>setWikiGateway</strong>(<a href="../../../../../core/modules/wiki/model/wiki/wikiGateway.html" title="class in core.modules.wiki.model.wiki">wikiGateway</a> wikiGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: wikiGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setWikiLogger()"><!-- --></a>
+	<h3>
+		setWikiLogger 
+	</h3>
+
+	<kbd>public void <strong>setWikiLogger</strong>(<a href="../../../../../core/modules/wiki/model/log/wikiLogger.html" title="class in core.modules.wiki.model.log">wikiLogger</a> wikiLogger)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: wikiLogger</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiLogger</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setfileDAO()"><!-- --></a>
+	<h3>
+		setfileDAO 
+	</h3>
+
+	<kbd>public void <strong>setfileDAO</strong>(<a href="../../../../../core/modules/wiki/model/file/fileDAO.html" title="class in core.modules.wiki.model.file">fileDAO</a> fileDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: fileDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fileDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setfileGateway()"><!-- --></a>
+	<h3>
+		setfileGateway 
+	</h3>
+
+	<kbd>public void <strong>setfileGateway</strong>(<a href="../../../../../core/modules/wiki/model/file/fileGateway.html" title="class in core.modules.wiki.model.file">fileGateway</a> fileGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: fileGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fileGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sortWikis()"><!-- --></a>
+	<h3>
+		sortWikis 
+	</h3>
+
+	<kbd>public void <strong>sortWikis</strong>(array sortOrder)</kbd>
+
+	<br><br>
+
+	
+		<p>saves display order of wikis</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sortOrder</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sortWikisByAlpha()"><!-- --></a>
+	<h3>
+		sortWikisByAlpha 
+	</h3>
+
+	<kbd>public void <strong>sortWikisByAlpha</strong>(numeric courseID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>saves display order of wikis</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unfinishWiki()"><!-- --></a>
+	<h3>
+		unfinishWiki 
+	</h3>
+
+	<kbd>public void <strong>unfinishWiki</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>removes the finished flag on a wikiOffering ( and also alert necessary parties of this status)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unhideWiki()"><!-- --></a>
+	<h3>
+		unhideWiki 
+	</h3>
+
+	<kbd>public void <strong>unhideWiki</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>removes the hidden flag on a wikiOffering ( and also alert necessary parties of this status)</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unlockWiki()"><!-- --></a>
+	<h3>
+		unlockWiki 
+	</h3>
+
+	<kbd>public void <strong>unlockWiki</strong>(numeric wikiID, numeric wikiOfferingID, [numeric userID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>removes lock on wiki so changes can once be made on it</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiID</code> - I am the identifier of a wiki</dd>
+		
+		<dd><code>wikiOfferingID</code> - I am the identifier of a wiki offering</dd>
+		
+		<dd><code>userID</code> - The PKEY of the user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePageOrder()"><!-- --></a>
+	<h3>
+		updatePageOrder 
+	</h3>
+
+	<kbd>public any <strong>updatePageOrder</strong>(string pageList, numeric wikiID)</kbd>
+
+	<br><br>
+
+	
+		<p>updates the page display order</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageList</code></dd>
+		
+		<dd><code>wikiID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateWiki()"><!-- --></a>
+	<h3>
+		updateWiki 
+	</h3>
+
+	<kbd>public any <strong>updateWiki</strong>(<a href="../../../../../core/modules/wiki/model/wiki/wiki.html" title="class in core.modules.wiki.model.wiki">wiki</a> bean, [array membershipArray='[runtime expression]'], [<a href="../../../../../core/model/security/monolithSession.html" title="class in core.model.security">monolithSession</a> user='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Update Wiki's information in DB</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>bean</code> - I am the wiki object bean to be inserted into the DB</dd>
+		
+		<dd><code>membershipArray</code> - I am an array of membership IDs and permissions for this wiki</dd>
+		
+		<dd><code>user</code> - The user making this request</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

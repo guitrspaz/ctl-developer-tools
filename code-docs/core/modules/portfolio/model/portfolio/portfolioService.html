@@ -1,0 +1,1429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>portfolioService</title>
+	<meta name="keywords" content="core.modules.portfolio.model.portfolio.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/portfolio/model/portfolio/portfolioService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.portfolio.model.portfolio"><span class="label label-success">core.modules.portfolio.model.portfolio</span></a>
+</div>
+
+<h2>
+
+Class
+portfolioService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html" title="class in core.modules.portfolio.model.tools">core.modules.portfolio.model.tools.gatewayTools</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.portfolio.model.portfolio.portfolioService
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am the service layer for portfolios in the portfolio app.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#dsn()">dsn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#evidenceGateway()">evidenceGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#fileUploader()">fileUploader</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#memberGateway()">memberGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioGateway.html" title="class in core.modules.portfolio.model.portfolio">portfolioGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#portfolioGateway()">portfolioGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioViewDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioViewDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#portfolioViewDAO()">portfolioViewDAO</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="portfolioService.html#init()">init</A></strong>([core.modules.portfolio.model.portfolio.reqired string])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#GETDSN()">GETDSN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#GETEVIDENCEGATEWAY()">GETEVIDENCEGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#GETFILEUPLOADER()">GETFILEUPLOADER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#GETMEMBERGATEWAY()">GETMEMBERGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioGateway.html" title="class in core.modules.portfolio.model.portfolio">portfolioGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#GETPORTFOLIOGATEWAY()">GETPORTFOLIOGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioViewDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioViewDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#GETPORTFOLIOVIEWDAO()">GETPORTFOLIOVIEWDAO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#SETDSN()">SETDSN</A></strong>(string dsn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#SETEVIDENCEGATEWAY()">SETEVIDENCEGATEWAY</A></strong>(<a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a> evidenceGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#SETFILEUPLOADER()">SETFILEUPLOADER</A></strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a> fileUploader)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#SETMEMBERGATEWAY()">SETMEMBERGATEWAY</A></strong>(<a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a> memberGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#SETPORTFOLIOGATEWAY()">SETPORTFOLIOGATEWAY</A></strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioGateway.html" title="class in core.modules.portfolio.model.portfolio">portfolioGateway</a> portfolioGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a></code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#SETPORTFOLIOVIEWDAO()">SETPORTFOLIOVIEWDAO</A></strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioViewDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioViewDAO</a> portfolioViewDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#deletePortfolioView()">deletePortfolioView</A></strong>(numeric portfolioViewID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#getCohortByPortfolioID()">getCohortByPortfolioID</A></strong>(numeric portfolioID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#getPortfolioInfoByPortfolioID()">getPortfolioInfoByPortfolioID</A></strong>(numeric portfolioID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#getPortfolioViewByPortfolioViewID()">getPortfolioViewByPortfolioViewID</A></strong>(numeric portfolioViewID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#getPortfolioViewsByPortfolioID()">getPortfolioViewsByPortfolioID</A></strong>(numeric portfolioID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#getPortfoliosByAdvisorUserID()">getPortfoliosByAdvisorUserID</A></strong>(numeric advisorUserID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#getProgramInfoByPortfolioID()">getProgramInfoByPortfolioID</A></strong>(numeric portfolioID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#savePortfolioView()">savePortfolioView</A></strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioView.html" title="class in core.modules.portfolio.model.portfolio">portfolioView</a> portfolioView, [array skills], [array evidenceIDs], [string tempMediaLocation], [string tempThumbnailLocation], [string viewURL])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#updateAboutMe()">updateAboutMe</A></strong>(numeric portfolioViewID, boolean aboutMe)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#updateInActive()">updateInActive</A></strong>(numeric portfolioViewID, boolean inActive)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#uploadFileToTemp()">uploadFileToTemp</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#userIsAdvisorForPortfolio()">userIsAdvisorForPortfolio</A></strong>(numeric advisorUserID, numeric portfolioID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="portfolioService.html#userIsProgramAdminForPortfolio()">userIsProgramAdminForPortfolio</A></strong>(numeric userID, numeric programID)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.portfolio.model.tools.gatewayTools"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html" title="class in core.modules.portfolio.model.tools">core.modules.portfolio.model.tools.gatewayTools</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../core/modules/portfolio/model/tools/gatewayTools.html#returnFileNameFriendlyString()">returnFileNameFriendlyString</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([core.modules.portfolio.model.portfolio.reqired string])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>string</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="dsn()"><!-- --></a>
+		<h3>dsn</h3>
+
+		<kbd>
+			property string <strong>dsn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="evidenceGateway()"><!-- --></a>
+		<h3>evidenceGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a> <strong>evidenceGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="fileUploader()"><!-- --></a>
+		<h3>fileUploader</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a> <strong>fileUploader</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="memberGateway()"><!-- --></a>
+		<h3>memberGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a> <strong>memberGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="portfolioGateway()"><!-- --></a>
+		<h3>portfolioGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioGateway.html" title="class in core.modules.portfolio.model.portfolio">portfolioGateway</a> <strong>portfolioGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="portfolioViewDAO()"><!-- --></a>
+		<h3>portfolioViewDAO</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioViewDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioViewDAO</a> <strong>portfolioViewDAO</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETDSN()"><!-- --></a>
+	<h3>
+		GETDSN 
+	</h3>
+
+	<kbd>public string <strong>GETDSN</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETEVIDENCEGATEWAY()"><!-- --></a>
+	<h3>
+		GETEVIDENCEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a> <strong>GETEVIDENCEGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETFILEUPLOADER()"><!-- --></a>
+	<h3>
+		GETFILEUPLOADER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a> <strong>GETFILEUPLOADER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMEMBERGATEWAY()"><!-- --></a>
+	<h3>
+		GETMEMBERGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a> <strong>GETMEMBERGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPORTFOLIOGATEWAY()"><!-- --></a>
+	<h3>
+		GETPORTFOLIOGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioGateway.html" title="class in core.modules.portfolio.model.portfolio">portfolioGateway</a> <strong>GETPORTFOLIOGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPORTFOLIOVIEWDAO()"><!-- --></a>
+	<h3>
+		GETPORTFOLIOVIEWDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioViewDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioViewDAO</a> <strong>GETPORTFOLIOVIEWDAO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDSN()"><!-- --></a>
+	<h3>
+		SETDSN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a> <strong>SETDSN</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dsn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETEVIDENCEGATEWAY()"><!-- --></a>
+	<h3>
+		SETEVIDENCEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a> <strong>SETEVIDENCEGATEWAY</strong>(<a href="../../../../../core/modules/portfolio/model/evidence/evidenceGateway.html" title="class in core.modules.portfolio.model.evidence">evidenceGateway</a> evidenceGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>evidenceGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETFILEUPLOADER()"><!-- --></a>
+	<h3>
+		SETFILEUPLOADER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a> <strong>SETFILEUPLOADER</strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/fileUploader.html" title="class in core.modules.portfolio.model.portfolio">fileUploader</a> fileUploader)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fileUploader</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMEMBERGATEWAY()"><!-- --></a>
+	<h3>
+		SETMEMBERGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a> <strong>SETMEMBERGATEWAY</strong>(<a href="../../../../../core/modules/portfolio/model/member/memberGateway.html" title="class in core.modules.portfolio.model.member">memberGateway</a> memberGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>memberGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPORTFOLIOGATEWAY()"><!-- --></a>
+	<h3>
+		SETPORTFOLIOGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a> <strong>SETPORTFOLIOGATEWAY</strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioGateway.html" title="class in core.modules.portfolio.model.portfolio">portfolioGateway</a> portfolioGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPORTFOLIOVIEWDAO()"><!-- --></a>
+	<h3>
+		SETPORTFOLIOVIEWDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/portfolio/model/portfolio/portfolioService.html" title="class in core.modules.portfolio.model.portfolio">portfolioService</a> <strong>SETPORTFOLIOVIEWDAO</strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioViewDAO.html" title="class in core.modules.portfolio.model.portfolio">portfolioViewDAO</a> portfolioViewDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioViewDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deletePortfolioView()"><!-- --></a>
+	<h3>
+		deletePortfolioView 
+	</h3>
+
+	<kbd>public numeric <strong>deletePortfolioView</strong>(numeric portfolioViewID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioViewID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCohortByPortfolioID()"><!-- --></a>
+	<h3>
+		getCohortByPortfolioID 
+	</h3>
+
+	<kbd>public query <strong>getCohortByPortfolioID</strong>(numeric portfolioID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioInfoByPortfolioID()"><!-- --></a>
+	<h3>
+		getPortfolioInfoByPortfolioID 
+	</h3>
+
+	<kbd>public struct <strong>getPortfolioInfoByPortfolioID</strong>(numeric portfolioID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioViewByPortfolioViewID()"><!-- --></a>
+	<h3>
+		getPortfolioViewByPortfolioViewID 
+	</h3>
+
+	<kbd>public struct <strong>getPortfolioViewByPortfolioViewID</strong>(numeric portfolioViewID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioViewID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfolioViewsByPortfolioID()"><!-- --></a>
+	<h3>
+		getPortfolioViewsByPortfolioID 
+	</h3>
+
+	<kbd>public array <strong>getPortfolioViewsByPortfolioID</strong>(numeric portfolioID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPortfoliosByAdvisorUserID()"><!-- --></a>
+	<h3>
+		getPortfoliosByAdvisorUserID 
+	</h3>
+
+	<kbd>public array <strong>getPortfoliosByAdvisorUserID</strong>(numeric advisorUserID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorUserID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getProgramInfoByPortfolioID()"><!-- --></a>
+	<h3>
+		getProgramInfoByPortfolioID 
+	</h3>
+
+	<kbd>public struct <strong>getProgramInfoByPortfolioID</strong>(numeric portfolioID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="savePortfolioView()"><!-- --></a>
+	<h3>
+		savePortfolioView 
+	</h3>
+
+	<kbd>public any <strong>savePortfolioView</strong>(<a href="../../../../../core/modules/portfolio/model/portfolio/portfolioView.html" title="class in core.modules.portfolio.model.portfolio">portfolioView</a> portfolioView, [array skills], [array evidenceIDs], [string tempMediaLocation], [string tempThumbnailLocation], [string viewURL])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioView</code></dd>
+		
+		<dd><code>skills</code></dd>
+		
+		<dd><code>evidenceIDs</code></dd>
+		
+		<dd><code>tempMediaLocation</code></dd>
+		
+		<dd><code>tempThumbnailLocation</code></dd>
+		
+		<dd><code>viewURL</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateAboutMe()"><!-- --></a>
+	<h3>
+		updateAboutMe 
+	</h3>
+
+	<kbd>public numeric <strong>updateAboutMe</strong>(numeric portfolioViewID, boolean aboutMe)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioViewID</code></dd>
+		
+		<dd><code>aboutMe</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateInActive()"><!-- --></a>
+	<h3>
+		updateInActive 
+	</h3>
+
+	<kbd>public numeric <strong>updateInActive</strong>(numeric portfolioViewID, boolean inActive)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>portfolioViewID</code></dd>
+		
+		<dd><code>inActive</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="uploadFileToTemp()"><!-- --></a>
+	<h3>
+		uploadFileToTemp 
+	</h3>
+
+	<kbd>public struct <strong>uploadFileToTemp</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="userIsAdvisorForPortfolio()"><!-- --></a>
+	<h3>
+		userIsAdvisorForPortfolio 
+	</h3>
+
+	<kbd>public boolean <strong>userIsAdvisorForPortfolio</strong>(numeric advisorUserID, numeric portfolioID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>advisorUserID</code></dd>
+		
+		<dd><code>portfolioID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="userIsProgramAdminForPortfolio()"><!-- --></a>
+	<h3>
+		userIsProgramAdminForPortfolio 
+	</h3>
+
+	<kbd>public boolean <strong>userIsProgramAdminForPortfolio</strong>(numeric userID, numeric programID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>programID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

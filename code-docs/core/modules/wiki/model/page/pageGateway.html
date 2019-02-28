@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pageGateway</title>
+	<meta name="keywords" content="core.modules.wiki.model.page.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/wiki/model/page/pageGateway.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.wiki.model.page"><span class="label label-success">core.modules.wiki.model.page</span></a>
+</div>
+
+<h2>
+
+Class
+pageGateway</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.wiki.model.page.pageGateway
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am an object that queries about pages</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: pageGateway 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: no 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="pageGateway.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getAllByWiki()">getAllByWiki</A></strong>(numeric wikiOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve all the pages that belong to a wiki.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getAllVersionsByPage()">getAllVersionsByPage</A></strong>(numeric pageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve all the versions of a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getAuthorsByPage()">getAuthorsByPage</A></strong>(numeric pageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve a list of all the authors of a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getByKeyword()">getByKeyword</A></strong>(string keyword, [numeric wikiOfferingID])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve all the current versions of pages with the requested keyword.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/wiki/model/page/page.html" title="class in core.modules.wiki.model.page">page</a></code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getCurrentVersion()">getCurrentVersion</A></strong>(numeric pageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve the latest version of a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getMainPageID()">getMainPageID</A></strong>(numeric wikiOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve the 'main' page of a wikioffering, which is the first page of the wiki.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getPageCount()">getPageCount</A></strong>(numeric wikiOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve a list of pages in a wiki project along w/ their page count.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#getPageVersionsByAuthor()">getPageVersionsByAuthor</A></strong>(numeric pageID, numeric authorID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I retrieve all the versions of a page by a single author.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#setPageDAO()">setPageDAO</A></strong>(<a href="../../../../../core/modules/wiki/model/page/pageDAO.html" title="class in core.modules.wiki.model.page">pageDAO</a> pageDAO)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: pageDAO.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pageGateway.html#updatePageOrder()">updatePageOrder</A></strong>(string pageList, numeric wikiID)
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object.</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - The DSN of the application, passed to me by the listener who initializes me</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="getAllByWiki()"><!-- --></a>
+	<h3>
+		getAllByWiki 
+	</h3>
+
+	<kbd>public array <strong>getAllByWiki</strong>(numeric wikiOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve all the pages that belong to a wiki.  I will only return the most current version of each page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code> - the identifier for the most current offering's wiki</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllVersionsByPage()"><!-- --></a>
+	<h3>
+		getAllVersionsByPage 
+	</h3>
+
+	<kbd>public array <strong>getAllVersionsByPage</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve all the versions of a page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code> - the page ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAuthorsByPage()"><!-- --></a>
+	<h3>
+		getAuthorsByPage 
+	</h3>
+
+	<kbd>public query <strong>getAuthorsByPage</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve a list of all the authors of a page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getByKeyword()"><!-- --></a>
+	<h3>
+		getByKeyword 
+	</h3>
+
+	<kbd>public array <strong>getByKeyword</strong>(string keyword, [numeric wikiOfferingID])</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve all the current versions of pages with the requested keyword</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>keyword</code> - the keyword to search for</dd>
+		
+		<dd><code>wikiOfferingID</code> - an optional wikiID to include to limit results by a wiki</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentVersion()"><!-- --></a>
+	<h3>
+		getCurrentVersion 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/wiki/model/page/page.html" title="class in core.modules.wiki.model.page">page</a> <strong>getCurrentVersion</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve the latest version of a page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code> - the identifier of the page</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMainPageID()"><!-- --></a>
+	<h3>
+		getMainPageID 
+	</h3>
+
+	<kbd>public numeric <strong>getMainPageID</strong>(numeric wikiOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve the 'main' page of a wikioffering, which is the first page of the wiki</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code> - The wikiOffering ID</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageCount()"><!-- --></a>
+	<h3>
+		getPageCount 
+	</h3>
+
+	<kbd>public query <strong>getPageCount</strong>(numeric wikiOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve a list of pages in a wiki project along w/ their page count</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>wikiOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageVersionsByAuthor()"><!-- --></a>
+	<h3>
+		getPageVersionsByAuthor 
+	</h3>
+
+	<kbd>public array <strong>getPageVersionsByAuthor</strong>(numeric pageID, numeric authorID)</kbd>
+
+	<br><br>
+
+	
+		<p>I retrieve all the versions of a page by a single author</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code> - the page ID</dd>
+		
+		<dd><code>authorID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPageDAO()"><!-- --></a>
+	<h3>
+		setPageDAO 
+	</h3>
+
+	<kbd>public void <strong>setPageDAO</strong>(<a href="../../../../../core/modules/wiki/model/page/pageDAO.html" title="class in core.modules.wiki.model.page">pageDAO</a> pageDAO)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: pageDAO</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePageOrder()"><!-- --></a>
+	<h3>
+		updatePageOrder 
+	</h3>
+
+	<kbd>public void <strong>updatePageOrder</strong>(string pageList, numeric wikiID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageList</code></dd>
+		
+		<dd><code>wikiID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

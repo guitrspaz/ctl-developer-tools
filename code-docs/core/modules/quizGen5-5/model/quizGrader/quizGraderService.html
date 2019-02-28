@@ -1,0 +1,1159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>quizGraderService</title>
+	<meta name="keywords" content="core.modules.quizGen5-5.model.quizGrader.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/quizGen5-5/model/quizGrader/quizGraderService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.quizGen5-5.model.quizGrader"><span class="label label-success">core.modules.quizGen5-5.model.quizGrader</span></a>
+</div>
+
+<h2>
+
+Class
+quizGraderService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.quizGen5-5.model.quizGrader.quizGraderService
+</pre>
+
+
+
+<div id="class-hint">
+	<p>Service manager for functionality related to grading quizzes.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: quizGraderService 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="quizGraderService.html#init()">init</A></strong>(string dsn)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#autoScoreQuiz()">autoScoreQuiz</A></strong>(<a href="../../../../../core/modules/quizGen5-5/model/quiz/quiz.html" title="class in core.modules.quizGen5-5.model.quiz">quiz</a> quiz, numeric trackerID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scores (marks correct/incorrect) all non-manual grading questions in this instance of a quiz, pulling student information from the passed tracker ID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#calculateQuizGrade()">calculateQuizGrade</A></strong>(numeric trackerID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculates a user's grade on a quiz and stores that information in the quizUserGrades table.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#clearAllResponsesAndGradesForQuiz()">clearAllResponsesAndGradesForQuiz</A></strong>(numeric quizID, numeric courseOfferingID, numeric quizClearedBy)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all grades and all responses for all students in a course offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#clearAllResponsesToQuestion()">clearAllResponsesToQuestion</A></strong>(numeric quizID, numeric questionID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all responses to the specified question in the specified quiz in the specified courseOffering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#clearAndRegradeQuiz()">clearAndRegradeQuiz</A></strong>(numeric quizID, numeric courseOfferingID, [numeric requestedBy='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all grades for all students in a course offering and then recalculates all grades.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#clearStudentRecordForQuiz()">clearStudentRecordForQuiz</A></strong>(numeric trackerID, numeric quizClearedBy)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears a student's grade, responses, and tracker for a quiz based on a trackerID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getAllResponsesToSingleQuestion()">getAllResponsesToSingleQuestion</A></strong>(numeric questionID, numeric quizID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a query containing all responses to a single question for the given questionID in the given quizID for the given courseOfferingID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getExistingTempResponsesQuery()">getExistingTempResponsesQuery</A></strong>(numeric trackerID, [string sourceTable='tempResponses'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a query of user responses to a quiz from the tempResponses table.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getQuestionsWithResponses()">getQuestionsWithResponses</A></strong>(numeric quizID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a comma delimited list of questionIDs for which there are student responses in the quiz or bank (if no quiz is specified).
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getQuizIDFromTracker()">getQuizIDFromTracker</A></strong>(numeric trackerID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the numeric ID value of the quiz for the given tracker ID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getReportOnAbandonedAttempt()">getReportOnAbandonedAttempt</A></strong>(numeric trackerID, <a href="../../../../../core/modules/quizGen5-5/model/quiz/quiz.html" title="class in core.modules.quizGen5-5.model.quiz">quiz</a> quizBean)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a struct including a query of user responses to a quiz from the tempResponses table, usually used when a student abandons a quiz and does not submit answers, a numeric indicator of the number of questions normally available in the quiz, information about the start time of the attempt, and a quiz object representing the student view of the quiz on this attempt.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getResponsesInExcelFormat()">getResponsesInExcelFormat</A></strong>(numeric quizID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates an Excel/CSV-formatted set of all students and all responses to a quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getScoreHistory()">getScoreHistory</A></strong>(numeric trackerID, numeric questionID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a query containing the history of score changes for the provided question and trackerID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getStudentGradeForQuiz()">getStudentGradeForQuiz</A></strong>(numeric trackerID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a structure containing the student's grade for this quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#getStudentResults()">getStudentResults</A></strong>(numeric trackerID, [boolean getStudentQuizObj='true'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a structure containing the student's grade for this quiz and a query of the responses they submitted.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#giveAllFullCreditForQuestion()">giveAllFullCreditForQuestion</A></strong>(numeric questionID, numeric quizID, numeric courseOfferingID, [numeric scoredBy='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gives all students who took a quiz full credit for the selected question in the selected quiz in the selected course offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#processRemoteEntryOfGrade()">processRemoteEntryOfGrade</A></strong>(numeric trackerID, numeric questionID, numeric grade, [string feedbackFromGrader=''], [numeric scoredBy='0'], [boolean sendEmailOnScoreComplete='false'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marks a single student response with the grade given by the faculty in the db.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#recalculateStudentGrade()">recalculateStudentGrade</A></strong>(numeric trackerID, numeric quizID, numeric courseOfferingID, [numeric requestedBy='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the grade for a given student then recalculates that grade for the given quiz.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#requiresManualGrading()">requiresManualGrading</A></strong>(numeric trackerID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a boolean indicating if the student's responses for the provided trackerID requires manual grading.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#sendQuizResultsEmail()">sendQuizResultsEmail</A></strong>(string trackerIDList, [numeric senderID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends quiz results email messages to the selected students.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#sendScoringCompleteEmail()">sendScoringCompleteEmail</A></strong>(numeric trackerID, [numeric senderID='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends an email message to the given student when scoring of their quiz questions is complete.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#setQuizGraderGateway()">setQuizGraderGateway</A></strong>(<a href="../../../../../core/modules/quizGen5-5/model/quizGrader/quizGraderGateway.html" title="class in core.modules.quizGen5-5.model.quizGrader">quizGraderGateway</a> quizGraderGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: quizGraderGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#storeManualGradeForQuestion()">storeManualGradeForQuestion</A></strong>(numeric trackerID, numeric questionID, numeric grade, [string feedbackFromGrader=''], [numeric scoredBy='0'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marks a single student response with the grade given by the faculty in the db.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quizGraderService.html#storeQuizFeedback()">storeQuizFeedback</A></strong>(numeric trackerID, string feedbackText, numeric authorID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the numeric ID value of the quiz for the given tracker ID.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object.</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>dsn</code> - The DSN of the application, passed to me by the listener who initializes me</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="autoScoreQuiz()"><!-- --></a>
+	<h3>
+		autoScoreQuiz 
+	</h3>
+
+	<kbd>public boolean <strong>autoScoreQuiz</strong>(<a href="../../../../../core/modules/quizGen5-5/model/quiz/quiz.html" title="class in core.modules.quizGen5-5.model.quiz">quiz</a> quiz, numeric trackerID)</kbd>
+
+	<br><br>
+
+	
+		<p>Scores (marks correct/incorrect) all non-manual grading questions in this instance of a quiz, pulling student information from the passed tracker ID. Returns a boolean indicating if manual grading of this quiz is required.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quiz</code> - I am the quiz with questions to score.</dd>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateQuizGrade()"><!-- --></a>
+	<h3>
+		calculateQuizGrade 
+	</h3>
+
+	<kbd>public void <strong>calculateQuizGrade</strong>(numeric trackerID)</kbd>
+
+	<br><br>
+
+	
+		<p>Calculates a user's grade on a quiz and stores that information in the quizUserGrades table.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearAllResponsesAndGradesForQuiz()"><!-- --></a>
+	<h3>
+		clearAllResponsesAndGradesForQuiz 
+	</h3>
+
+	<kbd>public void <strong>clearAllResponsesAndGradesForQuiz</strong>(numeric quizID, numeric courseOfferingID, numeric quizClearedBy)</kbd>
+
+	<br><br>
+
+	
+		<p>Clears all grades and all responses for all students in a course offering. Generally used to clear out data while testing a quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		<dd><code>quizClearedBy</code> - The FKEY ID of the person who cleared the attempt on the quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearAllResponsesToQuestion()"><!-- --></a>
+	<h3>
+		clearAllResponsesToQuestion 
+	</h3>
+
+	<kbd>public string <strong>clearAllResponsesToQuestion</strong>(numeric quizID, numeric questionID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>Clears all responses to the specified question in the specified quiz in the specified courseOffering.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>questionID</code> - The integer PKEY of the question that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearAndRegradeQuiz()"><!-- --></a>
+	<h3>
+		clearAndRegradeQuiz 
+	</h3>
+
+	<kbd>public void <strong>clearAndRegradeQuiz</strong>(numeric quizID, numeric courseOfferingID, [numeric requestedBy='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Clears all grades for all students in a course offering and then recalculates all grades.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		<dd><code>requestedBy</code> - The integer PKEY of user who requested this function</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearStudentRecordForQuiz()"><!-- --></a>
+	<h3>
+		clearStudentRecordForQuiz 
+	</h3>
+
+	<kbd>public void <strong>clearStudentRecordForQuiz</strong>(numeric trackerID, numeric quizClearedBy)</kbd>
+
+	<br><br>
+
+	
+		<p>Clears a student's grade, responses, and tracker for a quiz based on a trackerID.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>quizClearedBy</code> - The FKEY ID of the person who cleared the attempt on the quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllResponsesToSingleQuestion()"><!-- --></a>
+	<h3>
+		getAllResponsesToSingleQuestion 
+	</h3>
+
+	<kbd>public query <strong>getAllResponsesToSingleQuestion</strong>(numeric questionID, numeric quizID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a query containing all responses to a single question for the given questionID in the given quizID for the given courseOfferingID.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code> - The PKEY ID of the question we want</dd>
+		
+		<dd><code>quizID</code> - The PKEY ID of the quiz we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The FKEY ID of the course offering we want to filter on</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getExistingTempResponsesQuery()"><!-- --></a>
+	<h3>
+		getExistingTempResponsesQuery 
+	</h3>
+
+	<kbd>public query <strong>getExistingTempResponsesQuery</strong>(numeric trackerID, [string sourceTable='tempResponses'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a query of user responses to a quiz from the tempResponses table.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>sourceTable</code> - The string value of the source table we want to pull answers from.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getQuestionsWithResponses()"><!-- --></a>
+	<h3>
+		getQuestionsWithResponses 
+	</h3>
+
+	<kbd>public string <strong>getQuestionsWithResponses</strong>(numeric quizID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a comma delimited list of questionIDs for which there are student responses in the quiz or bank (if no quiz is specified).</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getQuizIDFromTracker()"><!-- --></a>
+	<h3>
+		getQuizIDFromTracker 
+	</h3>
+
+	<kbd>public numeric <strong>getQuizIDFromTracker</strong>(numeric trackerID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns the numeric ID value of the quiz for the given tracker ID.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The tracker ID we want to query against</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getReportOnAbandonedAttempt()"><!-- --></a>
+	<h3>
+		getReportOnAbandonedAttempt 
+	</h3>
+
+	<kbd>public struct <strong>getReportOnAbandonedAttempt</strong>(numeric trackerID, <a href="../../../../../core/modules/quizGen5-5/model/quiz/quiz.html" title="class in core.modules.quizGen5-5.model.quiz">quiz</a> quizBean)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a struct including a query of user responses to a quiz from the tempResponses table, usually used when a student abandons a quiz and does not submit answers, a numeric indicator of the number of questions normally available in the quiz, information about the start time of the attempt, and a quiz object representing the student view of the quiz on this attempt.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The tracker ID of the quiz attempt we want to recover.</dd>
+		
+		<dd><code>quizBean</code> - The quiz we are currently working on.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getResponsesInExcelFormat()"><!-- --></a>
+	<h3>
+		getResponsesInExcelFormat 
+	</h3>
+
+	<kbd>public string <strong>getResponsesInExcelFormat</strong>(numeric quizID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>Generates an Excel/CSV-formatted set of all students and all responses to a quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getScoreHistory()"><!-- --></a>
+	<h3>
+		getScoreHistory 
+	</h3>
+
+	<kbd>public query <strong>getScoreHistory</strong>(numeric trackerID, numeric questionID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a query containing the history of score changes for the provided question and trackerID.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The PKEY ID of the quiz attempt that we want</dd>
+		
+		<dd><code>questionID</code> - The PKEY ID of the question we want</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentGradeForQuiz()"><!-- --></a>
+	<h3>
+		getStudentGradeForQuiz 
+	</h3>
+
+	<kbd>public query <strong>getStudentGradeForQuiz</strong>(numeric trackerID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a structure containing the student's grade for this quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentResults()"><!-- --></a>
+	<h3>
+		getStudentResults 
+	</h3>
+
+	<kbd>public struct <strong>getStudentResults</strong>(numeric trackerID, [boolean getStudentQuizObj='true'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a structure containing the student's grade for this quiz and a query of the responses they submitted.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>getStudentQuizObj</code> - Boolean indicating if we should get the quiz as the student saw it, defaults to true</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="giveAllFullCreditForQuestion()"><!-- --></a>
+	<h3>
+		giveAllFullCreditForQuestion 
+	</h3>
+
+	<kbd>public void <strong>giveAllFullCreditForQuestion</strong>(numeric questionID, numeric quizID, numeric courseOfferingID, [numeric scoredBy='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Gives all students who took a quiz full credit for the selected question in the selected quiz in the selected course offering.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>questionID</code> - The PKEY ID of the question we want</dd>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		<dd><code>scoredBy</code> - The PKEY ID of the person who is making this change</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="processRemoteEntryOfGrade()"><!-- --></a>
+	<h3>
+		processRemoteEntryOfGrade 
+	</h3>
+
+	<kbd>public numeric <strong>processRemoteEntryOfGrade</strong>(numeric trackerID, numeric questionID, numeric grade, [string feedbackFromGrader=''], [numeric scoredBy='0'], [boolean sendEmailOnScoreComplete='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>Marks a single student response with the grade given by the faculty in the db.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>questionID</code> - The PKEY ID of the question we're marking as correct</dd>
+		
+		<dd><code>grade</code> - The decimal grade value assigned to this question by the faculty</dd>
+		
+		<dd><code>feedbackFromGrader</code> - The string value of any feedback given by the grader to the student for this question.</dd>
+		
+		<dd><code>scoredBy</code> - The PKEY ID of the person who scored this question</dd>
+		
+		<dd><code>sendEmailOnScoreComplete</code> - Boolean to indicate if an email should be sent to the student if grading this question finished scoring their quiz.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recalculateStudentGrade()"><!-- --></a>
+	<h3>
+		recalculateStudentGrade 
+	</h3>
+
+	<kbd>public void <strong>recalculateStudentGrade</strong>(numeric trackerID, numeric quizID, numeric courseOfferingID, [numeric requestedBy='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Clears the grade for a given student then recalculates that grade for the given quiz.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>quizID</code> - The integer PKEY of the quiz that we want</dd>
+		
+		<dd><code>courseOfferingID</code> - The integer PKEY of the courseOffering we want to query against</dd>
+		
+		<dd><code>requestedBy</code> - The integer PKEY of user who requested this function</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="requiresManualGrading()"><!-- --></a>
+	<h3>
+		requiresManualGrading 
+	</h3>
+
+	<kbd>public boolean <strong>requiresManualGrading</strong>(numeric trackerID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a boolean indicating if the student's responses for the provided trackerID requires manual grading.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendQuizResultsEmail()"><!-- --></a>
+	<h3>
+		sendQuizResultsEmail 
+	</h3>
+
+	<kbd>public void <strong>sendQuizResultsEmail</strong>(string trackerIDList, [numeric senderID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Sends quiz results email messages to the selected students.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerIDList</code> - The string list of trackerIDs to whom we should send results</dd>
+		
+		<dd><code>senderID</code> - The userID of the person requesting to send the results</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendScoringCompleteEmail()"><!-- --></a>
+	<h3>
+		sendScoringCompleteEmail 
+	</h3>
+
+	<kbd>public void <strong>sendScoringCompleteEmail</strong>(numeric trackerID, [numeric senderID='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Sends an email message to the given student when scoring of their quiz questions is complete.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>senderID</code> - The userID of the person finishing the grading</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setQuizGraderGateway()"><!-- --></a>
+	<h3>
+		setQuizGraderGateway 
+	</h3>
+
+	<kbd>public void <strong>setQuizGraderGateway</strong>(<a href="../../../../../core/modules/quizGen5-5/model/quizGrader/quizGraderGateway.html" title="class in core.modules.quizGen5-5.model.quizGrader">quizGraderGateway</a> quizGraderGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: quizGraderGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizGraderGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="storeManualGradeForQuestion()"><!-- --></a>
+	<h3>
+		storeManualGradeForQuestion 
+	</h3>
+
+	<kbd>public void <strong>storeManualGradeForQuestion</strong>(numeric trackerID, numeric questionID, numeric grade, [string feedbackFromGrader=''], [numeric scoredBy='0'])</kbd>
+
+	<br><br>
+
+	
+		<p>Marks a single student response with the grade given by the faculty in the db.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The trackerID to validate for this user and this quiz</dd>
+		
+		<dd><code>questionID</code> - The PKEY ID of the question we're marking as correct</dd>
+		
+		<dd><code>grade</code> - The decimal grade value assigned to this question by the faculty</dd>
+		
+		<dd><code>feedbackFromGrader</code> - The string value of any feedback given by the grader to the student for this question.</dd>
+		
+		<dd><code>scoredBy</code> - The PKEY ID of the person who scored this question</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="storeQuizFeedback()"><!-- --></a>
+	<h3>
+		storeQuizFeedback 
+	</h3>
+
+	<kbd>public void <strong>storeQuizFeedback</strong>(numeric trackerID, string feedbackText, numeric authorID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns the numeric ID value of the quiz for the given tracker ID.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>trackerID</code> - The tracker ID we want to query against</dd>
+		
+		<dd><code>feedbackText</code> - The string value of the feedback text</dd>
+		
+		<dd><code>authorID</code> - The user ID of the person who created the feedback</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

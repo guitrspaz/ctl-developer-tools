@@ -1,0 +1,2868 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pendingUser</title>
+	<meta name="keywords" content="com.distance.myCourses4.pendingUser.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?com/distance/myCourses4/pendingUser/pendingUser.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.myCourses4.pendingUser"><span class="label label-success">com.distance.myCourses4.pendingUser</span></a>
+</div>
+
+<h2>
+
+Class
+pendingUser</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">com.distance.myCourses4.pendingUser.pendingUser
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I model the pendingUser business object</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: pendingUser 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#city()">city</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the city in which the user resides.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = city</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#confirmationCode()">confirmationCode</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the confirmation code to be used for this pendingUser.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = confirmationCode</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#countryID()">countryID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric FKEY value of the country in which the user resides.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = countryID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#countryName()">countryName</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the country in which the user resides.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = countryName</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#email()">email</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the email address of the user.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = email</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#firstName()">firstName</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the first name of the user.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = firstName</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#iolOfferingID()">iolOfferingID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric value of the offering of IOL the user wishes to enroll in.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = iolOfferingID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#iolOfferingStartDate()">iolOfferingStartDate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The date value of the start date for the offering of IOL the user wishes to enroll in.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = iolOfferingStartDate</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#isEmailConfirmed()">isEmailConfirmed</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The boolean value indicating if the user confirmed their email address.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = isEmailConfirmed</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>false</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#jhedID()">jhedID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the jhedID for this pendingUser.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = jhedID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#lastName()">lastName</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the last name of the user.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = lastName</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#middleName()">middleName</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the middle name of the user.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = middleName</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#password()">password</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the password for this pendingUser.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = password</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#pendingUserID()">pendingUserID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The PKEY integer value of this pendingUser.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = pendingUserID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#phone()">phone</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the user's phone number.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = phone</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#stateProvinceID()">stateProvinceID</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The numeric FKEY value of the state/province in which the user resides.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = stateProvinceID</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#stateProvinceName()">stateProvinceName</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The string value of the state/province in which the user resides.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = stateProvinceName</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#useJHEDAuth()">useJHEDAuth</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whether this user has chosen to use JHED to authenticate their sessions.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = useJHEDAuth</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#useJHEDAuthDate()">useJHEDAuthDate</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date on which this user chose to use JHED to authenticate their sessions.
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">displayname = useJHEDAuthDate</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="pendingUser.html#init()">init</A></strong>([numeric pendingUserID='0'], [string firstName=''], [string middleName=''], [string lastName=''], [string email=''], [string city=''], [numeric stateProvinceID='0'], [string stateProvinceName=''], [numeric countryID='0'], [string countryName=''], [string phone=''], [string password=''], [string jhedID=''], [string confirmationCode=''], [boolean isEmailConfirmed='false'], [numeric iolOfferingID='0'], [string iolOfferingStartDate=''], [boolean useJHEDAuth='0'], [string useJHEDAuthDate=''])
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#IsEmail()">IsEmail</A></strong>(string addressToValidate)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I validate email addresses.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#dump()">dump</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getCity()">getCity</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getConfirmationCode()">getConfirmationCode</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getCountryID()">getCountryID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getCountryName()">getCountryName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getEmail()">getEmail</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getErrors()">getErrors</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getFirstName()">getFirstName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getFullName()">getFullName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getIOLOfferingID()">getIOLOfferingID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getIOLOfferingStartDate()">getIOLOfferingStartDate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getIsEmailConfirmed()">getIsEmailConfirmed</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getJhedID()">getJhedID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getLastName()">getLastName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getMiddleName()">getMiddleName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getPassword()">getPassword</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getPendingUserID()">getPendingUserID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getPhone()">getPhone</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getStateProvinceID()">getStateProvinceID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getStateProvinceName()">getStateProvinceName</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getuseJHEDAuth()">getuseJHEDAuth</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#getuseJHEDAuthDate()">getuseJHEDAuthDate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setCity()">setCity</A></strong>(string city)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setConfirmationCode()">setConfirmationCode</A></strong>(string confirmationCode)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setCountryID()">setCountryID</A></strong>(numeric countryID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setCountryName()">setCountryName</A></strong>(string countryName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setEmail()">setEmail</A></strong>(string email)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setFirstName()">setFirstName</A></strong>(string firstName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setIOLOfferingID()">setIOLOfferingID</A></strong>(numeric iolOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setIOLOfferingStartDate()">setIOLOfferingStartDate</A></strong>(string iolOfferingStartDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setIsEmailConfirmed()">setIsEmailConfirmed</A></strong>(boolean isEmailConfirmed)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setJhedID()">setJhedID</A></strong>(string jhedID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setLastName()">setLastName</A></strong>(string lastName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setMiddleName()">setMiddleName</A></strong>(string middleName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setPassword()">setPassword</A></strong>(string password)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setPendingUserID()">setPendingUserID</A></strong>(numeric pendingUserID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setPhone()">setPhone</A></strong>(string phone)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setStateProvinceID()">setStateProvinceID</A></strong>(numeric stateProvinceID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setStateProvinceName()">setStateProvinceName</A></strong>(string stateProvinceName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setuseJHEDAuth()">setuseJHEDAuth</A></strong>(boolean useJHEDAuth)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#setuseJHEDAuthDate()">setuseJHEDAuthDate</A></strong>(string useJHEDAuthDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#toStruct()">toStruct</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUser.html#validate()">validate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric pendingUserID='0'], [string firstName=''], [string middleName=''], [string lastName=''], [string email=''], [string city=''], [numeric stateProvinceID='0'], [string stateProvinceName=''], [numeric countryID='0'], [string countryName=''], [string phone=''], [string password=''], [string jhedID=''], [string confirmationCode=''], [boolean isEmailConfirmed='false'], [numeric iolOfferingID='0'], [string iolOfferingStartDate=''], [boolean useJHEDAuth='0'], [string useJHEDAuthDate=''])</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object</p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>pendingUserID</code> - The PKEY integer value of this pendingUser</dd>
+		
+			<dd><code>firstName</code> - The string value of the first name of the pendingUser</dd>
+		
+			<dd><code>middleName</code> - The string value of the middle name of the pendingUser</dd>
+		
+			<dd><code>lastName</code> - The string value of the last name of the pendingUser</dd>
+		
+			<dd><code>email</code> - The string value of the email address of the pendingUser</dd>
+		
+			<dd><code>city</code> - TThe string value of the city in which the pendingUser resides</dd>
+		
+			<dd><code>stateProvinceID</code> - The numeric FKEY value of the state/province in which the pendingUser resides</dd>
+		
+			<dd><code>stateProvinceName</code> - The string value of the state/province in which the pendingUser resides</dd>
+		
+			<dd><code>countryID</code> - The numeric FKEY value of the country in which the pendingUser resides</dd>
+		
+			<dd><code>countryName</code> - The string value of the country in which the pendingUser resides</dd>
+		
+			<dd><code>phone</code> - The string value of the pendingUser's phone number</dd>
+		
+			<dd><code>password</code> - The string value of the password for this pendingUser</dd>
+		
+			<dd><code>jhedID</code> - The string value of the jhedID for this pendingUser</dd>
+		
+			<dd><code>confirmationCode</code> - The string value of the confirmation code to be used for this pendingUser</dd>
+		
+			<dd><code>isEmailConfirmed</code> - The boolean value indicating if the user confirmed their email address</dd>
+		
+			<dd><code>iolOfferingID</code> - The numeric value of the offering of IOL the user wishes to enroll in</dd>
+		
+			<dd><code>iolOfferingStartDate</code> - The date value of the start date for the offering of IOL the user wishes to enroll in</dd>
+		
+			<dd><code>useJHEDAuth</code> - Whether this user has chosen to use JHED to authenticate their sessions</dd>
+		
+			<dd><code>useJHEDAuthDate</code> - Date on which this user chose to use JHED to authenticate their sessions</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="city()"><!-- --></a>
+		<h3>city</h3>
+
+		<kbd>
+			property string <strong>city</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the city in which the user resides</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - city</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="confirmationCode()"><!-- --></a>
+		<h3>confirmationCode</h3>
+
+		<kbd>
+			property string <strong>confirmationCode</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the confirmation code to be used for this pendingUser</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - confirmationCode</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="countryID()"><!-- --></a>
+		<h3>countryID</h3>
+
+		<kbd>
+			property numeric <strong>countryID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric FKEY value of the country in which the user resides</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - countryID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="countryName()"><!-- --></a>
+		<h3>countryName</h3>
+
+		<kbd>
+			property string <strong>countryName</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the country in which the user resides</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - countryName</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="email()"><!-- --></a>
+		<h3>email</h3>
+
+		<kbd>
+			property string <strong>email</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the email address of the user</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - email</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="firstName()"><!-- --></a>
+		<h3>firstName</h3>
+
+		<kbd>
+			property string <strong>firstName</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the first name of the user</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - firstName</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="iolOfferingID()"><!-- --></a>
+		<h3>iolOfferingID</h3>
+
+		<kbd>
+			property numeric <strong>iolOfferingID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric value of the offering of IOL the user wishes to enroll in</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - iolOfferingID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="iolOfferingStartDate()"><!-- --></a>
+		<h3>iolOfferingStartDate</h3>
+
+		<kbd>
+			property string <strong>iolOfferingStartDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The date value of the start date for the offering of IOL the user wishes to enroll in</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - iolOfferingStartDate</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isEmailConfirmed()"><!-- --></a>
+		<h3>isEmailConfirmed</h3>
+
+		<kbd>
+			property boolean <strong>isEmailConfirmed</strong> 
+			= [false]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The boolean value indicating if the user confirmed their email address</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - isEmailConfirmed</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="jhedID()"><!-- --></a>
+		<h3>jhedID</h3>
+
+		<kbd>
+			property string <strong>jhedID</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the jhedID for this pendingUser</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - jhedID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="lastName()"><!-- --></a>
+		<h3>lastName</h3>
+
+		<kbd>
+			property string <strong>lastName</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the last name of the user</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - lastName</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="middleName()"><!-- --></a>
+		<h3>middleName</h3>
+
+		<kbd>
+			property string <strong>middleName</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the middle name of the user</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - middleName</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="password()"><!-- --></a>
+		<h3>password</h3>
+
+		<kbd>
+			property string <strong>password</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the password for this pendingUser</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - password</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pendingUserID()"><!-- --></a>
+		<h3>pendingUserID</h3>
+
+		<kbd>
+			property numeric <strong>pendingUserID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The PKEY integer value of this pendingUser</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - pendingUserID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="phone()"><!-- --></a>
+		<h3>phone</h3>
+
+		<kbd>
+			property string <strong>phone</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the user's phone number</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - phone</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="stateProvinceID()"><!-- --></a>
+		<h3>stateProvinceID</h3>
+
+		<kbd>
+			property numeric <strong>stateProvinceID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The numeric FKEY value of the state/province in which the user resides</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - stateProvinceID</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="stateProvinceName()"><!-- --></a>
+		<h3>stateProvinceName</h3>
+
+		<kbd>
+			property string <strong>stateProvinceName</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>The string value of the state/province in which the user resides</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - stateProvinceName</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="useJHEDAuth()"><!-- --></a>
+		<h3>useJHEDAuth</h3>
+
+		<kbd>
+			property boolean <strong>useJHEDAuth</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Whether this user has chosen to use JHED to authenticate their sessions</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - useJHEDAuth</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="useJHEDAuthDate()"><!-- --></a>
+		<h3>useJHEDAuthDate</h3>
+
+		<kbd>
+			property string <strong>useJHEDAuthDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+			<p>Date on which this user chose to use JHED to authenticate their sessions</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>displayname</code> - useJHEDAuthDate</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="IsEmail()"><!-- --></a>
+	<h3>
+		IsEmail 
+	</h3>
+
+	<kbd>private boolean <strong>IsEmail</strong>(string addressToValidate)</kbd>
+
+	<br><br>
+
+	
+		<p>I validate email addresses</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>addressToValidate</code> - The email address to validate</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="dump()"><!-- --></a>
+	<h3>
+		dump 
+	</h3>
+
+	<kbd>public void <strong>dump</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCity()"><!-- --></a>
+	<h3>
+		getCity 
+	</h3>
+
+	<kbd>public string <strong>getCity</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getConfirmationCode()"><!-- --></a>
+	<h3>
+		getConfirmationCode 
+	</h3>
+
+	<kbd>public string <strong>getConfirmationCode</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCountryID()"><!-- --></a>
+	<h3>
+		getCountryID 
+	</h3>
+
+	<kbd>public numeric <strong>getCountryID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCountryName()"><!-- --></a>
+	<h3>
+		getCountryName 
+	</h3>
+
+	<kbd>public string <strong>getCountryName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEmail()"><!-- --></a>
+	<h3>
+		getEmail 
+	</h3>
+
+	<kbd>public string <strong>getEmail</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getErrors()"><!-- --></a>
+	<h3>
+		getErrors 
+	</h3>
+
+	<kbd>public array <strong>getErrors</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFirstName()"><!-- --></a>
+	<h3>
+		getFirstName 
+	</h3>
+
+	<kbd>public string <strong>getFirstName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFullName()"><!-- --></a>
+	<h3>
+		getFullName 
+	</h3>
+
+	<kbd>public string <strong>getFullName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIOLOfferingID()"><!-- --></a>
+	<h3>
+		getIOLOfferingID 
+	</h3>
+
+	<kbd>public numeric <strong>getIOLOfferingID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIOLOfferingStartDate()"><!-- --></a>
+	<h3>
+		getIOLOfferingStartDate 
+	</h3>
+
+	<kbd>public string <strong>getIOLOfferingStartDate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIsEmailConfirmed()"><!-- --></a>
+	<h3>
+		getIsEmailConfirmed 
+	</h3>
+
+	<kbd>public boolean <strong>getIsEmailConfirmed</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getJhedID()"><!-- --></a>
+	<h3>
+		getJhedID 
+	</h3>
+
+	<kbd>public string <strong>getJhedID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLastName()"><!-- --></a>
+	<h3>
+		getLastName 
+	</h3>
+
+	<kbd>public string <strong>getLastName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMiddleName()"><!-- --></a>
+	<h3>
+		getMiddleName 
+	</h3>
+
+	<kbd>public string <strong>getMiddleName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPassword()"><!-- --></a>
+	<h3>
+		getPassword 
+	</h3>
+
+	<kbd>public string <strong>getPassword</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPendingUserID()"><!-- --></a>
+	<h3>
+		getPendingUserID 
+	</h3>
+
+	<kbd>public numeric <strong>getPendingUserID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPhone()"><!-- --></a>
+	<h3>
+		getPhone 
+	</h3>
+
+	<kbd>public string <strong>getPhone</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStateProvinceID()"><!-- --></a>
+	<h3>
+		getStateProvinceID 
+	</h3>
+
+	<kbd>public numeric <strong>getStateProvinceID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStateProvinceName()"><!-- --></a>
+	<h3>
+		getStateProvinceName 
+	</h3>
+
+	<kbd>public string <strong>getStateProvinceName</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getuseJHEDAuth()"><!-- --></a>
+	<h3>
+		getuseJHEDAuth 
+	</h3>
+
+	<kbd>public boolean <strong>getuseJHEDAuth</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getuseJHEDAuthDate()"><!-- --></a>
+	<h3>
+		getuseJHEDAuthDate 
+	</h3>
+
+	<kbd>public string <strong>getuseJHEDAuthDate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCity()"><!-- --></a>
+	<h3>
+		setCity 
+	</h3>
+
+	<kbd>public void <strong>setCity</strong>(string city)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>city</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setConfirmationCode()"><!-- --></a>
+	<h3>
+		setConfirmationCode 
+	</h3>
+
+	<kbd>public void <strong>setConfirmationCode</strong>(string confirmationCode)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>confirmationCode</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCountryID()"><!-- --></a>
+	<h3>
+		setCountryID 
+	</h3>
+
+	<kbd>public void <strong>setCountryID</strong>(numeric countryID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>countryID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setCountryName()"><!-- --></a>
+	<h3>
+		setCountryName 
+	</h3>
+
+	<kbd>public void <strong>setCountryName</strong>(string countryName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>countryName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setEmail()"><!-- --></a>
+	<h3>
+		setEmail 
+	</h3>
+
+	<kbd>public void <strong>setEmail</strong>(string email)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>email</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setFirstName()"><!-- --></a>
+	<h3>
+		setFirstName 
+	</h3>
+
+	<kbd>public void <strong>setFirstName</strong>(string firstName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>firstName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIOLOfferingID()"><!-- --></a>
+	<h3>
+		setIOLOfferingID 
+	</h3>
+
+	<kbd>public void <strong>setIOLOfferingID</strong>(numeric iolOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>iolOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIOLOfferingStartDate()"><!-- --></a>
+	<h3>
+		setIOLOfferingStartDate 
+	</h3>
+
+	<kbd>public void <strong>setIOLOfferingStartDate</strong>(string iolOfferingStartDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>iolOfferingStartDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setIsEmailConfirmed()"><!-- --></a>
+	<h3>
+		setIsEmailConfirmed 
+	</h3>
+
+	<kbd>public void <strong>setIsEmailConfirmed</strong>(boolean isEmailConfirmed)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isEmailConfirmed</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setJhedID()"><!-- --></a>
+	<h3>
+		setJhedID 
+	</h3>
+
+	<kbd>public void <strong>setJhedID</strong>(string jhedID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>jhedID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setLastName()"><!-- --></a>
+	<h3>
+		setLastName 
+	</h3>
+
+	<kbd>public void <strong>setLastName</strong>(string lastName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>lastName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setMiddleName()"><!-- --></a>
+	<h3>
+		setMiddleName 
+	</h3>
+
+	<kbd>public void <strong>setMiddleName</strong>(string middleName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>middleName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPassword()"><!-- --></a>
+	<h3>
+		setPassword 
+	</h3>
+
+	<kbd>public void <strong>setPassword</strong>(string password)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>password</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPendingUserID()"><!-- --></a>
+	<h3>
+		setPendingUserID 
+	</h3>
+
+	<kbd>public void <strong>setPendingUserID</strong>(numeric pendingUserID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pendingUserID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setPhone()"><!-- --></a>
+	<h3>
+		setPhone 
+	</h3>
+
+	<kbd>public void <strong>setPhone</strong>(string phone)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>phone</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setStateProvinceID()"><!-- --></a>
+	<h3>
+		setStateProvinceID 
+	</h3>
+
+	<kbd>public void <strong>setStateProvinceID</strong>(numeric stateProvinceID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stateProvinceID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setStateProvinceName()"><!-- --></a>
+	<h3>
+		setStateProvinceName 
+	</h3>
+
+	<kbd>public void <strong>setStateProvinceName</strong>(string stateProvinceName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stateProvinceName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setuseJHEDAuth()"><!-- --></a>
+	<h3>
+		setuseJHEDAuth 
+	</h3>
+
+	<kbd>public void <strong>setuseJHEDAuth</strong>(boolean useJHEDAuth)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>useJHEDAuth</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setuseJHEDAuthDate()"><!-- --></a>
+	<h3>
+		setuseJHEDAuthDate 
+	</h3>
+
+	<kbd>public void <strong>setuseJHEDAuthDate</strong>(string useJHEDAuthDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>useJHEDAuthDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toStruct()"><!-- --></a>
+	<h3>
+		toStruct 
+	</h3>
+
+	<kbd>public struct <strong>toStruct</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

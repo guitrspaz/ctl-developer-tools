@@ -1,0 +1,3035 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>gradeService</title>
+	<meta name="keywords" content="core.modules.gradebook2.model.grade.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/gradebook2/model/grade/gradeService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.gradebook2.model.grade"><span class="label label-success">core.modules.gradebook2.model.grade</span></a>
+</div>
+
+<h2>
+
+Class
+gradeService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/gradebook2/model/tools/dao.html" title="class in core.modules.gradebook2.model.tools">core.modules.gradebook2.model.tools.dao</a>
+            <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.gradebook2.model.grade.gradeService
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am the service layer for grade</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				output 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in core.modules.gradebook2.model.communication">communicationService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#communicationService()">communicationService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/courseGroups/model/api/courseGroupsFacade.html" title="class in core.modules.courseGroups.model.api">courseGroupsFacade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#courseGroupsFacade()">courseGroupsFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#dsn()">dsn</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in core.modules.gradebook2.model.grade">gradeConverter</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradeConverter()">gradeConverter</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeDAO.html" title="class in core.modules.gradebook2.model.grade">gradeDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradeDAO()">gradeDAO</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeGateway.html" title="class in core.modules.gradebook2.model.grade">gradeGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradeGateway()">gradeGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradebook/gradebookService.html" title="class in core.modules.gradebook2.model.gradebook">gradebookService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradebookService()">gradebookService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemDAO.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradedItemDAO()">gradedItemDAO</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemGateway.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradedItemGateway()">gradedItemGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemService.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#gradedItemService()">gradedItemService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#myCoursesFacade()">myCoursesFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/api/facades/peerEvalFacade.html" title="class in core.modules.peerEvaluations.api.facades">peerEvalFacade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#peerEvalFacade()">peerEvalFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/quizGen5-5/model/api/quizGeneratorFacade.html" title="class in core.modules.quizGen5-5.model.api">quizGeneratorFacade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#quizGeneratorFacade()">quizGeneratorFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#ArrayOfStructSort()">ArrayOfStructSort</A></strong>(array base, [string sortType='text'], [string sortOrder='ASC'], [string pathToSubElement=''])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in core.modules.gradebook2.model.communication">communicationService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETCOMMUNICATIONSERVICE()">GETCOMMUNICATIONSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/courseGroups/model/api/courseGroupsFacade.html" title="class in core.modules.courseGroups.model.api">courseGroupsFacade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETCOURSEGROUPSFACADE()">GETCOURSEGROUPSFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETDSN()">GETDSN</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradebook/gradebookService.html" title="class in core.modules.gradebook2.model.gradebook">gradebookService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADEBOOKSERVICE()">GETGRADEBOOKSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in core.modules.gradebook2.model.grade">gradeConverter</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADECONVERTER()">GETGRADECONVERTER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeDAO.html" title="class in core.modules.gradebook2.model.grade">gradeDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADEDAO()">GETGRADEDAO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemDAO.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADEDITEMDAO()">GETGRADEDITEMDAO</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemGateway.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADEDITEMGATEWAY()">GETGRADEDITEMGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemService.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADEDITEMSERVICE()">GETGRADEDITEMSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeGateway.html" title="class in core.modules.gradebook2.model.grade">gradeGateway</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETGRADEGATEWAY()">GETGRADEGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETMYCOURSESFACADE()">GETMYCOURSESFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/api/facades/peerEvalFacade.html" title="class in core.modules.peerEvaluations.api.facades">peerEvalFacade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETPEEREVALFACADE()">GETPEEREVALFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/quizGen5-5/model/api/quizGeneratorFacade.html" title="class in core.modules.quizGen5-5.model.api">quizGeneratorFacade</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#GETQUIZGENERATORFACADE()">GETQUIZGENERATORFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETCOMMUNICATIONSERVICE()">SETCOMMUNICATIONSERVICE</A></strong>(<a href="../../../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in core.modules.gradebook2.model.communication">communicationService</a> communicationService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETCOURSEGROUPSFACADE()">SETCOURSEGROUPSFACADE</A></strong>(<a href="../../../../../core/modules/courseGroups/model/api/courseGroupsFacade.html" title="class in core.modules.courseGroups.model.api">courseGroupsFacade</a> courseGroupsFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETDSN()">SETDSN</A></strong>(string dsn)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADEBOOKSERVICE()">SETGRADEBOOKSERVICE</A></strong>(<a href="../../../../../core/modules/gradebook2/model/gradebook/gradebookService.html" title="class in core.modules.gradebook2.model.gradebook">gradebookService</a> gradebookService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADECONVERTER()">SETGRADECONVERTER</A></strong>(<a href="../../../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in core.modules.gradebook2.model.grade">gradeConverter</a> gradeConverter)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADEDAO()">SETGRADEDAO</A></strong>(<a href="../../../../../core/modules/gradebook2/model/grade/gradeDAO.html" title="class in core.modules.gradebook2.model.grade">gradeDAO</a> gradeDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADEDITEMDAO()">SETGRADEDITEMDAO</A></strong>(<a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemDAO.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemDAO</a> gradedItemDAO)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADEDITEMGATEWAY()">SETGRADEDITEMGATEWAY</A></strong>(<a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemGateway.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemGateway</a> gradedItemGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADEDITEMSERVICE()">SETGRADEDITEMSERVICE</A></strong>(<a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemService.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemService</a> gradedItemService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETGRADEGATEWAY()">SETGRADEGATEWAY</A></strong>(<a href="../../../../../core/modules/gradebook2/model/grade/gradeGateway.html" title="class in core.modules.gradebook2.model.grade">gradeGateway</a> gradeGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETMYCOURSESFACADE()">SETMYCOURSESFACADE</A></strong>(any myCoursesFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETPEEREVALFACADE()">SETPEEREVALFACADE</A></strong>(<a href="../../../../../core/modules/peerEvaluations/api/facades/peerEvalFacade.html" title="class in core.modules.peerEvaluations.api.facades">peerEvalFacade</a> peerEvalFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#SETQUIZGENERATORFACADE()">SETQUIZGENERATORFACADE</A></strong>(<a href="../../../../../core/modules/quizGen5-5/model/api/quizGeneratorFacade.html" title="class in core.modules.quizGen5-5.model.api">quizGeneratorFacade</a> quizGeneratorFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#addGradeImportInfoToQueue()">addGradeImportInfoToQueue</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric gradedItemID, numeric sourceModuleID, numeric sourceModuleItemID, numeric gradeTypeID, string gradingConfiguration)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#calculateStudentGrade()">calculateStudentGrade</A></strong>(struct gradebook, numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#deleteAllGradesForGradedItems()">deleteAllGradesForGradedItems</A></strong>(array gradedItems, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#deleteGrade()">deleteGrade</A></strong>(numeric gradeID, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#deleteImportGrade()">deleteImportGrade</A></strong>(numeric gradeID, numeric deletedBy)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getAllGradeCalculationInfoForStudent()">getAllGradeCalculationInfoForStudent</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getAllHistoryGradesByStuIDAndGradedItemID()">getAllHistoryGradesByStuIDAndGradedItemID</A></strong>(numeric stuID, numeric gradedItemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getAllStudentsGradeInfoForExcel()">getAllStudentsGradeInfoForExcel</A></strong>(struct gradeBookInfo)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getAllgradesByGradebookID()">getAllgradesByGradebookID</A></strong>(numeric gradeBookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getAllgradesByGradedItemID()">getAllgradesByGradedItemID</A></strong>(numeric gradedItemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../com/distance/myCourses4/offering/offering.html" title="class in com.distance.myCourses4.offering">offering</a></code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getCourseOffering()">getCourseOffering</A></strong>(Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getFinalGradeRangeByGradeBookIDAndCourseOfferingID()">getFinalGradeRangeByGradeBookIDAndCourseOfferingID</A></strong>(numeric courseOfferingID, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getFinalGradesByCourseOfferingIDandGradebookID()">getFinalGradesByCourseOfferingIDandGradebookID</A></strong>(numeric courseOfferingID, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getGradedItemsForImport()">getGradedItemsForImport</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID()">getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID</A></strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getLatestGradesInGradebookByCourseGroupID()">getLatestGradesInGradebookByCourseGroupID</A></strong>(numeric gradeBookID, numeric courseGroupID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID()">getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID</A></strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getStudentGradeForItem()">getStudentGradeForItem</A></strong>(numeric stuID, numeric gradedItemID, numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#getStudentGradesForHomePage()">getStudentGradesForHomePage</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#giveStudentsFullCredit()">giveStudentsFullCredit</A></strong>(numeric gradedItemID, numeric courseOfferingID, numeric senderID, boolean onlyAlreadyGraded)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#giveUngradedStudentsZero()">giveUngradedStudentsZero</A></strong>(numeric gradedItemID, numeric courseOfferingID, numeric senderID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#importGrade()">importGrade</A></strong>(<a href="../../../../../core/modules/gradebook2/model/grade/grade.html" title="class in core.modules.gradebook2.model.grade">grade</a> grade, string appName, numeric gradeTypeID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#performGradeCalculationForStudent()">performGradeCalculationForStudent</A></strong>(struct gradebook, numeric stuID, boolean displayOnly)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#prepareFinalGrade()">prepareFinalGrade</A></strong>(array gradeArray, numeric graderID, struct courseOffering, any course)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#prepareFinalGradePrintout()">prepareFinalGradePrintout</A></strong>(array gradeArray, numeric graderID, struct courseOffering, any course, numeric gradebookID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#prepareFinalGradePrintoutInExcel()">prepareFinalGradePrintoutInExcel</A></strong>(array gradeArray, numeric graderID, struct courseOffering, any course)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#recalculateStudentGradesAfterSave()">recalculateStudentGradesAfterSave</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#recordGradeRange()">recordGradeRange</A></strong>(array gradeArray, numeric gradebookID, numeric courseOfferingID, numeric userID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#returnFinalGradeExcelWorkbook()">returnFinalGradeExcelWorkbook</A></strong>([query qry='[runtime expression]'], [string headers=''], [struct styles='[runtime expression]'], [string courseNumber=''], [string courseTitle=''], [string courseSemester=''], [string courseYear=''], [string instructor=''], [string spreadsheetTitle='spreadsheet'], [string format='xls'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#saveGrade()">saveGrade</A></strong>(<a href="../../../../../core/modules/gradebook2/model/grade/grade.html" title="class in core.modules.gradebook2.model.grade">grade</a> grade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#toggleAllDisplayGrades()">toggleAllDisplayGrades</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric modifiedBy, numeric gradedItemID, boolean displayAllGrades)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradeService.html#updateStudentFinalGrade()">updateStudentFinalGrade</A></strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID, string gradeValue, string stuGradeValue, [boolean isFinalScore='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.gradebook2.model.tools.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/gradebook2/model/tools/dao.html" title="class in core.modules.gradebook2.model.tools">core.modules.gradebook2.model.tools.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/gradebook2/model/tools/dao.html#convertToLowerCase()">convertToLowerCase</a>, <a href="../../../../../core/modules/gradebook2/model/tools/dao.html#getRidOfZeroes()">getRidOfZeroes</a>, <a href="../../../../../core/modules/gradebook2/model/tools/dao.html#numberToLetter()">numberToLetter</a>, <a href="../../../../../core/modules/gradebook2/model/tools/dao.html#removeEscapedQuotes()">removeEscapedQuotes</a>, <a href="../../../../../core/modules/gradebook2/model/tools/dao.html#returnAsJSON()">returnAsJSON</a>, <a href="../../../../../core/modules/gradebook2/model/tools/dao.html#returnFileNameFriendlyString()">returnFileNameFriendlyString</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/dao.html#configureDAO()">configureDAO</a>, <a href="../../../../../com/distance/base/dao.html#getFormattedUser()">getFormattedUser</a>, <a href="../../../../../com/distance/base/dao.html#getUser()">getUser</a>, <a href="../../../../../com/distance/base/dao.html#getcourseIdFromCourseOfferingId()">getcourseIdFromCourseOfferingId</a>, <a href="../../../../../com/distance/base/dao.html#gethardCodeDSN()">gethardCodeDSN</a>, <a href="../../../../../com/distance/base/dao.html#init()">init</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="communicationService()"><!-- --></a>
+		<h3>communicationService</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in core.modules.gradebook2.model.communication">communicationService</a> <strong>communicationService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="courseGroupsFacade()"><!-- --></a>
+		<h3>courseGroupsFacade</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/courseGroups/model/api/courseGroupsFacade.html" title="class in core.modules.courseGroups.model.api">courseGroupsFacade</a> <strong>courseGroupsFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="dsn()"><!-- --></a>
+		<h3>dsn</h3>
+
+		<kbd>
+			property string <strong>dsn</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradeConverter()"><!-- --></a>
+		<h3>gradeConverter</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in core.modules.gradebook2.model.grade">gradeConverter</a> <strong>gradeConverter</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradeDAO()"><!-- --></a>
+		<h3>gradeDAO</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/grade/gradeDAO.html" title="class in core.modules.gradebook2.model.grade">gradeDAO</a> <strong>gradeDAO</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradeGateway()"><!-- --></a>
+		<h3>gradeGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/grade/gradeGateway.html" title="class in core.modules.gradebook2.model.grade">gradeGateway</a> <strong>gradeGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradebookService()"><!-- --></a>
+		<h3>gradebookService</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/gradebook/gradebookService.html" title="class in core.modules.gradebook2.model.gradebook">gradebookService</a> <strong>gradebookService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradedItemDAO()"><!-- --></a>
+		<h3>gradedItemDAO</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemDAO.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemDAO</a> <strong>gradedItemDAO</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradedItemGateway()"><!-- --></a>
+		<h3>gradedItemGateway</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemGateway.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemGateway</a> <strong>gradedItemGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="gradedItemService()"><!-- --></a>
+		<h3>gradedItemService</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemService.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemService</a> <strong>gradedItemService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="myCoursesFacade()"><!-- --></a>
+		<h3>myCoursesFacade</h3>
+
+		<kbd>
+			property any <strong>myCoursesFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="peerEvalFacade()"><!-- --></a>
+		<h3>peerEvalFacade</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/peerEvaluations/api/facades/peerEvalFacade.html" title="class in core.modules.peerEvaluations.api.facades">peerEvalFacade</a> <strong>peerEvalFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="quizGeneratorFacade()"><!-- --></a>
+		<h3>quizGeneratorFacade</h3>
+
+		<kbd>
+			property <a href="../../../../../core/modules/quizGen5-5/model/api/quizGeneratorFacade.html" title="class in core.modules.quizGen5-5.model.api">quizGeneratorFacade</a> <strong>quizGeneratorFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="ArrayOfStructSort()"><!-- --></a>
+	<h3>
+		ArrayOfStructSort 
+	</h3>
+
+	<kbd>public array <strong>ArrayOfStructSort</strong>(array base, [string sortType='text'], [string sortOrder='ASC'], [string pathToSubElement=''])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../core/modules/gradebook2/model/tools/dao.html#ArrayOfStructSort()">ArrayOfStructSort</a></code>
+			in class
+			<code>
+				<a href="../../../../../core/modules/gradebook2/model/tools/dao.html" title="class in core.modules.gradebook2.model.tools">dao</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>base</code></dd>
+		
+		<dd><code>sortType</code></dd>
+		
+		<dd><code>sortOrder</code></dd>
+		
+		<dd><code>pathToSubElement</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOMMUNICATIONSERVICE()"><!-- --></a>
+	<h3>
+		GETCOMMUNICATIONSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in core.modules.gradebook2.model.communication">communicationService</a> <strong>GETCOMMUNICATIONSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOURSEGROUPSFACADE()"><!-- --></a>
+	<h3>
+		GETCOURSEGROUPSFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/courseGroups/model/api/courseGroupsFacade.html" title="class in core.modules.courseGroups.model.api">courseGroupsFacade</a> <strong>GETCOURSEGROUPSFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDSN()"><!-- --></a>
+	<h3>
+		GETDSN 
+	</h3>
+
+	<kbd>public string <strong>GETDSN</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/dao.html#GETDSN()">GETDSN</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">dao</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEBOOKSERVICE()"><!-- --></a>
+	<h3>
+		GETGRADEBOOKSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/gradebook/gradebookService.html" title="class in core.modules.gradebook2.model.gradebook">gradebookService</a> <strong>GETGRADEBOOKSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADECONVERTER()"><!-- --></a>
+	<h3>
+		GETGRADECONVERTER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in core.modules.gradebook2.model.grade">gradeConverter</a> <strong>GETGRADECONVERTER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEDAO()"><!-- --></a>
+	<h3>
+		GETGRADEDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeDAO.html" title="class in core.modules.gradebook2.model.grade">gradeDAO</a> <strong>GETGRADEDAO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEDITEMDAO()"><!-- --></a>
+	<h3>
+		GETGRADEDITEMDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemDAO.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemDAO</a> <strong>GETGRADEDITEMDAO</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEDITEMGATEWAY()"><!-- --></a>
+	<h3>
+		GETGRADEDITEMGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemGateway.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemGateway</a> <strong>GETGRADEDITEMGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEDITEMSERVICE()"><!-- --></a>
+	<h3>
+		GETGRADEDITEMSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemService.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemService</a> <strong>GETGRADEDITEMSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGRADEGATEWAY()"><!-- --></a>
+	<h3>
+		GETGRADEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeGateway.html" title="class in core.modules.gradebook2.model.grade">gradeGateway</a> <strong>GETGRADEGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETMYCOURSESFACADE()"><!-- --></a>
+	<h3>
+		GETMYCOURSESFACADE 
+	</h3>
+
+	<kbd>public any <strong>GETMYCOURSESFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPEEREVALFACADE()"><!-- --></a>
+	<h3>
+		GETPEEREVALFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/api/facades/peerEvalFacade.html" title="class in core.modules.peerEvaluations.api.facades">peerEvalFacade</a> <strong>GETPEEREVALFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETQUIZGENERATORFACADE()"><!-- --></a>
+	<h3>
+		GETQUIZGENERATORFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/quizGen5-5/model/api/quizGeneratorFacade.html" title="class in core.modules.quizGen5-5.model.api">quizGeneratorFacade</a> <strong>GETQUIZGENERATORFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOMMUNICATIONSERVICE()"><!-- --></a>
+	<h3>
+		SETCOMMUNICATIONSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETCOMMUNICATIONSERVICE</strong>(<a href="../../../../../core/modules/gradebook2/model/communication/communicationService.html" title="class in core.modules.gradebook2.model.communication">communicationService</a> communicationService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>communicationService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOURSEGROUPSFACADE()"><!-- --></a>
+	<h3>
+		SETCOURSEGROUPSFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETCOURSEGROUPSFACADE</strong>(<a href="../../../../../core/modules/courseGroups/model/api/courseGroupsFacade.html" title="class in core.modules.courseGroups.model.api">courseGroupsFacade</a> courseGroupsFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupsFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDSN()"><!-- --></a>
+	<h3>
+		SETDSN 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETDSN</strong>(string dsn)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/dao.html#SETDSN()">SETDSN</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">dao</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>dsn</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEBOOKSERVICE()"><!-- --></a>
+	<h3>
+		SETGRADEBOOKSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADEBOOKSERVICE</strong>(<a href="../../../../../core/modules/gradebook2/model/gradebook/gradebookService.html" title="class in core.modules.gradebook2.model.gradebook">gradebookService</a> gradebookService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADECONVERTER()"><!-- --></a>
+	<h3>
+		SETGRADECONVERTER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADECONVERTER</strong>(<a href="../../../../../core/modules/gradebook2/model/grade/gradeConverter.html" title="class in core.modules.gradebook2.model.grade">gradeConverter</a> gradeConverter)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeConverter</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEDAO()"><!-- --></a>
+	<h3>
+		SETGRADEDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADEDAO</strong>(<a href="../../../../../core/modules/gradebook2/model/grade/gradeDAO.html" title="class in core.modules.gradebook2.model.grade">gradeDAO</a> gradeDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEDITEMDAO()"><!-- --></a>
+	<h3>
+		SETGRADEDITEMDAO 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADEDITEMDAO</strong>(<a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemDAO.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemDAO</a> gradedItemDAO)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemDAO</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEDITEMGATEWAY()"><!-- --></a>
+	<h3>
+		SETGRADEDITEMGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADEDITEMGATEWAY</strong>(<a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemGateway.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemGateway</a> gradedItemGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEDITEMSERVICE()"><!-- --></a>
+	<h3>
+		SETGRADEDITEMSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADEDITEMSERVICE</strong>(<a href="../../../../../core/modules/gradebook2/model/gradedItem/gradedItemService.html" title="class in core.modules.gradebook2.model.gradedItem">gradedItemService</a> gradedItemService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGRADEGATEWAY()"><!-- --></a>
+	<h3>
+		SETGRADEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETGRADEGATEWAY</strong>(<a href="../../../../../core/modules/gradebook2/model/grade/gradeGateway.html" title="class in core.modules.gradebook2.model.grade">gradeGateway</a> gradeGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETMYCOURSESFACADE()"><!-- --></a>
+	<h3>
+		SETMYCOURSESFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETMYCOURSESFACADE</strong>(any myCoursesFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>myCoursesFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPEEREVALFACADE()"><!-- --></a>
+	<h3>
+		SETPEEREVALFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETPEEREVALFACADE</strong>(<a href="../../../../../core/modules/peerEvaluations/api/facades/peerEvalFacade.html" title="class in core.modules.peerEvaluations.api.facades">peerEvalFacade</a> peerEvalFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>peerEvalFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETQUIZGENERATORFACADE()"><!-- --></a>
+	<h3>
+		SETQUIZGENERATORFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/gradebook2/model/grade/gradeService.html" title="class in core.modules.gradebook2.model.grade">gradeService</a> <strong>SETQUIZGENERATORFACADE</strong>(<a href="../../../../../core/modules/quizGen5-5/model/api/quizGeneratorFacade.html" title="class in core.modules.quizGen5-5.model.api">quizGeneratorFacade</a> quizGeneratorFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizGeneratorFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="addGradeImportInfoToQueue()"><!-- --></a>
+	<h3>
+		addGradeImportInfoToQueue 
+	</h3>
+
+	<kbd>public boolean <strong>addGradeImportInfoToQueue</strong>(numeric gradebookID, numeric courseOfferingID, numeric gradedItemID, numeric sourceModuleID, numeric sourceModuleItemID, numeric gradeTypeID, string gradingConfiguration)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>sourceModuleID</code></dd>
+		
+		<dd><code>sourceModuleItemID</code></dd>
+		
+		<dd><code>gradeTypeID</code></dd>
+		
+		<dd><code>gradingConfiguration</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="calculateStudentGrade()"><!-- --></a>
+	<h3>
+		calculateStudentGrade 
+	</h3>
+
+	<kbd>public struct <strong>calculateStudentGrade</strong>(struct gradebook, numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebook</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAllGradesForGradedItems()"><!-- --></a>
+	<h3>
+		deleteAllGradesForGradedItems 
+	</h3>
+
+	<kbd>public boolean <strong>deleteAllGradesForGradedItems</strong>(array gradedItems, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItems</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteGrade()"><!-- --></a>
+	<h3>
+		deleteGrade 
+	</h3>
+
+	<kbd>public any <strong>deleteGrade</strong>(numeric gradeID, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteImportGrade()"><!-- --></a>
+	<h3>
+		deleteImportGrade 
+	</h3>
+
+	<kbd>public any <strong>deleteImportGrade</strong>(numeric gradeID, numeric deletedBy)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeID</code></dd>
+		
+		<dd><code>deletedBy</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllGradeCalculationInfoForStudent()"><!-- --></a>
+	<h3>
+		getAllGradeCalculationInfoForStudent 
+	</h3>
+
+	<kbd>public struct <strong>getAllGradeCalculationInfoForStudent</strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllHistoryGradesByStuIDAndGradedItemID()"><!-- --></a>
+	<h3>
+		getAllHistoryGradesByStuIDAndGradedItemID 
+	</h3>
+
+	<kbd>public query <strong>getAllHistoryGradesByStuIDAndGradedItemID</strong>(numeric stuID, numeric gradedItemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllStudentsGradeInfoForExcel()"><!-- --></a>
+	<h3>
+		getAllStudentsGradeInfoForExcel 
+	</h3>
+
+	<kbd>public struct <strong>getAllStudentsGradeInfoForExcel</strong>(struct gradeBookInfo)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeBookInfo</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllgradesByGradebookID()"><!-- --></a>
+	<h3>
+		getAllgradesByGradebookID 
+	</h3>
+
+	<kbd>public query <strong>getAllgradesByGradebookID</strong>(numeric gradeBookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeBookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllgradesByGradedItemID()"><!-- --></a>
+	<h3>
+		getAllgradesByGradedItemID 
+	</h3>
+
+	<kbd>public query <strong>getAllgradesByGradedItemID</strong>(numeric gradedItemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseOffering()"><!-- --></a>
+	<h3>
+		getCourseOffering 
+	</h3>
+
+	<kbd>public <a href="../../../../../com/distance/myCourses4/offering/offering.html" title="class in com.distance.myCourses4.offering">offering</a> <strong>getCourseOffering</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFinalGradeRangeByGradeBookIDAndCourseOfferingID()"><!-- --></a>
+	<h3>
+		getFinalGradeRangeByGradeBookIDAndCourseOfferingID 
+	</h3>
+
+	<kbd>public query <strong>getFinalGradeRangeByGradeBookIDAndCourseOfferingID</strong>(numeric courseOfferingID, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFinalGradesByCourseOfferingIDandGradebookID()"><!-- --></a>
+	<h3>
+		getFinalGradesByCourseOfferingIDandGradebookID 
+	</h3>
+
+	<kbd>public query <strong>getFinalGradesByCourseOfferingIDandGradebookID</strong>(numeric courseOfferingID, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getGradedItemsForImport()"><!-- --></a>
+	<h3>
+		getGradedItemsForImport 
+	</h3>
+
+	<kbd>public array <strong>getGradedItemsForImport</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID()"><!-- --></a>
+	<h3>
+		getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID 
+	</h3>
+
+	<kbd>public query <strong>getLatestGradesByStuIDAndCourseOfferingIDAndGradebookID</strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLatestGradesInGradebookByCourseGroupID()"><!-- --></a>
+	<h3>
+		getLatestGradesInGradebookByCourseGroupID 
+	</h3>
+
+	<kbd>public query <strong>getLatestGradesInGradebookByCourseGroupID</strong>(numeric gradeBookID, numeric courseGroupID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeBookID</code></dd>
+		
+		<dd><code>courseGroupID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID()"><!-- --></a>
+	<h3>
+		getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID 
+	</h3>
+
+	<kbd>public query <strong>getStuFinalGradeByStuIDCourseOfferingIDAndGradebookID</strong>(numeric stuID, numeric courseOfferingID, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentGradeForItem()"><!-- --></a>
+	<h3>
+		getStudentGradeForItem 
+	</h3>
+
+	<kbd>public struct <strong>getStudentGradeForItem</strong>(numeric stuID, numeric gradedItemID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentGradesForHomePage()"><!-- --></a>
+	<h3>
+		getStudentGradesForHomePage 
+	</h3>
+
+	<kbd>public struct <strong>getStudentGradesForHomePage</strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="giveStudentsFullCredit()"><!-- --></a>
+	<h3>
+		giveStudentsFullCredit 
+	</h3>
+
+	<kbd>public array <strong>giveStudentsFullCredit</strong>(numeric gradedItemID, numeric courseOfferingID, numeric senderID, boolean onlyAlreadyGraded)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>senderID</code></dd>
+		
+		<dd><code>onlyAlreadyGraded</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="giveUngradedStudentsZero()"><!-- --></a>
+	<h3>
+		giveUngradedStudentsZero 
+	</h3>
+
+	<kbd>public array <strong>giveUngradedStudentsZero</strong>(numeric gradedItemID, numeric courseOfferingID, numeric senderID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>senderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importGrade()"><!-- --></a>
+	<h3>
+		importGrade 
+	</h3>
+
+	<kbd>public numeric <strong>importGrade</strong>(<a href="../../../../../core/modules/gradebook2/model/grade/grade.html" title="class in core.modules.gradebook2.model.grade">grade</a> grade, string appName, numeric gradeTypeID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>grade</code></dd>
+		
+		<dd><code>appName</code></dd>
+		
+		<dd><code>gradeTypeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="performGradeCalculationForStudent()"><!-- --></a>
+	<h3>
+		performGradeCalculationForStudent 
+	</h3>
+
+	<kbd>public struct <strong>performGradeCalculationForStudent</strong>(struct gradebook, numeric stuID, boolean displayOnly)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebook</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>displayOnly</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareFinalGrade()"><!-- --></a>
+	<h3>
+		prepareFinalGrade 
+	</h3>
+
+	<kbd>public numeric <strong>prepareFinalGrade</strong>(array gradeArray, numeric graderID, struct courseOffering, any course)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeArray</code></dd>
+		
+		<dd><code>graderID</code></dd>
+		
+		<dd><code>courseOffering</code></dd>
+		
+		<dd><code>course</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareFinalGradePrintout()"><!-- --></a>
+	<h3>
+		prepareFinalGradePrintout 
+	</h3>
+
+	<kbd>public struct <strong>prepareFinalGradePrintout</strong>(array gradeArray, numeric graderID, struct courseOffering, any course, numeric gradebookID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeArray</code></dd>
+		
+		<dd><code>graderID</code></dd>
+		
+		<dd><code>courseOffering</code></dd>
+		
+		<dd><code>course</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareFinalGradePrintoutInExcel()"><!-- --></a>
+	<h3>
+		prepareFinalGradePrintoutInExcel 
+	</h3>
+
+	<kbd>public struct <strong>prepareFinalGradePrintoutInExcel</strong>(array gradeArray, numeric graderID, struct courseOffering, any course)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeArray</code></dd>
+		
+		<dd><code>graderID</code></dd>
+		
+		<dd><code>courseOffering</code></dd>
+		
+		<dd><code>course</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recalculateStudentGradesAfterSave()"><!-- --></a>
+	<h3>
+		recalculateStudentGradesAfterSave 
+	</h3>
+
+	<kbd>public void <strong>recalculateStudentGradesAfterSave</strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recordGradeRange()"><!-- --></a>
+	<h3>
+		recordGradeRange 
+	</h3>
+
+	<kbd>public void <strong>recordGradeRange</strong>(array gradeArray, numeric gradebookID, numeric courseOfferingID, numeric userID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradeArray</code></dd>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnFinalGradeExcelWorkbook()"><!-- --></a>
+	<h3>
+		returnFinalGradeExcelWorkbook 
+	</h3>
+
+	<kbd>public string <strong>returnFinalGradeExcelWorkbook</strong>([query qry='[runtime expression]'], [string headers=''], [struct styles='[runtime expression]'], [string courseNumber=''], [string courseTitle=''], [string courseSemester=''], [string courseYear=''], [string instructor=''], [string spreadsheetTitle='spreadsheet'], [string format='xls'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>qry</code></dd>
+		
+		<dd><code>headers</code></dd>
+		
+		<dd><code>styles</code></dd>
+		
+		<dd><code>courseNumber</code></dd>
+		
+		<dd><code>courseTitle</code></dd>
+		
+		<dd><code>courseSemester</code></dd>
+		
+		<dd><code>courseYear</code></dd>
+		
+		<dd><code>instructor</code></dd>
+		
+		<dd><code>spreadsheetTitle</code></dd>
+		
+		<dd><code>format</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveGrade()"><!-- --></a>
+	<h3>
+		saveGrade 
+	</h3>
+
+	<kbd>public any <strong>saveGrade</strong>(<a href="../../../../../core/modules/gradebook2/model/grade/grade.html" title="class in core.modules.gradebook2.model.grade">grade</a> grade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>grade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toggleAllDisplayGrades()"><!-- --></a>
+	<h3>
+		toggleAllDisplayGrades 
+	</h3>
+
+	<kbd>public struct <strong>toggleAllDisplayGrades</strong>(numeric gradebookID, numeric courseOfferingID, numeric modifiedBy, numeric gradedItemID, boolean displayAllGrades)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>modifiedBy</code></dd>
+		
+		<dd><code>gradedItemID</code></dd>
+		
+		<dd><code>displayAllGrades</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateStudentFinalGrade()"><!-- --></a>
+	<h3>
+		updateStudentFinalGrade 
+	</h3>
+
+	<kbd>public void <strong>updateStudentFinalGrade</strong>(numeric gradebookID, numeric courseOfferingID, numeric stuID, string gradeValue, string stuGradeValue, [boolean isFinalScore='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradebookID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>gradeValue</code></dd>
+		
+		<dd><code>stuGradeValue</code></dd>
+		
+		<dd><code>isFinalScore</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

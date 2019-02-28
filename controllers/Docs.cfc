@@ -18,11 +18,11 @@ component extends="coldbox.system.EventHandler"{
 	// Reload Action
 	function reload(event,rc,prc){
 		//increase timeout for compiling
-		createObject( "java", "coldfusion.tagext.lang.SettingTag" ).setRequestTimeout( javaCast( "double", 2400 ) );
+		createObject( "java", "coldfusion.tagext.lang.SettingTag" ).setRequestTimeout( javaCast( "double", 600 ) );
 		prc['sectionTitle']="CoursePlus API Documentation";
 		var docbox=new docbox.DocBox(properties={
 			'projectTitle':"CoursePlus",
-			'outputDir':ExpandPath('/code-docs')
+			'outputDir':'/code-docs'
 		});
 		docbox.generate(
 			source=[{

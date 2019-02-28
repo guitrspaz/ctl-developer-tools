@@ -1,0 +1,1894 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>scheduleBuilderListener</title>
+	<meta name="keywords" content="core.modules.scheduleBuilder.model.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?core/modules/scheduleBuilder/model/scheduleBuilderListener.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.scheduleBuilder.model"><span class="label label-success">core.modules.scheduleBuilder.model</span></a>
+</div>
+
+<h2>
+
+Class
+scheduleBuilderListener</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by ">MachII.framework.BaseComponent
+      <img src="../../../../resources/inherit.gif" alt="extended by ">MachII.framework.Listener
+        <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">com.distance.base.listener</a>
+          <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html" title="class in core.modules.scheduleBuilder.model.tools">core.modules.scheduleBuilder.model.tools.listener</a>
+            <img src="../../../../resources/inherit.gif" alt="extended by ">core.modules.scheduleBuilder.model.scheduleBuilderListener
+</pre>
+
+
+
+<div id="class-hint">
+	<p>scheduleBuilderListener</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: scheduleBuilderListener 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#compareDate()">compareDate</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#defaultDate()">defaultDate</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#scheduleBuilderManager()">scheduleBuilderManager</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#userFacade()">userFacade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#GETCOMPAREDATE()">GETCOMPAREDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#GETDEFAULTDATE()">GETDEFAULTDATE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#GETSCHEDULEBUILDERMANAGER()">GETSCHEDULEBUILDERMANAGER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#GETUSERFACADE()">GETUSERFACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a></code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#SETCOMPAREDATE()">SETCOMPAREDATE</A></strong>(any compareDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a></code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#SETDEFAULTDATE()">SETDEFAULTDATE</A></strong>(any defaultDate)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a></code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#SETSCHEDULEBUILDERMANAGER()">SETSCHEDULEBUILDERMANAGER</A></strong>(any scheduleBuilderManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a></code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#SETUSERFACADE()">SETUSERFACADE</A></strong>(any userFacade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#areFilesSubmitted()">areFilesSubmitted</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#areThereSignups()">areThereSignups</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#configure()">configure</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initialize this listener as part of the Mach-II framework startup.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#createQuickTemplate()">createQuickTemplate</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#deleteCategory()">deleteCategory</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#deleteScheduleEvent()">deleteScheduleEvent</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Array</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#findCTLStaff()">findCTLStaff</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Void</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCTLStaff()">getCTLStaff</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCategory()">getCategory</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCategoryJSON()">getCategoryJSON</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCurrentCustomSurvey2Surveys()">getCurrentCustomSurvey2Surveys</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCurrentOtherSurveys()">getCurrentOtherSurveys</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCurrentPageBuilderPages()">getCurrentPageBuilderPages</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCurrentQuizzesInformation()">getCurrentQuizzesInformation</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCurrentScheduleForStudentview()">getCurrentScheduleForStudentview</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getCurrentSignupSheetBlocks()">getCurrentSignupSheetBlocks</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getEventDependencies()">getEventDependencies</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getMasterCalendar()">getMasterCalendar</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getScheduleEvent()">getScheduleEvent</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#getScheduleForStudentView()">getScheduleForStudentView</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#recalculateLectureNumbers()">recalculateLectureNumbers</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#saveCategory()">saveCategory</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#saveCategoryJSON()">saveCategoryJSON</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#saveScheduleEvent()">saveScheduleEvent</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#submitMasterCalendar()">submitMasterCalendar</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateAllDates()">updateAllDates</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateCategoryOrder()">updateCategoryOrder</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateQGDates()">updateQGDates</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updates the dates and times a quiz is available when the dates are changed in schedulebuilder.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateScheduleEventArchiveStatus()">updateScheduleEventArchiveStatus</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateScheduleEventOrder()">updateScheduleEventOrder</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateScheduleEventOrdersInGroup()">updateScheduleEventOrdersInGroup</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="scheduleBuilderListener.html#updateSurveyDates()">updateSurveyDates</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;updates the dates for a survey.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.scheduleBuilder.model.tools.listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html" title="class in core.modules.scheduleBuilder.model.tools">core.modules.scheduleBuilder.model.tools.listener</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html#create()">create</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">com.distance.base.listener</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/listener.html#GETAPPFACTORYNAME()">GETAPPFACTORYNAME</a>, <a href="../../../../com/distance/base/listener.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../com/distance/base/listener.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../com/distance/base/listener.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../com/distance/base/listener.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../com/distance/base/listener.html#GETCALLER()">GETCALLER</a>, <a href="../../../../com/distance/base/listener.html#GETCHILD()">GETCHILD</a>, <a href="../../../../com/distance/base/listener.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/listener.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../com/distance/base/listener.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../com/distance/base/listener.html#GETHASH()">GETHASH</a>, <a href="../../../../com/distance/base/listener.html#GETLOADED()">GETLOADED</a>, <a href="../../../../com/distance/base/listener.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../com/distance/base/listener.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../com/distance/base/listener.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../com/distance/base/listener.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../com/distance/base/listener.html#GETSERVICEFACTORY()">GETSERVICEFACTORY</a>, <a href="../../../../com/distance/base/listener.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../com/distance/base/listener.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/listener.html#GETUTILITIESSERVICEPROVIDER()">GETUTILITIESSERVICEPROVIDER</a>, <a href="../../../../com/distance/base/listener.html#QueryToArray()">QueryToArray</a>, <a href="../../../../com/distance/base/listener.html#SETAPPFACTORYNAME()">SETAPPFACTORYNAME</a>, <a href="../../../../com/distance/base/listener.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../com/distance/base/listener.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../com/distance/base/listener.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../com/distance/base/listener.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../com/distance/base/listener.html#SETCALLER()">SETCALLER</a>, <a href="../../../../com/distance/base/listener.html#SETCHILD()">SETCHILD</a>, <a href="../../../../com/distance/base/listener.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/listener.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../com/distance/base/listener.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../com/distance/base/listener.html#SETHASH()">SETHASH</a>, <a href="../../../../com/distance/base/listener.html#SETLOADED()">SETLOADED</a>, <a href="../../../../com/distance/base/listener.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../com/distance/base/listener.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../com/distance/base/listener.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../com/distance/base/listener.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../com/distance/base/listener.html#SETSERVICEFACTORY()">SETSERVICEFACTORY</a>, <a href="../../../../com/distance/base/listener.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../com/distance/base/listener.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/listener.html#SETUTILITIESSERVICEPROVIDER()">SETUTILITIESSERVICEPROVIDER</a>, <a href="../../../../com/distance/base/listener.html#addCacheRegionToGlobalVars()">addCacheRegionToGlobalVars</a>, <a href="../../../../com/distance/base/listener.html#arrayNotation()">arrayNotation</a>, <a href="../../../../com/distance/base/listener.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../com/distance/base/listener.html#clearCaches()">clearCaches</a>, <a href="../../../../com/distance/base/listener.html#configureRegion()">configureRegion</a>, <a href="../../../../com/distance/base/listener.html#createLog()">createLog</a>, <a href="../../../../com/distance/base/listener.html#getDefaultRegion()">getDefaultRegion</a>, <a href="../../../../com/distance/base/listener.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../com/distance/base/listener.html#getSharedRegion()">getSharedRegion</a>, <a href="../../../../com/distance/base/listener.html#getStackTrace()">getStackTrace</a>, <a href="../../../../com/distance/base/listener.html#init()">init</a>, <a href="../../../../com/distance/base/listener.html#logInit()">logInit</a>, <a href="../../../../com/distance/base/listener.html#makeFunctName()">makeFunctName</a>, <a href="../../../../com/distance/base/listener.html#makeSlug()">makeSlug</a>, <a href="../../../../com/distance/base/listener.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../com/distance/base/listener.html#objectToStruct()">objectToStruct</a>, <a href="../../../../com/distance/base/listener.html#paraFormat()">paraFormat</a>, <a href="../../../../com/distance/base/listener.html#processCacheData()">processCacheData</a>, <a href="../../../../com/distance/base/listener.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../com/distance/base/listener.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../com/distance/base/listener.html#stringToAscii()">stringToAscii</a>, <a href="../../../../com/distance/base/listener.html#stripHTML()">stripHTML</a>, <a href="../../../../com/distance/base/listener.html#structToArray()">structToArray</a>, <a href="../../../../com/distance/base/listener.html#wordCount()">wordCount</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.Listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.Listener</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../MachII/framework/Listener.html#getInvoker()">getInvoker</a>, <a href="../../../../MachII/framework/Listener.html#setInvoker()">setInvoker</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.BaseComponent"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.BaseComponent</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../MachII/framework/BaseComponent.html#addHTMLHeadElement()">addHTMLHeadElement</a>, <a href="../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByName()">addHTTPHeaderByName</a>, <a href="../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByStatus()">addHTTPHeaderByStatus</a>, <a href="../../../../MachII/framework/BaseComponent.html#announceEvent()">announceEvent</a>, <a href="../../../../MachII/framework/BaseComponent.html#announceEventInModule()">announceEventInModule</a>, <a href="../../../../MachII/framework/BaseComponent.html#bindValue()">bindValue</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildCurrentUrl()">buildCurrentUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildRouteUrl()">buildRouteUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildUrl()">buildUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#buildUrlToModule()">buildUrlToModule</a>, <a href="../../../../MachII/framework/BaseComponent.html#deconfigure()">deconfigure</a>, <a href="../../../../MachII/framework/BaseComponent.html#getAppManager()">getAppManager</a>, <a href="../../../../MachII/framework/BaseComponent.html#getAssert()">getAssert</a>, <a href="../../../../MachII/framework/BaseComponent.html#getComponentNameForLogging()">getComponentNameForLogging</a>, <a href="../../../../MachII/framework/BaseComponent.html#getLog()">getLog</a>, <a href="../../../../MachII/framework/BaseComponent.html#getParameter()">getParameter</a>, <a href="../../../../MachII/framework/BaseComponent.html#getParameterNames()">getParameterNames</a>, <a href="../../../../MachII/framework/BaseComponent.html#getParameters()">getParameters</a>, <a href="../../../../MachII/framework/BaseComponent.html#getProperty()">getProperty</a>, <a href="../../../../MachII/framework/BaseComponent.html#getPropertyManager()">getPropertyManager</a>, <a href="../../../../MachII/framework/BaseComponent.html#getProxy()">getProxy</a>, <a href="../../../../MachII/framework/BaseComponent.html#getUtils()">getUtils</a>, <a href="../../../../MachII/framework/BaseComponent.html#hasParameter()">hasParameter</a>, <a href="../../../../MachII/framework/BaseComponent.html#isParameterDefined()">isParameterDefined</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectEvent()">redirectEvent</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectEventInModule()">redirectEventInModule</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectRoute()">redirectRoute</a>, <a href="../../../../MachII/framework/BaseComponent.html#redirectUrl()">redirectUrl</a>, <a href="../../../../MachII/framework/BaseComponent.html#resolveValueByEnvironment()">resolveValueByEnvironment</a>, <a href="../../../../MachII/framework/BaseComponent.html#setAppManager()">setAppManager</a>, <a href="../../../../MachII/framework/BaseComponent.html#setLog()">setLog</a>, <a href="../../../../MachII/framework/BaseComponent.html#setParameter()">setParameter</a>, <a href="../../../../MachII/framework/BaseComponent.html#setParameters()">setParameters</a>, <a href="../../../../MachII/framework/BaseComponent.html#setProperty()">setProperty</a>, <a href="../../../../MachII/framework/BaseComponent.html#setProxy()">setProxy</a>, <a href="../../../../MachII/framework/BaseComponent.html#uploadFile()">uploadFile</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="compareDate()"><!-- --></a>
+		<h3>compareDate</h3>
+
+		<kbd>
+			property any <strong>compareDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="defaultDate()"><!-- --></a>
+		<h3>defaultDate</h3>
+
+		<kbd>
+			property any <strong>defaultDate</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="scheduleBuilderManager()"><!-- --></a>
+		<h3>scheduleBuilderManager</h3>
+
+		<kbd>
+			property any <strong>scheduleBuilderManager</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userFacade()"><!-- --></a>
+		<h3>userFacade</h3>
+
+		<kbd>
+			property any <strong>userFacade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETCOMPAREDATE()"><!-- --></a>
+	<h3>
+		GETCOMPAREDATE 
+	</h3>
+
+	<kbd>public any <strong>GETCOMPAREDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/listener.html#GETCOMPAREDATE()">GETCOMPAREDATE</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDEFAULTDATE()"><!-- --></a>
+	<h3>
+		GETDEFAULTDATE 
+	</h3>
+
+	<kbd>public any <strong>GETDEFAULTDATE</strong>()</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/listener.html#GETDEFAULTDATE()">GETDEFAULTDATE</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSCHEDULEBUILDERMANAGER()"><!-- --></a>
+	<h3>
+		GETSCHEDULEBUILDERMANAGER 
+	</h3>
+
+	<kbd>public any <strong>GETSCHEDULEBUILDERMANAGER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERFACADE()"><!-- --></a>
+	<h3>
+		GETUSERFACADE 
+	</h3>
+
+	<kbd>public any <strong>GETUSERFACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOMPAREDATE()"><!-- --></a>
+	<h3>
+		SETCOMPAREDATE 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a> <strong>SETCOMPAREDATE</strong>(any compareDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/listener.html#SETCOMPAREDATE()">SETCOMPAREDATE</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>compareDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDEFAULTDATE()"><!-- --></a>
+	<h3>
+		SETDEFAULTDATE 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a> <strong>SETDEFAULTDATE</strong>(any defaultDate)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../com/distance/base/listener.html#SETDEFAULTDATE()">SETDEFAULTDATE</a></code>
+			in class
+			<code>
+				<a href="../../../../com/distance/base/listener.html" title="class in com.distance.base">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>defaultDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSCHEDULEBUILDERMANAGER()"><!-- --></a>
+	<h3>
+		SETSCHEDULEBUILDERMANAGER 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a> <strong>SETSCHEDULEBUILDERMANAGER</strong>(any scheduleBuilderManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>scheduleBuilderManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERFACADE()"><!-- --></a>
+	<h3>
+		SETUSERFACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../core/modules/scheduleBuilder/model/scheduleBuilderListener.html" title="class in core.modules.scheduleBuilder.model">scheduleBuilderListener</a> <strong>SETUSERFACADE</strong>(any userFacade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="areFilesSubmitted()"><!-- --></a>
+	<h3>
+		areFilesSubmitted 
+	</h3>
+
+	<kbd>public boolean <strong>areFilesSubmitted</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="areThereSignups()"><!-- --></a>
+	<h3>
+		areThereSignups 
+	</h3>
+
+	<kbd>public boolean <strong>areThereSignups</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>public void <strong>configure</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I initialize this listener as part of the Mach-II framework startup.</p>
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html#configure()">configure</a></code>
+			in class
+			<code>
+				<a href="../../../../core/modules/scheduleBuilder/model/tools/listener.html" title="class in core.modules.scheduleBuilder.model.tools">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createQuickTemplate()"><!-- --></a>
+	<h3>
+		createQuickTemplate 
+	</h3>
+
+	<kbd>public void <strong>createQuickTemplate</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteCategory()"><!-- --></a>
+	<h3>
+		deleteCategory 
+	</h3>
+
+	<kbd>public Struct <strong>deleteCategory</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteScheduleEvent()"><!-- --></a>
+	<h3>
+		deleteScheduleEvent 
+	</h3>
+
+	<kbd>public Struct <strong>deleteScheduleEvent</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="findCTLStaff()"><!-- --></a>
+	<h3>
+		findCTLStaff 
+	</h3>
+
+	<kbd>private Array <strong>findCTLStaff</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCTLStaff()"><!-- --></a>
+	<h3>
+		getCTLStaff 
+	</h3>
+
+	<kbd>public Void <strong>getCTLStaff</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCategory()"><!-- --></a>
+	<h3>
+		getCategory 
+	</h3>
+
+	<kbd>public Any <strong>getCategory</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCategoryJSON()"><!-- --></a>
+	<h3>
+		getCategoryJSON 
+	</h3>
+
+	<kbd>public struct <strong>getCategoryJSON</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentCustomSurvey2Surveys()"><!-- --></a>
+	<h3>
+		getCurrentCustomSurvey2Surveys 
+	</h3>
+
+	<kbd>public Struct <strong>getCurrentCustomSurvey2Surveys</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentOtherSurveys()"><!-- --></a>
+	<h3>
+		getCurrentOtherSurveys 
+	</h3>
+
+	<kbd>public Struct <strong>getCurrentOtherSurveys</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentPageBuilderPages()"><!-- --></a>
+	<h3>
+		getCurrentPageBuilderPages 
+	</h3>
+
+	<kbd>public Struct <strong>getCurrentPageBuilderPages</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentQuizzesInformation()"><!-- --></a>
+	<h3>
+		getCurrentQuizzesInformation 
+	</h3>
+
+	<kbd>public Struct <strong>getCurrentQuizzesInformation</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentScheduleForStudentview()"><!-- --></a>
+	<h3>
+		getCurrentScheduleForStudentview 
+	</h3>
+
+	<kbd>public Struct <strong>getCurrentScheduleForStudentview</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentSignupSheetBlocks()"><!-- --></a>
+	<h3>
+		getCurrentSignupSheetBlocks 
+	</h3>
+
+	<kbd>public Struct <strong>getCurrentSignupSheetBlocks</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEventDependencies()"><!-- --></a>
+	<h3>
+		getEventDependencies 
+	</h3>
+
+	<kbd>public Array <strong>getEventDependencies</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMasterCalendar()"><!-- --></a>
+	<h3>
+		getMasterCalendar 
+	</h3>
+
+	<kbd>public Struct <strong>getMasterCalendar</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getScheduleEvent()"><!-- --></a>
+	<h3>
+		getScheduleEvent 
+	</h3>
+
+	<kbd>public Any <strong>getScheduleEvent</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getScheduleForStudentView()"><!-- --></a>
+	<h3>
+		getScheduleForStudentView 
+	</h3>
+
+	<kbd>public Array <strong>getScheduleForStudentView</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recalculateLectureNumbers()"><!-- --></a>
+	<h3>
+		recalculateLectureNumbers 
+	</h3>
+
+	<kbd>public any <strong>recalculateLectureNumbers</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveCategory()"><!-- --></a>
+	<h3>
+		saveCategory 
+	</h3>
+
+	<kbd>public Struct <strong>saveCategory</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveCategoryJSON()"><!-- --></a>
+	<h3>
+		saveCategoryJSON 
+	</h3>
+
+	<kbd>public struct <strong>saveCategoryJSON</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveScheduleEvent()"><!-- --></a>
+	<h3>
+		saveScheduleEvent 
+	</h3>
+
+	<kbd>public Struct <strong>saveScheduleEvent</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="submitMasterCalendar()"><!-- --></a>
+	<h3>
+		submitMasterCalendar 
+	</h3>
+
+	<kbd>public struct <strong>submitMasterCalendar</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateAllDates()"><!-- --></a>
+	<h3>
+		updateAllDates 
+	</h3>
+
+	<kbd>public void <strong>updateAllDates</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateCategoryOrder()"><!-- --></a>
+	<h3>
+		updateCategoryOrder 
+	</h3>
+
+	<kbd>public any <strong>updateCategoryOrder</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateQGDates()"><!-- --></a>
+	<h3>
+		updateQGDates 
+	</h3>
+
+	<kbd>public Struct <strong>updateQGDates</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>updates the dates and times a quiz is available when the dates are changed in schedulebuilder</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateScheduleEventArchiveStatus()"><!-- --></a>
+	<h3>
+		updateScheduleEventArchiveStatus 
+	</h3>
+
+	<kbd>public Struct <strong>updateScheduleEventArchiveStatus</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateScheduleEventOrder()"><!-- --></a>
+	<h3>
+		updateScheduleEventOrder 
+	</h3>
+
+	<kbd>public any <strong>updateScheduleEventOrder</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateScheduleEventOrdersInGroup()"><!-- --></a>
+	<h3>
+		updateScheduleEventOrdersInGroup 
+	</h3>
+
+	<kbd>public Struct <strong>updateScheduleEventOrdersInGroup</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateSurveyDates()"><!-- --></a>
+	<h3>
+		updateSurveyDates 
+	</h3>
+
+	<kbd>public struct <strong>updateSurveyDates</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>updates the dates for a survey</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

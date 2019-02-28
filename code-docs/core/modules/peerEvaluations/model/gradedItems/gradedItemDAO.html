@@ -1,0 +1,2014 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>gradedItemDAO</title>
+	<meta name="keywords" content="core.modules.peerEvaluations.model.gradedItems.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/peerEvaluations/model/gradedItems/gradedItemDAO.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.peerEvaluations.model.gradedItems"><span class="label label-success">core.modules.peerEvaluations.model.gradedItems</span></a>
+</div>
+
+<h2>
+
+Class
+gradedItemDAO</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html" title="class in core.modules.peerEvaluations.model.tools">core.modules.peerEvaluations.model.tools.dao</a>
+            <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.peerEvaluations.model.gradedItems.gradedItemDAO
+</pre>
+
+
+
+<div id="class-hint">
+	<p>CRUD Functions for graded items</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: gradedItemDAO 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#testingThreshold()">testingThreshold</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="gradedItemDAO.html#init()">init</A></strong>([Numeric bufferTime], [Numeric bufferDays], [String cacheRegion], [Array cacheScopes], [Struct cacheTypes], [String ctlemail], [Boolean debugMode], [String defaultLog], [Array doNotDeleteCreatedAssessments], [Array dropboxAssessmentTypes], [String filePath], [Array groupTypes], [Struct paramAliases], [String queueCacheName], [Numeric queueLimit], [Any queueStorageTime], [Array soloTypes])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#GETTESTINGTHRESHOLD()">GETTESTINGTHRESHOLD</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItemDAO.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItemDAO</a></code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#SETTESTINGTHRESHOLD()">SETTESTINGTHRESHOLD</A></strong>(numeric testingThreshold)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#clearScores()">clearScores</A></strong>(numeric itemID, [string studentIDs=''])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clears scores for a gradedItem.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#copyDescription()">copyDescription</A></strong>(numeric peID, numeric rubricID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copies the rubric description to the gradedItem.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#countStudentsWithScores()">countStudentsWithScores</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#createGradedItem()">createGradedItem</A></strong>(<a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItem.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItem</a> gradedItem)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Void</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#createSetup()">createSetup</A></strong>(Numeric itemID, String setupData, Numeric userID, Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#deleteGradedItem()">deleteGradedItem</A></strong>(<a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItem.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItem</a> gradedItem)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#deleteGradedItems()">deleteGradedItems</A></strong>(numeric courseOfferingID, [numeric originID='0'], [numeric originalSourceID='0'], [numeric rubricID='0'], [numeric typeID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#findStudentsWithoutAssignments()">findStudentsWithoutAssignments</A></strong>(numeric itemID, [numeric count='1'], [numeric userLevel='500'], [array itemGroups='[runtime expression]'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finds students enrolled in the course offering who do not have an assignment.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getAssessmentParticipantsData()">getAssessmentParticipantsData</A></strong>(numeric itemID, [string includeList=''], [string groupsList=''], [string role='owner'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getCurrentOfferingsWithAssessments()">getCurrentOfferingsWithAssessments</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all current offerings with assessments that have not opened.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getDroppedStudents()">getDroppedStudents</A></strong>(numeric itemID, [string role='owner'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all students who have dropped the class, but are still assigned assessments.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getFileDataFromDropbox()">getFileDataFromDropbox</A></strong>(numeric courseOfferingID, [numeric assignmentID='0'], [numeric eventID='0'], [struct owners='[runtime expression]'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets file link data from dropbox.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getOldPDFDocs()">getOldPDFDocs</A></strong>([String thresholdDate=''])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns pdf  data and links whose add dates exceed the threshold.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getOriginItems()">getOriginItems</A></strong>([string originID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getOrphanedStudents()">getOrphanedStudents</A></strong>(numeric itemID, [string role='owner'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all students who are assessing or being assessed by a dropped student.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getPEOrigin()">getPEOrigin</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getStudentsWhoHaveNotFinished()">getStudentsWhoHaveNotFinished</A></strong>(numeric itemID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns a query of students who have not completed the assignment.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getStudentsWhoNoDropbox()">getStudentsWhoNoDropbox</A></strong>(numeric itemID, numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns students who have do not have a dropbox assignment turned in.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#getStudentsWhoNoDropboxToGrade()">getStudentsWhoNoDropboxToGrade</A></strong>(numeric itemID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns students who have do not have a dropbox assignment to grade.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#gradedItemExists()">gradedItemExists</A></strong>(numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#joinClassLectureSessions()">joinClassLectureSessions</A></strong>(numeric itemID, [array classSessions='[runtime expression]'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string of comma-separated classSessions.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#joinPbPages()">joinPbPages</A></strong>(numeric itemID, [array pbPages='[runtime expression]'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string of comma-separated pagebuilder pages.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readClassLectureSessions()">readClassLectureSessions</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readGradedItem()">readGradedItem</A></strong>(numeric itemID, [boolean withEmptyRubrics='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readGradedItemType()">readGradedItemType</A></strong>(numeric typeID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns gradeditem type in query.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readGradedItemTypes()">readGradedItemTypes</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readGradedItems()">readGradedItems</A></strong>([numeric courseOfferingiD='0'], [numeric rubricID='0'], [numeric originID='0'], [numeric oldItemID='0'], [numeric oldCourseOfferingID='0'], [string openDate=''], [string closeDate=''], [numeric instanceID='0'], [numeric typeID='0'], [numeric originalSourceID='0'], [numeric eventID='0'], [string startDateGreaterThan=''], [string startDateLessThan=''], [array linkedClassSessions='[runtime expression]'], [array linkedPages='[runtime expression]'], [boolean withEmptyRubrics='true'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readPbPages()">readPbPages</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#readSetups()">readSetups</A></strong>(Numeric itemID, [Numeric courseOfferingID], [Date filterStart], [Date filterEnd], [Numeric setupID], [Numeric max='1'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#removeOldPDFDocs()">removeOldPDFDocs</A></strong>([String emailID=''])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets a user object.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#restoreKeyAlphaOrder()">restoreKeyAlphaOrder</A></strong>([string enrollmentList=''])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns a query ordered by firstname, lastname.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#returnBaseandCeilingIDs()">returnBaseandCeilingIDs</A></strong>([string type='gradedItems'], [string prefix='pe_gradedItem_'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns the first and last gradedItemID.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#returnCalculatedScores()">returnCalculatedScores</A></strong>(numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#returnRelatedEventID()">returnRelatedEventID</A></strong>(numeric itemID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns the relatedEventID for a gradedItem.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>String</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#returnSetup()">returnSetup</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#returnTypeID()">returnTypeID</A></strong>(Numeric itemID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#saveVisibility()">saveVisibility</A></strong>(numeric itemID, [boolean visibility='true'], [string role='owner'], [string info='names'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;saves the visibility for a gradedItem.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#studentHasDropboxAssignment()">studentHasDropboxAssignment</A></strong>(numeric courseOfferingID, numeric itemID, numeric stuID, [boolean bypassRequirement='false'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets file link data from dropbox.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#unjoinClassLectureSessions()">unjoinClassLectureSessions</A></strong>(numeric itemID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unjoins class sessions from survey.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#unjoinPbPages()">unjoinPbPages</A></strong>(numeric itemID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unjoins pagebuilder pages from survey.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#updateGradedItem()">updateGradedItem</A></strong>(<a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItem.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItem</a> gradedItem)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="gradedItemDAO.html#updateScoringMethod()">updateScoringMethod</A></strong>(numeric itemID, [string scoringMethod='sumOfMedian'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changes the scoring method for a gradedItem.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.peerEvaluations.model.tools.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html" title="class in core.modules.peerEvaluations.model.tools">core.modules.peerEvaluations.model.tools.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETBUFFERDAYS()">GETBUFFERDAYS</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETBUFFERTIME()">GETBUFFERTIME</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETDEVTEST()">GETDEVTEST</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETDONOTDELETECREATEDASSESSMENTS()">GETDONOTDELETECREATEDASSESSMENTS</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETDROPBOXASSESSMENTTYPES()">GETDROPBOXASSESSMENTTYPES</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETGROUPTYPES()">GETGROUPTYPES</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETMAXQUEUEBACKUPS()">GETMAXQUEUEBACKUPS</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETQUEUECACHENAME()">GETQUEUECACHENAME</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETQUEUELIMIT()">GETQUEUELIMIT</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETQUEUESTORAGETIME()">GETQUEUESTORAGETIME</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#GETSOLOTYPES()">GETSOLOTYPES</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETBUFFERDAYS()">SETBUFFERDAYS</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETBUFFERTIME()">SETBUFFERTIME</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETDEVTEST()">SETDEVTEST</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETDONOTDELETECREATEDASSESSMENTS()">SETDONOTDELETECREATEDASSESSMENTS</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETDROPBOXASSESSMENTTYPES()">SETDROPBOXASSESSMENTTYPES</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETGROUPTYPES()">SETGROUPTYPES</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETMAXQUEUEBACKUPS()">SETMAXQUEUEBACKUPS</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETQUEUECACHENAME()">SETQUEUECACHENAME</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETQUEUELIMIT()">SETQUEUELIMIT</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETQUEUESTORAGETIME()">SETQUEUESTORAGETIME</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#SETSOLOTYPES()">SETSOLOTYPES</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#getItemIDFromInstanceID()">getItemIDFromInstanceID</a>, <a href="../../../../../core/modules/peerEvaluations/model/tools/dao.html#getTotalPossible()">getTotalPossible</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/dao.html#GETDSN()">GETDSN</a>, <a href="../../../../../com/distance/base/dao.html#SETDSN()">SETDSN</a>, <a href="../../../../../com/distance/base/dao.html#configureDAO()">configureDAO</a>, <a href="../../../../../com/distance/base/dao.html#getFormattedUser()">getFormattedUser</a>, <a href="../../../../../com/distance/base/dao.html#getUser()">getUser</a>, <a href="../../../../../com/distance/base/dao.html#getcourseIdFromCourseOfferingId()">getcourseIdFromCourseOfferingId</a>, <a href="../../../../../com/distance/base/dao.html#gethardCodeDSN()">gethardCodeDSN</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([Numeric bufferTime], [Numeric bufferDays], [String cacheRegion], [Array cacheScopes], [Struct cacheTypes], [String ctlemail], [Boolean debugMode], [String defaultLog], [Array doNotDeleteCreatedAssessments], [Array dropboxAssessmentTypes], [String filePath], [Array groupTypes], [Struct paramAliases], [String queueCacheName], [Numeric queueLimit], [Any queueStorageTime], [Array soloTypes])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>bufferTime</code></dd>
+		
+			<dd><code>bufferDays</code></dd>
+		
+			<dd><code>cacheRegion</code></dd>
+		
+			<dd><code>cacheScopes</code></dd>
+		
+			<dd><code>cacheTypes</code></dd>
+		
+			<dd><code>ctlemail</code></dd>
+		
+			<dd><code>debugMode</code></dd>
+		
+			<dd><code>defaultLog</code></dd>
+		
+			<dd><code>doNotDeleteCreatedAssessments</code></dd>
+		
+			<dd><code>dropboxAssessmentTypes</code></dd>
+		
+			<dd><code>filePath</code></dd>
+		
+			<dd><code>groupTypes</code></dd>
+		
+			<dd><code>paramAliases</code></dd>
+		
+			<dd><code>queueCacheName</code></dd>
+		
+			<dd><code>queueLimit</code></dd>
+		
+			<dd><code>queueStorageTime</code></dd>
+		
+			<dd><code>soloTypes</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="testingThreshold()"><!-- --></a>
+		<h3>testingThreshold</h3>
+
+		<kbd>
+			property numeric <strong>testingThreshold</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETTESTINGTHRESHOLD()"><!-- --></a>
+	<h3>
+		GETTESTINGTHRESHOLD 
+	</h3>
+
+	<kbd>public numeric <strong>GETTESTINGTHRESHOLD</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTESTINGTHRESHOLD()"><!-- --></a>
+	<h3>
+		SETTESTINGTHRESHOLD 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItemDAO.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItemDAO</a> <strong>SETTESTINGTHRESHOLD</strong>(numeric testingThreshold)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>testingThreshold</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="clearScores()"><!-- --></a>
+	<h3>
+		clearScores 
+	</h3>
+
+	<kbd>public boolean <strong>clearScores</strong>(numeric itemID, [string studentIDs=''])</kbd>
+
+	<br><br>
+
+	
+		<p>clears scores for a gradedItem</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>studentIDs</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="copyDescription()"><!-- --></a>
+	<h3>
+		copyDescription 
+	</h3>
+
+	<kbd>public void <strong>copyDescription</strong>(numeric peID, numeric rubricID)</kbd>
+
+	<br><br>
+
+	
+		<p>copies the rubric description to the gradedItem</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>peID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="countStudentsWithScores()"><!-- --></a>
+	<h3>
+		countStudentsWithScores 
+	</h3>
+
+	<kbd>public Numeric <strong>countStudentsWithScores</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createGradedItem()"><!-- --></a>
+	<h3>
+		createGradedItem 
+	</h3>
+
+	<kbd>public numeric <strong>createGradedItem</strong>(<a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItem.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItem</a> gradedItem)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItem</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createSetup()"><!-- --></a>
+	<h3>
+		createSetup 
+	</h3>
+
+	<kbd>public Void <strong>createSetup</strong>(Numeric itemID, String setupData, Numeric userID, Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>setupData</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteGradedItem()"><!-- --></a>
+	<h3>
+		deleteGradedItem 
+	</h3>
+
+	<kbd>public boolean <strong>deleteGradedItem</strong>(<a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItem.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItem</a> gradedItem)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItem</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteGradedItems()"><!-- --></a>
+	<h3>
+		deleteGradedItems 
+	</h3>
+
+	<kbd>public boolean <strong>deleteGradedItems</strong>(numeric courseOfferingID, [numeric originID='0'], [numeric originalSourceID='0'], [numeric rubricID='0'], [numeric typeID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>originID</code></dd>
+		
+		<dd><code>originalSourceID</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>typeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="findStudentsWithoutAssignments()"><!-- --></a>
+	<h3>
+		findStudentsWithoutAssignments 
+	</h3>
+
+	<kbd>public query <strong>findStudentsWithoutAssignments</strong>(numeric itemID, [numeric count='1'], [numeric userLevel='500'], [array itemGroups='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<p>finds students enrolled in the course offering who do not have an assignment</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>count</code></dd>
+		
+		<dd><code>userLevel</code></dd>
+		
+		<dd><code>itemGroups</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAssessmentParticipantsData()"><!-- --></a>
+	<h3>
+		getAssessmentParticipantsData 
+	</h3>
+
+	<kbd>public query <strong>getAssessmentParticipantsData</strong>(numeric itemID, [string includeList=''], [string groupsList=''], [string role='owner'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>includeList</code></dd>
+		
+		<dd><code>groupsList</code></dd>
+		
+		<dd><code>role</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCurrentOfferingsWithAssessments()"><!-- --></a>
+	<h3>
+		getCurrentOfferingsWithAssessments 
+	</h3>
+
+	<kbd>public query <strong>getCurrentOfferingsWithAssessments</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>gets all current offerings with assessments that have not opened</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getDroppedStudents()"><!-- --></a>
+	<h3>
+		getDroppedStudents 
+	</h3>
+
+	<kbd>public query <strong>getDroppedStudents</strong>(numeric itemID, [string role='owner'])</kbd>
+
+	<br><br>
+
+	
+		<p>gets all students who have dropped the class, but are still assigned assessments</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>role</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getFileDataFromDropbox()"><!-- --></a>
+	<h3>
+		getFileDataFromDropbox 
+	</h3>
+
+	<kbd>public query <strong>getFileDataFromDropbox</strong>(numeric courseOfferingID, [numeric assignmentID='0'], [numeric eventID='0'], [struct owners='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<p>gets file link data from dropbox</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>assignmentID</code></dd>
+		
+		<dd><code>eventID</code></dd>
+		
+		<dd><code>owners</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOldPDFDocs()"><!-- --></a>
+	<h3>
+		getOldPDFDocs 
+	</h3>
+
+	<kbd>public query <strong>getOldPDFDocs</strong>([String thresholdDate=''])</kbd>
+
+	<br><br>
+
+	
+		<p>returns pdf  data and links whose add dates exceed the threshold</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>thresholdDate</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOriginItems()"><!-- --></a>
+	<h3>
+		getOriginItems 
+	</h3>
+
+	<kbd>public query <strong>getOriginItems</strong>([string originID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>originID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getOrphanedStudents()"><!-- --></a>
+	<h3>
+		getOrphanedStudents 
+	</h3>
+
+	<kbd>public query <strong>getOrphanedStudents</strong>(numeric itemID, [string role='owner'])</kbd>
+
+	<br><br>
+
+	
+		<p>gets all students who are assessing or being assessed by a dropped student</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>role</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPEOrigin()"><!-- --></a>
+	<h3>
+		getPEOrigin 
+	</h3>
+
+	<kbd>public numeric <strong>getPEOrigin</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoHaveNotFinished()"><!-- --></a>
+	<h3>
+		getStudentsWhoHaveNotFinished 
+	</h3>
+
+	<kbd>public query <strong>getStudentsWhoHaveNotFinished</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<p>returns a query of students who have not completed the assignment</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoNoDropbox()"><!-- --></a>
+	<h3>
+		getStudentsWhoNoDropbox 
+	</h3>
+
+	<kbd>public query <strong>getStudentsWhoNoDropbox</strong>(numeric itemID, numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>returns students who have do not have a dropbox assignment turned in</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsWhoNoDropboxToGrade()"><!-- --></a>
+	<h3>
+		getStudentsWhoNoDropboxToGrade 
+	</h3>
+
+	<kbd>public query <strong>getStudentsWhoNoDropboxToGrade</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<p>returns students who have do not have a dropbox assignment to grade</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="gradedItemExists()"><!-- --></a>
+	<h3>
+		gradedItemExists 
+	</h3>
+
+	<kbd>public boolean <strong>gradedItemExists</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="joinClassLectureSessions()"><!-- --></a>
+	<h3>
+		joinClassLectureSessions 
+	</h3>
+
+	<kbd>public void <strong>joinClassLectureSessions</strong>(numeric itemID, [array classSessions='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<p>string of comma-separated classSessions</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>classSessions</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="joinPbPages()"><!-- --></a>
+	<h3>
+		joinPbPages 
+	</h3>
+
+	<kbd>public void <strong>joinPbPages</strong>(numeric itemID, [array pbPages='[runtime expression]'])</kbd>
+
+	<br><br>
+
+	
+		<p>string of comma-separated pagebuilder pages</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>pbPages</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readClassLectureSessions()"><!-- --></a>
+	<h3>
+		readClassLectureSessions 
+	</h3>
+
+	<kbd>public Array <strong>readClassLectureSessions</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readGradedItem()"><!-- --></a>
+	<h3>
+		readGradedItem 
+	</h3>
+
+	<kbd>public query <strong>readGradedItem</strong>(numeric itemID, [boolean withEmptyRubrics='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>withEmptyRubrics</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readGradedItemType()"><!-- --></a>
+	<h3>
+		readGradedItemType 
+	</h3>
+
+	<kbd>public query <strong>readGradedItemType</strong>(numeric typeID)</kbd>
+
+	<br><br>
+
+	
+		<p>returns gradeditem type in query</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>typeID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readGradedItemTypes()"><!-- --></a>
+	<h3>
+		readGradedItemTypes 
+	</h3>
+
+	<kbd>public query <strong>readGradedItemTypes</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="readGradedItems()"><!-- --></a>
+	<h3>
+		readGradedItems 
+	</h3>
+
+	<kbd>public query <strong>readGradedItems</strong>([numeric courseOfferingiD='0'], [numeric rubricID='0'], [numeric originID='0'], [numeric oldItemID='0'], [numeric oldCourseOfferingID='0'], [string openDate=''], [string closeDate=''], [numeric instanceID='0'], [numeric typeID='0'], [numeric originalSourceID='0'], [numeric eventID='0'], [string startDateGreaterThan=''], [string startDateLessThan=''], [array linkedClassSessions='[runtime expression]'], [array linkedPages='[runtime expression]'], [boolean withEmptyRubrics='true'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingiD</code></dd>
+		
+		<dd><code>rubricID</code></dd>
+		
+		<dd><code>originID</code></dd>
+		
+		<dd><code>oldItemID</code></dd>
+		
+		<dd><code>oldCourseOfferingID</code></dd>
+		
+		<dd><code>openDate</code></dd>
+		
+		<dd><code>closeDate</code></dd>
+		
+		<dd><code>instanceID</code></dd>
+		
+		<dd><code>typeID</code></dd>
+		
+		<dd><code>originalSourceID</code></dd>
+		
+		<dd><code>eventID</code></dd>
+		
+		<dd><code>startDateGreaterThan</code></dd>
+		
+		<dd><code>startDateLessThan</code></dd>
+		
+		<dd><code>linkedClassSessions</code></dd>
+		
+		<dd><code>linkedPages</code></dd>
+		
+		<dd><code>withEmptyRubrics</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readPbPages()"><!-- --></a>
+	<h3>
+		readPbPages 
+	</h3>
+
+	<kbd>public Array <strong>readPbPages</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="readSetups()"><!-- --></a>
+	<h3>
+		readSetups 
+	</h3>
+
+	<kbd>public Query <strong>readSetups</strong>(Numeric itemID, [Numeric courseOfferingID], [Date filterStart], [Date filterEnd], [Numeric setupID], [Numeric max='1'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>filterStart</code></dd>
+		
+		<dd><code>filterEnd</code></dd>
+		
+		<dd><code>setupID</code></dd>
+		
+		<dd><code>max</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="removeOldPDFDocs()"><!-- --></a>
+	<h3>
+		removeOldPDFDocs 
+	</h3>
+
+	<kbd>public any <strong>removeOldPDFDocs</strong>([String emailID=''])</kbd>
+
+	<br><br>
+
+	
+		<p>gets a user object</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>emailID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="restoreKeyAlphaOrder()"><!-- --></a>
+	<h3>
+		restoreKeyAlphaOrder 
+	</h3>
+
+	<kbd>public query <strong>restoreKeyAlphaOrder</strong>([string enrollmentList=''])</kbd>
+
+	<br><br>
+
+	
+		<p>returns a query ordered by firstname, lastname</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>enrollmentList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnBaseandCeilingIDs()"><!-- --></a>
+	<h3>
+		returnBaseandCeilingIDs 
+	</h3>
+
+	<kbd>public struct <strong>returnBaseandCeilingIDs</strong>([string type='gradedItems'], [string prefix='pe_gradedItem_'])</kbd>
+
+	<br><br>
+
+	
+		<p>returns the first and last gradedItemID</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>type</code></dd>
+		
+		<dd><code>prefix</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnCalculatedScores()"><!-- --></a>
+	<h3>
+		returnCalculatedScores 
+	</h3>
+
+	<kbd>public query <strong>returnCalculatedScores</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnRelatedEventID()"><!-- --></a>
+	<h3>
+		returnRelatedEventID 
+	</h3>
+
+	<kbd>public numeric <strong>returnRelatedEventID</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<p>returns the relatedEventID for a gradedItem</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnSetup()"><!-- --></a>
+	<h3>
+		returnSetup 
+	</h3>
+
+	<kbd>public String <strong>returnSetup</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="returnTypeID()"><!-- --></a>
+	<h3>
+		returnTypeID 
+	</h3>
+
+	<kbd>public Numeric <strong>returnTypeID</strong>(Numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveVisibility()"><!-- --></a>
+	<h3>
+		saveVisibility 
+	</h3>
+
+	<kbd>public any <strong>saveVisibility</strong>(numeric itemID, [boolean visibility='true'], [string role='owner'], [string info='names'])</kbd>
+
+	<br><br>
+
+	
+		<p>saves the visibility for a gradedItem</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>visibility</code></dd>
+		
+		<dd><code>role</code></dd>
+		
+		<dd><code>info</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="studentHasDropboxAssignment()"><!-- --></a>
+	<h3>
+		studentHasDropboxAssignment 
+	</h3>
+
+	<kbd>public boolean <strong>studentHasDropboxAssignment</strong>(numeric courseOfferingID, numeric itemID, numeric stuID, [boolean bypassRequirement='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>gets file link data from dropbox</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>stuID</code></dd>
+		
+		<dd><code>bypassRequirement</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unjoinClassLectureSessions()"><!-- --></a>
+	<h3>
+		unjoinClassLectureSessions 
+	</h3>
+
+	<kbd>public void <strong>unjoinClassLectureSessions</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<p>unjoins class sessions from survey</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unjoinPbPages()"><!-- --></a>
+	<h3>
+		unjoinPbPages 
+	</h3>
+
+	<kbd>public void <strong>unjoinPbPages</strong>(numeric itemID)</kbd>
+
+	<br><br>
+
+	
+		<p>unjoins pagebuilder pages from survey</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateGradedItem()"><!-- --></a>
+	<h3>
+		updateGradedItem 
+	</h3>
+
+	<kbd>public boolean <strong>updateGradedItem</strong>(<a href="../../../../../core/modules/peerEvaluations/model/gradedItems/gradedItem.html" title="class in core.modules.peerEvaluations.model.gradedItems">gradedItem</a> gradedItem)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>gradedItem</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateScoringMethod()"><!-- --></a>
+	<h3>
+		updateScoringMethod 
+	</h3>
+
+	<kbd>public boolean <strong>updateScoringMethod</strong>(numeric itemID, [string scoringMethod='sumOfMedian'])</kbd>
+
+	<br><br>
+
+	
+		<p>changes the scoring method for a gradedItem</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>itemID</code></dd>
+		
+		<dd><code>scoringMethod</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

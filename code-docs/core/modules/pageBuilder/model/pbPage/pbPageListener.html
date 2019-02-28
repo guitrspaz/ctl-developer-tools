@@ -1,0 +1,2602 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pbPageListener</title>
+	<meta name="keywords" content="core.modules.pageBuilder.model.pbPage.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/pageBuilder/model/pbPage/pbPageListener.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.pageBuilder.model.pbPage"><span class="label label-success">core.modules.pageBuilder.model.pbPage</span></a>
+</div>
+
+<h2>
+
+Class
+pbPageListener</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">MachII.framework.BaseComponent
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">MachII.framework.Listener
+        <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../com/distance/base/listener.html" title="class in com.distance.base">com.distance.base.listener</a>
+          <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.pageBuilder.model.pbPage.pbPageListener
+</pre>
+
+
+
+<div id="class-hint">
+	<p>I am the listener for pages</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: page Listener 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbHistoryService()">pbHistoryService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbLectureSurveyService()">pbLectureSurveyService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbPageEventService()">pbPageEventService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbPageGateway()">pbPageGateway</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbPageManager()">pbPageManager</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbPageSpecialStudentAccessManager()">pbPageSpecialStudentAccessManager</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbSectionFactory()">pbSectionFactory</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#pbStatusManager()">pbStatusManager</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#survey2facade()">survey2facade</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBHISTORYSERVICE()">GETPBHISTORYSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBLECTURESURVEYSERVICE()">GETPBLECTURESURVEYSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBPAGEEVENTSERVICE()">GETPBPAGEEVENTSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBPAGEGATEWAY()">GETPBPAGEGATEWAY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBPAGEMANAGER()">GETPBPAGEMANAGER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBPAGESPECIALSTUDENTACCESSMANAGER()">GETPBPAGESPECIALSTUDENTACCESSMANAGER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBSECTIONFACTORY()">GETPBSECTIONFACTORY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETPBSTATUSMANAGER()">GETPBSTATUSMANAGER</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#GETSURVEY2FACADE()">GETSURVEY2FACADE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBHISTORYSERVICE()">SETPBHISTORYSERVICE</A></strong>(any pbHistoryService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBLECTURESURVEYSERVICE()">SETPBLECTURESURVEYSERVICE</A></strong>(any pbLectureSurveyService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBPAGEEVENTSERVICE()">SETPBPAGEEVENTSERVICE</A></strong>(any pbPageEventService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBPAGEGATEWAY()">SETPBPAGEGATEWAY</A></strong>(any pbPageGateway)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBPAGEMANAGER()">SETPBPAGEMANAGER</A></strong>(any pbPageManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBPAGESPECIALSTUDENTACCESSMANAGER()">SETPBPAGESPECIALSTUDENTACCESSMANAGER</A></strong>(any pbPageSpecialStudentAccessManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBSECTIONFACTORY()">SETPBSECTIONFACTORY</A></strong>(any pbSectionFactory)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETPBSTATUSMANAGER()">SETPBSTATUSMANAGER</A></strong>(any pbStatusManager)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#SETSURVEY2FACADE()">SETSURVEY2FACADE</A></strong>(any survey2facade)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#configure()">configure</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I initialize this listener as part of the framework startup.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#createPage()">createPage</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adds page to database.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#deletePage()">deletePage</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I delete a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#downloadLectureMaterial()">downloadLectureMaterial</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#duplicatePage()">duplicatePage</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copy a page in an offering.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getCoursePages()">getCoursePages</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getLectureForPage()">getLectureForPage</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getLectureSurvey()">getLectureSurvey</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getNotificationRecipients()">getNotificationRecipients</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query of all possible recipient combinations for pages .
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getPage()">getPage</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a single page object by page ID, including all its sections.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getPageForEditing()">getPageForEditing</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a single page object by page ID for the purpose of editing page info, therefore, no section data.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getPageIfPageIDInEvent()">getPageIfPageIDInEvent</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a single page object by page ID for the purpose of editing page info, therefore, no section data, if pageID is in event.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getPageInCalendar()">getPageInCalendar</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I search for the page in the course calendar.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getPagesByPageBuilderID()">getPagesByPageBuilderID</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get all the pages based on the current Course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getPagesForQC()">getPagesForQC</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get all the pages based on the current Course.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getStatusHistory()">getStatusHistory</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return the statusHistory of a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getStatusTypes()">getStatusTypes</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a query of status types.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#getUsedLectureNumbers()">getUsedLectureNumbers</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	I retrieve a list of all published lectureNumbers used in this pagebuilder in the form of a structure,.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#importPages()">importPages</A></strong>(MachII.Framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;array</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#populateSectionArray()">populateSectionArray</A></strong>(array sectionArray, query sectionQ)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I take in a sectionID, retrieve that section, and add it to the array.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#reannounceStatus()">reannounceStatus</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I process any action that the page's current status needs again.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#recordPageAccess()">recordPageAccess</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#removePageSpecialAccess()">removePageSpecialAccess</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#resolveEventBuilderDuringBackup()">resolveEventBuilderDuringBackup</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the event builder with the current pageIDs.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#savePageSpecialStudentAccess()">savePageSpecialStudentAccess</A></strong>(MachII.framework.Event event)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#saveSectionLayout()">saveSectionLayout</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the page data in the database.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updateArchived()">updateArchived</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the archived status of a page and associated actions on schedule builder / class sessions /etc.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updateBasicInfo()">updateBasicInfo</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;update basic info of a page.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updateLastOfferingPages()">updateLastOfferingPages</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the event builder with the current pageIDs.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updateLectureEvaluationTitle()">updateLectureEvaluationTitle</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I updateLectureEvaluationTitle.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updatePage()">updatePage</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the page data in the database.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updatePageLayout()">updatePageLayout</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the page data in the database.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updatePublish()">updatePublish</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I take in the event scope and using that, update the page's published flag.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updatePublishMulti()">updatePublishMulti</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I take in the event scope and using that, update the page's published flag.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pbPageListener.html#updateStatus()">updateStatus</A></strong>(MachII.framework.Event event)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I update the status of a page by creating a new status for it.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../com/distance/base/listener.html" title="class in com.distance.base">com.distance.base.listener</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../com/distance/base/listener.html#GETAPPFACTORYNAME()">GETAPPFACTORYNAME</a>, <a href="../../../../../com/distance/base/listener.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../../com/distance/base/listener.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../../com/distance/base/listener.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../../com/distance/base/listener.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../../com/distance/base/listener.html#GETCALLER()">GETCALLER</a>, <a href="../../../../../com/distance/base/listener.html#GETCHILD()">GETCHILD</a>, <a href="../../../../../com/distance/base/listener.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/listener.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/listener.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../../com/distance/base/listener.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../../com/distance/base/listener.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/listener.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/listener.html#GETHASH()">GETHASH</a>, <a href="../../../../../com/distance/base/listener.html#GETLOADED()">GETLOADED</a>, <a href="../../../../../com/distance/base/listener.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../../com/distance/base/listener.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/listener.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../../com/distance/base/listener.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../../com/distance/base/listener.html#GETSERVICEFACTORY()">GETSERVICEFACTORY</a>, <a href="../../../../../com/distance/base/listener.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/listener.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/listener.html#GETUTILITIESSERVICEPROVIDER()">GETUTILITIESSERVICEPROVIDER</a>, <a href="../../../../../com/distance/base/listener.html#QueryToArray()">QueryToArray</a>, <a href="../../../../../com/distance/base/listener.html#SETAPPFACTORYNAME()">SETAPPFACTORYNAME</a>, <a href="../../../../../com/distance/base/listener.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../../com/distance/base/listener.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../../com/distance/base/listener.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../../com/distance/base/listener.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../../com/distance/base/listener.html#SETCALLER()">SETCALLER</a>, <a href="../../../../../com/distance/base/listener.html#SETCHILD()">SETCHILD</a>, <a href="../../../../../com/distance/base/listener.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../../com/distance/base/listener.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../../com/distance/base/listener.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../../com/distance/base/listener.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../../com/distance/base/listener.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../../com/distance/base/listener.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../../com/distance/base/listener.html#SETHASH()">SETHASH</a>, <a href="../../../../../com/distance/base/listener.html#SETLOADED()">SETLOADED</a>, <a href="../../../../../com/distance/base/listener.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../../com/distance/base/listener.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../../com/distance/base/listener.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../../com/distance/base/listener.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../../com/distance/base/listener.html#SETSERVICEFACTORY()">SETSERVICEFACTORY</a>, <a href="../../../../../com/distance/base/listener.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../../com/distance/base/listener.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../../com/distance/base/listener.html#SETUTILITIESSERVICEPROVIDER()">SETUTILITIESSERVICEPROVIDER</a>, <a href="../../../../../com/distance/base/listener.html#addCacheRegionToGlobalVars()">addCacheRegionToGlobalVars</a>, <a href="../../../../../com/distance/base/listener.html#arrayNotation()">arrayNotation</a>, <a href="../../../../../com/distance/base/listener.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../../com/distance/base/listener.html#clearCaches()">clearCaches</a>, <a href="../../../../../com/distance/base/listener.html#configureRegion()">configureRegion</a>, <a href="../../../../../com/distance/base/listener.html#createLog()">createLog</a>, <a href="../../../../../com/distance/base/listener.html#getDefaultRegion()">getDefaultRegion</a>, <a href="../../../../../com/distance/base/listener.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../../com/distance/base/listener.html#getSharedRegion()">getSharedRegion</a>, <a href="../../../../../com/distance/base/listener.html#getStackTrace()">getStackTrace</a>, <a href="../../../../../com/distance/base/listener.html#init()">init</a>, <a href="../../../../../com/distance/base/listener.html#logInit()">logInit</a>, <a href="../../../../../com/distance/base/listener.html#makeFunctName()">makeFunctName</a>, <a href="../../../../../com/distance/base/listener.html#makeSlug()">makeSlug</a>, <a href="../../../../../com/distance/base/listener.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../../com/distance/base/listener.html#objectToStruct()">objectToStruct</a>, <a href="../../../../../com/distance/base/listener.html#paraFormat()">paraFormat</a>, <a href="../../../../../com/distance/base/listener.html#processCacheData()">processCacheData</a>, <a href="../../../../../com/distance/base/listener.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../../com/distance/base/listener.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../../com/distance/base/listener.html#stringToAscii()">stringToAscii</a>, <a href="../../../../../com/distance/base/listener.html#stripHTML()">stripHTML</a>, <a href="../../../../../com/distance/base/listener.html#structToArray()">structToArray</a>, <a href="../../../../../com/distance/base/listener.html#wordCount()">wordCount</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.Listener"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.Listener</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../MachII/framework/Listener.html#getInvoker()">getInvoker</a>, <a href="../../../../../MachII/framework/Listener.html#setInvoker()">setInvoker</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_MachII.framework.BaseComponent"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>MachII.framework.BaseComponent</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../MachII/framework/BaseComponent.html#addHTMLHeadElement()">addHTMLHeadElement</a>, <a href="../../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByName()">addHTTPHeaderByName</a>, <a href="../../../../../MachII/framework/BaseComponent.html#addHTTPHeaderByStatus()">addHTTPHeaderByStatus</a>, <a href="../../../../../MachII/framework/BaseComponent.html#announceEvent()">announceEvent</a>, <a href="../../../../../MachII/framework/BaseComponent.html#announceEventInModule()">announceEventInModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#bindValue()">bindValue</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildCurrentUrl()">buildCurrentUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildRouteUrl()">buildRouteUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildUrl()">buildUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#buildUrlToModule()">buildUrlToModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#deconfigure()">deconfigure</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getAppManager()">getAppManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getAssert()">getAssert</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getComponentNameForLogging()">getComponentNameForLogging</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getLog()">getLog</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameter()">getParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameterNames()">getParameterNames</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getParameters()">getParameters</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getProperty()">getProperty</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getPropertyManager()">getPropertyManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getProxy()">getProxy</a>, <a href="../../../../../MachII/framework/BaseComponent.html#getUtils()">getUtils</a>, <a href="../../../../../MachII/framework/BaseComponent.html#hasParameter()">hasParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#isParameterDefined()">isParameterDefined</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectEvent()">redirectEvent</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectEventInModule()">redirectEventInModule</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectRoute()">redirectRoute</a>, <a href="../../../../../MachII/framework/BaseComponent.html#redirectUrl()">redirectUrl</a>, <a href="../../../../../MachII/framework/BaseComponent.html#resolveValueByEnvironment()">resolveValueByEnvironment</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setAppManager()">setAppManager</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setLog()">setLog</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setParameter()">setParameter</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setParameters()">setParameters</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setProperty()">setProperty</a>, <a href="../../../../../MachII/framework/BaseComponent.html#setProxy()">setProxy</a>, <a href="../../../../../MachII/framework/BaseComponent.html#uploadFile()">uploadFile</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="pbHistoryService()"><!-- --></a>
+		<h3>pbHistoryService</h3>
+
+		<kbd>
+			property any <strong>pbHistoryService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbLectureSurveyService()"><!-- --></a>
+		<h3>pbLectureSurveyService</h3>
+
+		<kbd>
+			property any <strong>pbLectureSurveyService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbPageEventService()"><!-- --></a>
+		<h3>pbPageEventService</h3>
+
+		<kbd>
+			property any <strong>pbPageEventService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbPageGateway()"><!-- --></a>
+		<h3>pbPageGateway</h3>
+
+		<kbd>
+			property any <strong>pbPageGateway</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbPageManager()"><!-- --></a>
+		<h3>pbPageManager</h3>
+
+		<kbd>
+			property any <strong>pbPageManager</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbPageSpecialStudentAccessManager()"><!-- --></a>
+		<h3>pbPageSpecialStudentAccessManager</h3>
+
+		<kbd>
+			property any <strong>pbPageSpecialStudentAccessManager</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbSectionFactory()"><!-- --></a>
+		<h3>pbSectionFactory</h3>
+
+		<kbd>
+			property any <strong>pbSectionFactory</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pbStatusManager()"><!-- --></a>
+		<h3>pbStatusManager</h3>
+
+		<kbd>
+			property any <strong>pbStatusManager</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="survey2facade()"><!-- --></a>
+		<h3>survey2facade</h3>
+
+		<kbd>
+			property any <strong>survey2facade</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETPBHISTORYSERVICE()"><!-- --></a>
+	<h3>
+		GETPBHISTORYSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETPBHISTORYSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBLECTURESURVEYSERVICE()"><!-- --></a>
+	<h3>
+		GETPBLECTURESURVEYSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETPBLECTURESURVEYSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBPAGEEVENTSERVICE()"><!-- --></a>
+	<h3>
+		GETPBPAGEEVENTSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETPBPAGEEVENTSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBPAGEGATEWAY()"><!-- --></a>
+	<h3>
+		GETPBPAGEGATEWAY 
+	</h3>
+
+	<kbd>public any <strong>GETPBPAGEGATEWAY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBPAGEMANAGER()"><!-- --></a>
+	<h3>
+		GETPBPAGEMANAGER 
+	</h3>
+
+	<kbd>public any <strong>GETPBPAGEMANAGER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBPAGESPECIALSTUDENTACCESSMANAGER()"><!-- --></a>
+	<h3>
+		GETPBPAGESPECIALSTUDENTACCESSMANAGER 
+	</h3>
+
+	<kbd>public any <strong>GETPBPAGESPECIALSTUDENTACCESSMANAGER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBSECTIONFACTORY()"><!-- --></a>
+	<h3>
+		GETPBSECTIONFACTORY 
+	</h3>
+
+	<kbd>public any <strong>GETPBSECTIONFACTORY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPBSTATUSMANAGER()"><!-- --></a>
+	<h3>
+		GETPBSTATUSMANAGER 
+	</h3>
+
+	<kbd>public any <strong>GETPBSTATUSMANAGER</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEY2FACADE()"><!-- --></a>
+	<h3>
+		GETSURVEY2FACADE 
+	</h3>
+
+	<kbd>public any <strong>GETSURVEY2FACADE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBHISTORYSERVICE()"><!-- --></a>
+	<h3>
+		SETPBHISTORYSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBHISTORYSERVICE</strong>(any pbHistoryService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbHistoryService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBLECTURESURVEYSERVICE()"><!-- --></a>
+	<h3>
+		SETPBLECTURESURVEYSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBLECTURESURVEYSERVICE</strong>(any pbLectureSurveyService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbLectureSurveyService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBPAGEEVENTSERVICE()"><!-- --></a>
+	<h3>
+		SETPBPAGEEVENTSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBPAGEEVENTSERVICE</strong>(any pbPageEventService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbPageEventService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBPAGEGATEWAY()"><!-- --></a>
+	<h3>
+		SETPBPAGEGATEWAY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBPAGEGATEWAY</strong>(any pbPageGateway)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbPageGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBPAGEMANAGER()"><!-- --></a>
+	<h3>
+		SETPBPAGEMANAGER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBPAGEMANAGER</strong>(any pbPageManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbPageManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBPAGESPECIALSTUDENTACCESSMANAGER()"><!-- --></a>
+	<h3>
+		SETPBPAGESPECIALSTUDENTACCESSMANAGER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBPAGESPECIALSTUDENTACCESSMANAGER</strong>(any pbPageSpecialStudentAccessManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbPageSpecialStudentAccessManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBSECTIONFACTORY()"><!-- --></a>
+	<h3>
+		SETPBSECTIONFACTORY 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBSECTIONFACTORY</strong>(any pbSectionFactory)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbSectionFactory</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPBSTATUSMANAGER()"><!-- --></a>
+	<h3>
+		SETPBSTATUSMANAGER 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETPBSTATUSMANAGER</strong>(any pbStatusManager)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pbStatusManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEY2FACADE()"><!-- --></a>
+	<h3>
+		SETSURVEY2FACADE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPageListener.html" title="class in core.modules.pageBuilder.model.pbPage">pbPageListener</a> <strong>SETSURVEY2FACADE</strong>(any survey2facade)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>survey2facade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="configure()"><!-- --></a>
+	<h3>
+		configure 
+	</h3>
+
+	<kbd>public void <strong>configure</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I initialize this listener as part of the framework startup.</p>
+	
+		<dl>
+			<dt><strong>Overrides:</strong></dt>
+			<dd>
+			<code>
+			<a href="../../../../../com/distance/base/listener.html#configure()">configure</a></code>
+			in class
+			<code>
+				<a href="../../../../../com/distance/base/listener.html" title="class in com.distance.base">listener</a>
+			</code>
+			</dd>
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createPage()"><!-- --></a>
+	<h3>
+		createPage 
+	</h3>
+
+	<kbd>public any <strong>createPage</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>adds page to database</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deletePage()"><!-- --></a>
+	<h3>
+		deletePage 
+	</h3>
+
+	<kbd>public void <strong>deletePage</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I delete a page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="downloadLectureMaterial()"><!-- --></a>
+	<h3>
+		downloadLectureMaterial 
+	</h3>
+
+	<kbd>public struct <strong>downloadLectureMaterial</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="duplicatePage()"><!-- --></a>
+	<h3>
+		duplicatePage 
+	</h3>
+
+	<kbd>public void <strong>duplicatePage</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>copy a page in an offering</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCoursePages()"><!-- --></a>
+	<h3>
+		getCoursePages 
+	</h3>
+
+	<kbd>public query <strong>getCoursePages</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureForPage()"><!-- --></a>
+	<h3>
+		getLectureForPage 
+	</h3>
+
+	<kbd>public Numeric <strong>getLectureForPage</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getLectureSurvey()"><!-- --></a>
+	<h3>
+		getLectureSurvey 
+	</h3>
+
+	<kbd>public Numeric <strong>getLectureSurvey</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getNotificationRecipients()"><!-- --></a>
+	<h3>
+		getNotificationRecipients 
+	</h3>
+
+	<kbd>public query <strong>getNotificationRecipients</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query of all possible recipient combinations for pages </p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPage()"><!-- --></a>
+	<h3>
+		getPage 
+	</h3>
+
+	<kbd>public any <strong>getPage</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a single page object by page ID, including all its sections</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageForEditing()"><!-- --></a>
+	<h3>
+		getPageForEditing 
+	</h3>
+
+	<kbd>public any <strong>getPageForEditing</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a single page object by page ID for the purpose of editing page info, therefore, no section data</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageIfPageIDInEvent()"><!-- --></a>
+	<h3>
+		getPageIfPageIDInEvent 
+	</h3>
+
+	<kbd>public any <strong>getPageIfPageIDInEvent</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I return a single page object by page ID for the purpose of editing page info, therefore, no section data, if pageID is in event</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPageInCalendar()"><!-- --></a>
+	<h3>
+		getPageInCalendar 
+	</h3>
+
+	<kbd>public any <strong>getPageInCalendar</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I search for the page in the course calendar.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I'm the current Event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPagesByPageBuilderID()"><!-- --></a>
+	<h3>
+		getPagesByPageBuilderID 
+	</h3>
+
+	<kbd>public any <strong>getPagesByPageBuilderID</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I get all the pages based on the current Course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPagesForQC()"><!-- --></a>
+	<h3>
+		getPagesForQC 
+	</h3>
+
+	<kbd>public any <strong>getPagesForQC</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I get all the pages based on the current Course</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStatusHistory()"><!-- --></a>
+	<h3>
+		getStatusHistory 
+	</h3>
+
+	<kbd>public query <strong>getStatusHistory</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I return the statusHistory of a page</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStatusTypes()"><!-- --></a>
+	<h3>
+		getStatusTypes 
+	</h3>
+
+	<kbd>public any <strong>getStatusTypes</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return a query of status types</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getUsedLectureNumbers()"><!-- --></a>
+	<h3>
+		getUsedLectureNumbers 
+	</h3>
+
+	<kbd>public struct <strong>getUsedLectureNumbers</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>	I retrieve a list of all published lectureNumbers used in this pagebuilder in the form of a structure,
+						with lectureNumber as the key and a list of pageIDs with that lectureNumber as the value</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="importPages()"><!-- --></a>
+	<h3>
+		importPages 
+	</h3>
+
+	<kbd>public Void <strong>importPages</strong>(MachII.Framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="populateSectionArray()"><!-- --></a>
+	<h3>
+		populateSectionArray 
+	</h3>
+
+	<kbd>private array <strong>populateSectionArray</strong>(array sectionArray, query sectionQ)</kbd>
+
+	<br><br>
+
+	
+		<p>I take in a sectionID, retrieve that section, and add it to the array</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>sectionArray</code> - I'm an array that houses section Items</dd>
+		
+		<dd><code>sectionQ</code> - I am the query that houses section data</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="reannounceStatus()"><!-- --></a>
+	<h3>
+		reannounceStatus 
+	</h3>
+
+	<kbd>public void <strong>reannounceStatus</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I process any action that the page's current status needs again</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="recordPageAccess()"><!-- --></a>
+	<h3>
+		recordPageAccess 
+	</h3>
+
+	<kbd>public any <strong>recordPageAccess</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="removePageSpecialAccess()"><!-- --></a>
+	<h3>
+		removePageSpecialAccess 
+	</h3>
+
+	<kbd>public any <strong>removePageSpecialAccess</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="resolveEventBuilderDuringBackup()"><!-- --></a>
+	<h3>
+		resolveEventBuilderDuringBackup 
+	</h3>
+
+	<kbd>public struct <strong>resolveEventBuilderDuringBackup</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the event builder with the current pageIDs</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="savePageSpecialStudentAccess()"><!-- --></a>
+	<h3>
+		savePageSpecialStudentAccess 
+	</h3>
+
+	<kbd>public any <strong>savePageSpecialStudentAccess</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveSectionLayout()"><!-- --></a>
+	<h3>
+		saveSectionLayout 
+	</h3>
+
+	<kbd>public any <strong>saveSectionLayout</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the page data in the database.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateArchived()"><!-- --></a>
+	<h3>
+		updateArchived 
+	</h3>
+
+	<kbd>public struct <strong>updateArchived</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the archived status of a page and associated actions on schedule builder / class sessions /etc</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateBasicInfo()"><!-- --></a>
+	<h3>
+		updateBasicInfo 
+	</h3>
+
+	<kbd>public any <strong>updateBasicInfo</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>update basic info of a page.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateLastOfferingPages()"><!-- --></a>
+	<h3>
+		updateLastOfferingPages 
+	</h3>
+
+	<kbd>public struct <strong>updateLastOfferingPages</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the event builder with the current pageIDs</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateLectureEvaluationTitle()"><!-- --></a>
+	<h3>
+		updateLectureEvaluationTitle 
+	</h3>
+
+	<kbd>public void <strong>updateLectureEvaluationTitle</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I updateLectureEvaluationTitle</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePage()"><!-- --></a>
+	<h3>
+		updatePage 
+	</h3>
+
+	<kbd>public any <strong>updatePage</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the page data in the database.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePageLayout()"><!-- --></a>
+	<h3>
+		updatePageLayout 
+	</h3>
+
+	<kbd>public any <strong>updatePageLayout</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the page data in the database.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePublish()"><!-- --></a>
+	<h3>
+		updatePublish 
+	</h3>
+
+	<kbd>public void <strong>updatePublish</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I take in the event scope and using that, update the page's published flag</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePublishMulti()"><!-- --></a>
+	<h3>
+		updatePublishMulti 
+	</h3>
+
+	<kbd>public void <strong>updatePublishMulti</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I take in the event scope and using that, update the page's published flag</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updateStatus()"><!-- --></a>
+	<h3>
+		updateStatus 
+	</h3>
+
+	<kbd>public void <strong>updateStatus</strong>(MachII.framework.Event event)</kbd>
+
+	<br><br>
+
+	
+		<p>I update the status of a page by creating a new status for it</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>event</code> - I am the current event</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

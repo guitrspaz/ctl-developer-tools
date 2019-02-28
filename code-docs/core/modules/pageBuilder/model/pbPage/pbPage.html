@@ -1,0 +1,2670 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pbPage</title>
+	<meta name="keywords" content="core.modules.pageBuilder.model.pbPage.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/pageBuilder/model/pbPage/pbPage.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.pageBuilder.model.pbPage"><span class="label label-success">core.modules.pageBuilder.model.pbPage</span></a>
+</div>
+
+<h2>
+
+Class
+pbPage</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by "><a href="../../../../../core/modules/pageBuilder/model/tools/bean.html" title="class in core.modules.pageBuilder.model.tools">core.modules.pageBuilder.model.tools.bean</a>
+      <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.pageBuilder.model.pbPage.pbPage
+</pre>
+
+
+
+<div class="panel panel-default">
+	<div class="panel-heading"><strong>Direct Known Subclasses:</strong></div>
+  	<div class="panel-body">
+	
+		<a href="../../../../../core/modules/pageBuilder/model/pbPage/pbActivity.html" title="class in core.modules.pageBuilder.model.pbPage">pbActivity</a>
+	,
+		<a href="../../../../../core/modules/pageBuilder/model/pbPage/pbLecture.html" title="class in core.modules.pageBuilder.model.pbPage">pbLecture</a>
+	
+	</div>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: pbPage 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				copyright: 
+				: Johns Hopkins University 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				name: 
+				: pbPage 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				hint: 
+				: I set the properties of a pagebuilder page 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				author: 
+				: Boson Au (boson.au@jhu.edu) 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				created: 
+				: 03/05/2018 12:14 PM 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#_sections()">_sections</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#copyOfLectureSessionID()">copyOfLectureSessionID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#copyOfPageID()">copyOfPageID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#description()">description</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#errors()">errors</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#isArchived()">isArchived</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#isPublic()">isPublic</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#language()">language</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#languageString()">languageString</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#numOfColumns()">numOfColumns</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>2</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#pageBuilderID()">pageBuilderID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#pageID()">pageID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#pageImage()">pageImage</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#pageType()">pageType</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#pageTypeName()">pageTypeName</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#subTitle()">subTitle</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#surveyID()">surveyID</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>0</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#title()">title</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="pbPage.html#init()">init</A></strong>([Numeric pageID='0'], [Numeric pageBuilderID='0'], [String title=''], [String subTitle=''], [Numeric language='0'], [String languageString=''], [String description=''], [Numeric pageType='0'], [String pageTypeName=''], [Boolean pageImage='0'], [Array _sections='[runtime expression]'], [Boolean isArchived='0'], [Numeric numOfColumns='2'], [Numeric copyOfPageID='0'], [Numeric copyOfLectureSessionID='0'], [Numeric surveyID='0'], [Boolean isPublic='0'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETCOPYOFLECTURESESSIONID()">GETCOPYOFLECTURESESSIONID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETCOPYOFPAGEID()">GETCOPYOFPAGEID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETDESCRIPTION()">GETDESCRIPTION</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETERRORS()">GETERRORS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETISARCHIVED()">GETISARCHIVED</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETISPUBLIC()">GETISPUBLIC</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETLANGUAGE()">GETLANGUAGE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETLANGUAGESTRING()">GETLANGUAGESTRING</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETNUMOFCOLUMNS()">GETNUMOFCOLUMNS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETPAGEBUILDERID()">GETPAGEBUILDERID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETPAGEID()">GETPAGEID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETPAGEIMAGE()">GETPAGEIMAGE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETPAGETYPE()">GETPAGETYPE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETPAGETYPENAME()">GETPAGETYPENAME</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETSUBTITLE()">GETSUBTITLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETSURVEYID()">GETSURVEYID</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GETTITLE()">GETTITLE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#GET_SECTIONS()">GET_SECTIONS</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETCOPYOFLECTURESESSIONID()">SETCOPYOFLECTURESESSIONID</A></strong>(numeric copyOfLectureSessionID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETCOPYOFPAGEID()">SETCOPYOFPAGEID</A></strong>(numeric copyOfPageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETDESCRIPTION()">SETDESCRIPTION</A></strong>(string description)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETERRORS()">SETERRORS</A></strong>(struct errors)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETISARCHIVED()">SETISARCHIVED</A></strong>(boolean isArchived)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETISPUBLIC()">SETISPUBLIC</A></strong>(boolean isPublic)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETLANGUAGE()">SETLANGUAGE</A></strong>(numeric language)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETLANGUAGESTRING()">SETLANGUAGESTRING</A></strong>(string languageString)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETNUMOFCOLUMNS()">SETNUMOFCOLUMNS</A></strong>(numeric numOfColumns)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETPAGEBUILDERID()">SETPAGEBUILDERID</A></strong>(numeric pageBuilderID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETPAGEID()">SETPAGEID</A></strong>(numeric pageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETPAGEIMAGE()">SETPAGEIMAGE</A></strong>(boolean pageImage)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETPAGETYPE()">SETPAGETYPE</A></strong>(numeric pageType)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETPAGETYPENAME()">SETPAGETYPENAME</A></strong>(string pageTypeName)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETSUBTITLE()">SETSUBTITLE</A></strong>(string subTitle)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETSURVEYID()">SETSURVEYID</A></strong>(numeric surveyID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SETTITLE()">SETTITLE</A></strong>(string title)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a></code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#SET_SECTIONS()">SET_SECTIONS</A></strong>(array _sections)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pbPage.html#validate()">validate</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.pageBuilder.model.tools.bean"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../../core/modules/pageBuilder/model/tools/bean.html" title="class in core.modules.pageBuilder.model.tools">core.modules.pageBuilder.model.tools.bean</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../../core/modules/pageBuilder/model/tools/bean.html#getMemento()">getMemento</a>, <a href="../../../../../core/modules/pageBuilder/model/tools/bean.html#getSnapshot()">getSnapshot</a>, <a href="../../../../../core/modules/pageBuilder/model/tools/bean.html#toJSON()">toJSON</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([Numeric pageID='0'], [Numeric pageBuilderID='0'], [String title=''], [String subTitle=''], [Numeric language='0'], [String languageString=''], [String description=''], [Numeric pageType='0'], [String pageTypeName=''], [Boolean pageImage='0'], [Array _sections='[runtime expression]'], [Boolean isArchived='0'], [Numeric numOfColumns='2'], [Numeric copyOfPageID='0'], [Numeric copyOfLectureSessionID='0'], [Numeric surveyID='0'], [Boolean isPublic='0'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>pageID</code></dd>
+		
+			<dd><code>pageBuilderID</code></dd>
+		
+			<dd><code>title</code></dd>
+		
+			<dd><code>subTitle</code></dd>
+		
+			<dd><code>language</code></dd>
+		
+			<dd><code>languageString</code></dd>
+		
+			<dd><code>description</code></dd>
+		
+			<dd><code>pageType</code></dd>
+		
+			<dd><code>pageTypeName</code></dd>
+		
+			<dd><code>pageImage</code></dd>
+		
+			<dd><code>_sections</code></dd>
+		
+			<dd><code>isArchived</code></dd>
+		
+			<dd><code>numOfColumns</code></dd>
+		
+			<dd><code>copyOfPageID</code></dd>
+		
+			<dd><code>copyOfLectureSessionID</code></dd>
+		
+			<dd><code>surveyID</code></dd>
+		
+			<dd><code>isPublic</code></dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="_sections()"><!-- --></a>
+		<h3>_sections</h3>
+
+		<kbd>
+			property array <strong>_sections</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="copyOfLectureSessionID()"><!-- --></a>
+		<h3>copyOfLectureSessionID</h3>
+
+		<kbd>
+			property numeric <strong>copyOfLectureSessionID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="copyOfPageID()"><!-- --></a>
+		<h3>copyOfPageID</h3>
+
+		<kbd>
+			property numeric <strong>copyOfPageID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="description()"><!-- --></a>
+		<h3>description</h3>
+
+		<kbd>
+			property string <strong>description</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="errors()"><!-- --></a>
+		<h3>errors</h3>
+
+		<kbd>
+			property struct <strong>errors</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isArchived()"><!-- --></a>
+		<h3>isArchived</h3>
+
+		<kbd>
+			property boolean <strong>isArchived</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="isPublic()"><!-- --></a>
+		<h3>isPublic</h3>
+
+		<kbd>
+			property boolean <strong>isPublic</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="language()"><!-- --></a>
+		<h3>language</h3>
+
+		<kbd>
+			property numeric <strong>language</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="languageString()"><!-- --></a>
+		<h3>languageString</h3>
+
+		<kbd>
+			property string <strong>languageString</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="numOfColumns()"><!-- --></a>
+		<h3>numOfColumns</h3>
+
+		<kbd>
+			property numeric <strong>numOfColumns</strong> 
+			= [2]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageBuilderID()"><!-- --></a>
+		<h3>pageBuilderID</h3>
+
+		<kbd>
+			property numeric <strong>pageBuilderID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageID()"><!-- --></a>
+		<h3>pageID</h3>
+
+		<kbd>
+			property numeric <strong>pageID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageImage()"><!-- --></a>
+		<h3>pageImage</h3>
+
+		<kbd>
+			property boolean <strong>pageImage</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageType()"><!-- --></a>
+		<h3>pageType</h3>
+
+		<kbd>
+			property numeric <strong>pageType</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="pageTypeName()"><!-- --></a>
+		<h3>pageTypeName</h3>
+
+		<kbd>
+			property string <strong>pageTypeName</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="subTitle()"><!-- --></a>
+		<h3>subTitle</h3>
+
+		<kbd>
+			property string <strong>subTitle</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="surveyID()"><!-- --></a>
+		<h3>surveyID</h3>
+
+		<kbd>
+			property numeric <strong>surveyID</strong> 
+			= [0]
+			
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="title()"><!-- --></a>
+		<h3>title</h3>
+
+		<kbd>
+			property string <strong>title</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETCOPYOFLECTURESESSIONID()"><!-- --></a>
+	<h3>
+		GETCOPYOFLECTURESESSIONID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOPYOFLECTURESESSIONID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETCOPYOFPAGEID()"><!-- --></a>
+	<h3>
+		GETCOPYOFPAGEID 
+	</h3>
+
+	<kbd>public numeric <strong>GETCOPYOFPAGEID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETDESCRIPTION()"><!-- --></a>
+	<h3>
+		GETDESCRIPTION 
+	</h3>
+
+	<kbd>public string <strong>GETDESCRIPTION</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETERRORS()"><!-- --></a>
+	<h3>
+		GETERRORS 
+	</h3>
+
+	<kbd>public struct <strong>GETERRORS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISARCHIVED()"><!-- --></a>
+	<h3>
+		GETISARCHIVED 
+	</h3>
+
+	<kbd>public boolean <strong>GETISARCHIVED</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETISPUBLIC()"><!-- --></a>
+	<h3>
+		GETISPUBLIC 
+	</h3>
+
+	<kbd>public boolean <strong>GETISPUBLIC</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETLANGUAGE()"><!-- --></a>
+	<h3>
+		GETLANGUAGE 
+	</h3>
+
+	<kbd>public numeric <strong>GETLANGUAGE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETLANGUAGESTRING()"><!-- --></a>
+	<h3>
+		GETLANGUAGESTRING 
+	</h3>
+
+	<kbd>public string <strong>GETLANGUAGESTRING</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETNUMOFCOLUMNS()"><!-- --></a>
+	<h3>
+		GETNUMOFCOLUMNS 
+	</h3>
+
+	<kbd>public numeric <strong>GETNUMOFCOLUMNS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAGEBUILDERID()"><!-- --></a>
+	<h3>
+		GETPAGEBUILDERID 
+	</h3>
+
+	<kbd>public numeric <strong>GETPAGEBUILDERID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAGEID()"><!-- --></a>
+	<h3>
+		GETPAGEID 
+	</h3>
+
+	<kbd>public numeric <strong>GETPAGEID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAGEIMAGE()"><!-- --></a>
+	<h3>
+		GETPAGEIMAGE 
+	</h3>
+
+	<kbd>public boolean <strong>GETPAGEIMAGE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAGETYPE()"><!-- --></a>
+	<h3>
+		GETPAGETYPE 
+	</h3>
+
+	<kbd>public numeric <strong>GETPAGETYPE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETPAGETYPENAME()"><!-- --></a>
+	<h3>
+		GETPAGETYPENAME 
+	</h3>
+
+	<kbd>public string <strong>GETPAGETYPENAME</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSUBTITLE()"><!-- --></a>
+	<h3>
+		GETSUBTITLE 
+	</h3>
+
+	<kbd>public string <strong>GETSUBTITLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETSURVEYID()"><!-- --></a>
+	<h3>
+		GETSURVEYID 
+	</h3>
+
+	<kbd>public numeric <strong>GETSURVEYID</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETTITLE()"><!-- --></a>
+	<h3>
+		GETTITLE 
+	</h3>
+
+	<kbd>public string <strong>GETTITLE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GET_SECTIONS()"><!-- --></a>
+	<h3>
+		GET_SECTIONS 
+	</h3>
+
+	<kbd>public array <strong>GET_SECTIONS</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOPYOFLECTURESESSIONID()"><!-- --></a>
+	<h3>
+		SETCOPYOFLECTURESESSIONID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETCOPYOFLECTURESESSIONID</strong>(numeric copyOfLectureSessionID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>copyOfLectureSessionID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETCOPYOFPAGEID()"><!-- --></a>
+	<h3>
+		SETCOPYOFPAGEID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETCOPYOFPAGEID</strong>(numeric copyOfPageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>copyOfPageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETDESCRIPTION()"><!-- --></a>
+	<h3>
+		SETDESCRIPTION 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETDESCRIPTION</strong>(string description)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>description</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETERRORS()"><!-- --></a>
+	<h3>
+		SETERRORS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETERRORS</strong>(struct errors)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>errors</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISARCHIVED()"><!-- --></a>
+	<h3>
+		SETISARCHIVED 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETISARCHIVED</strong>(boolean isArchived)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isArchived</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETISPUBLIC()"><!-- --></a>
+	<h3>
+		SETISPUBLIC 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETISPUBLIC</strong>(boolean isPublic)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>isPublic</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETLANGUAGE()"><!-- --></a>
+	<h3>
+		SETLANGUAGE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETLANGUAGE</strong>(numeric language)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>language</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETLANGUAGESTRING()"><!-- --></a>
+	<h3>
+		SETLANGUAGESTRING 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETLANGUAGESTRING</strong>(string languageString)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>languageString</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETNUMOFCOLUMNS()"><!-- --></a>
+	<h3>
+		SETNUMOFCOLUMNS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETNUMOFCOLUMNS</strong>(numeric numOfColumns)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>numOfColumns</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAGEBUILDERID()"><!-- --></a>
+	<h3>
+		SETPAGEBUILDERID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETPAGEBUILDERID</strong>(numeric pageBuilderID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageBuilderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAGEID()"><!-- --></a>
+	<h3>
+		SETPAGEID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETPAGEID</strong>(numeric pageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAGEIMAGE()"><!-- --></a>
+	<h3>
+		SETPAGEIMAGE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETPAGEIMAGE</strong>(boolean pageImage)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageImage</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAGETYPE()"><!-- --></a>
+	<h3>
+		SETPAGETYPE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETPAGETYPE</strong>(numeric pageType)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageType</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETPAGETYPENAME()"><!-- --></a>
+	<h3>
+		SETPAGETYPENAME 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETPAGETYPENAME</strong>(string pageTypeName)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pageTypeName</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSUBTITLE()"><!-- --></a>
+	<h3>
+		SETSUBTITLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETSUBTITLE</strong>(string subTitle)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>subTitle</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETSURVEYID()"><!-- --></a>
+	<h3>
+		SETSURVEYID 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETSURVEYID</strong>(numeric surveyID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>surveyID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETTITLE()"><!-- --></a>
+	<h3>
+		SETTITLE 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SETTITLE</strong>(string title)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>title</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SET_SECTIONS()"><!-- --></a>
+	<h3>
+		SET_SECTIONS 
+	</h3>
+
+	<kbd>public <a href="../../../../../core/modules/pageBuilder/model/pbPage/pbPage.html" title="class in core.modules.pageBuilder.model.pbPage">pbPage</a> <strong>SET_SECTIONS</strong>(array _sections)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>_sections</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

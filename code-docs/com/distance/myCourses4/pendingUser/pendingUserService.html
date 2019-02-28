@@ -1,0 +1,1329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pendingUserService</title>
+	<meta name="keywords" content="com.distance.myCourses4.pendingUser.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?com/distance/myCourses4/pendingUser/pendingUserService.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: com.distance.myCourses4.pendingUser"><span class="label label-success">com.distance.myCourses4.pendingUser</span></a>
+</div>
+
+<h2>
+
+Class
+pendingUserService</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a>
+          <img src="../../../../resources/inherit.gif" alt="extended by ">com.distance.myCourses4.pendingUser.pendingUserService
+</pre>
+
+
+
+<div id="class-hint">
+	<p>Service component for pendingUser objects in the MyCourses4 system.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: pendingUserService 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				accessors 
+				: true 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#emailUtility()">emailUtility</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#enrollmentService()">enrollmentService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#geographyService()">geographyService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#offeringService()">offeringService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#userService()">userService</A></strong>
+			<br>
+			
+			<br><br>
+			<ul>
+			
+				<li class="label label-default label-annotations">getter = true</li>
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+				<li class="label label-default label-annotations">setter = true</li>
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="pendingUserService.html#init()">init</A></strong>()
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I initialize this object.
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#GETEMAILUTILITY()">GETEMAILUTILITY</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#GETENROLLMENTSERVICE()">GETENROLLMENTSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#GETGEOGRAPHYSERVICE()">GETGEOGRAPHYSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#GETOFFERINGSERVICE()">GETOFFERINGSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#GETUSERSERVICE()">GETUSERSERVICE</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a></code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#SETEMAILUTILITY()">SETEMAILUTILITY</A></strong>(any emailUtility)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a></code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#SETENROLLMENTSERVICE()">SETENROLLMENTSERVICE</A></strong>(any enrollmentService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a></code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#SETGEOGRAPHYSERVICE()">SETGEOGRAPHYSERVICE</A></strong>(any geographyService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a></code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#SETOFFERINGSERVICE()">SETOFFERINGSERVICE</A></strong>(any offeringService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a></code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#SETUSERSERVICE()">SETUSERSERVICE</A></strong>(any userService)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#approvePending()">approvePending</A></strong>(numeric pendingUserID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approves a pending user object and creates a new, valid user object out of it.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#createPending()">createPending</A></strong>(<a href="../../../../com/distance/myCourses4/pendingUser/pendingUser.html" title="class in com.distance.myCourses4.pendingUser">pendingUser</a> pendingUser)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a pending user.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#deletePending()">deletePending</A></strong>(numeric pendingUserID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deletes a pending user object.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;string</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#generateConfirmationCode()">generateConfirmationCode</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates a confirmation code for registrant email confirmation.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#getAllPending()">getAllPending</A></strong>([boolean showIOLRegistrantsOnly='false'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of pending user objects.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>query</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#getIOLThreeTimeTryers()">getIOLThreeTimeTryers</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an query of pendingUsers who have already enrolled in IOL three times.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../com/distance/myCourses4/pendingUser/pendingUser.html" title="class in com.distance.myCourses4.pendingUser">pendingUser</a></code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#getPending()">getPending</A></strong>(numeric pendingUserID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a pending user object.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#getPendingUserIDFromConfirmationCode()">getPendingUserIDFromConfirmationCode</A></strong>(String confCode)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#hasExistingAccount()">hasExistingAccount</A></strong>(string email)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a boolean indicating if the user has an account (record with matching email address) within the system.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#isAlreadyPending()">isAlreadyPending</A></strong>(string email)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a boolean indicating if the user already has a record in the pending table (record with matching email address) within the system.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="pendingUserService.html#updatePending()">updatePending</A></strong>(<a href="../../../../com/distance/myCourses4/pendingUser/pendingUser.html" title="class in com.distance.myCourses4.pendingUser">pendingUser</a> pendingUser)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates a pending user object.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.dao"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/dao.html" title="class in com.distance.base">com.distance.base.dao</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/dao.html#GETDSN()">GETDSN</a>, <a href="../../../../com/distance/base/dao.html#SETDSN()">SETDSN</a>, <a href="../../../../com/distance/base/dao.html#configureDAO()">configureDAO</a>, <a href="../../../../com/distance/base/dao.html#getFormattedUser()">getFormattedUser</a>, <a href="../../../../com/distance/base/dao.html#getUser()">getUser</a>, <a href="../../../../com/distance/base/dao.html#getcourseIdFromCourseOfferingId()">getcourseIdFromCourseOfferingId</a>, <a href="../../../../com/distance/base/dao.html#gethardCodeDSN()">gethardCodeDSN</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../com/distance/base/service.html#queryRowToStruct()">queryRowToStruct</a>, <a href="../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>()</kbd>
+
+	<br><br>
+
+	
+	<p>I initialize this object</p>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		<a name="emailUtility()"><!-- --></a>
+		<h3>emailUtility</h3>
+
+		<kbd>
+			property any <strong>emailUtility</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="enrollmentService()"><!-- --></a>
+		<h3>enrollmentService</h3>
+
+		<kbd>
+			property any <strong>enrollmentService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="geographyService()"><!-- --></a>
+		<h3>geographyService</h3>
+
+		<kbd>
+			property any <strong>geographyService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="offeringService()"><!-- --></a>
+		<h3>offeringService</h3>
+
+		<kbd>
+			property any <strong>offeringService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+		<a name="userService()"><!-- --></a>
+		<h3>userService</h3>
+
+		<kbd>
+			property any <strong>userService</strong> 
+		</kbd>
+
+		<br><br>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			<dd><code>getter</code> - true</dd>
+			
+			<dd><code>returntype</code> - any</dd>
+			
+			<dd><code>required</code> - false</dd>
+			
+			<dd><code>setter</code> - true</dd>
+			
+			<dd><code>access</code> - public</dd>
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		</dl>
+
+		<hr>
+	
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="GETEMAILUTILITY()"><!-- --></a>
+	<h3>
+		GETEMAILUTILITY 
+	</h3>
+
+	<kbd>public any <strong>GETEMAILUTILITY</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETENROLLMENTSERVICE()"><!-- --></a>
+	<h3>
+		GETENROLLMENTSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETENROLLMENTSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETGEOGRAPHYSERVICE()"><!-- --></a>
+	<h3>
+		GETGEOGRAPHYSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETGEOGRAPHYSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETOFFERINGSERVICE()"><!-- --></a>
+	<h3>
+		GETOFFERINGSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETOFFERINGSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="GETUSERSERVICE()"><!-- --></a>
+	<h3>
+		GETUSERSERVICE 
+	</h3>
+
+	<kbd>public any <strong>GETUSERSERVICE</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETEMAILUTILITY()"><!-- --></a>
+	<h3>
+		SETEMAILUTILITY 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a> <strong>SETEMAILUTILITY</strong>(any emailUtility)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>emailUtility</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETENROLLMENTSERVICE()"><!-- --></a>
+	<h3>
+		SETENROLLMENTSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a> <strong>SETENROLLMENTSERVICE</strong>(any enrollmentService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>enrollmentService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETGEOGRAPHYSERVICE()"><!-- --></a>
+	<h3>
+		SETGEOGRAPHYSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a> <strong>SETGEOGRAPHYSERVICE</strong>(any geographyService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>geographyService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETOFFERINGSERVICE()"><!-- --></a>
+	<h3>
+		SETOFFERINGSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a> <strong>SETOFFERINGSERVICE</strong>(any offeringService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>offeringService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="SETUSERSERVICE()"><!-- --></a>
+	<h3>
+		SETUSERSERVICE 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/pendingUser/pendingUserService.html" title="class in com.distance.myCourses4.pendingUser">pendingUserService</a> <strong>SETUSERSERVICE</strong>(any userService)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="approvePending()"><!-- --></a>
+	<h3>
+		approvePending 
+	</h3>
+
+	<kbd>public numeric <strong>approvePending</strong>(numeric pendingUserID)</kbd>
+
+	<br><br>
+
+	
+		<p>Approves a pending user object and creates a new, valid user object out of it. Returns the new userID.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pendingUserID</code> - The PKEY ID of the pending user.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="createPending()"><!-- --></a>
+	<h3>
+		createPending 
+	</h3>
+
+	<kbd>public void <strong>createPending</strong>(<a href="../../../../com/distance/myCourses4/pendingUser/pendingUser.html" title="class in com.distance.myCourses4.pendingUser">pendingUser</a> pendingUser)</kbd>
+
+	<br><br>
+
+	
+		<p>Creates a pending user.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pendingUser</code> - I am the pendingUser to approve and create a user object for.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deletePending()"><!-- --></a>
+	<h3>
+		deletePending 
+	</h3>
+
+	<kbd>public void <strong>deletePending</strong>(numeric pendingUserID)</kbd>
+
+	<br><br>
+
+	
+		<p>Deletes a pending user object.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pendingUserID</code> - I am the pendingUser to delete.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="generateConfirmationCode()"><!-- --></a>
+	<h3>
+		generateConfirmationCode 
+	</h3>
+
+	<kbd>private string <strong>generateConfirmationCode</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Generates a confirmation code for registrant email confirmation.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getAllPending()"><!-- --></a>
+	<h3>
+		getAllPending 
+	</h3>
+
+	<kbd>public array <strong>getAllPending</strong>([boolean showIOLRegistrantsOnly='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an array of pending user objects.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>showIOLRegistrantsOnly</code> - Boolean value indicating if we only want to get people who have signed up for IOL</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getIOLThreeTimeTryers()"><!-- --></a>
+	<h3>
+		getIOLThreeTimeTryers 
+	</h3>
+
+	<kbd>public query <strong>getIOLThreeTimeTryers</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an query of pendingUsers who have already enrolled in IOL three times.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPending()"><!-- --></a>
+	<h3>
+		getPending 
+	</h3>
+
+	<kbd>public <a href="../../../../com/distance/myCourses4/pendingUser/pendingUser.html" title="class in com.distance.myCourses4.pendingUser">pendingUser</a> <strong>getPending</strong>(numeric pendingUserID)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a pending user object.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pendingUserID</code> - The PKEY ID of the pending user.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getPendingUserIDFromConfirmationCode()"><!-- --></a>
+	<h3>
+		getPendingUserIDFromConfirmationCode 
+	</h3>
+
+	<kbd>public Numeric <strong>getPendingUserIDFromConfirmationCode</strong>(String confCode)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>confCode</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="hasExistingAccount()"><!-- --></a>
+	<h3>
+		hasExistingAccount 
+	</h3>
+
+	<kbd>public boolean <strong>hasExistingAccount</strong>(string email)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a boolean indicating if the user has an account (record with matching email address) within the system.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>email</code> - The string value of the email address to check</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="isAlreadyPending()"><!-- --></a>
+	<h3>
+		isAlreadyPending 
+	</h3>
+
+	<kbd>public boolean <strong>isAlreadyPending</strong>(string email)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a boolean indicating if the user already has a record in the pending table (record with matching email address) within the system.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>email</code> - The string value of the email address to check</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="updatePending()"><!-- --></a>
+	<h3>
+		updatePending 
+	</h3>
+
+	<kbd>public void <strong>updatePending</strong>(<a href="../../../../com/distance/myCourses4/pendingUser/pendingUser.html" title="class in com.distance.myCourses4.pendingUser">pendingUser</a> pendingUser)</kbd>
+
+	<br><br>
+
+	
+		<p>Updates a pending user object.</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>pendingUser</code> - I am the pendingUser to approve and create a user object for.</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

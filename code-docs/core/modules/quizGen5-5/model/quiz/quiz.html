@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>quiz</title>
+	<meta name="keywords" content="core.modules.quizGen5-5.model.quiz.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?core/modules/quizGen5-5/model/quiz/quiz.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.quizGen5-5.model.quiz"><span class="label label-success">core.modules.quizGen5-5.model.quiz</span></a>
+</div>
+
+<h2>
+
+Class
+quiz</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">core.modules.quizGen5-5.model.quiz.quiz
+</pre>
+
+
+
+<div id="class-hint">
+	<p>A bean which models the quiz object in this system.</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				displayname 
+				: quiz 
+			</li>
+			&nbsp;
+			
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="quiz.html#init()">init</A></strong>([numeric quizID='0'], [numeric courseID='0'], [numeric courseOfferingID='0'], [numeric oldQuizID='0'], [numeric oldCourseOfferingID='0'], [string availableDate='[runtime expression]'], [string endAvailDate='[runtime expression]'], [string title=''], [string assessmentTypeText='quiz'], [string instructionText=''], [boolean isGraded='0'], [boolean isQuizPartOfFinalGrade='0'], [boolean highStakesFlag='0'], [numeric numTimesCanAccess='1'], [numeric maxNumberOfAttempts='1'], [numeric sendReminderDaysBefore='0'], [boolean keepClockRunning='0'], [boolean randomizeQuestionDisplay='0'], [numeric totalQuestionsInQuiz='0'], [numeric numberOfQuestionsToDisplay='0'], [boolean displayQuestionHints='0'], [boolean allowPrinting='0'], [boolean displayAnswerKeyAfterEndDate='0'], [string displayAnswerKeyUntilDate=''], [numeric questionsNeededToPass='0'], [numeric timeLimit='0'], [numeric notificationAlarm1='0'], [numeric notificationAlarm2='0'], [numeric notificationAlarm3='0'], [boolean requiresPassword='0'], [boolean hideShowMeAnswers='0'], [boolean holdEmailResults='0'], [boolean incResponsesInFacNotifyEmail='0'], [boolean displayAnsKeyBeforeScoringComplete='0'], [string facultyNotificationEmail=''], [string textToDisplayAfterSubmit=''], [array questions='[runtime expression]'], [string screenNotificationsList=''], [string emailNotificationsList=''], [string linkToClassSessionsList=''], [string linkToPbPagesList=''], [date lastModified='[runtime expression]'], [boolean sendStuQuizResponse='0'], [boolean requireStudentSignature='0'], [boolean requireProctorSignature='0'])
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#addQuestion()">addQuestion</A></strong>(any quizQuestion)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#deleteQuestion()">deleteQuestion</A></strong>(any question)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#getInvalidFields()">getInvalidFields</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a comma-separated list of data fields that are invalid in this quizUser bean.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#getListOfQuestionIDs()">getListOfQuestionIDs</A></strong>([boolean excludeNonQuestionBlocks='false'], [boolean includeBlockChildren='false'])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Utility function for quiz instances: returns a list of all ID values of all questions currently in the quiz, in their current order.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#getMissingFields()">getMissingFields</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I return a comma-separated list of data fields that are missing from this quizUser bean.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#getNumberOfQuestionsInQuiz()">getNumberOfQuestionsInQuiz</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of questions in a quiz, excluding non-question text blocks and including children inside of question blocks.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#onMissingMethod()">onMissingMethod</A></strong>([string missingMethodName], [struct missingMethodArguments])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#toStruct()">toStruct</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="quiz.html#validate()">validate</A></strong>()
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I validate all the data fields in this quiz.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([numeric quizID='0'], [numeric courseID='0'], [numeric courseOfferingID='0'], [numeric oldQuizID='0'], [numeric oldCourseOfferingID='0'], [string availableDate='[runtime expression]'], [string endAvailDate='[runtime expression]'], [string title=''], [string assessmentTypeText='quiz'], [string instructionText=''], [boolean isGraded='0'], [boolean isQuizPartOfFinalGrade='0'], [boolean highStakesFlag='0'], [numeric numTimesCanAccess='1'], [numeric maxNumberOfAttempts='1'], [numeric sendReminderDaysBefore='0'], [boolean keepClockRunning='0'], [boolean randomizeQuestionDisplay='0'], [numeric totalQuestionsInQuiz='0'], [numeric numberOfQuestionsToDisplay='0'], [boolean displayQuestionHints='0'], [boolean allowPrinting='0'], [boolean displayAnswerKeyAfterEndDate='0'], [string displayAnswerKeyUntilDate=''], [numeric questionsNeededToPass='0'], [numeric timeLimit='0'], [numeric notificationAlarm1='0'], [numeric notificationAlarm2='0'], [numeric notificationAlarm3='0'], [boolean requiresPassword='0'], [boolean hideShowMeAnswers='0'], [boolean holdEmailResults='0'], [boolean incResponsesInFacNotifyEmail='0'], [boolean displayAnsKeyBeforeScoringComplete='0'], [string facultyNotificationEmail=''], [string textToDisplayAfterSubmit=''], [array questions='[runtime expression]'], [string screenNotificationsList=''], [string emailNotificationsList=''], [string linkToClassSessionsList=''], [string linkToPbPagesList=''], [date lastModified='[runtime expression]'], [boolean sendStuQuizResponse='0'], [boolean requireStudentSignature='0'], [boolean requireProctorSignature='0'])</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>quizID</code> - The integer PKEY value of the quiz we want</dd>
+		
+			<dd><code>courseID</code> - The integer FKEY value of the course this quiz belongs to</dd>
+		
+			<dd><code>courseOfferingID</code> - The integer FKEY value of the course offering this quiz belongs to</dd>
+		
+			<dd><code>oldQuizID</code> - The integer PKEY value of the quiz in the last offering of the course, used for copying</dd>
+		
+			<dd><code>oldCourseOfferingID</code> - The integer FKEY value of the last course offering this quiz belongs to, used for copying</dd>
+		
+			<dd><code>availableDate</code> - The string value of the datetime the quiz becomes available to students</dd>
+		
+			<dd><code>endAvailDate</code> - The string value of the datetime the quiz is no longer available to students</dd>
+		
+			<dd><code>title</code> - The string value of the title of the quiz</dd>
+		
+			<dd><code>assessmentTypeText</code> - The string value of type of assessment this is (quiz, assessment, exam, etc.)</dd>
+		
+			<dd><code>instructionText</code> - The string value of the quiz instructions</dd>
+		
+			<dd><code>isGraded</code> - The boolean value indicating if this quiz is graded or not (graded = can only take once)</dd>
+		
+			<dd><code>isQuizPartOfFinalGrade</code> - The boolean value indicating if this quiz is computed as part of the student final grade</dd>
+		
+			<dd><code>highStakesFlag</code> - The boolean value indicating if we should flag students who leave the quiz page while taking the quiz</dd>
+		
+			<dd><code>numTimesCanAccess</code> - The numeric value indicating the number of times that students can access a single attempt on a quiz</dd>
+		
+			<dd><code>maxNumberOfAttempts</code> - The numeric value indicating the number of times that students can take and submit answers to a given quiz</dd>
+		
+			<dd><code>sendReminderDaysBefore</code> - The numeric value of the number of days before the quiz due date to send reminders to complete the quiz to those who have not done so</dd>
+		
+			<dd><code>keepClockRunning</code> - The boolean value indicating if the countdown clock should keep running even when customers leave the quiz page</dd>
+		
+			<dd><code>randomizeQuestionDisplay</code> - The boolean value indicating if the display order of questions is to be randomized</dd>
+		
+			<dd><code>totalQuestionsInQuiz</code> - The numeric value indicating the total number of questions assigned to this quiz, including the questions in question blocks</dd>
+		
+			<dd><code>numberOfQuestionsToDisplay</code> - The numeric value indicating the number of questions from the available set for this quiz should be used. 0 = use all questions.</dd>
+		
+			<dd><code>displayQuestionHints</code> - The boolean value indicating if question hints should be displayed to the student</dd>
+		
+			<dd><code>allowPrinting</code> - The boolean value indicating if the print media style sheet should be allowed or filled with black</dd>
+		
+			<dd><code>displayAnswerKeyAfterEndDate</code> - The boolean value indicating if the answer key should be displayed to students after the end date of the quiz</dd>
+		
+			<dd><code>displayAnswerKeyUntilDate</code> - The string value of the datetime until which the answer key should be shown, if any</dd>
+		
+			<dd><code>questionsNeededToPass</code> - The numeric value of the number of questions needed to answer correctly to pass this quiz</dd>
+		
+			<dd><code>timeLimit</code> - The numeric value, in minutes, of the total time a student has to complete the quiz</dd>
+		
+			<dd><code>notificationAlarm1</code> - The numeric value, in minutes, of the time the first timeout warning should be displayed to the student</dd>
+		
+			<dd><code>notificationAlarm2</code> - The numeric value, in minutes, of the time the second timeout warning should be displayed to the student</dd>
+		
+			<dd><code>notificationAlarm3</code> - The numeric value, in minutes, of the time the third timeout warning should be displayed to the student</dd>
+		
+			<dd><code>requiresPassword</code> - The boolean value indicating if a system-generated password is required to take this quiz</dd>
+		
+			<dd><code>hideShowMeAnswers</code> - The boolean value indicating if the Show Me the Answers button should be hidden on a non-graded quiz</dd>
+		
+			<dd><code>holdEmailResults</code> - The boolean value indicating if email notification of results should be held, even if the quiz is fully graded</dd>
+		
+			<dd><code>incResponsesInFacNotifyEmail</code> - The boolean value indicating if the full set of student responses to a quiz should be included in a notification of quiz taking email to the faculty</dd>
+		
+			<dd><code>displayAnsKeyBeforeScoringComplete</code> - The boolean value indicating if the answer key should be shown to students even before their quiz has been scored</dd>
+		
+			<dd><code>facultyNotificationEmail</code> - The string value of the email address(es) to which selected notifications should be sent</dd>
+		
+			<dd><code>textToDisplayAfterSubmit</code> - The string value of the text to display to the students after response submission</dd>
+		
+			<dd><code>questions</code> - The array of quizQuestion objects that belong to this quiz</dd>
+		
+			<dd><code>screenNotificationsList</code> - The string value of the integer list of post-quiz notifications to be displayed on the screen to the student</dd>
+		
+			<dd><code>emailNotificationsList</code> - The string value of the integer list of post-quiz notifications to be emailed to the student</dd>
+		
+			<dd><code>linkToClassSessionsList</code> - The string value of the integer list of IDs of on-campus class sessions to which this quiz is linked</dd>
+		
+			<dd><code>linkToPbPagesList</code> - The string value of the integer list of IDs of pagebuilder pages to which this quiz is linked</dd>
+		
+			<dd><code>lastModified</code> - The date value of the last time the object record was modified</dd>
+		
+			<dd><code>sendStuQuizResponse</code> - The boolean value indicating if immediately send a copy of the student's responses (and only their responses) to the student in the email confirming successful submission.</dd>
+		
+			<dd><code>requireStudentSignature</code> - The boolean value indicating if the student must sign their name before submitting responses to a quiz.</dd>
+		
+			<dd><code>requireProctorSignature</code> - The boolean value indicating if the proctor must sign their name before submitting responses to a quiz.</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="addQuestion()"><!-- --></a>
+	<h3>
+		addQuestion 
+	</h3>
+
+	<kbd>public void <strong>addQuestion</strong>(any quizQuestion)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>quizQuestion</code> - The question we want to add to the array of questions for this quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteQuestion()"><!-- --></a>
+	<h3>
+		deleteQuestion 
+	</h3>
+
+	<kbd>public void <strong>deleteQuestion</strong>(any question)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>question</code> - The question we want to remove from the array of questions for this quiz</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getInvalidFields()"><!-- --></a>
+	<h3>
+		getInvalidFields 
+	</h3>
+
+	<kbd>public string <strong>getInvalidFields</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return a comma-separated list of data fields that are invalid in this quizUser bean.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getListOfQuestionIDs()"><!-- --></a>
+	<h3>
+		getListOfQuestionIDs 
+	</h3>
+
+	<kbd>public string <strong>getListOfQuestionIDs</strong>([boolean excludeNonQuestionBlocks='false'], [boolean includeBlockChildren='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>Utility function for quiz instances: returns a list of all ID values of all questions currently in the quiz, in their current order</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>excludeNonQuestionBlocks</code> - Boolean value indicating if non-question text blocks should be excluded from this list</dd>
+		
+		<dd><code>includeBlockChildren</code> - Boolean value indicating if children of question blocks should be included in this list</dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMissingFields()"><!-- --></a>
+	<h3>
+		getMissingFields 
+	</h3>
+
+	<kbd>public string <strong>getMissingFields</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I return a comma-separated list of data fields that are missing from this quizUser bean.</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getNumberOfQuestionsInQuiz()"><!-- --></a>
+	<h3>
+		getNumberOfQuestionsInQuiz 
+	</h3>
+
+	<kbd>public numeric <strong>getNumberOfQuestionsInQuiz</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns the number of questions in a quiz, excluding non-question text blocks and including children inside of question blocks</p>
+	
+
+	</dl>
+	<hr>
+
+	<a name="onMissingMethod()"><!-- --></a>
+	<h3>
+		onMissingMethod 
+	</h3>
+
+	<kbd>public any <strong>onMissingMethod</strong>([string missingMethodName], [struct missingMethodArguments])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>missingMethodName</code></dd>
+		
+		<dd><code>missingMethodArguments</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="toStruct()"><!-- --></a>
+	<h3>
+		toStruct 
+	</h3>
+
+	<kbd>public struct <strong>toStruct</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="validate()"><!-- --></a>
+	<h3>
+		validate 
+	</h3>
+
+	<kbd>public boolean <strong>validate</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>I validate all the data fields in this quiz.</p>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>

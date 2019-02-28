@@ -1,0 +1,1711 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>mailerManager</title>
+	<meta name="keywords" content="core.modules.mailer.model.concurrent.Callable interface">
+	<!-- common assets -->
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>CoursePlus</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					<li><a href="../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../index.html?core/modules/mailer/model/mailerManager.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: core.modules.mailer.model"><span class="label label-success">core.modules.mailer.model</span></a>
+</div>
+
+<h2>
+
+Class
+mailerManager</h2>
+
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">WEB-INF.cftags.component
+    <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a>
+      <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a>
+        <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../core/modules/mailer/model/tools/xmlConvertTools.html" title="class in core.modules.mailer.model.tools">core.modules.mailer.model.tools.xmlConvertTools</a>
+          <img src="../../../../resources/inherit.gif" alt="extended by "><a href="../../../../core/modules/mailer/model/tools/gatewayTools.html" title="class in core.modules.mailer.model.tools">core.modules.mailer.model.tools.gatewayTools</a>
+            <img src="../../../../resources/inherit.gif" alt="extended by ">core.modules.mailer.model.mailerManager
+</pre>
+
+
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+			<li class="label label-danger label-annotations">
+				output 
+				: false 
+			</li>
+			&nbsp;
+			
+	</div>
+</div>
+
+
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="mailerManager.html#init()">init</A></strong>()
+				<br>
+				
+			</td>
+		</tr>
+	</table>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#delDraftMessage()">delDraftMessage</A></strong>(numeric MessageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajax call - deletes  message.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#deleteAttachments()">deleteAttachments</A></strong>(numeric messageID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getClassEmailArchive()">getClassEmailArchive</A></strong>(numeric courseID, numeric courseOfferingID, [boolean isAdmin='false'], [Boolean includeAllFaculty='false'], [numeric viewerID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getClassEmailDrafts()">getClassEmailDrafts</A></strong>(numeric courseID, numeric courseOfferingID, [boolean isAdmin='false'], [numeric viewerID='0'])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getClassSessionMessageAndSubject()">getClassSessionMessageAndSubject</A></strong>(Numeric courseOfferingID, Numeric attendanceClassSessionID, string courseNum, string courseTitle)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getCourseGroups()">getCourseGroups</A></strong>(Numeric courseID, Numeric courseOfferingID, numeric userID, Boolean isAdmin)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getCustomCCEmailCheck()">getCustomCCEmailCheck</A></strong>(Numeric courseOfferingID, String customCCList)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets array of duplicate emails/stuids.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getEnrolledStudents()">getEnrolledStudents</A></strong>(Numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides student Name (name), ID (ID) and status (userStatus) as an array of structures.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getEnrollmentNamesAsList()">getEnrollmentNamesAsList</A></strong>(Numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets the enrollment names as structure which includes two strings in which usernames and id are separeted with '|'.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getEveryone()">getEveryone</A></strong>(Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getMessage()">getMessage</A></strong>(Numeric messageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;load the current message.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>xml</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getMessageXML()">getMessageXML</A></strong>(Numeric messageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajax call - gets  message as an xml.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getSearchResults()">getSearchResults</A></strong>(Numeric courseOfferingID, String searchKey)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getStaff()">getStaff</A></strong>(Numeric courseOfferingID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getStudentGroups()">getStudentGroups</A></strong>(Numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gets all groups related with the offering as a query.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Query</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getStudentQuery()">getStudentQuery</A></strong>(Numeric courseOfferingID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets enrolled students list as a query.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getStudentsByCourseGroup()">getStudentsByCourseGroup</A></strong>(Numeric AppID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;Array</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#getUsersDetails()">getUsersDetails</A></strong>(String userList)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#prepareSubmissionReport()">prepareSubmissionReport</A></strong>(Array ArrSubmission)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>Numeric</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#saveAttachment()">saveAttachment</A></strong>([numeric emailAttachmentID], [numeric broadcastEmailMessageID], [string fileLocation], [string fileName], [Date recordTime])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#saveDraftMessage()">saveDraftMessage</A></strong>(numeric messageID, numeric courseID, numeric CourseOfferingID, String courseShort, struct mailInformation, numeric senderID)
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#saveMessage()">saveMessage</A></strong>(numeric MessageID, [numeric CourseOfferingID='0'], [string MessageSubject=''], [string MessageBody=''], boolean isEntireClass, [boolean isAllStudents='0'], [string recordTime=''], [numeric senderID='0'], [string senderName=''], [string fromEmail=''], [boolean isArchive='0'], [boolean isAnnouncement='0'], [boolean sendToMe='0'], [boolean draftStatus='0'], [string sendDate=''], [string customCCList=''], [string scheduledSendDateTime=''], [boolean needTechSupport])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#sendEMail()">sendEMail</A></strong>(numeric messageID, [numeric courseID], [numeric CourseOfferingID], [String courseShort], [struct mailInformation], [numeric senderID], [string recordTime], [boolean sendSavedMessage])
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#sendScheduledMessages()">sendScheduledMessages</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setMessageGateway()">setMessageGateway</A></strong>(any MessageGateway)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: MessageGateway.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setNewsFlashService()">setNewsFlashService</A></strong>(<a href="../../../../core/modules/newsFlashes/model/newsFlashService.html" title="class in core.modules.newsFlashes.model">newsFlashService</a> newsFlashService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: newsFlashService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setSpoolerFacade()">setSpoolerFacade</A></strong>(any spoolerFacade)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: spoolerFacade.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setattachmentService()">setattachmentService</A></strong>([any attachmentService])
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: attachmentService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setattendanceTrackerFacade()">setattendanceTrackerFacade</A></strong>(any attendanceTrackerFacade)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: attendanceTrackerFacade.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setcommunicationService()">setcommunicationService</A></strong>(<a href="../../../../core/modules/mailer/model/communication/communicationService.html" title="class in core.modules.mailer.model.communication">communicationService</a> communicationService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: communicationService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setcourseGroupsFacade()">setcourseGroupsFacade</A></strong>(any courseGroupsFacade)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: courseGroupsFacade.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setctlHelpMetrics()">setctlHelpMetrics</A></strong>(any ctlHelpMetrics)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: ctlHelpMetrics.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setctlHelpMetricsService()">setctlHelpMetricsService</A></strong>(any ctlHelpMetricsService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: ctlHelpMetricsService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setfileUpload()">setfileUpload</A></strong>(any fileUpload)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: fileUpload.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setlistArrayOfObjectsTools()">setlistArrayOfObjectsTools</A></strong>(any listArrayOfObjectsTools)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: listArrayOfObjectsTools.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setmessageSendManager()">setmessageSendManager</A></strong>(any messageSendManager)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: messageSendManager.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setmessageService()">setmessageService</A></strong>(any messageService)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: messageService.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#setmyCoursesFacade()">setmyCoursesFacade</A></strong>(any myCoursesFacade)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependency: myCoursesFacade.
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="mailerManager.html#unDraftMessage()">unDraftMessage</A></strong>(numeric MessageID)
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soft deletes  message.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.mailer.model.tools.gatewayTools"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../core/modules/mailer/model/tools/gatewayTools.html" title="class in core.modules.mailer.model.tools">core.modules.mailer.model.tools.gatewayTools</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../core/modules/mailer/model/tools/gatewayTools.html#queryRowToStruct()">queryRowToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_core.modules.mailer.model.tools.xmlConvertTools"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../core/modules/mailer/model/tools/xmlConvertTools.html" title="class in core.modules.mailer.model.tools">core.modules.mailer.model.tools.xmlConvertTools</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../core/modules/mailer/model/tools/xmlConvertTools.html#UnicodeWin1252()">UnicodeWin1252</a>, <a href="../../../../core/modules/mailer/model/tools/xmlConvertTools.html#arrayToXML()">arrayToXML</a>, <a href="../../../../core/modules/mailer/model/tools/xmlConvertTools.html#safeText()">safeText</a>, <a href="../../../../core/modules/mailer/model/tools/xmlConvertTools.html#structToXML()">structToXML</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.service"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/service.html" title="class in com.distance.base">com.distance.base.service</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/service.html#ArrayJoin()">ArrayJoin</a>, <a href="../../../../com/distance/base/service.html#ArrayOfStructSort()">ArrayOfStructSort</a>, <a href="../../../../com/distance/base/service.html#Merge()">Merge</a>, <a href="../../../../com/distance/base/service.html#MergeSort()">MergeSort</a>, <a href="../../../../com/distance/base/service.html#appendAttrs()">appendAttrs</a>, <a href="../../../../com/distance/base/service.html#buildBaseXml()">buildBaseXml</a>, <a href="../../../../com/distance/base/service.html#checkForPrototype()">checkForPrototype</a>, <a href="../../../../com/distance/base/service.html#configure()">configure</a>, <a href="../../../../com/distance/base/service.html#filterIsBasic()">filterIsBasic</a>, <a href="../../../../com/distance/base/service.html#filterStudents()">filterStudents</a>, <a href="../../../../com/distance/base/service.html#getBeanDefinitions()">getBeanDefinitions</a>, <a href="../../../../com/distance/base/service.html#getHashedReportFileName()">getHashedReportFileName</a>, <a href="../../../../com/distance/base/service.html#getOfferingEnrollment()">getOfferingEnrollment</a>, <a href="../../../../com/distance/base/service.html#handleFormArray()">handleFormArray</a>, <a href="../../../../com/distance/base/service.html#hasConfigure()">hasConfigure</a>, <a href="../../../../com/distance/base/service.html#importNodes()">importNodes</a>, <a href="../../../../com/distance/base/service.html#isUnique()">isUnique</a>, <a href="../../../../com/distance/base/service.html#makeFunctName()">makeFunctName</a>, <a href="../../../../com/distance/base/service.html#makeSlug()">makeSlug</a>, <a href="../../../../com/distance/base/service.html#manageDecimals()">manageDecimals</a>, <a href="../../../../com/distance/base/service.html#objectToStruct()">objectToStruct</a>, <a href="../../../../com/distance/base/service.html#paraFormat()">paraFormat</a>, <a href="../../../../com/distance/base/service.html#randomizeKeys()">randomizeKeys</a>, <a href="../../../../com/distance/base/service.html#replaceUnwantedCharacters()">replaceUnwantedCharacters</a>, <a href="../../../../com/distance/base/service.html#returnProperties()">returnProperties</a>, <a href="../../../../com/distance/base/service.html#returnService()">returnService</a>, <a href="../../../../com/distance/base/service.html#returnStructModel()">returnStructModel</a>, <a href="../../../../com/distance/base/service.html#sendToDeveloper()">sendToDeveloper</a>, <a href="../../../../com/distance/base/service.html#stripHTML()">stripHTML</a>, <a href="../../../../com/distance/base/service.html#updateCourseOfferingIDInString()">updateCourseOfferingIDInString</a>, <a href="../../../../com/distance/base/service.html#wordCount()">wordCount</a>, <a href="../../../../com/distance/base/service.html#xmlExtractChildren()">xmlExtractChildren</a>, <a href="../../../../com/distance/base/service.html#xmlNodeToStruct()">xmlNodeToStruct</a>, <a href="../../../../com/distance/base/service.html#zeroCallback()">zeroCallback</a>, <a href="../../../../com/distance/base/service.html#zeroOut()">zeroOut</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_com.distance.base.coursePlusObject"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd><a href="../../../../com/distance/base/coursePlusObject.html" title="class in com.distance.base">com.distance.base.coursePlusObject</a></kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="../../../../com/distance/base/coursePlusObject.html#GETAPPCACHEREGIONS()">GETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBASECLASS()">GETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETBLUEPRINTS()">GETBLUEPRINTS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHENAME()">GETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHEREGION()">GETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHESCOPES()">GETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCACHETYPES()">GETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCALLER()">GETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCHILD()">GETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCOMPAREDATE()">GETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCONFIGUREDAT()">GETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETCTLEMAIL()">GETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEBUGMODE()">GETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTDATE()">GETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEFAULTLOG()">GETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETDEVELOPEREMAIL()">GETDEVELOPEREMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETEXTENDEDINCLUSIONS()">GETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETFILEPATH()">GETFILEPATH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETHASH()">GETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNLOCALCACHEREGIONS()">GETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETKNOWNSHAREDCACHEREGIONS()">GETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETLOADED()">GETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULENAME()">GETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEPREFIX()">GETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEROOT()">GETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETMODULEVERSION()">GETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETPARAMALIASES()">GETPARAMALIASES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSHAREDCACHE()">GETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSUPPORTEMAIL()">GETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#GETSYSTEMUSER()">GETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#QueryToArray()">QueryToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETAPPCACHEREGIONS()">SETAPPCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBASECLASS()">SETBASECLASS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETBLUEPRINTS()">SETBLUEPRINTS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHENAME()">SETCACHENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHEREGION()">SETCACHEREGION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHESCOPES()">SETCACHESCOPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCACHETYPES()">SETCACHETYPES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCALLER()">SETCALLER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCHILD()">SETCHILD</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCOMPAREDATE()">SETCOMPAREDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCONFIGUREDAT()">SETCONFIGUREDAT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETCTLEMAIL()">SETCTLEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEBUGMODE()">SETDEBUGMODE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTDATE()">SETDEFAULTDATE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEFAULTLOG()">SETDEFAULTLOG</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETDEVELOPEREMAIL()">SETDEVELOPEREMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETEXTENDEDINCLUSIONS()">SETEXTENDEDINCLUSIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETFILEPATH()">SETFILEPATH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETHASH()">SETHASH</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNLOCALCACHEREGIONS()">SETKNOWNLOCALCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETKNOWNSHAREDCACHEREGIONS()">SETKNOWNSHAREDCACHEREGIONS</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETLOADED()">SETLOADED</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULENAME()">SETMODULENAME</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEPREFIX()">SETMODULEPREFIX</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEROOT()">SETMODULEROOT</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETMODULEVERSION()">SETMODULEVERSION</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETPARAMALIASES()">SETPARAMALIASES</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSHAREDCACHE()">SETSHAREDCACHE</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSUPPORTEMAIL()">SETSUPPORTEMAIL</a>, <a href="../../../../com/distance/base/coursePlusObject.html#SETSYSTEMUSER()">SETSYSTEMUSER</a>, <a href="../../../../com/distance/base/coursePlusObject.html#aggregateDefineableProperties()">aggregateDefineableProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#arrayToStruct()">arrayToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#clearCaches()">clearCaches</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureAppCacheRegions()">configureAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCPObject()">configureCPObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureCacheRegion()">configureCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureModuleCacheRegion()">configureModuleCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#configureParamAliases()">configureParamAliases</a>, <a href="../../../../com/distance/base/coursePlusObject.html#createLog()">createLog</a>, <a href="../../../../com/distance/base/coursePlusObject.html#doLogging()">doLogging</a>, <a href="../../../../com/distance/base/coursePlusObject.html#existsInPackages()">existsInPackages</a>, <a href="../../../../com/distance/base/coursePlusObject.html#filterProperties()">filterProperties</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findArrayItemsInString()">findArrayItemsInString</a>, <a href="../../../../com/distance/base/coursePlusObject.html#findPluralName()">findPluralName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatCacheKeyArrayData()">formatCacheKeyArrayData</a>, <a href="../../../../com/distance/base/coursePlusObject.html#formatParams()">formatParams</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getObjectAsStructure()">getObjectAsStructure</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getSnapShot()">getSnapShot</a>, <a href="../../../../com/distance/base/coursePlusObject.html#getStackTrace()">getStackTrace</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importComplexProperty()">importComplexProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#importObject()">importObject</a>, <a href="../../../../com/distance/base/coursePlusObject.html#initAppCacheRegions()">initAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#loadCacheRegions()">loadCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#logInit()">logInit</a>, <a href="../../../../com/distance/base/coursePlusObject.html#makeBlueprint()">makeBlueprint</a>, <a href="../../../../com/distance/base/coursePlusObject.html#mergeCacheTypes()">mergeCacheTypes</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyCallback()">propertyCallback</a>, <a href="../../../../com/distance/base/coursePlusObject.html#propertyMetaDataToStruct()">propertyMetaDataToStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#queryFromArrayOfComplexObjects()">queryFromArrayOfComplexObjects</a>, <a href="../../../../com/distance/base/coursePlusObject.html#readExistingCacheRegions()">readExistingCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnAppCacheRegions()">returnAppCacheRegions</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheName()">returnCacheName</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCacheRegion()">returnCacheRegion</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnCompareDate()">returnCompareDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnDefaultDate()">returnDefaultDate</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnNull()">returnNull</a>, <a href="../../../../com/distance/base/coursePlusObject.html#returnTypeDefault()">returnTypeDefault</a>, <a href="../../../../com/distance/base/coursePlusObject.html#reverseStruct()">reverseStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#stringToAscii()">stringToAscii</a>, <a href="../../../../com/distance/base/coursePlusObject.html#structToArray()">structToArray</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toNativeFormat()">toNativeFormat</a>, <a href="../../../../com/distance/base/coursePlusObject.html#toStruct()">toStruct</a>, <a href="../../../../com/distance/base/coursePlusObject.html#validateProperty()">validateProperty</a>, <a href="../../../../com/distance/base/coursePlusObject.html#xmlObjectToStruct()">xmlObjectToStruct</a> 
+			</td>
+		</tr>
+	</table>
+
+
+	&nbsp;
+	<a name="methods_inherited_from_class_WEB-INF.cftags.component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>WEB-INF.cftags.component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>()</kbd>
+
+	<br><br>
+
+	
+	<p></p>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	<a name="delDraftMessage()"><!-- --></a>
+	<h3>
+		delDraftMessage 
+	</h3>
+
+	<kbd>public struct <strong>delDraftMessage</strong>(numeric MessageID)</kbd>
+
+	<br><br>
+
+	
+		<p>ajax call - deletes  message</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>MessageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="deleteAttachments()"><!-- --></a>
+	<h3>
+		deleteAttachments 
+	</h3>
+
+	<kbd>public void <strong>deleteAttachments</strong>(numeric messageID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getClassEmailArchive()"><!-- --></a>
+	<h3>
+		getClassEmailArchive 
+	</h3>
+
+	<kbd>public struct <strong>getClassEmailArchive</strong>(numeric courseID, numeric courseOfferingID, [boolean isAdmin='false'], [Boolean includeAllFaculty='false'], [numeric viewerID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>isAdmin</code></dd>
+		
+		<dd><code>includeAllFaculty</code></dd>
+		
+		<dd><code>viewerID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getClassEmailDrafts()"><!-- --></a>
+	<h3>
+		getClassEmailDrafts 
+	</h3>
+
+	<kbd>public struct <strong>getClassEmailDrafts</strong>(numeric courseID, numeric courseOfferingID, [boolean isAdmin='false'], [numeric viewerID='0'])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>isAdmin</code></dd>
+		
+		<dd><code>viewerID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getClassSessionMessageAndSubject()"><!-- --></a>
+	<h3>
+		getClassSessionMessageAndSubject 
+	</h3>
+
+	<kbd>public struct <strong>getClassSessionMessageAndSubject</strong>(Numeric courseOfferingID, Numeric attendanceClassSessionID, string courseNum, string courseTitle)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>attendanceClassSessionID</code></dd>
+		
+		<dd><code>courseNum</code></dd>
+		
+		<dd><code>courseTitle</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCourseGroups()"><!-- --></a>
+	<h3>
+		getCourseGroups 
+	</h3>
+
+	<kbd>public Array <strong>getCourseGroups</strong>(Numeric courseID, Numeric courseOfferingID, numeric userID, Boolean isAdmin)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>userID</code></dd>
+		
+		<dd><code>isAdmin</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getCustomCCEmailCheck()"><!-- --></a>
+	<h3>
+		getCustomCCEmailCheck 
+	</h3>
+
+	<kbd>public array <strong>getCustomCCEmailCheck</strong>(Numeric courseOfferingID, String customCCList)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets array of duplicate emails/stuids</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>customCCList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEnrolledStudents()"><!-- --></a>
+	<h3>
+		getEnrolledStudents 
+	</h3>
+
+	<kbd>public Array <strong>getEnrolledStudents</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>Provides student Name (name), ID (ID) and status (userStatus) as an array of structures</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEnrollmentNamesAsList()"><!-- --></a>
+	<h3>
+		getEnrollmentNamesAsList 
+	</h3>
+
+	<kbd>public struct <strong>getEnrollmentNamesAsList</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>gets the enrollment names as structure which includes two strings in which usernames and id are separeted with '|'</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getEveryone()"><!-- --></a>
+	<h3>
+		getEveryone 
+	</h3>
+
+	<kbd>public Array <strong>getEveryone</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMessage()"><!-- --></a>
+	<h3>
+		getMessage 
+	</h3>
+
+	<kbd>public struct <strong>getMessage</strong>(Numeric messageID)</kbd>
+
+	<br><br>
+
+	
+		<p>load the current message</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getMessageXML()"><!-- --></a>
+	<h3>
+		getMessageXML 
+	</h3>
+
+	<kbd>public xml <strong>getMessageXML</strong>(Numeric messageID)</kbd>
+
+	<br><br>
+
+	
+		<p>ajax call - gets  message as an xml</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getSearchResults()"><!-- --></a>
+	<h3>
+		getSearchResults 
+	</h3>
+
+	<kbd>public Array <strong>getSearchResults</strong>(Numeric courseOfferingID, String searchKey)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		<dd><code>searchKey</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStaff()"><!-- --></a>
+	<h3>
+		getStaff 
+	</h3>
+
+	<kbd>public Array <strong>getStaff</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentGroups()"><!-- --></a>
+	<h3>
+		getStudentGroups 
+	</h3>
+
+	<kbd>public Query <strong>getStudentGroups</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>gets all groups related with the offering as a query</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentQuery()"><!-- --></a>
+	<h3>
+		getStudentQuery 
+	</h3>
+
+	<kbd>public Query <strong>getStudentQuery</strong>(Numeric courseOfferingID)</kbd>
+
+	<br><br>
+
+	
+		<p>Gets enrolled students list as a query</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseOfferingID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getStudentsByCourseGroup()"><!-- --></a>
+	<h3>
+		getStudentsByCourseGroup 
+	</h3>
+
+	<kbd>public Array <strong>getStudentsByCourseGroup</strong>(Numeric AppID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>AppID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="getUsersDetails()"><!-- --></a>
+	<h3>
+		getUsersDetails 
+	</h3>
+
+	<kbd>private Array <strong>getUsersDetails</strong>(String userList)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>userList</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="prepareSubmissionReport()"><!-- --></a>
+	<h3>
+		prepareSubmissionReport 
+	</h3>
+
+	<kbd>public struct <strong>prepareSubmissionReport</strong>(Array ArrSubmission)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ArrSubmission</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveAttachment()"><!-- --></a>
+	<h3>
+		saveAttachment 
+	</h3>
+
+	<kbd>public Numeric <strong>saveAttachment</strong>([numeric emailAttachmentID], [numeric broadcastEmailMessageID], [string fileLocation], [string fileName], [Date recordTime])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>emailAttachmentID</code></dd>
+		
+		<dd><code>broadcastEmailMessageID</code></dd>
+		
+		<dd><code>fileLocation</code></dd>
+		
+		<dd><code>fileName</code></dd>
+		
+		<dd><code>recordTime</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveDraftMessage()"><!-- --></a>
+	<h3>
+		saveDraftMessage 
+	</h3>
+
+	<kbd>public struct <strong>saveDraftMessage</strong>(numeric messageID, numeric courseID, numeric CourseOfferingID, String courseShort, struct mailInformation, numeric senderID)</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageID</code></dd>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>courseShort</code></dd>
+		
+		<dd><code>mailInformation</code></dd>
+		
+		<dd><code>senderID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="saveMessage()"><!-- --></a>
+	<h3>
+		saveMessage 
+	</h3>
+
+	<kbd>public numeric <strong>saveMessage</strong>(numeric MessageID, [numeric CourseOfferingID='0'], [string MessageSubject=''], [string MessageBody=''], boolean isEntireClass, [boolean isAllStudents='0'], [string recordTime=''], [numeric senderID='0'], [string senderName=''], [string fromEmail=''], [boolean isArchive='0'], [boolean isAnnouncement='0'], [boolean sendToMe='0'], [boolean draftStatus='0'], [string sendDate=''], [string customCCList=''], [string scheduledSendDateTime=''], [boolean needTechSupport])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>MessageID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>MessageSubject</code></dd>
+		
+		<dd><code>MessageBody</code></dd>
+		
+		<dd><code>isEntireClass</code></dd>
+		
+		<dd><code>isAllStudents</code></dd>
+		
+		<dd><code>recordTime</code></dd>
+		
+		<dd><code>senderID</code></dd>
+		
+		<dd><code>senderName</code></dd>
+		
+		<dd><code>fromEmail</code></dd>
+		
+		<dd><code>isArchive</code></dd>
+		
+		<dd><code>isAnnouncement</code></dd>
+		
+		<dd><code>sendToMe</code></dd>
+		
+		<dd><code>draftStatus</code></dd>
+		
+		<dd><code>sendDate</code></dd>
+		
+		<dd><code>customCCList</code></dd>
+		
+		<dd><code>scheduledSendDateTime</code></dd>
+		
+		<dd><code>needTechSupport</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendEMail()"><!-- --></a>
+	<h3>
+		sendEMail 
+	</h3>
+
+	<kbd>public struct <strong>sendEMail</strong>(numeric messageID, [numeric courseID], [numeric CourseOfferingID], [String courseShort], [struct mailInformation], [numeric senderID], [string recordTime], [boolean sendSavedMessage])</kbd>
+
+	<br><br>
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageID</code></dd>
+		
+		<dd><code>courseID</code></dd>
+		
+		<dd><code>CourseOfferingID</code></dd>
+		
+		<dd><code>courseShort</code></dd>
+		
+		<dd><code>mailInformation</code></dd>
+		
+		<dd><code>senderID</code></dd>
+		
+		<dd><code>recordTime</code></dd>
+		
+		<dd><code>sendSavedMessage</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="sendScheduledMessages()"><!-- --></a>
+	<h3>
+		sendScheduledMessages 
+	</h3>
+
+	<kbd>public struct <strong>sendScheduledMessages</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	</dl>
+	<hr>
+
+	<a name="setMessageGateway()"><!-- --></a>
+	<h3>
+		setMessageGateway 
+	</h3>
+
+	<kbd>public void <strong>setMessageGateway</strong>(any MessageGateway)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: MessageGateway</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>MessageGateway</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setNewsFlashService()"><!-- --></a>
+	<h3>
+		setNewsFlashService 
+	</h3>
+
+	<kbd>public void <strong>setNewsFlashService</strong>(<a href="../../../../core/modules/newsFlashes/model/newsFlashService.html" title="class in core.modules.newsFlashes.model">newsFlashService</a> newsFlashService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: newsFlashService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>newsFlashService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setSpoolerFacade()"><!-- --></a>
+	<h3>
+		setSpoolerFacade 
+	</h3>
+
+	<kbd>public void <strong>setSpoolerFacade</strong>(any spoolerFacade)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: spoolerFacade</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>spoolerFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setattachmentService()"><!-- --></a>
+	<h3>
+		setattachmentService 
+	</h3>
+
+	<kbd>public void <strong>setattachmentService</strong>([any attachmentService])</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: attachmentService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>attachmentService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setattendanceTrackerFacade()"><!-- --></a>
+	<h3>
+		setattendanceTrackerFacade 
+	</h3>
+
+	<kbd>public void <strong>setattendanceTrackerFacade</strong>(any attendanceTrackerFacade)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: attendanceTrackerFacade</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>attendanceTrackerFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcommunicationService()"><!-- --></a>
+	<h3>
+		setcommunicationService 
+	</h3>
+
+	<kbd>public void <strong>setcommunicationService</strong>(<a href="../../../../core/modules/mailer/model/communication/communicationService.html" title="class in core.modules.mailer.model.communication">communicationService</a> communicationService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: communicationService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>communicationService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setcourseGroupsFacade()"><!-- --></a>
+	<h3>
+		setcourseGroupsFacade 
+	</h3>
+
+	<kbd>public void <strong>setcourseGroupsFacade</strong>(any courseGroupsFacade)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: courseGroupsFacade</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>courseGroupsFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setctlHelpMetrics()"><!-- --></a>
+	<h3>
+		setctlHelpMetrics 
+	</h3>
+
+	<kbd>public void <strong>setctlHelpMetrics</strong>(any ctlHelpMetrics)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: ctlHelpMetrics</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ctlHelpMetrics</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setctlHelpMetricsService()"><!-- --></a>
+	<h3>
+		setctlHelpMetricsService 
+	</h3>
+
+	<kbd>public void <strong>setctlHelpMetricsService</strong>(any ctlHelpMetricsService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: ctlHelpMetricsService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>ctlHelpMetricsService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setfileUpload()"><!-- --></a>
+	<h3>
+		setfileUpload 
+	</h3>
+
+	<kbd>public void <strong>setfileUpload</strong>(any fileUpload)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: fileUpload</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>fileUpload</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setlistArrayOfObjectsTools()"><!-- --></a>
+	<h3>
+		setlistArrayOfObjectsTools 
+	</h3>
+
+	<kbd>public void <strong>setlistArrayOfObjectsTools</strong>(any listArrayOfObjectsTools)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: listArrayOfObjectsTools</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>listArrayOfObjectsTools</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setmessageSendManager()"><!-- --></a>
+	<h3>
+		setmessageSendManager 
+	</h3>
+
+	<kbd>public void <strong>setmessageSendManager</strong>(any messageSendManager)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: messageSendManager</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageSendManager</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setmessageService()"><!-- --></a>
+	<h3>
+		setmessageService 
+	</h3>
+
+	<kbd>public void <strong>setmessageService</strong>(any messageService)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: messageService</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>messageService</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="setmyCoursesFacade()"><!-- --></a>
+	<h3>
+		setmyCoursesFacade 
+	</h3>
+
+	<kbd>public void <strong>setmyCoursesFacade</strong>(any myCoursesFacade)</kbd>
+
+	<br><br>
+
+	
+		<p>Dependency: myCoursesFacade</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>myCoursesFacade</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+	<a name="unDraftMessage()"><!-- --></a>
+	<h3>
+		unDraftMessage 
+	</h3>
+
+	<kbd>public void <strong>unDraftMessage</strong>(numeric MessageID)</kbd>
+
+	<br><br>
+
+	
+		<p>soft deletes  message</p>
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>MessageID</code></dd>
+		
+		</dl>
+	
+
+	</dl>
+	<hr>
+
+
+
+</body>
+</html>
