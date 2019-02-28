@@ -18,6 +18,7 @@ component extends="coldbox.system.EventHandler"{
 	function dump(event,rc,prc){
 		prc['sectionTitle']='Event Dump';
 		prc['configuration']=controller.getConfigSettings();
+		WriteLog(SerializeJSON(prc.configuration),"warning","yes",this.name&".TestingLog");
 		prc['serviceProps']={
 			'dsn':prc.configuration.dsn.name,
 			'debugMode':prc.configuration.debugMode,
