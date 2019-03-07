@@ -39,6 +39,7 @@ if( jQuery!==null ){
 			e.preventDefault();
 			jQuery('#jsonData').text('');
 			jQuery('#jsonData').val();
+			jQuery('#jsonData').focus();
 			return false;
 		});
 		jQuery(document).on('paste','#jsonData',function(e){
