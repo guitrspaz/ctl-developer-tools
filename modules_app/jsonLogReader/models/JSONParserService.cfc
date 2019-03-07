@@ -146,9 +146,20 @@ component
 				errorStruct.items[ idx ]=arguments.logRow[ idx ];
 			}
 			if( structKeyExists(errorStruct.items,'message') ){
-				errorStruct.jsonString=ListLast(errorStruct.items.message,'//');
+				if( Left(Trim(errorStruct.items.message),1)=='""' ){
+					errorStruct.items['message']=Left(Trim(errorStruct.items.message),Len(Trim(errorStruct.items.message))-1);
+				}
+				if( Right(Trim(errorStruct.items.message),1)=='""' ){
+					errorStruct.items['message']=Right(Trim(errorStruct.items.message),Len(Trim(errorStruct.items.message))-1);
+				}
+
+				if( Left(Trim(errorStruct.items.message),2)=='//' ){
+					errorStruct['jsonString']=Trim(ListLast(errorStruct.items.message,'//'));
+				} else {
+					errorStruct['jsonString']=Trim(errorStruct.items.message);
+				}
 				if( isJSON(Trim(errorStruct.jsonString)) ){
-					errorStruct.result=DeserializeJSON(errorStruct.jsonString);
+					errorStruct['result']=DeserializeJSON(errorStruct.jsonString);
 				}
 			}
 			//remove message content after creating a struct
@@ -166,8 +177,8 @@ component
 			errorStruct.logType="error";
 			errorStruct.cfcatch=e;
 		}
-		errorStruct.end=Now();
-		errorStruct.diff=DateDiff('s',errorStruct.start,errorStruct.end);
+		errorStruct['end']=Now();
+		errorStruct['diff']=DateDiff('s',errorStruct.start,errorStruct.end);
 		if( errorStruct.logType != 'information' || this.getdebugMode() ){
 			createLog(
 				logName=this.getdefaultLog(),

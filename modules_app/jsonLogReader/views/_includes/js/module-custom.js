@@ -26,6 +26,7 @@ if( jQuery!==null ){
 			jQuery('#jsonData').text('');
 			jQuery('#jsonData').val();
 			jQuery('#dumpTable').html('');
+			jQuery('#jsonData').focus();
 			return false;
 		});
 
