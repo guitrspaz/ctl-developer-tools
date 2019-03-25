@@ -106,7 +106,7 @@ component
 		}
 		errorStruct.end=Now();
 		errorStruct.diff=DateDiff('s',errorStruct.start,errorStruct.end);
-		if( errorStruct.logType != 'test' || this.getdebugMode() ){
+		if( errorStruct.logType != 'information' || this.getdebugMode() ){
 			createLog(
 				logName=this.getdefaultLog(),
 				logType=errorStruct.logType,
@@ -182,7 +182,7 @@ component
 		}
 		errorStruct['end']=Now();
 		errorStruct['diff']=DateDiff('s',errorStruct.start,errorStruct.end);
-		if( errorStruct.logType != 'test' || this.getdebugMode() ){
+		if( errorStruct.logType != 'information' || this.getdebugMode() ){
 			createLog(
 				logName=this.getdefaultLog(),
 				logType=errorStruct.logType,
