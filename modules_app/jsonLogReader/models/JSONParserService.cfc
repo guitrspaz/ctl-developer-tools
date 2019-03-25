@@ -106,7 +106,7 @@ component
 		}
 		errorStruct.end=Now();
 		errorStruct.diff=DateDiff('s',errorStruct.start,errorStruct.end);
-		if( errorStruct.logType != 'test' || this.getdebugMode() ){
+		if( errorStruct.logType != 'information' || this.getdebugMode() ){
 			createLog(
 				logName=this.getdefaultLog(),
 				logType=errorStruct.logType,
@@ -131,43 +131,46 @@ component
 			attrs=StructCount(arguments.logRow),
 			logType="warning",
 			start=Now(),
-			items={},
+			items={
+				'type':'Warning',
+				'thread':'none',
+				'date':DateFormat(Now(),'MM/DD/YYYY'),
+				'time':TimeFormat(Now(),'HH:mm:ss'),
+				'application':'LogReader',
+				'message':'',
+				'trimmedMessage':''
+			},
 			stackTrace=getStackTrace(),
 			result={}
 		};
-		errorStruct.items['type']='Warning';
-		errorStruct.items['thread']='none';
-		errorStruct.items['date']=DateFormat(Now(),'MM/DD/YYYY');
-		errorStruct.items['time']=TimeFormat(Now(),'HH:mm:ss');
-		errorStruct.items['application']='LogReader';
-		errorStruct.items['message']='';
 		try{
 			for( var idx in arguments.logRow ){
 				errorStruct.items[ idx ]=arguments.logRow[ idx ];
 			}
 			if( structKeyExists(errorStruct.items,'message') ){
-				if( Left(Trim(errorStruct.items.message),1)=='""' ){
-					errorStruct.items['message']=Left(Trim(errorStruct.items.message),Len(Trim(errorStruct.items.message))-1);
+				errorStruct.items['trimmedMessage']=Trim(errorStruct.items.message);
+				if( Left(errorStruct.items.trimmedMessage,1)=='""' ){
+					errorStruct.items['message']=Left(errorStruct.items.trimmedMessage,Len(errorStruct.items.trimmedMessage)-1);
 				}
-				if( Right(Trim(errorStruct.items.message),1)=='""' ){
-					errorStruct.items['message']=Right(Trim(errorStruct.items.message),Len(Trim(errorStruct.items.message))-1);
+				if( Right(errorStruct.items.trimmedMessage,1)=='""' ){
+					errorStruct.items['message']=Right(errorStruct.items.trimmedMessage,Len(errorStruct.items.trimmedMessage)-1);
 				}
 
-				if( Left(Trim(errorStruct.items.message),2)=='//' ){
-					errorStruct['jsonString']=Trim(ListLast(errorStruct.items.message,'//'));
+				if( Left(errorStruct.items.trimmedMessage,2)=='//' ){
+					errorStruct['jsonString']=Trim(ListLast(errorStruct.items.trimmedMessage,'//'));
 				} else {
-					errorStruct['jsonString']=Trim(errorStruct.items.message);
+					errorStruct['jsonString']=errorStruct.items.trimmedMessage;
 				}
 				if( isJSON(Trim(errorStruct.jsonString)) ){
 					errorStruct['result']=DeserializeJSON(errorStruct.jsonString);
 				}
 			}
 			//remove message content after creating a struct
-			if( structKeyExists(errorStruct.items,'message')
-				&& Len(Trim(errorStruct.items.message))
+			if( structKeyExists(errorStruct.items,'trimmedMessage')
+				&& Len(errorStruct.items.trimmedMessage)
 				&& StructCount(errorStruct.result)
 			){
-				StructDelete(errorStruct.items,'message');
+				StructDelete(errorStruct.items,'trimmedMessage');
 			}
 			//append log data to result
 			errorStruct.result['logData']=errorStruct.items;
