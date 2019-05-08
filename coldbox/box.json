@@ -1,7 +1,7 @@
 {
     "name":"ColdBox Platform",
-    "version":"5.3.0+837",
-    "location":"http://downloads.ortussolutions.com/ortussolutions/coldbox/5.3.0/coldbox-5.3.0.zip",
+    "version":"5.4.0+932",
+    "location":"http://downloads.ortussolutions.com/ortussolutions/coldbox/5.4.0/coldbox-5.4.0.zip",
     "author":"Ortus Solutions <info@ortussolutions.com>",
     "slug":"coldbox",
     "packageDirectory":"coldbox",

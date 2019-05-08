@@ -27,14 +27,16 @@
         "testbox":"testbox",
         "wirebox":"wirebox",
         "cborm":"modules/cborm",
-        "docbox":"docbox"
+        "docbox":"docbox",
+        "rulebox":"modules/rulebox"
     },
     "dependencies":{
         "coldbox":"^5.0.0",
         "wirebox":"^5.1.4+741",
         "cborm":"^1.4.0+79",
         "docbox":"^2.2.1+27",
-        "testbox":"^2.8.0+191"
+        "testbox":"^2.8.0+191",
+        "rulebox":"^1.0.0+13"
     },
     "scripts":{}
 }
