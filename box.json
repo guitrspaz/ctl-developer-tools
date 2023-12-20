@@ -20,17 +20,16 @@
         "README.md"
     ],
     "devDependencies":{
-        "testbox":"^2.7.0"
     },
     "installPaths":{
         "coldbox":"d:/opt/coldbox",
         "docbox":"d:/opt/docbox",
-        "rulebox":"modules/rulebox"
+        "cborm":"modules/cborm"
     },
     "dependencies":{
         "coldbox":"^7.2.0",
         "docbox":"^4.0.0",
-        "rulebox":"latest"
+        "cborm":"^4.3.0"
     },
     "scripts":{}
 }
