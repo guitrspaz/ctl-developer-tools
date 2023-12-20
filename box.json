@@ -1,5 +1,5 @@
 {
-    "name":"My ColdBox App",
+    "name":"CTL Developer Tools",
     "version":"1.0.0",
     "author":"CTL Developer Name",
     "location":"",
@@ -23,20 +23,14 @@
         "testbox":"^2.7.0"
     },
     "installPaths":{
-        "coldbox":"coldbox",
-        "testbox":"testbox",
-        "wirebox":"wirebox",
-        "cborm":"modules/cborm",
-        "docbox":"docbox",
+        "coldbox":"d:/opt/coldbox",
+        "docbox":"d:/opt/docbox",
         "rulebox":"modules/rulebox"
     },
     "dependencies":{
-        "coldbox":"^5.0.0",
-        "wirebox":"^5.1.4+741",
-        "cborm":"^1.4.0+79",
-        "docbox":"^2.2.1+27",
-        "testbox":"^2.8.0+191",
-        "rulebox":"^1.0.0+13"
+        "coldbox":"^7.2.0",
+        "docbox":"^4.0.0",
+        "rulebox":"latest"
     },
     "scripts":{}
 }
