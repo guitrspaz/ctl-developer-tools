@@ -35,11 +35,11 @@ component{
 	COLDBOX_APP_KEY="";
 
 	//app mappings
-	this.mappings['/coldbox']="d:\opt\coldbox";
-	this.mappings['/docbox']="d:\opt\docbox";
+	//this.mappings['/coldbox']=COLDBOX_APP_ROOT_PATH&"coldbox";
+	//this.mappings['/docbox']=COLDBOX_APP_ROOT_PATH&"docbox";
 	//this.mappings['/testbox']=COLDBOX_APP_ROOT_PATH&"testbox";
 	this.mappings['/models']=COLDBOX_APP_ROOT_PATH&"models";
-	//this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
+	this.mappings['/cborm']=COLDBOX_APP_ROOT_PATH&"modules/cborm";
 
 	// application start
 	public boolean function onApplicationStart(){
