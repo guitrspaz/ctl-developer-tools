@@ -35,7 +35,7 @@ component{
 	COLDBOX_APP_KEY="";
 
 	//app mappings
-	this.mappings['/coldbox']=&"d:\opt\coldbox";
+	this.mappings['/coldbox']="d:\opt\coldbox";
 	this.mappings['/docbox']="d:\opt\docbox";
 	//this.mappings['/testbox']=COLDBOX_APP_ROOT_PATH&"testbox";
 	this.mappings['/models']=COLDBOX_APP_ROOT_PATH&"models";
